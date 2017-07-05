@@ -1,0 +1,24 @@
+WorldMapIntroPointerTable(1,SkipIntro)
+WorldMapIntroPointerTable(2,SkipIntro)
+WorldMapIntroPointerTable(3,SkipIntro)
+WorldMapIntroPointerTable(4,SkipIntro)
+WorldMapIntroPointerTable(5,SkipIntro)
+WorldMapIntroPointerTable(6,SkipIntro)
+WorldMapIntroPointerTable(7,SkipIntro)
+WorldMapIntroPointerTable(8,SkipIntro)
+WorldMapIntroPointerTable(9,SkipIntro)
+WorldMapIntroPointerTable(0xa,SkipIntro)
+WorldMapIntroPointerTable(0xb,SkipIntro)
+WorldMapIntroPointerTable(0xc,SkipIntro)
+WorldMapIntroPointerTable(0xd,SkipIntro)
+WorldMapIntroPointerTable(0xe,SkipIntro)
+WorldMapIntroPointerTable(0xf,SkipIntro)
+WorldMapIntroPointerTable(0x10,SkipIntro)
+WorldMapIntroPointerTable(0x11,SkipIntro)
+WorldMapIntroPointerTable(0x12,SkipIntro)
+WorldMapIntroPointerTable(0x17,SkipIntro)
+
+SkipIntro: //just point all of them here, they're the same
+EVBIT_MODIFY 0x1
+SKIPWN
+ENDA
