@@ -1,19 +1,19 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
-Eirika,CharmID
-Seth,SaviorID
-Gilliam,RallyDefID
-Franz,SealStrID
-Moulder,RallyResID
-Vanessa,SpurSpdID
-Ross,ParagonID
-Neimi,RallyLukID
-Colm,RallySpdID
-Garcia,ColossusID
-Innes,SpurDefID
-Lute,ParagonID
-Natasha,SealLukID
-Cormag,RallyStrID
+Void,AetherID
+Tim,EvenRhythmID
+Tam,OddRhythmID
+Jerome,GaleforceID
+Leeroy,ProvokeID
+Anna,LuckySevenID
+Bede,RallySpectrumID
+Jay,AdeptID
+Not Arch,SealSpdID
+Kirsten,IntimidateID
+Bob,CelerityID
+Roshea,StrongRiposteID
+-,SealLukID
+Edge,WrathID
 Ephraim,InspirationID
 Forde,SpurSpdID
 Kyle,SpurStrID
@@ -25,10 +25,10 @@ Marisa,FocusID
 Saleh,SpurMagID
 Ewan,CelerityID
 L'Arachel,IntimidateID
-Dozla,0x0
+Dozla,PivotID
 -,0x0
 Rennac,SpurSpdID
-Duessel,0x0
+Duessel,RepositionID
 Myrrh,DragonsBloodID
 Knoll,VoiceOfPeaceID
 Joshua,GambleID

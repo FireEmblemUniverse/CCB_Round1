@@ -43,3 +43,24 @@ tile away.[X]
 ## UM_SmiteDesc
 Push an adjacent unit two[N]
 tiles away.[X]
+
+## UM_Pivot
+ Pivot[X]
+
+## UM_PivotDesc
+Move to opposite side of[N]
+an adjacent ally.[X]
+
+## UM_Reposition
+ Reposition[X]
+
+## UM_RepositionDesc
+Move adjacent ally to this[N]
+unit's opposite side.[X]
+
+## UM_Swap
+ Swap[X]
+
+## UM_SwapDesc
+Swap positions with adjacent[N]
+ally.[X]

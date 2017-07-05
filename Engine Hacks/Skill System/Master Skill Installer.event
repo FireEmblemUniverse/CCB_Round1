@@ -341,5 +341,5 @@ WORD SlowBurnID
 #include "Proc Skills/Proc Skills Installer.event"
 #include "Rally Skills/Rally Installer.event"
 
-#include "Stan Skills/Shove/Shove.event"
+#include "Stan Skills/HeroesMovement/HeroesMovement.event"
 #include "Post Combat Skills/Post Combat Skills Installer.event"

@@ -543,3 +543,16 @@ each passing turn, up to 15.[X]
 Despoil: Obtain a Red Gem after[N]
 attacking and defeating an enemy.[N]
 (Luck % activation)[X]
+
+## SD_Pivot
+Pivot: Allows unit to move to the[N]
+opposite side of an adjacent ally.[X]
+
+## SD_Reposition
+Reposition: Allows unit to pull an[N]
+adjacent ally to its opposite side.[X]
+
+## SD_Swap
+Swap: Allows unit to swap positions[N]
+with an adjacent ally.[X]
+

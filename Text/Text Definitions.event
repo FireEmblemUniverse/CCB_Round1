@@ -28,6 +28,12 @@
 #define UM_ShoveDesc 0x4e
 #define UM_Smite 0x4f
 #define UM_SmiteDesc 0x50
+#define UM_Pivot 0x51
+#define UM_PivotDesc 0x52
+#define UM_Reposition 0x53
+#define UM_RepositionDesc 0x54
+#define UM_Swap 0x55
+#define UM_SwapDesc 0x56
 #define HouseText 0x903
 #define VillageText 0x904
 #define DV1Desc 0x905
@@ -166,3 +172,6 @@
 #define SD_QuickBurn 0x98a
 #define SD_SlowBurn 0x98b
 #define SD_Despoil 0x98c
+#define SD_Pivot 0x98d
+#define SD_Reposition 0x98e
+#define SD_Swap 0x98f

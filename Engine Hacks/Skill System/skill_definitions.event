@@ -134,3 +134,6 @@
 #define QuickBurnID 133 //DONE
 #define SlowBurnID 134 //DONE
 #define DespoilID 135//DONE
+#define PivotID 136 //DONE
+#define RepositionID 137 //DONE
+#define SwapID 138 //DONE

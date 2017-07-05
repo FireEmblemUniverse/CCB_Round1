@@ -35,7 +35,7 @@
 #define rConst(aValue) "SHORT (0x2000 | (aValue)) 0x4770"
 
 // Simple Getters
-#define rGetCharByte(aStatOffset) "SHORT (0x2000 | (aStatOffset)) 0x5608 0x4770 0x46C0"
+#define rGetCharByte(aStatOffset) "SHORT (0x2000 | (aStatOffset)) 0x5C08 0x4770 0x46C0"
 
 // Helpers
 #define rAddCharByte(aStatOffset) "rAdd; rGetCharByte(aStatOffset)"
