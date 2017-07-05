@@ -15,3 +15,16 @@
 #define SolarBrace SunBracelet
 
 #include "Engine Hacks/Skill System/skill_definitions.event"
+
+#define Void 1
+#define Tim 2
+#define Tam 3
+#define Jerome 4
+#define Leeroy 5
+#define Anna 6
+#define Bede 7
+#define Jay 8
+#define Bob 9
+#define Kirsten 10
+#define Edge 11
+#define Roshea 12

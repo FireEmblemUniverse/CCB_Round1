@@ -19,7 +19,7 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Seize(0,0)
+Seize(15,1)
 END_MAIN
 
 MiscBasedEvents:
@@ -39,10 +39,26 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Eirika  0x2 0x1 0xA1   [0,0] 0b 0x0 0x0 0x0 [0x1,0x98,0x88,0x0] [0x0,0x0,0x0,0x0]
+UNIT Void EirikaLord 0x00 Level(1, Ally, 1) [13,12] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI 
+UNIT Tim Fighter 0x00 Level(1, Ally, 1) [12,13] 0x00 0x00 0x0 0x00 [IronAxe, HandAxe] NoAI 
+UNIT Tam Fighter 0x00 Level(1, Ally, 1) [14,13] 0x00 0x00 0x0 0x00 [SteelAxe, Hatchet] NoAI 
+UNIT Jerome Soldier 0x00 Level(1, Ally, 1) [15,13] 0x00 0x00 0x0 0x00 [IronLance, Vulnerary] NoAI 
+UNIT Leeroy Paladin 0x00 Level(1, Ally, 1) [11,13] 0x00 0x00 0x0 0x00 [SilverLance, SteelSword, Elixir] NoAI 
 UNIT
 
+
 EnemyUnits:
+UNIT ONeill Knight 0x00 Level(3, Enemy, 1) [15,1] 0x00 0x00 0x0 0x00 [Javelin] NeverMoveAI
+UNIT 0x82 Soldier ONeill Level(1, Enemy, 1) [13,8] 0x00 0x00 0x0 0x00  [IronLance] NoAI 
+UNIT 0x82 Soldier ONeill Level(1, Enemy, 1) [15,9] 0x00 0x00 0x0 0x00  [IronLance] NoAI 
+UNIT 0x82 Soldier ONeill Level(1, Enemy, 1) [2,8] 0x00 0x00 0x0 0x00   [IronLance] NoAI 
+UNIT 0x82 Soldier ONeill Level(1, Enemy, 1) [22,11] 0x00 0x00 0x0 0x00 [IronLance] NoAI 
+UNIT 0x82 Soldier ONeill Level(1, Enemy, 1) [20,3] 0x00 0x00 0x0 0x00  [IronLance] NoAI 
+UNIT 0x82 Soldier ONeill Level(1, Enemy, 1) [15,5] 0x00 0x00 0x0 0x00  [IronLance] NoAI 
+UNIT 0x82 Soldier ONeill Level(1, Enemy, 1) [12,6] 0x00 0x00 0x0 0x00  [IronLance] NoAI 
+UNIT 0x82 Soldier ONeill Level(1, Enemy, 1) [14,3] 0x00 0x00 0x0 0x00  [IronLance] NoAI 
+UNIT 0x82 Soldier ONeill Level(1, Enemy, 1) [16,3] 0x00 0x00 0x0 0x00  [IronLance] NoAI 
+UNIT 0x82 Soldier ONeill Level(1, Enemy, 1) [7,11] 0x00 0x00 0x0 0x00  [IronLance] NoAI 
 UNIT
 
 Traps1:
@@ -55,6 +71,8 @@ ALIGN 4
 
 BeginningScene:
 LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+ENUN
+LOAD1 0x1 EnemyUnits
 ENUN
 // GotoPrepScreen
 ENDA
