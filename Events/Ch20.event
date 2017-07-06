@@ -36,6 +36,9 @@ Chest(0x62,13,1)
 Chest(0x64,5,8)
 Chest(0x67,4,9)
 Seize(5,1)
+#ifdef __DEBUG__
+  Seize(12,21)
+#endif
 END_MAIN
 
 MiscBasedEvents:
