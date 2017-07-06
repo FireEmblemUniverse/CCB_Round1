@@ -1,0 +1,63 @@
+
+# 0x160 PrologueChName
+Prologue: IT BEGINS[X]
+
+#0x161
+1: Secret Chapter[X]
+
+#0x162
+Ch2[X]
+
+#0x163
+3: Compile Proyect[X]
+
+#0x164
+Ch4[X]
+
+#0x166
+Ch5[X]
+
+#0x167
+Ch6[X]
+
+#0x168
+Ch7[X]
+
+#0x169
+Ch8[X]
+
+#0x16a
+Ch9[X]
+
+# 0x016B
+Ch10[X]
+
+# 0x016C
+Ch11[X]
+
+# 0x016D
+Ch12[X]
+
+# 0x016E
+Ch13[X]
+
+# 0x016F
+Ch14[X]
+
+# 0x0170
+15: The Shark Straits[X]
+
+# 0x0171
+Ch16[X]
+
+# 0x0172
+Ch17[X]
+
+# 0x0173
+18: Island Clash[X]
+
+# 0x0174
+19: Lit Chapter[X]
+
+# 0x0175
+20: Great Rivalry[X]

@@ -42,7 +42,7 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Void EirikaLord 0x00 Level(1, Ally, 1) [13,12] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI 
+UNIT Void EirikaLord 0x00 Level(1, Ally, 1) [13,12] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary, MoonBracelet] NoAI 
 UNIT Tim Fighter 0x00 Level(1, Ally, 1) [12,13] 0x00 0x00 0x0 0x00 [IronAxe, HandAxe] NoAI 
 UNIT Tam Fighter 0x00 Level(1, Ally, 1) [14,13] 0x00 0x00 0x0 0x00 [SteelAxe, Hatchet] NoAI 
 UNIT Jerome Soldier 0x00 Level(1, Ally, 1) [15,13] 0x00 0x00 0x0 0x00 [IronLance, Vulnerary] NoAI 

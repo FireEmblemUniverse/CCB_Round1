@@ -29,6 +29,7 @@ UNIT
  
  
 TurnBasedEvents:
+TurnEventPlayer(0x0, LoadZigludo, 1)
 END_MAIN
  
 CharacterBasedEvents:
@@ -64,8 +65,6 @@ LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 NPCs
 ENUN
-LOAD1 0x1 ZIGLUDO
-ENUN
 LOAD1 0x1 Baddiesdown1
 ENUN
 LOAD1 0x1 Baddiesup1
@@ -79,7 +78,8 @@ MNCH 0x14
 ENDA
  
 // Events
- 
+LoadZigludo:
+ReinforcementEvent(ZIGLUDO)
 // Manual Movement
  
 // Scripted Fights
