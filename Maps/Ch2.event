@@ -2,21 +2,31 @@
 
 #include eastdlib.event
 
-SetChapterData(2,0x42,0,0x43,0x44,0xb,Map,5,0,0xc)
+SetChapterData(2,0x1,0,0x2,0x3,0xb,Map,5,0,0xc)
 EventPointerTable(0xc, MapChanges)
 Map:
 #incbin "Ch2_data.dmp"
 
 MapChanges:
-TileMap(0,7,9,3,3,Village_Destroyed)
-TileMap(1,8,11,1,1,Village_Saved)
+TileMap(1,13,0,3,3,NorthVillageDestroyed)
+TileMap(2,14,2,1,1,NorthVillageSaved)
+TileMap(3,13,9,3,3,SouthVillageDestroyed)
+TileMap(4,14,11,1,1,SouthVillageSaved)
 TileMapEnd
 
-Village_Destroyed:
-SHORT 0xec8 0xecc 0xed0 0xf48 0xf4c 0xf50 0xfc8 0xfcc 0xfd0 
+NorthVillageDestroyed:
+SHORT 0xe1c 0xe20 0xe24 0xe9c 0xea0 0xea4 0xf1c 0xf20 0xf24 
 ALIGN 4
 
-Village_Saved:
-SHORT 0xe50 
+NorthVillageSaved:
+SHORT 0x80 
+ALIGN 4
+
+SouthVillageDestroyed:
+SHORT 0xe1c 0xe20 0xe24 0xe9c 0xea0 0xea4 0xf1c 0xf20 0xf24 
+ALIGN 4
+
+SouthVillageSaved:
+SHORT 0x80 
 ALIGN 4
 

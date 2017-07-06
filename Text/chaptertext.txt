@@ -34,6 +34,10 @@ This text is a placeholder![A][X]
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]
 
+##Ch12RecruitTalk
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
 ##Ch14TalkEvent
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]

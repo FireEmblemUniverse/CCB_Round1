@@ -21,6 +21,9 @@ CharacterEvent(0x10,TalkEvent,0x01,0x11)
 END_MAIN
 
 LocationBasedEvents:
+#ifdef __DEBUG__
+Seize(12,23)
+#endif
 END_MAIN
 
 MiscBasedEvents:

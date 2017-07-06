@@ -257,7 +257,7 @@ BeginningScene:
   LOAD1 0x1 StartingEnemies
   ENUN
   
-  LOAD1 0x0 EffectiveUnits // 0x0 instead of 0x1 seems to be for allies on maps with prep screens
+  LOAD2 0x1 EffectiveUnits // 0x0 instead of 0x1 seems to be for allies on maps with prep screens
   ENUN
   
   GotoPrepScreen

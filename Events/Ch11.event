@@ -1,4 +1,4 @@
-EventPointerTable(0x37, PointerList)
+EventPointerTable(0xd1, PointerList)
 
 PointerList:
 POIN TurnBasedEvents
@@ -60,6 +60,6 @@ ENUN
 ENDA
 
 EndingScene:
-MNCH 12
+MNC2 12
 NoFade
 ENDA

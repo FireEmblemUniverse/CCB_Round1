@@ -831,3 +831,7 @@ TxtData0x9b1:
 #incext ParseFile "_textentries\0x9b1.txt"
 setText(0x9b1,TxtData0x9b1)
 
+TxtData0x9b2:
+#incext ParseFile "_textentries\0x9b2.txt"
+setText(0x9b2,TxtData0x9b2)
+

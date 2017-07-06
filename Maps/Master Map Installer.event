@@ -16,10 +16,16 @@
 #include "Ch10.event"
 }
 {
+#include "Ch12.event"
+}
+{
 #include "Ch14.event"
 }
 {
 #include "Ch18.event"
+}
+{
+#include "Ch19.event"
 }
 {
 #include "Ch2.event"

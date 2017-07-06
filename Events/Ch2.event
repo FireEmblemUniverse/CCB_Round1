@@ -1,65 +1,132 @@
-EventPointerTable(0xD, PointerList)
+EventPointerTable(0xd,ThisChapter)
 
-PointerList:
+ThisChapter:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
 POIN LocationBasedEvents
 POIN MiscBasedEvents
-POIN Dunno1 Dunno2 Dunno3 Tutorial
-POIN Traps1 Traps2
-POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
-POIN $0 $0 $0
-POIN $0 $0 $0
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
+ALIGN 4
+
 TurnBasedEvents:
+TURN 0x0 BrigandReinforcement [5,0] 0x0
+TURN 0x0 MageReinforcement [9,0] 0x0
+TURN 0x0 SoldierReinforcement [13,0] 0x0
 END_MAIN
 
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Seize(0,0)
+Village(0x8,VillageBerserk,14,2)
+Village(0x9,VillageEnergyRing,14,11)
+Vendor(ShopList,6,12)
+//Seize
+Seize(7,2)
+#ifdef __DEBUG__
+Seize(1,1)
+#endif
 END_MAIN
 
-MiscBasedEvents:
-// CauseGameOverIfLordDies
-END_MAIN
-
-Dunno1:
-END_MAIN
-
-Dunno2:
-END_MAIN
-
-Dunno3:
-END_MAIN
-
-Tutorial:
-END_MAIN
-
-Units1:
-UNIT Eirika  0x2 0x1 0xA1   [0,0] 0b 0x0 0x0 0x0 [0x1,0x98,0x88,0x0] [0x0,0x0,0x0,0x0]
-UNIT
-
-EnemyUnits:
-UNIT
-
-Traps1:
-ENDTRAP
+ShopList:
+SHLI Vulnerary PureWater ChestKey DoorKey Unlock Rescue Heal Stone
 ALIGN 4
 
-Traps2:
-ENDTRAP
+VillageEnergyRing:
+VillageEventItem(0x967, Village, EnergyRing) //Gives item to the active character (the one visiting)
+ENUN //Just use these for good measure
+
+VillageBerserk:
+VillageEventItem(0x967, Village, Berserk) //Gives item to the active character (the one visiting)
+ENUN //Just use these for good measure
+
+BrigandReinforcement:
+ReinforcementEvent(BrigandReinforcementUnit)
+ENDA
+
+MageReinforcement:
+ReinforcementEvent(MageReinforcementUnit)
+ENDA
+
+SoldierReinforcement:
+ReinforcementEvent(SoldierReinforcementUnit)
+ENDA
+
+BrigandReinforcementUnit:
+UNIT 0x80 Thief 0x00 Level(1, Enemy, 0) [7,11] 0x00 0x00 0x0 0x00 [SlimSword] BrigandAI
+UNIT
+
+MageReinforcementUnit:
+UNIT 0x80 Mage_F 0x00 Level(4, Enemy, 1) [2,3] 0x00 0x00 0x0 0x00 [Elfire] PursueWithoutHeedAI
+UNIT
+
+SoldierReinforcementUnit:
+UNIT 0x80 Soldier 0x00 Level(2, Enemy, 1) [4,6] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI
+UNIT
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+WORD $00
+
+Tutorial:
+WORD $00
+
+TrapData:
+END_MAIN
+
+Units:
+UNIT Void EirikaLord 0x00 Level(1, Ally, 0) [1,1] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Leeroy Paladin Void Level(1, Ally, 0) [0,0] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Anna Myrmidon_F Void Level(1, Ally, 0) [1,2] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Jerome Soldier Void Level(1, Ally, 0) [1,0] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Tim Fighter Void Level(1, Ally, 0) [2,0] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Tam Fighter Void Level(1, Ally, 0) [2,2] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT
+
+SexyPriest:
+UNIT Bede Priest Void Level(1, Ally, 0) [0,2] 0x00 0x00 0x0 0x00 [Heal, RedGem] NoAI 
+UNIT
+
+Bad: 
+UNIT 0x80 Fighter Bone Level(2, Enemy, 1) [8,2] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI 
+UNIT 0x80 Fighter Bone Level(2, Enemy, 1) [7,1] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI 
+UNIT 0x80 Knight Bone Level(3, Enemy, 1) [6,3] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT 0x80 Cavalier Bone Level(4, Enemy, 1) [12,4] 0x00 0x00 0x0 0x00 [Javelin, SteelSword] AttackInRangeAI 
+UNIT 0x80 Cavalier Bone Level(4, Enemy, 1) [14,6] 0x00 0x00 0x0 0x00 [Javelin, SteelSword] AttackInRangeAI 
+UNIT 0x80 Mage Bone Level(4, Enemy, 1) [12,7] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
+UNIT 0x80 Pirate Bone Level(3, Enemy, 1) [9,9] 0x00 0x00 0x0 0x00 [Hatchet, IronAxe] AttackInRangeAI 
+UNIT 0x80 Pirate Bone Level(3, Enemy, 1) [5,9] 0x00 0x00 0x0 0x00 [Hatchet, IronAxe] AttackInRangeAI 
+UNIT 0x80 Knight Bone Level(4, Enemy, 1) [0,7] 0x00 0x00 0x0 0x00 [SteelLance, Axereaver] GuardTileAI 
+UNIT 0x80 Archer Bone Level(4, Enemy, 1) [3,7] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Cavalier Bone Level(3, Enemy, 1) [14,13] 0x00 0x00 0x0 0x00 [IronBlade, Horseslayer] AttackInRangeAI 
+UNIT 0x80 WyvernRider Bone Level(2, Enemy, 1) [3,13] 0x00 0x00 0x0 0x00 [Spear, Horseslayer] AttackInRangeAI 
+UNIT Bone Shaman 0x00 Level(5, Enemy, 0) [7,8] 0x00 0x00 0x0 0x00 [Flux, Nosferatu] GuardTileAI 
+UNIT
+
 ALIGN 4
 
 BeginningScene:
-LOAD2 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+LOAD2 0x1 Units
 ENUN
-// GotoPrepScreen
+LOAD1 0x1 SexyPriest
+ENUN
+LOAD1 0x1 Bad
+ENUN
+NoFade
 ENDA
 
 EndingScene:
-MNCH 0x3
-NoFade
+MNCH 3
 ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET

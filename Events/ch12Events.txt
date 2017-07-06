@@ -4,7 +4,6 @@
 #include EAstdlib.event
 
 EventPointerTable(0x37,ThisChapter)
-// EventPointerTable(0xd1, ThisChapter)
 
 ThisChapter:
 POIN TurnBasedEvents
@@ -21,6 +20,7 @@ POIN BeginningScene EndingScene
 ALIGN 4
 
 TurnBasedEvents:
+TURN 0x00 BeginningScene [1,0] 0x0
 TURN 0x0 BrigandReinforcement [5,0] 0x0
 TURN 0x0 Brigand2Reinforcement [7,0] 0x0
 TURN 0x0 CavalierReinforcement [13,0] 0x0
@@ -34,23 +34,19 @@ END_MAIN
 
 RecruitTalk:
 MUSS 0x30
-Text(Ch12RecruitTalk)
+TEXT 0x817
 REMA
-CUSA Tye//Tye joins the party!
+CUSI Tye $00 //Tye joins the party!
 MURE 0x05 //Shifts back to map music
-NoFade
 ENDA
 
 LocationBasedEvents:
-Chest(BlueGem,2,2)
-Chest(HeroCrest,4,2)
-Chest(GuidingRing,6,2)
-Chest(Speedwings,26,4)
-Chest(Boots,28,15)
-Chest(Berserk,1,12)
-#ifdef __DEBUG__
-  Seize(2,23)
-#endif
+CHES 0x0 (BlueGem,2,2) 0x14
+CHES 0x0 (HeroCrest,4,2) 0x14
+CHES 0x0 (GuidingRing,6,2) 0x14
+CHES 0x0 (Speedwings,26,4) 0x14
+CHES 0x0 (Boots,28,15) 0x14
+CHES 0x0 (Berserk,1,12) 0x14
 END_MAIN
 
 BrigandReinforcement:
@@ -180,7 +176,9 @@ UNIT
 ALIGN 4
 
 BeginningScene:
-LOAD2 0x1 Good
+GotoPrepScreen
+ENDA
+LOAD2 0x0 Good
 ENUN
 LOAD1 0x1 NotCain
 ENUN
@@ -190,12 +188,11 @@ LOAD1 0x1 Badder
 ENUN
 LOAD1 0x1 Baddest
 ENUN
-GotoPrepScreen
 NoFade
 ENDA
 
 EndingScene:
-MNCH 13
+MNCH Ch13
 ENDA
 
 MESSAGE Events end at offset CURRENTOFFSET

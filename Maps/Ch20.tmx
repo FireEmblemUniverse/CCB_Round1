@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="15" height="25" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="1800191A" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Tilesets/FE8/1800191A.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="15" height="25">
+  <data encoding="base64" compression="zlib">
+   eJx9lDtOA0EMhmdngSIIRAInoEBKCrpsSGoQdQIddARxFGrgCkFCCm8KJGh5FCHkQeAEREIC7sBvzT9aZ7Wk+OSxPfZ47NHkQmNyoBUYU4U8AIfgKHS62HvWmD744Z4aySVir8A1uBkTu2icPIeeVbED8A4+mFvsj+ApiGM36JsFD7DlrcsjvkvrfGfQC1ivYF0GQ/q9LJMZ5pEznnnONG1FUAKTyHOszu9a5yuPISIT2FsJ49hlsMW8aUQJWVKxsu4g3z5kM4hpg1cb1+v3tNmDKvO9QG+AN+uQGQys63FR7dlkj32fJecvz+ipuL6KLTFWv4sac5Z5hx7P7Sdio39ifR9klufce8Y7F9R9Zf5t9iFj41511fxFryTmI7YpsEQpNX4Gzu7npOcQqbzJ+fv7RYkYH+dtOq+3+djTIJ2Mjfuk59thHyR2h/dIyu9g9G2LXld7JFa/CY3UtRC69TxzDZS/EYy+Q42vS/4FmXU+5X4+b5rMsc/ZMf7+GDkHuR2m+32NQ/493i76BX0ZVb+vQ/atgjVwYkf7Kvo6fS2VV9dRh74LvvguK0T0Pfr8X5ms+9Y47kz87oV7E/ukx82U+v8A01qxwA==
+  </data>
+ </layer>
+</map>

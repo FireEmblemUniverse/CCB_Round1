@@ -20,8 +20,11 @@ WorldMapPointerTable(0x17,WM_E)
 WorldMapPointerTable(0x10,WM_14)
 WorldMapPointerTable(0x11,WM_15)
 WorldMapPointerTable(0x12,WM_16)
-WorldMapPointerTable(0x3d,WM_B)
-WorldMapPointerTable(0x3e,WM_10)
+WorldMapPointerTable(0x13,WM_17)
+WorldMapPointerTable(0x14,WM_19)
+WorldMapPointerTable(0x15,WM_E)
+WorldMapPointerTable(0x38,WM_B)
+WorldMapPointerTable(0x39,WM_10)
 
 WM_1:
 WorldMap1(0x0)

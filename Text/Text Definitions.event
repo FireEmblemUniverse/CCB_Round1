@@ -208,4 +208,5 @@
 #define Ch4Intro 0x9ae
 #define C7LeftVillageText 0x9af
 #define C7RightVillageText 0x9b0
-#define Ch14TalkEvent 0x9b1
+#define Ch12RecruitTalk 0x9b1
+#define Ch14TalkEvent 0x9b2

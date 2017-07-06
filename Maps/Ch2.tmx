@@ -1,45 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="22" height="16" tilewidth="16" tileheight="16" nextobjectid="1">
- <tileset firstgid="1" name="42004344" tilewidth="16" tileheight="16">
-  <image source="Tilesets/FE8/42004344.png" width="512" height="512"/>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="16" height="14" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="01000203" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Tilesets/FE8/01000203.png" width="512" height="512"/>
  </tileset>
- <layer name="Main" width="22" height="16">
+ <layer name="Main" width="16" height="14">
   <properties>
    <property name="Anims1" value="5"/>
    <property name="ChapterID" value="2"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="0xc"/>
    <property name="MapID" value="0xb"/>
-   <property name="ObjectType" value="0x42"/>
-   <property name="PaletteID" value="0x43"/>
-   <property name="TileConfig" value="0x44"/>
+   <property name="ObjectType" value="0x1"/>
+   <property name="PaletteID" value="0x2"/>
+   <property name="TileConfig" value="0x3"/>
   </properties>
-  <data encoding="base64" compression="zlib">
-   eJxNlD1rVEEUhmdyCzHgB0SNMab2A8wmfhFIOiNEAm5Km1SJEEFh12qbpAkuCJKw+BNkozYp1dZCwqr7KVn9AxJFjYKsWvoezrPcWzzMvXfOnHnPO2duYyCEpmiJShLCRdEWTdERBb7thxCKoiBWxE7wuafR52sav4oJ1u8r30/xS4yTby7xPe6L11p/XvHzGm+Im6IePGY78TwWN877jmKLGg+LI+IounJiQZzV/KXo43fluSeeibvioL610JhnTZH6LHeDHB32WxEbietb1/olcU1siZIoi3ZI69hEn9VvuSbxrar3O9TeRq/Fm5dTYpp89rzKc1XsBd//IbqeR9+riHarI5ekMebpF625Kk5orqexK3YZ7dsVjbPiAj4VyLMXveY8Psyh97J9j173mjgePdet4Pn7e2R19z1p4WWOcyxQv/m5lKm5R77R4D6fEsOml7kxcRvd56J7ZzrfRD+3DwPpea+js8u6/pktc15lclnMInofiG/B/ZjEZ/Pgt/Ie0/N7PN3Fw0XyvVDMS/Eq8X1nMn5Mk3uLO5LHD/NgiPOaiF5rf80I+rqa+yg+Jb7PafGHvYfRX8/cuwV6rUHfDuLvWkjjm5ZDc3/Fv8R1LRNjZ/cEf/t3ZIMe3cYP64MzoqNvjxM/Y/NmPnr+RzH1eop6RvGgTv0VdObpB+vjWXTMoKNM378V16P3cynT02N4+k7Ugmus8r+p4IfpL2V0jBA/FL2nB+nnk8z36AXT8iOk/xC7y5t4UeOu9NCxmvFrEq+s1xuZHrS70r9zpvmQng+Q0/J9jun/5j8jqrA6
-  </data>
+  <data encoding="csv">
+402,264,270,99,99,685,654,103,112,104,99,721,783,808,809,810,
+402,402,402,338,338,200,99,199,338,391,207,99,721,840,841,842,
+403,306,232,721,784,231,338,232,99,721,231,200,99,872,873,874,
+272,99,869,802,739,801,99,685,654,569,99,231,338,338,272,99,
+272,801,99,642,99,641,99,802,801,565,770,801,99,199,232,783,
+272,645,721,802,99,801,802,784,721,601,99,645,99,397,721,783,
+272,801,802,721,869,655,855,856,857,601,99,801,784,231,206,721,
+295,391,209,274,200,685,887,888,889,629,598,721,99,199,238,99,
+721,269,270,231,306,200,919,920,921,721,601,199,338,232,99,721,
+571,35,35,598,721,231,306,308,784,99,601,362,99,808,809,810,
+721,231,272,629,539,598,597,571,598,597,630,71,81,840,841,842,
+99,199,232,99,721,629,630,869,629,630,721,113,104,872,873,874,
+721,397,199,391,203,273,838,263,200,199,338,338,200,199,232,99,
+783,231,232,99,235,305,305,302,231,232,783,721,301,302,99,721
+</data>
  </layer>
- <layer name="Village Destroyed" width="22" height="16" visible="0">
+ <layer name="NorthVillageDestroyed" width="16" height="14">
   <properties>
    <property name="Height" value="3"/>
-   <property name="ID" value="0"/>
+   <property name="ID" value="1"/>
    <property name="Width" value="3"/>
-   <property name="X" value="7"/>
-   <property name="Y" value="9"/>
+   <property name="X" value="13"/>
+   <property name="Y" value="0"/>
   </properties>
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUkAI2MzMwbAHirczUNfcy0LwrQHyVyuZ+Bpr3BYi/UtncUUA5AABpLweQ
-  </data>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,904,905,906,
+0,0,0,0,0,0,0,0,0,0,0,0,0,936,937,938,
+0,0,0,0,0,0,0,0,0,0,0,0,0,968,969,970,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
  </layer>
- <layer name="Village Saved" width="22" height="16" visible="0">
+ <layer name="NorthVillageSaved" width="16" height="14">
   <properties>
    <property name="Height" value="1"/>
-   <property name="ID" value="1"/>
+   <property name="ID" value="2"/>
    <property name="Width" value="1"/>
-   <property name="X" value="8"/>
+   <property name="X" value="14"/>
+   <property name="Y" value="2"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="SouthVillageDestroyed" width="16" height="14">
+  <properties>
+   <property name="Height" value="3"/>
+   <property name="ID" value="3"/>
+   <property name="Width" value="3"/>
+   <property name="X" value="13"/>
+   <property name="Y" value="9"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,904,905,906,
+0,0,0,0,0,0,0,0,0,0,0,0,0,936,937,938,
+0,0,0,0,0,0,0,0,0,0,0,0,0,968,969,970,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="SouthVillageSaved" width="16" height="14">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="4"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="14"/>
    <property name="Y" value="11"/>
   </properties>
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUDHcwlXmgXTAKsAEA970AmQ==
-  </data>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
  </layer>
 </map>

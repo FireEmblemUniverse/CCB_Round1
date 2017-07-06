@@ -33,8 +33,8 @@ WorldMapIntroPointerTable(0x20,SkipIntro)
 WorldMapIntroPointerTable(0x21,SkipIntro)
 WorldMapIntroPointerTable(0x22,SkipIntro)
 WorldMapIntroPointerTable(0x23,SkipIntro)
-WorldMapIntroPointerTable(0x3d,SkipIntro)
-WorldMapIntroPointerTable(0x3e,SkipIntro)
+WorldMapIntroPointerTable(0x38,SkipIntro)
+WorldMapIntroPointerTable(0x39,SkipIntro)
 
 SkipIntro: //just point all of them here, they're the same
 EVBIT_MODIFY 0x1
