@@ -1,2 +1,2 @@
-Discipline: Weapon experience[N]
-gains are doubled.[X]
+Pass: Can move through[N]
+enemy units.[X]

@@ -1,15 +1,15 @@
 EphraimLordSkillList:
-BYTE 1 OddRhythmID
+// BYTE 1 OddRhythmID
 BYTE 10 BondID
 BYTE 20 AetherID
 BYTE 00 00
 ALIGN 4
 
 EirikaLordSkillList:
-BYTE 1 LuckySevenID
-BYTE 10 EvenRhythmID
-BYTE 11 MoonbowID
-BYTE 20 AetherID
+BYTE 255 ShoveID
+// BYTE 10 EvenRhythmID
+BYTE 10 RightfulKingID
+BYTE 20 BondID
 BYTE 00 00
 ALIGN 4
 
@@ -299,6 +299,9 @@ BYTE 00 00
 ALIGN 4
 
 SoldierSkillList:
+BYTE 255 RepositionID
+BYTE 10 CamaraderieID
+BYTE 20 RallyStrID
 BYTE 00 00
 ALIGN 4
 

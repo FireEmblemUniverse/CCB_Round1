@@ -1,2 +1,2 @@
-Astra: 5 attacks at half damage.[N]
-(Skill % activation)[X]
+Acrobat: All traversable[N]
+terrain costs 1 movement.[X]

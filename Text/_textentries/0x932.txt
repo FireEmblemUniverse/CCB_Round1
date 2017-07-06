@@ -1,2 +1,2 @@
-Slayer: Deal effective damage[N]
-to monster units.[X]
+Warding Blow: +20 Res[N]
+when initiating battle.[X]

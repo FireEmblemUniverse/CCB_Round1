@@ -1,2 +1,2 @@
-Rally Speed: +4 Spd to[N]
-allies within 2 tiles.[X]
+Voice of Peace: Enemies within[N]
+2 tiles deal -2 damage.[X]

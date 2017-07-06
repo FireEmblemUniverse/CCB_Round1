@@ -1,2 +1,2 @@
-Pragmatic: When foe is not at full HP,[N]
-attack +3 and def/res+1.[X]
+Seal Luck: Debuff opponent's Luck[N]
+by 6 after combat. (Recover 1/turn)[X]

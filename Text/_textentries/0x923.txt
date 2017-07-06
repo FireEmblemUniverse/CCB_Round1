@@ -1,2 +1,2 @@
-Warding Blow: +20 Res[N]
-when initiating battle.[X]
+Luna: Negates enemy defenses.[N]
+(Skill % activation)[X]

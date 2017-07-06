@@ -1,2 +1,2 @@
-Colossus: Triples Strength.[N]
-(Skill % activation)[X]
+Gentilhomme: Female allies within[N]
+2 tiles receive -2 damage.[X]

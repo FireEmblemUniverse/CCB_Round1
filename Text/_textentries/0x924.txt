@@ -1,2 +1,2 @@
-Certain Blow: +40 Hit[N]
-when initiating battle.[X]
+Sol: Restore damage dealt as HP.[N]
+(Skill % activation)[X]

@@ -1,0 +1,13 @@
+
+PUSH
+  ORG $AC188
+  POIN NewDifficultyButtons
+POP
+
+NewDifficultyButtons:
+#incext Png2Dmp "difficulty.png" --lz77
+
+PUSH
+ORG 0x5926F4+(0x80*8)
+#incext Png2Dmp "blitzicon.png"
+POP

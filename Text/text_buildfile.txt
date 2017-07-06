@@ -5,7 +5,7 @@ HP Bars[.][X]
 Set health bar display[X]
 
 # 0x160 PrologueChName
-Boss Rush[X]
+IT BEGINS[X]
 
 #0x3A LearnedSkillText
 #first text ID in the free block
@@ -26,4 +26,11 @@ Learned  [X]
 Freeze all enemies[N]
 for one turn[X]
 
+##Name_BlitzLance
+Blitz Lance[X]
+
+#include "unitnames.txt"
+
 #include "skilldesc_text.txt"
+
+#include "chaptertext.txt"

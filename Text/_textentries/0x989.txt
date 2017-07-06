@@ -1,2 +1,2 @@
-Even Rhythm: +10 Hit and Avoid[N]
-on even numbered turns.[X]
+Killing Machine: Total critical[N]
+rate is doubled.[X]

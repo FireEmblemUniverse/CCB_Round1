@@ -1,2 +1,2 @@
-Nullify: Unit is protected[N]
-from all effective attacks.[X]
+Renewal: Restore 30% of max HP[N]
+at the start of each turn.[X]

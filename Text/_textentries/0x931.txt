@@ -1,1 +1,2 @@
-Crit Boost: +15 critical rate.[X]
+Darting Blow: +5 Attack Speed[N]
+when initiating battle.[X]

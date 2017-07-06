@@ -1,2 +1,2 @@
-Swordfaire: +4 damage[N]
-when equipping a sword.[X]
+Tomebreaker: +50 Hit/Avo when[N]
+enemy has a tome equipped.[X]

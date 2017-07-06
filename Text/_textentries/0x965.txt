@@ -1,2 +1,3 @@
-Lily's Poise: Adjacent allies gain[N]
-+1/-3 damage dealt/received.[X]
+Ignis: Add Def/2 and Res/2[N]
+to damage dealt.[N]
+(Skill % activation)[X]

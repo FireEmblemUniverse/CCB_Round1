@@ -1,3 +1,2 @@
-Despoil: Obtain a Red Gem after[N]
-attacking and defeating an enemy.[N]
-(Luck % activation)[X]
+Pragmatic: When foe is not at full HP,[N]
+attack +3 and def/res+1.[X]

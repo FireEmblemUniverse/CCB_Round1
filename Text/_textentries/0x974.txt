@@ -1,2 +1,2 @@
-Quick Draw: +4 Damage[N]
-when initiating battle.[X]
+Lily's Poise: Adjacent allies gain[N]
++1/-3 damage dealt/received.[X]

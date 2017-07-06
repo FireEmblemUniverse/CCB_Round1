@@ -1,2 +1,2 @@
-Smite: Allows unit to push[N]
-other units two tiles away.[X]
+Dragon's Blood: Unit is able[N]
+to activate Dragon Veins.[X]

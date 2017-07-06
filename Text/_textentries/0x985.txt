@@ -1,2 +1,2 @@
-Rightful King: +10% to[N]
-Skill activation rate.[X]
+Strong Riposte: When under[N]
+attack, damage +3. [X]

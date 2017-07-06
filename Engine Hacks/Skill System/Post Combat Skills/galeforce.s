@@ -12,6 +12,10 @@ ldrb	r0, [r4,#0x13]
 cmp	r0, #0x00
 beq	End
 
+ldrb    r0, [r5,#0x13]
+cmp    r0, #0x00
+bne    End
+
 @check if attacked this turn
 ldrb 	r0, [r6,#0x11]	@action taken this turn
 cmp	r0, #0x2 @attack

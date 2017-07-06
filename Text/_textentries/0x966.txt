@@ -1,2 +1,2 @@
-Expertise: Reduce bonus damage[N]
-from critical hits by 50%.[X]
+Life and Death: +10 to[N]
+damage dealt and taken.[X]

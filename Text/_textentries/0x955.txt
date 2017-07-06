@@ -1,2 +1,2 @@
-Live to Serve: When healing[N]
-an ally, also heals self.[X]
+Nullify: Unit is protected[N]
+from all effective attacks.[X]

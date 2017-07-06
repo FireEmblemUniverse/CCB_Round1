@@ -1,2 +1,2 @@
-Malefic Aura: Enemies within 2[N]
-tiles receive +2 magic damage.[X]
+Swordfaire: +4 damage[N]
+when equipping a sword.[X]

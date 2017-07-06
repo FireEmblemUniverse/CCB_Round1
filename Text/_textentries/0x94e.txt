@@ -1,2 +1,2 @@
-Rally Luck: +4 Luck to[N]
-allies within 2 tiles.[X]
+Amaterasu: Allies within 2 tiles[N]
+recover 20% HP each turn.[X]

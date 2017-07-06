@@ -1,2 +1,2 @@
-Pursuit: When under attack,[N]
-attack speed +2. [X]
+Elbow Room: +3 damage dealt[N]
+when on open terrain.[X]

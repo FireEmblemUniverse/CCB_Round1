@@ -1,2 +1,1 @@
-Strong Riposte: When under[N]
-attack, damage +3. [X]
+Celerity: Movement +2.[X]

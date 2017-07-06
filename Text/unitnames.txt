@@ -1,0 +1,46 @@
+##Name_Void
+Void[X]
+
+##Desc_Void
+knoll much[X]
+
+##Name_Tim
+Tim[X]
+
+##Desc_Tim
+His friends call[N]
+him Timathan.[X]
+
+##Name_Tam
+Tam[X]
+
+##Desc_Tam
+Secretly wishes he[N]
+was a necromancer.[X]
+
+##Name_Jerome
+Jerome[X]
+
+##Desc_Jerome
+You want a playable soldier?[X]
+
+##Name_Leeroy
+Leeroy[X]
+
+##Desc_Leeroy
+His father was also[N]
+named after a meme.[X]
+
+##Name_Anna
+Anna[X]
+
+##Desc_Anna
+Donate to Circles[X]
+
+##Name_Bede
+Bede[X]
+
+##Desc_Bede
+Some dude idk[X]
+
+

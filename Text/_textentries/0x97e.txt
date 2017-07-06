@@ -1,2 +1,2 @@
-Armsthrift: Luck % chance to not[N]
-consume weapon durability.[X]
+Seal Defense: Debuff opponent's Def[N]
+by 6 after combat. (Recover 1/turn)[X]

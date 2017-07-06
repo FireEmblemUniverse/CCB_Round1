@@ -1,2 +1,2 @@
-Axefaire: +4 damage[N]
-when equipping an axe.[X]
+Pavise: Nullify a physical attack.[N]
+(Skill % activation)[X]

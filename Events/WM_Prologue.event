@@ -15,10 +15,13 @@ WorldMapPointerTable(0xb,WM_A)
 WorldMapPointerTable(0xc,WM_B)
 WorldMapPointerTable(0xd,WM_C)
 WorldMapPointerTable(0xe,WM_D)
+WorldMapPointerTable(0xf,WM_13)
 WorldMapPointerTable(0x17,WM_E)
-WorldMapPointerTable(0x10,WM_F)
-WorldMapPointerTable(0x11,WM_10)
-WorldMapPointerTable(0x12,WM_11)
+WorldMapPointerTable(0x10,WM_14)
+WorldMapPointerTable(0x11,WM_15)
+WorldMapPointerTable(0x12,WM_16)
+WorldMapPointerTable(0x3d,WM_B)
+WorldMapPointerTable(0x3e,WM_10)
 
 WM_1:
 WorldMap1(0x0)
@@ -54,6 +57,22 @@ WM_10:
 WorldMap1(0x10)
 WM_11:
 WorldMap1(0x11)
+WM_12:
+WorldMap1(0x12)
+WM_13:
+WorldMap1(0x13)
+WM_14:
+WorldMap1(0x14)
+WM_15:
+WorldMap1(0x15)
+WM_16:
+WorldMap1(0x16)
+WM_17:
+WorldMap1(0x17)
+WM_18:
+WorldMap1(0x18)
+WM_19:
+WorldMap1(0x19)
 
 PUSH
 ORG $2060ba

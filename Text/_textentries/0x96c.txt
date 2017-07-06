@@ -1,2 +1,2 @@
-Seal Skill: Debuff opponent's Skl[N]
-by 6 after combat. (Recover 1/turn)[X]
+Camaraderie: Recover 10% HP each turn[N]
+if there are allies within 2 tiles.[X]

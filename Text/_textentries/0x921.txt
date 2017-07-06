@@ -1,2 +1,2 @@
-Death Blow: +20 Crit[N]
-when initiating battle.[X]
+Lethality: Instantly kill opponent.[N]
+(Skill/2 % activation)[X]

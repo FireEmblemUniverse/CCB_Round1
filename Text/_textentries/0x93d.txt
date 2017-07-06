@@ -1,2 +1,2 @@
-Charm: Allies within 2[N]
-tiles deal +2 damage.[X]
+Axefaire: +4 damage[N]
+when equipping an axe.[X]

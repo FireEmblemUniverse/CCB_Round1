@@ -1,2 +1,2 @@
-Wind Disciple: +10 Hit and[N]
-Avoid when HP is not at max.[X]
+Expertise: Reduce bonus damage[N]
+from critical hits by 50%.[X]

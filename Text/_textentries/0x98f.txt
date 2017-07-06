@@ -1,2 +1,2 @@
-Swap: Allows unit to swap positions[N]
-with an adjacent ally.[X]
+Shove: Allows unit to push[N]
+other units one tile away.[X]

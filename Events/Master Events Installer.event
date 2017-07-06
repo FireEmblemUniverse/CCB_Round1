@@ -44,6 +44,44 @@ ALIGN 4
 {
   #include "Ch10.event"
 }
+ALIGN 4
 {
   #include "Ch11.event"
 }
+ALIGN 4
+{
+  #include "Ch12.event"
+}
+ALIGN 4
+{
+  #include "Ch13.event"
+}
+ALIGN 4
+{
+  #include "Ch14.event"
+}
+ALIGN 4
+{
+  #include "Ch15.event"
+}
+ALIGN 4
+{
+  #include "Ch16.event"
+}
+ALIGN 4
+{
+  #include "Ch17.event"
+}
+ALIGN 4
+{
+  #include "Ch18.event"
+}
+ALIGN 4
+{
+  #include "Ch19.event"
+}
+ALIGN 4
+{
+  #include "Ch20.event"
+}
+ALIGN 4

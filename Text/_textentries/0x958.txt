@@ -1,2 +1,2 @@
-Locktouch: Can open locks[N]
-without keys or picks.[X]
+Colossus: Triples Strength.[N]
+(Skill % activation)[X]

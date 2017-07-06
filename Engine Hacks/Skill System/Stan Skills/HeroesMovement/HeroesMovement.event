@@ -61,7 +61,9 @@ prSwap_TargetLegality:
 
 prShove_TargetLegality:
 prSmite_TargetLegality:
-	SHORT 0x2001 0x4770 // Targets are always legal by default
+    rGetWrapper // Defaults to 0
+        rIfUnitHasNotGuardAI
+            rConstant(True)
 
 #include "HeroesMovement_Internal.event"
 

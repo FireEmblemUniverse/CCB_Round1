@@ -1,2 +1,2 @@
-Lifetaker: Restore up to 50% HP after[N]
-attacking and defeating an enemy.[X]
+Vantage: If HP < 50%,[N]
+strike first when attacked.[X]

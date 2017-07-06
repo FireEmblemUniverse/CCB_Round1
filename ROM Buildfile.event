@@ -15,6 +15,10 @@
     #include "Engine Hacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
 
+    //Graphics
+    #include "Mugs/Mug Installer.event"
+    #include "Graphics/Master Graphics Installer.event"
+
     //Events
     #include "Events/Master Events Installer.event"
     #include "Events/World Map Events Installer.event"
@@ -23,7 +27,7 @@
     #include "Maps/Master Map Installer.event"
     
     MESSAGE Used free space ends at currentOffset
-    MESSAGE Proc_Counter
+    MESSAGE GaleforceRoutine at Galeforce
 #else
     ERROR You are not assembling FE8 events!
 #endif

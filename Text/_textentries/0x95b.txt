@@ -1,2 +1,2 @@
-Opportunist: +4 damage[N]
-if the foe cannot counter.[X]
+Rally Skill: +4 Skill[N]
+to allies within 2 tiles.[X]

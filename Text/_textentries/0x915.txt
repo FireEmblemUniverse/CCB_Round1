@@ -1,2 +1,2 @@
-Sol: Restore damage dealt as HP.[N]
-(Skill % activation)[X]
+Savior: Can rescue[N]
+without penalties.[X]

@@ -1,2 +1,2 @@
-Summon: Can conjure a phantom[N]
-soldier to fight alongside you.[X]
+Certain Blow: +40 Hit[N]
+when initiating battle.[X]

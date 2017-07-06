@@ -1,2 +1,2 @@
-Vantage: If HP < 50%,[N]
-strike first when attacked.[X]
+Astra: 5 attacks at half damage.[N]
+(Skill % activation)[X]

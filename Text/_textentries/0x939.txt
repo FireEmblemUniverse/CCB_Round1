@@ -1,2 +1,2 @@
-Demoiselle: Male allies within[N]
-2 tiles receive -2 damage.[X]
+Countermagic: Magic damage taken[N]
+at 1-2 range is reflected.[X]

@@ -1,2 +1,2 @@
-Seal Luck: Debuff opponent's Luck[N]
-by 6 after combat. (Recover 1/turn)[X]
+Savage Blow: After attacking, enemies[N]
+within 2 tiles take 20% damage.[X]

@@ -1,2 +1,2 @@
-Rally Strength: +4 Str[N]
-to allies within 2 tiles.[X]
+Malefic Aura: Enemies within 2[N]
+tiles receive +2 magic damage.[X]

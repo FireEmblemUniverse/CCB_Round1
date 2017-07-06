@@ -1,2 +1,2 @@
-Duelist's Blow: +30 Avo[N]
-when initiating battle.[X]
+Cunning: Can steal items, pick[N]
+locks, and see in darkness.[X]

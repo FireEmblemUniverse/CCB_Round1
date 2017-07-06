@@ -1,2 +1,2 @@
-Nihil: Cancels the opponent's[N]
-skills in combat.[X]
+Galeforce: Move again after[N]
+attacking and defeating an enemy.[X]
