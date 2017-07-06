@@ -1,1 +1,2 @@
-Crit Boost: +15 critical rate.[X]
+Desperation: If HP < 50%,[N]
+double attacks occur immediately.[X]

@@ -1,2 +1,2 @@
-Tomefaire: +4 damage[N]
-when equipping a tome.[X]
+Vantage: If HP < 50%,[N]
+strike first when attacked.[X]

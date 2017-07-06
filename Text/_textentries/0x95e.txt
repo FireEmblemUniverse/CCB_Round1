@@ -1,2 +1,2 @@
-Rally Defense: +4 Def to[N]
-allies within 2 tiles.[X]
+Nihil: Cancels the opponent's[N]
+skills in combat.[X]

@@ -20,7 +20,9 @@ END_MAIN
 
 LocationBasedEvents:
 Seize(15,1)
-Seize(13,12)
+#ifdef __DEBUG__
+  Seize(13,12)
+#endif
 END_MAIN
 
 MiscBasedEvents:

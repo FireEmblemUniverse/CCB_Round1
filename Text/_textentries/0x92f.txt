@@ -1,2 +1,3 @@
-Duelist's Blow: +30 Avo[N]
-when initiating battle.[X]
+Aether: First strike absorbs HP,[N]
+second strike negates defenses.[N]
+(Skill/2 % activation)[X]

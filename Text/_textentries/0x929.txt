@@ -1,2 +1,2 @@
-Lancebreaker: +50 Hit/Avo when[N]
-enemy has a lance equipped.[X]
+Canto: Can move again[N]
+after certain actions.[X]

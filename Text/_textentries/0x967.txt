@@ -1,2 +1,2 @@
-Locktouch: Can open locks[N]
-without keys or picks.[X]
+Rally Luck: +4 Luck to[N]
+allies within 2 tiles.[X]

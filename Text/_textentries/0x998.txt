@@ -1,2 +1,2 @@
-Even Rhythm: +10 Hit and Avoid[N]
-on even numbered turns.[X]
+Moonbow: Enemy Def/Res is[N]
+reduced by 25%. Charge: 2[X]

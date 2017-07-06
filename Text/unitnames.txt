@@ -41,6 +41,37 @@ Donate to Circles[X]
 Bede[X]
 
 ##Desc_Bede
-Some dude idk[X]
+placeholder[X]
 
+##Name_Jay
+Jay[X]
 
+##Desc_Jay
+An old veteran of the Renegade[N]
+translation era. Got the tools down.[X]
+
+##Name_NotArch
+Not Arch[X]
+
+##Desc_NotArch
+His divine lightning[N]
+will pierce your face.[X]
+
+##Name_Kirsten
+Kirsten[X]
+
+##Desc_Kirsten
+oy u best lisen ere m8 il giv u[N]
+a proper bashin u cheeky bruv[X]
+
+##Name_Bob
+Bob[X]
+
+##Desc_Bob
+placeholder[X]
+
+##Name_Roshea
+Roshea[X]
+
+##Desc_Roshea
+placeholder[X]

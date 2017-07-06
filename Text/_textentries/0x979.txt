@@ -1,2 +1,2 @@
-Natural Cover: -3 damage taken[N]
-when on terrain with effects.[X]
+Relief: Recover 20% HP each turn if[N]
+there are no allies within 2 tiles.[X]

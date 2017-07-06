@@ -1,2 +1,2 @@
-Killing Machine: Total critical[N]
-rate is doubled.[X]
+Seal Resistance: Debuff opponent's Res[N]
+by 6 after combat. (Recover 1/turn)[X]

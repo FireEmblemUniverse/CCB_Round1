@@ -1,2 +1,2 @@
-Dragon's Blood: Unit is able[N]
-to activate Dragon Veins.[X]
+Fiery Blood: +4 damage[N]
+when HP is not at max.[X]

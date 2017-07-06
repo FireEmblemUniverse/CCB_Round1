@@ -1,2 +1,2 @@
-Astra: 5 attacks at half damage.[N]
-(Skill % activation)[X]
+Provoke: Enemies are more[N]
+likely to target this unit.[X]

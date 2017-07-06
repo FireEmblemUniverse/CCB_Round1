@@ -1,4 +1,4 @@
-EventPointerTable(0x27, PointerList)
+EventPointerTable(0x2a, PointerList)
 
 PointerList:
 POIN TurnBasedEvents

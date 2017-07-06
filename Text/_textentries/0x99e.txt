@@ -1,2 +1,2 @@
-Swap: Allows unit to swap positions[N]
-with an adjacent ally.[X]
+Rightful King: +10% to[N]
+Skill activation rate.[X]

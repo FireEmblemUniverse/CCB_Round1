@@ -1,2 +1,2 @@
-Galeforce: Move again after[N]
-attacking and defeating an enemy.[X]
+Swordfaire: +4 damage[N]
+when equipping a sword.[X]

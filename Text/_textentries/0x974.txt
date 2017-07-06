@@ -1,2 +1,2 @@
-Lily's Poise: Adjacent allies gain[N]
-+1/-3 damage dealt/received.[X]
+Opportunist: +4 damage[N]
+if the foe cannot counter.[X]

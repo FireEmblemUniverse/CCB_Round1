@@ -1,2 +1,2 @@
-Charm: Allies within 2[N]
-tiles deal +2 damage.[X]
+Summon: Can conjure a phantom[N]
+soldier to fight alongside you.[X]

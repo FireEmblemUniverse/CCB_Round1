@@ -1,2 +1,2 @@
-Patience: When under[N]
-attack, avoid +10. [X]
+Seal Speed: Debuff opponent's Spd[N]
+by 6 after combat. (Recover 1/turn)[X]

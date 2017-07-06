@@ -1,2 +1,2 @@
-Sol: Restore damage dealt as HP.[N]
-(Skill % activation)[X]
+Wary Fighter: Unit cannot[N]
+double or be doubled.[X]

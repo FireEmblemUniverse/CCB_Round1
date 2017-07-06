@@ -4,3 +4,10 @@ Void_Mug:
 #incext PortraitFormatter "virginia.png"
 setMugEntry(0x2, Void_Mug, 2, 6, 3, 4)
 
+Tim_Mug:
+#incext PortraitFormatter "Tim.png"
+setMugEntry(0x7, Tim_Mug, 2,5,2,3)
+
+Tam_Mug:
+#incext PortraitFormatter "Tam.png"
+setMugEntry(0x5, Tam_Mug, 2,5,2,3)

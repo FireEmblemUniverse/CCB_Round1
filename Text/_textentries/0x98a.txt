@@ -1,2 +1,2 @@
-Critical Force: Base critical is[N]
-Skl * 1.5.[X]
+Gamble: A reckless attack with[N]
+halved hit but doubled crit.[X]

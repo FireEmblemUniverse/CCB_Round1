@@ -1,2 +1,2 @@
-Armsthrift: Luck % chance to not[N]
-consume weapon durability.[X]
+Quick Draw: +4 Damage[N]
+when initiating battle.[X]

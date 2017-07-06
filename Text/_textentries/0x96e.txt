@@ -1,2 +1,2 @@
-Savage Blow: After attacking, enemies[N]
-within 2 tiles take 20% damage.[X]
+Live to Serve: When healing[N]
+an ally, also heals self.[X]

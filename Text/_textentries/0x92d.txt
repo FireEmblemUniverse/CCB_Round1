@@ -1,2 +1,2 @@
-Aegis: Nullify a magic attack.[N]
+Luna: Negates enemy defenses.[N]
 (Skill % activation)[X]

@@ -1,2 +1,2 @@
-Nihil: Cancels the opponent's[N]
-skills in combat.[X]
+Malefic Aura: Enemies within 2[N]
+tiles receive +2 magic damage.[X]

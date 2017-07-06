@@ -1,2 +1,2 @@
-Slayer: Deal effective damage[N]
-to monster units.[X]
+Wrath: If HP < 50%,[N]
++20 critical rate.[X]

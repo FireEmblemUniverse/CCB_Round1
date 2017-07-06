@@ -1,2 +1,2 @@
-Amaterasu: Allies within 2 tiles[N]
-recover 20% HP each turn.[X]
+Lifetaker: Restore up to 50% HP after[N]
+attacking and defeating an enemy.[X]

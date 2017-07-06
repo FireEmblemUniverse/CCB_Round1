@@ -1,2 +1,2 @@
-Axefaire: +4 damage[N]
-when equipping an axe.[X]
+Certain Blow: +40 Hit[N]
+when initiating battle.[X]

@@ -1,2 +1,2 @@
-Foreign Princess: Foreign army units[N]
-take -2/+2 damage dealt/taken.[X]
+Staff Savant: Maximum range[N]
+of staves is increased by 1.[X]

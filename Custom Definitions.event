@@ -25,6 +25,6 @@
 #define Bede 7
 #define Jay 8
 #define Bob 9
-#define Kirsten 10
-#define Edge 11
+#define NotArch 10
+#define Kirsten 11
 #define Roshea 12

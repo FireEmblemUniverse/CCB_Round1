@@ -1,2 +1,2 @@
-Elbow Room: +3 damage dealt[N]
-when on open terrain.[X]
+Savage Blow: After attacking, enemies[N]
+within 2 tiles take 20% damage.[X]

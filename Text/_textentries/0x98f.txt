@@ -1,2 +1,2 @@
-Shove: Allows unit to push[N]
-other units one tile away.[X]
+Strong Riposte: When under[N]
+attack, damage +3. [X]

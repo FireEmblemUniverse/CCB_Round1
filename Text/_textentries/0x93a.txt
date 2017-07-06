@@ -1,2 +1,2 @@
-Miracle: Survive a lethal[N]
-attack if HP > 50%.[X]
+Death Blow: +20 Crit[N]
+when initiating battle.[X]

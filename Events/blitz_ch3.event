@@ -1,0 +1,103 @@
+#include EAstdlib.event
+
+EventPointerTable(0x14,ThisChapter)
+
+ORG 0xwherever
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+Units:
+UNIT Eirika EphraimLord 0x00 Level(1, Ally, 0) [13,6] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [13,5] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Gilliam EphraimLord 0x00 Level(1, Ally, 0) [12,5] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Franz EphraimLord 0x00 Level(1, Ally, 0) [14,4] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Moulder EphraimLord 0x00 Level(1, Ally, 0) [14,5] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Vanessa EphraimLord 0x00 Level(1, Ally, 0) [13,4] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Vanessa EphraimLord 0x00 Level(1, Ally, 0) [14,7] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Bazba Paladin 0x00 Level(4, Enemy, 1) [0,1] 0x00 0x00 0x0 0x00 [SteelSword, Horseslayer] AttackInRangeAI 
+UNIT Mansel Cavalier 0x00 Level(3, Enemy, 1) [0,7] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI 
+UNIT Mansel Cavalier 0x00 Level(3, Enemy, 1) [7,1] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI 
+UNIT Mansel Cavalier 0x00 Level(3, Enemy, 1) [8,7] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI 
+UNIT Mansel Cavalier 0x00 Level(3, Enemy, 1) [2,3] 0x00 0x00 0x0 0x00 [Javelin] PursueWithoutHeedAI 
+UNIT Mansel Thief 0x00 Level(3, Enemy, 1) [2,6] 0x00 0x00 0x0 0x00 [PoisonSword] BrigandAI 
+UNIT Mansel Pirate 0x00 Level(6, Enemy, 1) [12,9] 0x2 0x00 0x0 0x00 [DevilAxe] PursueWithoutHeedAI 
+UNIT
+
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(0x7,JayGet,6,7)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units
+ENUN
+FADI 10
+MUSC 0x20
+Text(0x02,Ch3Start)
+REMA
+Text(0x09,Ch3SecondScene)
+REMA
+ENDA
+
+EndingScene:
+MUSC 0x10
+Text(Ch3Ending)
+ENDA
+
+// Events
+JayGet:
+MUSC 0x30 //recruitment
+LOAD1 0x1 Jay
+ENUN
+Text(GettingJay)
+REMA
+ENDA
+
+
+// Manual Movement
+
+// Scripted Fights
+
+// Units
+Jay:
+UNIT Neimi Archer 0x00 Level(5, Ally, 0) [6,8] 0x00 0x00 0x0 0x00 [KillerBow, Vulnerary] NoAI 
+UNIT
+
+
+// Shop Data
+
+MESSAGE Events end at offset currentOffset

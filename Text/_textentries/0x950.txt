@@ -1,2 +1,2 @@
-Spur Magic: Adjacent allies[N]
-deal +4 magical damage.[X]
+Renewal: Restore 30% of max HP[N]
+at the start of each turn.[X]

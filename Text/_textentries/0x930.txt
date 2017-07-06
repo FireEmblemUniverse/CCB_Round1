@@ -1,2 +1,2 @@
-Death Blow: +20 Crit[N]
-when initiating battle.[X]
+Astra: 5 attacks at half damage.[N]
+(Skill % activation)[X]

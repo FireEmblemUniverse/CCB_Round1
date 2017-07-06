@@ -1,2 +1,2 @@
-Voice of Peace: Enemies within[N]
-2 tiles deal -2 damage.[X]
+Dance: Refresh an ally unit[N]
+to let them act again.[X]

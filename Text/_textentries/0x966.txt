@@ -1,2 +1,2 @@
-Life and Death: +10 to[N]
-damage dealt and taken.[X]
+Rally Speed: +4 Spd to[N]
+allies within 2 tiles.[X]

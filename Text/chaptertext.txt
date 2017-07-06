@@ -4,3 +4,36 @@ The Demon King killed my family[N]
 and took over my country![AN]
 To get to him I need[N]
 to go through you![A][X]
+
+
+##Ch3Start
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
+##Ch3SecondScene
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
+##Ch3Ending
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
+##GettingJay
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
+##Ch4Intro
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
+##C7LeftVillageText
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
+##C7RightVillageText
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
+##Ch14TalkEvent
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]

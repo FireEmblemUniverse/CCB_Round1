@@ -1,2 +1,2 @@
-Seal Speed: Debuff opponent's Spd[N]
-by 6 after combat. (Recover 1/turn)[X]
+Bond: All allies within 3 tiles[N]
+recover 10% HP each turn.[X]

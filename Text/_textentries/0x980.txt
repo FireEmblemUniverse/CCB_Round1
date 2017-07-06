@@ -1,2 +1,1 @@
-Gamble: A reckless attack with[N]
-halved hit but doubled crit.[X]
+Celerity: Movement +2.[X]

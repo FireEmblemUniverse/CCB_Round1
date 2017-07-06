@@ -20,6 +20,7 @@
     #include "Graphics/Master Graphics Installer.event"
 
     //Events
+    #define __DEBUG__ //allow seizes at start of chapters
     #include "Events/Master Events Installer.event"
     #include "Events/World Map Events Installer.event"
 

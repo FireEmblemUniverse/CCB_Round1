@@ -1,2 +1,2 @@
-Trample: +5 damage to[N]
-unmounted units.[X]
+Rally Spectrum: +2 all stats[N]
+to allies within 2 tiles.[X]

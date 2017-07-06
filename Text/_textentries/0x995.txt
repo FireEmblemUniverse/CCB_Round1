@@ -1,2 +1,2 @@
-Rightful God: +30% to[N]
-Skill activation rate.[X]
+Chivalry: When foe is at full HP,[N]
+attack and def/res +2.[X]

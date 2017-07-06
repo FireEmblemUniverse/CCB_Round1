@@ -1,2 +1,2 @@
-Pavise: Nullify a physical attack.[N]
+Sol: Restore damage dealt as HP.[N]
 (Skill % activation)[X]

@@ -1,2 +1,2 @@
-Opportunist: +4 damage[N]
-if the foe cannot counter.[X]
+Rally Movement: +1 Move[N]
+to allies within 2 tiles.[X]

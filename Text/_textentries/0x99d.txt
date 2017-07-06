@@ -1,2 +1,2 @@
-Reposition: Allows unit to pull an[N]
-adjacent ally to its opposite side.[X]
+Rightful Arch: Sets Skill[N]
+activation rate to 100%.[X]

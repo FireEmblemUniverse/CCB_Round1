@@ -1,2 +1,2 @@
-Gentilhomme: Female allies within[N]
-2 tiles receive -2 damage.[X]
+Tomefaire: +4 damage[N]
+when equipping a tome.[X]
