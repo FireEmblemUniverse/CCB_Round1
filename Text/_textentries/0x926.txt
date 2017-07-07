@@ -1,2 +1,2 @@
-Provoke: Enemies are more[N]
-likely to target this unit.[X]
+Frenzy: For every 4 damage[N]
+taken, +1 to damage dealt.[X]

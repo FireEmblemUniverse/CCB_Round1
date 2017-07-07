@@ -1,2 +1,2 @@
-Sol: Restore damage dealt as HP.[N]
+Astra: 5 attacks at half damage.[N]
 (Skill % activation)[X]

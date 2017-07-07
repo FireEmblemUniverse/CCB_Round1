@@ -1,2 +1,2 @@
-Rally Skill: +4 Skill[N]
-to allies within 2 tiles.[X]
+Rally Luck: +4 Luck to[N]
+allies within 2 tiles.[X]

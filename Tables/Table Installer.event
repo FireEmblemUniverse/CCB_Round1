@@ -42,6 +42,10 @@
 
 #include "FE8 Nightmare modules\Item editors\Stat Bonuses Editor.event"
 
+#include "FE8 Nightmare modules\Quote editors\Boss Quote Editor.event"
+
+#include "FE8 Nightmare modules\Quote editors\Death Quote Editor.event"
+
 #include "FE8 Nightmare modules\World Map Editors\Path Connections Editor.event"
 
 #include "FE8 Nightmare modules\World Map Editors\World map locations.event"

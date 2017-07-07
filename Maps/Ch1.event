@@ -2,51 +2,26 @@
 
 #include eastdlib.event
 
-SetChapterData(1,0x18,0,0x48,0x1a,0x8,Map,0x1c,0,0x9)
-EventPointerTable(0x9, MapChanges)
+SetChapterData(1,1,0,2,3,8,Map,5,0,9)
+EventPointerTable(9, MapChanges)
 Map:
 #incbin "Ch1_data.dmp"
 
 MapChanges:
-TileMap(4,2,11,3,1,Left_Room_Door)
-TileMap(1,2,9,1,1,Left_Room_Left_Chest)
-TileMap(2,4,9,1,1,Left_Room_Right_Chest)
-TileMap(3,16,10,2,2,Right_Room_Door)
-TileMap(5,18,11,1,1,Right_Room_Left_Chest)
-TileMap(6,20,11,1,1,Right_Room_Right_Chest)
-TileMap(7,17,13,2,2,Wall1)
-TileMap(0,16,5,3,2,Throne_Room_Door)
+TileMap(0,13,1,3,3,Village_Destroyed)
+TileMap(1,14,3,1,1,Village_Saved)
+TileMap(2,18,23,1,1,Chest_Opened)
 TileMapEnd
 
-Left_Room_Door:
-SHORT 0x6b4 0xb40 0x6b0 
+Village_Destroyed:
+SHORT 0xe1c 0xe20 0xe24 0xe9c 0xea0 0xea4 0xf1c 0xf20 0xf24 
 ALIGN 4
 
-Left_Room_Left_Chest:
+Village_Saved:
+SHORT 0x80 
+ALIGN 4
+
+Chest_Opened:
 SHORT 0x4 
-ALIGN 4
-
-Left_Room_Right_Chest:
-SHORT 0x4 
-ALIGN 4
-
-Right_Room_Door:
-SHORT 0xce0 0xd48 0x728 
-ALIGN 4
-
-Right_Room_Left_Chest:
-SHORT 0x4 
-ALIGN 4
-
-Right_Room_Right_Chest:
-SHORT 0x4 
-ALIGN 4
-
-Wall1:
-SHORT 0xcd0 0x6b0 0xcd4 0xce0 
-ALIGN 4
-
-Throne_Room_Door:
-SHORT 0x6b4 0xc40 0x6b0 0xce0 0xcd4 0xce0 
 ALIGN 4
 

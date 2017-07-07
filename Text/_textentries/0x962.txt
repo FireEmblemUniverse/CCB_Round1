@@ -1,2 +1,2 @@
-Colossus: Triples Strength.[N]
-(Skill % activation)[X]
+Rally Magic: +4 Mag to[N]
+allies within 2 tiles.[X]

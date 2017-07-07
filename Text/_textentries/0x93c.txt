@@ -1,2 +1,2 @@
-Warding Blow: +20 Res[N]
+Armored Blow: +10 Def[N]
 when initiating battle.[X]

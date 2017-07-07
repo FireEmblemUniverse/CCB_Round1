@@ -1,2 +1,3 @@
-Shove: Allows unit to push[N]
-other units one tile away.[X]
+Down with Arch: If the hit lands,[N]
+instantly kill the enemy unit.[N]
+(Only if name starts with "Arch")[X]

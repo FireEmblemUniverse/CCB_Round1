@@ -1,2 +1,2 @@
-Spur Resistance: Adjacent allies[N]
-take -4 magical damage.[X]
+Nullify: Unit is protected[N]
+from all effective attacks.[X]

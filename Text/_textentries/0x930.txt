@@ -1,2 +1,2 @@
-Astra: 5 attacks at half damage.[N]
-(Skill % activation)[X]
+Swordbreaker: +50 Hit/Avo when[N]
+enemy has a sword equipped.[X]

@@ -1,2 +1,2 @@
-Life and Death: +10 to[N]
-damage dealt and taken.[X]
+Lunge: Swap places with the[N]
+opponent after combat.[X]

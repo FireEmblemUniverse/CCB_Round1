@@ -1,2 +1,2 @@
-Lifetaker: Restore up to 50% HP after[N]
-attacking and defeating an enemy.[X]
+Renewal: Restore 30% of max HP[N]
+at the start of each turn.[X]

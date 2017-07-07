@@ -34,6 +34,9 @@
 #include "Ch20.event"
 }
 {
+#include "Ch24.event"
+}
+{
 #include "Ch3.event"
 }
 {

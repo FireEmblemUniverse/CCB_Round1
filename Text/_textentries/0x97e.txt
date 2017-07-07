@@ -1,2 +1,1 @@
-Lily's Poise: Adjacent allies gain[N]
-+1/-3 damage dealt/received.[X]
+Celerity: Movement +2.[X]

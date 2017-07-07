@@ -1,2 +1,2 @@
-Odd Rhythm: +10 Hit and Avoid[N]
-on odd numbered turns.[X]
+Quick Burn: +15 Hit and Avoid.[N]
+This bonus decreases each turn.[X]

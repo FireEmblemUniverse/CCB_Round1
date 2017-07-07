@@ -1,2 +1,2 @@
-Locktouch: Can open locks[N]
-without keys or picks.[X]
+Intimidate: -10 Avoid to[N]
+all enemies within 2 tiles.[X]

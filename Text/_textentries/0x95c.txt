@@ -1,2 +1,2 @@
-Spur Defense: Adjacent allies[N]
-take -4 physical damage.[X]
+Nihil: Cancels the opponent's[N]
+skills in combat.[X]

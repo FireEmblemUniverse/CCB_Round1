@@ -1,2 +1,2 @@
-Adept: Gain a consecutive attack.[N]
-(Speed % activation)[X]
+Pass: Can move through[N]
+enemy units.[X]

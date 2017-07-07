@@ -1,0 +1,40 @@
+## Name_Anna
+Anna[X]
+
+## Desc_Anna
+A girl with a familiar face.[N]
+Her love of money is quite strong.[X]
+
+## Desc_Breguet
+An innocent child...[N]
+With some hormonal problems.[X]
+
+## CH1Anna1
+[MidLeft][LoadFace][CurrentPortrait]
+[MidRight][LoadFace][0x64][0x1]
+I'm a Secret Unit.[A][N]
+If you want to recruit me you[N]
+need to bring me a Member Card.[A][X]
+
+## CH1Anna2
+[MidLeft][LoadFace][CurrentPortrait]
+[MidRight][LoadFace][0x64][0x1]
+I'll take that card from you.[A][X]
+
+## CH1Anna3
+Lost the Member Card[X]
+
+## CH1Village
+You can't cross the village[N]
+without bringing the kid.[A][X]
+
+## CH1Kid
+The kid destroyed the village[X]
+
+## CH1Opening
+You need to get to the other side of[N]
+the village, but you can't cross if[N]
+you aren't rescuing the kid.[A][X]
+
+## CH1Chest
+Note: There are no Secret Shops here.[X]

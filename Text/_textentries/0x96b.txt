@@ -1,2 +1,2 @@
-Rally Spectrum: +2 all stats[N]
-to allies within 2 tiles.[X]
+Staff Savant: Maximum range[N]
+of staves is increased by 1.[X]

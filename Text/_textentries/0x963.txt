@@ -1,2 +1,2 @@
-Rally Strength: +4 Str[N]
+Rally Skill: +4 Skill[N]
 to allies within 2 tiles.[X]

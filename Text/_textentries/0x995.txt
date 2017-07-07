@@ -1,2 +1,2 @@
-Chivalry: When foe is at full HP,[N]
-attack and def/res +2.[X]
+Armsthrift: Luck % chance to not[N]
+consume weapon durability.[X]

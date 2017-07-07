@@ -1,2 +1,2 @@
-Seal Luck: Debuff opponent's Luck[N]
+Seal Resistance: Debuff opponent's Res[N]
 by 6 after combat. (Recover 1/turn)[X]

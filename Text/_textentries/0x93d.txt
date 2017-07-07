@@ -1,2 +1,2 @@
-Certain Blow: +40 Hit[N]
-when initiating battle.[X]
+Vantage: If HP < 50%,[N]
+strike first when attacked.[X]

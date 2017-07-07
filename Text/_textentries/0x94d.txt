@@ -1,2 +1,2 @@
-Dance: Refresh an ally unit[N]
-to let them act again.[X]
+Galeforce: Move again after[N]
+attacking and defeating an enemy.[X]

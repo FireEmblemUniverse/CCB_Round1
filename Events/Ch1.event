@@ -16,13 +16,34 @@ TurnBasedEvents:
 END_MAIN
 
 CharacterBasedEvents:
+CharacterEvent(8, RecruitTalk1, Void, Anna)
+CharacterEvent(8, RecruitTalk1, Tim, Anna)
+CharacterEvent(8, RecruitTalk1, Tam, Anna)
+CharacterEvent(8, RecruitTalk1, Jerome, Anna)
+CharacterEvent(8, RecruitTalk1, Leeroy, Anna)
+CharacterEvent(9, RecruitTalk2, Void, Anna)
+CharacterEvent(9, RecruitTalk2, Tim, Anna)
+CharacterEvent(9, RecruitTalk2, Tam, Anna)
+CharacterEvent(9, RecruitTalk2, Jerome, Anna)
+CharacterEvent(9, RecruitTalk2, Leeroy, Anna)
 END_MAIN
 
 LocationBasedEvents:
-Seize(0,0)
+#ifdef __DEBUG__
+  Seize(19,12)
+#endif
+Seize(13,0)
+Seize(14,0)
+Seize(15,0)
+Seize(16,0)
+Chest(MemberCard,18,23)
+Armory(ArmoryItems,20,26)
+Vendor(ShopItems,24,17)
+House(10,VillageCheck,14,3)
 END_MAIN
 
 MiscBasedEvents:
+AFEV 0x0 GameOverEvent 0x2
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -39,10 +60,38 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Eirika  0x2 0x1 0xA1   [0,0] 0b 0x0 0x0 0x0 [0x1,0x98,0x88,0x0] [0x0,0x0,0x0,0x0]
+UNIT Void EirikaLord 0x00 Level(1, Ally, 1) [19,12] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI 
+UNIT Tim Fighter 0x00 Level(1, Ally, 1) [21,12] 0x00 0x00 0x0 0x00 [IronAxe, HandAxe] NoAI 
+UNIT Tam Fighter 0x00 Level(1, Ally, 1) [20,10] 0x00 0x00 0x0 0x00 [SteelAxe, Hatchet] NoAI 
+UNIT Jerome Soldier 0x00 Level(1, Ally, 1) [22,11] 0x00 0x00 0x0 0x00 [IronLance, Vulnerary] NoAI 
+UNIT Leeroy Paladin 0x00 Level(1, Ally, 1) [18,13] 0x00 0x00 0x0 0x00 [SilverLance, SteelSword, Elixir] NoAI 
 UNIT
 
-EnemyUnits:
+NewUnit:
+UNIT Anna Myrmidon_F 0x00 Level(2, NPC, 1) [24,18] 0x02 0x00 0x0 0x00 [Shamshir, Vulnerary, GoldGem] AttackInRangeAI 
+UNIT Breguet Civilian 0x00 Level(1, NPC, 1) [23,9] 0x00 0x00 0x0 0x00 [0x00] GuardTileAI 
+UNIT
+
+EnemyUnits1:
+UNIT 0xBD DracoZombie 0x00 Level(20, Enemy, 1) [19,23] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI 
+UNIT
+
+EnemyUnits2:
+UNIT 0x80 Fighter 0x00 Level(1, Enemy, 1) [24,29] 0x00 0x00 0x0 0x00 [HandAxe] NoAI 
+UNIT 0x80 Fighter 0x00 Level(2, Enemy, 1) [23,27] 0x00 0x00 0x0 0x00 [IronAxe] NoAI 
+UNIT 0x80 Fighter 0x00 Level(1, Enemy, 1) [1,21] 0x00 0x00 0x0 0x00 [HandAxe] NoAI 
+UNIT 0x80 Fighter 0x00 Level(2, Enemy, 1) [5,20] 0x00 0x00 0x0 0x00 [IronAxe] NoAI 
+UNIT 0x80 Fighter 0x00 Level(2, Enemy, 1) [1,24] 0x02  0x00 0x0 0x00 [HandAxe,Vulnerary] GuardTileAI 
+UNIT 0x80 Archer 0x00 Level(2, Enemy, 1) [13,21] 0x00 0x00 0x0 0x00 [IronBow] NoAI 
+UNIT 0x80 Archer 0x00 Level(2, Enemy, 1) [12,20] 0x00 0x00 0x0 0x00 [IronBow] NoAI 
+UNIT 0x80 Archer 0x00 Level(1, Enemy, 1) [12,5] 0x00 0x00 0x0 0x00 [IronBow] NoAI 
+UNIT 0x80 Archer 0x00 Level(1, Enemy, 1) [11,6] 0x00 0x00 0x0 0x00 [IronBow] NoAI 
+UNIT 0x80 Archer 0x00 Level(2, Enemy, 1) [9,6] 0x00 0x00 0x0 0x00 [IronBow] NoAI 
+UNIT
+
+EnemyUnits3:
+UNIT 0x80 Cavalier 0x00 Level(2, Enemy, 1) [7,12] 0x00 0x00 0x0 0x00 [IronLance,IronSword] NoAI 
+UNIT 0x80 Cavalier 0x00 Level(3, Enemy, 1) [3,10] 0x02 0x00 0x0 0x00 [Javelin,IronAxe,IronAxe,Elixir] NoAI 
 UNIT
 
 Traps1:
@@ -54,10 +103,95 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+ENUT 1 //no more boss quotes
+ENUT 9
 LOAD2 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
+LOAD1 0x1 EnemyUnits1
+ENUN
+LOAD1 0x1 EnemyUnits2
+ENUN
+LOAD1 0x1 EnemyUnits3
+ENUN
+LOAD1 0x1 NewUnit
+ENUN
+CAM1 [14,0]
+STAL 0x16
+CAM1 Breguet
+STAL 0x16
+CAM1 Void
+STAL 0x16
 // GotoPrepScreen
+CenterTutorialTextBox
+TUTORIALTEXTBOXSTART
+TEXTSHOW CH1Opening
+TEXTEND
+REMA
+NoFade
 ENDA
+
+ArmoryItems:
+SHLI IronSword SteelSword Javelin HandAxe Javelin Javelin Javelin Javelin WindSword
+ALIGN 4
+
+ShopItems:
+SHLI Vulnerary Mine Heal Torch
+ALIGN 4
+
+GameOverEvent:
+ENUT 0x65
+NoFade
+ENDA
+
+RecruitTalk1:
+ENUT 8
+ENUF 9
+Text(CH1Anna1)
+SMOV 0x3 ChestKey
+GIVEITEMTO 0xFFFF
+NoFade
+ENDA
+
+RecruitTalk2:
+ENUF 9
+ASMC CheckForCard|1
+IFNE  0x0 0xB 0x0
+	Text(CH1Anna2)
+	ENUT 9
+	NOTIFY CH1Anna3 0x5C 0x00
+	CUSA Anna
+ELSE 0x1
+ENIF 0x0
+	Text(CH1Anna1)
+	ENUF 9
+ENIF 0x1
+NoFade
+ENDA
+
+VillageCheck:
+ENUF 10
+ASMC CheckForKid|1
+IFNE  0x0 0xB 0x0
+	SVAL 0xB 0x1000D
+	TILECHANGE 0xFFFF
+	ENUT 10
+	NOTIFY CH1Kid 0x5A 0x00
+ELSE 0x1
+ENIF 0x0
+	CenterTutorialTextBox
+	TUTORIALTEXTBOXSTART
+	TEXTSHOW CH1Village
+	TEXTEND
+	REMA
+ENIF 0x1
+NoFade
+ENDA
+
+CheckForCard: //asm
+#incbin "CheckForCard.dmp"
+
+CheckForKid: //asm
+#incbin "CheckForKid.dmp"
 
 EndingScene:
 ENUT 0x89 //location shenanigans

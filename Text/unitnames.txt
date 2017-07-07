@@ -31,12 +31,6 @@ Leeroy[X]
 His father was also[N]
 named after a meme.[X]
 
-##Name_Anna
-Anna[X]
-
-##Desc_Anna
-Donate to Circles[X]
-
 ##Name_Bede
 Bede[X]
 
@@ -75,3 +69,28 @@ Roshea[X]
 
 ##Desc_Roshea
 placeholder[X]
+
+#0x229 EdgeworthName
+Edgeworth[X
+
+## ZigludoName
+Zigludo[X]
+
+## KagaName
+Kaga[X]
+
+#0x232 MarfName
+Marf[X]
+
+#0x285 EdgeworthDesc
+HIS EDGE IS WORTH[X]
+
+## ZigludoName
+Haha Funny fire meme[N] 
+wank Xdddd dab[X]
+
+## KagaDesc
+Our lord and savior[X]
+
+#0x28B MarfDesc
+Not amused[X]

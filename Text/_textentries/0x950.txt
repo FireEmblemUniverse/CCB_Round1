@@ -1,2 +1,2 @@
-Renewal: Restore 30% of max HP[N]
-at the start of each turn.[X]
+Demoiselle: Male allies within[N]
+2 tiles receive -2 damage.[X]

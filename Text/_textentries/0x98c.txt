@@ -1,3 +1,2 @@
-Nice Personality: This unit has[N]
-a deep and engaging character,[N]
-bursting at the seams with development.[X]
+Wind Disciple: +10 Hit and[N]
+Avoid when HP is not at max.[X]

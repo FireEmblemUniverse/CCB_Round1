@@ -1,2 +1,2 @@
-Duelist's Blow: +30 Avo[N]
+Darting Blow: +5 Attack Speed[N]
 when initiating battle.[X]

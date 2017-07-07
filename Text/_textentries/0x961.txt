@@ -1,2 +1,2 @@
-Impale: Deal 4x damage.[N]
-(Skill % activation)[X]
+Rally Strength: +4 Str[N]
+to allies within 2 tiles.[X]

@@ -1,2 +1,2 @@
-Paragon: Experience gain[N]
-is doubled.[X]
+Colossus: Triples Strength.[N]
+(Skill % activation)[X]

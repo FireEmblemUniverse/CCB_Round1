@@ -1,2 +1,2 @@
-Rally Resistance: +4 Res[N]
+Rally Spectrum: +2 all stats[N]
 to allies within 2 tiles.[X]

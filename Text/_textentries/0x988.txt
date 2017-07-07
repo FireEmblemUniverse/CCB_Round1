@@ -1,2 +1,2 @@
-Seal Defense: Debuff opponent's Def[N]
-by 6 after combat. (Recover 1/turn)[X]
+Gamble: A reckless attack with[N]
+halved hit but doubled crit.[X]

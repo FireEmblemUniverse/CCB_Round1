@@ -33,3 +33,4 @@ Blitz Lance[X]
 #include "skilldesc_text.txt"
 
 #include "chaptertext.txt"
+#include "ch1.txt"

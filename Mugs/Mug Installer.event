@@ -11,3 +11,23 @@ setMugEntry(0x7, Tim_Mug, 2,5,2,3)
 Tam_Mug:
 #incext PortraitFormatter "Tam.png"
 setMugEntry(0x5, Tam_Mug, 2,5,2,3)
+
+EdgeworthMug:
+#incext PortraitFormatter "Edgeworth.png"
+setMugEntry(0x21, EdgeworthMug, 2, 4, 6, 4)
+
+ZigludoMug:
+#incext PortraitFormatter "sigurd2.png"
+setMugEntry(0x22, ZigludoMug, 2, 4, 6, 4)
+
+KagaMug:
+#incext PortraitFormatter "kaga.png"
+setMugEntry(0x23, KagaMug, 2, 4, 6, 4)
+
+MaedaMug:
+#incext PortraitFormatter "maeda.png"
+setMugEntry(0x48, MaedaMug, 2, 4, 6, 4)
+
+MarfMug:
+#incext PortraitFormatter "Marf.png"
+setMugEntry(0x2B, MarfMug, 2, 4, 6, 4)

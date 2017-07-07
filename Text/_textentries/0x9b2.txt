@@ -1,2 +1,2 @@
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+A girl with a familiar face.[N]
+Her love of money is quite strong.[X]

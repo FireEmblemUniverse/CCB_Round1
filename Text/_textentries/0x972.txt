@@ -1,2 +1,2 @@
-Lunge: Swap places with the[N]
-opponent after combat.[X]
+Opportunist: +4 damage[N]
+if the foe cannot counter.[X]

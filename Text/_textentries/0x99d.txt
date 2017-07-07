@@ -1,2 +1,2 @@
-Rightful Arch: Sets Skill[N]
-activation rate to 100%.[X]
+Rightful God: +30% to[N]
+Skill activation rate.[X]
