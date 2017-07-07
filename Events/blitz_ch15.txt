@@ -193,10 +193,10 @@ UNIT PegasusMessenger Soldier Valter_Ch15_ Level(15, Enemy, 1) [25,7] 0x00 0x00 
 UNIT PegasusMessenger Soldier Valter_Ch15_ Level(15, Enemy, 1) [27,24] 0x00 0x00 0x0 0x00 [Axereaver] AttackInRangeAI 
 UNIT PegasusMessenger Soldier Valter_Ch15_ Level(15, Enemy, 1) [23,23] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
 UNIT PegasusMessenger Soldier Valter_Ch15_ Level(15, Enemy, 1) [20,28] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
-UNIT PegasusMessenger Knight Valter_Ch15_ Level(15, Enemy, 1) [16,14] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] GuardTileAI 
-UNIT PegasusMessenger Knight Valter_Ch15_ Level(15, Enemy, 1) [16,20] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] GuardTileAI 
-UNIT PegasusMessenger Archer Valter_Ch15_ Level(15, Enemy, 1) [18,14] 0x00 0x00 0x0 0x00 [Longbow, SteelBow] GuardTileAI 
-UNIT PegasusMessenger Archer Valter_Ch15_ Level(15, Enemy, 1) [18,20] 0x00 0x00 0x0 0x00 [Longbow, SteelBow] GuardTileAI 
+UNIT PegasusMessenger Knight Valter_Ch15_ Level(15, Enemy, 1) [16,14] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] NeverMoveAI 
+UNIT PegasusMessenger Knight Valter_Ch15_ Level(15, Enemy, 1) [16,20] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] NeverMoveAI 
+UNIT PegasusMessenger Archer Valter_Ch15_ Level(15, Enemy, 1) [18,14] 0x00 0x00 0x0 0x00 [Longbow, SteelBow] NeverMoveAI 
+UNIT PegasusMessenger Archer Valter_Ch15_ Level(15, Enemy, 1) [18,20] 0x00 0x00 0x0 0x00 [Longbow, SteelBow] NeverMoveAI 
 UNIT PegasusMessenger Archer Valter_Ch15_ Level(15, Enemy, 1) [19,15] 0x00 0x00 0x0 0x00 [Longbow, SteelBow] AttackInRangeAI 
 UNIT PegasusMessenger Archer Valter_Ch15_ Level(15, Enemy, 1) [19,19] 0x00 0x00 0x0 0x00 [Longbow, SteelBow] AttackInRangeAI 
 UNIT PegasusMessenger Troubadour Valter_Ch15_ Level(15, Enemy, 1) [19,14] 0x00 0x00 0x0 0x00 [Mend, RedGem] HealUnits 
@@ -210,7 +210,7 @@ UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(1, Enemy, 1) [22,9] 0x2 0x0
 UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(1, Enemy, 1) [23,18] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
 UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(1, Enemy, 1) [21,18] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
 UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(1, Enemy, 1) [20,9] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
-UNIT Valter_Ch15_ Swordmaster Valter_Ch15_ Level(5, Enemy, 1) [31,17] 0x2 0x00 0x0 0x00 [KillingEdge, HeroCrest, SecretBook] GuardTileAI 
+UNIT Valter_Ch15_ Swordmaster Valter_Ch15_ Level(5, Enemy, 1) [31,17] 0x2 0x00 0x0 0x00 [KillingEdge, HeroCrest, SecretBook] NeverMoveAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(5, Enemy, 1) [32,2] 0x00 0x00 0x0 0x00 [Ballista] AttackInRangeAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(5, Enemy, 1) [35,17] 0x00 0x00 0x0 0x00 [Ballista] AttackInRangeAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(5, Enemy, 1) [27,28] 0x00 0x00 0x0 0x00 [Ballista] AttackInRangeAI 
@@ -233,15 +233,15 @@ UNIT PegasusMessenger Sniper Valter_Ch15_ Level(3, Enemy, 1) [25,20] 0x00 0x00 0
 //UNIT PegasusMessenger Cavalier Valter_Ch15_ Level(15, Enemy, 1) [14,19] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
 UNIT PegasusMessenger Cavalier Valter_Ch15_ Level(15, Enemy, 1) [14,10] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
 //UNIT PegasusMessenger Mage Valter_Ch15_ Level(15, Enemy, 1) [24,13] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
-UNIT PegasusMessenger Mage Valter_Ch15_ Level(15, Enemy, 1) [22,22] 0x00 0x00 0x0 0x00 [Bolting, PureWater] GuardTileAI 
+UNIT PegasusMessenger Mage Valter_Ch15_ Level(15, Enemy, 1) [22,22] 0x00 0x00 0x0 0x00 [Bolting, PureWater] NeverMoveAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(15, Enemy, 1) [15,4] 0x00 0x00 0x0 0x00 [Ballista] PursueWithoutHeedAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(15, Enemy, 1) [15,26] 0x00 0x00 0x0 0x00 [Ballista] PursueWithoutHeedAI
 UNIT
 
 Enemies4:
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(15, Enemy, 1) [17,17] 0x00 0x00 0x0 0x00 [Ballista] PursueWithoutHeedAI 
-UNIT PegasusMessenger General Valter_Ch15_ Level(1, Enemy, 1) [25,11] 0x00 0x00 0x0 0x00 [SilverAxe] GuardTileAI 
-UNIT PegasusMessenger General Valter_Ch15_ Level(1, Enemy, 1) [25,12] 0x00 0x00 0x0 0x00 [SilverLance] GuardTileAI 
+UNIT PegasusMessenger General Valter_Ch15_ Level(1, Enemy, 1) [25,11] 0x00 0x00 0x0 0x00 [SilverAxe] NeverMoveAI 
+UNIT PegasusMessenger General Valter_Ch15_ Level(1, Enemy, 1) [25,12] 0x00 0x00 0x0 0x00 [SilverLance] NeverMoveAI 
 UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [3,27] 0x00 0x00 0x0 0x00 [SlimLance, SilverLance] PursueWithoutHeedAI 
 UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [20,1] 0x00 0x00 0x0 0x00 [SlimLance, SilverLance] PursueWithoutHeedAI 
 UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [18,28] 0x00 0x00 0x0 0x00 [SlimLance, SilverLance] PursueWithoutHeedAI 
@@ -262,7 +262,7 @@ UNIT RiverFolk Soldier Amelia Level(15, NPC, 1) [4,9] 0x00 0x00 0x0 0x00 [SteelL
 UNIT RiverFolk Soldier Amelia Level(15, NPC, 1) [7,19] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
 UNIT RiverFolk Troubadour Amelia Level(15, NPC, 1) [7,9] 0x00 0x00 0x0 0x00 [Mend, Physic] HealUnits 
 UNIT RiverFolk Troubadour Amelia Level(15, NPC, 1) [2,12] 0x00 0x00 0x0 0x00 [Mend, Physic] HealUnits 
-UNIT RiverFolk General Amelia Level(2, NPC, 1) [12,17] 0x00 0x00 0x0 0x00 [SilverLance, Spear] GuardTileAI 
+UNIT RiverFolk General Amelia Level(2, NPC, 1) [12,17] 0x00 0x00 0x0 0x00 [SilverLance, Spear] NeverMoveAI 
 UNIT RiverFolk Fleet Amelia Level(10, NPC, 1) [1,18] 0x00 0x00 0x0 0x00 [KillerBallista] AttackInRangeAI 
 UNIT
 

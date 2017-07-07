@@ -155,17 +155,17 @@ UNIT 0x80 WyvernKnight Carlyle Level(12, Enemy, 1) [8,11] 0x00 0x00 0x0 0x00 [Si
 UNIT 0x80 WyvernKnight Carlyle Level(12, Enemy, 1) [14,2] 0x00 0x00 0x0 0x00 [SilverLance, Spear] AttackInRangeAI 
 UNIT 0x80 WyvernKnight Carlyle Level(12, Enemy, 1) [16,18] 0x00 0x00 0x0 0x00 [SilverLance, Spear] AttackInRangeAI 
 UNIT 0x80 WyvernKnight Carlyle Level(12, Enemy, 1) [27,6] 0x00 0x00 0x0 0x00 [SilverLance, Spear] AttackInRangeAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [23,13] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] GuardTileAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [23,14] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] GuardTileAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [10,16] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] GuardTileAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [5,7] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] GuardTileAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [13,9] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] GuardTileAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [22,3] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] GuardTileAI
+UNIT 0x80 General Carlyle Level(12, Enemy, 1) [23,13] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
+UNIT 0x80 General Carlyle Level(12, Enemy, 1) [23,14] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
+UNIT 0x80 General Carlyle Level(12, Enemy, 1) [10,16] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
+UNIT 0x80 General Carlyle Level(12, Enemy, 1) [5,7] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
+UNIT 0x80 General Carlyle Level(12, Enemy, 1) [13,9] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
+UNIT 0x80 General Carlyle Level(12, Enemy, 1) [22,3] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] NeverMoveAI
 UNIT
 
 Baddest:
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] GuardTileAI 
-UNIT Carlyle Hero 0x00 Level(16, Enemy, 0) [20,2] 0x00 0x00 0x0 0x00 [Garm, Swordslayer, SilverBlade, DelphiShield] GuardTileAI 
+UNIT 0x80 General Carlyle Level(12, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] NeverMoveAI 
+UNIT Carlyle Hero 0x00 Level(16, Enemy, 0) [20,2] 0x00 0x00 0x0 0x00 [Garm, Swordslayer, SilverBlade, DelphiShield] NeverMoveAI 
 UNIT
 
 ALIGN 4

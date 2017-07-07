@@ -92,8 +92,7 @@ UNIT
 
 StartingEnemies:
   UNIT Chapter6Boss Summoner  0            Level(20, Enemy, True) [4,  1] 10b 0x00 0 0x00 [Physic, Mend, Rescue] HealUnits Normal GuardTile
-  UNIT 0x8D         Knight    Chapter6Boss Level(16, Enemy, True) [3,  1]  10b 0x00 0 0x00 [ShortSpear, SilverLance] GuardTileAI Normal GuardTile
-
+  UNIT 0x8D         Knight    Chapter6Boss Level(16, Enemy, True) [3,  1]  10b 0x00 0 0x00 [ShortSpear, SilverLance] NeverMoveAI
   UNIT 0x80         Knight    Chapter6Boss Level(6, Enemy, True) [7,  13] 0b  0x00 0 0x00 [IronLance] [AttackInRange, DontMove] Normal DefaultAI4
   UNIT 0x80         Fighter   Chapter6Boss Level(6,  Enemy, True) [3,  12] 10b 0x00 0 0x00 [IronAxe, HandAxe] [AttackInRange, DontMove] Normal DefaultAI4
   UNIT 0x80         Archer    Chapter6Boss Level(6, Enemy, True) [9,  10] 0b  0x00 0 0x00 [IronBow] [AttackInRange, DontMove] Normal DefaultAI4

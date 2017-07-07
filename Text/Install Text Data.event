@@ -987,3 +987,35 @@ TxtData0x9ba:
 #incext ParseFile "_textentries\0x9ba.txt"
 setText(0x9ba,TxtData0x9ba)
 
+TxtData0x9bb:
+#incext ParseFile "_textentries\0x9bb.txt"
+setText(0x9bb,TxtData0x9bb)
+
+TxtData0x9bc:
+#incext ParseFile "_textentries\0x9bc.txt"
+setText(0x9bc,TxtData0x9bc)
+
+TxtData0x9bd:
+#incext ParseFile "_textentries\0x9bd.txt"
+setText(0x9bd,TxtData0x9bd)
+
+TxtData0x9be:
+#incext ParseFile "_textentries\0x9be.txt"
+setText(0x9be,TxtData0x9be)
+
+TxtData0x9bf:
+#incext ParseFile "_textentries\0x9bf.txt"
+setText(0x9bf,TxtData0x9bf)
+
+TxtData0x9c0:
+#incext ParseFile "_textentries\0x9c0.txt"
+setText(0x9c0,TxtData0x9c0)
+
+TxtData0x9c1:
+#incext ParseFile "_textentries\0x9c1.txt"
+setText(0x9c1,TxtData0x9c1)
+
+TxtData0x9c2:
+#incext ParseFile "_textentries\0x9c2.txt"
+setText(0x9c2,TxtData0x9c2)
+

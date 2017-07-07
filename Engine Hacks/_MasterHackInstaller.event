@@ -11,6 +11,8 @@
 PUSH
   //Include essential fixes and autopatches
   #include "_FE8EssentialFixes.event"
+  ORG 0x18a58
+  #incbin "ASM/Melee and Magic Fix_fe8.dmp"
 POP
 
 

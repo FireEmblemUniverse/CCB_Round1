@@ -29,7 +29,7 @@ Village(0x8,VillageBerserk,14,2)
 Village(0x9,VillageEnergyRing,14,11)
 Vendor(ShopList,6,12)
 //Seize
-Seize(7,2)
+Seize(7,8)
 #ifdef __DEBUG__
 Seize(1,1)
 #endif
@@ -106,11 +106,11 @@ UNIT 0x80 Cavalier Bone Level(4, Enemy, 1) [14,6] 0x00 0x00 0x0 0x00 [Javelin, S
 UNIT 0x80 Mage Bone Level(4, Enemy, 1) [12,7] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
 UNIT 0x80 Pirate Bone Level(3, Enemy, 1) [9,9] 0x00 0x00 0x0 0x00 [Hatchet, IronAxe] AttackInRangeAI 
 UNIT 0x80 Pirate Bone Level(3, Enemy, 1) [5,9] 0x00 0x00 0x0 0x00 [Hatchet, IronAxe] AttackInRangeAI 
-UNIT 0x80 Knight Bone Level(4, Enemy, 1) [0,7] 0x00 0x00 0x0 0x00 [SteelLance, Axereaver] GuardTileAI 
+UNIT 0x80 Knight Bone Level(4, Enemy, 1) [0,7] 0x00 0x00 0x0 0x00 [SteelLance, Axereaver] NeverMoveAI 
 UNIT 0x80 Archer Bone Level(4, Enemy, 1) [3,7] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
 UNIT 0x80 Cavalier Bone Level(3, Enemy, 1) [14,13] 0x00 0x00 0x0 0x00 [IronBlade, Horseslayer] AttackInRangeAI 
 UNIT 0x80 WyvernRider Bone Level(2, Enemy, 1) [3,13] 0x00 0x00 0x0 0x00 [Spear, Horseslayer] AttackInRangeAI 
-UNIT Bone Shaman 0x00 Level(5, Enemy, 0) [7,8] 0x00 0x00 0x0 0x00 [Flux, Nosferatu] GuardTileAI 
+UNIT Bone Shaman 0x00 Level(5, Enemy, 0) [7,8] 0x00 0x00 0x0 0x00 [Flux, Nosferatu] NeverMoveAI 
 UNIT
 
 ALIGN 4

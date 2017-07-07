@@ -1,1 +1,2 @@
-The kid destroyed the village[X]
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
