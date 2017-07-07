@@ -1,2 +1,2 @@
-Lily's Poise: Adjacent allies gain[N]
-+1/-3 damage dealt/received.[X]
+Anathema: -10 Avoid/Dodge to all[N]
+enemies within 3 tiles.[X]

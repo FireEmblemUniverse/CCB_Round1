@@ -1,2 +1,2 @@
-Wary Fighter: Unit cannot[N]
-double or be doubled.[X]
+Canto+: Can move again after[N]
+attacking and other actions.[X]

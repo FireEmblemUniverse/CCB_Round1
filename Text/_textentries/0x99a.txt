@@ -1,2 +1,2 @@
-Critical Force: Base critical is[N]
-Skl * 1.5.[X]
+Killing Machine: Total critical[N]
+rate is doubled.[X]

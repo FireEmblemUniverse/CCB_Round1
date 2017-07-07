@@ -1,2 +1,2 @@
-Nullify: Unit is protected[N]
-from all effective attacks.[X]
+Nihil: Cancels the opponent's[N]
+skills in combat.[X]

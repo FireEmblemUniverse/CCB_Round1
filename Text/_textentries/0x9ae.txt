@@ -1,2 +1,2 @@
-Swap: Allows unit to swap positions[N]
-with an adjacent ally.[X]
+Reposition: Allows unit to pull an[N]
+adjacent ally to its opposite side.[X]

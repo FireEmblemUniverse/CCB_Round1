@@ -1,2 +1,1 @@
-Fiery Blood: +4 damage[N]
-when HP is not at max.[X]
+Celerity: Movement +2.[X]

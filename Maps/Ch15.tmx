@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="37" height="30" tilewidth="16" tileheight="16" nextobjectid="1">
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="37" height="30" tilewidth="16" tileheight="16" nextobjectid="1">
  <tileset firstgid="1" name="FE8 - Fields - 01000203" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="../../../../../FE8/FE3GBA Buildfile/Maps/Tilesets/FE8/01000203.png" trans="ffffff" width="512" height="512"/>
+  <image source="Tilesets/FE8/01000203.png" trans="ffffff" width="512" height="512"/>
  </tileset>
  <layer name="Tile Layer 1" width="37" height="30">
   <properties>
-   <property name="ChapterID" value="0x10"/>
+   <property name="ChapterID" value="0xf"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="0x46"/>
    <property name="MapID" value="0x45"/>
    <property name="ObjectType" value="0x01"/>
-   <property name="PaletteID" value="0x57"/>
+   <property name="PaletteID" value="0x02"/>
    <property name="TileConfig" value="0x03"/>
   </properties>
   <data>

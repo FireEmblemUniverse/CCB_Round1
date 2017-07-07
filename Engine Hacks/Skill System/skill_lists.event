@@ -34,7 +34,6 @@ ALIGN 4
 CavalierSkillList:
 BYTE 1 DisciplineID
 BYTE 10 ElbowRoomID
-BYTE 1 QuickBurnID
 BYTE 00 00
 
 PaladinSkillList:
@@ -47,7 +46,7 @@ ALIGN 4
 
 KnightSkillList:
 BYTE 1 ProvokeID
-BYTE 1 SlowBurnID
+// BYTE 1 SlowBurnID
 BYTE 10 NaturalCoverID
 BYTE 00 00
 ALIGN 4

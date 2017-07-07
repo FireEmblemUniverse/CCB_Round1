@@ -1,2 +1,2 @@
-Bane: Leave the opponent at 1 HP.[N]
+Lethality: Instantly kill opponent.[N]
 (Skill/2 % activation)[X]

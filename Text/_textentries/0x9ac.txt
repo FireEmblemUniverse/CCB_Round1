@@ -1,2 +1,3 @@
-Pivot: Allows unit to move to the[N]
-opposite side of an adjacent ally.[X]
+Despoil: Obtain a Red Gem after[N]
+attacking and defeating an enemy.[N]
+(Luck % activation)[X]

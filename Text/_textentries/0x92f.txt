@@ -1,2 +1,2 @@
-Canto: Can move again[N]
-after certain actions.[X]
+Frenzy: For every 4 damage[N]
+taken, +1 to damage dealt.[X]

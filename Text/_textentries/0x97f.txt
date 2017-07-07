@@ -1,2 +1,2 @@
-Relief: Recover 20% HP each turn if[N]
-there are no allies within 2 tiles.[X]
+Savage Blow: After attacking, enemies[N]
+within 2 tiles take 20% damage.[X]

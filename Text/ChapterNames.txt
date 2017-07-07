@@ -33,13 +33,13 @@ Ch9[X]
 Ch10[X]
 
 # 0x019a
-Ch11[X]
+11: Factory Blues[X]
 
 # 0x016c
-Ch12[X]
+12: I Felt Sadistic[X]
 
 # 0x016d
-Ch13[X]
+13: Coarse. Rough. Irritating.[X]
 
 # 0x016e
 Ch14[X]
@@ -51,7 +51,7 @@ Ch14[X]
 Ch16[X]
 
 # 0x0171
-Ch17[X]
+17: 'Slowly' Corrupting[X]
 
 # 0x0172
 18: Island Clash[X]

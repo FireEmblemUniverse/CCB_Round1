@@ -18,16 +18,16 @@ setMugEntry(0x21, EdgeworthMug, 2, 4, 6, 4)
 
 ZigludoMug:
 #incext PortraitFormatter "sigurd2.png"
-setMugEntry(0x22, ZigludoMug, 2, 4, 6, 4)
+setMugEntry(0x22, ZigludoMug, 4, 6, 4, 4)
 
 KagaMug:
 #incext PortraitFormatter "kaga.png"
-setMugEntry(0x23, KagaMug, 2, 4, 6, 4)
+setMugEntry(0x23, KagaMug, 3, 5, 3, 3)
 
 MaedaMug:
 #incext PortraitFormatter "maeda.png"
-setMugEntry(0x48, MaedaMug, 2, 4, 6, 4)
+setMugEntry(0x48, MaedaMug, 3, 5, 3, 3)
 
 MarfMug:
 #incext PortraitFormatter "Marf.png"
-setMugEntry(0x2B, MarfMug, 2, 4, 6, 4)
+setMugEntry(0x2B, MarfMug, 4, 8, 4, 6)

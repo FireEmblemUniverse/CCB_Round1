@@ -94,3 +94,7 @@ Our lord and savior[X]
 
 ## MarfDesc
 Not amused[X]
+
+## Desc_RogueAnna
+A girl with a familiar face.[N]
+Her love of money is REALLY strong.[X]

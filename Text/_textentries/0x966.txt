@@ -1,2 +1,2 @@
-Paragon: Experience gain[N]
-is doubled.[X]
+Nullify: Unit is protected[N]
+from all effective attacks.[X]
