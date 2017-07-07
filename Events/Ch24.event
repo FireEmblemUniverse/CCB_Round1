@@ -75,7 +75,7 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
-MNCH 25
+MNCH 0x3e
 ENDA
 
 // Events

@@ -101,3 +101,27 @@ ALIGN 4
   #include "Ch24.event"
 }
 ALIGN 4
+{
+  #include "Ch25.event"
+}
+ALIGN 4
+{
+  #include "Ch26.event"
+}
+ALIGN 4
+{
+  #include "Ch27.event"
+}
+ALIGN 4
+{
+  #include "Ch28.event"
+}
+ALIGN 4
+{
+  #include "Ch29.event"
+}
+ALIGN 4
+{
+  #include "Ch30.event"
+}
+ALIGN 4

@@ -28,7 +28,24 @@
 #define NotArch 10
 #define Kirsten 11
 #define Roshea 12
+
 #define Edge 14
+
+
 #define Arve 17
 #define Tye 18
 #define Celicia 19
+#define Eevster 20
+#define AnnaWyv 21
+#define Nikita 22
+#define AnnaRogue 23
+#define Edgeworth 24
+#define Zigludo 25
+#define Kaga 26
+#define Doot 27
+#define Celica 28
+#define Doowile 29
+#define EvilFlorina 30
+
+#define Jake 31
+#define Marf 32

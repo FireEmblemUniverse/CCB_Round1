@@ -127,13 +127,13 @@ TxtData0x017B:
 #incext ParseFile "_textentries\0x017B.txt"
 setText(0x017B,TxtData0x017B)
 
-TxtData0x017C:
-#incext ParseFile "_textentries\0x017C.txt"
-setText(0x017C,TxtData0x017C)
+TxtData0x0182:
+#incext ParseFile "_textentries\0x0182.txt"
+setText(0x0182,TxtData0x0182)
 
-TxtData0x017D:
-#incext ParseFile "_textentries\0x017D.txt"
-setText(0x017D,TxtData0x017D)
+TxtData0x0183:
+#incext ParseFile "_textentries\0x0183.txt"
+setText(0x0183,TxtData0x0183)
 
 TxtData0x3A:
 #incext ParseFile "_textentries\0x3A.txt"
@@ -1054,4 +1054,8 @@ setText(0x9ca,TxtData0x9ca)
 TxtData0x9cb:
 #incext ParseFile "_textentries\0x9cb.txt"
 setText(0x9cb,TxtData0x9cb)
+
+TxtData0x9cc:
+#incext ParseFile "_textentries\0x9cc.txt"
+setText(0x9cc,TxtData0x9cc)
 
