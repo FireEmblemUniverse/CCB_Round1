@@ -1,2 +1,2 @@
-Quick Draw: +4 Damage[N]
-when initiating battle.[X]
+Dragon's Blood: Unit is able[N]
+to activate Dragon Veins.[X]

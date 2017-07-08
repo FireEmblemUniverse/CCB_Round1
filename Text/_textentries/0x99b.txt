@@ -1,2 +1,2 @@
-Critical Force: Base critical is[N]
-Skl * 1.5.[X]
+Light Weight: When holding three[N]
+or less items, attack speed +3.[X]

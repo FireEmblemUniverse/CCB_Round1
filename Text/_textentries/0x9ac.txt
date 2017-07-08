@@ -1,3 +1,2 @@
-Despoil: Obtain a Red Gem after[N]
-attacking and defeating an enemy.[N]
-(Luck % activation)[X]
+Quick Burn: +15 Hit and Avoid.[N]
+This bonus decreases each turn.[X]

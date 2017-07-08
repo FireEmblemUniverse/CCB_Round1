@@ -1,2 +1,2 @@
-Swordfaire: +4 damage[N]
-when equipping a sword.[X]
+Countermagic: Magic damage taken[N]
+at 1-2 range is reflected.[X]

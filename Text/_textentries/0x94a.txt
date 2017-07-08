@@ -1,2 +1,2 @@
-Countermagic: Magic damage taken[N]
-at 1-2 range is reflected.[X]
+Wrath: If HP < 50%,[N]
++20 critical rate.[X]

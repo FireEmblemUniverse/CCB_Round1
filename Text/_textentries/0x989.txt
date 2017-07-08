@@ -1,2 +1,1 @@
-Elbow Room: +3 damage dealt[N]
-when on open terrain.[X]
+Celerity: Movement +2.[X]

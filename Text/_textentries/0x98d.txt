@@ -1,2 +1,2 @@
-Seal Speed: Debuff opponent's Spd[N]
+Seal Attack: Debuff opponent's Str/Mag[N]
 by 6 after combat. (Recover 1/turn)[X]

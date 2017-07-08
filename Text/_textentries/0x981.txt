@@ -1,2 +1,2 @@
-Tantivy: +10 Hit/Avoid if there are[N]
-no allies within 3 tiles.[X]
+Savage Blow: After attacking, enemies[N]
+within 2 tiles take 20% damage.[X]

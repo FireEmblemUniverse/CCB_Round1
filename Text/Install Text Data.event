@@ -1059,3 +1059,19 @@ TxtData0x9cc:
 #incext ParseFile "_textentries\0x9cc.txt"
 setText(0x9cc,TxtData0x9cc)
 
+TxtData0x9cd:
+#incext ParseFile "_textentries\0x9cd.txt"
+setText(0x9cd,TxtData0x9cd)
+
+TxtData0x9ce:
+#incext ParseFile "_textentries\0x9ce.txt"
+setText(0x9ce,TxtData0x9ce)
+
+TxtData0x9cf:
+#incext ParseFile "_textentries\0x9cf.txt"
+setText(0x9cf,TxtData0x9cf)
+
+TxtData0x9d0:
+#incext ParseFile "_textentries\0x9d0.txt"
+setText(0x9d0,TxtData0x9d0)
+

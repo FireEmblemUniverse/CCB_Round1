@@ -1,2 +1,2 @@
-Savage Blow: After attacking, enemies[N]
-within 2 tiles take 20% damage.[X]
+Camaraderie: Recover 10% HP each turn[N]
+if there are allies within 2 tiles.[X]

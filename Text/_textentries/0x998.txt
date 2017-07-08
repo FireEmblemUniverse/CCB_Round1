@@ -1,2 +1,2 @@
-Pursuit: When under attack,[N]
-attack speed +2. [X]
+Strong Riposte: When under[N]
+attack, damage +3. [X]

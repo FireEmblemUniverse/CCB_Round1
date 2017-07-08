@@ -1,6 +1,6 @@
 #define csvmacro002(arg000) "BYTE arg000 "
 
-#inctext PFinder "C:\Users\bovie_000\Downloads\Roms\Fire Emblem Hack\CCB_Round1\FE8_clean.gba" 0xe47180 PersonalSkillTable
+#inctext PFinder "D:\Crazycolorz5\Documents\Code\CCB_Round1\FE8_clean.gba" 0xe47180 PersonalSkillTable
 
 ALIGN 4
 PersonalSkillTable:
@@ -31,7 +31,7 @@ csvmacro002(SpurMagID)
 csvmacro002(CelerityID)
 csvmacro002(IntimidateID)
 csvmacro002(PivotID)
-csvmacro002(0x0)
+csvmacro002(MiracleID)
 csvmacro002(SpurSpdID)
 csvmacro002(RepositionID)
 csvmacro002(DragonsBloodID)
