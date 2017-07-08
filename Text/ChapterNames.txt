@@ -30,7 +30,7 @@ Ch8[X]
 Ch9[X]
 
 # 0x016B
-Ch10[X]
+10: here you like Men[X]
 
 # 0x019a
 11: Factory Blues[X]
@@ -42,13 +42,13 @@ Ch10[X]
 13: Coarse. Rough. Irritating.[X]
 
 # 0x016e
-Ch14[X]
+14: Attack on Basement[X]
 
 # 0x016f
 15: The Shark Straits[X]
 
 # 0x0170
-Ch16[X]
+16: Dead Valley[X]
 
 # 0x0171
 17: 'Slowly' Corrupting[X]
@@ -66,10 +66,10 @@ Ch16[X]
 21: Doot Doot[X]
 
 # 0x0176
-Ch22[X]
+22: N i c e B o a t s[X]
 
 # 0x0177
-Ch23[X]
+23: Flesh and/or Bone[X]
 
 # 0x0178
 Ch24[X]
@@ -78,16 +78,16 @@ Ch24[X]
 Ch25[X]
 
 # 0x0179
-Ch26[X]
+26: Darrman's Lakes[X]
 
 # 0x017A
-Ch27[X]
+27: Convenient Lake[X]
 
 # 0x017B
-Ch28[X]
+28: Mess.jpg[X]
 
 # 0x0182
 Ch29[X]
 
 # 0x0183
-Final[X]
+Final: End of All[X]

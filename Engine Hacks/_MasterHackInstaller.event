@@ -138,6 +138,12 @@ POP
   
   #include "StatGetters/_InstallStatGetters.event"
 
+  //Konami code sets event id 0xb2
+  #include "sekrit.event"
+
+  //Enemy Control based on event id 0xb2
+  #include "EnemyControl.event"
+
 ALIGN 4
 
 

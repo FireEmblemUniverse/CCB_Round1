@@ -31,19 +31,16 @@ ACheck:
 // POIN SecretEvent
 
 SecretEvent:
-CHECK_EVENTID 0xB1 //slot c = 0 or 1
+CHECK_EVENTID 0xB2 //slot c = 0 or 1
 BNE 0x1234 0xC 0x0
-ENUT 0xB1
-NOTIFY SecretMessage 0x8 0x0 //text, music/sound, 0
-// SVAL 0x3 10000
-// GIVEITEMTOMAIN 0x0 //gives 10k gold
+ENUT 0xB2
+NOTIFY ControlONMessage 0x0 0x0 //text, music/sound, 0
 ENUN
-LOAD1 0x1 SecretCharacter
+GOTO 0x1235
 LABEL 0x1234
+ENUF 0xB2
+NOTIFY ControlOFFMessage 0 0
+ENUN
+LABEL 0x1235
 NoFade
 ENDA
-
-SecretCharacter: //Sigurd
-#define Sigurd 0x2A
-UNIT Sigurd EphraimMasterLord 0x00 Level(20, Ally, 1) [0,17] 0x00 0x00 0 0 [Siegmund, Sieglind, ManiKatti] NoAI 
-UNIT

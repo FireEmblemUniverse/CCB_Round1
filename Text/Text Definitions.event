@@ -34,8 +34,8 @@
 #define UM_RepositionDesc 0x54
 #define UM_Swap 0x55
 #define UM_SwapDesc 0x56
-#define HouseText 0x903
-#define VillageText 0x904
+#define ControlONMessage 0x903
+#define ControlOFFMessage 0x904
 #define DV1Desc 0x905
 #define Name_BlitzLance 0x906
 #define Name_Void 0x907

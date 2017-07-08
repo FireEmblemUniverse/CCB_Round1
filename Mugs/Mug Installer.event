@@ -34,7 +34,7 @@ setMugEntry(0x11, Edge_Mug, 2,6,3,4)
 
 Arve_Mug:
 #incext PortraitFormatter "Arve.png"
-setMugEntry(0x18, Arve_Mug, 2,6,3,4)
+setMugEntry(0x18, Arve_Mug, 2,5,3,3)
 
 Tye_Mug:
 #incext PortraitFormatter "Tye.png"
@@ -86,4 +86,4 @@ setMugEntry(0x2B, MarfMug, 4, 8, 4, 6)
 
 DootMug:
 #incext PortraitFormatter "Doot.png"
-setMugEntry(0x2D, DootMug, 4, 6, 4, 4)
+setMugEntry(0x2C, DootMug, 4, 6, 4, 4)

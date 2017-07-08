@@ -184,8 +184,6 @@ UNIT
 ALIGN 4
 
 BeginningScene:
-GotoPrepScreen
-ENDA
 LOAD2 0x1 Good
 ENUN
 LOAD1 0x1 JakeyBabe
@@ -196,6 +194,7 @@ LOAD1 0x1 Badder
 ENUN
 LOAD1 0x1 Baddest
 ENUN
+GotoPrepScreen
 NoFade
 ENDA
 

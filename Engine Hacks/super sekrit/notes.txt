@@ -1,0 +1,27 @@
+Konami Code check:
+
+Put a counter in ram somewhere - one byte
+
+gonna use 203aab0
+
+Whenever you press a key:
+  if Up: if counter = 0/1, counter++
+    if counter = 2, nothing
+    else counter = 0
+  if down: if counter = 2/3, counter++
+    else counter = 0
+  if left: if counter = 4/6 counter++
+    else counter = 0
+  if right: if counter = 5,7 counter++
+    else counter = 0
+  if B: if counter = 8, counter++
+    else counter = 0
+  if A: if counter = 9, counter++
+    else counter = 0
+  if Start: if counter = 10, run event
+    else counter = 0
+
+A button checked at 801ca1a
+B check at 801c8bc
+arrows at 801c916
+start/select checked as part of dangerzone hack (801cae2)

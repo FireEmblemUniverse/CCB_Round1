@@ -1,0 +1,6 @@
+PUSH
+ORG $15450
+jumpToHack(EnemyControl)
+POP
+EnemyControl:
+#incbin "ASM/enemy control fe8.dmp"

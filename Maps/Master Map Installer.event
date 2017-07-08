@@ -82,5 +82,8 @@
 #include "Ch9.event"
 }
 {
+#include "Final.event"
+}
+{
 #include "Prologue.event"
 }

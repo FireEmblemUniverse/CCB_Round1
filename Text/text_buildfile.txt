@@ -14,12 +14,12 @@ Learned  [X]
 
 #include "unitmenu_text.txt"
 
-#0x903 HouseText
+#0x903 ControlONMessage
 #first text ID in the free block
-[MidRight][LoadFace][CurrentPortrait]Nothing to see here.[A][X]
+Control CPU Units: ON[X]
 
-## VillageText
-[MidRight][LoadFace][CurrentPortrait]These look useful.[A][X]
+## ControlOFFMessage
+Control CPU Units: OFF[X]
 
 ## DV1Desc
 Freeze all enemies[N]
