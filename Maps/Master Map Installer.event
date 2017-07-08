@@ -43,6 +43,9 @@
 #include "Ch20.event"
 }
 {
+#include "Ch21.event"
+}
+{
 #include "Ch24.event"
 }
 {
@@ -74,6 +77,9 @@
 }
 {
 #include "Ch9.event"
+}
+{
+#include "Mystery Kirb Map.event"
 }
 {
 #include "Prologue.event"
