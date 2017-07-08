@@ -48,6 +48,7 @@
 
 [CurrentPortrait] = [0xFF][0xFF]
 
+[LoadDoot] = [LoadFace][0x24][0x1]
 [LoadInnes] = [LoadFace][0xf][0x1]
 [LoadCormag] = [LoadFace][0x13][0x1]
 [LoadLArachel] = [LoadFace][0x22][0x1]

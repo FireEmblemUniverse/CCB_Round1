@@ -76,25 +76,31 @@ Edgeworth[X]
 ## ZigludoName
 Zigludo[X]
 
-## KagaName
+##KagaName
 Kaga[X]
 
-## MarfName
+##MarfName
 Marf[X]
 
-## EdgeworthDesc
+##EdgeworthDesc
 HIS EDGE IS WORTH[X]
 
-## ZigludoDesc
-Haha Funny fire meme[N] 
+##ZigludoDesc
+Haha Funny fire meme[N]
 wank Xdddd dab[X]
 
-## KagaDesc
+##KagaDesc
 Our lord and savior[X]
 
-## MarfDesc
+##MarfDesc
 Not amused[X]
 
-## Desc_RogueAnna
+##Desc_RogueAnna
 A girl with a familiar face.[N]
 Her love of money is REALLY strong.[X]
+
+##Name_Doot
+Doot[X]
+
+##Desc_Doot
+DOOT DOOT[X]

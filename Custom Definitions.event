@@ -1,3 +1,6 @@
+#ifndef CCB_DEFINITIONS
+#define CCB_DEFINITIONS
+
 #define FreeSpace 0xb2a610
 #define FreeSpaceBLRange 0x1c1ec0
 
@@ -49,3 +52,5 @@
 
 #define Jake 31
 #define Marf 32
+
+#endif

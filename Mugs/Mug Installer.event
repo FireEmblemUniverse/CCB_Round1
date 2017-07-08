@@ -31,3 +31,7 @@ setMugEntry(0x48, MaedaMug, 3, 5, 3, 3)
 MarfMug:
 #incext PortraitFormatter "Marf.png"
 setMugEntry(0x2B, MarfMug, 4, 8, 4, 6)
+
+DootMug:
+#incext PortraitFormatter "Doot.png"
+setMugEntry(0x2C, DootMug, 5, 7, 6, 9) //Idk the xy
