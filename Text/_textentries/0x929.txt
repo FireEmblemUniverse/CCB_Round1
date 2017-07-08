@@ -1,2 +1,2 @@
-Adept: Gain a consecutive attack.[N]
-(Speed % activation)[X]
+How many Annas are[N]
+there, anyway?[X]

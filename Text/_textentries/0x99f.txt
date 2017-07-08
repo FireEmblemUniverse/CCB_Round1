@@ -1,2 +1,2 @@
-Pragmatic: When foe is not at full HP,[N]
-attack +3 and def/res+1.[X]
+Expertise: Reduce bonus damage[N]
+from critical hits by 50%.[X]

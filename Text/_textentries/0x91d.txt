@@ -1,1 +1,1 @@
-Edgeworth[X]
+Edge[X]

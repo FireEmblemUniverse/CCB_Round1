@@ -11,3 +11,16 @@ PUSH
 ORG 0x5926F4+(0x80*8)
 #incext Png2Dmp "blitzicon.png"
 POP
+
+SnowObjectType:
+#incbin "SnowObject_LZ.bin"
+
+SnowPalette:
+#incbin "SnowPalette_FE8.bin"
+
+SnowTileConfig:
+#incbin "SnowTileConfig_LZ.bin"
+
+EventPointerTable(0x8b, SnowObjectType)
+EventPointerTable(0x8c, SnowPalette)
+EventPointerTable(0x8d, SnowTileConfig)

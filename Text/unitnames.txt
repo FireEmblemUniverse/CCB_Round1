@@ -35,7 +35,7 @@ named after a meme.[X]
 Bede[X]
 
 ##Desc_Bede
-placeholder[X]
+sexy priest[X]
 
 ##Name_Jay
 Jay[X]
@@ -69,6 +69,54 @@ Roshea[X]
 
 ##Desc_Roshea
 placeholder[X]
+
+##Name_Edge
+Edge[X]
+
+##Desc_Edge
+placeholder[X]
+
+##Name_Samson
+Samson[X]
+
+##Desc_Samson
+placeholder[X]
+
+##Name_Arve
+Arve[X]
+
+##Desc_Arve
+placeholder[X]
+
+##Name_Tye
+Tye[X]
+
+##Desc_Tye
+placeholder[X]
+
+##Name_Celicia
+Celicia[X]
+
+##Desc_Celicia
+Prone to wandering off alone,[N]
+lost in thoughts of grey waves.[X]
+
+##Name_Eevster
+Eevster[X]
+
+##Desc_Eevster
+The (Former) King of[N]
+the Basement.[X]
+
+##Desc_WyvAnna
+How many Annas are[N]
+there, anyway?[X]
+
+##Name_Nikita
+Nikita[X]
+
+##Desc_Nikita
+Axe-focused GK[X]
 
 ## EdgeworthName
 Edgeworth[X]
@@ -104,3 +152,29 @@ Doot[X]
 
 ##Desc_Doot
 DOOT DOOT[X]
+
+##Name_Celica
+Celica[X]
+
+##Desc_Celica
+Princess of the Pirates.[N]
+Hails from a distant land.[X]
+
+##Name_Doowile
+Doowile[X]
+
+##Desc_Doowile
+placeholder[X]
+
+##Name_EvilFlorina
+Evil Florina[X]
+
+##Desc_EvilFlorina
+uweeheehee[X]
+
+##Name_Jake
+Jake[X]
+
+##Desc_Jake
+placeholder[X]
+

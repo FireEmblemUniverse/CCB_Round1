@@ -1,2 +1,2 @@
-Trample: +5 damage to[N]
-unmounted units.[X]
+Nihil: Cancels the opponent's[N]
+skills in combat.[X]

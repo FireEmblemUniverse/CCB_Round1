@@ -1,2 +1,2 @@
-Pursuit: When under attack,[N]
-attack speed +2. [X]
+Tantivy: +10 Hit/Avoid if there are[N]
+no allies within 3 tiles.[X]

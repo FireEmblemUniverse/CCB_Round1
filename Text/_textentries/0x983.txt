@@ -1,2 +1,2 @@
-Tantivy: +10 Hit/Avoid if there are[N]
-no allies within 3 tiles.[X]
+Rally Strength: +4 Str[N]
+to allies within 2 tiles.[X]

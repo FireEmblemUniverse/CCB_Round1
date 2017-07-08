@@ -1,2 +1,2 @@
-Anathema: -10 Avoid/Dodge to all[N]
-enemies within 3 tiles.[X]
+Rally Speed: +4 Spd to[N]
+allies within 2 tiles.[X]

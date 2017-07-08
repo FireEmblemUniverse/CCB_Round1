@@ -1,2 +1,2 @@
-Strong Riposte: When under[N]
-attack, damage +3. [X]
+Savage Blow: After attacking, enemies[N]
+within 2 tiles take 20% damage.[X]

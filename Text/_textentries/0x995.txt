@@ -1,3 +1,2 @@
-Nice Personality: This unit has[N]
-a deep and engaging character,[N]
-bursting at the seams with development.[X]
+Trample: +5 damage to[N]
+unmounted units.[X]

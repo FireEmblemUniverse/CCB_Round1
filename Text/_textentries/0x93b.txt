@@ -1,2 +1,1 @@
-Swordbreaker: +50 Hit/Avo when[N]
-enemy has a sword equipped.[X]
+Evil Florina[X]

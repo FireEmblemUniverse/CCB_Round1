@@ -1,2 +1,2 @@
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+Slow Burn: +1 Hit and Avoid for[N]
+each passing turn, up to 15.[X]

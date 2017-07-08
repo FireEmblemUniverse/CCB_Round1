@@ -1,2 +1,2 @@
-Critical Force: Base critical is[N]
-Skl * 1.5.[X]
+Anathema: -10 Avoid/Dodge to all[N]
+enemies within 3 tiles.[X]

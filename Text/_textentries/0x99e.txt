@@ -1,2 +1,2 @@
-Chivalry: When foe is at full HP,[N]
-attack and def/res +2.[X]
+Lily's Poise: Adjacent allies gain[N]
++1/-3 damage dealt/received.[X]

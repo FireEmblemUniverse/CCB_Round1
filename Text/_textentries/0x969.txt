@@ -1,2 +1,2 @@
-Paragon: Experience gain[N]
-is doubled.[X]
+Tomefaire: +4 damage[N]
+when equipping a tome.[X]

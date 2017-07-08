@@ -1,2 +1,2 @@
-Fiery Blood: +4 damage[N]
-when HP is not at max.[X]
+Rally Movement: +1 Move[N]
+to allies within 2 tiles.[X]

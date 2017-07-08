@@ -1,2 +1,2 @@
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+Smite: Allows unit to push[N]
+other units two tiles away.[X]

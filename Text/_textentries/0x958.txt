@@ -1,2 +1,2 @@
-Galeforce: Move again after[N]
-attacking and defeating an enemy.[X]
+Pavise: Nullify a physical attack.[N]
+(Skill % activation)[X]

@@ -1,2 +1,2 @@
-Darting Blow: +5 Attack Speed[N]
-when initiating battle.[X]
+Wary Fighter: Unit cannot[N]
+double or be doubled.[X]

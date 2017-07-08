@@ -1,2 +1,2 @@
-Charm: Allies within 2[N]
-tiles deal +2 damage.[X]
+Vantage: If HP < 50%,[N]
+strike first when attacked.[X]

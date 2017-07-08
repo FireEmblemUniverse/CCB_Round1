@@ -1,3 +1,2 @@
-Despoil: Obtain a Red Gem after[N]
-attacking and defeating an enemy.[N]
-(Luck % activation)[X]
+Wind Disciple: +10 Hit and[N]
+Avoid when HP is not at max.[X]

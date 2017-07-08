@@ -1,2 +1,2 @@
-Countermagic: Magic damage taken[N]
-at 1-2 range is reflected.[X]
+Bane: Leave the opponent at 1 HP.[N]
+(Skill/2 % activation)[X]

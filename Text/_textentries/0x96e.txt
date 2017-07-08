@@ -1,2 +1,2 @@
-Rally Skill: +4 Skill[N]
-to allies within 2 tiles.[X]
+Lifetaker: Restore up to 50% HP after[N]
+attacking and defeating an enemy.[X]

@@ -1,2 +1,2 @@
-Reposition: Allows unit to pull an[N]
-adjacent ally to its opposite side.[X]
+Patience: When under[N]
+attack, avoid +10. [X]

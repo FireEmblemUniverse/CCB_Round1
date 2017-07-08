@@ -1,2 +1,2 @@
-Spur Speed: Adjacent allies[N]
-gain +4 Attack Speed.[X]
+Miracle: Survive a lethal[N]
+attack if HP > 50%.[X]

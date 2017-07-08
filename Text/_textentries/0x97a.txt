@@ -1,2 +1,2 @@
-Locktouch: Can open locks[N]
-without keys or picks.[X]
+Spur Magic: Adjacent allies[N]
+deal +4 magical damage.[X]

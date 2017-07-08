@@ -1,2 +1,2 @@
-Malefic Aura: Enemies within 2[N]
-tiles receive +2 magic damage.[X]
+Certain Blow: +40 Hit[N]
+when initiating battle.[X]

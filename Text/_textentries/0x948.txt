@@ -1,2 +1,2 @@
-Vantage: If HP < 50%,[N]
-strike first when attacked.[X]
+Frenzy: For every 4 damage[N]
+taken, +1 to damage dealt.[X]

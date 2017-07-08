@@ -1,2 +1,2 @@
-Lunge: Swap places with the[N]
-opponent after combat.[X]
+Spur Speed: Adjacent allies[N]
+gain +4 Attack Speed.[X]

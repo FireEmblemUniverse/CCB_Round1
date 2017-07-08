@@ -1,5 +1,2 @@
-[MidLeft][LoadDoot]
-Thanks for saving me![A][NL]
-I owe you a lot, so I guess[NL]
-I'll help you with whatever[A][NL]
-it is you're trying to do.[A][X]
+Pivot: Allows unit to move to the[N]
+opposite side of an adjacent ally.[X]

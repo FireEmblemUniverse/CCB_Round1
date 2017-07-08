@@ -1,2 +1,2 @@
-Renewal: Restore 30% of max HP[N]
-at the start of each turn.[X]
+Duelist's Blow: +30 Avo[N]
+when initiating battle.[X]

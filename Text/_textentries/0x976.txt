@@ -1,2 +1,2 @@
-Staff Savant: Maximum range[N]
-of staves is increased by 1.[X]
+Charm: Allies within 2[N]
+tiles deal +2 damage.[X]

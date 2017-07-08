@@ -1,2 +1,2 @@
-Death Blow: +20 Crit[N]
-when initiating battle.[X]
+Canto+: Can move again after[N]
+attacking and other actions.[X]

@@ -1,2 +1,2 @@
-Desperation: If HP < 50%,[N]
-double attacks occur immediately.[X]
+Canto: Can move again[N]
+after certain actions.[X]

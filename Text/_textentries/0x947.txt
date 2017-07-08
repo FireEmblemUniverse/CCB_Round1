@@ -1,2 +1,2 @@
-Armored Blow: +10 Def[N]
-when initiating battle.[X]
+Mercy: Enemies are left[N]
+with at least 1 HP.[X]

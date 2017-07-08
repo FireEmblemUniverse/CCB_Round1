@@ -1,2 +1,2 @@
-Opportunist: +4 damage[N]
-if the foe cannot counter.[X]
+Spur Resistance: Adjacent allies[N]
+take -4 magical damage.[X]

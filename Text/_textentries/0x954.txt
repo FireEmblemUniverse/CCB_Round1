@@ -1,2 +1,2 @@
-Slayer: Deal effective damage[N]
-to monster units.[X]
+Axebreaker: +50 Hit/Avo when[N]
+enemy has an axe equipped.[X]

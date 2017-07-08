@@ -1,2 +1,3 @@
-Warding Blow: +20 Res[N]
-when initiating battle.[X]
+Sure Shot: A precision attack that[N]
+always hits and does 1.5x damage.[N]
+(Skill % activation)[X]

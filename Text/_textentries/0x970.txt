@@ -1,2 +1,2 @@
-Rally Luck: +4 Luck to[N]
-allies within 2 tiles.[X]
+Renewal: Restore 30% of max HP[N]
+at the start of each turn.[X]

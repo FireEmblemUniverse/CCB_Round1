@@ -1,2 +1,2 @@
-Swap: Allows unit to swap positions[N]
-with an adjacent ally.[X]
+Pursuit: When under attack,[N]
+attack speed +2. [X]

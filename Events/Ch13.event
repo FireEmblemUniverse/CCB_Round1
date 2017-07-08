@@ -40,6 +40,7 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+DefeatAll(EndingScene)
 END_MAIN
 
 Dunno:
@@ -56,7 +57,7 @@ END_MAIN
 ALIGN 4
 
 BeginningScene:
-VCWF 6
+VCWF 8
 LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 CeliciaGroup

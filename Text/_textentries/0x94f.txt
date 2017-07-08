@@ -1,2 +1,3 @@
-Lancefaire: +4 damage[N]
-when equipping a lance.[X]
+Aether: First strike absorbs HP,[N]
+second strike negates defenses.[N]
+(Skill/2 % activation)[X]

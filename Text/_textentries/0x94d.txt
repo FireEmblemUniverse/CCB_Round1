@@ -1,2 +1,2 @@
-Miracle: Survive a lethal[N]
-attack if HP > 50%.[X]
+Luna: Negates enemy defenses.[N]
+(Skill % activation)[X]

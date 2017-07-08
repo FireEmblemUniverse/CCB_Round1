@@ -1,2 +1,2 @@
-Intimidate: -10 Avoid to[N]
-all enemies within 2 tiles.[X]
+Spur Defense: Adjacent allies[N]
+take -4 physical damage.[X]

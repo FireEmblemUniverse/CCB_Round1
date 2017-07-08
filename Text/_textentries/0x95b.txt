@@ -1,2 +1,2 @@
-Demoiselle: Male allies within[N]
-2 tiles receive -2 damage.[X]
+Darting Blow: +5 Attack Speed[N]
+when initiating battle.[X]
