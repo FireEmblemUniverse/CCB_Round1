@@ -32,6 +32,10 @@ Edge_Mug:
 #incext PortraitFormatter "Edge.png"
 setMugEntry(0x11, Edge_Mug, 2,5,3,3)
 
+Samson_Mug:
+#incext PortraitFormatter "Samson.png"
+setMugEntry(0x16, Samson_Mug, 3,5,3,3)
+
 Arve_Mug:
 #incext PortraitFormatter "Arve.png"
 setMugEntry(0x18, Arve_Mug, 3,5,3,3)
