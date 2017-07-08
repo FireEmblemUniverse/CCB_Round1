@@ -53,4 +53,7 @@
 #define Jake 31
 #define Marf 32
 
+#define Ch21Boss 0xC5
+#define Ch21Generic 0x9A
+
 #endif

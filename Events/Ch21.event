@@ -1,9 +1,6 @@
 #include EAstdlib.event
 #include "../Custom Definitions.event"
 
-#define Ch21Boss 0xC5
-#define Ch21Generic 0x9A
-
 EventPointerTable(0x64,ThisChapter) //Final Eirika Pt1
 
 ThisChapter:
