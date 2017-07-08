@@ -40,8 +40,8 @@ ldr r0, =0x801548d
 bx r0
 
 EnemyControl:
-ldr r0, =0x801546d
-bx r0
+ldr r1, =0x801546d
+bx r1
 
 ControlCheck:
 push {lr}

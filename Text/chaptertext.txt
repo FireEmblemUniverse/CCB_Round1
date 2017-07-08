@@ -66,6 +66,26 @@ This text is a placeholder![A][X]
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]
 
+##Ch10PreBattleText1
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
+##Ch10PostBattleText1
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
+##Ch10House1Text
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
+##Ch10House2Text
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
+##SamsonRecText
+[MidLeft][LoadFace][0x2][0x1]
+This text is a placeholder![A][X]
+
 ##Ch12RecruitTalk
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]

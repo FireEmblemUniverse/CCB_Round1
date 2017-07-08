@@ -7,6 +7,7 @@ ORG $1D308 //hook just before the check for misc event
 jumpToHack(PostCombatLoop)
 ORG $1D2B8 //this used to set state to "cantoing", it's just there to make sure galeforce has priority
 jumpToHack(CheckGaleforce)
+//ORG $39BDC //this added 1 to make the ai move the next unit
 POP
 
 ALIGN 4
@@ -23,7 +24,7 @@ POIN SavageBlow Despoil Lifetaker //lifetaker should probably go after any messa
 POIN Canto CantoPlus Galeforce //this order for canto and friends is the only one I tested
 WORD 0 //Terminator
 MESSAGE PostCombatLoop
-MESSAGE SavageBlow Despoil Lifetaker Galeforce Canto CantoPlus
+MESSAGE Galeforce
 Lifetaker:
 #incbin "lifetaker.dmp"
 POIN SkillTester
@@ -87,4 +88,6 @@ SHORT 0x2110
 ORG $323A0 //making dance not clear the galeforce flag
 SHORT 0xFFBD
 SHORT 0xFFFF
+ORG $39B98 //this sets 00040000 to the status bitfield thing for some reason on non-player units
+SHORT 0x46C0
 POP

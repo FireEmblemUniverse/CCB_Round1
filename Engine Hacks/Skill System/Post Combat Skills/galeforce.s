@@ -52,6 +52,18 @@ lsl	r1, #0x08
 orr	r0, r1
 str	r0, [r4,#0x0C]
 
+@add unit to the AI list so enemies act twice
+ldr	r0,=#0x203AA03
+ldrb	r1, [r4,#0x0B]	@allegiance byte of the character we are checking
+AddAILoop:
+add	r0, #0x01
+ldrb	r2, [r0]
+cmp	r2, #0x00
+bne	AddAILoop
+strb	r1, [r0]
+add	r0, #0x01
+strb	r2, [r0]
+
 Event:
 ldr	r0,=#0x800D07C		@event engine thingy
 mov	lr, r0

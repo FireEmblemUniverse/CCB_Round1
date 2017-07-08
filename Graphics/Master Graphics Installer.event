@@ -2,6 +2,11 @@
 PUSH
   ORG $AC188
   POIN NewDifficultyButtons
+
+  ORG $8AEFE4
+  BYTE 1 //make eirika use anims for lance not swd
+  ORG $8AEFFC
+  BYTE 1 //same for promo
 POP
 
 NewDifficultyButtons:

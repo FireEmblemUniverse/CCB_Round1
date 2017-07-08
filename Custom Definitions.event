@@ -33,8 +33,8 @@
 #define Roshea 12
 
 #define Edge 14
-
-
+//no ephraim replacement
+#define Samson 16
 #define Arve 17
 #define Tye 18
 #define Celicia 19

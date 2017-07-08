@@ -18,7 +18,7 @@ setMugEntry(0x9, Bede_Mug, 3,5,2,3)
 
 NotArch_Mug:
 #incext PortraitFormatter "NotArch.png"
-setMugEntry(0xc, NotArch_Mug, 2,5,2,3)
+setMugEntry(0xc, NotArch_Mug, 3,5,3,3)
 
 Kirsten_Mug:
 #incext PortraitFormatter "Kirsten.png"
@@ -30,7 +30,7 @@ setMugEntry(0x10, Roshea_Mug, 2,5,2,3)
 
 Edge_Mug:
 #incext PortraitFormatter "Edge.png"
-setMugEntry(0x11, Edge_Mug, 2,6,3,4)
+setMugEntry(0x11, Edge_Mug, 2,5,3,3)
 
 Arve_Mug:
 #incext PortraitFormatter "Arve.png"

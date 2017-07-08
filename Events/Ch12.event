@@ -116,7 +116,7 @@ UNIT Gilliam Soldier Eirika Level(1, Ally, 0) [5,24] 0x00 0x00 0x0 0x00 [0x00] N
 UNIT
 
 NotCain:
-UNIT Tye Knight 0x00 Level(10, NPC, 0) [0,2] 0x00 0x00 0x0 0x00 [KillerLance, Horseslayer, Axereaver, Javelin] AttackInRangeAI 
+UNIT Tye Knight 0x00 Level(10, NPC, 0) [4,19] 0x00 0x00 0x0 0x00 [KillerLance, Horseslayer, Axereaver, Javelin] AttackInRangeAI 
 UNIT
 
 Bad: 

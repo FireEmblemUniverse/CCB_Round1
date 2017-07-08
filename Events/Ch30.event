@@ -1,68 +1,197 @@
-EventPointerTable(0x87, PointerList)
+#include EAstdlib.event
 
-PointerList:
+EventPointerTable(0x87,ThisChapter)
+
+ORG 0xE80000
+
+ThisChapter:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
 POIN LocationBasedEvents
 POIN MiscBasedEvents
-POIN Dunno1 Dunno2 Dunno3 Tutorial
-POIN Traps1 Traps2
-POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
-POIN $0 $0 $0
-POIN $0 $0 $0
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
+Units:
+UNIT Eirika EphraimLord 0x00 Level(1, Ally, 0) [11,38] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [10,37] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [12,37] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [9,38] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [13,38] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [8,39] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [14,39] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [10,39] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [12,39] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [9,40] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [13,40] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth EphraimLord 0x00 Level(1, Ally, 0) [11,36] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+
 TurnBasedEvents:
+TurnEventPlayer(0, SpawnGargoyles1, 4, 10)
+TurnEventPlayer(0x7, SpawnGargoyles2, 0, 200)
+TurnEventPlayer(0x9, SpawnPhantoms, 0, 200)
 END_MAIN
 
 CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Seize(0,0)
+#ifdef __DEBUG__
+Seize(11,38)
+#endif
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+AREA 0x8 StartSpawningGargoyles [6,11] [16,19]
 END_MAIN
 
-Dunno1:
-END_MAIN
-
-Dunno2:
-END_MAIN
-
-Dunno3:
-END_MAIN
+Dunno:
+//DO NOT TOUCH
+WORD $00
 
 Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
 END_MAIN
 
-Units1:
-UNIT Eirika  0x2 0x1 0xA1   [0,0] 0b 0x0 0x0 0x0 [0x1,0x98,0x88,0x0] [0x0,0x0,0x0,0x0]
-UNIT
-
-EnemyUnits:
-UNIT
-
-Traps1:
-ENDTRAP
-ALIGN 4
-
-Traps2:
-ENDTRAP
 ALIGN 4
 
 BeginningScene:
-LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+ENUT 0x7 //stop gargoyles spawning from top until area event is triggered
+ENUT 0x9 //same for phantoms
+LOAD2 0x1 Units
 ENUN
-// GotoPrepScreen
+LOAD1 0x1 Enemies1
+ENUN
+LOAD1 0x1 Enemies2
+ENUN
+GotoPrepScreen
 ENDA
 
 EndingScene:
 MNC4 0x0
 NoFade
 ENDA
+
+// Events
+SpawnGargoyles1:
+  CHECK_TURNS //store current turn to slot c
+  //Now get remainder mod 2
+  SMOV r1 2
+  SDIV slotsParam(r2, rC, r1) //r2 = rC/2
+  SMUL slotsParam(r1, r2)     //r1 = r2*2
+  SSUB slotsParam(r1, rC, r1)     //r1 -= rC, r1 = remainder
+  BNE 0x0 r1 0
+  ReinforcementEvent(Reinforcements1)    //Remainder was 0 (right)
+  LABEL 0x0
+  NoFade
+  ENDA
+
+StartSpawningGargoyles:
+  ENUF 0x7
+  NoFade
+  ENDA
+
+SpawnGargoyles2:
+  ENUF 0x7
+  ENUF 0x9
+  CHECK_TURNS //store current turn to slot c
+  //Now get remainder mod 2
+  SMOV r1 2
+  SDIV slotsParam(r2, rC, r1) //r2 = rC/2
+  SMUL slotsParam(r1, r2)     //r1 = r2*2
+  SSUB slotsParam(r1, rC, r1)     //r1 -= rC, r1 = remainder
+  BNE 0x0 r1 0
+  ReinforcementEvent(Reinforcements2)    //Remainder was 0 (right)
+  LABEL 0x0
+  NoFade
+  ENDA
+
+SpawnPhantoms:
+  ReinforcementEvent(CentreArea)
+
+// Manual Movement
+
+// Scripted Fights
+
+// Units
+Enemies1:
+UNIT Fomortiis DemonKing 0x00 Level(20, Enemy, 1) [11,6] 0x00 0x00 0x0 0x00 [DemonLight, Ravager, Nightmare] DemonKingAI 
+UNIT 0xAE Gorgon Fomortiis Level(20, Enemy, 1) [2,40] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] PursueWithoutHeedAI 
+UNIT 0xAE Gorgon Fomortiis Level(20, Enemy, 1) [20,40] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] PursueWithoutHeedAI 
+UNIT 0xAE Gorgon Fomortiis Level(20, Enemy, 1) [1,4] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] ChaseOnceApproachedAI 
+UNIT 0xAE Gorgon Fomortiis Level(20, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] ChaseOnceApproachedAI 
+UNIT 0xAE Gorgon Fomortiis Level(20, Enemy, 1) [2,21] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] ChaseOnceApproachedAI 
+UNIT 0xAE Gorgon Fomortiis Level(20, Enemy, 1) [20,21] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] ChaseOnceApproachedAI 
+UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [5,28] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] AttackInRangeAI 
+UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [17,28] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] AttackInRangeAI 
+UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [10,24] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] GuardTileAI 
+UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [11,24] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] GuardTileAI 
+UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [12,24] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] GuardTileAI 
+UNIT
+
+Enemies2:
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [2,23] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI 
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [20,23] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI 
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [10,11] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI 
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [11,11] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI 
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [12,11] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI 
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [5,32] 0x00 0x00 0x0 0x00 [WretchedAir] AttackInRangeAI 
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [17,32] 0x00 0x00 0x0 0x00 [WretchedAir] AttackInRangeAI 
+UNIT 0xAE Gwyllgi Fomortiis Level(20, Enemy, 1) [4,14] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
+UNIT 0xAE Gwyllgi Fomortiis Level(20, Enemy, 1) [18,14] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
+UNIT 0xAE Gwyllgi Fomortiis Level(20, Enemy, 1) [8,29] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
+UNIT 0xAE Gwyllgi Fomortiis Level(20, Enemy, 1) [14,29] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
+UNIT 0xAE Wight_Bow Fomortiis Level(20, Enemy, 1) [9,15] 0x00 0x00 0x0 0x00 [SilverBow] ChaseOnceApproachedAI 
+UNIT 0xAE Wight_Bow Fomortiis Level(20, Enemy, 1) [13,15] 0x00 0x00 0x0 0x00 [SilverBow] ChaseOnceApproachedAI 
+UNIT 0xAE Wight_Bow Fomortiis Level(20, Enemy, 1) [20,26] 0x00 0x00 0x0 0x00 [SilverBow] ChaseOnceApproachedAI 
+UNIT 0xAE Wight_Bow Fomortiis Level(20, Enemy, 1) [2,26] 0x00 0x00 0x0 0x00 [SilverBow] ChaseOnceApproachedAI 
+UNIT
+
+Reinforcements1:
+UNIT 0xAE Deathgoyle Fomortiis Level(20, Enemy, 1) [0,19] 0x00 0x00 0x0 0x00 [Spear] PursueWithoutHeedAI 
+UNIT 0xAE Deathgoyle Fomortiis Level(20, Enemy, 1) [22,19] 0x00 0x00 0x0 0x00 [Spear] PursueWithoutHeedAI 
+UNIT 0xAE Deathgoyle Fomortiis Level(20, Enemy, 1) [0,17] 0x00 0x00 0x0 0x00 [Spear] PursueWithoutHeedAI 
+UNIT 0xAE Deathgoyle Fomortiis Level(20, Enemy, 1) [22,17] 0x00 0x00 0x0 0x00 [Spear] PursueWithoutHeedAI 
+UNIT
+
+Reinforcements2:
+UNIT 0xAE Deathgoyle Fomortiis Level(20, Enemy, 1) [4,0] 0x00 0x00 0x0 0x00 [Spear] PursueWithoutHeedAI 
+UNIT 0xAE Deathgoyle Fomortiis Level(20, Enemy, 1) [18,0] 0x00 0x00 0x0 0x00 [Spear] PursueWithoutHeedAI 
+UNIT 0xAE Deathgoyle Fomortiis Level(20, Enemy, 1) [2,0] 0x00 0x00 0x0 0x00 [Spear] PursueWithoutHeedAI 
+UNIT 0xAE Deathgoyle Fomortiis Level(20, Enemy, 1) [20,0] 0x00 0x00 0x0 0x00 [Spear] PursueWithoutHeedAI 
+UNIT 0xAE Deathgoyle Fomortiis Level(20, Enemy, 1) [8,0] 0x00 0x00 0x0 0x00 [Spear] PursueWithoutHeedAI 
+UNIT 0xAE Deathgoyle Fomortiis Level(20, Enemy, 1) [14,0] 0x00 0x00 0x0 0x00 [Spear] PursueWithoutHeedAI 
+UNIT
+
+Mogalls:
+UNIT 0xAE ArchMogall Fomortiis Level(20, Enemy, 1) [8,8] 0x00 0x00 0x0 0x00 [Naglfar] PursueWithoutHeedAI 
+UNIT 0xAE ArchMogall Fomortiis Level(20, Enemy, 1) [14,8] 0x00 0x00 0x0 0x00 [Naglfar] PursueWithoutHeedAI 
+UNIT 0xAE ArchMogall Fomortiis Level(20, Enemy, 1) [8,2] 0x00 0x00 0x0 0x00 [Naglfar] PursueWithoutHeedAI 
+UNIT 0xAE ArchMogall Fomortiis Level(20, Enemy, 1) [14,2] 0x00 0x00 0x0 0x00 [Naglfar] PursueWithoutHeedAI 
+UNIT
+
+CentreArea:
+UNIT 0xAE GhostFighter Fomortiis Level(20, Enemy, 1) [8,17] 0x00 0x00 0x0 0x00 [BattleAxe] PursueWithoutHeedAI 
+UNIT 0xAE GhostFighter Fomortiis Level(20, Enemy, 1) [14,17] 0x00 0x00 0x0 0x00 [BattleAxe] PursueWithoutHeedAI 
+UNIT 0xAE GhostFighter Fomortiis Level(20, Enemy, 1) [9,12] 0x00 0x00 0x0 0x00 [BattleAxe] PursueWithoutHeedAI 
+UNIT 0xAE GhostFighter Fomortiis Level(20, Enemy, 1) [13,12] 0x00 0x00 0x0 0x00 [BattleAxe] PursueWithoutHeedAI 
+UNIT 0xAE GhostFighter Fomortiis Level(20, Enemy, 1) [9,18] 0x00 0x00 0x0 0x00 [BattleAxe] PursueWithoutHeedAI 
+UNIT 0xAE GhostFighter Fomortiis Level(20, Enemy, 1) [13,18] 0x00 0x00 0x0 0x00 [BattleAxe] PursueWithoutHeedAI 
+UNIT
+
+
+// Shop Data
 
 PUSH
 ORG $9ea8
