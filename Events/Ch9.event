@@ -1,16 +1,17 @@
-EventPointerTable(0x2d, PointerList)
+EventPointerTable(0x2d,ThisChapter)
 
-PointerList:
+ThisChapter:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
 POIN LocationBasedEvents
 POIN MiscBasedEvents
-POIN Dunno1 Dunno2 Dunno3 Tutorial
-POIN Traps1 Traps2
-POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
-POIN $0 $0 $0
-POIN $0 $0 $0
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
+
 
 TurnBasedEvents:
 END_MAIN
@@ -19,47 +20,110 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Seize(0,0)
+Seize(2,3)
+#ifdef __DEBUG__
+Seize(27,18)
+#endif
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
 END_MAIN
 
-Dunno1:
-END_MAIN
-
-Dunno2:
-END_MAIN
-
-Dunno3:
-END_MAIN
+Dunno:
+//DO NOT TOUCH
+WORD $00
 
 Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
 END_MAIN
 
-Units1:
-UNIT Eirika  0x2 0x1 0xA1   [0,0] 0b 0x0 0x0 0x0 [0x1,0x98,0x88,0x0] [0x0,0x0,0x0,0x0]
-UNIT
-
-EnemyUnits:
-UNIT
-
-Traps1:
-ENDTRAP
-ALIGN 4
-
-Traps2:
-ENDTRAP
 ALIGN 4
 
 BeginningScene:
-LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+LOAD2 0x1 Units
 ENUN
-// GotoPrepScreen
+LOAD1 0x1 NPCs
+ENUN
+LOAD1 0x1 Enemies
+ENUN
+GotoPrepScreen
+NoFade
 ENDA
 
 EndingScene:
-MNCH 10
-NoFade
+MNCH 12
 ENDA
+
+// Events
+
+// Manual Movement
+
+// Scripted Fights
+
+// Units
+Units:
+UNIT Eirika EirikaLord 0x00 Level(1, Ally, 0) [27,18] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin 0x00 Level(1, Ally, 0) [26,19] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Gilliam Knight 0x00 Level(1, Ally, 0) [28,17] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Franz Cavalier 0x00 Level(1, Ally, 0) [28,19] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Moulder Priest 0x00 Level(1, Ally, 0) [26,17] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Vanessa PegasusKnight 0x00 Level(1, Ally, 0) [25,18] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Ross Journeyman_1 0x00 Level(1, Ally, 0) [27,16] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+NPCs:
+UNIT Garcia Mercenary Eirika Level(7, NPC, 0) [27,4] 0x00 0x00 0x0 0x00 [KillingEdge, Vulnerary] NeverMoveAI 
+UNIT Klimt Soldier 0x00 Level(3, NPC, 0) [28,5] 0x00 0x00 0x0 0x00 [Javelin, Vulnerary] NeverMoveAI 
+UNIT RenaisCivilianChild_F Civilian_F 0x00 Level(1, NPC, 0) [29,1] 0x00 0x00 0x0 0x00 [0x00] NeverMoveAI 
+UNIT RenaisCivilian Civilian 0x00 Level(1, NPC, 0) [29,3] 0x00 0x00 0x0 0x00 [0x00] NeverMoveAI 
+UNIT RenaisCivilian_F Civilian_F_2 0x00 Level(1, NPC, 0) [29,2] 0x00 0x00 0x0 0x00 [0x00] NeverMoveAI 
+UNIT
+
+Enemies:
+UNIT 0x80 Cavalier 0x00 Level(6, Enemy, 1) [19,15] 0x00 0x00 0x0 0x00 [IronSword] NoAI 
+UNIT 0x80 Cavalier 0x00 Level(6, Enemy, 1) [18,16] 0x00 0x00 0x0 0x00 [IronSword] NoAI 
+UNIT 0x80 Cavalier 0x00 Level(6, Enemy, 1) [19,19] 0x00 0x00 0x0 0x00 [SlimSword] NoAI 
+UNIT 0x80 Knight 0x00 Level(6, Enemy, 1) [17,12] 0x00 0x00 0x0 0x00 [Javelin] NoAI 
+UNIT 0x80 Mercenary 0x00 Level(6, Enemy, 1) [20,11] 0x00 0x00 0x0 0x00 [Lancereaver] DefaultAI 
+UNIT 0x80 Fighter 0x00 Level(6, Enemy, 1) [23,13] 0x00 0x00 0x0 0x00 [SteelAxe] DefaultAI 
+UNIT 0x80 Summoner 0x00 Level(6, Enemy, 1) [7,16] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Shaman_F 0x00 Level(6, Enemy, 1) [8,17] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Shaman_F 0x00 Level(6, Enemy, 1) [6,15] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Shaman 0x00 Level(6, Enemy, 1) [6,17] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Priest 0x00 Level(10, Enemy, 1) [4,18] 0x00 0x00 0x0 0x00 [Physic] AttackInRangeAI 
+UNIT 0x80 Knight 0x00 Level(10, Enemy, 1) [6,7] 0x00 0x00 0x0 0x00 [SilverLance] AttackInRangeAI 
+UNIT 0x80 Mage 0x00 Level(5, Enemy, 1) [11,8] 0x00 0x00 0x0 0x00 [Fire] AttackInRangeAI 
+UNIT 0x80 Mage 0x00 Level(5, Enemy, 1) [10,9] 0x00 0x00 0x0 0x00 [Fire] AttackInRangeAI 
+UNIT 0x80 Mage 0x00 Level(5, Enemy, 1) [12,8] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
+UNIT 0x80 Mage_F 0x00 Level(5, Enemy, 1) [11,9] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
+UNIT
+Enemies2:
+UNIT 0x80 Mage 0x00 Level(5, Enemy, 1) [10,10] 0x00 0x00 0x0 0x00 [Thunder] AttackInRangeAI 
+UNIT 0x80 Cavalier 0x00 Level(5, Enemy, 1) [13,11] 0x00 0x00 0x0 0x00 [Horseslayer] PursueWithoutHeedAI 
+UNIT 0x80 Cavalier 0x00 Level(5, Enemy, 1) [14,10] 0x00 0x00 0x0 0x00 [Axereaver] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary 0x00 Level(5, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI 
+UNIT 0x80 Mercenary 0x00 Level(7, Enemy, 1) [20,6] 0x00 0x00 0x0 0x00 [SteelSword] PursueWithoutHeedAI 
+UNIT 0x80 Brigand 0x00 Level(7, Enemy, 1) [6,9] 0x00 0x00 0x0 0x00 [IronAxe] BrigandAI 
+UNIT 0x80 Brigand 0x00 Level(7, Enemy, 1) [2,19] 0x00 0x00 0x0 0x00 [IronAxe] BrigandAI 
+UNIT 0x80 Brigand 0x00 Level(7, Enemy, 1) [17,8] 0x00 0x00 0x0 0x00 [IronAxe] NeverMoveAI 
+UNIT 0x80 WyvernRider 0x00 Level(7, Enemy, 1) [3,4] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 WyvernRider 0x00 Level(7, Enemy, 1) [1,4] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 WyvernRider 0x00 Level(7, Enemy, 1) [2,5] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 Hero_F 0x00 Level(10, Enemy, 0) [2,3] 0x00 0x00 0x0 0x00 [Runesword, LightBrand] AttackInRangeAI 
+UNIT 0x80 Monk 0x00 Level(5, Enemy, 1) [7,5] 0x00 0x00 0x0 0x00 [Shine] PursueWithoutHeedAI 
+UNIT 0x80 Monk 0x00 Level(5, Enemy, 1) [9,4] 0x00 0x00 0x0 0x00 [Shine] PursueWithoutHeedAI 
+UNIT 0x80 Druid 0x00 Level(5, Enemy, 1) [1,8] 0x2 0x00 0x0 0x00 [Nosferatu, Purge] NeverMoveAI 
+UNIT 0x80 PegasusKnight 0x00 Level(5, Enemy, 1) [4,10] 0x00 0x00 0x0 0x00 [IronLance, Vulnerary] AttackInRangeAI 
+Enemies3:
+UNIT 0x80 PegasusKnight 0x00 Level(5, Enemy, 1) [3,10] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x80 PegasusKnight 0x00 Level(5, Enemy, 1) [4,11] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT
+
+
+// Shop Data
+
+MESSAGE Events end at offset currentOffset

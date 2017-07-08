@@ -74,7 +74,7 @@ Text(Ch21End)
 SMOV 0x3 Fire
 GIVEITEMTO Doot
 LABEL 0x1
-MNCH 22
+MNC2 22
 NoFade
 ENDA
 
