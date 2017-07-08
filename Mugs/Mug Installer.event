@@ -12,6 +12,58 @@ Tam_Mug:
 #incext PortraitFormatter "Tam.png"
 setMugEntry(0x5, Tam_Mug, 2,5,2,3)
 
+Bede_Mug:
+#incext PortraitFormatter "Bede.png"
+setMugEntry(0x9, Bede_Mug, 3,5,2,3)
+
+NotArch_Mug:
+#incext PortraitFormatter "NotArch.png"
+setMugEntry(0xc, NotArch_Mug, 2,5,2,3)
+
+Kirsten_Mug:
+#incext PortraitFormatter "Kirsten.png"
+setMugEntry(0xe, Kirsten_Mug, 2,6,3,4)
+
+Roshea_Mug:
+#incext PortraitFormatter "Roshea.png"
+setMugEntry(0x10, Roshea_Mug, 2,5,2,3)
+
+Edge_Mug:
+#incext PortraitFormatter "Edge.png"
+setMugEntry(0x11, Edge_Mug, 2,6,3,4)
+
+Arve_Mug:
+#incext PortraitFormatter "Arve.png"
+setMugEntry(0x18, Arve_Mug, 2,6,3,4)
+
+Tye_Mug:
+#incext PortraitFormatter "Tye.png"
+setMugEntry(0x19, Tye_Mug, 2,5,2,3)
+
+Celicia_Mug:
+#incext PortraitFormatter "celicia.png"
+setMugEntry(0x1a, Celicia_Mug, 3,5,3,3)
+
+Eevster_Mug:
+#incext PortraitFormatter "Eev.png"
+setMugEntry(0x1b, Eevster_Mug, 3,7,3,5)
+
+AnnaWyv_Mug:
+#incext PortraitFormatter "AnnaWyv.png"
+setMugEntry(0x1c, AnnaWyv_Mug, 2,6,3,4)
+
+Celica_Mug:
+#incext PortraitFormatter "Celica.png"
+setMugEntry(0x1d, Celica_Mug, 3,6,3,4)
+
+Doowile_Mug:
+#incext PortraitFormatter "doowile.png"
+setMugEntry(0x25, Doowile_Mug, 3,5,3,3)
+
+Jake_Mug:
+#incext PortraitFormatter "Jake.png"
+setMugEntry(0x2a, Jake_Mug, 2,5,3,3)
+
 EdgeworthMug:
 #incext PortraitFormatter "Edgeworth.png"
 setMugEntry(0x21, EdgeworthMug, 2, 4, 6, 4)
@@ -34,4 +86,4 @@ setMugEntry(0x2B, MarfMug, 4, 8, 4, 6)
 
 DootMug:
 #incext PortraitFormatter "Doot.png"
-setMugEntry(0x2C, DootMug, 4, 6, 4, 4)
+setMugEntry(0x2D, DootMug, 4, 6, 4, 4)
