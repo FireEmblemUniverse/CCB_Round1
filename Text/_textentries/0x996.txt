@@ -1,2 +1,2 @@
-Camaraderie: Recover 10% HP each turn[N]
-if there are allies within 2 tiles.[X]
+Lunge: Swap places with the[N]
+opponent after combat.[X]

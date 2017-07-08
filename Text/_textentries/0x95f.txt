@@ -1,2 +1,2 @@
-Vantage: If HP < 50%,[N]
-strike first when attacked.[X]
+Darting Blow: +5 Attack Speed[N]
+when initiating battle.[X]

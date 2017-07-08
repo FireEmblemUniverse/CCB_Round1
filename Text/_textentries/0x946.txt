@@ -1,2 +1,2 @@
-Provoke: Enemies are more[N]
-likely to target this unit.[X]
+Pass: Can move through[N]
+enemy units.[X]

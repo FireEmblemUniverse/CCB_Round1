@@ -1,2 +1,2 @@
-Chivalry: When foe is at full HP,[N]
-attack and def/res +2.[X]
+Pursuit: When under attack,[N]
+attack speed +2. [X]

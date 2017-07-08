@@ -1,2 +1,2 @@
-Elbow Room: +3 damage dealt[N]
-when on open terrain.[X]
+Lily's Poise: Adjacent allies gain[N]
++1/-3 damage dealt/received.[X]

@@ -1,2 +1,2 @@
-Cunning: Can steal items, pick[N]
-locks, and see in darkness.[X]
+Provoke: Enemies are more[N]
+likely to target this unit.[X]

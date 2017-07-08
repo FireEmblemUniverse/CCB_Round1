@@ -1,2 +1,2 @@
-Sol: Restore damage dealt as HP.[N]
-(Skill % activation)[X]
+Cunning: Can steal items, pick[N]
+locks, and see in darkness.[X]

@@ -1,2 +1,2 @@
-Quick Draw: +4 Damage[N]
-when initiating battle.[X]
+Seal Resistance: Debuff opponent's Res[N]
+by 6 after combat. (Recover 1/turn)[X]

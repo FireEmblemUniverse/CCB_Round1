@@ -1,2 +1,2 @@
-Anathema: -10 Avoid/Dodge to all[N]
-enemies within 3 tiles.[X]
+Relief: Recover 20% HP each turn if[N]
+there are no allies within 2 tiles.[X]

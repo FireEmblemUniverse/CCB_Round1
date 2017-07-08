@@ -21,6 +21,9 @@ mov r7, r3 @maxrange
 ldr r2, =0x2033f3c
 str r4, [r2] @save unit data in RAM
 
+ldr r0, =0x203a56c @defender
+cmp r4, r0
+beq RangeZeroer
 @write the unit to the unit map
 mov r0, #0x10
 ldrsb r0, [r4,r0] @unit x
@@ -40,7 +43,7 @@ strb r2, [r1, r0] @write unit to map
 @ mov r1, #0x11
 @ ldrsb r1, [r4,r1] @unit y
 @ blh 0x804f8a4
-
+RangeZeroer:
 ldr r0, =0x202e4e4 @range map
 ldr r0, [r0]
 mov r1, #0

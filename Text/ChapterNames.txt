@@ -18,16 +18,16 @@ Prologue: IT BEGINS[X]
 5: Winter Invasion[X]
 
 #0x167
-Ch6[X]
+6: Fort of Bad[X]
 
 #0x168
-Ch7[X]
+7: Port of Bad[X]
 
 #0x169
 Ch8[X]
 
 #0x16a
-Ch9[X]
+9: Tragic Backstory[X]
 
 # 0x016B
 10: here you like Men[X]
@@ -72,10 +72,10 @@ Ch9[X]
 23: Flesh and Bone[X]
 
 # 0x0178
-Ch24[X]
+24: River Rush[X]
 
 # 0x019B
-Ch25[X]
+25: Shrine of Meals[X]
 
 # 0x0179
 26: Darrman's Lakes[X]

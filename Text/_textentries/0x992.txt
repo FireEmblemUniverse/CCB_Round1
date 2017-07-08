@@ -1,2 +1,2 @@
-Lunge: Swap places with the[N]
-opponent after combat.[X]
+Live to Serve: When healing[N]
+an ally, also heals self.[X]

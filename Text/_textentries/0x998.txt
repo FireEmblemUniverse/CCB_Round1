@@ -1,2 +1,2 @@
-Savage Blow: After attacking, enemies[N]
-within 2 tiles take 20% damage.[X]
+Opportunist: +4 damage[N]
+if the foe cannot counter.[X]

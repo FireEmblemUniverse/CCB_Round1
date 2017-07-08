@@ -1,2 +1,2 @@
-Opportunist: +4 damage[N]
-if the foe cannot counter.[X]
+Life and Death: +10 to[N]
+damage dealt and taken.[X]

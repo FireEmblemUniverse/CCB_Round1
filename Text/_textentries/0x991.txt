@@ -1,2 +1,2 @@
-Locktouch: Can open locks[N]
-without keys or picks.[X]
+Staff Savant: Maximum range[N]
+of staves is increased by 1.[X]

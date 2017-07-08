@@ -1,2 +1,2 @@
-Rightful King: +10% to[N]
-Skill activation rate.[X]
+Smite: Allows unit to push[N]
+other units two tiles away.[X]

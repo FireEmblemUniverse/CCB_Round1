@@ -1,2 +1,2 @@
-Countermagic: Magic damage taken[N]
-at 1-2 range is reflected.[X]
+Vantage: If HP < 50%,[N]
+strike first when attacked.[X]

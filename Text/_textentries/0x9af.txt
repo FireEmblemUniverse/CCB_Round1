@@ -1,2 +1,2 @@
-Strong Riposte: When under[N]
-attack, damage +3. [X]
+Dragon's Blood: Unit is able[N]
+to activate Dragon Veins.[X]

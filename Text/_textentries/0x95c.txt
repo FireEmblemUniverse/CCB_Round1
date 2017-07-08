@@ -1,2 +1,2 @@
-Warding Blow: +20 Res[N]
-when initiating battle.[X]
+Pavise: Nullify a physical attack.[N]
+(Skill % activation)[X]

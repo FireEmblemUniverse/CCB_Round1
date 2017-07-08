@@ -1,2 +1,2 @@
-Armsthrift: Luck % chance to not[N]
-consume weapon durability.[X]
+Killing Machine: Total critical[N]
+rate is doubled.[X]

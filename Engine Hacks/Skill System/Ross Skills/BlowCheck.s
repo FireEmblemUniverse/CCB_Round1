@@ -20,7 +20,7 @@ cmp r0, #0          @Check if unit has the corresponding Faire skill.
 bne SkillChecks
 SkillReturn:
 add     r4, #0x01
-cmp     r4, #0x06
+cmp     r4, #0x09
 bne     CheckLoop
 b       EndProgram
 SkillChecks:
@@ -36,6 +36,13 @@ cmp     r4, #0x04
 beq     CertainSkill
 cmp     r4, #0x05
 beq     ArmoredSkill
+cmp     r4, #0x06
+beq     QuickDrawSkill
+cmp     r4, #0x07
+beq     ChivalrySkill
+cmp     r4, #0x08
+beq     PragmaticSkill
+b SkillReturn
 DuelistsSkill:
 ldr     r0,=0x203A4EC       @Move attacker data into r0.
 add     r0,#0x62    @Move to the attacker's avoid.
@@ -43,6 +50,7 @@ ldrh    r3,[r0]     @Load the attacker's avoid into r3.
 add     r3,#0x1E    @Add 30 to the attacker's avoid.
 strh    r3,[r0]     @Store attacker avoid.
 b       SkillReturn
+
 DeathSkill:
 ldr     r0,=0x203A4EC       @Move attacker data into r0.
 add     r0,#0x66    @Move to the attacker's crit.
@@ -110,6 +118,49 @@ add r0, #0x5c @attacker defense
 ldrh r3, [r0]
 add r3, #10
 strh r3, [r0]
+b SkillReturn
+
+QuickDrawSkill:
+ldr     r0,=0x203A4EC       @Move attacker data into r0.
+add     r0,#0x5a    @Move to the attacker's dmg.
+ldrh    r3,[r0]     @Load the attacker's dmg into r3.
+add     r3,#4    @Add 4 to the attacker's dmg.
+strh    r3,[r0]     @Store attacker dmg.
+b       SkillReturn
+
+ChivalrySkill:
+ldr r0, =0x203a56c @defender
+ldrb r1, [r0, #0x12] @maxhp
+ldrb r0, [r0, #0x13] @currhp
+cmp r0, r1
+bne SkillReturn
+ldr     r0,=0x203A4EC       @Move attacker data into r0.
+add     r0,#0x5a    @Move to the attacker's dmg.
+ldrh    r3,[r0]     @Load the attacker's dmg into r3.
+add     r3,#2    @Add 2 to the attacker's dmg.
+strh    r3,[r0]     @Store attacker dmg.
+add     r0,#2    @Move to the attacker's def.
+ldrh    r3,[r0]     @Load the attacker's def into r3.
+add     r3,#2    @Add 2 to the attacker's def.
+strh    r3,[r0]     @Store attacker def.
+b       SkillReturn
+
+PragmaticSkill:
+ldr r0, =0x203a56c @defender
+ldrb r1, [r0, #0x12] @maxhp
+ldrb r0, [r0, #0x13] @currhp
+cmp r0, r1
+beq SkillReturn
+ldr     r0,=0x203A4EC       @Move attacker data into r0.
+add     r0,#0x5a    @Move to the attacker's dmg.
+ldrh    r3,[r0]     @Load the attacker's dmg into r3.
+add     r3,#3    @Add 3 to the attacker's dmg.
+strh    r3,[r0]     @Store attacker dmg.
+add     r0,#2    @Move to the attacker's def.
+ldrh    r3,[r0]     @Load the attacker's def into r3.
+add     r3,#1    @Add 1 to the attacker's def.
+strh    r3,[r0]     @Store attacker def.
+b       SkillReturn
 
 EndProgram:
 pop {r4-r7}

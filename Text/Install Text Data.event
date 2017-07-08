@@ -1191,3 +1191,19 @@ TxtData0x9ed:
 #incext ParseFile "_textentries\0x9ed.txt"
 setText(0x9ed,TxtData0x9ed)
 
+TxtData0x9ee:
+#incext ParseFile "_textentries\0x9ee.txt"
+setText(0x9ee,TxtData0x9ee)
+
+TxtData0x9ef:
+#incext ParseFile "_textentries\0x9ef.txt"
+setText(0x9ef,TxtData0x9ef)
+
+TxtData0x9f0:
+#incext ParseFile "_textentries\0x9f0.txt"
+setText(0x9f0,TxtData0x9f0)
+
+TxtData0x9f1:
+#incext ParseFile "_textentries\0x9f1.txt"
+setText(0x9f1,TxtData0x9f1)
+

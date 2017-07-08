@@ -179,3 +179,15 @@ Jake[X]
 ##Desc_Jake
 placeholder[X]
 
+##Name_Tiki
+Tiki[X]
+
+##Desc_Tiki
+placeholder[X]
+
+##Name_Mark
+Mark[X]
+
+##Desc_Mark
+A mysterious person who[N]
+claims to be a tactician.[X]

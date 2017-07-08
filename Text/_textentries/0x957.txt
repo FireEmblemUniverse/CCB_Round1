@@ -1,2 +1,2 @@
-Aegis: Nullify a magic attack.[N]
-(Skill % activation)[X]
+Lancebreaker: +50 Hit/Avo when[N]
+enemy has a lance equipped.[X]

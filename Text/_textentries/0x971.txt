@@ -1,2 +1,2 @@
-Nice Thighs: No effect, really.[N]
-Just thought I'd point them out.[X]
+Dance: Refresh an ally unit[N]
+to let them act again.[X]

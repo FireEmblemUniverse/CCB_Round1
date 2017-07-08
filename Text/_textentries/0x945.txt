@@ -1,3 +1,2 @@
-Sure Shot: A precision attack that[N]
-always hits and does 1.5x damage.[N]
-(Skill % activation)[X]
+Acrobat: All traversable[N]
+terrain costs 1 movement.[X]

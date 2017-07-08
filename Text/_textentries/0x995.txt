@@ -1,2 +1,2 @@
-Trample: +5 damage to[N]
-unmounted units.[X]
+Locktouch: Can open locks[N]
+without keys or picks.[X]

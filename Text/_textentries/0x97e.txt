@@ -1,2 +1,2 @@
-Nihil: Cancels the opponent's[N]
-skills in combat.[X]
+Spur Magic: Adjacent allies[N]
+deal +4 magical damage.[X]

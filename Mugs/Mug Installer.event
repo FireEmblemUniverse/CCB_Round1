@@ -95,3 +95,11 @@ setMugEntry(0x2C, DootMug, 4, 6, 4, 4)
 EvilFlorina_Mug:
 #incext PortraitFormatter "evilflorina.png"
 setMugEntry(0x26, EvilFlorina_Mug, 2,6, 3,4)
+
+Mark_Mug:
+#incext PortraitFormatter "mamkute.png"
+setMugEntry(0x15, Mark_Mug, 4,6,3,4)
+
+Tiki_Mug:
+#incext PortraitFormatter "chiki.png"
+setMugEntry(0x2d, Tiki_Mug, 4,7,4,5)

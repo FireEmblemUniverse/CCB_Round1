@@ -71,6 +71,8 @@ ENUT 0x7 //stop gargoyles spawning from top until area event is triggered
 ENUT 0x9 //same for phantoms
 LOAD2 0x1 Units
 ENUN
+LOAD1 0x1 NewUnit
+ENUN
 LOAD1 0x1 Enemies1
 ENUN
 LOAD1 0x1 Enemies2
@@ -98,8 +100,10 @@ SpawnGargoyles1:
   ENDA
 
 StartSpawningGargoyles:
+  SVAL 0x2 0x0
+  CALL $9ee1b8 //checks allegiance
   ENUF 0x7
-  NoFade
+  EVBIT_T 0x7
   ENDA
 
 SpawnGargoyles2:
@@ -125,6 +129,10 @@ SpawnPhantoms:
 // Scripted Fights
 
 // Units
+NewUnit:
+UNIT Mark Manakete_2 0x00 Level(20, Ally, 0) [10,37] 0 0 0 0 [HolyDragonStone] NoAI
+UNIT
+
 Enemies1:
 UNIT Fomortiis DemonKing 0x00 Level(20, Enemy, 1) [11,6] 0x00 0x00 0x0 0x00 [DemonLight, Ravager, Nightmare] DemonKingAI 
 UNIT 0xAE Gorgon Fomortiis Level(20, Enemy, 1) [2,40] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] PursueWithoutHeedAI 

@@ -1,2 +1,2 @@
-Axefaire: +4 damage[N]
-when equipping an axe.[X]
+Countermagic: Magic damage taken[N]
+at 1-2 range is reflected.[X]

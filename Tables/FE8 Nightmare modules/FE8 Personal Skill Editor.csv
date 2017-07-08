@@ -15,7 +15,7 @@ Roshea,StrongRiposteID
 0,SealLukID
 Edge,WrathID
 Ephraim,InspirationID
-Samson,SpurSpdID
+Samson,QuickDrawID
 Arve,LancebreakerID
 Tye,RallyMovID
 Celicia,AcrobatID
@@ -30,12 +30,12 @@ Doot,MiracleID
 Celica,NiceThighsID
 Doowile,LifetakerID
 Evil Florina,SavageBlowID
-Knoll,VoiceOfPeaceID
+0,VoiceOfPeaceID
 Jake,SwordbreakerID
 Marf,LunaID
-Tana,0x0
+Tiki,QuickBurnID
 Lyon,0x0
-Orson,0x0
+Mark,SlowBurnID
 Glen,0x0
 Selena,0x0
 Valter,0x0

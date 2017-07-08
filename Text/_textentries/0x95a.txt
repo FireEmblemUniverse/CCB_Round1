@@ -1,2 +1,2 @@
-Death Blow: +20 Crit[N]
-when initiating battle.[X]
+Tomebreaker: +50 Hit/Avo when[N]
+enemy has a tome equipped.[X]

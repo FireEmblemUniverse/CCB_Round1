@@ -14,6 +14,8 @@
 
 #include "FE8 Nightmare modules\Chapter data editor\Chapter Data Editor.event"
 
+#include "FE8 Nightmare modules\Chapter data editor\Character Forcer FE8.event"
+
 #include "FE8 Nightmare modules\Chapter data editor\Pointer table editor.event"
 
 #include "FE8 Nightmare modules\Chapter data editor\World Map Cutscene table editor.event"

@@ -208,6 +208,7 @@ ALIGN 4
 
 ManaketeFSkillList:
 BYTE 01 MiracleID
+BYTE 05 OddRhythmID
 BYTE 10 SpurDefID
 BYTE 00 00
 ALIGN 4
@@ -292,6 +293,7 @@ BYTE 00 00
 ALIGN 4
 
 DancerSkillList:
+BYTE 255 WaryFighterID
 BYTE 10 AmaterasuID
 BYTE 20 CelerityID
 BYTE 00 00

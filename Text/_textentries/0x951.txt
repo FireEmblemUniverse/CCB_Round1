@@ -1,2 +1,2 @@
-Discipline: Weapon experience[N]
-gains are doubled.[X]
+Luna: Negates enemy defenses.[N]
+(Skill % activation)[X]

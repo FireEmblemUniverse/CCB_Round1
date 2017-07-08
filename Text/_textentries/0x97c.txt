@@ -1,2 +1,2 @@
-Spur Defense: Adjacent allies[N]
-take -4 physical damage.[X]
+Amaterasu: Allies within 2 tiles[N]
+recover 20% HP each turn.[X]

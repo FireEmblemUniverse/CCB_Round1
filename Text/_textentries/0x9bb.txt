@@ -1,3 +1,2 @@
-Down with Arch: If the hit lands,[N]
-instantly kill the enemy unit.[N]
-(Only if name starts with "Arch")[X]
+Armsthrift: Luck % chance to not[N]
+consume weapon durability.[X]

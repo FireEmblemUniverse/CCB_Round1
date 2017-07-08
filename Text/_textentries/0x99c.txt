@@ -1,2 +1,2 @@
-Bond: All allies within 3 tiles[N]
-recover 10% HP each turn.[X]
+Savage Blow: After attacking, enemies[N]
+within 2 tiles take 20% damage.[X]

@@ -1,2 +1,2 @@
-Nullify: Unit is protected[N]
-from all effective attacks.[X]
+Spur Speed: Adjacent allies[N]
+gain +4 Attack Speed.[X]
