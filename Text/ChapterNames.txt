@@ -63,7 +63,7 @@ Ch16[X]
 20: Great Rivalry[X]
 
 # 0x0175
-Ch21[X]
+21: Doot Doot[X]
 
 # 0x0176
 Ch22[X]
