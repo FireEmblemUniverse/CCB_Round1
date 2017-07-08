@@ -87,3 +87,7 @@ setMugEntry(0x2B, MarfMug, 4, 8, 4, 6)
 DootMug:
 #incext PortraitFormatter "Doot.png"
 setMugEntry(0x2C, DootMug, 4, 6, 4, 4)
+
+EvilFlorina_Mug:
+#incext PortraitFormatter "evilflorina.png"
+setMugEntry(0x26, EvilFlorina_Mug, 2,6, 3,4)
