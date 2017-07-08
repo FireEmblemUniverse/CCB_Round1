@@ -1187,3 +1187,7 @@ TxtData0x9ec:
 #incext ParseFile "_textentries\0x9ec.txt"
 setText(0x9ec,TxtData0x9ec)
 
+TxtData0x9ed:
+#incext ParseFile "_textentries\0x9ed.txt"
+setText(0x9ed,TxtData0x9ed)
+

@@ -27,9 +27,9 @@
 #define Anna 6
 #define Bede 7
 #define Jay 8
-#define Bob 9
-#define NotArch 10
-#define Kirsten 11
+#define NotArch 9
+#define Kirsten 10
+#define Bob 11
 #define Roshea 12
 
 #define Edge 14

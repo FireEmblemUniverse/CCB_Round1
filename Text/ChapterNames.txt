@@ -33,7 +33,7 @@ Ch9[X]
 10: here you like Men[X]
 
 # 0x019a
-11: Factory Blues[X]
+11: Factory Gold[X]
 
 # 0x016c
 12: I Felt Sadistic[X]
@@ -69,7 +69,7 @@ Ch9[X]
 22: N i c e B o a t s[X]
 
 # 0x0177
-23: Flesh and/or Bone[X]
+23: Flesh and Bone[X]
 
 # 0x0178
 Ch24[X]

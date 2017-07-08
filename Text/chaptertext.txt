@@ -86,6 +86,12 @@ This text is a placeholder![A][X]
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]
 
+##Arve_Event
+[MidRight][LoadFace][0x18][0x01]The Travel system will pull any enemies[N]
+from the throne room's gold tiles to the[A][N]
+main battleground, so make sure to check[N]
+out the threats that are up there too![A][X]
+
 ##Ch12RecruitTalk
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]

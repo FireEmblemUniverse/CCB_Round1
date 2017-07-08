@@ -1,65 +1,316 @@
-EventPointerTable(0xd1, PointerList)
+#define C11LvlCnst 10
+//Level Constant for units. Some units are the constant +/- some amount.
 
-PointerList:
+#define AIChangeToAfterMove 0x00000000
+//The AI to change to after the units move. Should be "pursue without heed" types.
+
+#define TestAITs [0x00, 0x03, 0x04, 0x00]
+//#define TestAITs AttackInRange
+//[0x0C,0x03]
+
+EventPointerTable(0xD1, Chapter11This) //Ch 11 Eirika events
+//EventPointerTable(0xCF, Chapter11This) //Ch 11 Eirika map
+//EventPointerTable(0xD0, Chapter11This) //Ch 11 Eirika map changes, which I'm not using
+
+ALIGN 4
+Chapter11This:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
 POIN LocationBasedEvents
 POIN MiscBasedEvents
-POIN Dunno1 Dunno2 Dunno3 Tutorial
-POIN Traps1 Traps2
-POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
-POIN $0 $0 $0
-POIN $0 $0 $0
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData_H
+POIN C11_CCB_Ally C11_CCB_Ally
+POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
+BeginningScene:
+VCWF 0
+LOAD1 0x1 C11_CCB_Init_Foe_A
+ENUN
+LOAD1 0x1 C11_CCB_Init_Foe_B
+ENUN
+LOAD2 0x1 C11_CCB_Ally
+ENUN
+//FADU 0x8
+GotoPrepScreen
+//ENDA
+
+C11_CCB_Ally:
+UNIT 01 01 0 1 [4, 27] 0 0 0 0 [1, 1, 1, 1] DefaultAI
+UNIT 02 01 0 1 [3, 28] 0 0 0 0 [1, 1, 1, 1] DefaultAI
+
+UNIT 02 01 0 1 [12, 27] 0 0 0 0 [1, 1, 1, 1] DefaultAI
+UNIT 02 01 0 1 [13, 27] 0 0 0 0 [1, 1, 1, 1] DefaultAI
+UNIT 02 01 0 1 [14, 27] 0 0 0 0 [1, 1, 1, 1] DefaultAI
+UNIT 02 01 0 1 [12, 28] 0 0 0 0 [1, 1, 1, 1] DefaultAI
+UNIT 02 01 0 1 [13, 28] 0 0 0 0 [1, 1, 1, 1] DefaultAI
+UNIT 02 01 0 1 [14, 28] 0 0 0 0 [1, 1, 1, 1] DefaultAI
+UNIT
+
+C11_CCB_Arve:
+//UNIT Beran Shaman 0x00 Level(13, 0, 0) [5, 28] 0x00 0x00 0x00 0x00 [Lightning, Flux, Vulnerary, Vulnerary] DefaultAI
+UNIT Arve Shaman 0x00 Level(13, 0, 0) [5, 28] 0x00 0x00 0x00 0x00 [Lightning, Flux, Vulnerary, Vulnerary] DefaultAI
+UNIT
+
+//Divided up in advance just in case I need more than 15 initial units
+C11_CCB_Init_Foe_A:
+//Ch11 Eirika
+UNIT 0x5D GreatKnight 0x00 Level(3, 2, 1) [9, 8] 0x02 0x00 0x00 0x00 [ShortSpear, HandAxe, LightBrand, Rapier] NeverMoveAI
+UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [8, 4] 0x02 0x00 0x00 0x00 [LightBrand, LightBrand] GuardTileAI
+UNIT 0x80 Fighter 0x00 Level((C11LvlCnst-4), 2, 1) [9, 4] 0x02 0x00 0x00 0x00 [Tomahawk, Tomahawk] GuardTileAI
+UNIT 0x80 Cavalier 0x00 Level(C11LvlCnst, 2, 1) [10, 4] 0x02 0x00 0x00 0x00 [ShortSpear, ShortSpear] GuardTileAI
+UNIT 0x80 Troubadour 0x00 Level((C11LvlCnst+5), 2, 1) [9, 6] 0x02 0x00 0x00 0x00 [Physic, Physic] GuardTileAI
+UNIT 0x80 Shaman 0x00 Level((C11LvlCnst+3), 2, 1) [9, 9] 0x02 0x00 0x00 0x00 [Eclipse, Fenrir, Elixir] GuardTileAI
+UNIT 0x80 Monk 0x00 Level((C11LvlCnst+5), 2, 1) [13, 1] 0x02 0x00 0x00 0x00 [Shine, ChestKey] GuardTileAI
+UNIT
+
+C11_CCB_Init_Foe_B:
+UNIT 0x80 Cavalier 0x00 Level(C11LvlCnst, 2, 1) [6, 12] 0x00 0x00 0x00 0x00 [SteelLance] TestAITs
+UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [13, 16] 0x00 0x00 0x00 0x00 [SteelSword] TestAITs
+UNIT 0x80 Knight 0x00 Level(C11LvlCnst, 2, 1) [5, 22] 0x00 0x00 0x00 0x00 [SilverLance] GuardTileAI
+UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [4, 21] 0x02 0x00 0x00 0x00 [Longbow] GuardTileAI
+UNIT 0x80 Shaman 0x00 Level(C11LvlCnst, 2, 1) [3, 22] 0x00 0x00 0x00 0x00 [Nosferatu] GuardTileAI
+
+UNIT 0x80 Pirate 0x00 Level(C11LvlCnst, 2, 1) [3, 1] 0x02 0x00 0x00 0x00 [SteelAxe] TestAITs
+UNIT 0x80 Myrmidon 0x00 Level(C11LvlCnst, 2, 1) [4, 2] 0x02 0x00 0x00 0x00 [SteelSword] TestAITs
+UNIT 0x80 Knight 0x00 Level(C11LvlCnst, 2, 1) [2, 4] 0x02 0x00 0x00 0x00 [SteelLance] TestAITs
+UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [3, 3] 0x02 0x00 0x00 0x00 [SteelBow] TestAITs
+
+UNIT 0x80 Shaman 0x00 Level(C11LvlCnst, 2, 1) [12, 14] 0x02 0x00 0x00 0x00 [Nosferatu] TestAITs
+UNIT 0x80 Monk 0x00 Level(C11LvlCnst, 2, 1) [13, 13] 0x02 0x00 0x00 0x00 [Divine] TestAITs
+UNIT 0x80 Mage 0x00 Level(C11LvlCnst, 2, 1) [14, 14] 0x02 0x00 0x00 0x00 [Elfire] TestAITs
+UNIT 0x80 Priest 0x00 Level(C11LvlCnst, 2, 1) [12, 12] 0x02 0x00 0x00 0x00 [Mend] TestAITs
+UNIT
+
+Easy_Northeast:
+UNIT 0x80 Soldier 0x00 Level((C11LvlCnst+3), 2, 1) [13, 7] 0x00 0x00 0x00 0x00 [SlimLance] GuardTileAI
+UNIT
+
+SoutheastUnit:
+UNIT 0x80 Mage 0x00 Level(C11LvlCnst, 2, 1) [13, 8] 0x00 0x00 0x00 0x00 [Fire] GuardTileAI
+UNIT
+
+NorthwestUnit:
+UNIT 0x80 Fighter 0x00 Level((C11LvlCnst+1), 2, 1) [5, 6] 0x00 0x00 0x00 0x00 [IronAxe] GuardTileAI
+UNIT
+
+AllReinforcers:
+UNIT 0x80 Myrmidon 0x00 Level(C11LvlCnst, 2, 1) [5, 6] 0x00 0x00 0x00 0x00 [Lancereaver] GuardTileAI
+UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [13, 7] 0x00 0x00 0x00 0x00 [IronBlade] GuardTileAI
+UNIT 0x80 Pirate 0x00 Level(C11LvlCnst, 2, 1) [5, 9] 0x00 0x00 0x00 0x00 [Swordreaver] GuardTileAI
+UNIT 0x80 Cavalier 0x00 Level(C11LvlCnst, 2, 1) [13, 8] 0x00 0x00 0x00 0x00 [Axereaver] GuardTileAI
+UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [7, 8] 0x00 0x00 0x00 0x00 [Longbow] NoAI
+UNIT 0x80 Shaman 0x00 Level(C11LvlCnst, 2, 1) [11, 8] 0x00 0x00 0x00 0x00 [Flux] NoAI
+UNIT
+
+ArveSpawn:
+ReinforcementEvent(C11_CCB_Arve)
+
+AllReinforce:
+ReinforcementEvent(AllReinforcers)
+
+SEReinforce:
+ReinforcementEvent(SoutheastUnit)
+
+NWReinforce:
+ReinforcementEvent(NorthwestUnit)
+
+NEReinforceE:
+ReinforcementEvent(Easy_Northeast)
+
+Text_Event:
+TEXTSTART
+TEXTSHOW Arve_Event
+TEXTEND
+ENDA
+
 TurnBasedEvents:
+//TURN
+//TurnEventPlayer(Event_ID, Jump Label, Turn to Trigger, Turns to persist)
+
+//Soldiers in the middle on turns 2, 3, and 4
+TurnEventPlayer(0x0, MoveNEUnit, 2, 3)
+TurnEventPlayer(0x0, NEReinforceE, 1, 3)
+
+//Mage behind the right side on Turns 6, 7, and 8
+TurnEventPlayer(0x0, MoveSEUnit, 6, 3)
+TurnEventPlayer(0x0, SEReinforce, 5, 3)
+
+//Fighter on the top left on turns 5, 6, 7, 8, 9, and 10
+TurnEventPlayer(0x0, MoveNWUnit, 5, 6)
+TurnEventPlayer(0x0, NWReinforce, 4, 6)
+
+//Dump a ton!!
+TurnEventPlayer(0x0, MoveAllUnits, 15, 3)
+TurnEventPlayer(0x0, AllReinforce, 14, 3)
+
+TurnEventPlayer(0x0, ArveSpawn, 1, 0)
+TurnEventPlayer(0x0, Text_Event, 1, 0)
+
 END_MAIN
 
 CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Seize(0,0)
+Seize(9, 8)
+//Seize(0x0,Ch1EndingScene,2,5)
+#ifdef __DEBUG__
+Seize(4,27)
+#endif
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-END_MAIN
+//Add Win Condition
+AFEV
 
-Dunno1:
-END_MAIN
-
-Dunno2:
-END_MAIN
-
-Dunno3:
-END_MAIN
+Dunno:
+//DO NOT TOUCH
+WORD $00
 
 Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
 END_MAIN
 
-Units1:
-UNIT Eirika  0x2 0x1 0xA1   [0,0] 0b 0x0 0x0 0x0 [0x1,0x98,0x88,0x0] [0x0,0x0,0x0,0x0]
-UNIT
-
-EnemyUnits:
-UNIT
-
-Traps1:
-ENDTRAP
-ALIGN 4
-
-Traps2:
-ENDTRAP
-ALIGN 4
-
-BeginningScene:
-LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
-ENUN
-// GotoPrepScreen
-ENDA
+TrapData_H:
+END_MAIN
 
 EndingScene:
-MNC2 12
+MNC2 12 //go to ch12
+NoFade
+ENDA
+ALIGN 4
+
+//#define WarpIn(unit, xcoord, ycoord) "SVAL 2 unit; _WARP 0xFFFF 0xFFFD [xcoord, ycoord]; CALL 0x9EE4F8"
+//polish point; make units warp instead of walk...
+
+MoveNWUnit:
+_SETVAL 0xB 0x00060005 //The unit at 5, 6
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [5, 6] //actually change the AI
+_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
+ENUN
+NoFade
+ENDA
+
+MoveSWUnit:
+_SETVAL 0xB 0x00090005 //The unit at 5, 9
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [5, 9] //actually change the AI
+_MOVE 0x7F 0xFFFE [4,26] //Move it to 4, 26
+ENUN
+NoFade
+ENDA
+
+MoveNEUnit:
+_SETVAL 0xB 0x7000D //The unit at 13, 7
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [13, 7] //actually change the AI
+_MOVE 0x7F 0xFFFE [9, 13] //Move it to 9, 13
+ENUN
+NoFade
+ENDA
+
+MoveSEUnit:
+_SETVAL 0xB 0x8000D //The unit at 13, 8
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [13, 8] //actually change the AI
+_MOVE 0x7F 0xFFFE [12,21] //Move it to 12, 21
+ENUN
+NoFade
+ENDA
+
+MoveSENEUnits:
+_SETVAL 0xB 0x8000D //The unit at 13, 8
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [13, 8] //actually change the AI
+_MOVE 0x7F 0xFFFE [12,21] //Move it to 12, 21
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [12, 21] //actually change the AI
+_SETVAL 0xB 0x7000D //The unit at 13, 7
+_MOVE 0x7F 0xFFFE [9, 13] //Move it to 9, 13
+ENUN
+NoFade
+ENDA
+
+MoveSWNWUnits:
+_SETVAL 0xB 0x90005 //The unit at 5, 9
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [5, 9] //actually change the AI
+_MOVE 0x7F 0xFFFE [4,26] //Move it to 4, 26
+_SETVAL 0xB 0x60005 //The unit at 5, 6
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [5, 6] //actually change the AI
+_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
+ENUN
+NoFade
+ENDA
+
+MoveSESWUnits:
+_SETVAL 0xB 0x90005 //The unit at 5, 9
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [5, 9] //actually change the AI
+_MOVE 0x7F 0xFFFE [4,26] //Move it to 4, 26
+_SETVAL 0xB 0x8000D //The unit at 13, 8
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [13, 8] //actually change the AI
+_MOVE 0x7F 0xFFFE [12,21] //Move it to 12, 21
+ENUN
+NoFade
+ENDA
+
+MoveSENWUnits:
+_SETVAL 0xB 0x00060005 //The unit at 5, 6
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [5, 6] //actually change the AI
+_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
+_SETVAL 0xB 0x8000D //The unit at 13, 8
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [13, 8] //actually change the AI
+_MOVE 0x7F 0xFFFE [12,21] //Move it to 12, 21
+ENUN
+NoFade
+ENDA
+
+MoveNENWUnits:
+_SETVAL 0xB 0x7000D //The unit at 13, 7
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [13, 7] //actually change the AI
+_MOVE 0x7F 0xFFFE [9, 13] //Move it to 9, 13
+_SETVAL 0xB 0x60005 //The unit at 5, 6
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [5, 6] //actually change the AI
+_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
+ENUN
+NoFade
+ENDA
+
+MoveAllUnits:
+_SETVAL 0xB 0x60005 //The unit at 5, 6
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [5, 6] //actually change the AI
+_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
+
+_SETVAL 0xB 0x90005 //The unit at 5, 9
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [5, 9] //actually change the AI
+_MOVE 0x7F 0xFFFE [4,26] //Move it to 4, 26
+
+_SETVAL 0xB 0x7000D //The unit at 13, 7
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [13, 7] //actually change the AI
+_MOVE 0x7F 0xFFFE [9, 13] //Move it to 9, 13
+
+_SETVAL 0xB 0x8000D //The unit at 13, 8
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [13, 8] //actually change the AI
+_MOVE 0x7F 0xFFFE [12,21] //Move it to 12, 21
+ENUN
 NoFade
 ENDA

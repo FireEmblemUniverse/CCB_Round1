@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" nextobjectid="1">
- <tileset firstgid="1" name="50005152" tilewidth="16" tileheight="16">
-  <image source="Tilesets/FE8/50005152.png" width="512" height="512"/>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="28" height="10" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="2E002F30" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Tilesets/FE8/2E002F30.png" width="512" height="512"/>
  </tileset>
- <layer name="Tile Layer 1" width="20" height="20">
+ <layer name="Main" width="28" height="10">
   <properties>
-   <property name="Anims1" value="0"/>
-   <property name="Anims2" value="0x54"/>
-   <property name="ChapterID" value="6"/>
+   <property name="Anims1" value="5"/>
+   <property name="ChapterID" value="0x06"/>
    <property name="Main" value=""/>
    <property name="MapID" value="0x1f"/>
-   <property name="ObjectType" value="0x50"/>
-   <property name="PaletteID" value="0x51"/>
-   <property name="TileConfig" value="0x52"/>
+   <property name="ObjectType" value="0x2e"/>
+   <property name="PaletteID" value="0x34"/>
+   <property name="TileConfig" value="0x30"/>
   </properties>
-  <data encoding="base64" compression="zlib">
-   eJx1VEtOG0EQ7ZlWwIBhEy5ACJ+xgU1OANiRTE6RIBIri9yBGMvmI+6AsKOw5Qiwg0gRUY7AAkHAJsRZ80r9SlNjw+KpZ7q6Xr+u35F3bhHYBVaBDedcE6jHzpXc87jH2T/Agw//deCTC1x7QAWY8WHvI9A15/ai8H2HvVOgY7jEXgPWiTXsFYEpapO9KtDzgfMC37+h9Rdwif9/wH+udb5FueRbdCVAmdrUJho3wdHAmkSBcxLrBblX6S+6G0aH8G0B08Ao/seAnImfaL4B3pDzWPXyTj2jOmYYJ9E2DLwA5hkrT1ubGjr06VCb2O/7ztQJ0TYEFHhnjzHSvJTo36Zvh/YHn8276lRtQ+bNytv1qX+XmizPAte3Po3lHLmK5s2qvUf/n+a7RA1jPCv/m6zhBt+r+wkwYrSfAy+jNA/Ko/eWwFEDCsAHP1j7eeDQ8I2Q6y9zrm/RWM+C4wa2d1jHgWUf7igbbsn3eJTquhJuY0+oT+P8nj22DUyQt0hOqSfti3nwLUXhvoreTY1FE6PX7Ndb+HzHuu+D3q+m7z6zb0WX3j+tff3EvJDc7cC+AHzpmwnajyvcV5v6tsF3Gmdni/jIHJB4XsdZbU0Tl4S6++utFmd7vkle6eNXfIvaq6zPAuNQYWyHmdeTOJ0FLfbMtzjlrrrBuyTGMs9GySdv0Tzk+OYN85bIhxn0w/C0WHs6O6Tm88y/6FvnHNLaExyAt0W9UhNnLnC23GDOZpkvW1dSM3mXrVXtoUfljKDA
-  </data>
+  <data encoding="csv">
+692,298,132,955,820,114,810,955,827,951,820,207,163,632,672,672,906,907,908,909,910,847,944,945,163,719,132,847,
+402,238,853,954,810,47,853,820,209,759,759,724,210,633,605,606,938,939,940,941,942,164,719,903,782,163,164,781,
+177,164,955,820,15,810,955,852,164,760,724,724,206,605,636,599,970,971,972,973,974,132,781,815,913,781,903,163,
+724,210,955,810,169,72,821,954,209,724,178,692,266,601,719,132,933,396,756,163,933,132,132,911,945,903,781,815,
+692,200,821,852,109,115,81,955,852,363,781,360,760,3,395,933,164,725,692,146,328,933,783,848,65,719,163,943,
+692,724,206,821,861,852,853,829,820,163,847,881,297,3,758,933,132,231,791,732,132,933,163,781,879,784,163,903,
+724,692,266,164,132,821,820,270,199,395,719,814,632,606,781,15,933,113,72,362,933,132,782,783,943,912,784,164,
+692,724,732,269,208,263,146,692,758,239,781,632,672,672,631,143,81,719,114,83,72,783,848,65,781,814,903,781,
+724,692,692,724,692,759,692,791,232,632,540,672,606,600,606,103,72,163,137,39,144,781,65,782,903,783,816,65,
+231,724,692,724,692,724,758,696,604,639,539,672,630,901,3,163,114,80,39,7,39,78,815,880,816,65,847,784
+</data>
  </layer>
 </map>
