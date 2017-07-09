@@ -108,10 +108,13 @@ Bjoern_Mug:
 #incext PortraitFormatter "bjoern.png"
 setMugEntry(0x29, Bjoern_Mug, 2,5,2,3)
 
+<<<<<<< HEAD
 Tata_Mug:
 #incext PortraitFormatter "tata.png"
 setMugEntry(0x51, Tata_Mug, 3,6,2,4)
 
+=======
+>>>>>>> fa787ecc30d6cdc142f004fdd3ffd90d09240912
 Prine_Mug:
 #incext PortraitFormatter "prine.png"
 setMugEntry(0x11, Prine_Mug, 2,6,3,4)
