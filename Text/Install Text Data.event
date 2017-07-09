@@ -1287,3 +1287,19 @@ TxtData0xa02:
 #incext ParseFile "_textentries\0xa02.txt"
 setText(0xa02,TxtData0xa02)
 
+TxtData0xa03:
+#incext ParseFile "_textentries\0xa03.txt"
+setText(0xa03,TxtData0xa03)
+
+TxtData0xa04:
+#incext ParseFile "_textentries\0xa04.txt"
+setText(0xa04,TxtData0xa04)
+
+TxtData0xa05:
+#incext ParseFile "_textentries\0xa05.txt"
+setText(0xa05,TxtData0xa05)
+
+TxtData0xa06:
+#incext ParseFile "_textentries\0xa06.txt"
+setText(0xa06,TxtData0xa06)
+
