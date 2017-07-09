@@ -55,9 +55,9 @@ INLINE ClassSkillTable,Skill
 0x35 Great Knight,CantoID
 0x36 Great Knight (F),CantoID
 0x37 Recruit (2),0x0
-0x38 Journeyman (3),0x0
-0x39 Pupil (3),0x0
-0x3A Recruit (3),0x0
+0x38 Journeyman (3),CritUpID
+0x39 Pupil (3),CritUpID
+0x3A Recruit (3),CritUpID
 0x3B Manakete,DragonsBloodID
 0x3C Manakete (F),DragonsBloodID
 0x3D Journeyman (1),0x0

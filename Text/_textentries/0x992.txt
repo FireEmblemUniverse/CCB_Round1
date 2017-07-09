@@ -1,2 +1,2 @@
-Live to Serve: When healing[N]
-an ally, also heals self.[X]
+Bow Range +1: Maximum range[N]
+of equipped bows is increased.[X]

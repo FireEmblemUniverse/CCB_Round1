@@ -1,2 +1,2 @@
-Luna: Negates enemy defenses.[N]
-(Skill % activation)[X]
+Lethality: Instantly kill opponent.[N]
+(Skill/2 % activation)[X]

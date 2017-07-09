@@ -1,2 +1,2 @@
-Sol: Restore damage dealt as HP.[N]
-(Skill % activation)[X]
+Bane: Leave the opponent at 1 HP.[N]
+(Skill/2 % activation)[X]

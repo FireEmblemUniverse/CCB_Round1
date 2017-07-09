@@ -1207,3 +1207,11 @@ TxtData0x9f1:
 #incext ParseFile "_textentries\0x9f1.txt"
 setText(0x9f1,TxtData0x9f1)
 
+TxtData0x9f2:
+#incext ParseFile "_textentries\0x9f2.txt"
+setText(0x9f2,TxtData0x9f2)
+
+TxtData0x9f3:
+#incext ParseFile "_textentries\0x9f3.txt"
+setText(0x9f3,TxtData0x9f3)
+

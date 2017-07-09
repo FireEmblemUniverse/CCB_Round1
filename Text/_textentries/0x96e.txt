@@ -1,1 +1,2 @@
-Crit Boost: +15 critical rate.[X]
+Bowfaire: +4 damage[N]
+when equipping a bow.[X]

@@ -1,2 +1,2 @@
-Wary Fighter: Unit cannot[N]
-double or be doubled.[X]
+Pass: Can move through[N]
+enemy units.[X]

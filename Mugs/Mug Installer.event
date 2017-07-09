@@ -103,3 +103,7 @@ setMugEntry(0x15, Mark_Mug, 4,6,3,4)
 Tiki_Mug:
 #incext PortraitFormatter "chiki.png"
 setMugEntry(0x2d, Tiki_Mug, 4,7,4,5)
+
+Bjoern_Mug:
+#incext PortraitFormatter "bjoern.png"
+setMugEntry(0x29, Bjoern_Mug, 2,5,2,3)

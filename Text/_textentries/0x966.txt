@@ -1,2 +1,2 @@
-Counter: Physical damage taken[N]
-at 1-2 range is reflected.[X]
+Desperation: If HP < 50%,[N]
+double attacks occur immediately.[X]

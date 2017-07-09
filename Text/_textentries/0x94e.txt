@@ -1,2 +1,2 @@
-Cunning: Can steal items, pick[N]
-locks, and see in darkness.[X]
+Frenzy: For every 4 damage[N]
+taken, +1 to damage dealt.[X]

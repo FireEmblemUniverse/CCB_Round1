@@ -66,6 +66,7 @@
 #define CanDance 0x10
 #define CanPlay 0x20
 #define CritBoost 0x40
+#define ImmuneToLethality 0x40
 #define UseBallista 0x80
 
 //Ability 2 definitions:
@@ -95,6 +96,7 @@
 //Ability 4 definitions:
 #define GiveNoExp 0x1
 #define Lethality 0x2
+#define RecoverMines 0x2
 #define IsMagicSeal 0x3
 #ifdef _FE7_
   #define DropLastItem 0x8

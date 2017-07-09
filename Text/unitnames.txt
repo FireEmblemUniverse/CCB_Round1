@@ -191,3 +191,10 @@ Mark[X]
 ##Desc_Mark
 A mysterious person who[N]
 claims to be a tactician.[X]
+
+##Name_Bjoern
+Bj[0xf6]rn[X]
+
+##Desc_Bjoern
+His raison d'[0xea]tre: na[0xef]vet[0xe9] as[N]
+a fa[0xe7]ade for doppelg[0xe4]ngers.[X]

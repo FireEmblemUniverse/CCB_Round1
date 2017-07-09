@@ -1,2 +1,2 @@
-Natural Cover: -3 damage taken[N]
-when on terrain with effects.[X]
+Fiery Blood: +4 damage[N]
+when HP is not at max.[X]

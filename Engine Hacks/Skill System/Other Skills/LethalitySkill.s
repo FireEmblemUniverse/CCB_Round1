@@ -1,5 +1,5 @@
 @lethality skill, does pretty much the same as vanilla one but calls skill tester to make nihil easier
-@character/class ability lethality (ability 4 value 0x40) no longer gives lethality chance, it now makes the unit immune to lethality
+@character/class ability "crit +15" (ability 1 value 0x40) no longer gives lethality chance, it now makes the unit immune to lethality
 @r4 has either attacker or defendant (the skill user)
 @r5 has the other one
 
@@ -30,8 +30,8 @@ ldr	r0,[r0,#0x28]	@load class abilities
 JumpLoad2:
 orr	r0,r2		@add abilities
 mov	r2,r0		@we need them twice
-mov	r1,#0x02
-lsl	r1,#0x18	@value for "lethality" ability (02 00 00 00), which now is "immune to lethality"
+mov	r1,#0x40
+@lsl	r1,#0x18	@value for "crit +15" ability (00 00 00 40), which now is "immune to lethality"
 and	r0,r1
 cmp	r0,r1		@if immune, 0 chance
 beq	NoLethality

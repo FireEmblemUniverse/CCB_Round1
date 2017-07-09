@@ -1,2 +1,2 @@
-Warding Blow: +20 Res[N]
+Death Blow: +20 Crit[N]
 when initiating battle.[X]

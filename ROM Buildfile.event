@@ -24,6 +24,9 @@
     #include "Mugs/Mug Installer.event"
     #include "Graphics/Master Graphics Installer.event"
 
+    //Music
+    #include "Music/Music Installer.event"
+
     //Events
     #define __DEBUG__ //allow seizes at start of chapters
     #include "Events/Master Events Installer.event"

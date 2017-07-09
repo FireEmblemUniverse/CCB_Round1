@@ -1,2 +1,2 @@
-Swap: Allows unit to swap positions[N]
-with an adjacent ally.[X]
+Pivot: Allows unit to move to the[N]
+opposite side of an adjacent ally.[X]

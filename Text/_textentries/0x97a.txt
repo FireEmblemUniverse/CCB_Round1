@@ -1,2 +1,2 @@
-Charm: Allies within 2[N]
-tiles deal +2 damage.[X]
+Malefic Aura: Enemies within 2[N]
+tiles receive +2 magic damage.[X]

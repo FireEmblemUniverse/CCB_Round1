@@ -1,2 +1,2 @@
-Dragon's Blood: Unit is able[N]
-to activate Dragon Veins.[X]
+Seal Resistance: Debuff opponent's Res[N]
+by 6 after combat. (Recover 1/turn)[X]
