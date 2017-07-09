@@ -113,5 +113,5 @@ Tata_Mug:
 setMugEntry(0x51, Tata_Mug, 3,6,2,4)
 
 Prine_Mug:
-#incext PortraitFormatter "prine.png"
+#incext PortraitFormatter "Prine.png"
 setMugEntry(0x11, Prine_Mug, 2,6,3,4)
