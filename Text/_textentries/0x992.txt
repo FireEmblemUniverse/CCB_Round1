@@ -1,2 +1,2 @@
-Impale: Deal 4x damage.[N]
-(Skill % activation)[X]
+Nullify: Unit is protected[N]
+from all effective attacks.[X]

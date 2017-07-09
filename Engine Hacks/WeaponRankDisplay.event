@@ -1,0 +1,10 @@
+PUSH
+
+ORG $87852
+#incbin "ASM/WRankDisplay.dmp"
+ORG $a00eb8
+#incbin "ASM/WRankDisplay2.dmp"
+ORG $889f8
+WORD $8a00eb8
+
+POP

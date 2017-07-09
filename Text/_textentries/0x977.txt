@@ -1,2 +1,2 @@
-Lancefaire: +4 damage[N]
-when equipping a lance.[X]
+Miracle: Survive a lethal[N]
+attack if HP > 50%.[X]

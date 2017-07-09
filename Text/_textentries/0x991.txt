@@ -1,2 +1,2 @@
-Paragon: Experience gain[N]
-is doubled.[X]
+Nihil: Cancels the opponent's[N]
+skills in combat.[X]

@@ -147,6 +147,9 @@ POP
   //Enemy Control based on event id 0xb2
   #include "EnemyControl.event"
 
+  //Display only existing wranks
+  #include "WeaponRankDisplay.event"
+
   #define Win_Usability 0x0804f449
   Win_Effect:
   #incbin "winbutton.dmp"

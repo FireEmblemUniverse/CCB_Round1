@@ -1,2 +1,2 @@
-Pavise: Nullify a physical attack.[N]
-(Skill % activation)[X]
+Tomebreaker: +50 Hit/Avo when[N]
+enemy has a tome equipped.[X]
