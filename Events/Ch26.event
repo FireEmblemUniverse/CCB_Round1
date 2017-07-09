@@ -137,48 +137,48 @@ UNIT Jake MageKnight 0x00 Level(10, NPC, 0) [5,4] 0x00 0x00 0x0 0x00 [Aircalibur
 UNIT
 
 Bad: 
-UNIT 0x80 Warrior Carlyle Level(14, Enemy, 1) [11,3] 0x00 0x00 0x0 0x00 [SilverAxe, Longbow] AttackInRangeAI 
-UNIT 0x80 Warrior Carlyle Level(14, Enemy, 1) [11,0] 0x00 0x00 0x0 0x00 [SilverAxe, Longbow] AttackInRangeAI 
-UNIT 0x80 Warrior Carlyle Level(14, Enemy, 1) [1,12] 0x00 0x00 0x0 0x00 [SilverAxe, Longbow] AttackInRangeAI 
-UNIT 0x80 Warrior Carlyle Level(14, Enemy, 1) [4,19] 0x00 0x00 0x0 0x00 [SilverAxe, SilverBow] AttackInRangeAI 
-UNIT 0x80 Warrior Carlyle Level(14, Enemy, 1) [15,8] 0x00 0x00 0x0 0x00 [SilverAxe, SilverBow] AttackInRangeAI 
-UNIT 0x80 Warrior Carlyle Level(14, Enemy, 1) [21,18] 0x00 0x00 0x0 0x00 [SilverAxe, SilverBow] AttackInRangeAI 
-UNIT 0x80 Warrior Carlyle Level(14, Enemy, 1) [18,3] 0x00 0x00 0x0 0x00 [SilverAxe, SilverBow] AttackInRangeAI 
-UNIT 0x80 Warrior Carlyle Level(14, Enemy, 1) [17,1] 0x00 0x00 0x0 0x00 [SilverAxe, SilverBow] AttackInRangeAI 
-UNIT 0x80 Paladin Carlyle Level(15, Enemy, 1) [0,13] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
-UNIT 0x80 Paladin Carlyle Level(15, Enemy, 1) [8,14] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
-UNIT 0x80 Paladin Carlyle Level(15, Enemy, 1) [12,12] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
-UNIT 0x80 Paladin Carlyle Level(15, Enemy, 1) [20,7] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
-UNIT 0x80 Paladin Carlyle Level(15, Enemy, 1) [24,1] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
-UNIT 0x80 Paladin Carlyle Level(15, Enemy, 1) [27,13] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
+UNIT 0x80 Warrior Caellach Level(14, Enemy, 1) [11,3] 0x00 0x00 0x0 0x00 [SilverAxe, Longbow] AttackInRangeAI 
+UNIT 0x80 Warrior Caellach Level(14, Enemy, 1) [11,0] 0x00 0x00 0x0 0x00 [SilverAxe, Longbow] AttackInRangeAI 
+UNIT 0x80 Warrior Caellach Level(14, Enemy, 1) [1,12] 0x00 0x00 0x0 0x00 [SilverAxe, Longbow] AttackInRangeAI 
+UNIT 0x80 Warrior Caellach Level(14, Enemy, 1) [4,19] 0x00 0x00 0x0 0x00 [SilverAxe, SilverBow] AttackInRangeAI 
+UNIT 0x80 Warrior Caellach Level(14, Enemy, 1) [15,8] 0x00 0x00 0x0 0x00 [SilverAxe, SilverBow] AttackInRangeAI 
+UNIT 0x80 Warrior Caellach Level(14, Enemy, 1) [21,18] 0x00 0x00 0x0 0x00 [SilverAxe, SilverBow] AttackInRangeAI 
+UNIT 0x80 Warrior Caellach Level(14, Enemy, 1) [18,3] 0x00 0x00 0x0 0x00 [SilverAxe, SilverBow] AttackInRangeAI 
+UNIT 0x80 Warrior Caellach Level(14, Enemy, 1) [17,1] 0x00 0x00 0x0 0x00 [SilverAxe, SilverBow] AttackInRangeAI 
+UNIT 0x80 Paladin Caellach Level(15, Enemy, 1) [0,13] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
+UNIT 0x80 Paladin Caellach Level(15, Enemy, 1) [8,14] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
+UNIT 0x80 Paladin Caellach Level(15, Enemy, 1) [12,12] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
+UNIT 0x80 Paladin Caellach Level(15, Enemy, 1) [20,7] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
+UNIT 0x80 Paladin Caellach Level(15, Enemy, 1) [24,1] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
+UNIT 0x80 Paladin Caellach Level(15, Enemy, 1) [27,13] 0x00 0x00 0x0 0x00 [Spear, SilverBlade] AttackInRangeAI 
 UNIT
 
 Badder:
-UNIT 0x80 MageKnight Carlyle Level(12, Enemy, 1) [11,11] 0x00 0x00 0x0 0x00 [Fimbulvetr, Excalibur] AttackInRangeAI 
-UNIT 0x80 MageKnight Carlyle Level(12, Enemy, 1) [5,13] 0x00 0x00 0x0 0x00 [Fimbulvetr, Excalibur] AttackInRangeAI 
-UNIT 0x80 MageKnight Carlyle Level(12, Enemy, 1) [21,12] 0x00 0x00 0x0 0x00 [Fimbulvetr, Excalibur] AttackInRangeAI 
-UNIT 0x80 MageKnight Carlyle Level(12, Enemy, 1) [23,7] 0x00 0x00 0x0 0x00 [Fimbulvetr, Excalibur] AttackInRangeAI  
-UNIT 0x80 Swordmaster Carlyle Level(13, Enemy, 1) [10,5] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
-UNIT 0x80 Swordmaster Carlyle Level(13, Enemy, 1) [2,9] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
-UNIT 0x80 Swordmaster Carlyle Level(13, Enemy, 1) [8,17] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
-UNIT 0x80 Swordmaster Carlyle Level(13, Enemy, 1) [14,14] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
-UNIT 0x80 Swordmaster Carlyle Level(13, Enemy, 1) [24,11] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
-UNIT 0x80 Swordmaster Carlyle Level(13, Enemy, 1) [16,5] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
-UNIT 0x80 WyvernKnight Carlyle Level(12, Enemy, 1) [8,11] 0x00 0x00 0x0 0x00 [SilverLance, Spear] AttackInRangeAI 
-UNIT 0x80 WyvernKnight Carlyle Level(12, Enemy, 1) [14,2] 0x00 0x00 0x0 0x00 [SilverLance, Spear] AttackInRangeAI 
+UNIT 0x80 MageKnight Caellach Level(12, Enemy, 1) [11,11] 0x00 0x00 0x0 0x00 [Fimbulvetr, Excalibur] AttackInRangeAI 
+UNIT 0x80 MageKnight Caellach Level(12, Enemy, 1) [5,13] 0x00 0x00 0x0 0x00 [Fimbulvetr, Excalibur] AttackInRangeAI 
+UNIT 0x80 MageKnight Caellach Level(12, Enemy, 1) [21,12] 0x00 0x00 0x0 0x00 [Fimbulvetr, Excalibur] AttackInRangeAI 
+UNIT 0x80 MageKnight Caellach Level(12, Enemy, 1) [23,7] 0x00 0x00 0x0 0x00 [Fimbulvetr, Excalibur] AttackInRangeAI  
+UNIT 0x80 Swordmaster Caellach Level(13, Enemy, 1) [10,5] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
+UNIT 0x80 Swordmaster Caellach Level(13, Enemy, 1) [2,9] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
+UNIT 0x80 Swordmaster Caellach Level(13, Enemy, 1) [8,17] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
+UNIT 0x80 Swordmaster Caellach Level(13, Enemy, 1) [14,14] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
+UNIT 0x80 Swordmaster Caellach Level(13, Enemy, 1) [24,11] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
+UNIT 0x80 Swordmaster Caellach Level(13, Enemy, 1) [16,5] 0x00 0x00 0x0 0x00 [SilverSword, Wyrmslayer, Longsword] AttackInRangeAI 
+UNIT 0x80 WyvernKnight Caellach Level(12, Enemy, 1) [8,11] 0x00 0x00 0x0 0x00 [SilverLance, Spear] AttackInRangeAI 
+UNIT 0x80 WyvernKnight Caellach Level(12, Enemy, 1) [14,2] 0x00 0x00 0x0 0x00 [SilverLance, Spear] AttackInRangeAI 
 UNIT
 
 Baddest:
-UNIT 0x80 WyvernKnight Carlyle Level(12, Enemy, 1) [16,18] 0x00 0x00 0x0 0x00 [SilverLance, Spear] AttackInRangeAI 
-UNIT 0x80 WyvernKnight Carlyle Level(12, Enemy, 1) [27,6] 0x00 0x00 0x0 0x00 [SilverLance, Spear] AttackInRangeAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [23,13] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [23,14] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [10,16] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [5,7] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [13,9] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [22,3] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] NeverMoveAI
-UNIT 0x80 General Carlyle Level(12, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] NeverMoveAI 
-UNIT Carlyle Hero 0x00 Level(16, Enemy, 0) [20,2] 0x00 0x00 0x0 0x00 [Garm, Swordslayer, SilverBlade, DelphiShield] NeverMoveAI 
+UNIT 0x80 WyvernKnight Caellach Level(12, Enemy, 1) [16,18] 0x00 0x00 0x0 0x00 [SilverLance, Spear] AttackInRangeAI 
+UNIT 0x80 WyvernKnight Caellach Level(12, Enemy, 1) [27,6] 0x00 0x00 0x0 0x00 [SilverLance, Spear] AttackInRangeAI 
+UNIT 0x80 General Caellach Level(12, Enemy, 1) [23,13] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
+UNIT 0x80 General Caellach Level(12, Enemy, 1) [23,14] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
+UNIT 0x80 General Caellach Level(12, Enemy, 1) [10,16] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
+UNIT 0x80 General Caellach Level(12, Enemy, 1) [5,7] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
+UNIT 0x80 General Caellach Level(12, Enemy, 1) [13,9] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
+UNIT 0x80 General Caellach Level(12, Enemy, 1) [22,3] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] NeverMoveAI
+UNIT 0x80 General Caellach Level(12, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] NeverMoveAI 
+UNIT Caellach Hero 0x00 Level(16, Enemy, 0) [20,2] 0x00 0x00 0x0 0x00 [Garm, Swordslayer, SilverBlade, DelphiShield] NeverMoveAI 
 UNIT
 
 ALIGN 4
