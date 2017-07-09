@@ -4,7 +4,7 @@ HP Bars[.][X]
 # 0x00B2
 Set health bar display[X]
 
-#0x518 
+#0x518
 #was 'sick'
 Freeze[X]
 
@@ -41,3 +41,4 @@ Super Blitz[X]
 
 #include "chaptertext.txt"
 #include "ch1.txt"
+#include "ch15_text.txt"

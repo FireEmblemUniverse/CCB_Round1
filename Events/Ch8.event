@@ -7,23 +7,30 @@ POIN LocationBasedEvents
 POIN MiscBasedEvents
 POIN Dunno1 Dunno2 Dunno3 Tutorial
 POIN Traps1 Traps2
-POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN Units Units  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0x08, ReinLeftEvent, 4, 5)
+TurnEventPlayer(0x08, ReinRightEvent, 6, 7)
 END_MAIN
 
 CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Seize(0,0)
+Village(0x06, LeftVillage, 2, 3)
+Village(0x07, RightVillage, 16, 10)
+#ifdef DEBUG
+    Seize(2,10)
+#endif
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+DefeatAll(EndingScene)
 END_MAIN
 
 Dunno1:
@@ -38,12 +45,56 @@ END_MAIN
 Tutorial:
 END_MAIN
 
-Units1:
-UNIT Eirika  0x2 0x1 0xA1   [0,0] 0b 0x0 0x0 0x0 [0x1,0x98,0x88,0x0] [0x0,0x0,0x0,0x0]
+// Units
+Units:
+UNIT 0x01 0x02 0x00 Level(1, Ally, 0) [2,10] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT 0x02 0x05 0x00 Level(1, Ally, 0) [2,12] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT 0x03 0x05 0x00 Level(1, Ally, 0) [1,10] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT 0x04 0x05 0x00 Level(1, Ally, 0) [1,11] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT 0x05 0x05 0x00 Level(1, Ally, 0) [4,12] 0x00 0x00 0x0 0x00 [0x00] NoAI
 UNIT
 
-EnemyUnits:
+Prine:
+UNIT 0x11 0x4B 0x01 Level(10, Ally, 0) [17,12] 0x00 0x00 0x0 0x00 [0x4C, 0x03, 0x1C, 0x65] NoAI
 UNIT
+
+Bad1:
+UNIT Ch8Boss 0x09 0x01 Level(14, Enemy, 1) [16,2] 0x2 0x00 0x0 0x00 [0x96, 0x6D, 0x4E] GuardTileAI
+UNIT Ch8Generic 0x3F Ch8Boss Level(9, Enemy, 1) [13,7] 0x00 0x00 0x0 0x00 [0x1F, 0x6C] AttackInRangeAI
+UNIT Ch8Generic 0x3F Ch8Boss Level(9, Enemy, 1) [19,11] 0x00 0x00 0x0 0x00 [0x1F] PursueWithoutHeedAI
+UNIT Ch8Generic 0x4E Ch8Boss Level(10, Enemy, 1) [16,13] 0x00 0x00 0x0 0x00 [0x14] PursueWithoutHeedAI
+UNIT Ch8Generic 0x4E Ch8Boss Level(10, Enemy, 1) [11,13] 0x00 0x00 0x0 0x00 [0x14] AttackInRangeAI
+UNIT Ch8Generic 0x4E Ch8Boss Level(10, Enemy, 1) [20,5] 0x00 0x00 0x0 0x00 [0x14] PursueWithoutHeedAI
+UNIT Ch8Generic 0x4E Ch8Boss Level(11, Enemy, 1) [1,6] 0x00 0x00 0x0 0x00 [0x1C] PursueWithoutHeedAI
+UNIT Ch8Generic 0x4E Ch8Boss Level(11, Enemy, 1) [7,4] 0x00 0x00 0x0 0x00 [0x1C] AttackInRangeAI
+UNIT Ch8Generic 0x4E Ch8Boss Level(11, Enemy, 1) [5,7] 0x00 0x00 0x0 0x00 [0x14] PursueWithoutHeedAI
+UNIT Ch8Generic 0x4E Ch8Boss Level(11, Enemy, 1) [8,10] 0x00 0x00 0x0 0x00 [0x14] PursueWithoutHeedAI
+UNIT Ch8Generic 0x3F Ch8Boss Level(11, Enemy, 1) [6,7] 0x00 0x00 0x0 0x00 [0x1F] PursueWithoutHeedAI
+UNIT Ch8Generic 0x3F Ch8Boss Level(11, Enemy, 1) [3,1] 0x00 0x00 0x0 0x00 [0x1F] PursueWithoutHeedAI
+UNIT Ch8Generic 0x3F Ch8Boss Level(11, Enemy, 1) [11,4] 0x00 0x00 0x0 0x00 [0x1F] PursueWithoutHeedAI
+
+Bad2:
+UNIT Ch8Generic 0x4A Ch8Boss Level(16, Enemy, 1) [2,1] 0x00 0x00 0x0 0x00 [0x4E] HealUnits
+UNIT Ch8Generic 0x25 Ch8Boss Level(9, Enemy, 1) [6,4] 0x00 0x00 0x0 0x00 [0x38] PursueWithoutHeedAI
+UNIT Ch8Generic 0x25 Ch8Boss Level(9, Enemy, 1) [15,3] 0x00 0x00 0x0 0x00 [0x38] AttackInRangeAI
+UNIT Ch8Generic 0x4E Ch8Boss Level(9, Enemy, 1) [14,2] 0x00 0x00 0x0 0x00 [0x16] AttackInRangeAI
+UNIT Ch8Generic 0x0F Ch8Boss Level(9, Enemy, 1) [9,7] 0x00 0x00 0x0 0x00 [0x03] PursueWithoutHeedAI
+UNIT Ch8Generic 0x0F Ch8Boss Level(10, Enemy, 1) [11,1] 0x00 0x00 0x0 0x00 [0x03] AttackInRangeAI
+UNIT
+
+ReinLeft:
+UNIT Ch8Generic 0x25 Ch8Boss Level(10, Enemy, 1) [0,0] 0x00 0x00 0x0 0x00 [0x39] PursueWithoutHeedAI
+UNIT
+
+ReinRight:
+UNIT Ch8Generic 0x05 Ch8Boss Level(13, Enemy, 1) [18,2] 0x00 0x00 0x0 0x00 [0x14, 0x01] PursueWithoutHeedAI
+UNIT
+
+ReinLeftEvent:
+ReinforcementEvent(ReinLeft)
+
+ReinRightEvent:
+ReinforcementEvent(ReinRight)
 
 Traps1:
 ENDTRAP
@@ -54,12 +105,27 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+LOAD1 0x1 Prine
+LOAD1 0x1 Bad1
+LOAD1 0x1 Bad2
 ENUN
-// GotoPrepScreen
+CAM1 Prine
+STAL 0x8
+Text(Ch8Start1)
+CAM1 0x1
+STAL 0x8
+Text(Ch8Start2)
+GotoPrepScreen
 ENDA
 
 EndingScene:
 MNCH 0x9
 NoFade
 ENDA
+
+LeftVillage:
+VillageEventItem(Ch8Left, 0x0, EnergyRing)
+
+RightVillage:
+VillageEventItem(Ch8Right, 0x0, HeroCrest)

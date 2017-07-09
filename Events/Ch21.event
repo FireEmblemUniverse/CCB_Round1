@@ -57,7 +57,7 @@ END_MAIN
 ALIGN 4
 
 BeginningScene:
-LOAD1 0x1 Units
+LOAD1 0x0 Units
 ENUN
 LOAD1 0x1 Bad
 ENUN

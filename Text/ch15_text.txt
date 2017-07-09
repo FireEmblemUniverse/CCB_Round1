@@ -1,0 +1,95 @@
+
+##AnnaTwoGet
+[MidLeft][LoadFace][0x1C][0x1]
+You're the commander of that[N]
+other army out there, huh?[A]
+You're saying you wanna kill[N]
+the Demon King or somethin'?[A]
+Well if you'll help my army[N]
+get to the enemy HQ, I'll[A]
+join your quest. Oh, and be[N]
+sure to check out the island[A]
+south of our position. Let's[N]
+say I've got a friend there.[A][X]
+
+##Ch15Start
+[MidLeft][LoadFace][0x2][0x1]
+Ugh, I can't see a thing.[N]
+Even the weather is in my way![A]
+And there's a whole horde of[N]
+soldiers storming our way![A][X]
+
+##Ch15StartContinued
+[MidLeft][LoadFace][0x42][0x1]
+I dunno what an airport is, but[N]
+I have a massive army! Those rebels[A]
+on the other side of the straits[N]
+are in my way! Army, move out![A]
+Take advantage of the fog, fliers![N]
+Naval units... Fire the seige![A][X]
+
+##Ch15End
+[MidLeft][LoadFace][0x2][0x1]
+Whew. The might of the Orange[N]
+Star Army is annoying. I hope[A]
+I don't have to deal with them[N]
+being in the way... considering[A]
+the horrible weapons they're[N]
+rumoured to have.[A][X]
+
+##Ch15AmbushWarning
+[MidLeft][LoadFace][0x2][0x1]
+Ambush coming![A][X]
+
+##Ch15VillageStuff
+[MidLeft][LoadFace][0x60][0x1]
+Are you with Anna's army?[N]
+Please, take this, and drive[A]
+away those invaders from that[N]
+Wars World place! Aptly named![A][X]
+
+##Ch15TopHouseText
+[MidLeft][LoadFace][0x61][0x1]
+The hell you doing here?[N]
+Leave me be, and scram![A][X]
+
+##Ch15BottomHouseText
+[MidLeft][LoadFace][0x62][0x1]
+Over a few hundred miles away[N]
+is a fierce battle. There's[A]
+a powerful company, Intelligent[N]
+Systems, who control a thing[A]
+called "Fire Emblem". Now[N]
+Fire Emblem was created by[A]
+a man named Kaga. However,[N]
+Kaga's a bit nuts. Incest,[A]
+slave dancers, poor balance,[N]
+the works. However, he was[A]
+recently ousted and exiled.[N]
+Fire Emblem is now run by[A]
+a man named Maeda. Maeda...[N]
+After the exile, things[A]
+weren't too bad. Elibe,[N]
+Magvel, Tellius... Then[A]
+the return to Akaneia[N]
+happened. Kris. Maeda.[A]
+Doom. Timeskip. Awakening.[N]
+Timetravel. Waifus. Thorp.[A]
+Now things are getting[N]
+worse! Corrin! Revelations![A]
+Extreme waifus! No lore![N]
+Thankfully, an insider forced[A]
+Maeda away from Valencia[N]
+and Fire Emblem's getting[A]
+better, but Maeda didn't[N]
+take it well. He has cursed[A]
+Kaga into being a dancer.[N]
+He says it was revenge for[A]
+the slave dancer girls...[N]
+Please! Save Kaga![A][X]
+
+#0x237 Ch15BossName
+Andy[X]
+
+#0x296 Ch3BossName
+Jenkins[X]
