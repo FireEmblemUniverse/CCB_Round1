@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="21" height="14" tilewidth="16" tileheight="16">
- <properties>
-  <property name="ChapterID" value="9"/>
-  <property name="Main" value=""/>
-  <property name="MapChangesID" value="0x1d"/>
-  <property name="MapID" value="0x1b"/>
-  <property name="ObjectType" value="0x0e"/>
-  <property name="PaletteID" value="0x72"/>
-  <property name="TileConfig" value="0x10"/>
- </properties>
- <tileset firstgid="1" name="0e007210" tilewidth="16" tileheight="16">
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="21" height="14" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="0e007210" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="Tilesets/FE8/0e007210.png" width="512" height="512"/>
  </tileset>
  <layer name="Tile Layer 1" width="21" height="14">
+  <properties>
+   <property name="ChapterID" value="9"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="0x1d"/>
+   <property name="MapID" value="0x1b"/>
+   <property name="ObjectType" value="0x0e"/>
+   <property name="PaletteID" value="0x72"/>
+   <property name="TileConfig" value="0x10"/>
+  </properties>
   <data encoding="base64" compression="zlib">
    eJzFkk0OgjAQRqftRpEFt9DoQTR6DfUk4toroCdBw8aVV9CVf4fwI4bwWQvFhMTFS8O0vM50JlYiifyPi3X/UIscVclI0zkj0gcDkCC+BTvtdwc4k6k3MQjJmcI1BhOQIr4HhxpnATszclZxdryzXfsUjrsqmTXIY468F2BpPuNX/HvLfeBB61N/32uzgisGa3CiHDr47oIA9GgNjT9PZsM9bWmOIuP38b7dD1d/IlddPIMN++xz8gz+Mj91zrzWAp/LV3tbfXK+ZwUvbiezag==
   </data>

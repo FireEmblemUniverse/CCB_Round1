@@ -14,7 +14,7 @@ PUSH
   ORG $aac5ac
   #incext Png2Dmp "FE_Title.png" --lz77
 
-  ORG $aac58c
+  ORG $aac58c //clearing dragon palette to only use 1 colour
   BYTE $90 $42 $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A
 POP
 
