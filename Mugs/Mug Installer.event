@@ -30,7 +30,7 @@ setMugEntry(0x10, Roshea_Mug, 2,5,2,3)
 
 Edge_Mug:
 #incext PortraitFormatter "Edge.png"
-setMugEntry(0x11, Edge_Mug, 2,5,3,3)
+setMugEntry(0x13, Edge_Mug, 2,5,3,3)
 
 Samson_Mug:
 #incext PortraitFormatter "Samson.png"

@@ -3,16 +3,21 @@
 
 EventPointerTable(0x24, PointerList)
 
-#define Chapter6Boss 0x6A
+#define Ch6_charBoss 0x6A
 
-#define PosStairs1Re [8, 3]
-#define PosStairs2Re [13, 12]
+// Try to keep this low-ish, the thing about this chapter is that it swarms you with low-average enemies
+#define Ch6_baseLevel 3
 
-#define PosThrone1Re [0, 7]
-#define PosThrone2Re [0, 8]
+// #define HardReinforcementEvent(apunUnits) "CHECK_HARD; BEQ 0x0 0xC 0x0; LoadReinforcements(apunUnits); LABEL 0x0; NoFade; ENDA"
 
-#define PosSouth1Re [14, 19]
-#define PosSouth2Re [16, 19]
+#define Ch6_posStairs1Re [8, 3]
+#define Ch6_posStairs2Re [13, 12]
+
+#define Ch6_posThrone1Re [0, 7]
+#define Ch6_posThrone2Re [0, 8]
+
+#define Ch6_posSouth1Re [14, 19]
+#define Ch6_posSouth2Re [16, 19]
 
 PointerList:
   POIN TurnEvents
@@ -27,28 +32,34 @@ PointerList:
   POIN BeginningScene EndingScene
 
 TurnEvents:
-  
-  TurnEventPlayer(0x00, ReinforceThroneWithCavs,      3)
+  TurnEventPlayer(0x00, ReinforceThroneWithCavs,      2)
 
-  TurnEventPlayer(0x00, ReinforceStairsWithMages,     5)
+  TurnEventPlayer(0x00, ReinforceStairsWithMages,     3)
+
+  TurnEventPlayer(0x00, ReinforceThroneWithCavs2,     4)
+
   TurnEventPlayer(0x00, SpawnTheNewGuy,               5)
-  
-  TurnEventPlayer(0x00, ReinforceStairsWithOthers,    7)
-  
-  TurnEventPlayer(0x00, ReinforceThroneWithCavs2,     9)
-  TurnEventPlayer(0x00, ReinforceStairs2WithThieves1, 10)
-  
-  TurnEventPlayer(0x00, ReinforceStairsWithOthers2,   11)
-  TurnEventPlayer(0x00, ReinforceStairs2WithThieves2, 12)
-  
-  TurnEventPlayer(0x00, ReinforceSouthWithGuys,       14)
-  TurnEventPlayer(0x00, ReinforceThroneWithOthers,    14)
-  
-  TurnEventPlayer(0x00, ReinforceSouthWithWyverns,    16)
-  TurnEventPlayer(0x00, ReinforceThroneWithOthers2,   17)
-  TurnEventPlayer(0x00, ReinforceSouthWithWyverns2,   19)
-  
-  TURN 0x00 ReinforceSouthWithWyverns3 [22, 0xFF] 0
+  TurnEventPlayer(0x00, ReinforceStairsWithOthers,    5)
+
+  TurnEventPlayer(0x00, ReinforceStairsWithOthers2,   6)
+  TurnEventPlayer(0x00, ReinforceThroneWithCavs2,     6)
+
+  TurnEventPlayer(0x00, ReinforceStairs2WithThieves1, 7)
+  TurnEventPlayer(0x00, ReinforceSouthWithGuys,       7)
+
+  TurnEventPlayer(0x00, ReinforceStairsWithOthers,    8)
+  TurnEventPlayer(0x00, ReinforceStairs2WithThieves2, 8)
+
+  TurnEventPlayer(0x00, ReinforceThroneWithOthers,    9)
+  TurnEventPlayer(0x00, ReinforceSouthWithWyverns,    9)
+
+  TurnEventPlayer(0x00, ReinforceThroneWithOthers2,  10)
+
+  TurnEventPlayer(0x00, ReinforceSouthWithWyverns2,  11)
+
+  TurnEventPlayer(0x00, ReinforceSouthWithWyverns2,  12)
+
+  TURN 0x00 ReinforceSouthWithWyverns3 [14, 0xFF] 0
 END_MAIN
 
 CharacterEvents:
@@ -87,96 +98,97 @@ EffectiveUnits: // How do you like my testing team ??????
 UNIT
 
 BobUnit:
-  UNIT 0xB    Thief      0 Level(5,  NPC, False) PosStairs2Re 0b 0x00 1 REDA_FromBottomStairsFar [IronSword, Lockpick, Vulnerary] LootingThiefAI
+  UNIT 0xB    Thief      0 Level((Ch6_baseLevel),  NPC, False) Ch6_posStairs2Re 0b 0x00 1 REDA_FromBottomStairsFar [IronSword, Lockpick, Vulnerary] LootingThiefAI
 UNIT
 
 StartingEnemies:
-  UNIT Chapter6Boss Summoner  0            Level(20, Enemy, True) [4,  1] 10b 0x00 0 0x00 [Physic, Mend, Rescue] HealUnits Normal GuardTile
-  UNIT 0x8D         Knight    Chapter6Boss Level(16, Enemy, True) [3,  1]  10b 0x00 0 0x00 [ShortSpear, SilverLance] NeverMoveAI
-  UNIT 0x80         Knight    Chapter6Boss Level(6, Enemy, True) [7,  13] 0b  0x00 0 0x00 [IronLance] [AttackInRange, DontMove] Normal DefaultAI4
-  UNIT 0x80         Fighter   Chapter6Boss Level(6,  Enemy, True) [3,  12] 10b 0x00 0 0x00 [IronAxe, HandAxe] [AttackInRange, DontMove] Normal DefaultAI4
-  UNIT 0x80         Archer    Chapter6Boss Level(6, Enemy, True) [9,  10] 0b  0x00 0 0x00 [IronBow] [AttackInRange, DontMove] Normal DefaultAI4
+  UNIT Ch6_charBoss Summoner  0            Level(20, Enemy, True) [4,  1] 10b 0x00 0 0x00 [Nosferatu, Physic, Mend, Rescue] HealUnits Normal GuardTile
+  UNIT 0x8D         Knight    Ch6_charBoss Level((Ch6_baseLevel + 8), Enemy, True) [3,  1]  10b 0x00 0 0x00 [ShortSpear, SilverLance] GuardTileAI Normal GuardTile
 
-  UNIT 0x80         Fighter   Chapter6Boss Level(5, Enemy, True) [11, 6]  0b  0x00 0 0x00 [IronAxe] [AttackInRange, DontMove] Normal DefaultAI4
-  UNIT 0x80         Mercenary Chapter6Boss Level(5, Enemy, True) [12, 7]  0b  0x00 0 0x00 [IronSword] [AttackInRange, DontMove] Normal DefaultAI4
-  UNIT 0x80         Knight    Chapter6Boss Level(6, Enemy, True) [14, 6]  0b  0x00 0 0x00 [SteelLance] [AttackInRange, DontMove] Normal DefaultAI4
+  UNIT 0x80 Knight    Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) [7,  13] 0b  0x00 0 0x00 [IronLance] [AttackInRange, DontMove] Normal DefaultAI4
+  UNIT 0x80 Fighter   Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) [3,  12] 10b 0x00 0 0x00 [IronAxe, HandAxe] [AttackInRange, DontMove] Normal DefaultAI4
+  UNIT 0x80 Archer    Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) [9,  10] 0b  0x00 0 0x00 [IronBow] [AttackInRange, DontMove] Normal DefaultAI4
+
+  UNIT 0x80 Fighter   Ch6_charBoss Level((Ch6_baseLevel),     Enemy, True) [11, 6]  0b  0x00 0 0x00 [IronAxe] [AttackInRange, DontMove] Normal DefaultAI4
+  UNIT 0x80 Mercenary Ch6_charBoss Level((Ch6_baseLevel),     Enemy, True) [12, 7]  0b  0x00 0 0x00 [IronSword] [AttackInRange, DontMove] Normal DefaultAI4
+  UNIT 0x80 Knight    Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) [14, 6]  0b  0x00 0 0x00 [SteelLance] [AttackInRange, DontMove] Normal DefaultAI4
   
-  UNIT 0x80         Archer    Chapter6Boss Level(6, Enemy, True) [1,  4]  10b 0x00 0 0x00 [IronBow, Longbow] [AttackInRange, DontMove] Normal DefaultAI4
-  UNIT 0x80         Knight    Chapter6Boss Level(7, Enemy, True) [2,  3]  0b  0x00 0 0x00 [SteelLance] [AttackInRange, DontMove] Normal DefaultAI4
-  UNIT 0x80         Knight    Chapter6Boss Level(7, Enemy, True) [4,  3]  10b 0x00 0 0x00 [IronLance, Javelin] [AttackInRange, DontMove] Normal DefaultAI4
-  UNIT 0x80         Archer_F  Chapter6Boss Level(6, Enemy, True) [5,  4]  0b  0x00 0 0x00 [IronBow, Vulnerary] [AttackInRange, DontMove] Normal DefaultAI4
+  UNIT 0x80 Archer    Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) [1,  4]  10b 0x00 0 0x00 [IronBow, Longbow] [AttackInRange, DontMove] Normal DefaultAI4
+  UNIT 0x80 Knight    Ch6_charBoss Level((Ch6_baseLevel + 2), Enemy, True) [2,  3]  0b  0x00 0 0x00 [SteelLance] [AttackInRange, DontMove] Normal DefaultAI4
+  UNIT 0x80 Knight    Ch6_charBoss Level((Ch6_baseLevel + 2), Enemy, True) [4,  3]  10b 0x00 0 0x00 [IronLance, Javelin] [AttackInRange, DontMove] Normal DefaultAI4
+  UNIT 0x80 Archer_F  Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) [5,  4]  0b  0x00 0 0x00 [IronBow, Vulnerary] [AttackInRange, DontMove] Normal DefaultAI4
 UNIT
 
 EnemyStairsMagesRe:
-  UNIT 0x80         Mage_F Chapter6Boss Level(7, Enemy, True) PosStairs1Re 0b 0x00 1 REDA_FromTopStairs2 [Fire] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Mage_F Ch6_charBoss Level((Ch6_baseLevel + 2), Enemy, True) Ch6_posStairs1Re 0b 0x00 1 REDA_FromTopStairs2 [Fire] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemyStairsOtherRe:
-  UNIT 0x80         Myrmidon Chapter6Boss Level(6, Enemy, True) PosStairs1Re 0b 0x00 1 REDA_FromTopStairs1 [IronSword] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Myrmidon Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posStairs1Re 0b 0x00 1 REDA_FromTopStairs1 [IronSword] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemyStairsOther2Re:
-  UNIT 0x80         Mage    Chapter6Boss Level(7, Enemy, True) PosStairs1Re 0b 0x00 1 REDA_FromTopStairs2 [Fire] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Mage    Ch6_charBoss Level((Ch6_baseLevel + 2), Enemy, True) Ch6_posStairs1Re 0b 0x00 1 REDA_FromTopStairs2 [Fire] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemyThroneCavsRe:
-  UNIT 0x80         Cavalier Chapter6Boss Level(5, Enemy, True)  PosThrone1Re 0b  0x00 1 REDA_FromThroneRoom1 [IronSword] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80         Cavalier Chapter6Boss Level(6, Enemy, True) PosThrone2Re 10b 0x00 1 REDA_FromThroneRoom3 [SlimLance, LightBrand] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Cavalier Ch6_charBoss Level((Ch6_baseLevel),     Enemy, True) Ch6_posThrone1Re 0b  0x00 1 REDA_FromThroneRoom1 [IronSword] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Cavalier Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posThrone2Re 10b 0x00 1 REDA_FromThroneRoom2 [SlimLance, LightBrand] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemyThroneCavs2Re:
-  UNIT 0x80         Cavalier   Chapter6Boss Level(5, Enemy, True) PosThrone1Re 0b  0x00 1 REDA_FromThroneRoom1 [IronSword] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80         Troubadour Chapter6Boss Level(7, Enemy, True) PosThrone1Re 0b  0x00 1 REDA_FromThroneRoom2 [Heal] HealUnits Normal DefaultAI4
-  UNIT 0x80         Cavalier   Chapter6Boss Level(6, Enemy, True) PosThrone2Re 0b  0x00 1 REDA_FromThroneRoom3 [IronLance] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80         Cavalier   Chapter6Boss Level(6, Enemy, True) PosThrone2Re 0b  0x00 1 REDA_FromThroneRoom4 [IronSword, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Cavalier   Ch6_charBoss Level((Ch6_baseLevel),     Enemy, True) Ch6_posThrone1Re 0b  0x00 1 REDA_FromThroneRoom1 [IronSword] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Troubadour Ch6_charBoss Level((Ch6_baseLevel + 2), Enemy, True) Ch6_posThrone1Re 0b  0x00 1 REDA_FromThroneRoom2 [Heal] HealUnits Normal DefaultAI4
+  UNIT 0x80 Cavalier   Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posThrone2Re 0b  0x00 1 REDA_FromThroneRoom3 [IronLance] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Cavalier   Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posThrone2Re 0b  0x00 1 REDA_FromThroneRoom4 [IronSword, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemyThroneOthersRe:
-  UNIT 0x80 Archer    Chapter6Boss Level(7, Enemy, True) PosThrone1Re 0b  0x00 1 REDA_FromThroneRoom2 [IronBow, Longbow] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 Fighter   Chapter6Boss Level(6, Enemy, True) PosThrone2Re 0b  0x00 1 REDA_FromThroneRoom4 [SteelAxe, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Archer    Ch6_charBoss Level((Ch6_baseLevel + 2), Enemy, True) Ch6_posThrone1Re 0b  0x00 1 REDA_FromThroneRoom3 [IronBow, Longbow] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Fighter   Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posThrone2Re 0b  0x00 1 REDA_FromThroneRoom4 [SteelAxe, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemyThroneOthers2Re:
-  UNIT 0x80 Myrmidon Chapter6Boss Level(7, Enemy, True) PosThrone1Re 0b  0x00 1 REDA_FromThroneRoom2 [SteelSword, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 Mage     Chapter6Boss Level(6, Enemy, True) PosThrone2Re 0b  0x00 1 REDA_FromThroneRoom3 [Fire] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Myrmidon Ch6_charBoss Level((Ch6_baseLevel + 2), Enemy, True) Ch6_posThrone1Re 0b  0x00 1 REDA_FromThroneRoom1 [SteelSword, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Mage     Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posThrone2Re 0b  0x00 1 REDA_FromThroneRoom2 [Fire] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemySouthGuysRe:
-  UNIT 0x80 Myrmidon Chapter6Boss Level(5, Enemy, True) PosSouth1Re 0b  0x00 1 REDA_FromSouth1 [SteelSword] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 Archer   Chapter6Boss Level(6, Enemy, True) PosSouth1Re 0b  0x00 1 REDA_FromSouth2 [ShortBow] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 Mage     Chapter6Boss Level(12, Enemy, True) PosSouth2Re 10b 0x00 1 REDA_FromSouth3 [Elfire, RedGem, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 Knight   Chapter6Boss Level(5, Enemy, True) PosSouth2Re 0b  0x00 1 REDA_FromSouth4 [SlimLance, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Myrmidon Ch6_charBoss Level((Ch6_baseLevel),     Enemy, True) Ch6_posSouth1Re 0b  0x00 1 REDA_FromSouth1 [SteelSword] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Archer   Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posSouth1Re 0b  0x00 1 REDA_FromSouth2 [ShortBow] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Mage     Ch6_charBoss Level((Ch6_baseLevel + 7), Enemy, True) Ch6_posSouth2Re 10b 0x00 1 REDA_FromSouth3 [Elfire, RedGem, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Knight   Ch6_charBoss Level((Ch6_baseLevel),     Enemy, True) Ch6_posSouth2Re 0b  0x00 1 REDA_FromSouth4 [SlimLance, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemySouthWyvernsRe:
-  UNIT 0x80 WyvernRider Chapter6Boss Level(5, Enemy, True) PosSouth1Re 0b  0x00 1 REDA_FromSouth1 [SteelLance] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 WyvernRider Chapter6Boss Level(5, Enemy, True) PosSouth1Re 10b 0x00 1 REDA_FromSouth2 [DragonSpear] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 WyvernRider Chapter6Boss Level(5, Enemy, True) PosSouth2Re 0b  0x00 1 REDA_FromSouth3 [IronLance] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 WyvernRider Chapter6Boss Level(5, Enemy, True) PosSouth2Re 0b  0x00 1 REDA_FromSouth4 [SteelLance, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel), Enemy, True) Ch6_posSouth1Re 0b  0x00 1 REDA_FromSouth1 [SteelLance] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel), Enemy, True) Ch6_posSouth1Re 10b 0x00 1 REDA_FromSouth2 [DragonSpear] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel), Enemy, True) Ch6_posSouth2Re 0b  0x00 1 REDA_FromSouth3 [IronLance] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel), Enemy, True) Ch6_posSouth2Re 0b  0x00 1 REDA_FromSouth4 [SteelLance, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemySouthWyverns2Re:
-  UNIT 0x80 WyvernRider Chapter6Boss Level(6, Enemy, True) PosSouth1Re 0b  0x00 1 REDA_FromSouth1 [IronLance] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 WyvernRider Chapter6Boss Level(6, Enemy, True) PosSouth1Re 0b  0x00 1 REDA_FromSouth2 [Javelin] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 WyvernRider Chapter6Boss Level(6, Enemy, True) PosSouth2Re 0b  0x00 1 REDA_FromSouth3 [SteelLance] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 WyvernRider Chapter6Boss Level(6, Enemy, True) PosSouth2Re 0b  0x00 1 REDA_FromSouth4 [IronLance, Javelin] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posSouth1Re 0b  0x00 1 REDA_FromSouth1 [IronLance] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posSouth1Re 0b  0x00 1 REDA_FromSouth2 [Javelin] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posSouth2Re 0b  0x00 1 REDA_FromSouth3 [SteelLance] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posSouth2Re 0b  0x00 1 REDA_FromSouth4 [IronLance, Javelin] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemySouthWyverns3Re:
-  UNIT 0x80 WyvernRider Chapter6Boss Level(8, Enemy, True) PosSouth1Re 0b  0x00 1 REDA_FromSouth1 [SteelLance, Javelin] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 WyvernRider Chapter6Boss Level(8, Enemy, True) PosSouth1Re 0b  0x00 1 REDA_FromSouth2 [SteelLance, Javelin] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 WyvernRider Chapter6Boss Level(8, Enemy, True) PosSouth2Re 0b  0x00 1 REDA_FromSouth3 [SteelLance, Javelin] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 WyvernRider Chapter6Boss Level(8, Enemy, True) PosSouth2Re 0b  0x00 1 REDA_FromSouth4 [SteelLance, Javelin] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel + 3), Enemy, True) Ch6_posSouth1Re 0b  0x00 1 REDA_FromSouth1 [SteelLance, Javelin] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel + 3), Enemy, True) Ch6_posSouth1Re 0b  0x00 1 REDA_FromSouth2 [SteelLance, Javelin] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel + 3), Enemy, True) Ch6_posSouth2Re 0b  0x00 1 REDA_FromSouth3 [SteelLance, Javelin] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 WyvernRider Ch6_charBoss Level((Ch6_baseLevel + 3), Enemy, True) Ch6_posSouth2Re 0b  0x00 1 REDA_FromSouth4 [SteelLance, Javelin] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemyStairs2Thieves1Re:
-  UNIT 0x80 Archer Chapter6Boss Level(6, Enemy, True) PosStairs2Re 10b 0x00 1 REDA_FromBottomStairs4 [SilverBow] [AttackInRange, Pursue] Normal DefaultAI4
-  UNIT 0x80 Mage_F Chapter6Boss Level(7, Enemy, True) PosStairs2Re 0b  0x00 1 REDA_FromBottomStairs2 [Thunder] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Archer Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posStairs2Re 10b 0x00 1 REDA_FromBottomStairs4 [SilverBow] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Mage_F Ch6_charBoss Level((Ch6_baseLevel + 2), Enemy, True) Ch6_posStairs2Re 0b  0x00 1 REDA_FromBottomStairs2 [Thunder]   [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 EnemyStairs2Thieves2Re:
-  UNIT 0x80 Thief Chapter6Boss Level(5, Enemy, True) PosStairs2Re 10b 0x00 1 REDA_FromBottomStairs1 [IronSword, Runesword] LootingThiefAI Normal DefaultAI4
-  UNIT 0x80 Mage  Chapter6Boss Level(6, Enemy, True) PosStairs2Re 0b 0x00 1 REDA_FromBottomStairs3 [Elfire, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Thief Ch6_charBoss Level((Ch6_baseLevel), Enemy, True) Ch6_posStairs2Re 10b 0x00 1 REDA_FromBottomStairs1 [IronSword, Runesword] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Mage  Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posStairs2Re 0b 0x00 1 REDA_FromBottomStairs3 [Elfire, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
 REDA_FromTopStairs1:
@@ -232,12 +244,17 @@ Traps2:
 ENDTRAP
 ALIGN 4
 
-BeginningScene:
+prCapBossMag: // Call with ASMC (prCapBossMag|1)
+  SHORT 0xB500 0x4807 0x4B05 0x469E 0xF800 0x6841 0x3114 0x7809 0x3014 0x7001 0x2000 0xBC02 0x4708 0x0000 0x829C 0x0801
+  WORD Ch6_charBoss // Char ID here (only works for one unit!)
 
+BeginningScene:
   VCWF 0 //turn off fog lol
 
   LOAD1 0x1 StartingEnemies
   ENUN
+  
+  ASMC (prCapBossMag|1)
   
   LOAD2 0x1 EffectiveUnits // 0x0 instead of 0x1 seems to be for allies on maps with prep screens
   ENUN
@@ -297,15 +314,17 @@ EndingScene:
   NoFade
 ENDA
 
-#undef PosStairs1Re
-#undef PosStairs2Re
+#undef Ch6_posStairs1Re
+#undef Ch6_posStairs2Re
 
-#undef PosThrone1Re
-#undef PosThrone2Re
+#undef Ch6_posThrone1Re
+#undef Ch6_posThrone2Re
 
-#undef PosSouth1Re
-#undef PosSouth2Re
+#undef Ch6_posSouth1Re
+#undef Ch6_posSouth2Re
 
-#undef Chapter6Boss
+#undef Ch6_baseLevel
+
+#undef Ch6_charBoss
 
 #endif // CHAPTER6_EVENTS_EVENT
