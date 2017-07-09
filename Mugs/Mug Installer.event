@@ -42,7 +42,7 @@ setMugEntry(0x18, Arve_Mug, 3,5,3,3)
 
 Tye_Mug:
 #incext PortraitFormatter "Tye.png"
-setMugEntry(0x19, Tye_Mug, 2,5,2,3)
+setMugEntry(0x19, Tye_Mug, 3,5,2,3)
 
 Celicia_Mug:
 #incext PortraitFormatter "celicia.png"
@@ -98,7 +98,7 @@ setMugEntry(0x26, EvilFlorina_Mug, 2,6, 3,4)
 
 Mark_Mug:
 #incext PortraitFormatter "mamkute.png"
-setMugEntry(0x15, Mark_Mug, 4,6,3,4)
+setMugEntry(0x15, Mark_Mug, 4,6,2,4)
 
 Tiki_Mug:
 #incext PortraitFormatter "chiki.png"
@@ -107,3 +107,11 @@ setMugEntry(0x2d, Tiki_Mug, 4,7,4,5)
 Bjoern_Mug:
 #incext PortraitFormatter "bjoern.png"
 setMugEntry(0x29, Bjoern_Mug, 2,5,2,3)
+
+Tata_Mug:
+#incext PortraitFormatter "tata.png"
+setMugEntry(0x51, Tata_Mug, 3,6,2,4)
+
+Prine_Mug:
+#incext PortraitFormatter "prine.png"
+setMugEntry(0x11, Prine_Mug, 2,6,3,4)

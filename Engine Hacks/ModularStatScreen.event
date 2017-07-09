@@ -96,7 +96,7 @@
   #incbin "MSS/mss_page2_original.dmp"
   ALIGN 4
   MSS_page3:
-  #incbin "MSS/mss_page3_original.dmp"
+  #incbin "MSS/mss_page3_ranksonly.dmp"
   ALIGN 4
   MSS_page4:
   #incbin "MSS/mss_page4.dmp"
