@@ -105,7 +105,7 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+LOAD1 0x0 Units //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 LOAD1 0x1 Prine
 LOAD1 0x1 Bad1
 LOAD1 0x1 Bad2

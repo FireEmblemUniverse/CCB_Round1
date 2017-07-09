@@ -177,38 +177,6 @@ This text is a placeholder![A][X]
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]
 
-##AnnaTwoGet
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch15Start
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch15StartContinued
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch15End
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch15AmbushWarning
-[MidLeft][LoadFace][0x2][0x1]
-Ambush coming![A][X]
-
-##Ch15VillageStuff
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch15TopHouseText
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch15BottomHouseText
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
 ##RecruitJakeTalk
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]

@@ -296,3 +296,13 @@
 #define CH1Kid 0xa04
 #define CH1Opening 0xa05
 #define CH1Chest 0xa06
+#define AnnaTwoGet 0xa07
+#define Ch15Start 0xa08
+#define Ch15StartContinued 0xa09
+#define Ch15End 0xa0a
+#define Ch15AmbushWarning 0xa0b
+#define Ch15VillageStuff 0xa0c
+#define Ch15TopHouseText 0xa0d
+#define Ch15BottomHouseText 0xa0e
+#define Ch15BossName 0x237
+#define Ch3BossName 0x296
