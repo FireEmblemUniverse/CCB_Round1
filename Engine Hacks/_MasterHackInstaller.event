@@ -138,7 +138,7 @@ POP
   ALIGN 4
   #include "MSG/InstallCore.event"
   #include "MSG/InstallHelpers.event"
-  
+
   #include "StatGetters/_InstallStatGetters.event"
 
   //Konami code sets event id 0xb2
@@ -152,8 +152,15 @@ POP
 
   Win_Usability:
   #incbin "winbuttonusability.dmp"
+
+  Offscreen_Levelup:
+  #incbin "autolevel.dmp"
+  ALIGN 4
+  
   Win_Effect:
   #incbin "winbutton.dmp"
+  POIN Offscreen_Levelup
+
 
 ALIGN 4
 
@@ -168,7 +175,7 @@ ALIGN 4
   UnitMenuTable:
   //Use the macro MenuCommand(name,description,colour,usability,effect)
   //Color options: NormalText, GrayText, BlueText, OrangeText, GreenText (flashes), BlackText
-  //MenuCommand(DualAtkTxtID,DualAtkDescId,0,DualAtkCheck,DualAtkSelected) 
+  //MenuCommand(DualAtkTxtID,DualAtkDescId,0,DualAtkCheck,DualAtkSelected)
 
   PUSH
     ORG $59d1f2   //Make the unit menu wider (to fit longer words)
@@ -215,14 +222,14 @@ ALIGN 4
   UM_Vendor
   UM_Secret
   UM_Arena
-  
+
   // Shove & cie
   MenuCommand(UM_Shove,      UM_ShoveDesc,      NormalText, prShoveCommand_Usability,      prShoveCommand_Effect)
   MenuCommand(UM_Smite,      UM_SmiteDesc,      NormalText, prSmiteCommand_Usability,      prSmiteCommand_Effect)
   MenuCommand(UM_Pivot,      UM_PivotDesc,      NormalText, prPivotCommand_Usability,      prPivotCommand_Effect)
   MenuCommand(UM_Reposition, UM_RepositionDesc, NormalText, prRepositionCommand_Usability, prRepositionCommand_Effect)
   MenuCommand(UM_Swap,       UM_SwapDesc,       NormalText, prSwapCommand_Usability,       prSwapCommand_Effect)
-  
+
   UM_Rescue
   UM_Give
   UM_Take
@@ -240,5 +247,4 @@ ALIGN 4
   #endif
 
   UM_Wait
-  UM_Separator 
-
+  UM_Separator
