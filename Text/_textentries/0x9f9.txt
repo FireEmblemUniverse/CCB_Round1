@@ -1,5 +1,3 @@
-[MidLeft][LoadFace][0x2][0x1]
-Hmm, that girl...[A][NL]
-She doesn't look like she's[NL]
-in my way. Maybe I shouldn't[NL]
-kill her.[A][X]
+[MidLeft][LoadFace][CurrentPortrait]
+[MidRight][LoadFace][0x64][0x1]
+I'll take that card from you.[A][X]

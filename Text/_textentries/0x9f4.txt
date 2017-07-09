@@ -1,2 +1,2 @@
-[MidLeft][LoadFace][0x2][0x1]
-Ambush coming![A][X]
+Freeze and debuff[N]
+all enemies.[X]

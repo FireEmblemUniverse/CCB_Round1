@@ -1,1 +1,5 @@
-The kid destroyed the village[X]
+[MidLeft][LoadFace][0x60][0x1]
+Are you with Anna's army?[N]
+Please, take this, and drive[A]
+away those invaders from that[N]
+Wars World place! Aptly named![A][X]
