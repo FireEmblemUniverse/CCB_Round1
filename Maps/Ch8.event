@@ -2,10 +2,10 @@
 
 #include eastdlib.event
 
-SetChapterData(5,0x6c,0,0x6d,0x6e,0x1b,Map,5,0,0x1d)
+SetChapterData(9,0x6c,0,0x6d,0x6e,0x1b,Map,5,0,0x1d)
 EventPointerTable(0x1d, MapChanges)
 Map:
-#incbin "Ch5x_data.dmp"
+#incbin "Ch8_data.dmp"
 
 MapChanges:
 TileMap(0,4,0,3,2,Village_Destroyed)

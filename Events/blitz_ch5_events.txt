@@ -1,6 +1,14 @@
-EventPointerTable(0x21, PointerList)
+//FEU chapter creation blitz ch5
 
-PointerList:
+//objective of chapter is Seize, not Defeat Boss; make sure to change objective text!
+
+#include EAstdlib.event
+
+EventPointerTable(0x21,ThisChapter)
+
+ORG 0xE80000 //change this to whatever
+
+ThisChapter:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
 POIN LocationBasedEvents
@@ -45,15 +53,12 @@ TurnEventPlayer(0x0,SnowMore,15)
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEvent(0x7,SoWhatsUpWithFrelianFoodAnyway,Void,Kirsten)
+CharacterEvent(0x0,SoWhatsUpWithFrelianFoodAnyway,0x01,0x0A)
 END_MAIN
 
 LocationBasedEvents:
-Seize(18,1)
+Seize(0x0,EndingScene,18,1)
 Armory(OnlyShopBo,13,9)
-#ifdef __DEBUG__
-Seize(25,7)
-#endif
 END_MAIN
 
 MiscBasedEvents:
@@ -79,7 +84,6 @@ BeginningScene:
 //they should be here any moment now; it foreshadows the turn 15 berserkers
 
 LOAD2 0x1 Units
-ENUN
 LOAD1 0x1 Bad
 ENUN
 CAM1 0x01
@@ -176,9 +180,9 @@ ENDA
 RegoGreen:
 LOAD1 0x1 GreenistheColourofAir
 ENUN
-CAM1 Kirsten
+CAM1 0x0A
 STAL 30
-FlashCursor(Kirsten,50)
+FlashCursor(0x0a,50)
 STAL 10
 //Text: peg knight is hyped to defeat the boss all by herself
 //REMA
@@ -229,7 +233,7 @@ STAL 10
 //main lord tries and fails to convince Kirsten how dumb it is to attack a castle on your own
 //when you're a pegagirl. Kirsten should talk like a British chav (uwotm8)
 
-TurnAlly(Kirsten)
+TurnAlly(0x0A)
 STAL 20
 NoFade
 ENDA
@@ -309,4 +313,5 @@ UNIT
 
 OnlyShopBo:
 SHLI 0x05 0x06 0x0E 0x12
-ALIGN 4
+
+MESSAGE Events end at offset currentOffset

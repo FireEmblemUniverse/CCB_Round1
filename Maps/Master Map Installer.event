@@ -85,13 +85,13 @@
 #include "Ch5.event"
 }
 {
-#include "Ch5x.event"
-}
-{
 #include "Ch6.event"
 }
 {
 #include "Ch7.event"
+}
+{
+#include "Ch8.event"
 }
 {
 #include "Ch9.event"

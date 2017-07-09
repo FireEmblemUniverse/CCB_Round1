@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="24" height="17" tilewidth="16" tileheight="16" nextobjectid="1">
- <tileset firstgid="1" name="6C006D6E" tilewidth="16" tileheight="16">
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="24" height="17" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="6C006D6E" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="Tilesets/FE8/6C006D6E.png" width="512" height="512"/>
  </tileset>
  <layer name="Main" width="24" height="17">
   <properties>
    <property name="Anims1" value="5"/>
-   <property name="ChapterID" value="5"/>
+   <property name="ChapterID" value="9"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="0x1d"/>
    <property name="MapID" value="0x1b"/>
