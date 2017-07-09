@@ -4,6 +4,10 @@ HP Bars[.][X]
 # 0x00B2
 Set health bar display[X]
 
+#0x518 
+#was 'sick'
+Freeze[X]
+
 #include "ChapterNames.txt"
 
 #0x3A LearnedSkillText

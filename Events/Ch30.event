@@ -2,7 +2,14 @@
 
 EventPointerTable(0x87,ThisChapter)
 
-ORG 0xE80000
+VeinEffect(0, StopGargoyles)
+VeinEffect(1, FreezeAndDebuff)
+
+ALIGN 4
+MESSAGE debuffs at CURRENTOFFSET
+DebuffASMC:
+#incbin "DebuffEnemies.dmp"
+WORD DebuffTable
 
 ThisChapter:
 POIN TurnBasedEvents
@@ -11,7 +18,7 @@ POIN LocationBasedEvents
 POIN MiscBasedEvents
 POIN Dunno Dunno Dunno
 POIN Tutorial
-POIN TrapData TrapData
+POIN TrapData1 TrapData2
 POIN Units Units
 POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
@@ -33,7 +40,7 @@ UNIT
 
 
 TurnBasedEvents:
-TurnEventPlayer(0, SpawnGargoyles1, 4, 10)
+TurnEventPlayer(0xa, SpawnGargoyles1, 4, 10)
 TurnEventPlayer(0x7, SpawnGargoyles2, 0, 200)
 TurnEventPlayer(0x9, SpawnPhantoms, 0, 200)
 END_MAIN
@@ -61,9 +68,14 @@ Tutorial:
 //DO NOT TOUCH
 WORD $00
 
-TrapData:
-END_MAIN
+TrapData1:
+Vein(11,15,0,DVText_StopGargoyles)
+Vein(11,31,1,DVText_FreezeDebuff)
+ENDTRAP
+ALIGN 4
 
+TrapData2:
+ENDTRAP
 ALIGN 4
 
 BeginningScene:
@@ -96,6 +108,7 @@ SpawnGargoyles1:
   BNE 0x0 r1 0
   ReinforcementEvent(Reinforcements1)    //Remainder was 0 (right)
   LABEL 0x0
+  ENUF 0xA
   NoFade
   ENDA
 
@@ -121,8 +134,25 @@ SpawnGargoyles2:
   NoFade
   ENDA
 
+StopGargoyles:
+  ENUT 0x7
+  ENUT 0x8
+  ENUT 0xA
+  VeinActivation
+  NoFade
+  ENDA
+
 SpawnPhantoms:
   ReinforcementEvent(CentreArea)
+
+FreezeAndDebuff:
+  VeinActivation
+  ASMC DebuffASMC|1
+  ENUN
+  ASMC FreezeAllASMC|1
+  ENUN
+  NoFade
+  ENDA
 
 // Manual Movement
 

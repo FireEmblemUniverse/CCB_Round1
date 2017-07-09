@@ -149,3 +149,11 @@ Thanks for saving me![A][NL]
 I owe you a lot, so I guess[NL]
 I'll help you with whatever[A][NL]
 it is you're trying to do.[A][X]
+
+##DVText_StopGargoyles
+Stop gargoyles[N]
+from spawning.[X]
+
+##DVText_FreezeDebuff
+Freeze and debuff[N]
+all enemies.[X]
