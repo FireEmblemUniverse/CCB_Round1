@@ -68,7 +68,7 @@ UNIT Leeroy Paladin 0x00 Level(1, Ally, 1) [18,13] 0x00 0x00 0x0 0x00 [SilverLan
 UNIT
 
 NewUnit:
-UNIT Anna Myrmidon_F 0x00 Level(2, NPC, 1) [24,18] 0x02 0x00 0x0 0x00 [Shamshir, Vulnerary, GoldGem] AttackInRangeAI 
+UNIT Anna Myrmidon_F 0x00 Level(2, NPC, 1) [24,18] 0x02 0x00 0x0 0x00 [Shamshir, Vulnerary, WhiteGem] GuardTileAI 
 UNIT Breguet Civilian 0x00 Level(1, NPC, 1) [23,9] 0x00 0x00 0x0 0x00 [0x00] NeverMoveAI 
 UNIT
 

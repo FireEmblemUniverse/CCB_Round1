@@ -1,2 +1,2 @@
-Lancefaire: +4 damage[N]
-when equipping a lance.[X]
+Darting Blow: +5 Attack Speed[N]
+when initiating battle.[X]

@@ -1,6 +1,7 @@
 #ifdef _FE8_
     #include "EAstdlib.event"
     #include "Custom Definitions.event"
+        #define __DEBUG__ //allow seizes at start of chapters
 
     ORG FreeSpace
     //Text first for Text ID definitions
@@ -13,6 +14,9 @@
     BYTE $0F $10 $13 $14 $3F $42 $41 $05 $06 $09 $0A $19 $1A $48 $1F $20 $45 $4A $25 $26 $2D $2E $4B $0D $3D $3E $47 $7E $7F $37 $44 Soldier 0
     KnightCrestClasses:
     BYTE $05 $06 $09 $0A $37 Soldier 00
+    ALIGN 4
+    SuperBlitzEffectiveness:
+    BYTE $52 $53 $54 $55 $56 $57 $58 $59 $5A $5B $5C $5D $5E $5F $60 $61 $62 $63 $64 $65 $66 $3B $7C $7D $51 Necromancer 00
     ALIGN 4
     MESSAGE Used table space ends at currentOffset
 
@@ -28,7 +32,7 @@
     #include "Music/Music Installer.event"
 
     //Events
-    #define __DEBUG__ //allow seizes at start of chapters
+    #undef __DEBUG__ //getting rid of extra seizes basically
     #include "Events/Master Events Installer.event"
     #include "Events/World Map Events Installer.event"
 

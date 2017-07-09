@@ -1,2 +1,2 @@
-Quick Draw: +4 Damage[N]
-when initiating battle.[X]
+Elbow Room: +3 damage dealt[N]
+when on open terrain.[X]

@@ -1,2 +1,2 @@
-Fiery Blood: +4 damage[N]
-when HP is not at max.[X]
+Camaraderie: Recover 10% HP each turn[N]
+if there are allies within 2 tiles.[X]

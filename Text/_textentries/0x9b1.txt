@@ -1,2 +1,1 @@
-Dragon's Blood: Unit is able[N]
-to activate Dragon Veins.[X]
+Celerity: Movement +2.[X]

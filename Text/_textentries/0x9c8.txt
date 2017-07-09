@@ -1,2 +1,2 @@
-Even Rhythm: +10 Hit and Avoid[N]
-on even numbered turns.[X]
+Armsthrift: Luck % chance to not[N]
+consume weapon durability.[X]

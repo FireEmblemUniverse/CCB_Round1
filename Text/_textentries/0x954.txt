@@ -1,2 +1,2 @@
-Sol: Restore damage dealt as HP.[N]
-(Skill % activation)[X]
+Canto+: Can move again after[N]
+attacking and other actions.[X]

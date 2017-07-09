@@ -198,3 +198,39 @@ Bj[0xf6]rn[X]
 ##Desc_Bjoern
 His raison d'[0xea]tre: na[0xef]vet[0xe9] as[N]
 a fa[0xe7]ade for doppelg[0xe4]ngers.[X]
+
+##Name_EdgeAlly
+Edge's Ally[X]
+
+##Desc_EdgeAlly
+Edge's Ally[X]
+
+##Name_Lennon
+Lennon[X]
+
+##Desc_Lennon
+Lennon[X]
+
+##Name_Paul
+Paul[X]
+
+##Desc_Paul
+Paul[X]
+
+##Name_Ringo
+Ringo[X]
+
+##Desc_Ringo
+Ringo[X]
+
+##Name_Harrison
+Harrison[X]
+
+##Desc_Harrison
+Harrison[X]
+
+##Name_Prine
+Prine[X]
+
+##Desc_Prine
+onii-nyama sugoi~[X]

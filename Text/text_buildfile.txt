@@ -32,6 +32,9 @@ for one turn[X]
 ##Name_BlitzLance
 Blitz Lance[X]
 
+##Name_SuperBlitzLance
+Super Blitz[X]
+
 #include "unitnames.txt"
 
 #include "skilldesc_text.txt"

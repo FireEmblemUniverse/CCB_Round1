@@ -1,2 +1,2 @@
-Malefic Aura: Enemies within 2[N]
-tiles receive +2 magic damage.[X]
+Tomefaire: +4 damage[N]
+when equipping a tome.[X]

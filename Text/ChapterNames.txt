@@ -24,7 +24,7 @@ Prologue: IT BEGINS[X]
 7: Port of Bad[X]
 
 #0x169
-Ch8[X]
+8: Yet Another Chapter[X]
 
 #0x16a
 9: Tragic Backstory[X]
@@ -87,7 +87,7 @@ Ch8[X]
 28: Mess.jpg[X]
 
 # 0x0182
-Ch29[X]
+29: Let It Be[X]
 
 # 0x0183
 Final: End of All[X]

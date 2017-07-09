@@ -1,0 +1,2 @@
+Freeze and debuff[N]
+all enemies.[X]

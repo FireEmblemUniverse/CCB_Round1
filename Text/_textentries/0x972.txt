@@ -1,2 +1,2 @@
-Summon: Can conjure a phantom[N]
-soldier to fight alongside you.[X]
+Wrath: If HP < 50%,[N]
++20 critical rate.[X]

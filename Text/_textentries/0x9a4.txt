@@ -1,2 +1,2 @@
-Lily's Poise: Adjacent allies gain[N]
-+1/-3 damage dealt/received.[X]
+Intimidate: -10 Avoid to[N]
+all enemies within 2 tiles.[X]

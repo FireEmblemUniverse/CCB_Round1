@@ -1,2 +1,2 @@
-Amaterasu: Allies within 2 tiles[N]
-recover 20% HP each turn.[X]
+Dance: Refresh an ally unit[N]
+to let them act again.[X]

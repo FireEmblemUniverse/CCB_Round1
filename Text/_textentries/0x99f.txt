@@ -1,2 +1,2 @@
-Relief: Recover 20% HP each turn if[N]
-there are no allies within 2 tiles.[X]
+Live to Serve: When healing[N]
+an ally, also heals self.[X]

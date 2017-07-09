@@ -1,3 +1,2 @@
-Despoil: Obtain a Red Gem after[N]
-attacking and defeating an enemy.[N]
-(Luck % activation)[X]
+Smite: Allows unit to push[N]
+other units two tiles away.[X]

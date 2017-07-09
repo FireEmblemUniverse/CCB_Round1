@@ -1,2 +1,2 @@
-Spur Strength: Adjacent allies[N]
-deal +4 physical damage.[X]
+Lifetaker: Restore up to 50% HP after[N]
+attacking and defeating an enemy.[X]

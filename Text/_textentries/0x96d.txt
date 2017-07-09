@@ -1,2 +1,2 @@
-Axefaire: +4 damage[N]
-when equipping an axe.[X]
+Warding Blow: +20 Res[N]
+when initiating battle.[X]

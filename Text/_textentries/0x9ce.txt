@@ -1,2 +1,2 @@
-Swap: Allows unit to swap positions[N]
-with an adjacent ally.[X]
+Rightful Arch: Sets Skill[N]
+activation rate to 100%.[X]

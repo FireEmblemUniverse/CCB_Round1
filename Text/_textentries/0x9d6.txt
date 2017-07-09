@@ -1,2 +1,3 @@
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+Despoil: Obtain a Red Gem after[N]
+attacking and defeating an enemy.[N]
+(Luck % activation)[X]

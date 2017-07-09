@@ -15,6 +15,8 @@ NewDifficultyButtons:
 PUSH
 ORG 0x5926F4+(0x80*8)
 #incext Png2Dmp "blitzicon.png"
+ORG 0x5926F4+(0x80*0xb0)
+#incext Png2Dmp "superblitzicon.png"
 POP
 
 SnowObjectType:

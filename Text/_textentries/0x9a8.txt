@@ -1,2 +1,2 @@
-Elbow Room: +3 damage dealt[N]
-when on open terrain.[X]
+Foreign Princess: Foreign army units[N]
+take -2/+2 damage dealt/taken.[X]

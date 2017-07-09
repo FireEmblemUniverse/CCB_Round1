@@ -1,2 +1,2 @@
-Shove: Allows unit to push[N]
-other units one tile away.[X]
+Wind Disciple: +10 Hit and[N]
+Avoid when HP is not at max.[X]

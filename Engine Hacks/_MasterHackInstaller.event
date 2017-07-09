@@ -57,6 +57,9 @@ POP
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 //start of Free space
 
+  //Portrait Height fix
+  #include "Portrait Shift Table.event"
+
   //HP Bars (and effective weapon warning)
   #include "HPbars.txt"
 
@@ -144,6 +147,10 @@ POP
   //Enemy Control based on event id 0xb2
   #include "EnemyControl.event"
 
+  #define Win_Usability 0x0804f449
+  Win_Effect:
+  #incbin "winbutton.dmp"
+
 ALIGN 4
 
 
@@ -223,5 +230,11 @@ ALIGN 4
   UM_Item
   UM_Trade
   UM_Supply
+
+  #ifdef __DEBUG__
+  MenuCommand(UMText_Win, UMDesc_Win, GreenText, Win_Usability, Win_Effect)
+  #endif
+
   UM_Wait
   UM_Separator 
+

@@ -1,2 +1,1 @@
-Inspiration: Allies within 2 tiles[N]
-deal +2 damage and receive -2 damage.[X]
+Crit Boost: +15 critical rate.[X]

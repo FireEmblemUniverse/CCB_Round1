@@ -1,2 +1,2 @@
-Seal Skill: Debuff opponent's Skl[N]
-by 6 after combat. (Recover 1/turn)[X]
+Tantivy: +10 Hit/Avoid if there are[N]
+no allies within 3 tiles.[X]

@@ -1,2 +1,2 @@
-Natural Cover: -3 damage taken[N]
-when on terrain with effects.[X]
+Savage Blow: After attacking, enemies[N]
+within 2 tiles take 20% damage.[X]

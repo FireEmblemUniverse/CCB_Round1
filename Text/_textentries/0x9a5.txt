@@ -1,2 +1,2 @@
-Expertise: Reduce bonus damage[N]
-from critical hits by 50%.[X]
+Opportunist: +4 damage[N]
+if the foe cannot counter.[X]

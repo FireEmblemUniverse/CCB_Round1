@@ -1,1 +1,2 @@
-Note: There are no Secret Shops here.[X]
+Stop gargoyles[N]
+from spawning.[X]

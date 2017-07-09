@@ -1,2 +1,2 @@
-Aegis: Nullify a magic attack.[N]
-(Skill % activation)[X]
+Bane: Leave the opponent at 1 HP.[N]
+(Skill/2 % activation)[X]

@@ -1,2 +1,2 @@
-Wrath: If HP < 50%,[N]
-+20 critical rate.[X]
+Tomebreaker: +50 Hit/Avo when[N]
+enemy has a tome equipped.[X]

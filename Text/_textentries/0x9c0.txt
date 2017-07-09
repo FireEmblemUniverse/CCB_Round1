@@ -1,2 +1,2 @@
-Smite: Allows unit to push[N]
-other units two tiles away.[X]
+Strong Riposte: When under[N]
+attack, damage +3. [X]

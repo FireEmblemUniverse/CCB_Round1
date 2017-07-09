@@ -1,2 +1,2 @@
-Savage Blow: After attacking, enemies[N]
-within 2 tiles take 20% damage.[X]
+Staff Savant: Maximum range[N]
+of staves is increased by 1.[X]

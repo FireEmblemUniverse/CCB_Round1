@@ -1,2 +1,2 @@
-Chivalry: When foe is at full HP,[N]
-attack and def/res +2.[X]
+Gamble: A reckless attack with[N]
+halved hit but doubled crit.[X]

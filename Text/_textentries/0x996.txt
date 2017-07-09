@@ -1,2 +1,2 @@
-Life and Death: +10 to[N]
-damage dealt and taken.[X]
+Rally Skill: +4 Skill[N]
+to allies within 2 tiles.[X]

@@ -1,1 +1,2 @@
-Celerity: Movement +2.[X]
+Trample: +5 damage to[N]
+unmounted units.[X]

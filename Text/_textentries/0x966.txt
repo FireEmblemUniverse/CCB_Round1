@@ -1,2 +1,2 @@
-Desperation: If HP < 50%,[N]
-double attacks occur immediately.[X]
+Bowbreaker: +50 Hit/Avo when[N]
+enemy has a bow equipped.[X]

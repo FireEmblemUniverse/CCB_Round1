@@ -1,2 +1,2 @@
-Gamble: A reckless attack with[N]
-halved hit but doubled crit.[X]
+Expertise: Reduce bonus damage[N]
+from critical hits by 50%.[X]
