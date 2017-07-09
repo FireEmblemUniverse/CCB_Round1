@@ -14,7 +14,7 @@
 [.5] = [.....]
 [.6] = [......]
 [.7] = [.......]
-[Beat] = [ToggleMouthMove]...[.4][ToggleMouthMove]
+[Beat] = [ToggleMouthMove]...[.5][ToggleMouthMove]
 [Event] = [LoadOverworldFaces]
 
 [FarFarLeft] = [OpenFarFarLeft]
@@ -49,6 +49,8 @@
 [CurrentPortrait] = [0xFF][0xFF]
 
 [LoadDoot] = [LoadFace][0x2C][0x1]
+[LoadVirgina] = [LoadFace][0x2][0x1]
+[LoadPrine] = [LoadFace][0x11][0x1]
 [LoadInnes] = [LoadFace][0xf][0x1]
 [LoadCormag] = [LoadFace][0x13][0x1]
 [LoadLArachel] = [LoadFace][0x22][0x1]
@@ -59,3 +61,4 @@
 [LoadSelena] = [LoadFace][0x3f][0x1]
 [LoadGerik] = [LoadFace][0x1b][0x1]
 [LoadSaleh] = [LoadFace][0x20][0x1]
+[LoadCurrent] = [LoadFace][CurrentPortrait]
