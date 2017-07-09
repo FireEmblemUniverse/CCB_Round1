@@ -150,7 +150,8 @@ POP
   //Display only existing wranks
   #include "WeaponRankDisplay.event"
 
-  #define Win_Usability 0x0804f449
+  Win_Usability:
+  #incbin "winbuttonusability.dmp"
   Win_Effect:
   #incbin "winbutton.dmp"
 

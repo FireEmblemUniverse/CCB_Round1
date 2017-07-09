@@ -7,10 +7,22 @@ PUSH
   BYTE 1 //make eirika use anims for lance not swd
   ORG $8AEFFC
   BYTE 1 //same for promo
+
+  ORG $c5830
+  POIN NewTitleScroll
+
+  ORG $aac5ac
+  #incext Png2Dmp "FE_Title.png" --lz77
+
+  ORG $aac58c
+  BYTE $90 $42 $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A $EE $2A
 POP
 
 NewDifficultyButtons:
 #incext Png2Dmp "difficulty.png" --lz77
+
+NewTitleScroll:
+#incext Png2Dmp "TitleScroll.png" --lz77
 
 PUSH
 ORG 0x5926F4+(0x80*8)
