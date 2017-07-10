@@ -110,6 +110,10 @@ Well, I guess I won't need[N]
 this anymore. I was going to[AN]
 use it as an ornament...[A][X]
 
+##Ch9VillageText
+[MidLeft][LoadCurrent]
+Oh cool, I found a thing.[A][X]
+
 ##Ch10PreBattleText1
 [MidLeft][LoadFace][0x2][0x1]
 Hold! There are enemies nearby.[AN]
