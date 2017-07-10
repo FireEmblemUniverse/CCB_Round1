@@ -142,12 +142,12 @@ Wrath: If HP < 50%,[N]
 +20 critical rate.[X]
 
 ## SD_Counter
-Counter: Physical damage taken[N]
-at 1-2 range is reflected.[X]
+Counter: Reflect physical damage[N]
+when attacked at 1-2 range.[X]
 
 ## SD_Countermagic
-Countermagic: Magic damage taken[N]
-at 1-2 range is reflected.[X]
+Countermagic: Reflect magic damage[N]
+when attacked at 1-2 range.[X]
 
 ## SD_Miracle
 Miracle: Survive a lethal[N]
