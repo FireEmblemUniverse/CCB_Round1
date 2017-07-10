@@ -23,6 +23,14 @@
     //   hp st sk sp df rs lk mv cn
     BYTE 00 10 10 00 10 20 00 00 00 00
     ALIGN 4
+
+    PUSH
+        ORG $99e64
+        POIN NewPrepScreenShopList
+    POP
+
+    NewPrepScreenShopList:
+    SHLI $01 $14 $1F $2D $38 $45 $3F $4B AngelicRobe EnergyRing SecretBook Speedwings GoddessIcon Dragonshield Talisman
     MESSAGE Used table space ends at currentOffset
 
     //Engine Hacks
