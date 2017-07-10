@@ -42,9 +42,10 @@ TurnEventPlayer(0x0,TurnTenReinforcements,14)
 TurnEventPlayer(0x0,TurnElevenReinforcements,15)
 TurnEventPlayer(0x0,TurnTwelveReinforcements,16)
 TurnEventPlayer(0x0,TurnThirteenReinforcements,17)
-TurnEventPlayer(0x0,TurnThirteenReinforcements,18)
-TurnEventPlayer(0x0,TurnThirteenReinforcements,19)
-TurnEventPlayer(0x0,TurnThirteenReinforcements,20)
+TurnEventPlayer(0x0,TurnEighteenReinforcements,18)
+TurnEventPlayer(0x0,TurnNineteenReinforcements,19)
+TurnEventPlayer(0x0,TurnTwentyReinforcements,20)
+TurnEventEnemy(0x0,AMBUSHSPAWN,20)
 END_MAIN
 
 CharacterBasedEvents:
@@ -82,6 +83,7 @@ END_MAIN
 ALIGN 4
 
 BeginningScene:
+VCWF 3
 LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 Enemies
@@ -340,6 +342,8 @@ UNIT
 
 AMBUSHSPAWN:
 UNIT PegasusMessenger Soldier Valter_Ch15_ Level(1, Enemy, 1) [32,9] 0x00 0x0 0x00 0 [SlimLance] PursueWithoutHeedAI
+UNIT PegasusMessenger Berserker Valter_Ch15_ Level(10, Enemy, 1) [31,10] 0x00 0x00 0x0 0x00 [KillerAxe] PursueWithoutHeedAI
+UNIT PegasusMessenger Druid Valter_Ch15_ Level(1, Enemy, 1) [32,9] 0x00 0x0 0x00 0 [Nosferatu, Silence, Sleep, Berserk] PursueWithoutHeedAI 
 UNIT
 
 // Shop Data
