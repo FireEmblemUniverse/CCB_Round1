@@ -24,6 +24,7 @@ END_MAIN
 LocationBasedEvents:
 Village(0x06, LeftVillage, 2, 3)
 Village(0x07, RightVillage, 16, 10)
+Vendor(ShopList, 5, 3)
 #ifdef DEBUG
     Seize(2,10)
 #endif
@@ -142,3 +143,9 @@ VillageEventItem(Ch8Left, 0x0, EnergyRing)
 
 RightVillage:
 VillageEventItem(Ch8Right, 0x0, HeroCrest)
+
+ShopList:
+SHLI Heal Mend Vulnerary PureWater
+BYTE 0x0
+
+ALIGN 4
