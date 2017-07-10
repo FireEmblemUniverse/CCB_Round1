@@ -173,6 +173,19 @@ out the threats that are up there too![A][X]
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]
 
+##Ch13VillageText
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5F][0x01]
+There used to be treasure in[N]
+this here desert.[AN]
+People came to this village[N]
+searching for a fortune.[AN]
+But I came too late, and[N]
+now there's nothing left.[AN]
+All I found were these[N]
+stupid old boots![AN]
+Forget this! I'm going home.[A][X]
+
 ##Ch14TalkEvent
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]

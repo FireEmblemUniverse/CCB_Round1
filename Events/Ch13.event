@@ -33,6 +33,7 @@ CharacterEvent(8, RecruitCelicia, Void, Celicia)
 END_MAIN
 
 LocationBasedEvents:
+Village(10, OasisVillage, 5,9)
 #ifdef __DEBUG__
 Seize(10,17)
 #endif
@@ -79,6 +80,9 @@ RecruitCelicia:
 CUSA Celicia
 NoFade
 ENDA
+
+OasisVillage:
+VillageEventItem(Ch13VillageText, HouseBG, Boots)
 
 // Manual Movement
 
