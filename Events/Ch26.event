@@ -26,7 +26,7 @@ END_MAIN
 
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 CharacterBasedEvents:
-CharacterEvent(0x7, RecruitTalk, Void, Jake)
+CharacterEventBothWays(0x7, RecruitTalk, Void, Jake)
 END_MAIN
 
 RecruitTalk:
@@ -54,7 +54,7 @@ ArmoryList:
 SHLI SilverAxe SilverLance SilverSword SilverBlade SilverBow
 
 VendorList:
-SHLI Nosferatu Flux Luna Eclipse Thunder Forblaze Fimbulvetr Lightning Shine Divine
+SHLI Nosferatu Flux Luna Eclipse Thunder Fimbulvetr Lightning Shine Divine
 ALIGN 4
 
 VillageSpeedwings:
@@ -178,7 +178,7 @@ UNIT 0x80 General Caellach Level(12, Enemy, 1) [5,7] 0x00 0x00 0x0 0x00 [BraveAx
 UNIT 0x80 General Caellach Level(12, Enemy, 1) [13,9] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
 UNIT 0x80 General Caellach Level(12, Enemy, 1) [22,3] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] NeverMoveAI
 UNIT 0x80 General Caellach Level(12, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] NeverMoveAI 
-UNIT Caellach Hero 0x00 Level(16, Enemy, 0) [20,2] 0x00 0x00 0x0 0x00 [Garm, Swordslayer, SilverBlade, DelphiShield] NeverMoveAI 
+UNIT Caellach Hero 0x00 Level(16, Enemy, 0) [20,2] 0x02 0x00 0x0 0x00 [Garm, Swordslayer, SilverBlade, DelphiShield] NeverMoveAI 
 UNIT
 
 ALIGN 4

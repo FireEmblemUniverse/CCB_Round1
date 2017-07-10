@@ -45,7 +45,7 @@ TurnEventPlayer(0x0,SnowMore,15)
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEvent(0x7,SoWhatsUpWithFrelianFoodAnyway,Void,Kirsten)
+CharacterEventBothWays(0x7,SoWhatsUpWithFrelianFoodAnyway,Void,Kirsten)
 END_MAIN
 
 LocationBasedEvents:

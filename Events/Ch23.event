@@ -76,8 +76,8 @@ TurnEventPlayer(0x0,WaxOff,12)
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEvent(0x8,DidYouEverHeartheOneAbouttheZonbie,Void,Doowile)
-CharacterEvent(0x9,WillHeReallyLetYouFinish,Kaga,Doowile)
+CharacterEventBothWays(0x8,DidYouEverHeartheOneAbouttheZonbie,Void,Doowile)
+CharacterEventBothWays(0x9,WillHeReallyLetYouFinish,Kaga,Doowile)
 END_MAIN
 
 LocationBasedEvents:

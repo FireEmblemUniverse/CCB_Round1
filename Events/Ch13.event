@@ -29,7 +29,7 @@ TurnBasedEvents:
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEvent(8, RecruitCelicia, Void, Celicia)
+CharacterEventBothWays(8, RecruitCelicia, Void, Celicia)
 END_MAIN
 
 LocationBasedEvents:

@@ -17,7 +17,7 @@ TurnEventPlayer(0x0,LoadReinforcements,3)
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEvent(0x10,TalkEvent,Void,Eevster)
+CharacterEventBothWays(0x10,TalkEvent,Void,Eevster)
 END_MAIN
 
 LocationBasedEvents:

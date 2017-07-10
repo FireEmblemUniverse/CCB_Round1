@@ -49,7 +49,7 @@ TurnEventEnemy(0x0,AMBUSHSPAWN,20)
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEventBothWays(0xD,GetAnnaTwo,Eirika,Amelia)
+CharacterEventBothWays(0xD,GetAnnaTwo,Eirika,AnnaWyv)
 END_MAIN
 
 LocationBasedEvents:
@@ -165,7 +165,7 @@ GetAnnaTwo:
 MUSC 0x30
 Text(AnnaTwoGet)
 REMA
-TurnAlly(Amelia)
+TurnAlly(AnnaWyv)
 ENDA
 
 Ch15Village:
@@ -265,13 +265,13 @@ UNIT PegasusMessenger WyvernRider Valter_Ch15_ Level(15, Enemy, 1) [34,8] 0x00 0
 UNIT
 
 Greens:
-UNIT Amelia WyvernRider_F Amelia Level(15, NPC, 1) [7,14] 0x00 0x00 0x0 0x00 [SilverLance, MemberCard] AttackInRangeAI 
-UNIT RiverFolk Soldier Amelia Level(15, NPC, 1) [4,9] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
-UNIT RiverFolk Soldier Amelia Level(15, NPC, 1) [7,19] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
-UNIT RiverFolk Troubadour Amelia Level(15, NPC, 1) [7,9] 0x00 0x00 0x0 0x00 [Mend, Physic] HealUnits 
-UNIT RiverFolk Troubadour Amelia Level(15, NPC, 1) [2,12] 0x00 0x00 0x0 0x00 [Mend, Physic] HealUnits 
-UNIT RiverFolk General Amelia Level(2, NPC, 1) [12,17] 0x00 0x00 0x0 0x00 [SilverLance, Spear] NeverMoveAI 
-UNIT RiverFolk Fleet Amelia Level(10, NPC, 1) [1,18] 0x00 0x00 0x0 0x00 [KillerBallista] AttackInRangeAI 
+UNIT AnnaWyv WyvernRider_F AnnaWyv Level(15, NPC, 1) [7,14] 0x00 0x00 0x0 0x00 [SilverLance, MemberCard] AttackInRangeAI 
+UNIT RiverFolk Soldier AnnaWyv Level(15, NPC, 1) [4,9] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
+UNIT RiverFolk Soldier AnnaWyv Level(15, NPC, 1) [7,19] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
+UNIT RiverFolk Troubadour AnnaWyv Level(15, NPC, 1) [7,9] 0x00 0x00 0x0 0x00 [Mend, Physic] HealUnits 
+UNIT RiverFolk Troubadour AnnaWyv Level(15, NPC, 1) [2,12] 0x00 0x00 0x0 0x00 [Mend, Physic] HealUnits 
+UNIT RiverFolk General AnnaWyv Level(2, NPC, 1) [12,17] 0x00 0x00 0x0 0x00 [SilverLance, Spear] NeverMoveAI 
+UNIT RiverFolk Fleet AnnaWyv Level(10, NPC, 1) [1,18] 0x00 0x00 0x0 0x00 [KillerBallista] AttackInRangeAI 
 UNIT
 
 T2Reinforcements:

@@ -37,11 +37,16 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Armory(weaponlist, 6,11)
 Seize(24,13)
 #ifdef __DEBUG__
 Seize(1,15)
 #endif
 END_MAIN
+
+weaponlist:
+SHLI SilverSword KillingEdge SilverLance KillerLance SilverAxe KillerAxe SilverBow KillerBow
+ALIGN 4
 
 MiscBasedEvents:
 CauseGameOverIfLordDies

@@ -49,7 +49,7 @@ TurnEventPlayer(0x0,RegoS,21)
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEvent(0x7,DruidWalksIntoaBar,Void,Bjoern)
+CharacterEventBothWays(0x7,DruidWalksIntoaBar,Void,Bjoern)
 END_MAIN
 
 LocationBasedEvents:

@@ -63,7 +63,7 @@ TurnEvents:
 END_MAIN
 
 CharacterEvents:
-  CharacterEvent(0x20, RecruitNewGuy, 0x01, 0xB) // Void -> Bob
+  CharacterEventBothWays(0x20, RecruitNewGuy, Void, Bob) // Void -> Bob
 END_MAIN
 
 LocationEvents:
@@ -305,7 +305,7 @@ SpawnTheNewGuy:
   ReinforcementEvent(BobUnit)
 
 RecruitNewGuy:
-  CUSA 0xB
+  CUSA Bob
   NoFade
 ENDA
 
