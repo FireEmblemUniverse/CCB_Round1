@@ -1,3 +1,3 @@
 [MidLeft][LoadFace][0x61][0x1]
 The hell you doing here?[N]
-Leave me be, and scram![A][X]
+Leave me be, and scram![AN][X]

@@ -189,7 +189,7 @@ in my way. Maybe I shouldn't[NL]
 kill her.[A][X]
 
 ##Ch21End
-[MidLeft][LoadDoot]
+[MidRight][LoadDoot]
 Thanks for saving me![A][NL]
 I owe you a lot, so I guess[NL]
 I'll help you with whatever[A][NL]
