@@ -95,6 +95,7 @@ ALIGN 4
 
 AssassinSkillList:
 BYTE 255 AcrobatID
+BYTE 255 DespoilID
 BYTE 5 LifetakerID
 BYTE 15 PassID
 BYTE 00 00
@@ -142,14 +143,14 @@ BYTE 00 00
 ALIGN 4
 
 MageSkillList:
-BYTE 1 ShoveID
+BYTE 1 FocusID
 BYTE 10 AdeptID
 BYTE 00 00
 ALIGN 4
 
 SageSkillList:
 BYTE 255 AdeptID
-BYTE 255 ShoveID
+BYTE 255 FocusID
 BYTE 5 TomefaireID
 BYTE 15 IgnisID
 BYTE 00 00
@@ -157,8 +158,9 @@ ALIGN 4
 
 MageKnightSkillList:
 BYTE 255 AdeptID
+BYTE 255 FocusID
 BYTE 5 RallyResID
-BYTE 15 FocusID
+BYTE 15 QuickBurnID
 BYTE 00 00
 ALIGN 4
 
@@ -171,27 +173,28 @@ ALIGN 4
 
 ShamanSkillList:
 BYTE 1 MaleficAuraID
-BYTE 10 LifeAndDeathID
+BYTE 10 SpurDefID
 BYTE 00 00
 ALIGN 4
 
 DruidSkillList:
 BYTE 255 MaleficAuraID
-BYTE 255 LifeAndDeathID
-BYTE 5 SealStrID
+BYTE 255 SpurDefID
+BYTE 5 FrenzyID
 BYTE 15 TomebreakerID
 BYTE 00 00
 ALIGN 4
 
 SummonerSkillList:
 BYTE 255 MaleficAuraID
-BYTE 255 LifeAndDeathID
+BYTE 255 SpurDefID
 BYTE 5 AnathemaID
 BYTE 15 RenewalID
 BYTE 00 00
 ALIGN 4
 
 RogueSkillList:
+BYTE 255 DespoilID
 BYTE 255 AcrobatID
 BYTE 5 LungeID
 BYTE 15 CelerityID
