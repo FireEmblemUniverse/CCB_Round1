@@ -17,8 +17,16 @@ mov	lr, r0
 mov	r0, r4		@attacker
 .short	0xF800
 ldrb 	r1, [r6,#0x10]	@squares moved this turn
-cmp	r0,r1
+cmp	r0, r1
 beq	End
+
+ldr	r1,=#0x8018BD8	@check if can move again
+mov	lr, r1
+.short	0xF800
+lsl	r0, #0x18
+cmp	r0, #0x00
+beq	End
+
 
 @check if attacked this turn
 ldrb 	r0, [r6,#0x11]	@action taken this turn

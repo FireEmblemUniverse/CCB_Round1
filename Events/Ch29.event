@@ -38,6 +38,7 @@ UNIT
 
 
 TurnBasedEvents:
+TurnEventPlayer(0,GibItem,1)
 END_MAIN
 
 CharacterBasedEvents:
@@ -74,8 +75,6 @@ ENUN
 LOAD2 0x1 Units
 ENUN
 FADU 10
-SETVAL 0x3 0x85
-_GIVEITEMTO 0x1
 GotoPrepScreen
 ENDA
 
@@ -86,6 +85,11 @@ ENDA
 
 
 // Events
+GibItem:
+SETVAL 0x3 0x85
+_GIVEITEMTO 0x1
+ENDA
+
 Stairs1:
 SETVAL 0xB 0x1B000E
 TILECHANGE 0xFFFF
