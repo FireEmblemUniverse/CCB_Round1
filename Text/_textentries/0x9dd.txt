@@ -1,4 +1,4 @@
-[MidRight][LoadFace][0x4][0x1]
+[MidRight][LoadFace][0x14][0x1]
 [MidLeft][LoadFace][0x2][0x1]
 That village looks nice.[N]
 Those horses don't.[AN]

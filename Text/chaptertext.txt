@@ -7,7 +7,7 @@ to go through you![A][X]
 
 
 ##Ch3Start
-[MidRight][LoadFace][0x4][0x1]
+[MidRight][LoadFace][0x14][0x1]
 [MidLeft][LoadFace][0x2][0x1]
 That village looks nice.[N]
 Those horses don't.[AN]
@@ -41,7 +41,7 @@ by the way. Fear my Continue![A][X]
 
 ##Ch3Ending
 [MidRight][LoadFace][0x02][0x01]
-[MidLeft][LoadFace][0x4][0x1]
+[MidLeft][LoadFace][0x14][0x1]
 Idiotic Jenkins. I, Leeroy,[N]
 am the only person able to[AN]
 charge in without care![N]
