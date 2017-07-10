@@ -129,6 +129,8 @@ CAM1 0x1
 STAL 0x8
 Text(Ch8Start2)
 ENUN
+NoFade
+ENDA
 
 EndingScene:
 MNCH 0x9
