@@ -71,7 +71,7 @@ Ch17        "Slowly" Corrupting       Leonarth
 Ch18        Island Clash              Krib
 Ch19        Lit chapter               Krib
 Ch20        Great rivalry             Krib
-Ch21        Doot Doot                 Colorz
+Ch21        Doot Doot                 Bishop Seva
 Ch22        N i c e B o a t s         Aurawolf
 Ch23        Flesh and Bone            Alusq
 Ch24        River Rush                Teraspark
