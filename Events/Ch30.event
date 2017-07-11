@@ -51,6 +51,8 @@ END_MAIN
 LocationBasedEvents:
 Chest(Garm, 2, 38)
 Chest(Latona, 21,38)
+Door(4,39)
+Door(18,39)
 #ifdef __DEBUG__
 Seize(11,38)
 #endif
