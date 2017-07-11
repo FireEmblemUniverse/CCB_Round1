@@ -1,2 +1,3 @@
-Quick Burn: +15 Hit and Avoid.[N]
-This bonus decreases each turn.[X]
+Down with Arch: If the hit lands,[N]
+instantly kill the enemy unit.[N]
+(Only if name starts with "Arch")[X]

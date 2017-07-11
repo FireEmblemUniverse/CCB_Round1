@@ -1,2 +1,2 @@
-Lily's Poise: Adjacent allies gain[N]
-+1/-3 damage dealt/received.[X]
+Camaraderie: Recover 10% HP each turn[N]
+if there are allies within 2 tiles.[X]

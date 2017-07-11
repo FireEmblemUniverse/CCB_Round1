@@ -1,2 +1,2 @@
-Adept: Gain a consecutive attack.[N]
-(Speed % activation)[X]
+Saved the series,[N]
+but at what cost?[X]

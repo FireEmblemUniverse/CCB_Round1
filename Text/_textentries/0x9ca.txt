@@ -1,2 +1,2 @@
-Armsthrift: Luck % chance to not[N]
-consume weapon durability.[X]
+Strong Riposte: When under[N]
+attack, damage +3. [X]

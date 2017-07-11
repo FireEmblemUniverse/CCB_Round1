@@ -1,2 +1,2 @@
-Rightful God: +30% to[N]
-Skill activation rate.[X]
+Armsthrift: Luck % chance to not[N]
+consume weapon durability.[X]

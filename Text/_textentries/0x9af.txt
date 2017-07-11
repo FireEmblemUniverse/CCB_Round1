@@ -1,2 +1,2 @@
-Bond: All allies within 3 tiles[N]
-recover 10% HP each turn.[X]
+Opportunist: +4 damage[N]
+if the foe cannot counter.[X]

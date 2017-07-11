@@ -1,2 +1,2 @@
-Canto+: Can move again after[N]
-attacking and other actions.[X]
+Governor of the skeleton colony.[N]
+Detests all fleshy beings.[X]

@@ -1,2 +1,2 @@
-Swordfaire: +4 damage[N]
-when equipping a sword.[X]
+Certain Blow: +40 Hit[N]
+when initiating battle.[X]

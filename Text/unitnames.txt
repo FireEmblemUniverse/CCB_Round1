@@ -234,3 +234,30 @@ Prine[X]
 
 ##Desc_Prine
 onii-nyama sugoi~[X]
+
+##Name_Maeda
+Maeda[X]
+
+##Desc_Maeda
+Saved the series,[N]
+but at what cost?[X]
+
+##Name_Saara
+Saara[X]
+
+##Name_MrBones
+Mr. Bones[X]
+
+##Desc_MrBones
+Governor of the skeleton colony.[N]
+Detests all fleshy beings.[X]
+
+##Name_Banana
+Banana[X]
+
+##Desc_Banana
+A harbinger of this[N]
+universe's destruction.[X]
+
+##Name_Grit
+Grit[X]

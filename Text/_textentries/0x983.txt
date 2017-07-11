@@ -1,2 +1,2 @@
-Renewal: Restore 30% of max HP[N]
-at the start of each turn.[X]
+Bowfaire: +4 damage[N]
+when equipping a bow.[X]

@@ -1,2 +1,2 @@
-[MidLeft][LoadCurrent]
-This text is a placeholder![A][X]
+Even Rhythm: +10 Hit and Avoid[N]
+on even numbered turns.[X]

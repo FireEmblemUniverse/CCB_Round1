@@ -115,3 +115,20 @@ setMugEntry(0x51, Tata_Mug, 3,6,2,4)
 Prine_Mug:
 #incext PortraitFormatter "Prine.png"
 setMugEntry(0x11, Prine_Mug, 2,6,3,4)
+
+Saara_Mug:
+#incext PortraitFormatter "saara.png"
+setMugEntry(0x34, Saara_Mug, 2,5,2,3)
+
+MrBones_Mug:
+#incext PortraitFormatter "mrbones.png"
+setMugEntry(0x36, MrBones_Mug, 2,6,2,4)
+
+Banana_Mug:
+#incext PortraitFormatter "banana.png"
+setMugEntry(0x55, Banana_Mug, 2,4,3,2)
+
+Grit_Mug:
+#incext PortraitFormatter "grit.png"
+setMugEntry(0x42, Grit_Mug, 4,4,4,2)
+
