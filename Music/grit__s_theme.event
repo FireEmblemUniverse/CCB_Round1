@@ -1,0 +1,3887 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	grit__s_theme_grp  voicegroup000
+	#define	grit__s_theme_pri  0
+	#define	grit__s_theme_rev  0
+	#define	grit__s_theme_mvl  67
+	#define	grit__s_theme_key  0
+	#define	grit__s_theme_tbs  1
+	#define	grit__s_theme_exg  0
+	#define	grit__s_theme_cmp  1
+
+	// .rodata
+	//	grit__s_theme
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+grit__s_theme_1:
+	BYTE	KEYSH   grit__s_theme_key+0
+		BYTE 		BENDR   6
+grit__s_theme_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   96*grit__s_theme_tbs/2
+	BYTE		VOICE   31
+	BYTE		VOL     100*grit__s_theme_mvl/mxv
+	BYTE		N04     En2   v100
+	BYTE	W02
+	BYTE		        Gs2 
+	BYTE	W02
+	BYTE		N92     Bn2 
+	BYTE	W90
+	BYTE	W01
+	BYTE	TEMPO   96*grit__s_theme_tbs/2
+	BYTE	W01
+// 001   ----------------------------------------
+	BYTE		N04     En2 
+	BYTE	W01
+	BYTE	TEMPO   96*grit__s_theme_tbs/2
+	BYTE	W01
+	BYTE		        Gs2 
+	BYTE	W02
+	BYTE	TEMPO   95*grit__s_theme_tbs/2
+	BYTE		N92     Cs3 
+	BYTE	W02
+	BYTE	TEMPO   94*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   94*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   93*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   93*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   92*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   91*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   91*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   90*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   90*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   89*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   89*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   88*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   87*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   87*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   86*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   86*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   85*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   84*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   84*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   83*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   83*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   82*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   82*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   81*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   80*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   80*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   79*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   79*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   78*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   78*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   77*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   76*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   76*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   75*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   75*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   74*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   73*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   73*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   72*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   72*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   71*grit__s_theme_tbs/2
+	BYTE	W02
+// 002   ----------------------------------------
+	BYTE		N04     En2 
+	BYTE	W01
+	BYTE	TEMPO   71*grit__s_theme_tbs/2
+	BYTE	W01
+	BYTE		        Gs2 
+	BYTE	W01
+	BYTE	TEMPO   70*grit__s_theme_tbs/2
+	BYTE	W01
+	BYTE		TIE     Bn2 
+	BYTE	W01
+	BYTE	TEMPO   69*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   69*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   68*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   68*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   67*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   67*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   66*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   65*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   65*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   64*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   64*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   63*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   62*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   62*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   61*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   61*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   60*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   60*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   59*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   58*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   58*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   57*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   57*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   56*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   55*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   55*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   54*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   54*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   53*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   53*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   52*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   51*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   51*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   50*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   50*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   49*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   49*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   48*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   47*grit__s_theme_tbs/2
+	BYTE	W02
+	BYTE	TEMPO   47*grit__s_theme_tbs/2
+	BYTE	W03
+	BYTE	TEMPO   46*grit__s_theme_tbs/2
+	BYTE	W02
+// 003   ----------------------------------------
+	BYTE	TEMPO   60*grit__s_theme_tbs/2
+	BYTE	W66
+	BYTE	W01
+	BYTE	TEMPO   60*grit__s_theme_tbs/2
+	BYTE	W04
+	BYTE	TEMPO   59*grit__s_theme_tbs/2
+	BYTE	W01
+	BYTE	TEMPO   107*grit__s_theme_tbs/2
+	BYTE	W24
+	BYTE		EOT   
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W96
+// 055   ----------------------------------------
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE	W96
+// 062   ----------------------------------------
+	BYTE	W96
+// 063   ----------------------------------------
+	BYTE	W96
+// 064   ----------------------------------------
+	BYTE	W96
+// 065   ----------------------------------------
+	BYTE	W96
+// 066   ----------------------------------------
+	BYTE	W96
+// 067   ----------------------------------------
+	BYTE	W96
+// 068   ----------------------------------------
+	BYTE	W96
+// 069   ----------------------------------------
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE	W96
+// 071   ----------------------------------------
+	BYTE	W96
+// 072   ----------------------------------------
+	BYTE	W96
+// 073   ----------------------------------------
+	BYTE	W96
+// 074   ----------------------------------------
+	BYTE	W96
+// 075   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	grit__s_theme_1_B1
+grit__s_theme_1_B2:
+// 076   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+grit__s_theme_2:
+	BYTE	KEYSH   grit__s_theme_key+0
+		BYTE 		BENDR   6
+grit__s_theme_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   24
+	BYTE		VOL     110*grit__s_theme_mvl/mxv
+	BYTE		PAN     c_v+23
+	BYTE		N12     Bn2   v127
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Gs2 
+	BYTE	W12
+	BYTE		N18     Dn2 
+	BYTE	W24
+	BYTE		N60     En2 
+	BYTE	W36
+// 001   ----------------------------------------
+	BYTE	W36
+	BYTE		N12     Gn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE		N02     An2 
+	BYTE	W02
+	BYTE		        As2 
+	BYTE	W02
+	BYTE		N32     Bn2 
+	BYTE	W32
+	BYTE		N12     Dn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE		N96     En2 
+	BYTE	W96
+// 004   ----------------------------------------
+grit__s_theme_2_004:
+	BYTE	W24
+	BYTE		N08     Dn2   v127
+	BYTE	W08
+	BYTE		        En2 
+	BYTE	W08
+	BYTE		        Dn2 
+	BYTE	W08
+	BYTE		N16     En2 
+	BYTE	W16
+	BYTE		N32     Gs2 
+	BYTE	W32
+	BYTE	PEND
+// 005   ----------------------------------------
+grit__s_theme_2_005:
+	BYTE		BEND    c_v-26
+	BYTE		N16     Gs2   v127
+	BYTE	W01
+	BYTE		BEND    c_v-22
+	BYTE	W01
+	BYTE		        c_v-14
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W13
+	BYTE		N08     Bn2 
+	BYTE	W08
+	BYTE		N16     Cs3 
+	BYTE	W16
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE		N32     Cs3 
+	BYTE	W32
+	BYTE	PEND
+// 006   ----------------------------------------
+grit__s_theme_2_006:
+	BYTE		BEND    c_v-30
+	BYTE		N16     Gn3   v127
+	BYTE	W01
+	BYTE		BEND    c_v-26
+	BYTE	W01
+	BYTE		        c_v-20
+	BYTE	W01
+	BYTE		        c_v-14
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W12
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     Fs3 
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     En3 
+	BYTE	W16
+	BYTE		N32     Cs3 
+	BYTE	W30
+	BYTE	W01
+	BYTE		BEND    c_v-31
+	BYTE	W01
+	BYTE	PEND
+// 007   ----------------------------------------
+grit__s_theme_2_007:
+	BYTE		BEND    c_v-27
+	BYTE		N16     Gn3   v127
+	BYTE	W01
+	BYTE		BEND    c_v-12
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W14
+	BYTE		N24     Fs3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+	BYTE		N08     Cs3 
+	BYTE	W08
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_004
+// 009   ----------------------------------------
+grit__s_theme_2_009:
+	BYTE		BEND    c_v-28
+	BYTE		N16     Gs2   v127
+	BYTE	W01
+	BYTE		BEND    c_v-23
+	BYTE	W01
+	BYTE		        c_v-17
+	BYTE	W01
+	BYTE		        c_v-12
+	BYTE	W01
+	BYTE		        c_v-7
+	BYTE	W01
+	BYTE		        c_v-1
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W10
+	BYTE		N08     Bn2 
+	BYTE	W08
+	BYTE		N16     Cs3 
+	BYTE	W16
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE		N32     Cs3 
+	BYTE	W32
+	BYTE	PEND
+// 010   ----------------------------------------
+grit__s_theme_2_010:
+	BYTE		BEND    c_v-28
+	BYTE		N16     Gn3   v127
+	BYTE	W01
+	BYTE		BEND    c_v-23
+	BYTE	W01
+	BYTE		        c_v-17
+	BYTE	W01
+	BYTE		        c_v-12
+	BYTE	W01
+	BYTE		        c_v-8
+	BYTE	W01
+	BYTE		        c_v-2
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE	W10
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     Fs3 
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     En3 
+	BYTE	W16
+	BYTE		N32     An3 
+	BYTE	W32
+	BYTE	PEND
+// 011   ----------------------------------------
+grit__s_theme_2_011:
+	BYTE		BEND    c_v-28
+	BYTE		N16     Gn3   v127
+	BYTE	W01
+	BYTE		BEND    c_v-24
+	BYTE	W01
+	BYTE		        c_v-20
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v-12
+	BYTE	W01
+	BYTE		        c_v-8
+	BYTE	W01
+	BYTE		        c_v-3
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W08
+	BYTE		N24     Fs3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+	BYTE		N08     Cs3 
+	BYTE	W08
+	BYTE		N16     En3 
+	BYTE	W16
+	BYTE		N08     Cs3 
+	BYTE	W08
+	BYTE	PEND
+// 012   ----------------------------------------
+grit__s_theme_2_012:
+	BYTE	W32
+	BYTE	W03
+	BYTE		BEND    c_v-63
+	BYTE	W01
+	BYTE		        c_v-61
+	BYTE		N84     Bn3   v127
+	BYTE	W01
+	BYTE		BEND    c_v-60
+	BYTE	W01
+	BYTE		        c_v-58
+	BYTE	W01
+	BYTE		        c_v-56
+	BYTE	W01
+	BYTE		        c_v-54
+	BYTE	W01
+	BYTE		        c_v-52
+	BYTE	W01
+	BYTE		        c_v-48
+	BYTE	W01
+	BYTE		        c_v-47
+	BYTE	W01
+	BYTE		        c_v-45
+	BYTE	W01
+	BYTE		        c_v-41
+	BYTE	W01
+	BYTE		        c_v-39
+	BYTE	W01
+	BYTE		        c_v-37
+	BYTE	W01
+	BYTE		        c_v-34
+	BYTE	W01
+	BYTE		        c_v-30
+	BYTE	W01
+	BYTE		        c_v-28
+	BYTE	W01
+	BYTE		        c_v-25
+	BYTE	W01
+	BYTE		        c_v-22
+	BYTE	W01
+	BYTE		        c_v-19
+	BYTE	W01
+	BYTE		        c_v-16
+	BYTE	W01
+	BYTE		        c_v-13
+	BYTE	W01
+	BYTE		        c_v-10
+	BYTE	W01
+	BYTE		        c_v-9
+	BYTE	W01
+	BYTE		        c_v-6
+	BYTE	W01
+	BYTE		        c_v-4
+	BYTE	W01
+	BYTE		        c_v-2
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W01
+	BYTE		        c_v+3
+	BYTE	W32
+	BYTE	W01
+	BYTE	PEND
+// 013   ----------------------------------------
+grit__s_theme_2_013:
+	BYTE	W24
+	BYTE		N04     Fn3   v127
+	BYTE	W04
+	BYTE		N32     Gn3 
+	BYTE	W32
+	BYTE		N06     En3 
+	BYTE	W06
+	BYTE		        Dn3 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		        Dn3 
+	BYTE	W06
+	BYTE		        En3 
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE	W06
+	BYTE	PEND
+// 014   ----------------------------------------
+grit__s_theme_2_014:
+	BYTE		BEND    c_v-59
+	BYTE		N16     Bn3   v127
+	BYTE	W01
+	BYTE		BEND    c_v-45
+	BYTE	W01
+	BYTE		        c_v-34
+	BYTE	W01
+	BYTE		        c_v-23
+	BYTE	W01
+	BYTE		        c_v-9
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W11
+	BYTE		N08     Gn3 
+	BYTE	W08
+	BYTE		        En3 
+	BYTE	W08
+	BYTE		        Gn3 
+	BYTE	W08
+	BYTE		        An3 
+	BYTE	W08
+	BYTE		BEND    c_v-48
+	BYTE		N16     Bn3 
+	BYTE	W01
+	BYTE		BEND    c_v-32
+	BYTE	W01
+	BYTE		        c_v-12
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE	W13
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Bn3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE	PEND
+// 015   ----------------------------------------
+grit__s_theme_2_015:
+	BYTE		BEND    c_v-52
+	BYTE		N16     Bn4   v127
+	BYTE	W01
+	BYTE		BEND    c_v-40
+	BYTE	W01
+	BYTE		        c_v-25
+	BYTE	W01
+	BYTE		        c_v-13
+	BYTE	W01
+	BYTE		        c_v-1
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W11
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        An4 
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+	BYTE		        En4 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		N16     En4 
+	BYTE	W16
+	BYTE		        Gn4 
+	BYTE	W24
+	BYTE	PEND
+// 016   ----------------------------------------
+grit__s_theme_2_016:
+	BYTE	W08
+	BYTE		BEND    c_v-48
+	BYTE		N16     Bn4   v127
+	BYTE	W01
+	BYTE		BEND    c_v-33
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W13
+	BYTE		N08     Gn4 
+	BYTE	W06
+	BYTE		N06     En4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		BEND    c_v-47
+	BYTE		N16     Bn4 
+	BYTE	W01
+	BYTE		BEND    c_v-31
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W13
+	BYTE		N08     Gn4 
+	BYTE	W06
+	BYTE		N06     En4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		BEND    c_v-50
+	BYTE		N16     Bn4 
+	BYTE	W01
+	BYTE		BEND    c_v-26
+	BYTE	W01
+	BYTE		        c_v-8
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W05
+	BYTE	PEND
+// 017   ----------------------------------------
+grit__s_theme_2_017:
+	BYTE	W08
+	BYTE		N08     Gn4   v127
+	BYTE	W06
+	BYTE		N06     En4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		BEND    c_v-47
+	BYTE		N16     Bn4 
+	BYTE	W01
+	BYTE		BEND    c_v-31
+	BYTE	W01
+	BYTE		        c_v-11
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W13
+	BYTE		N08     Gn4 
+	BYTE	W06
+	BYTE		N06     En4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		N66     En4 
+	BYTE	W30
+	BYTE	PEND
+// 018   ----------------------------------------
+grit__s_theme_2_018:
+	BYTE	W36
+	BYTE		N24     Gn4   v127
+	BYTE	W24
+	BYTE		TIE     An4 
+	BYTE	W36
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	W76
+	BYTE		EOT   
+	BYTE	W20
+// 020   ----------------------------------------
+grit__s_theme_2_020:
+	BYTE		BEND    c_v-60
+	BYTE		N48     Bn2   v127
+	BYTE		N48     En3 
+	BYTE	W01
+	BYTE		BEND    c_v-56
+	BYTE	W01
+	BYTE		        c_v-51
+	BYTE	W01
+	BYTE		        c_v-47
+	BYTE	W01
+	BYTE		        c_v-43
+	BYTE	W01
+	BYTE		        c_v-39
+	BYTE	W01
+	BYTE		        c_v-35
+	BYTE	W01
+	BYTE		        c_v-31
+	BYTE	W01
+	BYTE		        c_v-26
+	BYTE	W01
+	BYTE		        c_v-22
+	BYTE	W01
+	BYTE		        c_v-18
+	BYTE	W01
+	BYTE		        c_v-14
+	BYTE	W01
+	BYTE		        c_v-10
+	BYTE	W01
+	BYTE		        c_v-5
+	BYTE	W01
+	BYTE		        c_v-1
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE	W24
+	BYTE	W01
+	BYTE		N32     Bn3 
+	BYTE		N32     En4 
+	BYTE	W56
+	BYTE	PEND
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+grit__s_theme_2_022:
+	BYTE		BEND    c_v-59
+	BYTE		N32     En4   v127
+	BYTE		N32     Bn4 
+	BYTE	W01
+	BYTE		BEND    c_v-54
+	BYTE	W01
+	BYTE		        c_v-47
+	BYTE	W01
+	BYTE		        c_v-42
+	BYTE	W01
+	BYTE		        c_v-36
+	BYTE	W01
+	BYTE		        c_v-29
+	BYTE	W01
+	BYTE		        c_v-24
+	BYTE	W01
+	BYTE		        c_v-17
+	BYTE	W01
+	BYTE		        c_v-12
+	BYTE	W01
+	BYTE		        c_v-6
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W84
+	BYTE	W02
+	BYTE	PEND
+// 023   ----------------------------------------
+grit__s_theme_2_023:
+	BYTE	W16
+	BYTE		BEND    c_v+59
+	BYTE		N20     An4   v127
+	BYTE	W01
+	BYTE		BEND    c_v+52
+	BYTE	W01
+	BYTE		        c_v+43
+	BYTE	W01
+	BYTE		        c_v+36
+	BYTE	W01
+	BYTE		        c_v+29
+	BYTE	W01
+	BYTE		        c_v+21
+	BYTE	W01
+	BYTE		        c_v+14
+	BYTE	W01
+	BYTE		        c_v+5
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W12
+	BYTE		        c_v-58
+	BYTE		N24     Bn4 
+	BYTE	W01
+	BYTE		BEND    c_v-47
+	BYTE	W01
+	BYTE		        c_v-38
+	BYTE	W01
+	BYTE		        c_v-26
+	BYTE	W01
+	BYTE		        c_v-17
+	BYTE	W01
+	BYTE		        c_v-8
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W18
+	BYTE		N16     An4 
+	BYTE	W36
+	BYTE	PEND
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_004
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_005
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_006
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_007
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_004
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_009
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_010
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_011
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_012
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_013
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_014
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_015
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_016
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_017
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_018
+// 043   ----------------------------------------
+	BYTE	W76
+	BYTE		EOT     An4 
+	BYTE	W20
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_020
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_023
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_004
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_005
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_006
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_007
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_004
+// 057   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_009
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_010
+// 059   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_011
+// 060   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_012
+// 061   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_013
+// 062   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_014
+// 063   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_015
+// 064   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_016
+// 065   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_017
+// 066   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_018
+// 067   ----------------------------------------
+	BYTE	W76
+	BYTE		EOT     An4 
+	BYTE	W20
+// 068   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_020
+// 069   ----------------------------------------
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_022
+// 071   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_2_023
+// 072   ----------------------------------------
+	BYTE	W96
+// 073   ----------------------------------------
+	BYTE	W96
+// 074   ----------------------------------------
+	BYTE	W96
+// 075   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	grit__s_theme_2_B1
+grit__s_theme_2_B2:
+// 076   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+grit__s_theme_3:
+	BYTE	KEYSH   grit__s_theme_key+0
+		BYTE 		BENDR   6
+grit__s_theme_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   33
+	BYTE		VOL     127*grit__s_theme_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     127*grit__s_theme_mvl/mxv
+	BYTE	W36
+	BYTE		TIE     Dn2   v112
+	BYTE	W11
+	BYTE		BEND    c_v+0
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W01
+	BYTE		        c_v+5
+	BYTE	W01
+	BYTE		        c_v+8
+	BYTE	W01
+	BYTE		        c_v+11
+	BYTE	W01
+	BYTE		        c_v+14
+	BYTE	W01
+	BYTE		        c_v+17
+	BYTE	W01
+	BYTE		        c_v+19
+	BYTE	W01
+	BYTE		        c_v+22
+	BYTE	W01
+	BYTE		        c_v+25
+	BYTE	W01
+	BYTE		        c_v+27
+	BYTE	W01
+	BYTE		        c_v+30
+	BYTE	W01
+	BYTE		        c_v+33
+	BYTE	W01
+	BYTE		        c_v+35
+	BYTE	W01
+	BYTE		        c_v+38
+	BYTE	W01
+	BYTE		        c_v+41
+	BYTE	W01
+	BYTE		        c_v+44
+	BYTE	W01
+	BYTE		        c_v+47
+	BYTE	W01
+	BYTE		        c_v+50
+	BYTE	W01
+	BYTE		        c_v+54
+	BYTE	W01
+	BYTE		        c_v+58
+	BYTE	W01
+	BYTE		        c_v+62
+	BYTE	W01
+	BYTE		        c_v+63
+	BYTE	W24
+	BYTE	W03
+// 001   ----------------------------------------
+	BYTE	W14
+	BYTE		VOL     127*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        125*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        123*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        120*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        118*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        116*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        113*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        111*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        109*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        107*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        104*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        102*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        100*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        97*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        95*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        93*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        90*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        88*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        86*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        83*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        81*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        78*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        76*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        74*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        71*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        69*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        66*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        64*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        62*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        59*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        57*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        54*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        52*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        49*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		EOT   
+	BYTE		VOL     47*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        44*grit__s_theme_mvl/mxv
+	BYTE	W01
+	BYTE		        42*grit__s_theme_mvl/mxv
+	BYTE	W44
+	BYTE	W02
+// 002   ----------------------------------------
+	BYTE	W48
+	BYTE		        127*grit__s_theme_mvl/mxv
+	BYTE	W48
+// 003   ----------------------------------------
+	BYTE	W24
+	BYTE		BEND    c_v+1
+	BYTE	W72
+// 004   ----------------------------------------
+grit__s_theme_3_004:
+	BYTE		N24     En0   v112
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 005   ----------------------------------------
+grit__s_theme_3_005:
+	BYTE		N24     En0   v112
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     Dn1 
+	BYTE	W16
+	BYTE		N08     En0 
+	BYTE	W08
+	BYTE	PEND
+// 006   ----------------------------------------
+grit__s_theme_3_006:
+	BYTE		N24     Dn1   v112
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 007   ----------------------------------------
+grit__s_theme_3_007:
+	BYTE		N24     An0   v112
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     Gn0 
+	BYTE	W16
+	BYTE		N08     An0 
+	BYTE	W08
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_004
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_005
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_006
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_007
+// 012   ----------------------------------------
+grit__s_theme_3_012:
+	BYTE		N24     Gn0   v112
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     Fs0 
+	BYTE	W16
+	BYTE		N08     Gn0 
+	BYTE	W08
+	BYTE	PEND
+// 013   ----------------------------------------
+grit__s_theme_3_013:
+	BYTE		N24     Bn0   v112
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     As0 
+	BYTE	W16
+	BYTE		N08     Bn0 
+	BYTE	W08
+	BYTE	PEND
+// 014   ----------------------------------------
+grit__s_theme_3_014:
+	BYTE		N24     Cs1   v112
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_014
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_004
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_005
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_006
+// 019   ----------------------------------------
+grit__s_theme_3_019:
+	BYTE		N24     An0   v112
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE	PEND
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_004
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_005
+// 022   ----------------------------------------
+grit__s_theme_3_022:
+	BYTE		N24     Dn1   v112
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 023   ----------------------------------------
+grit__s_theme_3_023:
+	BYTE		N24     An0   v112
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 024   ----------------------------------------
+grit__s_theme_3_024:
+	BYTE		N24     Fs0   v112
+	BYTE	W88
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 025   ----------------------------------------
+grit__s_theme_3_025:
+	BYTE		N24     Bn0   v112
+	BYTE	W88
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 026   ----------------------------------------
+grit__s_theme_3_026:
+	BYTE		N24     Cs1   v112
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE	PEND
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_026
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_004
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_005
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_006
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_007
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_004
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_005
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_006
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_007
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_012
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_013
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_014
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_014
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_004
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_005
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_006
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_019
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_004
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_005
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_023
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_024
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_025
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_026
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_026
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_004
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_005
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_006
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_007
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_004
+// 057   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_005
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_006
+// 059   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_007
+// 060   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_012
+// 061   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_013
+// 062   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_014
+// 063   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_014
+// 064   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_004
+// 065   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_005
+// 066   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_006
+// 067   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_019
+// 068   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_004
+// 069   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_005
+// 070   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_022
+// 071   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_023
+// 072   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_024
+// 073   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_025
+// 074   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_026
+// 075   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_3_026
+	BYTE	GoTo
+	 POIN2	grit__s_theme_3_B1
+grit__s_theme_3_B2:
+// 076   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+grit__s_theme_4:
+	BYTE	KEYSH   grit__s_theme_key+0
+		BYTE 		BENDR   6
+grit__s_theme_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   24
+	BYTE		VOL     75*grit__s_theme_mvl/mxv
+	BYTE		PAN     c_v-25
+	BYTE	W06
+	BYTE		N12     Bn2   v127
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Gs2 
+	BYTE	W12
+	BYTE		N18     Dn2 
+	BYTE	W24
+	BYTE		N60     En2 
+	BYTE	W30
+// 001   ----------------------------------------
+	BYTE	W42
+	BYTE		N12     Gn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W06
+// 002   ----------------------------------------
+	BYTE	W06
+	BYTE		N02     An2 
+	BYTE	W02
+	BYTE		        As2 
+	BYTE	W02
+	BYTE		N32     Bn2 
+	BYTE	W32
+	BYTE		N12     Dn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W06
+// 003   ----------------------------------------
+	BYTE	W06
+	BYTE		N96     En2 
+	BYTE	W90
+// 004   ----------------------------------------
+grit__s_theme_4_004:
+	BYTE	W30
+	BYTE		N08     Dn2   v127
+	BYTE	W08
+	BYTE		        En2 
+	BYTE	W08
+	BYTE		        Dn2 
+	BYTE	W08
+	BYTE		N16     En2 
+	BYTE	W16
+	BYTE		N32     Gs2 
+	BYTE	W24
+	BYTE	W02
+	BYTE	PEND
+// 005   ----------------------------------------
+grit__s_theme_4_005:
+	BYTE	W05
+	BYTE		BEND    c_v-31
+	BYTE	W01
+	BYTE		        c_v-24
+	BYTE		N16     Gs2   v127
+	BYTE	W01
+	BYTE		BEND    c_v-17
+	BYTE	W01
+	BYTE		        c_v-8
+	BYTE	W01
+	BYTE		        c_v-1
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W12
+	BYTE		N08     Bn2 
+	BYTE	W08
+	BYTE		N16     Cs3 
+	BYTE	W16
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE		N32     Cs3 
+	BYTE	W24
+	BYTE	W02
+	BYTE	PEND
+// 006   ----------------------------------------
+grit__s_theme_4_006:
+	BYTE	W05
+	BYTE		BEND    c_v-31
+	BYTE	W01
+	BYTE		        c_v-23
+	BYTE		N16     Gn3   v127
+	BYTE	W01
+	BYTE		BEND    c_v-14
+	BYTE	W01
+	BYTE		        c_v-3
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W13
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     Fs3 
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     En3 
+	BYTE	W16
+	BYTE		N32     Cs3 
+	BYTE	W24
+	BYTE	W02
+	BYTE	PEND
+// 007   ----------------------------------------
+grit__s_theme_4_007:
+	BYTE	W06
+	BYTE		BEND    c_v-27
+	BYTE		N16     Gn3   v127
+	BYTE	W01
+	BYTE		BEND    c_v-18
+	BYTE	W01
+	BYTE		        c_v-11
+	BYTE	W01
+	BYTE		        c_v-4
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W12
+	BYTE		N24     Fs3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+	BYTE		N08     Cs3 
+	BYTE	W08
+	BYTE		        En3 
+	BYTE	W18
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_004
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_005
+// 010   ----------------------------------------
+grit__s_theme_4_010:
+	BYTE	W05
+	BYTE		BEND    c_v-31
+	BYTE	W01
+	BYTE		        c_v-23
+	BYTE		N16     Gn3   v127
+	BYTE	W01
+	BYTE		BEND    c_v-14
+	BYTE	W01
+	BYTE		        c_v-3
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W13
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     Fs3 
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     En3 
+	BYTE	W16
+	BYTE		N32     An3 
+	BYTE	W24
+	BYTE	W02
+	BYTE	PEND
+// 011   ----------------------------------------
+grit__s_theme_4_011:
+	BYTE	W06
+	BYTE		BEND    c_v-27
+	BYTE		N16     Gn3   v127
+	BYTE	W01
+	BYTE		BEND    c_v-18
+	BYTE	W01
+	BYTE		        c_v-11
+	BYTE	W01
+	BYTE		        c_v-4
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W12
+	BYTE		N24     Fs3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+	BYTE		N08     Cs3 
+	BYTE	W08
+	BYTE		N18     En3 
+	BYTE	W18
+	BYTE	PEND
+// 012   ----------------------------------------
+grit__s_theme_4_012:
+	BYTE		N08     Cs3   v127
+	BYTE	W40
+	BYTE	W01
+	BYTE		BEND    c_v-63
+	BYTE	W01
+	BYTE		        c_v-62
+	BYTE		N84     Bn3 
+	BYTE	W01
+	BYTE		BEND    c_v-60
+	BYTE	W01
+	BYTE		        c_v-57
+	BYTE	W01
+	BYTE		        c_v-55
+	BYTE	W01
+	BYTE		        c_v-53
+	BYTE	W01
+	BYTE		        c_v-51
+	BYTE	W01
+	BYTE		        c_v-49
+	BYTE	W01
+	BYTE		        c_v-47
+	BYTE	W01
+	BYTE		        c_v-45
+	BYTE	W01
+	BYTE		        c_v-43
+	BYTE	W01
+	BYTE		        c_v-40
+	BYTE	W01
+	BYTE		        c_v-38
+	BYTE	W01
+	BYTE		        c_v-36
+	BYTE	W01
+	BYTE		        c_v-34
+	BYTE	W01
+	BYTE		        c_v-32
+	BYTE	W01
+	BYTE		        c_v-30
+	BYTE	W01
+	BYTE		        c_v-28
+	BYTE	W01
+	BYTE		        c_v-26
+	BYTE	W01
+	BYTE		        c_v-23
+	BYTE	W01
+	BYTE		        c_v-21
+	BYTE	W01
+	BYTE		        c_v-19
+	BYTE	W01
+	BYTE		        c_v-17
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v-13
+	BYTE	W01
+	BYTE		        c_v-11
+	BYTE	W01
+	BYTE		        c_v-9
+	BYTE	W01
+	BYTE		        c_v-6
+	BYTE	W01
+	BYTE		        c_v-4
+	BYTE	W01
+	BYTE		        c_v-2
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W24
+	BYTE	PEND
+// 013   ----------------------------------------
+grit__s_theme_4_013:
+	BYTE	W30
+	BYTE		N04     Fn3   v127
+	BYTE	W04
+	BYTE		N32     Gn3 
+	BYTE	W32
+	BYTE		N06     En3 
+	BYTE	W06
+	BYTE		        Dn3 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		        Dn3 
+	BYTE	W06
+	BYTE		        En3 
+	BYTE	W06
+	BYTE	PEND
+// 014   ----------------------------------------
+grit__s_theme_4_014:
+	BYTE		N06     Gn3   v127
+	BYTE	W05
+	BYTE		BEND    c_v-63
+	BYTE	W01
+	BYTE		        c_v-47
+	BYTE		N16     Bn3 
+	BYTE	W01
+	BYTE		BEND    c_v-31
+	BYTE	W01
+	BYTE		        c_v-11
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W13
+	BYTE		N08     Gn3 
+	BYTE	W08
+	BYTE		        En3 
+	BYTE	W08
+	BYTE		        Gn3 
+	BYTE	W08
+	BYTE		        An3 
+	BYTE	W07
+	BYTE		BEND    c_v-64
+	BYTE	W01
+	BYTE		        c_v-31
+	BYTE		N16     Bn3 
+	BYTE	W01
+	BYTE		BEND    c_v+3
+	BYTE	W15
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Bn3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W02
+	BYTE	PEND
+// 015   ----------------------------------------
+grit__s_theme_4_015:
+	BYTE	W05
+	BYTE		BEND    c_v-63
+	BYTE	W01
+	BYTE		        c_v-50
+	BYTE		N16     Bn4   v127
+	BYTE	W01
+	BYTE		BEND    c_v-37
+	BYTE	W01
+	BYTE		        c_v-20
+	BYTE	W01
+	BYTE		        c_v-6
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W12
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        An4 
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+	BYTE		        En4 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		N16     En4 
+	BYTE	W16
+	BYTE		        Gn4 
+	BYTE	W18
+	BYTE	PEND
+// 016   ----------------------------------------
+grit__s_theme_4_016:
+	BYTE	W08
+	BYTE		BEND    c_v-48
+	BYTE	W01
+	BYTE		        c_v-33
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W03
+	BYTE		N16     Bn4   v127
+	BYTE	W16
+	BYTE		N08     Gn4 
+	BYTE	W06
+	BYTE		N06     En4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		BEND    c_v-47
+	BYTE		N06     En4 
+	BYTE	W01
+	BYTE		BEND    c_v-31
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W03
+	BYTE		N16     Bn4 
+	BYTE	W16
+	BYTE		N08     Gn4 
+	BYTE	W06
+	BYTE		N06     En4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		BEND    c_v-50
+	BYTE		N06     En4 
+	BYTE	W01
+	BYTE		BEND    c_v-26
+	BYTE	W01
+	BYTE		        c_v-8
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W03
+	BYTE		N16     Bn4 
+	BYTE	W02
+	BYTE	PEND
+// 017   ----------------------------------------
+grit__s_theme_4_017:
+	BYTE	W14
+	BYTE		N08     Gn4   v127
+	BYTE	W06
+	BYTE		N06     En4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		BEND    c_v-47
+	BYTE		N06     En4 
+	BYTE	W01
+	BYTE		BEND    c_v-31
+	BYTE	W01
+	BYTE		        c_v-11
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W03
+	BYTE		N16     Bn4 
+	BYTE	W16
+	BYTE		N08     Gn4 
+	BYTE	W06
+	BYTE		N06     En4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		N66     En4 
+	BYTE	W24
+	BYTE	PEND
+// 018   ----------------------------------------
+grit__s_theme_4_018:
+	BYTE	W42
+	BYTE		N24     Gn4   v127
+	BYTE	W24
+	BYTE		TIE     An4 
+	BYTE	W30
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W14
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_004
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_005
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_006
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_007
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_004
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_005
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_010
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_011
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_012
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_013
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_014
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_015
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_016
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_017
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_018
+// 043   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE		EOT     An4 
+	BYTE	W14
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_004
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_005
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_006
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_007
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_004
+// 057   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_005
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_010
+// 059   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_011
+// 060   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_012
+// 061   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_013
+// 062   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_014
+// 063   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_015
+// 064   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_016
+// 065   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_017
+// 066   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_4_018
+// 067   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE		EOT     An4 
+	BYTE	W14
+// 068   ----------------------------------------
+	BYTE	W96
+// 069   ----------------------------------------
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE	W96
+// 071   ----------------------------------------
+	BYTE	W96
+// 072   ----------------------------------------
+	BYTE	W96
+// 073   ----------------------------------------
+	BYTE	W96
+// 074   ----------------------------------------
+	BYTE	W96
+// 075   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	grit__s_theme_4_B1
+grit__s_theme_4_B2:
+// 076   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+grit__s_theme_5:
+	BYTE	KEYSH   grit__s_theme_key+0
+		BYTE 		BENDR   6
+grit__s_theme_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   21
+	BYTE		VOL     70*grit__s_theme_mvl/mxv
+	BYTE		PAN     c_v-48
+	BYTE		VOL     70*grit__s_theme_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+grit__s_theme_5_008:
+	BYTE		N96     As2   v100
+	BYTE		N96     Ds3 
+	BYTE		N96     Gn3 
+	BYTE	W11
+	BYTE		BEND    c_v-1
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W01
+	BYTE		        c_v+4
+	BYTE	W01
+	BYTE		        c_v+5
+	BYTE	W01
+	BYTE		        c_v+7
+	BYTE	W01
+	BYTE		        c_v+8
+	BYTE	W01
+	BYTE		        c_v+10
+	BYTE	W01
+	BYTE		        c_v+12
+	BYTE	W01
+	BYTE		        c_v+14
+	BYTE	W01
+	BYTE		        c_v+16
+	BYTE	W01
+	BYTE		        c_v+17
+	BYTE	W01
+	BYTE		        c_v+20
+	BYTE	W01
+	BYTE		        c_v+22
+	BYTE	W01
+	BYTE		        c_v+24
+	BYTE	W01
+	BYTE		        c_v+27
+	BYTE	W01
+	BYTE		        c_v+29
+	BYTE	W01
+	BYTE		        c_v+32
+	BYTE	W01
+	BYTE		        c_v+34
+	BYTE	W01
+	BYTE		        c_v+41
+	BYTE	W01
+	BYTE		        c_v+43
+	BYTE	W64
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W36
+	BYTE	W03
+	BYTE		VOL     127*grit__s_theme_mvl/mxv
+	BYTE	W56
+	BYTE		BEND    c_v+1
+	BYTE	W01
+// 024   ----------------------------------------
+grit__s_theme_5_024:
+	BYTE	W24
+	BYTE		BEND    c_v-55
+	BYTE		N48     Gn3   v100
+	BYTE	W01
+	BYTE		BEND    c_v-43
+	BYTE	W01
+	BYTE		        c_v-28
+	BYTE	W01
+	BYTE		        c_v-16
+	BYTE	W01
+	BYTE		        c_v-4
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W42
+	BYTE	W01
+	BYTE		        c_v-51
+	BYTE		N24   
+	BYTE	W01
+	BYTE		BEND    c_v-38
+	BYTE	W01
+	BYTE		        c_v-22
+	BYTE	W01
+	BYTE		        c_v-9
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W20
+	BYTE	PEND
+// 025   ----------------------------------------
+grit__s_theme_5_025:
+	BYTE		N36     Fs3   v100
+	BYTE	W36
+	BYTE		BEND    c_v-48
+	BYTE		N28   
+	BYTE	W01
+	BYTE		BEND    c_v-32
+	BYTE	W01
+	BYTE		        c_v-12
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE	W24
+	BYTE	W01
+	BYTE		N08     En3 
+	BYTE	W08
+	BYTE		N16     Cs3 
+	BYTE	W16
+	BYTE		N08     En3 
+	BYTE	W08
+	BYTE	PEND
+// 026   ----------------------------------------
+grit__s_theme_5_026:
+	BYTE	W24
+	BYTE		N08     Cs3   v100
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     En3 
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     Fs3 
+	BYTE	W16
+	BYTE		N08     En3 
+	BYTE	W08
+	BYTE	PEND
+// 027   ----------------------------------------
+grit__s_theme_5_027:
+	BYTE	W24
+	BYTE		BEND    c_v-55
+	BYTE		N16     Gn3   v100
+	BYTE	W01
+	BYTE		BEND    c_v-46
+	BYTE	W01
+	BYTE		        c_v-36
+	BYTE	W01
+	BYTE		        c_v-24
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v-5
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE	W10
+	BYTE		N08     Fs3 
+	BYTE	W24
+	BYTE		        Cs3 
+	BYTE	W08
+	BYTE		N16     En3 
+	BYTE	W24
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W52
+	BYTE	W01
+	BYTE		VOL     76*grit__s_theme_mvl/mxv
+	BYTE	W42
+	BYTE	W01
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_5_008
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W44
+	BYTE	W02
+	BYTE		VOL     127*grit__s_theme_mvl/mxv
+	BYTE	W48
+	BYTE	W01
+	BYTE		BEND    c_v+1
+	BYTE	W01
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_5_024
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_5_025
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_5_026
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_5_027
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W96
+// 055   ----------------------------------------
+	BYTE	W22
+	BYTE		VOL     76*grit__s_theme_mvl/mxv
+	BYTE	W72
+	BYTE	W02
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_5_008
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE	W96
+// 062   ----------------------------------------
+	BYTE	W96
+// 063   ----------------------------------------
+	BYTE	W96
+// 064   ----------------------------------------
+	BYTE	W96
+// 065   ----------------------------------------
+	BYTE	W96
+// 066   ----------------------------------------
+	BYTE	W96
+// 067   ----------------------------------------
+	BYTE	W96
+// 068   ----------------------------------------
+	BYTE	W96
+// 069   ----------------------------------------
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE	W96
+// 071   ----------------------------------------
+	BYTE	W44
+	BYTE	W03
+	BYTE		VOL     127*grit__s_theme_mvl/mxv
+	BYTE	W48
+	BYTE		BEND    c_v+1
+	BYTE	W01
+// 072   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_5_024
+// 073   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_5_025
+// 074   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_5_026
+// 075   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_5_027
+	BYTE	GoTo
+	 POIN2	grit__s_theme_5_B1
+grit__s_theme_5_B2:
+// 076   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+grit__s_theme_6:
+	BYTE	KEYSH   grit__s_theme_key+0
+		BYTE 		BENDR   6
+grit__s_theme_6_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   31
+	BYTE		VOL     110*grit__s_theme_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W48
+	BYTE		N24     En2   v100
+	BYTE	W48
+// 005   ----------------------------------------
+grit__s_theme_6_005:
+	BYTE	W16
+	BYTE		N08     En3   v100
+	BYTE	W08
+	BYTE		N16     En2 
+	BYTE	W40
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N24   
+	BYTE	W24
+	BYTE	PEND
+// 006   ----------------------------------------
+grit__s_theme_6_006:
+	BYTE		N20     Dn3   v100
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE	PEND
+// 007   ----------------------------------------
+grit__s_theme_6_007:
+	BYTE		N20     An2   v100
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+grit__s_theme_6_009:
+	BYTE		N20     En2   v100
+	BYTE	W64
+	BYTE		N08     En3 
+	BYTE	W08
+	BYTE		N24     En2 
+	BYTE	W24
+	BYTE	PEND
+// 010   ----------------------------------------
+grit__s_theme_6_010:
+	BYTE		N24     Dn3   v100
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE	PEND
+// 011   ----------------------------------------
+grit__s_theme_6_011:
+	BYTE		N24     An2   v100
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE	PEND
+// 012   ----------------------------------------
+grit__s_theme_6_012:
+	BYTE		N24     Gn2   v100
+	BYTE	W72
+	BYTE		N24   
+	BYTE	W24
+	BYTE	PEND
+// 013   ----------------------------------------
+grit__s_theme_6_013:
+	BYTE		N24     Bn2   v100
+	BYTE	W72
+	BYTE		N24   
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+grit__s_theme_6_014:
+	BYTE		N24     Cs3   v100
+	BYTE	W72
+	BYTE		N24   
+	BYTE	W24
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_014
+// 016   ----------------------------------------
+grit__s_theme_6_016:
+	BYTE		BEND    c_v-59
+	BYTE		N24     Dn3   v100
+	BYTE		N24     Gn3 
+	BYTE	W01
+	BYTE		BEND    c_v-53
+	BYTE	W01
+	BYTE		        c_v-46
+	BYTE	W01
+	BYTE		        c_v-40
+	BYTE	W01
+	BYTE		        c_v-34
+	BYTE	W01
+	BYTE		        c_v-27
+	BYTE	W01
+	BYTE		        c_v-22
+	BYTE	W01
+	BYTE		        c_v-16
+	BYTE	W01
+	BYTE		        c_v-9
+	BYTE	W01
+	BYTE		        c_v-3
+	BYTE	W01
+	BYTE		        c_v-1
+	BYTE	W84
+	BYTE	W02
+	BYTE	PEND
+// 017   ----------------------------------------
+grit__s_theme_6_017:
+	BYTE		N12     Bn1   v100
+	BYTE		N12     En2 
+	BYTE	W40
+	BYTE		N08     Bn1 
+	BYTE		N08     En2 
+	BYTE	W08
+	BYTE		N12     Bn1 
+	BYTE		N12     En2 
+	BYTE	W40
+	BYTE		N08     Bn1 
+	BYTE		N08     En2 
+	BYTE	W08
+	BYTE	PEND
+// 018   ----------------------------------------
+grit__s_theme_6_018:
+	BYTE		N12     Bn1   v100
+	BYTE		N12     En2 
+	BYTE	W24
+	BYTE		N24     Dn3 
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 019   ----------------------------------------
+grit__s_theme_6_019:
+	BYTE		N24     An2   v100
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N16   
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 020   ----------------------------------------
+grit__s_theme_6_020:
+	BYTE		BEND    c_v-48
+	BYTE		N16     Gs2   v100
+	BYTE	W01
+	BYTE		BEND    c_v-32
+	BYTE	W01
+	BYTE		        c_v-12
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W13
+	BYTE		N08     En2 
+	BYTE	W08
+	BYTE		N15     Gs2 
+	BYTE	W16
+	BYTE		N24     Dn2 
+	BYTE	W24
+	BYTE		N48     En2 
+	BYTE	W32
+	BYTE	PEND
+// 021   ----------------------------------------
+grit__s_theme_6_021:
+	BYTE	W16
+	BYTE		BEND    c_v-47
+	BYTE		N08     En2   v100
+	BYTE	W01
+	BYTE		BEND    c_v-20
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W06
+	BYTE		N16     Bn1 
+	BYTE	W16
+	BYTE		N08     Dn2 
+	BYTE	W08
+	BYTE		N16     An1 
+	BYTE	W16
+	BYTE		N08     Bn1 
+	BYTE	W08
+	BYTE		N16     Gn1 
+	BYTE	W16
+	BYTE		N20     En1 
+	BYTE	W08
+	BYTE	PEND
+// 022   ----------------------------------------
+grit__s_theme_6_022:
+	BYTE	W24
+	BYTE		N24     En2   v100
+	BYTE	W24
+	BYTE		BEND    c_v-54
+	BYTE		N16     An2 
+	BYTE	W01
+	BYTE		BEND    c_v-36
+	BYTE	W01
+	BYTE		        c_v-21
+	BYTE	W01
+	BYTE		        c_v-7
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W12
+	BYTE		N24     En2 
+	BYTE	W24
+	BYTE		        Dn2 
+	BYTE	W08
+	BYTE	PEND
+// 023   ----------------------------------------
+grit__s_theme_6_023:
+	BYTE	W16
+	BYTE		N08     Dn2   v100
+	BYTE	W08
+	BYTE		N16     An1 
+	BYTE	W16
+	BYTE		N24     En2 
+	BYTE	W24
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        Dn2 
+	BYTE	W08
+	BYTE		        En2 
+	BYTE	W08
+	BYTE		        Dn2 
+	BYTE	W08
+	BYTE	PEND
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W48
+	BYTE		N24     En2 
+	BYTE	W48
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_005
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_006
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_007
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_009
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_010
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_011
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_012
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_013
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_014
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_014
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_016
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_017
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_018
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_019
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_020
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_021
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_023
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	W48
+	BYTE		N24     En2   v100
+	BYTE	W48
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_005
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_006
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_007
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_009
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_010
+// 059   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_011
+// 060   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_012
+// 061   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_013
+// 062   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_014
+// 063   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_014
+// 064   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_016
+// 065   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_017
+// 066   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_018
+// 067   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_019
+// 068   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_020
+// 069   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_021
+// 070   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_022
+// 071   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_6_023
+// 072   ----------------------------------------
+	BYTE	W96
+// 073   ----------------------------------------
+	BYTE	W96
+// 074   ----------------------------------------
+	BYTE	W96
+// 075   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	grit__s_theme_6_B1
+grit__s_theme_6_B2:
+// 076   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+grit__s_theme_7:
+	BYTE	KEYSH   grit__s_theme_key+0
+		BYTE 		BENDR   6
+grit__s_theme_7_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   21
+	BYTE		VOL     100*grit__s_theme_mvl/mxv
+	BYTE		PAN     c_v+47
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+grit__s_theme_7_024:
+	BYTE	W06
+	BYTE		BEND    c_v+1
+	BYTE	W24
+	BYTE		        c_v-55
+	BYTE		N48     Gn3   v100
+	BYTE	W01
+	BYTE		BEND    c_v-43
+	BYTE	W01
+	BYTE		        c_v-28
+	BYTE	W01
+	BYTE		        c_v-16
+	BYTE	W01
+	BYTE		        c_v-4
+	BYTE	W01
+	BYTE		        c_v+2
+	BYTE	W42
+	BYTE	W01
+	BYTE		        c_v-51
+	BYTE		N24   
+	BYTE	W01
+	BYTE		BEND    c_v-38
+	BYTE	W01
+	BYTE		        c_v-25
+	BYTE	W01
+	BYTE		        c_v-9
+	BYTE	W01
+	BYTE		        c_v+1
+	BYTE	W14
+	BYTE	PEND
+// 025   ----------------------------------------
+grit__s_theme_7_025:
+	BYTE	W06
+	BYTE		N36     Fs3   v100
+	BYTE	W36
+	BYTE		BEND    c_v-48
+	BYTE		N28   
+	BYTE	W01
+	BYTE		BEND    c_v-32
+	BYTE	W01
+	BYTE		        c_v-16
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE	W24
+	BYTE	W01
+	BYTE		N08     En3 
+	BYTE	W08
+	BYTE		N16     Cs3 
+	BYTE	W16
+	BYTE		N08     En3 
+	BYTE	W02
+	BYTE	PEND
+// 026   ----------------------------------------
+grit__s_theme_7_026:
+	BYTE	W30
+	BYTE		N08     Cs3   v100
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     En3 
+	BYTE	W16
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N16     Fs3 
+	BYTE	W16
+	BYTE		N08     En3 
+	BYTE	W02
+	BYTE	PEND
+// 027   ----------------------------------------
+grit__s_theme_7_027:
+	BYTE	W30
+	BYTE		BEND    c_v-57
+	BYTE		N16     Gn3   v100
+	BYTE	W01
+	BYTE		BEND    c_v-46
+	BYTE	W01
+	BYTE		        c_v-36
+	BYTE	W01
+	BYTE		        c_v-24
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v-5
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE	W10
+	BYTE		N08     Fs3 
+	BYTE	W24
+	BYTE		        Cs3 
+	BYTE	W08
+	BYTE		N16     En3 
+	BYTE	W18
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_7_024
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_7_025
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_7_026
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_7_027
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W96
+// 055   ----------------------------------------
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE	W96
+// 062   ----------------------------------------
+	BYTE	W96
+// 063   ----------------------------------------
+	BYTE	W96
+// 064   ----------------------------------------
+	BYTE	W96
+// 065   ----------------------------------------
+	BYTE	W96
+// 066   ----------------------------------------
+	BYTE	W96
+// 067   ----------------------------------------
+	BYTE	W96
+// 068   ----------------------------------------
+	BYTE	W96
+// 069   ----------------------------------------
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE	W96
+// 071   ----------------------------------------
+	BYTE	W96
+// 072   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_7_024
+// 073   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_7_025
+// 074   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_7_026
+// 075   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_7_027
+	BYTE	GoTo
+	 POIN2	grit__s_theme_7_B1
+grit__s_theme_7_B2:
+// 076   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.8) ****************//
+
+grit__s_theme_8:
+	BYTE		VOL     127*grit__s_theme_mvl/mxv
+	BYTE	KEYSH   grit__s_theme_key+0
+		BYTE 		BENDR   6
+grit__s_theme_8_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   29
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+grit__s_theme_8_024:
+	BYTE		N24     Gn2   v100
+	BYTE	W72
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 025   ----------------------------------------
+grit__s_theme_8_025:
+	BYTE		N24     Bn2   v100
+	BYTE	W72
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 026   ----------------------------------------
+grit__s_theme_8_026:
+	BYTE		N24     Cs3   v100
+	BYTE	W72
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_8_026
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_8_024
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_8_025
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_8_026
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_8_026
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W96
+// 055   ----------------------------------------
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE	W96
+// 062   ----------------------------------------
+	BYTE	W96
+// 063   ----------------------------------------
+	BYTE	W96
+// 064   ----------------------------------------
+	BYTE	W96
+// 065   ----------------------------------------
+	BYTE	W96
+// 066   ----------------------------------------
+	BYTE	W96
+// 067   ----------------------------------------
+	BYTE	W96
+// 068   ----------------------------------------
+	BYTE	W96
+// 069   ----------------------------------------
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE	W96
+// 071   ----------------------------------------
+	BYTE	W96
+// 072   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_8_024
+// 073   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_8_025
+// 074   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_8_026
+// 075   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_8_026
+	BYTE	GoTo
+	 POIN2	grit__s_theme_8_B1
+grit__s_theme_8_B2:
+// 076   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 9 (Midi-Chn.9) ****************//
+
+grit__s_theme_9:
+	BYTE		VOL     127*grit__s_theme_mvl/mxv
+	BYTE	KEYSH   grit__s_theme_key+0
+		BYTE 		BENDR   6
+grit__s_theme_9_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   121
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W72
+	BYTE		N08     En1   v100
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+// 004   ----------------------------------------
+grit__s_theme_9_004:
+	BYTE		N24     Cs2   v100
+	BYTE		N24     An2 
+	BYTE	W24
+	BYTE		N08     En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        En0 
+	BYTE		N08     Ds1 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 005   ----------------------------------------
+grit__s_theme_9_005:
+	BYTE		N08     En0   v100
+	BYTE		N08     Ds1 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 006   ----------------------------------------
+grit__s_theme_9_006:
+	BYTE		N08     En0   v100
+	BYTE		N08     Ds1 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        En0 
+	BYTE		N08     Ds1 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_004
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_006
+// 011   ----------------------------------------
+grit__s_theme_9_011:
+	BYTE		N08     En0   v100
+	BYTE		N08     Ds1 
+	BYTE	W24
+	BYTE		N02     En1 
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_004
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_011
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_006
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 018   ----------------------------------------
+grit__s_theme_9_018:
+	BYTE		N08     En0   v100
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        En0 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 019   ----------------------------------------
+grit__s_theme_9_019:
+	BYTE		N08     En0   v100
+	BYTE	W24
+	BYTE		N02     En1 
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 020   ----------------------------------------
+grit__s_theme_9_020:
+	BYTE		N24     Cs2   v100
+	BYTE		N24     An2 
+	BYTE	W24
+	BYTE		N08     En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        Ds1 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 021   ----------------------------------------
+grit__s_theme_9_021:
+	BYTE		N08     Ds1   v100
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 022   ----------------------------------------
+grit__s_theme_9_022:
+	BYTE		N08     Ds1   v100
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		        Ds1 
+	BYTE	W24
+	BYTE		        En1 
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 023   ----------------------------------------
+grit__s_theme_9_023:
+	BYTE		N08     Ds1   v100
+	BYTE	W24
+	BYTE		N02     En1 
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N02   
+	BYTE	W02
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE	PEND
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_020
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_021
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_022
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_023
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_004
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_006
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_004
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_006
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_011
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_004
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_006
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_011
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_006
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_018
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_019
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_020
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_021
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_023
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_020
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_021
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_022
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_023
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_004
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_006
+// 055   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 056   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_004
+// 057   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_006
+// 059   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_011
+// 060   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_004
+// 061   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 062   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_006
+// 063   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_011
+// 064   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_006
+// 065   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_005
+// 066   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_018
+// 067   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_019
+// 068   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_020
+// 069   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_021
+// 070   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_022
+// 071   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_023
+// 072   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_020
+// 073   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_021
+// 074   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_022
+// 075   ----------------------------------------
+	BYTE	PATT
+	 POIN2	grit__s_theme_9_023
+	BYTE	GoTo
+	 POIN2	grit__s_theme_9_B1
+grit__s_theme_9_B2:
+// 076   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+grit__s_theme:
+	BYTE	9	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	grit__s_theme_pri	// Priority
+	BYTE	grit__s_theme_rev	// Reverb.
+
+	POIN2	grit__s_theme_grp
+
+	POIN2	grit__s_theme_1
+	POIN2	grit__s_theme_2
+	POIN2	grit__s_theme_3
+	POIN2	grit__s_theme_4
+	POIN2	grit__s_theme_5
+	POIN2	grit__s_theme_6
+	POIN2	grit__s_theme_7
+	POIN2	grit__s_theme_8
+	POIN2	grit__s_theme_9
+
+	
