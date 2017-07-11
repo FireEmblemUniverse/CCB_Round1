@@ -219,6 +219,16 @@ I owe you a lot, so I guess[NL]
 I'll help you with whatever[A][NL]
 it is you're trying to do.[A][X]
 
+##Ch24TopVill
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5F][0x01]
+You'll want this for later![A][X]
+
+##Ch24LeftVill
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5F][0x01]
+You'll want this for later![A][X]
+
 ##DVText_StopGargoyles
 Stop gargoyles[N]
 from spawning.[X]

@@ -42,11 +42,16 @@ END_MAIN
 
 LocationBasedEvents:
 Armory(weaponlist, 2,13)
+Village(0x7, TopVill, 13,2)
+Village(0x8, LeftVill, 1,8)
+Vendor(itemlist, 10,10)
 #ifdef __DEBUG__
 Seize(13,16)
 #endif
 END_MAIN
 
+itemlist:
+SHLI Fimbulvetr Aura Nosferatu Luna Elixir PureWater Recover Restore Fortify
 weaponlist:
 SHLI SilverSword SilverLance SilverAxe SilverBow HandAxe Javelin LightBrand
 ALIGN 4
@@ -85,6 +90,12 @@ MNCH 0x3e
 ENDA
 
 // Events
+TopVill:
+VillageEventItem(Ch24TopVill, Village, DragonSpear)
+
+LeftVill:
+VillageEventItem(Ch24LeftVill, Village, Wyrmslayer)
+
 redSpawn:
 LOAD1 0x1 MoreReds
 ENUN
