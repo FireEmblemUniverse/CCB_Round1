@@ -30,7 +30,7 @@ Doot,MiracleID
 Celica,NiceThighsID
 Doowile,LifetakerID
 Evil Florina,SavageBlowID
-Bjoern,LiveToServeID
+Björn,LiveToServeID
 Jake,SwordbreakerID
 Marf,LunaID
 Tiki,QuickBurnID
@@ -63,36 +63,36 @@ Lyon's Summon,0x0
 0,0x0
 Knoll's Summon,0x0
 Ewan's Summon,0x0
-Lyon (Ch 17),0x0
-Morva (Ch 20),FrenzyID
-Orson (Ch 5x),0x0
-Valter (Ch 15),0x0
-Selena (Ch 10B & 13B),0x0
+Dracozombie (Ch 17),0x0
+Morva (Ch 28),FrenzyID
+Orson (Ch 27),0x0
+Grit (Ch 15),QuickDrawID
+Selena (Ch 24),0x0
 Valter (Prologue),0x0
-Breguet (Ch 1),PatienceID
+Breguet (Ch 1) (NPC civilian),PatienceID
 Bone (Ch 2),AxefaireID
 Bazba (Ch 3),SwordbreakerID
-Entombed (Ch 4),0x0
-Saar (Ch 5),AxebreakerID
-Novala (Ch 6),IgnisID
+Entombed (Ch 4),SealSklID
+Saara (Ch 5),MiracleID
+Mr Bones (Ch 23),IgnisID
 Murray (Ch 7),LifeAndDeathID
 Tirado (Ch 8),SealDefID
-Binks (Ch 9A),BowfaireID
-Pablo (Ch 10A),DartingBlowID
+Binks (Ch 9),BowfaireID
+Pablo (Ch 10),DartingBlowID
 Maelduin (Ch 12A),0x0
-Aias (Ch 13A),SavageBlowID
-Carlyle (Ch 14A),SealSpdID
-Caellach (Ch 15),0x0
-Pablo (Ch 13A),0x0
+Aias (Ch 13),SavageBlowID
+Carlyle (Ch 14),SealSpdID
+Caellach (Ch 26),0x0
+Pablo (also Ch 13),0x0
 0,0x0
 Gorgon (Ch 18),0x0
 Riev (Ch 19 & 20),0x0
 0,0x0
 0,0x0
-Gheb (Ch 9B),VantageID
+Gheb (Ch 12),VantageID
 Beran (Ch 10B),ImpaleID
 Cyclops (Ch 12B),ColossusID
-GreatKnight(ch11),FrenzyID
+Great Knight (Ch 11),FrenzyID
 Deathgoyle (Ch 11B),0x0
 Entombed (Monster Boss),0x0
 0,0x0
@@ -104,12 +104,12 @@ Hunter (Ch 16),0x0
 Brigand,0x0
 0,0x0
 O'Neill (Prologue),CounterID
-Glen (Cutscene),0x0
-Zonta (Ch 5x),0x0
-Vigarde (Ch 14B),RenewalID
+Glen (Ch 19),0x0
+Zonta (Ch 6),0x0
+Vigarde (Ch 18),RenewalID
 Lyon (Ch Final),0x0
 Orson (Ch 16),0x0
-0,0x0
+Maeda(ch20),0x0
 0,0x0
 0,0x0
 0,0x0
@@ -145,10 +145,10 @@ Cutthroat,0x0
 Grado Remnant 2 (Cutscene and C16 only?),0x0
 Grado Remnant 3 (C16 only?),0x0
 Grado Remnant 4 (C16 only?),0x0
-Wraith (Sage),0x0
-Wraith (Swords),0x0
-Wraith (Axes),0x0
-0,0x0
+Lennon,0x0
+Paul,0x0
+Ringo,0x0
+Harrison,0x0
 0,0x0
 0,0x0
 0,0x0
@@ -171,8 +171,7 @@ Mercenary (C10A),0x0
 Merc Remnant (C13A),0x0
 Monster,0x0
 Monster,0x0
-Monster,0x0
-Monster,0x0
+Monster(C25),0x0
 Monster,0x0
 Monster,0x0
 Monster,0x0
@@ -196,17 +195,18 @@ Frelian,0x0
 Frelian,0x0
 0,0x0
 0,0x0
-0,0x0
+Ch21 Boss,0x0
 Fado (Renais),0x0
 0,0x0
 Hayden (Frelia),0x0
-Mansel (Rausten),0x0
-Klimt (Carcino),0x0
-Dara (Caer Pelyn),0x0
+Mansel,0x0
+Edge's Ally (Ch. 9),0x0
+Banana (Ch25),0x0
 Ismaire (Jehanna),0x0
-Pegasus Messenger,0x0
+(Generic soldier),0x0
 Rausten Knight,0x0
 Rausten Knight,0x0
+(Untested Beyond this point),0x0
 (Untested Beyond this point),0x0
 0,0x0
 0,0x0

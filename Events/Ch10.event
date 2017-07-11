@@ -113,6 +113,8 @@ ALIGN 4
 BeginningScene:
 LOAD1 0x1 EnemyUnits
 ENUN
+LOAD1 0x1 SamsonUnit
+ENUN
 LOAD2 0x1 Units
 ENUN
 TEXTSTART
