@@ -8,29 +8,29 @@ Map:
 #incbin "Ch24_data.dmp"
 
 MapChanges:
+TileMap(0,12,0,3,3,Village_1_destroyed)
 TileMap(1,13,2,1,1,Village_1_closed)
-TileMap(2,1,8,1,1,Village_2_closed)
-TileMap(3,12,0,3,3,Village_1_destroyed)
-TileMap(4,0,6,3,3,Village_2_destoyed)
-TileMap(5,14,8,1,3,Snag_3_destroyed)
-TileMap(6,8,6,1,3,Snag_2_destroyed)
-TileMap(7,6,3,3,1,Snag_1_destroyed)
+TileMap(2,0,6,3,3,Village_2_destoyed)
+TileMap(3,1,8,1,1,Village_2_closed)
+TileMap(4,14,8,1,3,Snag_3_destroyed)
+TileMap(5,8,6,1,3,Snag_2_destroyed)
+TileMap(6,6,3,3,1,Snag_1_destroyed)
 TileMapEnd
-
-Village_1_closed:
-SHORT 0x80 
-ALIGN 4
-
-Village_2_closed:
-SHORT 0x80 
-ALIGN 4
 
 Village_1_destroyed:
 SHORT 0xe1c 0xe20 0xe24 0xe9c 0xea0 0xea4 0xf1c 0xf20 0xf24 
 ALIGN 4
 
+Village_1_closed:
+SHORT 0x80 
+ALIGN 4
+
 Village_2_destoyed:
 SHORT 0xe1c 0xe20 0xe24 0xe9c 0xea0 0xea4 0xf1c 0xf20 0xf24 
+ALIGN 4
+
+Village_2_closed:
+SHORT 0x80 
 ALIGN 4
 
 Snag_3_destroyed:
