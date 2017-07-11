@@ -45,7 +45,7 @@ TurnEventPlayer(0x0,TurnThirteenReinforcements,17)
 TurnEventPlayer(0x0,TurnEighteenReinforcements,18)
 TurnEventPlayer(0x0,TurnNineteenReinforcements,19)
 TurnEventPlayer(0x0,TurnTwentyReinforcements,20)
-TurnEventEnemy(0x0,AMBUSHSPAWN,20)
+TurnEventEnemy(0x0,LoadAmbush,20)
 END_MAIN
 
 CharacterBasedEvents:
@@ -169,17 +169,18 @@ ENDA
 TurnTwentyReinforcements:
 LOAD1 0x1 T20Reinforcements
 Text(Ch15AmbushWarning)
+NoFade
 ENDA
 
 LoadAmbush:
-LOAD1 0x1 AMBUSHSPAWN
-ENDA
+ReinforcementEvent(AMBUSHSPAWN)
 
 GetAnnaTwo:
 MUSC 0x30
 Text(AnnaTwoGet)
 REMA
 TurnAlly(AnnaWyv)
+NoFade
 ENDA
 
 Ch15Village:
