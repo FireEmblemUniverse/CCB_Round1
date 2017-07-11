@@ -324,3 +324,23 @@ PhantomSkillList:
 BYTE 00 00
 ALIGN 4
 
+SuperJourneymanSkillList:
+BYTE 5 ParagonID
+BYTE 00 00
+ALIGN 4
+SuperPupilSkillList:
+BYTE 5 ParagonID
+BYTE 00 00
+ALIGN 4
+SuperRecruitSkillList:
+BYTE 10  ParagonID
+// BYTE 10 AxebreakerID
+BYTE 00 00
+ALIGN 4
+ManaketeMSkillList:
+BYTE 01 MiracleID
+BYTE 05 OddRhythmID
+BYTE 10 SpurDefID
+BYTE 00 00
+ALIGN 4
+

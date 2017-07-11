@@ -110,8 +110,10 @@ ENDA
 // Events
 EventAfterExitingPrepScreen:
 LOAD1 0x1 Greens
+ENUN
 Text(Ch15StartContinued)
 Text(Ch15GetTorches)
+CALL $591f40
 SVAL 3 Torch
 GIVEITEMTO Void
 ENUN
@@ -119,6 +121,9 @@ SVAL 3 Torch
 GIVEITEMTO Void
 ENUN
 NoFade
+ENDA
+
+SeparatorEvent:
 ENDA
 
 TurnTwoReinforcements:
@@ -243,8 +248,8 @@ UNIT PegasusMessenger Fighter Valter_Ch15_ Level(15, Enemy, 1) [14,12] 0x00 0x00
 UNIT PegasusMessenger Fighter Valter_Ch15_ Level(15, Enemy, 1) [30,6] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI 
 UNIT PegasusMessenger Thief Valter_Ch15_ Level(15, Enemy, 1) [12,25] 0x00 0x00 0x0 0x00 [IronSword] StealingThiefAI 
 UNIT PegasusMessenger Thief Valter_Ch15_ Level(15, Enemy, 1) [29,6] 0x00 0x00 0x0 0x00 [IronSword, Lockpick] StealingThiefAI 
-UNIT PegasusMessenger Hero Valter_Ch15_ Level(15, Enemy, 1) [27,11] 0x00 0x00 0x0 0x00 [SilverSword, HandAxe] PursueWithoutHeedAI 
-UNIT PegasusMessenger Hero Valter_Ch15_ Level(15, Enemy, 1) [8,3] 0x2 0x00 0x0 0x00 [SilverSword, HandAxe] PursueWithoutHeedAI 
+UNIT PegasusMessenger Hero Valter_Ch15_ Level(5, Enemy, 1) [27,11] 0x00 0x00 0x0 0x00 [SilverSword, HandAxe] PursueWithoutHeedAI 
+UNIT PegasusMessenger Hero Valter_Ch15_ Level(5, Enemy, 1) [8,3] 0x2 0x00 0x0 0x00 [SilverSword, HandAxe] PursueWithoutHeedAI 
 UNIT PegasusMessenger Sniper Valter_Ch15_ Level(3, Enemy, 1) [28,18] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
 UNIT PegasusMessenger Sniper Valter_Ch15_ Level(3, Enemy, 1) [25,20] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
 //UNIT PegasusMessenger Cavalier Valter_Ch15_ Level(15, Enemy, 1) [14,19] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 

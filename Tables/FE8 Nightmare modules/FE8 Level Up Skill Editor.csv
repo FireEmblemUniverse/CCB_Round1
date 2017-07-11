@@ -55,10 +55,10 @@ INLINE LevelUpSkillTable,Skill Pointer
 0x35 Great Knight,GreatKnightSkillList|IsPointer
 0x36 Great Knight (F),GreatKnightSkillList|IsPointer
 0x37 Recruit (2),0x0
-0x38 Journeyman (3),0x0
-0x39 Pupil (3),0x0
-0x3A Recruit (3),0x0
-0x3B Manakete,0x0
+0x38 Journeyman (3),SuperJourneymanSkillList|IsPointer
+0x39 Pupil (3),SuperPupilSkillList|IsPointer
+0x3A Recruit (3),SuperRecruitSkillList|IsPointer
+0x3B Manakete,ManaketeMSkillList|IsPointer
 0x3C Manakete (F),ManaketeFSkillList|IsPointer
 0x3D Journeyman (1),0x0
 0x3E Pupil (1),0x0
