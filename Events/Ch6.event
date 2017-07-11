@@ -103,7 +103,7 @@ UNIT
 
 StartingEnemies:
   UNIT Ch6_charBoss Summoner  0            Level(20, Enemy, True) [4,  1] 10b 0x00 0 0x00 [Nosferatu, Physic, Mend, Rescue] HealUnits Normal GuardTile
-  UNIT 0x8D         Knight    Ch6_charBoss Level((Ch6_baseLevel + 8), Enemy, True) [3,  1]  10b 0x00 0 0x00 [ShortSpear, SilverLance] GuardTileAI Normal GuardTile
+  UNIT 0x8D         Knight    Ch6_charBoss Level((Ch6_baseLevel + 6), Enemy, True) [3,  1]  10b 0x00 0 0x00 [ShortSpear, SilverLance] GuardTileAI Normal GuardTile
 
   UNIT 0x80 Knight    Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) [7,  13] 0b  0x00 0 0x00 [IronLance] [AttackInRange, DontMove] Normal DefaultAI4
   UNIT 0x80 Fighter   Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) [3,  12] 10b 0x00 0 0x00 [IronAxe, HandAxe] [AttackInRange, DontMove] Normal DefaultAI4

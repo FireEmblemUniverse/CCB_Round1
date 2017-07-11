@@ -28,6 +28,10 @@ are in my way! Army, move out![AN]
 Take advantage of the fog, fliers![N]
 Naval units... Fire the seige![AN][X]
 
+##Ch15GetTorches
+[MidLeft][LoadFace][0x2][0x1]
+Oh, who left these lying around?[A][X]
+
 ##Ch15End
 [MidLeft][LoadFace][0x2][0x1]
 Whew. The might of the Orange[N]

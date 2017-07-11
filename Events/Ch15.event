@@ -96,6 +96,7 @@ LOAD1 0x1 Enemies4
 ENUN
 MUSC 0x18
 Text(Ch15Start)
+FADI 10
 GotoPrepScreen
 NoFade
 ENDA
@@ -110,6 +111,14 @@ ENDA
 EventAfterExitingPrepScreen:
 LOAD1 0x1 Greens
 Text(Ch15StartContinued)
+Text(Ch15GetTorches)
+SVAL 3 Torch
+GIVEITEMTO Void
+ENUN
+SVAL 3 Torch
+GIVEITEMTO Void
+ENUN
+NoFade
 ENDA
 
 TurnTwoReinforcements:

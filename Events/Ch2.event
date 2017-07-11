@@ -40,12 +40,12 @@ SHLI Vulnerary PureWater ChestKey DoorKey Unlock Rescue Heal Stone
 ALIGN 4
 
 VillageEnergyRing:
-VillageEventItem(0x967, Village, EnergyRing) //Gives item to the active character (the one visiting)
-ENUN //Just use these for good measure
+VillageEventItem(Ch2Village1, Village, EnergyRing) //Gives item to the active character (the one visiting)
+ENDA //Just use these for good measure
 
 VillageBerserk:
-VillageEventItem(0x967, Village, Berserk) //Gives item to the active character (the one visiting)
-ENUN //Just use these for good measure
+VillageEventItem(Ch2Village2, Village, Berserk) //Gives item to the active character (the one visiting)
+ENDA //Just use these for good measure
 
 BrigandReinforcement:
 ReinforcementEvent(BrigandReinforcementUnit)

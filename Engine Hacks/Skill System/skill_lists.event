@@ -16,7 +16,7 @@ ALIGN 4
 EphraimGreatLordSkillList:
 BYTE 255 BondID
 BYTE 255 AetherID //255 means "automatically given to prepromotes"
-BYTE 255 SmiteID
+// BYTE 255 SmiteID
 BYTE 5 RallySpectrumID
 BYTE 15 AxebreakerID
 BYTE 00 00
@@ -25,7 +25,7 @@ ALIGN 4
 EirikaGreatLordSkillList:
 BYTE 255 BondID
 BYTE 255 AetherID
-BYTE 255 SmiteID
+// BYTE 255 SmiteID
 BYTE 5 RallySpectrumID
 BYTE 15 LancebreakerID
 BYTE 00 00
