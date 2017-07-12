@@ -120,40 +120,40 @@ UNIT Tye Knight 0x00 Level(10, NPC, 0) [4,19] 0x00 0x00 0x0 0x00 [KillerLance, H
 UNIT
 
 Bad: 
-UNIT 0x80 Knight Gheb Level(6, Enemy, 1) [4,5] 0x00 0x00 0x0 0x00 [SteelLance, Horseslayer] NeverMoveAI 
-UNIT 0x80 Knight Gheb Level(6, Enemy, 1) [23,9] 0x00 0x00 0x0 0x00 [SteelLance, Horseslayer] NeverMoveAI 
-UNIT 0x80 Knight Gheb Level(6, Enemy, 1) [23,22] 0x00 0x00 0x0 0x00 [SteelLance, Horseslayer] NeverMoveAI 
-UNIT 0x80 Knight Gheb Level(6, Enemy, 1) [12,17] 0x00 0x00 0x0 0x00 [SteelLance, Spear] NeverMoveAI 
-UNIT 0x80 Mercenary Gheb Level(6, Enemy, 1) [13,17] 0x00 0x00 0x0 0x00 [IronBlade] NeverMoveAI 
-UNIT 0x80 Mercenary Gheb Level(6, Enemy, 1) [23,21] 0x00 0x00 0x0 0x00 [IronBlade] NeverMoveAI 
-UNIT 0x80 Fighter Gheb Level(6, Enemy, 1) [9,15] 0x00 0x00 0x0 0x00 [HandAxe, SilverAxe] AttackInRangeAI 
-UNIT 0x80 Fighter Gheb Level(6, Enemy, 1) [24,19] 0x00 0x00 0x0 0x00 [HandAxe, SilverAxe] AttackInRangeAI 
-UNIT 0x80 Fighter Gheb Level(6, Enemy, 1) [20,10] 0x00 0x00 0x0 0x00 [HandAxe, SilverAxe] AttackInRangeAI 
-UNIT 0x80 Fighter Gheb Level(6, Enemy, 1) [7,4] 0x00 0x00 0x0 0x00 [HandAxe, SilverAxe] AttackInRangeAI 
-UNIT 0x80 Archer Gheb Level(6, Enemy, 1) [10,14] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
-UNIT 0x80 Archer Gheb Level(6, Enemy, 1) [2,9] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
-UNIT 0x80 Archer Gheb Level(6, Enemy, 1) [4,12] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
-UNIT 0x80 Archer Gheb Level(6, Enemy, 1) [24,24] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
-UNIT 0x80 Archer Gheb Level(6, Enemy, 1) [20,7] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
-UNIT 0x80 Archer Gheb Level(6, Enemy, 1) [17,16] 0x00 0x00 0x0 0x00 [SilverBow, Longbow] AttackInRangeAI  
+UNIT 0x80 Knight Gheb Level(9, Enemy, 1) [4,5] 0x00 0x00 0x0 0x00 [SteelLance, Horseslayer] NeverMoveAI 
+UNIT 0x80 Knight Gheb Level(9, Enemy, 1) [23,9] 0x00 0x00 0x0 0x00 [SteelLance, Horseslayer] NeverMoveAI 
+UNIT 0x80 Knight Gheb Level(9, Enemy, 1) [23,22] 0x00 0x00 0x0 0x00 [SteelLance, Horseslayer] NeverMoveAI 
+UNIT 0x80 Knight Gheb Level(9, Enemy, 1) [12,17] 0x00 0x00 0x0 0x00 [SteelLance, Spear] NeverMoveAI 
+UNIT 0x80 Mercenary Gheb Level(9, Enemy, 1) [13,17] 0x00 0x00 0x0 0x00 [IronBlade] NeverMoveAI 
+UNIT 0x80 Mercenary Gheb Level(9, Enemy, 1) [23,21] 0x00 0x00 0x0 0x00 [IronBlade] NeverMoveAI 
+UNIT 0x80 Fighter Gheb Level(9, Enemy, 1) [9,15] 0x00 0x00 0x0 0x00 [HandAxe, SilverAxe] AttackInRangeAI 
+UNIT 0x80 Fighter Gheb Level(9, Enemy, 1) [24,19] 0x00 0x00 0x0 0x00 [HandAxe, SilverAxe] AttackInRangeAI 
+UNIT 0x80 Fighter Gheb Level(9, Enemy, 1) [20,10] 0x00 0x00 0x0 0x00 [HandAxe, SilverAxe] AttackInRangeAI 
+UNIT 0x80 Fighter Gheb Level(9, Enemy, 1) [7,4] 0x00 0x00 0x0 0x00 [HandAxe, SilverAxe] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(9, Enemy, 1) [10,14] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(9, Enemy, 1) [2,9] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(9, Enemy, 1) [4,12] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(9, Enemy, 1) [24,24] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(9, Enemy, 1) [20,7] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(9, Enemy, 1) [17,16] 0x00 0x00 0x0 0x00 [SilverBow, Longbow] AttackInRangeAI  
 UNIT
 
 Badder:
-UNIT 0x80 Archer Gheb Level(6, Enemy, 1) [1,1] 0x00 0x00 0x0 0x00 [SilverBow, Longbow] AttackInRangeAI 
-UNIT 0x80 Archer Gheb Level(6, Enemy, 1) [28,13] 0x00 0x00 0x0 0x00 [SilverBow, Longbow] AttackInRangeAI 
-UNIT 0x80 Cavalier Gheb Level(7, Enemy, 1) [16,22] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
-UNIT 0x80 Cavalier Gheb Level(7, Enemy, 1) [7,11] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
-UNIT 0x80 Cavalier Gheb Level(7, Enemy, 1) [22,13] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
-UNIT 0x80 Cavalier Gheb Level(7, Enemy, 1) [22,15] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
-UNIT 0x80 Cavalier Gheb Level(7, Enemy, 1) [13,10] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
-UNIT 0x80 Cavalier Gheb Level(7, Enemy, 1) [12,9] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
-UNIT 0x80 Cavalier Gheb Level(7, Enemy, 1) [28,6] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(9, Enemy, 1) [1,1] 0x00 0x00 0x0 0x00 [SilverBow, Longbow] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(9, Enemy, 1) [28,13] 0x00 0x00 0x0 0x00 [SilverBow, Longbow] AttackInRangeAI 
+UNIT 0x80 Cavalier Gheb Level(10, Enemy, 1) [16,22] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
+UNIT 0x80 Cavalier Gheb Level(10, Enemy, 1) [7,11] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
+UNIT 0x80 Cavalier Gheb Level(10, Enemy, 1) [22,13] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
+UNIT 0x80 Cavalier Gheb Level(10, Enemy, 1) [22,15] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
+UNIT 0x80 Cavalier Gheb Level(10, Enemy, 1) [13,10] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
+UNIT 0x80 Cavalier Gheb Level(10, Enemy, 1) [12,9] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
+UNIT 0x80 Cavalier Gheb Level(10, Enemy, 1) [28,6] 0x00 0x00 0x0 0x00 [Spear, SilverSword] AttackInRangeAI 
 UNIT 0x80 Sniper Gheb Level(1, Enemy, 1) [20,21] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI 
 UNIT 0x80 Sniper Gheb Level(1, Enemy, 1) [19,9] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI 
 UNIT 0x80 Sniper Gheb Level(1, Enemy, 1) [0,8] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI 
-UNIT 0x80 Mage Gheb Level(5, Enemy, 1) [20,17] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
-UNIT 0x80 Mage Gheb Level(5, Enemy, 1) [18,13] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
-UNIT 0x80 Mage Gheb Level(5, Enemy, 1) [25,15] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 Mage Gheb Level(8, Enemy, 1) [20,17] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 Mage Gheb Level(8, Enemy, 1) [18,13] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 Mage Gheb Level(8, Enemy, 1) [25,15] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
 UNIT 0x80 Sage Gheb Level(1, Enemy, 1) [17,10] 0x00 0x00 0x0 0x00 [Thunder, Physic] AttackInRangeAI 
 UNIT
 
@@ -162,18 +162,18 @@ UNIT 0x80 Sage Gheb Level(1, Enemy, 1) [10,10] 0x00 0x00 0x0 0x00 [Thunder, Phys
 UNIT 0x80 Hero Gheb Level(1, Enemy, 1) [24,8] 0x00 0x00 0x0 0x00 [Hatchet] AttackInRangeAI 
 UNIT 0x80 Hero Gheb Level(1, Enemy, 1) [1,13] 0x00 0x00 0x0 0x00 [Hatchet] NeverMoveAI 
 UNIT 0x80 Hero Gheb Level(1, Enemy, 1) [28,17] 0x00 0x00 0x0 0x00 [Hatchet] NeverMoveAI 
-UNIT 0x80 Mercenary Gheb Level(7, Enemy, 1) [0,13] 0x00 0x00 0x0 0x00 [SteelBlade] NeverMoveAI 
-UNIT 0x80 Mercenary Gheb Level(7, Enemy, 1) [22,9] 0x00 0x00 0x0 0x00 [SteelBlade] NeverMoveAI 
-UNIT 0x80 Mercenary Gheb Level(7, Enemy, 1) [3,15] 0x00 0x00 0x0 0x00 [SteelBlade] NeverMoveAI 
-UNIT 0x80 Mercenary Gheb Level(7, Enemy, 1) [4,16] 0x00 0x00 0x0 0x00 [SteelBlade] NeverMoveAI 
-UNIT 0x80 Fighter Gheb Level(7, Enemy, 1) [13,24] 0x00 0x00 0x0 0x00 [HandAxe, Swordreaver] NeverMoveAI 
-UNIT 0x80 Fighter Gheb Level(7, Enemy, 1) [11,20] 0x00 0x00 0x0 0x00 [HandAxe, SteelAxe] AttackInRangeAI 
-UNIT 0x80 Knight Gheb Level(9, Enemy, 1) [15,6] 0x02 0x00 0x0 0x00 [SilverLance, Spear, Horseslayer, BraveLance] NeverMoveAI  
+UNIT 0x80 Mercenary Gheb Level(10, Enemy, 1) [0,13] 0x00 0x00 0x0 0x00 [SteelBlade] NeverMoveAI 
+UNIT 0x80 Mercenary Gheb Level(10, Enemy, 1) [22,9] 0x00 0x00 0x0 0x00 [SteelBlade] NeverMoveAI 
+UNIT 0x80 Mercenary Gheb Level(10, Enemy, 1) [3,15] 0x00 0x00 0x0 0x00 [SteelBlade] NeverMoveAI 
+UNIT 0x80 Mercenary Gheb Level(10, Enemy, 1) [4,16] 0x00 0x00 0x0 0x00 [SteelBlade] NeverMoveAI 
+UNIT 0x80 Fighter Gheb Level(10, Enemy, 1) [13,24] 0x00 0x00 0x0 0x00 [HandAxe, Swordreaver] NeverMoveAI 
+UNIT 0x80 Fighter Gheb Level(10, Enemy, 1) [11,20] 0x00 0x00 0x0 0x00 [HandAxe, SteelAxe] AttackInRangeAI 
+UNIT 0x80 Knight Gheb Level(12, Enemy, 1) [15,6] 0x02 0x00 0x0 0x00 [SilverLance, Spear, Horseslayer, BraveLance] NeverMoveAI  
 UNIT 0x80 Sage Gheb Level(2, Enemy, 1) [12,3] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
 UNIT 0x80 Sage Gheb Level(2, Enemy, 1) [17,2] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
 UNIT 0x80 Sniper Gheb Level(2, Enemy, 1) [18,3] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI 
 UNIT 0x80 Sniper Gheb Level(2, Enemy, 1) [13,2] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI 
-UNIT 0x80 Mercenary Gheb Level(5, Enemy, 1) [26,16] 0x00 0x00 0x0 0x00 [SilverSword] AttackInRangeAI
+UNIT 0x80 Mercenary Gheb Level(8, Enemy, 1) [26,16] 0x00 0x00 0x0 0x00 [SilverSword] AttackInRangeAI
 UNIT Gheb Berserker 0x00 Level(2, Enemy, 0) [15,1] 0x02 0x00 0x0 0x00 [SilverAxe, BraveAxe, Halberd, Hammer] AttackInRangeAI 
 UNIT
 

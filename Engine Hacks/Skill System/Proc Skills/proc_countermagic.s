@@ -84,7 +84,8 @@ str     r0,[r6]                @ 0802B43A 6018
 @grab damage dealt
 ldrh r2, [r7, #4] @final damage
 @ lsr r2, #1 @optionally halve
-neg r2, r2
+neg r2, r2 @r2 contains the damage from counter.
+mov r3, r2 @save that
 
 mov r0, #5
 ldsb r0, [r6, r0] @current hp change
@@ -97,13 +98,14 @@ ldrsb r0, [r4,r0] @curr hp
 cmp r2, r0
 blt NoKill
 sub r2, r0, #1 @can't actually kill
+add r3, #1
 
 NoKill:
 neg r2, r2
 strb r2, [r6, #5] @set damage
 
 @Update HP
-add r0, r2 @new hp
+add r0, r3 @new hp
 strb r0, [r4, #0x13]
 
 

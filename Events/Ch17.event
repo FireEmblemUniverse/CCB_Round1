@@ -76,13 +76,13 @@ UNIT 23 Rogue 0x00 Level(5, Ally, 1) [6,28] 0x00 0x00 0x00 0x00 [KillingEdge,Run
 UNIT
 
 Reinforcements1:
-UNIT 0xBD GhostFighter 0x00 Level(5, Enemy, 1) [6,2] 0 0 1 REDA_Reinforcements11 [IronAxe] NoAI
-UNIT 0xBD GhostFighter 0x00 Level(5, Enemy, 1) [12,2] 0 0 1 REDA_Reinforcements12 [IronAxe] NoAI
+UNIT 0xBD GhostFighter 0x00 Level(15, Enemy, 1) [6,2] 0 0 1 REDA_Reinforcements11 [SilverAxe] NoAI
+UNIT 0xBD GhostFighter 0x00 Level(15, Enemy, 1) [12,2] 0 0 1 REDA_Reinforcements12 [SilverAxe] NoAI
 UNIT
 
 Reinforcements2:
-UNIT 0xBD GhostFighter 0x00 Level(3, Enemy, 1) [15,9] 0 0 1 REDA_Reinforcements21 [IronAxe] NoAI
-UNIT 0xBD GhostFighter 0x00 Level(3, Enemy, 1) [2,12] 0 0 1 REDA_Reinforcements22 [IronAxe] NoAI
+UNIT 0xBD GhostFighter 0x00 Level(15, Enemy, 1) [15,9] 0 0 1 REDA_Reinforcements21 [SilverAxe] NoAI
+UNIT 0xBD GhostFighter 0x00 Level(15, Enemy, 1) [2,12] 0 0 1 REDA_Reinforcements22 [SilverAxe] NoAI
 UNIT
 
 REDA_Reinforcements11:
