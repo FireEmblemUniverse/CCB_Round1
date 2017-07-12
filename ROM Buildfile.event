@@ -51,6 +51,9 @@
 
     //Maps
     #include "Maps/Master Map Installer.event"
+
+    //Palettes
+    #include "Blitz Palettes/Palette Setup.event"   
     
     MESSAGE Used free space ends at currentOffset
 #else
