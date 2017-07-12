@@ -27,6 +27,20 @@
     PUSH
         ORG $99e64
         POIN NewPrepScreenShopList
+
+        //change weather priority
+        // ORG 0x030366 
+        // BYTE 0xC0
+        // ORG 0x03066D
+        // BYTE 18
+        // ORG 0x59D960
+        // BYTE 0x18
+        // ORG 0x0309B0
+        // BYTE 0xA8
+        // ORG 0x03053C
+        // BYTE 0x18
+        // ORG 0x030B30
+        // BYTE 0xA8
     POP
 
     NewPrepScreenShopList:
