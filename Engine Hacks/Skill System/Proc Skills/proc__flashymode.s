@@ -12,7 +12,7 @@ mov r5, r1 @defender
 mov r6, r2 @battle buffer
 mov r7, r3 @battle data
 
-ldrb r0, [r4, #0xb] @don't activate against players
+ldrb r0, [r5, #0xb] @don't activate against players
 cmp r0, #0x40
 blt End
 
@@ -33,7 +33,7 @@ blt End @if it's not gonna kill
 
 @check defender for boss flag
 ldr r0, [r5] 
-add r0, #0x41
+add r0, #0x29
 ldrb r0, [r0] @ability 2
 mov r1, #0x80 @is boss?
 and r0, r1
