@@ -2,7 +2,9 @@
 .org 0x0
 
 @stick a jumpToHack(here) at 18744. r0/1 have attacker coordinates.
-push    {r14}
+push    {r4-r7,r14}
+mov r4, r0
+mov r7, r1
 ldr        r5,Somewhere        @+0xC has attacker allegiance byte, 0xD has defender allegiance byte, 0xE has attacker x coord, 0xF has attacker y coord, 0x10 has distance moved
 ldrb    r2,[r5,#0x11]        @I believe this is action taken this turn; 2 is combat
 cmp        r2,#0x2
@@ -17,8 +19,8 @@ beq Lunge
 @ beq        Lunge
 NotLunge:
 ldr        r2,[r6]
-strb    r0,[r2,#0x10]
-strb    r1,[r2,#0x11]
+strb    r4,[r2,#0x10]
+strb    r7,[r2,#0x11]
 b        GoBack
 
 Lunge:
@@ -54,6 +56,7 @@ ldr r0, LungeMarker
 mov r1, #0
 strb r1, [r0]
 ldr        r0,[r2,#0xC]
+pop        {r4-r7}
 pop        {r1}
 bx        r1
 
