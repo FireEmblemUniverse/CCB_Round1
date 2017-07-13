@@ -8,12 +8,12 @@ Map:
 #incbin "Ch12_data.dmp"
 
 MapChanges:
-TileMap(1,28,15,1,1,Chest1Open)
-TileMap(2,1,12,1,1,Chest2Open)
-TileMap(3,26,4,1,1,Chest3Open)
-TileMap(4,2,2,1,1,Chest4Open)
-TileMap(5,4,2,1,1,Chest5Open)
-TileMap(6,6,2,1,1,Chest6Open)
+TileMap(1,17,24,1,1,Chest1Open)
+TileMap(2,19,0,1,1,Chest2Open)
+TileMap(3,18,0,1,1,Chest3Open)
+TileMap(4,10,13,1,1,Chest4Open)
+TileMap(5,8,10,1,1,Chest5Open)
+TileMap(6,0,1,1,1,Chest6Open)
 TileMapEnd
 
 Chest1Open:
@@ -37,6 +37,6 @@ SHORT 0x104
 ALIGN 4
 
 Chest6Open:
-SHORT 0x104 
+SHORT 0x104 0x88 0x108 0x108 0x73c 
 ALIGN 4
 

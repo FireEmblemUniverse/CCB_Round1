@@ -51,7 +51,7 @@ UNIT
 
 C11_CCB_Arve:
 //UNIT Beran Shaman 0x00 Level(13, 0, 0) [5, 28] 0x00 0x00 0x00 0x00 [Lightning, Flux, Vulnerary, Vulnerary] DefaultAI
-UNIT Arve Shaman 0x00 Level(13, 0, 0) [5, 28] 0x00 0x00 0x00 0x00 [Lightning, Flux, Vulnerary, Vulnerary] DefaultAI
+UNIT Arve Shaman_F 0x00 Level(13, 0, 0) [5, 28] 0x00 0x00 0x00 0x00 [Lightning, Flux, Vulnerary, Vulnerary] DefaultAI
 UNIT
 
 //Divided up in advance just in case I need more than 15 initial units
