@@ -261,3 +261,13 @@ universe's destruction.[X]
 
 ##Name_Grit
 Grit[X]
+
+##Desc_Grit
+A visitor from beyond[N]
+the Outrealms.[X]
+
+##Name_Gwendy
+Gwendolyn[X]
+
+##Desc_Gwendy
+The basics are everything.[X]

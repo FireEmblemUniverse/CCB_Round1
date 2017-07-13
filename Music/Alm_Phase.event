@@ -1,0 +1,1572 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	Alm_Phase_grp  voicegroup000
+	#define	Alm_Phase_pri  0
+	#define	Alm_Phase_rev  0
+	#define	Alm_Phase_mvl  67
+	#define	Alm_Phase_key  0
+	#define	Alm_Phase_tbs  1
+	#define	Alm_Phase_exg  0
+	#define	Alm_Phase_cmp  1
+
+	// .rodata
+	//	Alm_Phase
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+Alm_Phase_1:
+	BYTE		VOL     127*Alm_Phase_mvl/mxv
+	BYTE	KEYSH   Alm_Phase_key+0
+Alm_Phase_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   146*Alm_Phase_tbs/2
+	BYTE		VOICE   92
+	BYTE		N42     En4   v100
+	BYTE	W06
+	BYTE	W12
+	BYTE	W30
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        En4 
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+	BYTE		        En4 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+// 001   ----------------------------------------
+Alm_Phase_1_001:
+	BYTE		N21     Fs4   v100
+	BYTE	W24
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fs4 
+	BYTE	W08
+	BYTE		N21     Fn4 
+	BYTE	W24
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE		        En4 
+	BYTE	W08
+	BYTE		        An3 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Bn3 
+	BYTE	W08
+	BYTE		        An3 
+	BYTE	W08
+	BYTE		        En3 
+	BYTE	W16
+	BYTE		N07   
+	BYTE	W08
+// 003   ----------------------------------------
+Alm_Phase_1_003:
+	BYTE		N07     Gs3   v100
+	BYTE	W08
+	BYTE		        Bn3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE		N42     Cn4 
+	BYTE	W48
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE		        En4 
+	BYTE	W06
+	BYTE	W12
+	BYTE	W30
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        En4 
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+	BYTE		        En4 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_1_001
+// 006   ----------------------------------------
+	BYTE		TIE     En4   v100
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W42
+	BYTE	W01
+	BYTE		EOT   
+	BYTE	W28
+	BYTE	W01
+	BYTE		N07   
+	BYTE	W16
+	BYTE		N07   
+	BYTE	W08
+// 008   ----------------------------------------
+Alm_Phase_1_008:
+	BYTE		N42     Fn4   v100
+	BYTE	W48
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE		        An4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE	PEND
+// 009   ----------------------------------------
+Alm_Phase_1_009:
+	BYTE		N21     Gn4   v100
+	BYTE	W24
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+	BYTE		N21     Fn4 
+	BYTE	W24
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE		        En4 
+	BYTE	W08
+	BYTE		        An3 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Bn3 
+	BYTE	W08
+	BYTE		        An3 
+	BYTE	W08
+	BYTE		N14     En3 
+	BYTE	W16
+	BYTE		N07   
+	BYTE	W08
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_1_003
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_1_008
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_1_009
+// 014   ----------------------------------------
+	BYTE		N21     Gn4   v100
+	BYTE	W24
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+	BYTE		N21     Fn4 
+	BYTE	W24
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+// 015   ----------------------------------------
+	BYTE	TEMPO   140*Alm_Phase_tbs/2
+	BYTE		N68     Fn4 
+	BYTE	W12
+	BYTE	TEMPO   134*Alm_Phase_tbs/2
+	BYTE	W12
+	BYTE	TEMPO   128*Alm_Phase_tbs/2
+	BYTE	W12
+	BYTE	TEMPO   122*Alm_Phase_tbs/2
+	BYTE	W12
+	BYTE	TEMPO   116*Alm_Phase_tbs/2
+	BYTE	W12
+	BYTE	TEMPO   112*Alm_Phase_tbs/2
+	BYTE	W12
+	BYTE	TEMPO   104*Alm_Phase_tbs/2
+	BYTE		N21     En4 
+	BYTE	W24
+// 016   ----------------------------------------
+	BYTE	TEMPO   142*Alm_Phase_tbs/2
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	Alm_Phase_1_B1
+Alm_Phase_1_B2:
+// 032   ----------------------------------------
+	BYTE	TEMPO   146*Alm_Phase_tbs/2
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+Alm_Phase_2:
+	BYTE		VOL     127*Alm_Phase_mvl/mxv
+	BYTE	KEYSH   Alm_Phase_key+0
+Alm_Phase_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   24
+	BYTE		N10     Cn3   v100
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE	W24
+// 001   ----------------------------------------
+Alm_Phase_2_001:
+	BYTE		N10     Cn3   v100
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_001
+// 008   ----------------------------------------
+Alm_Phase_2_008:
+	BYTE		N10     Fn3   v100
+	BYTE		N10     An3 
+	BYTE		N10     Dn4 
+	BYTE	W24
+	BYTE		        Fn3 
+	BYTE		N10     An3 
+	BYTE		N10     Dn4 
+	BYTE	W24
+	BYTE		        Fn3 
+	BYTE		N10     An3 
+	BYTE		N10     Dn4 
+	BYTE	W24
+	BYTE		        Fn3 
+	BYTE		N10     An3 
+	BYTE		N10     Dn4 
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_008
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_008
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_008
+// 013   ----------------------------------------
+Alm_Phase_2_013:
+	BYTE		N10     Gn3   v100
+	BYTE		N10     As3 
+	BYTE		N10     Ds4 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE		N10     As3 
+	BYTE		N10     Ds4 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE		N10     As3 
+	BYTE		N10     Ds4 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE		N10     As3 
+	BYTE		N10     Ds4 
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_013
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_008
+// 016   ----------------------------------------
+Alm_Phase_2_016:
+	BYTE		N10     Dn3   v100
+	BYTE		N10     Fn3 
+	BYTE		N10     As3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N10     Fn3 
+	BYTE		N10     As3 
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE		N10     Fn3 
+	BYTE		N10     As3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N10     Fn3 
+	BYTE		N10     As3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N10     Fn3 
+	BYTE		N10     As3 
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE		N10     Fn3 
+	BYTE		N10     As3 
+	BYTE	W12
+	BYTE	PEND
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_016
+// 018   ----------------------------------------
+Alm_Phase_2_018:
+	BYTE		N10     En3   v100
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_018
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_016
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_016
+// 022   ----------------------------------------
+Alm_Phase_2_022:
+	BYTE		N10     An2   v100
+	BYTE		N10     En3 
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W24
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W24
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     Gn3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE	PEND
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_022
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_016
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_016
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_018
+// 028   ----------------------------------------
+Alm_Phase_2_028:
+	BYTE		N10     Gn2   v100
+	BYTE		N10     Dn3 
+	BYTE		N10     Fn3 
+	BYTE		N10     Bn3 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE		N10     Dn3 
+	BYTE		N10     Fn3 
+	BYTE		N10     Bn3 
+	BYTE	W24
+	BYTE		        Gn2 
+	BYTE		N10     Dn3 
+	BYTE		N10     Fn3 
+	BYTE		N10     Bn3 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE		N10     Dn3 
+	BYTE		N10     Fn3 
+	BYTE		N10     Bn3 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE		N10     Dn3 
+	BYTE		N10     Fn3 
+	BYTE		N10     Bn3 
+	BYTE	W24
+	BYTE		        Gn2 
+	BYTE		N10     Dn3 
+	BYTE		N10     Fn3 
+	BYTE		N10     Bn3 
+	BYTE	W12
+	BYTE	PEND
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_2_028
+// 030   ----------------------------------------
+	BYTE		N10     An2   v100
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     En4 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     En4 
+	BYTE	W24
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     En4 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     En4 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     En4 
+	BYTE	W24
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     En4 
+	BYTE	W12
+// 031   ----------------------------------------
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     Cn4 
+	BYTE	W24
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     Cn4 
+	BYTE	W24
+	BYTE		        An2 
+	BYTE		N10     En3 
+	BYTE		N10     An3 
+	BYTE		N10     Cn4 
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	Alm_Phase_2_B1
+Alm_Phase_2_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+Alm_Phase_3:
+	BYTE		VOL     127*Alm_Phase_mvl/mxv
+	BYTE	KEYSH   Alm_Phase_key+0
+Alm_Phase_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   36
+	BYTE		N10     An2   v100
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+// 001   ----------------------------------------
+Alm_Phase_3_001:
+	BYTE		N10     An2   v100
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_001
+// 008   ----------------------------------------
+Alm_Phase_3_008:
+	BYTE		N10     Dn3   v100
+	BYTE		N10     Fn3 
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE		N10     Fn3 
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE		N10     Fn3 
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE		N10     Fn3 
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_008
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_008
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_008
+// 013   ----------------------------------------
+Alm_Phase_3_013:
+	BYTE		N10     Ds3   v100
+	BYTE		N10     Gn3 
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE		N10     Gn3 
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE		N10     Gn3 
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE		N10     Gn3 
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_013
+// 015   ----------------------------------------
+	BYTE		N10     Dn3   v100
+	BYTE		N10     Fn3 
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE		N10     Fn3 
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE		N10     Fn3 
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE		N10     En3 
+	BYTE	W24
+// 016   ----------------------------------------
+Alm_Phase_3_016:
+	BYTE		N10     As2   v100
+	BYTE	W12
+	BYTE		N21   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N21   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE	PEND
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_016
+// 018   ----------------------------------------
+Alm_Phase_3_018:
+	BYTE		N10     Cn3   v100
+	BYTE	W12
+	BYTE		N21   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N21   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_018
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_016
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_016
+// 022   ----------------------------------------
+Alm_Phase_3_022:
+	BYTE		N10     An2   v100
+	BYTE	W12
+	BYTE		N19   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N19   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE	PEND
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_022
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_016
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_016
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_018
+// 028   ----------------------------------------
+Alm_Phase_3_028:
+	BYTE		N10     Bn2   v100
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE	PEND
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_3_028
+// 030   ----------------------------------------
+	BYTE		N10     An2   v100
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+// 031   ----------------------------------------
+	BYTE		        En2 
+	BYTE		N10     An2 
+	BYTE		N10     En3 
+	BYTE	W24
+	BYTE		        En2 
+	BYTE		N10     An2 
+	BYTE		N10     En3 
+	BYTE	W24
+	BYTE		        En2 
+	BYTE		N10     An2 
+	BYTE		N10     En3 
+	BYTE	W24
+	BYTE		        En2 
+	BYTE		N10     An2 
+	BYTE		N10     En3 
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	Alm_Phase_3_B1
+Alm_Phase_3_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+Alm_Phase_4:
+	BYTE		VOL     127*Alm_Phase_mvl/mxv
+	BYTE	KEYSH   Alm_Phase_key+0
+Alm_Phase_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   45
+	BYTE	W12
+	BYTE	W84
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W72
+	BYTE		N07     En4   v100
+	BYTE	W16
+	BYTE		N07   
+	BYTE	W08
+// 008   ----------------------------------------
+Alm_Phase_4_008:
+	BYTE		N42     Fn4   v100
+	BYTE	W48
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE		        An4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE	PEND
+// 009   ----------------------------------------
+Alm_Phase_4_009:
+	BYTE		N21     Gn4   v100
+	BYTE	W24
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+	BYTE		N21     Fn4 
+	BYTE	W24
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE		        En4 
+	BYTE	W08
+	BYTE		        An3 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Bn3 
+	BYTE	W08
+	BYTE		        An3 
+	BYTE	W08
+	BYTE		N14     En3 
+	BYTE	W16
+	BYTE		N07   
+	BYTE	W08
+// 011   ----------------------------------------
+	BYTE		        Gs3 
+	BYTE	W08
+	BYTE		        Bn3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Fn4 
+	BYTE	W08
+	BYTE		N42     Cn4 
+	BYTE	W48
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_4_008
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_4_009
+// 014   ----------------------------------------
+	BYTE		N21     Gn4   v100
+	BYTE	W24
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+	BYTE		N21     Fn4 
+	BYTE	W24
+	BYTE		N07     An3 
+	BYTE	W08
+	BYTE		        Dn4 
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+// 015   ----------------------------------------
+	BYTE		N68     Fn4 
+	BYTE	W72
+	BYTE		N21     En4 
+	BYTE	W24
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W72
+	BYTE		N05     Cn3   v116
+	BYTE	W06
+	BYTE		        En3 
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		        Cn4 
+	BYTE	W06
+// 031   ----------------------------------------
+	BYTE		N10     En4 
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	Alm_Phase_4_B1
+Alm_Phase_4_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+Alm_Phase_5:
+	BYTE		VOL     127*Alm_Phase_mvl/mxv
+	BYTE	KEYSH   Alm_Phase_key+0
+Alm_Phase_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   57
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W56
+	BYTE	W01
+	BYTE	W21
+	BYTE	W06
+	BYTE	W05
+	BYTE	W06
+	BYTE	W01
+// 016   ----------------------------------------
+	BYTE		N84     Dn4   v100
+	BYTE	W32
+	BYTE	W03
+	BYTE	W60
+	BYTE	W01
+// 017   ----------------------------------------
+Alm_Phase_5_017:
+	BYTE		N32     As3   v100
+	BYTE	W11
+	BYTE	W24
+	BYTE	W01
+	BYTE		        Dn4 
+	BYTE	W36
+	BYTE		N21     An4 
+	BYTE	W11
+	BYTE	W13
+	BYTE	PEND
+// 018   ----------------------------------------
+Alm_Phase_5_018:
+	BYTE		N84     En4   v100
+	BYTE	W56
+	BYTE	W03
+	BYTE	W36
+	BYTE	W01
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE		        Cn4 
+	BYTE	W32
+	BYTE	W03
+	BYTE	W60
+	BYTE	W01
+// 020   ----------------------------------------
+	BYTE		        Dn4 
+	BYTE	W96
+// 021   ----------------------------------------
+Alm_Phase_5_021:
+	BYTE		N32     Dn4   v100
+	BYTE	W36
+	BYTE		        En4 
+	BYTE	W36
+	BYTE		N21     Fn4 
+	BYTE	W24
+	BYTE	PEND
+// 022   ----------------------------------------
+	BYTE		N84     En4 
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		        Cn4 
+	BYTE	W92
+	BYTE	W03
+	BYTE	W01
+// 024   ----------------------------------------
+	BYTE		        Dn4 
+	BYTE	W32
+	BYTE	W03
+	BYTE	W60
+	BYTE	W01
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_5_017
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_5_018
+// 027   ----------------------------------------
+	BYTE		N84     Cn4   v100
+	BYTE	W32
+	BYTE	W03
+	BYTE	W56
+	BYTE	W01
+	BYTE	W04
+// 028   ----------------------------------------
+	BYTE		        Dn4 
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_5_021
+// 030   ----------------------------------------
+	BYTE		N84     En4   v100
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE		        Cn4 
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	Alm_Phase_5_B1
+Alm_Phase_5_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+Alm_Phase_6:
+	BYTE		VOL     127*Alm_Phase_mvl/mxv
+	BYTE	KEYSH   Alm_Phase_key+0
+Alm_Phase_6_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   42
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W60
+	BYTE	W21
+	BYTE	W15
+// 016   ----------------------------------------
+	BYTE		N84     As3   v100
+	BYTE	W96
+// 017   ----------------------------------------
+Alm_Phase_6_017:
+	BYTE		N32     As3   v100
+	BYTE	W36
+	BYTE		        An4 
+	BYTE	W36
+	BYTE		N21     Fn4 
+	BYTE	W24
+	BYTE	PEND
+// 018   ----------------------------------------
+	BYTE		N84     Gn4 
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE		        En4 
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_6_017
+// 022   ----------------------------------------
+	BYTE		N84     Gn4   v100
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		        En4 
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_6_017
+// 026   ----------------------------------------
+	BYTE		N84     Gn4   v100
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE		        En4 
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE		N32   
+	BYTE	W36
+	BYTE		        Gn4 
+	BYTE	W36
+	BYTE		N21     Fn4 
+	BYTE	W24
+// 030   ----------------------------------------
+	BYTE		N84     Cn4 
+	BYTE		N84     En4 
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE		        En3 
+	BYTE		N84     Cn4 
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	Alm_Phase_6_B1
+Alm_Phase_6_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.9) ****************//
+
+Alm_Phase_7:
+	BYTE		VOL     127*Alm_Phase_mvl/mxv
+	BYTE	KEYSH   Alm_Phase_key+0
+Alm_Phase_7_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   47
+	BYTE		N10     An1   v100
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+// 001   ----------------------------------------
+Alm_Phase_7_001:
+	BYTE		N10     An1   v100
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_001
+// 008   ----------------------------------------
+Alm_Phase_7_008:
+	BYTE		N10     As1   v100
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_008
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_008
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_008
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_008
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_008
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_008
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_7_001
+	BYTE	GoTo
+	 POIN2	Alm_Phase_7_B1
+Alm_Phase_7_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.11) ****************//
+
+Alm_Phase_8:
+	BYTE		VOL     127*Alm_Phase_mvl/mxv
+	BYTE	KEYSH   Alm_Phase_key+0
+Alm_Phase_8_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   121
+	BYTE		N01     Cs2   v100
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE		N01   
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W72
+	BYTE		        Dn1 
+	BYTE	W24
+// 008   ----------------------------------------
+	BYTE		        Cs2 
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W72
+	BYTE		        Dn1 
+	BYTE	W24
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE		        Cs2 
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE		N01   
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE		N01   
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE		N01   
+	BYTE	W60
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE		N01     Cn2 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+// 016   ----------------------------------------
+Alm_Phase_8_016:
+	BYTE		N01     Cn1   v100
+	BYTE		N01     Fs1 
+	BYTE		N01     Cs2 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N01     Fs1 
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE	PEND
+// 017   ----------------------------------------
+Alm_Phase_8_017:
+	BYTE		N01     Cn1   v100
+	BYTE		N01     Fs1 
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N01     Fs1 
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE	PEND
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_016
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Alm_Phase_8_017
+// 031   ----------------------------------------
+	BYTE		N01     Cn1   v100
+	BYTE		N01     Dn1 
+	BYTE		N01     Fs1 
+	BYTE		N01     Cs2 
+	BYTE		N01     Ds2 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE		N01     Ds2 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		N44     Cs0   v120
+	BYTE		N01     Cn1   v100
+	BYTE		N01     Dn1 
+	BYTE		N01     Fs1 
+	BYTE		N01     Ds2 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE		N01     Ds2 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	Alm_Phase_8_B1
+Alm_Phase_8_B2:
+// 032   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+Alm_Phase:
+	BYTE	8	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	Alm_Phase_pri	// Priority
+	BYTE	Alm_Phase_rev	// Reverb.
+
+	POIN2	Alm_Phase_grp
+
+	POIN2	Alm_Phase_1
+	POIN2	Alm_Phase_2
+	POIN2	Alm_Phase_3
+	POIN2	Alm_Phase_4
+	POIN2	Alm_Phase_5
+	POIN2	Alm_Phase_6
+	POIN2	Alm_Phase_7
+	POIN2	Alm_Phase_8
+
+	

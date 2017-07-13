@@ -132,3 +132,6 @@ Grit_Mug:
 #incext PortraitFormatter "grit.png"
 setMugEntry(0x42, Grit_Mug, 4,4,4,2)
 
+Gwendy_Mug:
+#incext PortraitFormatter "Wendy.png"
+setMugEntry(0x39, Gwendy_Mug, 3,6,3,4)

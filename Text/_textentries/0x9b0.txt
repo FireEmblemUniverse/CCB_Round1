@@ -1,2 +1,2 @@
-Trample: +5 damage to[N]
-unmounted units.[X]
+Lunge: Swap places with the[N]
+opponent after combat.[X]

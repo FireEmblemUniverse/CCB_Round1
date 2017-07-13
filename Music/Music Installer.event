@@ -19,3 +19,15 @@ SongTable(0x1b,twobossnew, 0)
 
 SongTable(0x57,grit__s_theme, 1)
 #include "grit__s_theme.event"
+
+SongTable(0x58, Enemy_Phase_2_Celica, 1)
+#include "Enemy_Phase_2_Celica.event"
+
+SongTable(0x59, Enemy_Phase_1_Alm, 1)
+#include "Enemy_Phase_1_Alm.event"
+
+SongTable(0x5D, Celica_Phase, 1) //change to celica player phase 1
+#include "Celica_Phase.event"
+
+SongTable(0x5F, Alm_Phase, 1) //change to alm player phase 1
+#include "Alm_Phase.event"

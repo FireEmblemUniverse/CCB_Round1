@@ -1,2 +1,2 @@
-[MidLeft][LoadCurrent]
-This text is a placeholder![A][X]
+Swap: Allows unit to swap positions[N]
+with an adjacent ally.[X]

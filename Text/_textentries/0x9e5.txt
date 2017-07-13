@@ -1,2 +1,2 @@
-[MidLeft][LoadCurrent]
-This text is a placeholder![A][X]
+Reposition: Allows unit to pull an[N]
+adjacent ally to its opposite side.[X]
