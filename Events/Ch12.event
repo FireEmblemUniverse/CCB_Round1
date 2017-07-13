@@ -6,6 +6,11 @@
 EventPointerTable(0x37,ThisChapter)
 // EventPointerTable(0xd1, ThisChapter)
 
+EscapePointPointerTable(12, Ch12EscapePoint)
+Ch12EscapePoint:
+EscapePoint(28, 0, MoveRight)
+EscapePointEnd
+
 ThisChapter:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -70,11 +75,11 @@ ReinforcementEvent(HeroReinforcementUnit)
 ENDA
 
 BrigandReinforcementUnit:
-UNIT 0x80 Thief 0x00 Level(3, Enemy, 1) [0,7] 0x00 0x00 0x0 0x00 [SlimSword] BrigandAI
+UNIT 0x80 Thief 0x00 Level(3, Enemy, 1) [0,7] 0x02 0x00 0x0 0x00 [SlimSword, Lockpick] LootingThiefAI
 UNIT
 
 Brigand2ReinforcementUnit:
-UNIT 0x80 Thief 0x00 Level(3, Enemy, 1) [13,24] 0x00 0x00 0x0 0x00 [SlimSword] BrigandAI
+UNIT 0x80 Thief 0x00 Level(3, Enemy, 1) [13,24] 0x00 0x00 0x0 0x00 [SlimSword, Lockpick] LootingThiefAI
 UNIT
 
 CavalierReinforcementUnit:
@@ -132,9 +137,9 @@ UNIT Colm Mage Eirika Level(1, Ally, 0) [2,21] 0x00 0x00 0x0 0x00 [0x00] NoAI
 UNIT Garcia Cavalier Eirika Level(1, Ally, 0) [3,22] 0x00 0x00 0x0 0x00 [0x00] NoAI 
 UNIT Innes Thief Eirika Level(1, Ally, 0) [5,22] 0x00 0x00 0x0 0x00 [0x00] NoAI 
 UNIT Lute Troubadour Eirika Level(1, Ally, 0) [4,21] 0x00 0x00 0x0 0x00 [0x00] NoAI 
-UNIT Natasha Soldier Eirika Level(1, Ally, 0) [4,23] 0x00 0x00 0x0 0x00 [0x00] NoAI 
-UNIT Cormag Fighter Eirika Level(1, Ally, 0) [2,20] 0x00 0x00 0x0 0x00 [0x00] NoAI 
-UNIT Ephraim Shaman Eirika Level(1, Ally, 0) [6,24] 0x00 0x00 0x0 0x00 [0x00] NoAI
+// UNIT Natasha Soldier Eirika Level(1, Ally, 0) [4,23] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+// UNIT Cormag Fighter Eirika Level(1, Ally, 0) [2,20] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+// UNIT Ephraim Shaman Eirika Level(1, Ally, 0) [6,24] 0x00 0x00 0x0 0x00 [0x00] NoAI
 UNIT
 
 NotCain:
@@ -166,7 +171,7 @@ Badder:
 // UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [26,14] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
 UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [27,14] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
 UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [8,2] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
-UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [28,5] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [28,5] 0x02 0x00 0x0 0x00 [SilverAxe, ChestKey] AttackInRangeAI 
 UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [18,14] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
 UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [1,6] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
 // UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [20,21] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
@@ -185,7 +190,7 @@ UNIT 0x80 Cavalier Gheb Level(12, Enemy, 1) [14,24] 0x00 0x00 0x0 0x00 [SteelBla
 // UNIT 0x80 Cavalier Gheb Level(12, Enemy, 1) [26,24] 0x00 0x00 0x0 0x00 [SteelBlade, Spear] AttackInRangeAI 
 // UNIT 0x80 Cavalier Gheb Level(12, Enemy, 1) [11,15] 0x00 0x00 0x0 0x00 [SteelBlade, Spear] AttackInRangeAI 
 UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [19,20] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
-UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [0,15] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [0,15] 0x02 0x00 0x0 0x00 [SilverBow, ChestKey] AttackInRangeAI 
 // UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [8,16] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
 UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [1,0] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
 UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [22,16] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
@@ -195,7 +200,7 @@ UNIT 0x80 Warrior Gheb Level(1, Enemy, 1) [15,0] 0x00 0x00 0x0 0x00 [IronBow, St
 UNIT 0x80 Warrior Gheb Level(1, Enemy, 1) [15,16] 0x00 0x00 0x0 0x00 [IronBow, SteelAxe] AttackInRangeAI 
 UNIT 0x80 Warrior Gheb Level(1, Enemy, 1) [14,11] 0x00 0x00 0x0 0x00 [IronBow, SteelAxe] NeverMoveAI 
 UNIT 0x80 Warrior Gheb Level(1, Enemy, 1) [14,3] 0x00 0x00 0x0 0x00 [IronBow, SteelAxe] NeverMoveAI 
-UNIT 0x80 Mage Gheb Level(15, Enemy, 1) [3,10] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 Mage Gheb Level(15, Enemy, 1) [3,10] 0x02 0x00 0x0 0x00 [Elfire, ChestKey] AttackInRangeAI 
 // UNIT 0x80 Mage Gheb Level(15, Enemy, 1) [23,24] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI
 UNIT
 
