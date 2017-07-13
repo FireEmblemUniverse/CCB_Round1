@@ -28,19 +28,29 @@
         ORG $99e64
         POIN NewPrepScreenShopList
 
-        //change weather priority
-        // ORG 0x030366 
-        // BYTE 0xC0
-        // ORG 0x03066D
-        // BYTE 18
-        // ORG 0x59D960
-        // BYTE 0x18
-        // ORG 0x0309B0
-        // BYTE 0xA8
-        // ORG 0x03053C
-        // BYTE 0x18
-        // ORG 0x030B30
-        // BYTE 0xA8
+        //fix ballista anims
+        //archer f
+        ORG $8af172
+        BYTE 0x9f
+        ORG $8af176
+        BYTE 0x9f
+        ORG $8af17a
+        BYTE 0x9f
+        //sniper
+        ORG $8af18a
+        BYTE 0x9f
+        ORG $8af18e
+        BYTE 0x9f
+        ORG $8af192
+        BYTE 0x9f
+        //sniper f
+        ORG $8af1a2
+        BYTE 0x9f
+        ORG $8af1a6
+        BYTE 0x9f
+        ORG $8af1aa
+        BYTE 0x9f
+        
     POP
 
     NewPrepScreenShopList:
