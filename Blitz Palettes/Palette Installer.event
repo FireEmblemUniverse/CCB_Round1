@@ -115,3 +115,6 @@ Grit_Sniper:
 Gwendy_GreatKnight:
 	#incbin "./_palettes/Gwendy_GreatKnight.lzpal"
 
+Orson_Hero:
+	#incbin "./_palettes/Orson_Hero.lzpal"
+

@@ -26,6 +26,24 @@ LevelUpLoop:
 	tst r1, r2
 	bne NextLoop @ Branch if State & NotDeployed != 0 (NotDeployed bit is set)
 	
+	@check for trainee
+	ldr	r1,[r0,#0x04]	@load class data
+	cmp	r0,#0x00	@just in case there's no pointer
+	beq	NextLoop
+	ldr	r1,[r1,#0x28]	@load class abilities
+	mov	r2,#0x08
+	lsl	r2,#0x10
+	and	r1,r2
+	cmp	r1,r2
+	bne	Level20
+	
+	@ r1 = Unit level
+	ldrb r1, [r0, #0x08]
+
+	cmp	r1, #10
+	bge NextLoop
+	
+	Level20:
 	@ r1 = Unit level
 	ldrb r1, [r0, #0x08]
 
