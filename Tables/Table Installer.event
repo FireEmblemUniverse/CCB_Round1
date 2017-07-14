@@ -50,6 +50,10 @@
 
 #include "FE8 Nightmare modules\Quote editors\Death Quote Editor.event"
 
+#include "FE8 Nightmare modules\Summon editors\Summon character editor.event"
+
+#include "FE8 Nightmare modules\Summon editors\Summon class editor.event"
+
 #include "FE8 Nightmare modules\World Map Editors\Path Connections Editor.event"
 
 #include "FE8 Nightmare modules\World Map Editors\World map locations.event"

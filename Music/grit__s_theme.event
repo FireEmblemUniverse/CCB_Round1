@@ -386,7 +386,7 @@ grit__s_theme_2:
 		BYTE 		BENDR   6
 grit__s_theme_2_B1:
 // 000   ----------------------------------------
-	BYTE		VOICE   24
+	BYTE		VOICE   46
 	BYTE		VOL     110*grit__s_theme_mvl/mxv
 	BYTE		PAN     c_v+23
 	BYTE		N12     Bn2   v127
@@ -1604,7 +1604,7 @@ grit__s_theme_4:
 		BYTE 		BENDR   6
 grit__s_theme_4_B1:
 // 000   ----------------------------------------
-	BYTE		VOICE   24
+	BYTE		VOICE   46
 	BYTE		VOL     75*grit__s_theme_mvl/mxv
 	BYTE		PAN     c_v-25
 	BYTE	W06
@@ -2204,10 +2204,10 @@ grit__s_theme_4_B2:
 
 grit__s_theme_5:
 	BYTE	KEYSH   grit__s_theme_key+0
-		BYTE 		BENDR   6
+		BYTE 		BENDR   2
 grit__s_theme_5_B1:
 // 000   ----------------------------------------
-	BYTE		VOICE   21
+	BYTE		VOICE   20
 	BYTE		VOL     70*grit__s_theme_mvl/mxv
 	BYTE		PAN     c_v-48
 	BYTE		VOL     70*grit__s_theme_mvl/mxv
@@ -2956,7 +2956,7 @@ grit__s_theme_7:
 		BYTE 		BENDR   6
 grit__s_theme_7_B1:
 // 000   ----------------------------------------
-	BYTE		VOICE   21
+	BYTE		VOICE   20
 	BYTE		VOL     100*grit__s_theme_mvl/mxv
 	BYTE		PAN     c_v+47
 	BYTE	W96
@@ -3220,7 +3220,7 @@ grit__s_theme_8:
 		BYTE 		BENDR   6
 grit__s_theme_8_B1:
 // 000   ----------------------------------------
-	BYTE		VOICE   29
+	BYTE		VOICE   6
 	BYTE	W96
 // 001   ----------------------------------------
 	BYTE	W96

@@ -236,3 +236,21 @@ from spawning.[X]
 ##DVText_FreezeDebuff
 Freeze and debuff[N]
 all enemies.[X]
+
+##FinalChapterIntro
+[MidLeft][LoadVirginia]
+This is it. Our final battle![AN]
+You're one of us, Mark, and[N]
+no 'destiny' can change that.[AN]
+Now let's kill this dastard[N]
+and be done with it![A][X]
+
+##DemonKingDedText
+[MidLeft][LoadVirginia]
+The Demon King has fallen![AN]
+His reign of terror has[N]
+come to an end at last.[AN]
+My family is avenged;[N]
+my country, restored.[AN]
+This land shall once[N]
+again know peace.[A][X]

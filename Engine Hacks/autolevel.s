@@ -12,30 +12,42 @@
 
 @ Arguments: r0 = Unit Struct To Autolevel
 AutolevelOneLevel:
-    push {r4, lr}
-    
-    add sp, #-0x80
+	push {r4, lr}
+	add sp, #-0x80
 
-    mov r4, r0
-    
-    mov r1, r4
-    mov r0, sp
-    _blh CopyUnitToBattleStruct
+	mov r4, r0
+	
+	ldrb r1, [r4, #0x09]
+	
+	cmp r1, #0xFF
+	beq End
 
-    mov r0, sp
-    ldrb r1, [r0,#0x09]
-    add  r1, #100
-    strb r1, [r0,#0x09]
-    _blh CheckForLevelUp
+	mov r1, r4
+	mov r0, sp
+	_blh CopyUnitToBattleStruct
 
-    mov r0, r4
-    mov r1, sp
-    _blh SaveCharFromBattle
+	@ r0 = sp = temporary battle struct
+	mov r0, sp
+	
+	@ Set exp gained to 0
+	mov r1, r0
+	add r1, #0x6E
+	mov r2, #0
+	strb r2, [r1]
+	
+	ldrb r1, [r0, #0x09]
+	add  r1, #100
+	strb r1, [r0, #0x09]
+	
+	_blh CheckForLevelUp
 
-    add sp, #0x80
+	mov r0, r4
+	mov r1, sp
+	_blh SaveCharFromBattle
 
-    pop {r4}
+End:
+	add sp, #0x80
+	pop {r4}
 
-    pop {r1}
-    bx r1
-    
+	pop {r1}
+	bx r1

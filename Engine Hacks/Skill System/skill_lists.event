@@ -26,7 +26,7 @@ EirikaGreatLordSkillList:
 BYTE 255 BondID
 BYTE 255 AetherID
 // BYTE 255 SmiteID
-BYTE 5 RallySpectrumID
+BYTE 5 NihilID
 BYTE 15 LancebreakerID
 BYTE 00 00
 ALIGN 4

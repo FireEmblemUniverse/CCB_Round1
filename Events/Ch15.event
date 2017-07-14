@@ -58,8 +58,8 @@ Armory(Ch15Armoury,3,11)
 Vendor(Ch15Vendor,29,15)
 SecretShop(Ch15Secret,2,27)
 Village(0xA,Ch15Village,4,14)
-Village(0xB,Ch15TopHouse,4,14)
-Village(0xC,Ch15BottomHouse,4,14)
+House(0xB,Ch15TopHouse,21,1)
+House(0xC,Ch15BottomHouse,22,29)
 #ifdef __DEBUG__
 Seize(5,16)
 #endif
@@ -233,14 +233,14 @@ UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(1, Enemy, 1) [22,9] 0x2 0x0
 UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(1, Enemy, 1) [23,18] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
 UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(1, Enemy, 1) [21,18] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
 UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(1, Enemy, 1) [20,9] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
-UNIT Valter_Ch15_ Swordmaster Valter_Ch15_ Level(5, Enemy, 1) [31,17] 0x2 0x00 0x0 0x00 [KillingEdge, HeroCrest, SecretBook] NeverMoveAI 
+UNIT Valter_Ch15_ Sniper Valter_Ch15_ Level(5, Enemy, 1) [31,17] 0x2 0x00 0x0 0x00 [KillerBow, Longbow, SecretBook] NeverMoveAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(5, Enemy, 1) [32,2] 0x00 0x00 0x0 0x00 [Ballista] AttackInRangeAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(5, Enemy, 1) [35,17] 0x00 0x00 0x0 0x00 [Ballista] AttackInRangeAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(5, Enemy, 1) [27,28] 0x00 0x00 0x0 0x00 [Ballista] AttackInRangeAI 
 UNIT PegasusMessenger Mercenary Valter_Ch15_ Level(15, Enemy, 1) [27,22] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI 
 UNIT PegasusMessenger Mercenary Valter_Ch15_ Level(15, Enemy, 1) [23,9] 0x00 0x00 0x0 0x00 [Armourslayer] AttackInRangeAI 
 //UNIT PegasusMessenger Mercenary Valter_Ch15_ Level(15, Enemy, 1) [21,11] 0x00 0x00 0x0 0x00 [SteelSword, Vulnerary] AttackInRangeAI 
-UNIT PegasusMessenger Mercenary Valter_Ch15_ Level(15, Enemy, 1) [18,29] 0x2 0x00 0x0 0x00 [LightBrand] AttackInRangeAI
+UNIT PegasusMessenger General Valter_Ch15_ Level(15, Enemy, 1) [31,18] 0x2 0x00 0x0 0x00 [LightBrand] NeverMoveAI
 UNIT
 
 Enemies3:

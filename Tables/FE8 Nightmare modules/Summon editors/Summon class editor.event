@@ -1,0 +1,6 @@
+#define csvmacro025(arg000) "BYTE arg000 "
+
+PUSH
+ORG 0x7add0
+csvmacro025(0x51)
+POP

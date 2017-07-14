@@ -82,6 +82,7 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+CAM1 [11,38]
 ENUT 0x7 //stop gargoyles spawning from top until area event is triggered
 ENUT 0x9 //same for phantoms
 LOAD2 0x1 Units
@@ -92,15 +93,25 @@ LOAD1 0x1 Enemies1
 ENUN
 LOAD1 0x1 Enemies2
 ENUN
+// FADU 10
+MUSC 0x2f
+Text(0x34, FinalChapterIntro)
 GotoPrepScreen
 ENDA
 
 EndingScene:
+CALL DemonKingDefeated
 MNC4 0x0
-NoFade
+// NoFade
 ENDA
 
 // Events
+DemonKingDefeated:
+MUSC 0x33
+Text(0x34, DemonKingDedText)
+FADI 4
+ENDA
+
 SpawnGargoyles1:
   CHECK_TURNS //store current turn to slot c
   //Now get remainder mod 2

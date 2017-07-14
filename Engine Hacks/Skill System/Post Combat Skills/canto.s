@@ -29,13 +29,15 @@ beq	End
 
 
 @check if attacked this turn
-ldrb 	r0, [r6,#0x11]	@action taken this turn
-cmp	r0, #0x4	@check if staff or attack was used
-blo	End
-ldrb 	r0, [r6,#0x0C]	@allegiance byte of the current character taking action
-ldrb	r1, [r4,#0x0B]	@allegiance byte of the character we are checking
-cmp	r0, r1		@check if same character
-bne	End
+ldrb  r0, [r6,#0x11]  @action taken this turn
+cmp r0, #0x04 @check if staff or attack was used
+blo End
+cmp r0, #0x1E @check if found enemy in the fog
+beq End
+ldrb  r0, [r6,#0x0C]  @allegiance byte of the current character taking action
+ldrb  r1, [r4,#0x0B]  @allegiance byte of the character we are checking
+cmp r0, r1    @check if same character
+bne End
 
 @check if already cantoing
 ldr	r0, [r4,#0x0C]	@status bitfield
