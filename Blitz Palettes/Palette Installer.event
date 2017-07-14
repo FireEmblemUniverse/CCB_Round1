@@ -88,3 +88,30 @@ Roshea_Cav:
 Roshea_Paladin:
 	#incbin "./_palettes/Roshea_Paladin.lzpal"
 
+Roshea_GK:
+	#incbin "./_palettes/Roshea_GK.lzpal"
+
+Edge_Merc:
+	#incbin "./_palettes/Edge_Merc.lzpal"
+
+Edge_Hero:
+	#incbin "./_palettes/Edge_Hero.lzpal"
+
+Edge_Ranger:
+	#incbin "./_palettes/Edge_Ranger.lzpal"
+
+Samson_Sniper:
+	#incbin "./_palettes/Samson_Sniper.lzpal"
+
+Tye_Knight:
+	#incbin "./_palettes/Tye_Knight.lzpal"
+
+Tye_General:
+	#incbin "./_palettes/Tye_General.lzpal"
+
+Grit_Sniper:
+	#incbin "./_palettes/Grit_Sniper.lzpal"
+
+Gwendy_GreatKnight:
+	#incbin "./_palettes/Gwendy_GreatKnight.lzpal"
+
