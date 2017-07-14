@@ -135,3 +135,11 @@ setMugEntry(0x42, Grit_Mug, 4,4,4,2)
 Gwendy_Mug:
 #incext PortraitFormatter "Wendy.png"
 setMugEntry(0x39, Gwendy_Mug, 3,6,3,4)
+
+AnnaRogue_Mug:
+#incext PortraitFormatter "fe6_anna.png"
+setMugEntry(0x56, AnnaRogue_Mug, 2,5,3,3)
+
+Anna_Mug:
+#incext PortraitFormatter "fe8_anna.png"
+setMugEntry(0x64, Anna_Mug, 2,6,3,4)

@@ -16,3 +16,75 @@ Dorkass_Hero:
 Dorkass_Warrior:
 	#incbin "./_palettes/Dorkass_Warrior.lzpal"
 
+Bartre_Fighter:
+	#incbin "./_palettes/Bartre_Fighter.lzpal"
+
+Bartre_Hero:
+	#incbin "./_palettes/Bartre_Hero.lzpal"
+
+Bartre_Warrior:
+	#incbin "./_palettes/Bartre_Warrior.lzpal"
+
+Leeroy_Paladin:
+	#incbin "./_palettes/Leeroy_Paladin.lzpal"
+
+Anna_Myrm:
+	#incbin "./_palettes/Anna_Myrm.lzpal"
+
+Anna_SM:
+	#incbin "./_palettes/Anna_SM.lzpal"
+
+Anna_Ass:
+	#incbin "./_palettes/Anna_Ass.lzpal"
+
+Bede_Priest:
+	#incbin "./_palettes/Bede_Priest.lzpal"
+
+Bede_Bishop:
+	#incbin "./_palettes/Bede_Bishop.lzpal"
+
+Bede_Sage:
+	#incbin "./_palettes/Bede_Sage.lzpal"
+
+Innes_Archer:
+	#incbin "./_palettes/Innes_Archer.lzpal"
+
+Innes_Sniper:
+	#incbin "./_palettes/Innes_Sniper.lzpal"
+
+Innes_Ranger:
+	#incbin "./_palettes/Innes_Ranger.lzpal"
+
+Not_Arch_Mage:
+	#incbin "./_palettes/Not_Arch_Mage.lzpal"
+
+Not_Arch_Sage:
+	#incbin "./_palettes/Not_Arch_Sage.lzpal"
+
+Not_Arch_MK:
+	#incbin "./_palettes/Not_Arch_MK.lzpal"
+
+Kirsten_PK:
+	#incbin "./_palettes/Kirsten_PK.lzpal"
+
+Kirsten_FK:
+	#incbin "./_palettes/Kirsten_FK.lzpal"
+
+Kirsten_WK:
+	#incbin "./_palettes/Kirsten_WK.lzpal"
+
+Rennac_Thief:
+	#incbin "./_palettes/Rennac_Thief.lzpal"
+
+Rennac_Assassin:
+	#incbin "./_palettes/Rennac_Assassin.lzpal"
+
+Rennac_Rogue:
+	#incbin "./_palettes/Rennac_Rogue.lzpal"
+
+Roshea_Cav:
+	#incbin "./_palettes/Roshea_Cav.lzpal"
+
+Roshea_Paladin:
+	#incbin "./_palettes/Roshea_Paladin.lzpal"
+

@@ -17,10 +17,10 @@
 //**************** Track 1 (Midi-Chn.1) ****************//
 
 Celica_Phase_1:
-	BYTE	KEYSH   Celica_Phase_key+0
+	BYTE	KEYSH   Celica_Phase_key+12
 // 000   ----------------------------------------
 	BYTE	TEMPO   160*Celica_Phase_tbs/2
-	BYTE		VOICE   104
+	BYTE		VOICE   51
 	BYTE	W54
 	BYTE		VOL     100*Celica_Phase_mvl/mxv
 	BYTE	W04

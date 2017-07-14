@@ -53,6 +53,7 @@ AFEV 0xB Stairs1 0x7
 AFEV 0xC Stairs2 0x8
 AFEV 0xD Stairs3 0x9
 AFEV 0xE Stairs4 0xA
+AFEV 0x0 UnitDied 0xF
 DefeatAll(EndingScene)
 END_MAIN
 
@@ -85,7 +86,22 @@ ENDA
 
 
 // Events
+
+DebuffASMC:
+#incbin "Stacking Debuff All Enemies.dmp"
+WORD DebuffTable
+
+UnitDied:
+//when a unit dies, their spirit debuffs every opponent
+VeinActivation
+ENUF 0xF //prepare for next unit death
+ASMC DebuffASMC|1
+NoFade
+ENDA
+
 GibItem:
+CAM1(Void)
+FlashCursor(Void,60)
 SETVAL 0x3 0x85
 _GIVEITEMTO 0x1
 ENDA

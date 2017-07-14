@@ -218,7 +218,7 @@ Enemy_Phase_1_Alm_1_B2:
 Enemy_Phase_1_Alm_2:
 	BYTE	KEYSH   Enemy_Phase_1_Alm_key+0
 // 000   ----------------------------------------
-	BYTE		VOICE   60
+	BYTE		VOICE   63
 	BYTE	W01
 	BYTE		VOL     105*Enemy_Phase_1_Alm_mvl/mxv
 	BYTE	W02
@@ -501,7 +501,7 @@ Enemy_Phase_1_Alm_2_B2:
 Enemy_Phase_1_Alm_3:
 	BYTE	KEYSH   Enemy_Phase_1_Alm_key+0
 // 000   ----------------------------------------
-	BYTE		VOICE   63
+	BYTE		VOICE   60
 	BYTE		VOL     109*Enemy_Phase_1_Alm_mvl/mxv
 	BYTE		N21     An1   v100
 	BYTE		N21     En2 

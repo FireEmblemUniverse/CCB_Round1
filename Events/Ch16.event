@@ -43,7 +43,7 @@ SHLI KillingEdge SteelBlade Lancereaver KillerLance Javelin Axereaver KillerAxe 
 ALIGN 4
 
 Venement:
-SHLI Vulnerary Heal Mend Fire Thunder Lightning Shine Flux
+SHLI Vulnerary Heal Mend Restore Fire Thunder Lightning Shine Flux
 ALIGN 4
 
 MiscBasedEvents:

@@ -4,7 +4,7 @@ PUSH
 #ifndef VeinDefinitions
     #define VeinDefinitions
     #define Vein_Map_Sprite_Number 0x67 //Use the one after Light Rune for now
-    #define DragonVeinSFXID 0x57
+    #define DragonVeinSFXID 0x92
     #define DragonVeinTrapID 0x6
     #define DragonVeinEffectTableOffset 0xF00000
     #define VeinEffect(id, event) "PUSH; ORG DragonVeinEffectTableOffset + (4 * id); POIN event; POP"
