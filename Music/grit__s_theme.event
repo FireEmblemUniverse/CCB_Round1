@@ -1107,8 +1107,8 @@ grit__s_theme_2_B2:
 //**************** Track 3 (Midi-Chn.3) ****************//
 
 grit__s_theme_3:
-	BYTE	KEYSH   grit__s_theme_key+0
-		BYTE 		BENDR   6
+	BYTE	KEYSH   grit__s_theme_key+12
+		BYTE 		BENDR   2
 grit__s_theme_3_B1:
 // 000   ----------------------------------------
 	BYTE		VOICE   33

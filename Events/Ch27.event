@@ -86,11 +86,7 @@ ENUN
 ENDA
 
 RecruitMarf:
-LOAD1 0x1 MarfGroup
-ENUN
-SETVAL 0x1 11 
-TILECHANGE 0x0
-ENDA
+ReinforcementEvent(MarfGroup)
 
 
 // Manual Movement
