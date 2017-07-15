@@ -261,3 +261,8 @@ My family is avenged;[N]
 my country, restored.[AN]
 This land shall once[N]
 again know peace.[A][X]
+
+##ItsOverAnakin
+[MidLeft][LoadVirginia]
+It's over, Demon King![N]
+I have the high ground.[A][X]
