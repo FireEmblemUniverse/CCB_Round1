@@ -1,2 +1,2 @@
-Freeze and debuff[N]
-all enemies.[X]
+Stop gargoyles[N]
+from spawning.[X]

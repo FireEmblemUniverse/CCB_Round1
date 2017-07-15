@@ -104,6 +104,13 @@ CAM1(Void)
 FlashCursor(Void,60)
 SETVAL 0x3 0x85
 _GIVEITEMTO 0x1
+
+CenterTutorialTextBox
+TUTORIALTEXTBOXSTART
+TEXTSHOW Ch29IntroHelp
+TEXTEND
+REMA
+NoFade
 ENDA
 
 Stairs1:
