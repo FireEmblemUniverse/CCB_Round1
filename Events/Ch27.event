@@ -76,6 +76,11 @@ NoFade
 ENDA
 
 EndingScene:
+CAM1 Void
+FlashCursor(Void, 60)
+SETVAL 0x3 Audomra
+_GIVEITEMTO 0x1
+FADI 4
 MNCH 0x1E
 ENDA
 

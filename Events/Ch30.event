@@ -178,32 +178,32 @@ UNIT Mark Manakete_2 0x00 Level(20, Ally, 0) [10,37] 0 0 0 0 [HolyDragonStone] N
 UNIT
 
 Enemies1:
-UNIT Fomortiis DemonKing 0x00 Level(20, Enemy, 1) [11,6] 0x00 0x00 0x0 0x00 [DemonLight, Ravager, Nightmare] DemonKingAI 
-UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [2,40] 0x02 0x00 0x0 0x00 [Shadowshot, Stone, DoorKey] PursueWithoutHeedAI 
-UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [20,40] 0x02 0x00 0x0 0x00 [Shadowshot, Stone, DoorKey] PursueWithoutHeedAI 
-UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [1,4] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] ChaseOnceApproachedAI 
-UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] ChaseOnceApproachedAI 
-UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [2,21] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] ChaseOnceApproachedAI 
-UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [20,21] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] ChaseOnceApproachedAI 
+UNIT Fomortiis DemonKing 0x00 Level(20, Enemy, 0) [11,6] 0x00 0x00 0x0 0x00 [DemonLight, Ravager] DemonKingAI 
+UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [2,40] 0x02 0x00 0x0 0x00 [Shadowshot, Stone, DoorKey] AttackInRangeAI 
+UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [20,40] 0x02 0x00 0x0 0x00 [Shadowshot, Stone, DoorKey] AttackInRangeAI 
+UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [1,4] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] AttackInRangeAI 
+UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] AttackInRangeAI 
+UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [2,21] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] AttackInRangeAI 
+UNIT 0xb8 Gorgon Fomortiis Level(5, Enemy, 1) [20,21] 0x00 0x00 0x0 0x00 [Shadowshot, Stone] AttackInRangeAI 
 UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [5,28] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] AttackInRangeAI 
 UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [17,28] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] AttackInRangeAI 
-UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [10,24] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] GuardTileAI 
-UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [11,24] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] GuardTileAI 
-UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [12,24] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] GuardTileAI 
+UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [10,24] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] NeverMoveAI 
+UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [11,24] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] NeverMoveAI 
+UNIT 0xAE Cyclops Fomortiis Level(20, Enemy, 1) [12,24] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] NeverMoveAI 
 UNIT
 
 Enemies2:
-UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [2,23] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI 
-UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [20,23] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI 
-UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [10,11] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI 
-UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [11,11] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI 
-UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [12,11] 0x00 0x00 0x0 0x00 [WretchedAir] GuardTileAI 
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [2,23] 0x00 0x00 0x0 0x00 [WretchedAir] NeverMoveAI 
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [20,23] 0x00 0x00 0x0 0x00 [WretchedAir] NeverMoveAI 
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [10,11] 0x00 0x00 0x0 0x00 [WretchedAir] NeverMoveAI 
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [11,11] 0x00 0x00 0x0 0x00 [WretchedAir] AttackInRangeAI 
+UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [12,11] 0x00 0x00 0x0 0x00 [WretchedAir] NeverMoveAI 
 UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [5,32] 0x00 0x00 0x0 0x00 [WretchedAir] AttackInRangeAI 
 UNIT 0xAE DracoZombie Fomortiis Level(20, Enemy, 1) [17,32] 0x00 0x00 0x0 0x00 [WretchedAir] AttackInRangeAI 
-UNIT 0xAE Gwyllgi Fomortiis Level(20, Enemy, 1) [4,14] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
-UNIT 0xAE Gwyllgi Fomortiis Level(20, Enemy, 1) [18,14] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
-UNIT 0xAE Gwyllgi Fomortiis Level(20, Enemy, 1) [8,29] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
-UNIT 0xAE Gwyllgi Fomortiis Level(20, Enemy, 1) [14,29] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
+UNIT 0xb9 Gwyllgi Fomortiis Level(20, Enemy, 1) [4,14] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
+UNIT 0xb9 Gwyllgi Fomortiis Level(20, Enemy, 1) [18,14] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
+UNIT 0xb9 Gwyllgi Fomortiis Level(20, Enemy, 1) [8,29] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
+UNIT 0xb9 Gwyllgi Fomortiis Level(20, Enemy, 1) [14,29] 0x00 0x00 0x0 0x00 [HellFang] PursueWithoutHeedAI 
 UNIT 0xAE Wight_Bow Fomortiis Level(20, Enemy, 1) [9,15] 0x00 0x00 0x0 0x00 [SilverBow] ChaseOnceApproachedAI 
 UNIT 0xAE Wight_Bow Fomortiis Level(20, Enemy, 1) [13,15] 0x00 0x00 0x0 0x00 [SilverBow] ChaseOnceApproachedAI 
 UNIT 0xAE Wight_Bow Fomortiis Level(20, Enemy, 1) [20,26] 0x00 0x00 0x0 0x00 [SilverBow] ChaseOnceApproachedAI 

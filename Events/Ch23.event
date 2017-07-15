@@ -125,6 +125,10 @@ ENDA
 EndingScene:
 //Text to be added later
 
+CAM1 Void
+FlashCursor(Void, 60)
+SETVAL 0x3 Vidofnir
+_GIVEITEMTO 0x1
 MNCH 24
 ENDA
 

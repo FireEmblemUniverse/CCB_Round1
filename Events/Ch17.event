@@ -24,7 +24,7 @@ END_MAIN
 LocationBasedEvents:
 Seize(9,2)
 Chest(DoorKey,15,8)
-CHES 8 Berserk [3,8] 0x14
+CHES 8 Nidhogg [3,8] 0x14
 Door(9,7)
 #ifdef __DEBUG__
 Seize(8,30)
