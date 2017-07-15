@@ -4,6 +4,8 @@ PUSH
   //Toggle Anims with L
     ORG $2caf2
     BL(ToggleAnim)
+    ORG $57bb9
+    BYTE 0xe0 //prevent demon king
 POP
 
 ALIGN 4

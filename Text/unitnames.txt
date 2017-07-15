@@ -28,8 +28,7 @@ You want a playable soldier?[X]
 Leeroy[X]
 
 ##Desc_Leeroy
-His father was also[N]
-named after a meme.[X]
+At least I have chicken.[X]
 
 ##Name_Bede
 Bede[X]
