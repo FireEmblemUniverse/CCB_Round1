@@ -74,6 +74,7 @@ WORD $00
 TrapData1:
 Vein(11,15,0,DVText_StopGargoyles)
 Vein(11,31,1,DVText_FreezeDebuff)
+Vein(11,22,1,DVText_FreezeDebuff)
 ENDTRAP
 ALIGN 4
 
