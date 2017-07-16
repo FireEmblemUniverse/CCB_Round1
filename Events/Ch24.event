@@ -97,6 +97,10 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
+CAM1 Void
+FlashCursor(Void,60)
+SVAL 3 Ivaldi
+GIVEITEMTO Void
 MNCH 0x3e
 ENDA
 

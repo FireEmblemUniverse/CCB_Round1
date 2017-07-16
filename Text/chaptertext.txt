@@ -266,3 +266,10 @@ again know peace.[A][X]
 [MidLeft][LoadVirginia]
 It's over, Demon King![N]
 I have the high ground.[A][X]
+
+##KagaMaeda
+[MidLeft][LoadFace][0x23][0x01]
+Ryuu ga Kaga teki wo kurau![A]
+[ClearFace]
+[MidLeft][LoadFace][0x48][0x01]
+Maeda no ken wo kurae![A][X]
