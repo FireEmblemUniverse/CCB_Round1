@@ -1,3 +1,2 @@
-[MidLeft][LoadVirginia]
-It's over, Demon King![N]
-I have the high ground.[A][X]
+Freeze and debuff[N]
+all enemies.[X]

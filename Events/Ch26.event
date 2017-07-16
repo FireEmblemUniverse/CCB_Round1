@@ -40,7 +40,7 @@ ENDA
 LocationBasedEvents:
 Village(0x8,VillageBerserk,11,8)
 Village(0x9,VillageWarp,2,16)
-Village(0x10,VillageSpeedwings,14,11)
+Village(0x10,VillageSpeedwings,19,13)
 Vendor(VendorList,8,2)
 Armory(ArmoryList,18,9)
 //Seize
@@ -58,15 +58,15 @@ SHLI Nosferatu Flux Luna Eclipse Thunder Fimbulvetr Lightning Shine Divine
 ALIGN 4
 
 VillageSpeedwings:
-VillageEventItem(0x967, Village, Speedwings) //Gives item to the active character (the one visiting)
+VillageEventItem(Ch26Village1, Village, Speedwings) //Gives item to the active character (the one visiting)
 ENUN //Just use these for good measure
 
 VillageWarp:
-VillageEventItem(0x967, Village, Warp) //Gives item to the active character (the one visiting)
+VillageEventItem(Ch26Village2, Village, Warp) //Gives item to the active character (the one visiting)
 ENUN //Just use these for good measure
 
 VillageBerserk:
-VillageEventItem(0x967, Village, Berserk) //Gives item to the active character (the one visiting)
+VillageEventItem(Ch26Village3, Village, Berserk) //Gives item to the active character (the one visiting)
 ENUN //Just use these for good measure
 
 BrigandReinforcement:

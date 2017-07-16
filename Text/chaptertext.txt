@@ -229,6 +229,21 @@ You'll want this for later![A][X]
 [MidLeft][LoadFace][0x5F][0x01]
 You'll want this for later![A][X]
 
+##Ch26Village1
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5F][0x01]
+You'll want this for later![A][X]
+
+##Ch26Village2
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5F][0x01]
+You'll want this for later![A][X]
+
+##Ch26Village3
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5F][0x01]
+You'll want this for later![A][X]
+
 ##Ch29IntroHelp
 The goddess of vengeance[N]
 lent your army her [Red]blessing[Red].[AN]
@@ -245,6 +260,12 @@ Freeze and debuff[N]
 all enemies.[X]
 
 ##FinalChapterIntro
+[MidRight][LoadFace][0x15][0x1]
+I am Mark.[AN]
+The Demon King killed my family[N]
+and took over my country.[AN]
+I will join you now.[AN]
+[ClearFace]
 [MidLeft][LoadVirginia]
 This is it. Our final battle![AN]
 You're one of us, Mark, and[N]

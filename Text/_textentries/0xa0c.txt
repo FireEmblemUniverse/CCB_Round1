@@ -1,2 +1,3 @@
-A girl with a familiar face.[N]
-Her love of money is quite strong.[X]
+[MidLeft][LoadVirginia]
+It's over, Demon King![N]
+I have the high ground.[A][X]

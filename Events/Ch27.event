@@ -37,11 +37,19 @@ END_MAIN
 
 LocationBasedEvents:
 Village(0x0,RecruitMarf,17,3)
+Vendor(VendList,13,18)
+Armory(ArmList, 17,27)
 Seize(3,21)
 #ifdef __DEBUG__
 Seize(11,27)
 #endif
 END_MAIN
+
+VendList:
+SHLI Mend Recover Restore Thunder Nosferatu Shine Elixir
+ArmList:
+SHLI HandAxe Javelin WindSword Longbow
+ALIGN 4
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
