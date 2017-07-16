@@ -44,6 +44,10 @@
 
 #include "FE8 Nightmare modules\Item editors\Stat Bonuses Editor.event"
 
+#include "FE8 Nightmare modules\Map sprite editor\Misc map sprite editor.event"
+
+#include "FE8 Nightmare modules\Map sprite editor\Standing map sprite editor.event"
+
 #include "FE8 Nightmare modules\Promotion\Promotion Branch Editor.event"
 
 #include "FE8 Nightmare modules\Quote editors\Boss Quote Editor.event"

@@ -1,1 +1,1 @@
-placeholder[X]
+Can handle the weight.[X]

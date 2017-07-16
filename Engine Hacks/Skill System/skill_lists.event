@@ -351,3 +351,9 @@ BYTE 255 ReliefID
 BYTE 255 AnathemaID
 BYTE 00 00
 ALIGN 4
+
+DoowileSkillList:
+BYTE 5 SavageBlowID
+BYTE 15 ColossusID
+BYTE 00 00
+ALIGN 4

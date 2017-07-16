@@ -8,10 +8,10 @@ PUSH
   SHORT $22d0
 
 //Break HP Cap for Players/NPCs (credit Solum)
-  ORG $181ee
-  SHORT $1c11
-  ORG $2bf4c
-  BYTE $7f
+  // ORG $181ee
+  // SHORT $1c11
+  // ORG $2bf4c
+  // BYTE $7f
 
 //skip hand axe wait for return
   ORG $514e

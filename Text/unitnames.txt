@@ -61,25 +61,26 @@ a proper bashin u cheeky bruv[X]
 Bob[X]
 
 ##Desc_Bob
-placeholder[X]
+thief person[X]
 
 ##Name_Roshea
 Roshea[X]
 
 ##Desc_Roshea
-placeholder[X]
+Deserted the Wolfguard to pursue[N]
+his dreams of being a dancer.[X]
 
 ##Name_Edge
 Edge[X]
 
 ##Desc_Edge
-placeholder[X]
+Can handle the weight.[X]
 
 ##Name_Samson
 Samson[X]
 
 ##Desc_Samson
-placeholder[X]
+Just generally confused.[X]
 
 ##Name_Arve
 Arve[X]
@@ -92,7 +93,8 @@ Not dark. E-L-D-E-R.[X]
 Tye[X]
 
 ##Desc_Tye
-placeholder[X]
+Archenemy of Tim and Tam.[N]
+Or so he keeps claiming.[X]
 
 ##Name_Celicia
 Celicia[X]
@@ -164,7 +166,7 @@ Hails from a distant land.[X]
 Doowile[X]
 
 ##Desc_Doowile
-placeholder[X]
+Consume thy enemy![X]
 
 ##Name_EvilFlorina
 Evil Florina[X]
@@ -176,13 +178,14 @@ uweeheehee[X]
 Jake[X]
 
 ##Desc_Jake
-placeholder[X]
+Anna's boyfriend.[N]
+Beat Leeroy at Monopoly.[X]
 
 ##Name_Tiki
 Tiki[X]
 
 ##Desc_Tiki
-placeholder[X]
+Pining for Mar-Mar.[X]
 
 ##Name_Mark
 Mark[X]
