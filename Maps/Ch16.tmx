@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="24" height="30" tilewidth="16" tileheight="16" nextobjectid="1">
- <properties>
- </properties>
  <tileset firstgid="1" name="FE8 - Fields - 01000203" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="Tilesets/FE8/01000203.png" trans="ffffff" width="512" height="512"/>
  </tileset>
  <layer name="Tile Layer 1" width="24" height="30">
   <properties>
-   <property name="Main" value=""/>
    <property name="Anims1" value="5"/>
    <property name="ChapterID" value="16"/>
+   <property name="Main" value=""/>
    <property name="MapID" value="0x49"/>
    <property name="ObjectType" value="1"/>
    <property name="PaletteID" value="2"/>
@@ -251,7 +249,7 @@
    <tile gid="100"/>
    <tile gid="721"/>
    <tile gid="163"/>
-   <tile gid="875"/>
+   <tile gid="99"/>
    <tile gid="166"/>
    <tile gid="165"/>
    <tile gid="163"/>
@@ -300,7 +298,7 @@
    <tile gid="937"/>
    <tile gid="938"/>
    <tile gid="99"/>
-   <tile gid="99"/>
+   <tile gid="165"/>
    <tile gid="208"/>
    <tile gid="263"/>
    <tile gid="200"/>
