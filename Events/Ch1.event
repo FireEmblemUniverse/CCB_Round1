@@ -91,7 +91,7 @@ UNIT
 
 EnemyUnits3:
 UNIT 0x80 Cavalier 0x00 Level(2, Enemy, 1) [7,12] 0x00 0x00 0x0 0x00 [IronLance,IronSword] NoAI 
-UNIT 0x80 Cavalier 0x00 Level(3, Enemy, 1) [3,10] 0x02 0x00 0x0 0x00 [Javelin,IronAxe,IronAxe,Elixir] NoAI 
+UNIT 0x80 Cavalier 0x00 Level(3, Enemy, 1) [3,10] 0x02 0x00 0x0 0x00 [Javelin,Elixir] NoAI 
 UNIT
 
 Traps1:
@@ -131,7 +131,7 @@ NoFade
 ENDA
 
 ArmoryItems:
-SHLI IronSword SteelSword Javelin HandAxe Javelin Javelin Javelin Javelin WindSword
+SHLI IronSword SteelSword Javelin HandAxe WindSword
 ALIGN 4
 
 ShopItems:

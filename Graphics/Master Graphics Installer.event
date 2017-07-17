@@ -66,3 +66,22 @@ ORG (0xc00008-0x20)+(0xc4*0x20)+(7*4)
 POIN TikiTransformPal
 
 POP
+
+
+//Stat screen
+PUSH
+ORG $88638
+POIN NewStatScreen
+ORG $88620
+POIN RemoveGlowy
+ORG $88640
+POIN NewStatScreenPal
+POP
+
+NewStatScreen:
+#incext Png2Dmp "StatScreen_B.png" --lz77
+NewStatScreenPal:
+#incext Png2Dmp "StatScreen_B.png" --palette-only
+
+RemoveGlowy:
+#incext Png2Dmp "RemoveGlowy.png" --lz77

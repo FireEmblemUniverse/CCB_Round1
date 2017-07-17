@@ -51,6 +51,12 @@ BL(Unset_Attack_Flag) //this is in masterhackinstaller
 
 ORG $18680
 jumpToHack(Unset_Attack_Flag_2)
+
+ORG $a2a8 //fix rescue helptext
+SHORT 0x2000
+ORG $a3b4
+WORD 0x202ac01
+
 POP
 
 Skill_Getter: //gets a list of skills

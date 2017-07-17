@@ -181,6 +181,15 @@ Florina_Summoner:
 Bjorn_Druid:
 	#incbin "./_palettes/Bjorn_Druid.lzpal"
 
+Jake_MK:
+	#incbin "./_palettes/Jake_MK.lzpal"
+
+Marf_SM:
+	#incbin "./_palettes/Marf_SM.lzpal"
+
+Mark_Manakete:
+	#incbin "./_palettes/Mark_Manakete.lzpal"
+
 Grit_Sniper:
 	#incbin "./_palettes/Grit_Sniper.lzpal"
 
