@@ -19,6 +19,10 @@ PUSH
   ORG $58c90
   POIN $596cc
 
+//allow Wyvern Knights to triangle attack
+  ORG $2b168
+  SHORT 0
+
 //12 Tracks/16 Sounds Fix (credit Agro/Brendor)
   ORG $2900
   SHORT $e00c
