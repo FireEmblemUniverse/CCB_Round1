@@ -103,11 +103,83 @@ Edge_Ranger:
 Samson_Sniper:
 	#incbin "./_palettes/Samson_Sniper.lzpal"
 
+Arve_Shaman:
+	#incbin "./_palettes/Arve_Shaman.lzpal"
+
+Arve_Druid:
+	#incbin "./_palettes/Arve_Druid.lzpal"
+
+Arve_Summoner:
+	#incbin "./_palettes/Arve_Summoner.lzpal"
+
 Tye_Knight:
 	#incbin "./_palettes/Tye_Knight.lzpal"
 
 Tye_General:
 	#incbin "./_palettes/Tye_General.lzpal"
+
+Tye_GK:
+	#incbin "./_palettes/Tye_GK.lzpal"
+
+Celicia_MK:
+	#incbin "./_palettes/Celicia_MK.lzpal"
+
+Eevster_Troubadour:
+	#incbin "./_palettes/Eevster_Troubadour.lzpal"
+
+Eevster_Valk:
+	#incbin "./_palettes/Eevster_Valk.lzpal"
+
+Eevster_MK:
+	#incbin "./_palettes/Eevster_MK.lzpal"
+
+Anna_WR:
+	#incbin "./_palettes/Anna_WR.lzpal"
+
+Anna_WL:
+	#incbin "./_palettes/Anna_WL.lzpal"
+
+Anna_WK:
+	#incbin "./_palettes/Anna_WK.lzpal"
+
+Nikita_GK:
+	#incbin "./_palettes/Nikita_GK.lzpal"
+
+Anna_Rogue:
+	#incbin "./_palettes/Anna_Rogue.lzpal"
+
+Sigurd_Paladin:
+	#incbin "./_palettes/Sigurd_Paladin.lzpal"
+
+Kaga_Dancer:
+	#incbin "./_palettes/Kaga_Dancer.lzpal"
+
+Delthea_Mage:
+	#incbin "./_palettes/Delthea_Mage.lzpal"
+
+Delthea_Priestess:
+	#incbin "./_palettes/Delthea_Priestess.lzpal"
+
+Delthea_MK:
+	#incbin "./_palettes/Delthea_MK.lzpal"
+
+Celica_Bishop:
+	#incbin "./_palettes/Celica_Bishop.lzpal"
+
+Eliwood_Entombed:
+	#incbin "./_palettes/Eliwood_Entombed.lzpal"
+
+Florina_Shaman:
+	#incbin "./_palettes/Florina_Shaman.lzpal"
+
+Florina_Druid:
+	#incbin "./_palettes/Florina_Druid.lzpal"
+
+Florina_Summoner:
+	#incbin "./_palettes/Florina_Summoner.lzpal"
+
+Bjorn_Druid:
+	#incbin "./_palettes/Bjorn_Druid.lzpal"
 
 Grit_Sniper:
 	#incbin "./_palettes/Grit_Sniper.lzpal"

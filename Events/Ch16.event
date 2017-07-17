@@ -21,6 +21,7 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0x0,LoadRecruit,1)
 TurnEventEnemy(0x0,SouthernAttack,10,2)
 TurnEventEnemy(0x0,Birds,13)
 END_MAIN
@@ -32,7 +33,7 @@ END_MAIN
 LocationBasedEvents:
 Armory(Armoire,18,29)
 Vendor(Venement,23,23)
-Seize(3,1)
+//Seize(3,1)//Now kill boss
 #ifdef __DEBUG__
 Seize(19,27)
 #endif
@@ -81,10 +82,10 @@ UNIT Orson_Boss Hero 0x0 Level(7, Enemy, 0) [3,1] DropItem 0x00 0x00 0x00 [Brave
 UNIT 0x80 Paladin Orson_Boss Level(3, Enemy, 1) [1,0] 0x00 0x00 0x00 0x00 [SilverLance, KillingEdge, 0x0, 0x0] [AttackIfClose, 0x3, 0x1, 0x0]
 UNIT 0x80 Sage Orson_Boss Level(4, Enemy, 1) [0,8] 0x00 0x00 0x00 0x00 [Fimbulvetr, Bolting, 0x0, 0x0] [0x1, 0x0, 0x0, 0x0]
 UNIT 0x80 Bishop Orson_Boss Level(2, Enemy, 1) [6,0] 0x00 0x00 0x00 0x00 [Divine, Purge, Physic, 0x0] [HealAllies, 0x3, 0x0, 0x0]
-UNIT 0x80 Knight Orson_Boss Level(25, Enemy, 1) [3,5] 0x00 0x00 0x00 0x00 [SilverLance, Spear, 0x0, 0x0] GuardTileAI
-UNIT 0x80 Knight Orson_Boss Level(25, Enemy, 1) [4,5] 0x00 0x00 0x00 0x00 [SilverLance, Spear, 0x0, 0x0] GuardTileAI
-UNIT 0x80 Sniper Orson_Boss Level(2, Enemy, 1) [3,4] 0x00 0x00 0x00 0x00 [SilverBow, 0x0, 0x0, 0x0] GuardTileAI
-UNIT 0x80 Druid Orson_Boss Level(3, Enemy, 1) [4,4] 0x00 0x00 0x00 0x00 [Luna, Nosferatu, 0x0, 0x0] GuardTileAI
+UNIT 0x80 Knight Orson_Boss Level(25, Enemy, 1) [3,5] 0x00 0x00 0x00 0x00 [SilverLance, Spear, 0x0, 0x0] NeverMoveAI
+UNIT 0x80 Knight Orson_Boss Level(25, Enemy, 1) [4,5] 0x00 0x00 0x00 0x00 [SilverLance, Spear, 0x0, 0x0] NeverMoveAI
+UNIT 0x80 Sniper Orson_Boss Level(2, Enemy, 1) [3,4] 0x00 0x00 0x00 0x00 [SilverBow, 0x0, 0x0, 0x0] NeverMoveAI
+UNIT 0x80 Druid Orson_Boss Level(3, Enemy, 1) [4,4] 0x00 0x00 0x00 0x00 [Luna, Nosferatu, 0x0, 0x0] NeverMoveAI
 UNIT 0x81 WyvernLord 0x0 Level(2, Enemy, 1) [2,12] 0x00 0x00 0x00 0x00 [SilverLance, 0x0, 0x0, 0x0] AttackInRangeAI
 UNIT 0x80 WyvernRider 0x81 Level(17,Enemy, 1) [11,0] 0x00 0x00 0x00 0x00 [SilverLance, 0x0, 0x0, 0x0] [MoveWithLeader, 0x03]
 UNIT 0x80 WyvernRider 0x81 Level(17,Enemy, 1) [14,0] 0x00 0x00 0x00 0x00 [SilverLance, 0x0, 0x0, 0x0] [MoveWithLeader, 0x03]
@@ -98,7 +99,7 @@ UNIT
 EnemyUnits2:
 UNIT 0x80 Mage Orson_Boss Level(18, Enemy, 1) [0,21] 0x00 0x00 0x00 0x00 [Bolting, Bolting, Elixir, 0x0] [0x03, 0x00, 0x00, 0x00]
 UNIT 0x80 Fighter Orson_Boss Level(17, Enemy, 1) [1,26] 0x00 0x00 0x00 0x00 [BattleAxe, Tomahawk, 0x0, 0x0] [0x00, 0x03, 0x08, 0x00]
-UNIT 0x80 Berserker Orson_Boss Level(1, Enemy, 1) [7,22] 0x00 0x00 0x00 0x00 [DevilAxe, 0x0, 0x0, 0x0] GuardTileAI
+UNIT 0x80 Berserker Orson_Boss Level(1, Enemy, 1) [7,22] 0x00 0x00 0x00 0x00 [DevilAxe, 0x0, 0x0, 0x0] NeverMoveAI
 UNIT 0x80 General Orson_Boss Level(2, Enemy, 1) [6,19] 0x00 0x00 0x00 0x00 [BraveLance, SilverSword, 0x0, 0x0] AttackInRangeAI
 UNIT 0x80 Mercenary Orson_Boss Level(18, Enemy, 1) [7,18] 0x00 0x00 0x00 0x00 [Armourslayer, Wyrmslayer, 0x0, 0x0] AttackInRangeAI
 UNIT 0x64 Rogue 0x0 Level(1, Enemy, 1) [0,25] DropItem 0x00 0x00 0x00 [SilverSword, EnergyRing, 0x0, 0x0] LootingThiefAI
@@ -161,11 +162,6 @@ LOAD1 0x1 EnemyUnits3
 ENUN
 LOAD2 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
-LOAD1 0x1 NewRecruits //Was thinking of a "pay-to-recruit" scenario as part of a house visit, but eh...effort
-ENUN
-CUMO [20,25]
-STAL 40
-CURE
 //Some recruitment text here...joins hoping to get paid, also because the monsters spook him
 //And warning main lord of reinforcements coming from the south at some point
 GotoPrepScreen
@@ -175,6 +171,13 @@ EndingScene:
 STAL 80
 MNCH 17
 ENDA
+
+LoadRecruit:
+LOAD1 0x1 NewRecruits //Was thinking of a "pay-to-recruit" scenario as part of a house visit, but eh...effort
+ENUN
+CUMO [20,25]
+STAL 40
+CURE
 
 SouthernAttack:
 LoadReinforcements(SouthReinforcers1)
