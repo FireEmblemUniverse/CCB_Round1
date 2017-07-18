@@ -1,3 +1,6 @@
+#define ClassAnimTable (0xc00008-0x20)
+
+#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
 
 PUSH
   ORG $AC188
@@ -85,3 +88,5 @@ NewStatScreenPal:
 
 RemoveGlowy:
 #incext Png2Dmp "RemoveGlowy.png" --lz77
+
+#include "LanceVoidPromo.event"

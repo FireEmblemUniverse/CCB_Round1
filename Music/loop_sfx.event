@@ -1,0 +1,52 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	loop_sfx_grp  voicegroup000
+	#define	loop_sfx_pri  0
+	#define	loop_sfx_rev  0
+	#define	loop_sfx_mvl  127
+	#define	loop_sfx_key  0
+	#define	loop_sfx_tbs  1
+	#define	loop_sfx_exg  0
+	#define	loop_sfx_cmp  1
+
+	// .rodata
+	//	loop_sfx
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+loop_sfx_1:
+	BYTE		VOL     127*loop_sfx_mvl/mxv
+	BYTE	KEYSH   loop_sfx_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   0
+	BYTE		TIE     Cn3   v064
+	BYTE	W96
+loop_sfx_1_B1:
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	loop_sfx_1_B1
+loop_sfx_1_B2:
+// 003   ----------------------------------------
+	BYTE	W06
+	BYTE		EOT     Cn3 
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+loop_sfx:
+	BYTE	1	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	loop_sfx_pri	// Priority
+	BYTE	loop_sfx_rev	// Reverb.
+
+	POIN2	loop_sfx_grp
+
+	POIN2	loop_sfx_1
+
+	

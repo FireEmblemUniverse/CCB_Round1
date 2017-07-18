@@ -1407,6 +1407,18 @@ TxtData0xa20:
 #incext ParseFile "_textentries\0xa20.txt"
 setText(0xa20,TxtData0xa20)
 
+TxtData0xa21:
+#incext ParseFile "_textentries\0xa21.txt"
+setText(0xa21,TxtData0xa21)
+
+TxtData0xa22:
+#incext ParseFile "_textentries\0xa22.txt"
+setText(0xa22,TxtData0xa22)
+
+TxtData0xa23:
+#incext ParseFile "_textentries\0xa23.txt"
+setText(0xa23,TxtData0xa23)
+
 TxtData0x237:
 #incext ParseFile "_textentries\0x237.txt"
 setText(0x237,TxtData0x237)

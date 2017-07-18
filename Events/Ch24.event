@@ -41,7 +41,7 @@ TurnEventPlayer(0x0,RecruitSpawn,12)
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEventBothWays(0x7,GetUnit,0x01,0x1E)
+CharacterEventBothWays(0x7,GetUnit,Void,EvilFlorina)
 END_MAIN
 
 LocationBasedEvents:
@@ -112,27 +112,37 @@ LeftVill:
 VillageEventItem(Ch24LeftVill, Village, Wyrmslayer)
 
 EventAfterExitingPrepScreen:
-LOAD1 0x1 NewAlly
-ENUN
-ENDA
+ReinforcementEvent(NewAlly)
 
 RecruitSpawn:
-LOAD1 0x1 Spawn_Scrubs
-ENUN
-ENDA
+ReinforcementEvent(Spawn_Scrubs)
 
 killtowns:
-LOAD1 0x1 some_bandits
-ENUN
-ENDA
+ReinforcementEvent(some_bandits)
 
 LoadPupils:
-LOAD1 0x1 Spawn_Pupils
-ENUN
-ENDA
+ReinforcementEvent(Spawn_Pupils)
 
 GetUnit:
-TurnAlly(0x1E)
+TEXTSTART
+TEXTSHOW Ch24RecruitEvilFlorina
+TEXTEND
+SVAL r7 True
+BEQ 0 rC r7
+  TEXTSHOW Ch24FlorinaNo
+  TEXTEND
+  REMA
+  ENUF 0x7
+  GOTO 1
+LABEL 0
+  TEXTSHOW Ch24FlorinaYes
+  TEXTEND
+  REMA
+  TurnAlly(0x1E)
+  SVAL 3 10000
+  GIVEITEMTOMAIN 0
+LABEL 1
+NoFade
 ENDA
 
 
@@ -208,7 +218,7 @@ UNIT 0x9A Pupil_3 0x00 Level(12, Enemy, 1) [0,2] 0x00 0x00 0x0 0x00 [Thunder] No
 UNIT
 
 NewAlly:
-UNIT 0x1E Shaman_F 0x00 Level(12, NPC, 0) [13,11] 0x00 0x00 0x0 0x00 [Nosferatu, Stone, GuidingRing, WhiteGem] AttackInRangeAI
+UNIT 0x1E Shaman_F 0x00 Level(10, NPC, 1) [13,11] 0x00 0x00 0x0 0x00 [Nosferatu, Stone, GuidingRing, Flux] AttackInRangeAI
 UNIT
 
 

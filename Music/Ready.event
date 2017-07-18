@@ -1,0 +1,14 @@
+Ready_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+Ready:
+WORD $01
+POIN Ready_map
+POIN Ready_data
+
+Ready_map:
+WORD $3c00
+POIN Ready_wav
+WORD $FF00FF
+
+Ready_wav:
+#incbin "bin/ready_loud.bin"

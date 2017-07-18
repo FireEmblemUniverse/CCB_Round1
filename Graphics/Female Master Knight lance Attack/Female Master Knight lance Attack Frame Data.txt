@@ -1,0 +1,234 @@
+/// - Mode 1
+C03
+C07
+1  p- St01.png
+4  p- Ata01.png
+C1D
+6  p- Ata02.png
+4  p- Ata03.png
+C1D
+6  p- Ata04.png
+4  p- Ata05.png
+17  p- Ata06.png
+5  p- Ata07.png
+4  p- Ata08.png
+4  p- Ata09.png
+4  p- Ata10.png
+20  p- Ata11.png
+4  p- Ata08.png
+4  p- Ata09.png
+4  p- Ata10.png
+20  p- Ata11.png
+C1C
+4  p- Ata12.png
+4  p- Ata13.png
+C38
+3  p- Ata14.png
+3  p- Ata15.png
+3  p- Ata16.png
+C04
+C24
+3  p- Ata17 Pierce01.png
+C1A
+C21
+3  p- Ata18 Pierce02.png
+5  p- Ata19 Pierce03.png
+1  p- Ata20 Pierce04.png
+C01
+C38
+3  p- Ata21.png
+2  p- Ata22.png
+3  p- Ata23.png
+C1C
+4  p- Ata24.png
+4  p- Ata25.png
+C1C
+5  p- Ata26.png
+C06
+5  p- Ata27.png
+1  p- St01.png
+C0D
+~~~
+/// - Mode 3
+C03
+C07
+1  p- St01.png
+4  p- Ata01.png
+C1D
+6  p- Ata02.png
+4  p- Ata03.png
+C1D
+6  p- Ata04.png
+4  p- Ata05.png
+17  p- Ata06.png
+3  p- Crit01.png
+C38
+3  p- Crit02.png
+3  p- Crit03.png
+3  p- Crit04.png
+3  p- Crit05.png
+C38
+3  p- Crit02.png
+3  p- Crit03.png
+3  p- Crit04.png
+3  p- Crit05.png
+C1C
+4  p- Ata12.png
+4  p- Ata13.png
+C38
+3  p- Ata14.png
+3  p- Ata15.png
+3  p- Ata16.png
+C04
+C24
+3  p- Ata17 Pierce01.png
+C1A
+C21
+3  p- Ata18 Pierce02.png
+5  p- Ata19 Pierce03.png
+1  p- Ata20 Pierce04.png
+C01
+C38
+3  p- Ata21.png
+2  p- Ata22.png
+3  p- Ata23.png
+C1C
+4  p- Ata24.png
+4  p- Ata25.png
+C1C
+5  p- Ata26.png
+C06
+5  p- Ata27.png
+1  p- St01.png
+C0D
+~~~
+/// - Mode 5
+C03
+C07
+1  p- St01.png
+2  p- Rng01.png
+2  p- Rng02.png
+15  p- Rng03.png
+C25
+C05
+2  p- Rng04.png
+15  p- Rng05.png
+C01
+C06
+3  p- Rng06.png
+1  p- St01.png
+C0D
+~~~
+/// - Mode 6
+C03
+C07
+1  p- St01.png
+2  p- Rng01.png
+2  p- Rng02.png
+15  p- Rng03.png
+C38
+2  p- Rng Crit01.png
+2  p- Rng Crit02.png
+2  p- Rng Crit03.png
+2  p- Rng Crit04.png
+C38
+2  p- Rng Crit01.png
+2  p- Rng Crit02.png
+2  p- Rng Crit03.png
+2  p- Rng Crit04.png
+C25
+C05
+2  p- Rng04.png
+15  p- Rng05.png
+C01
+C06
+3  p- Rng06.png
+1  p- St01.png
+C0D
+~~~
+/// - Mode 7
+C02
+1  p- St01.png
+2  p- Dod01.png
+2  p- Dod02.png
+1  p- Dod03.png
+C01
+2  p- Dod02.png
+2  p- Dod01.png
+1  p- St01.png
+C0D
+~~~
+/// - Mode 8
+C02
+1  p- St01.png
+2  p- Dod01.png
+2  p- Dod02.png
+1  p- Dod03.png
+C01
+2  p- Dod02.png
+2  p- Dod01.png
+1  p- St01.png
+C0D
+~~~
+/// - Mode 9
+1  p- St01.png
+C01
+~~~
+/// - Mode 10
+1  p- St01.png
+C01
+~~~
+/// - Mode 11
+1  p- St01.png
+C01
+~~~
+/// - Mode 12
+C03
+C07
+1  p- St01.png
+4  p- Ata01.png
+C1D
+6  p- Ata02.png
+4  p- Ata03.png
+C1D
+6  p- Ata04.png
+4  p- Ata05.png
+17  p- Ata06.png
+5  p- Ata07.png
+4  p- Ata08.png
+4  p- Ata09.png
+4  p- Ata10.png
+20  p- Ata11.png
+4  p- Ata08.png
+4  p- Ata09.png
+4  p- Ata10.png
+20  p- Ata11.png
+C1C
+4  p- Ata12.png
+4  p- Ata13.png
+C38
+3  p- Ata14.png
+3  p- Ata15.png
+3  p- Ata16.png
+C04
+C24
+3  p- Ata17 Miss01.png
+3  p- Ata18 Miss02.png
+5  p- Ata19 Miss03.png
+1  p- Ata20 Miss04.png
+C01
+C38
+3  p- Ata21.png
+2  p- Ata22.png
+3  p- Ata23.png
+C1C
+4  p- Ata24.png
+4  p- Ata25.png
+C1C
+5  p- Ata26.png
+C06
+5  p- Ata27.png
+1  p- St01.png
+C0D
+~~~
+/// - End of animation
