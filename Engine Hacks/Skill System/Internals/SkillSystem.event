@@ -52,10 +52,10 @@ BL(Unset_Attack_Flag) //this is in masterhackinstaller
 ORG $18680
 jumpToHack(Unset_Attack_Flag_2)
 
-ORG $a2a8 //fix rescue helptext
-SHORT 0x2000
-ORG $a3b4
-WORD 0x202ac01
+// ORG $a2a8 //fix rescue helptext
+// SHORT 0x2000
+// ORG $a3b4
+// WORD 0x202ac01
 
 POP
 
@@ -88,7 +88,7 @@ BYTE ElbowRoomID NaturalCoverID//terrain dependant
 BYTE QuickDrawID//when initiating attack
 BYTE StrongRiposteID PatienceID PursuitID//when under attack
 BYTE CounterID CounterMagicID//counter
-BYTE SureShotID IgnisID ColossusID ImpaleID PaviseID AegisID AstraID SolID LunaID AetherID AdeptID LethalityID//Astra and friends aka Stat(/2)% activation
+BYTE SureShotID IgnisID ColossusID ImpaleID PaviseID AegisID AstraID SolID LunaID AetherID AdeptID LethalityID BaneID//Astra and friends aka Stat(/2)% activation
 BYTE MaleficAuraID VoiceOfPeaceID IntimidateID AnathemaID//auras that affect the one that makes them
 BYTE LifetakerID GaleforceID DespoilID//after defeating enemy
 BYTE SavageBlowID//after combat, prevents activating but not effects if it was already activated

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="21" height="14" tilewidth="16" tileheight="16" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="21" height="14" tilewidth="16" tileheight="16" nextobjectid="1">
  <tileset firstgid="1" name="0e007210" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="Tilesets/FE8/0e007210.png" width="512" height="512"/>
+  <image source="EM8/GBA/Fire Emblem resources/Mapping/Tiledstuff/map-Tiled/Tilesets/FE8/0E007210.png" width="512" height="512"/>
  </tileset>
  <layer name="Tile Layer 1" width="21" height="14">
   <properties>
@@ -14,7 +14,7 @@
    <property name="TileConfig" value="0x10"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzFkk0OgjAQRqftRpEFt9DoQTR6DfUk4toroCdBw8aVV9CVf4fwI4bwWQvFhMTFS8O0vM50JlYiifyPi3X/UIscVclI0zkj0gcDkCC+BTvtdwc4k6k3MQjJmcI1BhOQIr4HhxpnATszclZxdryzXfsUjrsqmTXIY468F2BpPuNX/HvLfeBB61N/32uzgisGa3CiHDr47oIA9GgNjT9PZsM9bWmOIuP38b7dD1d/IlddPIMN++xz8gz+Mj91zrzWAp/LV3tbfXK+ZwUvbiezag==
+   eJyFkskNwjAQRb1cINAHCCSa4ACCNoBbuiD0EUgjgLjQRTixFcG3gpUfa5wcnsyMJ8/jwZlWKlc1piOO7cXqtG6PC8RziidGqbuumZoq/3DfWaVGYAxy5I/gZOL9Pf7uBDU3XZGBITnPcC3AEpyRv4BrxMm9s/NGzhjlvxd2hHdfwfHWNeuIk2e9Qd9bsLPNmie+fTkf+ND6NdW57HErO/dwZeAAZuTt4XcfJGBA69DKPYZeT2rl+7fNXAs+nqVzdvl4P6zl2HtT2zzLhG9Q+D8kj3T3knL8BsO7+bqSvOFMU2H+7m175sF5vkfvkd4mOwthX+pD6jvWJ7tKIfcDp1mY4Q==
   </data>
  </layer>
  <layer name="LeftVillage" width="21" height="14">
