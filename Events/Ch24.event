@@ -41,7 +41,7 @@ TurnEventPlayer(0x0,RecruitSpawn,12)
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEventBothWays(0x7,GetUnit,Void,EvilFlorina)
+CharacterEventBothWays(0x9,GetUnit,Void,EvilFlorina)
 END_MAIN
 
 LocationBasedEvents:
