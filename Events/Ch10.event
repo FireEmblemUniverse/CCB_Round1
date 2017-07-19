@@ -78,7 +78,7 @@ LocationBasedEvents:
 SHOP 0x0 Armory [11,0] 0x16 //armory = 0x16
 SHOP 0x0 Shop [10,0] 0x17 //armory = 0x17
 House(0x12,house1,14,4)
-House(0x13,house1,14,0)
+House(0x13,house2,14,0)
 #ifdef __DEBUG__
 Seize(19,14)
 #endif
@@ -133,30 +133,10 @@ ENDA
 
 // Events
 house1:
-MUNO
-SetBackground(0x02)
-TEXTSTART
-TEXTSHOW (Ch10House1Text)
-TEXTEND
-ClearBackground
-MUSI
-SVAL 0x3 0x2710
-GIVEITEMTOMAIN 0x0
-EVBIT_T 0x7
-ENDA
+VillageEventMoney(Ch10House1Text, 0x2, 10000)
 
 house2:
-MUSI
-SetBackground(0x02)
-TEXTSTART
-TEXTSHOW (Ch10House2Text)
-TEXTEND
-ClearBackground
-MUNO
-SVAL 0x3 0x2710
-GIVEITEMTOMAIN 0x0
-EVBIT_T 0x7
-ENDA
+VillageEventItem(Ch10House2Text, 0x2, KnightCrest)
 
 SamsonRecruit:
 MUSS 0x0009 

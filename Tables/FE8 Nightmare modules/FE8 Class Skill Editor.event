@@ -5,8 +5,8 @@
 ALIGN 4
 ClassSkillTable:
 csvmacro000(0x0)
-csvmacro000(0x0)
-csvmacro000(0x0)
+csvmacro000(ShoveID)
+csvmacro000(ShoveID)
 csvmacro000(CantoID)
 csvmacro000(CantoID)
 csvmacro000(CantoID)

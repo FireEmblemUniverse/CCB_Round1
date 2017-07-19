@@ -1,22 +1,20 @@
 EphraimLordSkillList:
-// BYTE 1 OddRhythmID
-BYTE 10 BondID
-BYTE 20 AetherID
+BYTE 1 BondID
+BYTE 10 AetherID
 BYTE 00 00
 ALIGN 4
 
 EirikaLordSkillList:
-BYTE 255 ShoveID
-// BYTE 10 EvenRhythmID
+// BYTE 255 ShoveID //removed and made into class skill
+BYTE 1 BondID
 BYTE 10 RightfulKingID
-BYTE 20 BondID
+BYTE 20 BondID //for backwards compatibility
 BYTE 00 00
 ALIGN 4
 
 EphraimGreatLordSkillList:
 BYTE 255 BondID
 BYTE 255 AetherID //255 means "automatically given to prepromotes"
-// BYTE 255 SmiteID
 BYTE 5 RallySpectrumID
 BYTE 15 AxebreakerID
 BYTE 00 00
@@ -24,7 +22,7 @@ ALIGN 4
 
 EirikaGreatLordSkillList:
 BYTE 255 BondID
-BYTE 255 AetherID
+BYTE 255 RightfulKingID
 // BYTE 255 SmiteID
 BYTE 5 NihilID
 BYTE 15 LancebreakerID
@@ -60,20 +58,20 @@ BYTE 00 00
 ALIGN 4
 
 ThiefSkillList:
-BYTE 15 AcrobatID
 BYTE 1 DespoilID
+BYTE 10 AcrobatID
 BYTE 00 00
 ALIGN 4
 
 MercenarySkillList:
 BYTE 1 RallyStrID
-BYTE 10 SealSpdID
+BYTE 10 SpurSpdID
 BYTE 00 00
 ALIGN 4
 
 HeroSkillList:
 BYTE 255 RallyStrID
-BYTE 255 SealSpdID
+BYTE 255 SpurSpdID
 BYTE 5 SolID
 BYTE 15 AxebreakerID
 BYTE 00 00
@@ -94,8 +92,8 @@ BYTE 00 00
 ALIGN 4
 
 AssassinSkillList:
-BYTE 255 AcrobatID
 BYTE 255 DespoilID
+BYTE 255 AcrobatID
 BYTE 5 LifetakerID
 BYTE 15 PassID
 BYTE 00 00
@@ -124,11 +122,13 @@ BYTE 00 00
 ALIGN 4
 
 WyvernRiderSkillList:
+BYTE 1 ReliefID
 BYTE 10 TantivyID
 BYTE 00 00
 ALIGN 4
 
 WyvernLordSkillList:
+BYTE 255 ReliefID
 BYTE 255 TantivyID
 BYTE 5 SavageBlowID
 BYTE 15 SwordbreakerID
@@ -136,6 +136,7 @@ BYTE 00 00
 ALIGN 4
 
 WyvernKnightSkillList:
+BYTE 255 ReliefID
 BYTE 255 TantivyID
 BYTE 5 RallyMovID
 BYTE 15 LancefaireID
@@ -167,6 +168,7 @@ ALIGN 4
 BishopSkillList:
 BYTE 255 MiracleID
 BYTE 255 LiveToServeID
+BYTE 5 SpurResID
 BYTE 15 CounterMagicID
 BYTE 00 00
 ALIGN 4
@@ -217,8 +219,10 @@ BYTE 00 00
 ALIGN 4
 
 FighterSkillList:
-BYTE 10 FieryBloodID
-BYTE 20 DesperationID
+BYTE 1 FieryBloodID
+BYTE 10 DesperationID
+BYTE 20 DesperationID //for backward compatibility
+BYTE 20 FieryBloodID //for backward compatibility
 BYTE 00 00
 ALIGN 4
 
@@ -231,12 +235,15 @@ BYTE 00 00
 ALIGN 4
 
 BrigandSkillList:
+BYTE 1 DespoilID
 BYTE 10 IntimidateID
 BYTE 00 00
 ALIGN 4
 
 PirateSkillList:
-BYTE 10 CamaraderieID
+BYTE 1 CamaraderieID
+BYTE 10 SealSklID
+BYTE 20 CamaraderieID
 BYTE 20 SealSklID
 BYTE 00 00
 ALIGN 4
@@ -250,7 +257,9 @@ BYTE 00 00
 ALIGN 4
 
 MonkSkillList:
-BYTE 10 SpurSpdID
+BYTE 1 SpurSpdID
+BYTE 10 SealResID
+BYTE 20 SpurSpdID
 BYTE 20 SealResID
 BYTE 00 00
 ALIGN 4
@@ -262,7 +271,9 @@ BYTE 00 00
 ALIGN 4
 
 PegKnightSkillList:
-BYTE 10 DartingBlowID
+BYTE 1 DartingBlowID
+BYTE 10 RallySpdID
+BYTE 20 DartingBlowID
 BYTE 20 RallySpdID
 BYTE 00 00
 ALIGN 4
@@ -282,7 +293,9 @@ BYTE 00 00
 ALIGN 4
 
 TroubadourSkillList:
-BYTE 10 DemoiselleID
+BYTE 1 DemoiselleID
+BYTE 10 VoiceOfPeaceID
+BYTE 20 DemoiselleID
 BYTE 20 VoiceOfPeaceID
 BYTE 00 00
 ALIGN 4
@@ -304,15 +317,18 @@ ALIGN 4
 
 SoldierSkillList:
 BYTE 255 RepositionID
-BYTE 10 CamaraderieID
+BYTE 1 CamaraderieID
+BYTE 10 RallyStrID
+BYTE 20 CamaraderieID
 BYTE 20 RallyStrID
 BYTE 00 00
 ALIGN 4
 
 NecromancerSkillList:
 BYTE 255 MaleficAuraID
-BYTE 10 AnathemaID
-BYTE 20 TomefaireID
+BYTE 255 SpurDefID
+BYTE 5 AnathemaID
+BYTE 15 TomefaireID
 BYTE 00 00
 ALIGN 4
 
@@ -337,6 +353,7 @@ BYTE 10  ParagonID
 // BYTE 10 AxebreakerID
 BYTE 00 00
 ALIGN 4
+
 ManaketeMSkillList:
 BYTE 01 MiracleID
 BYTE 05 OddRhythmID
