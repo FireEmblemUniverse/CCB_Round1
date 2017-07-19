@@ -164,6 +164,11 @@ POP
   #incbin "winbutton.dmp"
   POIN Offscreen_Levelup
 
+  PUSH
+  ORG $1077c30
+  //final chapter sfx when selected
+  #include "install unit select sfx.event"
+  POP
 
 ALIGN 4
 

@@ -1,0 +1,782 @@
+#define CeliciaSoundID		0xD9
+ALIGN 2
+CeliciaSoundEffect:
+BYTE Celicia
+BYTE 0x00
+SHORT CeliciaSoundID
+
+CeliciaSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+CeliciaSound:
+WORD $01
+POIN CeliciaSound_map
+POIN CeliciaSound_data
+
+CeliciaSound_map:
+WORD $3c00
+POIN CeliciaSound_wav
+WORD $FF00FF
+
+CeliciaSound_wav:
+#incbin "bin/Celicia.bin"
+SongTable(CeliciaSoundID,CeliciaSound,7)
+
+#define CelicaSoundID		0xDA
+ALIGN 2
+CelicaSoundEffect:
+BYTE Celica
+BYTE 0x00
+SHORT CelicaSoundID
+
+CelicaSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+CelicaSound:
+WORD $01
+POIN CelicaSound_map
+POIN CelicaSound_data
+
+CelicaSound_map:
+WORD $3c00
+POIN CelicaSound_wav
+WORD $FF00FF
+
+CelicaSound_wav:
+#incbin "bin/Celica.bin"
+SongTable(CelicaSoundID,CelicaSound,7)
+
+#define AnnaSoundID		0xDB
+ALIGN 2
+AnnaSoundEffect:
+BYTE Anna
+BYTE 0x00
+SHORT AnnaSoundID
+
+AnnaSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+AnnaSound:
+WORD $01
+POIN AnnaSound_map
+POIN AnnaSound_data
+
+AnnaSound_map:
+WORD $3c00
+POIN AnnaSound_wav
+WORD $FF00FF
+
+AnnaSound_wav:
+#incbin "bin/Anna.bin"
+SongTable(AnnaSoundID,AnnaSound,7)
+
+#define AnnaRogueSoundID		0xDF
+ALIGN 2
+AnnaRogueSoundEffect:
+BYTE AnnaRogue
+BYTE 0x00
+SHORT AnnaRogueSoundID
+
+AnnaRogueSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+AnnaRogueSound:
+WORD $01
+POIN AnnaRogueSound_map
+POIN AnnaRogueSound_data
+
+AnnaRogueSound_map:
+WORD $3c00
+POIN AnnaRogueSound_wav
+WORD $FF00FF
+
+AnnaRogueSound_wav:
+#incbin "bin/AnnaRogue.bin"
+SongTable(AnnaRogueSoundID,AnnaRogueSound,7)
+
+
+#define AnnaWyvSoundID		0xE0
+ALIGN 2
+AnnaWyvSoundEffect:
+BYTE AnnaWyv
+BYTE 0x00
+SHORT AnnaWyvSoundID
+
+AnnaWyvSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+AnnaWyvSound:
+WORD $01
+POIN AnnaWyvSound_map
+POIN AnnaWyvSound_data
+
+AnnaWyvSound_map:
+WORD $3c00
+POIN AnnaWyvSound_wav
+WORD $FF00FF
+
+AnnaWyvSound_wav:
+#incbin "bin/AnnaWyv.bin"
+SongTable(AnnaWyvSoundID,AnnaWyvSound,7)
+
+#define DootSoundID		0xE1
+ALIGN 2
+DootSoundEffect:
+BYTE Doot
+BYTE 0x00
+SHORT DootSoundID
+
+DootSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+DootSound:
+WORD $01
+POIN DootSound_map
+POIN DootSound_data
+
+DootSound_map:
+WORD $3c00
+POIN DootSound_wav
+WORD $FF00FF
+
+DootSound_wav:
+#incbin "bin/Doot.bin"
+SongTable(DootSoundID,DootSound,7)
+
+#define DoowileSoundID		0xE3
+ALIGN 2
+DoowileSoundEffect:
+BYTE Doowile
+BYTE 0x00
+SHORT DoowileSoundID
+
+DoowileSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+DoowileSound:
+WORD $01
+POIN DoowileSound_map
+POIN DoowileSound_data
+
+DoowileSound_map:
+WORD $3c00
+POIN DoowileSound_wav
+WORD $FF00FF
+
+DoowileSound_wav:
+#incbin "bin/Doowile.bin"
+SongTable(DoowileSoundID,DoowileSound,7)
+
+#define EdgeSoundID		0xE4
+ALIGN 2
+EdgeSoundEffect:
+BYTE Edge
+BYTE 0x00
+SHORT EdgeSoundID
+
+EdgeSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+EdgeSound:
+WORD $01
+POIN EdgeSound_map
+POIN EdgeSound_data
+
+EdgeSound_map:
+WORD $3c00
+POIN EdgeSound_wav
+WORD $FF00FF
+
+EdgeSound_wav:
+#incbin "bin/Edge.bin"
+SongTable(EdgeSoundID,EdgeSound,7)
+
+#define EvilFlorinaSoundID		0xE5
+ALIGN 2
+EvilFlorinaSoundEffect:
+BYTE EvilFlorina
+BYTE 0x00
+SHORT EvilFlorinaSoundID
+
+EvilFlorinaSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+EvilFlorinaSound:
+WORD $01
+POIN EvilFlorinaSound_map
+POIN EvilFlorinaSound_data
+
+EvilFlorinaSound_map:
+WORD $3c00
+POIN EvilFlorinaSound_wav
+WORD $FF00FF
+
+EvilFlorinaSound_wav:
+#incbin "bin/EvilFlorina.bin"
+SongTable(EvilFlorinaSoundID,EvilFlorinaSound,7)
+
+#define KagaSoundID		0xEC
+ALIGN 2
+KagaSoundEffect:
+BYTE Kaga
+BYTE 0x00
+SHORT KagaSoundID
+
+KagaSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+KagaSound:
+WORD $01
+POIN KagaSound_map
+POIN KagaSound_data
+
+KagaSound_map:
+WORD $3c00
+POIN KagaSound_wav
+WORD $FF00FF
+
+KagaSound_wav:
+#incbin "bin/Kaga.bin"
+SongTable(KagaSoundID,KagaSound,7)
+
+#define LeeroySoundID		0xED
+ALIGN 2
+LeeroySoundEffect:
+BYTE Leeroy
+BYTE 0x00
+SHORT LeeroySoundID
+
+LeeroySound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+LeeroySound:
+WORD $01
+POIN LeeroySound_map
+POIN LeeroySound_data
+
+LeeroySound_map:
+WORD $3c00
+POIN LeeroySound_wav
+WORD $FF00FF
+
+LeeroySound_wav:
+#incbin "bin/Leeroy.bin"
+SongTable(LeeroySoundID,LeeroySound,7)
+
+#define MarfSoundID		0xEE
+ALIGN 2
+MarfSoundEffect:
+BYTE Marf
+BYTE 0x00
+SHORT MarfSoundID
+
+MarfSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+MarfSound:
+WORD $01
+POIN MarfSound_map
+POIN MarfSound_data
+
+MarfSound_map:
+WORD $3c00
+POIN MarfSound_wav
+WORD $FF00FF
+
+MarfSound_wav:
+#incbin "bin/Marf.bin"
+SongTable(MarfSoundID,MarfSound,7)
+
+#define MarkSoundID		0xC0
+ALIGN 2
+MarkSoundEffect:
+BYTE Mark
+BYTE 0x00
+SHORT MarkSoundID
+
+MarkSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+MarkSound:
+WORD $01
+POIN MarkSound_map
+POIN MarkSound_data
+
+MarkSound_map:
+WORD $3c00
+POIN MarkSound_wav
+WORD $FF00FF
+
+MarkSound_wav:
+#incbin "bin/Mark.bin"
+SongTable(MarkSoundID,MarkSound,7)
+
+#define NotArchSoundID		0xC1
+ALIGN 2
+NotArchSoundEffect:
+BYTE NotArch
+BYTE 0x00
+SHORT NotArchSoundID
+
+NotArchSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+NotArchSound:
+WORD $01
+POIN NotArchSound_map
+POIN NotArchSound_data
+
+NotArchSound_map:
+WORD $3c00
+POIN NotArchSound_wav
+WORD $FF00FF
+
+NotArchSound_wav:
+#incbin "bin/NotArch.bin"
+SongTable(NotArchSoundID,NotArchSound,7)
+
+#define TamSoundID		0xC2
+ALIGN 2
+TamSoundEffect:
+BYTE Tam
+BYTE 0x00
+SHORT TamSoundID
+
+TamSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+TamSound:
+WORD $01
+POIN TamSound_map
+POIN TamSound_data
+
+TamSound_map:
+WORD $3c00
+POIN TamSound_wav
+WORD $FF00FF
+
+TamSound_wav:
+#incbin "bin/Tam.bin"
+SongTable(TamSoundID,TamSound,7)
+
+#define TimSoundID		0xC3
+ALIGN 2
+TimSoundEffect:
+BYTE Tim
+BYTE 0x00
+SHORT TimSoundID
+
+TimSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+TimSound:
+WORD $01
+POIN TimSound_map
+POIN TimSound_data
+
+TimSound_map:
+WORD $3c00
+POIN TimSound_wav
+WORD $FF00FF
+
+TimSound_wav:
+#incbin "bin/Tim.bin"
+SongTable(TimSoundID,TimSound,7)
+
+#define VoidSoundID		0xC4
+ALIGN 2
+VoidSoundEffect:
+BYTE Void
+BYTE 0x00
+SHORT VoidSoundID
+
+VoidSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+VoidSound:
+WORD $01
+POIN VoidSound_map
+POIN VoidSound_data
+
+VoidSound_map:
+WORD $3c00
+POIN VoidSound_wav
+WORD $FF00FF
+
+VoidSound_wav:
+#incbin "bin/Void.bin"
+SongTable(VoidSoundID,VoidSound,7)
+
+#define ArveSoundID		0xC5
+ALIGN 2
+ArveSoundEffect:
+BYTE Arve
+BYTE 0x00
+SHORT ArveSoundID
+
+ArveSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+ArveSound:
+WORD $01
+POIN ArveSound_map
+POIN ArveSound_data
+
+ArveSound_map:
+WORD $3c00
+POIN ArveSound_wav
+WORD $FF00FF
+
+ArveSound_wav:
+#incbin "bin/Arve.bin"
+SongTable(ArveSoundID,ArveSound,7)
+
+#define BedeSoundID		0xBB
+ALIGN 2
+BedeSoundEffect:
+BYTE Bede
+BYTE 0x00
+SHORT BedeSoundID
+
+BedeSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+BedeSound:
+WORD $01
+POIN BedeSound_map
+POIN BedeSound_data
+
+BedeSound_map:
+WORD $3c00
+POIN BedeSound_wav
+WORD $FF00FF
+
+BedeSound_wav:
+#incbin "bin/Bede.bin"
+SongTable(BedeSoundID,BedeSound,7)
+
+#define BjoernSoundID		0xB2
+ALIGN 2
+BjoernSoundEffect:
+BYTE Bjoern
+BYTE 0x00
+SHORT BjoernSoundID
+
+BjoernSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+BjoernSound:
+WORD $01
+POIN BjoernSound_map
+POIN BjoernSound_data
+
+BjoernSound_map:
+WORD $3c00
+POIN BjoernSound_wav
+WORD $FF00FF
+
+BjoernSound_wav:
+#incbin "bin/Bjoern.bin"
+SongTable(BjoernSoundID,BjoernSound,7)
+
+#define BobSoundID		0xA8
+ALIGN 2
+BobSoundEffect:
+BYTE Bob
+BYTE 0x00
+SHORT BobSoundID
+
+BobSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+BobSound:
+WORD $01
+POIN BobSound_map
+POIN BobSound_data
+
+BobSound_map:
+WORD $3c00
+POIN BobSound_wav
+WORD $FF00FF
+
+BobSound_wav:
+#incbin "bin/Bob.bin"
+SongTable(BobSoundID,BobSound,7)
+
+#define EdgeworthSoundID		0xE8
+ALIGN 2
+EdgeworthSoundEffect:
+BYTE Edgeworth
+BYTE 0x00
+SHORT EdgeworthSoundID
+
+EdgeworthSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+EdgeworthSound:
+WORD $01
+POIN EdgeworthSound_map
+POIN EdgeworthSound_data
+
+EdgeworthSound_map:
+WORD $3c00
+POIN EdgeworthSound_wav
+WORD $FF00FF
+
+EdgeworthSound_wav:
+#incbin "bin/Edgeworth.bin"
+SongTable(EdgeworthSoundID,EdgeworthSound,7)
+
+#define EevsterSoundID		0xE9
+ALIGN 2
+EevsterSoundEffect:
+BYTE Eevster
+BYTE 0x00
+SHORT EevsterSoundID
+
+EevsterSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+EevsterSound:
+WORD $01
+POIN EevsterSound_map
+POIN EevsterSound_data
+
+EevsterSound_map:
+WORD $3c00
+POIN EevsterSound_wav
+WORD $FF00FF
+
+EevsterSound_wav:
+#incbin "bin/Eevster.bin"
+SongTable(EevsterSoundID,EevsterSound,7)
+
+#define JakeSoundID		0xF3
+ALIGN 2
+JakeSoundEffect:
+BYTE Jake
+BYTE 0x00
+SHORT JakeSoundID
+
+JakeSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+JakeSound:
+WORD $01
+POIN JakeSound_map
+POIN JakeSound_data
+
+JakeSound_map:
+WORD $3c00
+POIN JakeSound_wav
+WORD $FF00FF
+
+JakeSound_wav:
+#incbin "bin/Jake.bin"
+SongTable(JakeSoundID,JakeSound,7)
+
+#define JaySoundID		0x104
+ALIGN 2
+JaySoundEffect:
+BYTE Jay
+BYTE 0x00
+SHORT JaySoundID
+
+JaySound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+JaySound:
+WORD $01
+POIN JaySound_map
+POIN JaySound_data
+
+JaySound_map:
+WORD $3c00
+POIN JaySound_wav
+WORD $FF00FF
+
+JaySound_wav:
+#incbin "bin/Jay.bin"
+SongTable(JaySoundID,JaySound,7)
+
+#define JeromeSoundID		0x105
+ALIGN 2
+JeromeSoundEffect:
+BYTE Jerome
+BYTE 0x00
+SHORT JeromeSoundID
+
+JeromeSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+JeromeSound:
+WORD $01
+POIN JeromeSound_map
+POIN JeromeSound_data
+
+JeromeSound_map:
+WORD $3c00
+POIN JeromeSound_wav
+WORD $FF00FF
+
+JeromeSound_wav:
+#incbin "bin/Jerome.bin"
+SongTable(JeromeSoundID,JeromeSound,7)
+
+#define KirstenSoundID		0x106
+ALIGN 2
+KirstenSoundEffect:
+BYTE Kirsten
+BYTE 0x00
+SHORT KirstenSoundID
+
+KirstenSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+KirstenSound:
+WORD $01
+POIN KirstenSound_map
+POIN KirstenSound_data
+
+KirstenSound_map:
+WORD $3c00
+POIN KirstenSound_wav
+WORD $FF00FF
+
+KirstenSound_wav:
+#incbin "bin/Kirsten.bin"
+SongTable(KirstenSoundID,KirstenSound,7)
+
+#define NikitaSoundID		0x107
+ALIGN 2
+NikitaSoundEffect:
+BYTE Nikita
+BYTE 0x00
+SHORT NikitaSoundID
+
+NikitaSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+NikitaSound:
+WORD $01
+POIN NikitaSound_map
+POIN NikitaSound_data
+
+NikitaSound_map:
+WORD $3c00
+POIN NikitaSound_wav
+WORD $FF00FF
+
+NikitaSound_wav:
+#incbin "bin/Nikita.bin"
+SongTable(NikitaSoundID,NikitaSound,7)
+
+#define PrineSoundID		0x10b
+ALIGN 2
+PrineSoundEffect:
+BYTE Prine
+BYTE 0x00
+SHORT PrineSoundID
+
+PrineSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+PrineSound:
+WORD $01
+POIN PrineSound_map
+POIN PrineSound_data
+
+PrineSound_map:
+WORD $3c00
+POIN PrineSound_wav
+WORD $FF00FF
+
+PrineSound_wav:
+#incbin "bin/Prine.bin"
+SongTable(PrineSoundID,PrineSound,7)
+
+#define RosheaSoundID		0x10c
+ALIGN 2
+RosheaSoundEffect:
+BYTE Roshea
+BYTE 0x00
+SHORT RosheaSoundID
+
+RosheaSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+RosheaSound:
+WORD $01
+POIN RosheaSound_map
+POIN RosheaSound_data
+
+RosheaSound_map:
+WORD $3c00
+POIN RosheaSound_wav
+WORD $FF00FF
+
+RosheaSound_wav:
+#incbin "bin/Roshea.bin"
+SongTable(RosheaSoundID,RosheaSound,7)
+
+#define SamsonSoundID		0x115
+ALIGN 2
+SamsonSoundEffect:
+BYTE Samson
+BYTE 0x00
+SHORT SamsonSoundID
+
+SamsonSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+SamsonSound:
+WORD $01
+POIN SamsonSound_map
+POIN SamsonSound_data
+
+SamsonSound_map:
+WORD $3c00
+POIN SamsonSound_wav
+WORD $FF00FF
+
+SamsonSound_wav:
+#incbin "bin/Samson.bin"
+SongTable(SamsonSoundID,SamsonSound,7)
+
+#define TyeSoundID		0x116
+ALIGN 2
+TyeSoundEffect:
+BYTE Tye
+BYTE 0x00
+SHORT TyeSoundID
+
+TyeSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+TyeSound:
+WORD $01
+POIN TyeSound_map
+POIN TyeSound_data
+
+TyeSound_map:
+WORD $3c00
+POIN TyeSound_wav
+WORD $FF00FF
+
+TyeSound_wav:
+#incbin "bin/Tye.bin"
+SongTable(TyeSoundID,TyeSound,7)
+
+#define ZigludoSoundID		0x117
+ALIGN 2
+ZigludoSoundEffect:
+BYTE Zigludo
+BYTE 0x00
+SHORT ZigludoSoundID
+
+ZigludoSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+ZigludoSound:
+WORD $01
+POIN ZigludoSound_map
+POIN ZigludoSound_data
+
+ZigludoSound_map:
+WORD $3c00
+POIN ZigludoSound_wav
+WORD $FF00FF
+
+ZigludoSound_wav:
+#incbin "bin/Zigludo.bin"
+SongTable(ZigludoSoundID,ZigludoSound,7)
+
+#define TikiSoundID		0x118
+ALIGN 2
+TikiSoundEffect:
+BYTE Tiki
+BYTE 0x00
+SHORT TikiSoundID
+
+TikiSound_data:
+BYTE $BE $7F $BC $00 $BB $05 $BD $00 $E7 $3C $40 $98 $B1 $79 $83 $83
+TikiSound:
+WORD $01
+POIN TikiSound_map
+POIN TikiSound_data
+
+TikiSound_map:
+WORD $3c00
+POIN TikiSound_wav
+WORD $FF00FF
+
+TikiSound_wav:
+#incbin "bin/Tiki.bin"
+SongTable(TikiSoundID,TikiSound,7)
