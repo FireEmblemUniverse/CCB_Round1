@@ -8,6 +8,9 @@ Set health bar display[X]
 #was 'sick'
 Freeze[X]
 
+#0x3c9
+Freeze[X]
+
 #include "ChapterNames.txt"
 
 #0x3A LearnedSkillText

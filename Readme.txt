@@ -4,7 +4,6 @@ Get a clean rom called "FE8_clean.gba" and put it in the extracted folder.
 Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quick is enough.
 
 Credits:
-Credits:
 
 ~Chapters~
 
@@ -43,11 +42,18 @@ Ch30        End of All                Circles
 
 -mugs-
 Zmr56 for Bede, Tye and Jake
+L95 for Void, Celicia, Mark
+Coby for Celica
+Ross for Samson
+Alusq for Tim, Tam, Saara, Banana, Mr Bones, Björn, Roshea
+Wan for Arve
+Tera for Evil Florina and Doowile
+Klok for Edge
 
 
 -maps-
 Primefusion and Aurawolf for public maps
-Bishop Seva for Ch15 and 22 maps (not events)
+Bishop Seva for Ch15 and 21 maps (not events)
 Zmr56 for Ch2, 12 and 26
 
 Prologue    IT BEGINS                 Circles
@@ -84,6 +90,7 @@ Ch30        End of All                Circles
 
 -music-
 Alusq
+Ash
 
 -general tools and that-
 Nintenlord
@@ -102,3 +109,6 @@ so many
 Circles
 Seva
 Wulfos
+Glacoe
+Paterick
+Teraspark
