@@ -42,6 +42,7 @@ TurnBasedEvents:
 TurnEventPlayer(0xa, SpawnGargoyles1, 4, 10)
 TurnEventPlayer(0x7, SpawnGargoyles2, 0, 200)
 TurnEventPlayer(0x9, SpawnPhantoms, 0, 200)
+TurnEventPlayer(0x0, DKChai, 2)
 END_MAIN
 
 CharacterBasedEvents:
@@ -112,6 +113,12 @@ DemonKingDefeated:
 MUSC 0x33
 Text(0x34, DemonKingDedText)
 FADI 4
+ENDA
+
+DKChai:
+SVAL 1 0x300 //attack in range
+CHAI Fomortiis
+NoFade
 ENDA
 
 SpawnGargoyles1:
