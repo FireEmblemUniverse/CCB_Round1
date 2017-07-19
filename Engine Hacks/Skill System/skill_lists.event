@@ -310,8 +310,8 @@ ALIGN 4
 
 DancerSkillList:
 BYTE 255 WaryFighterID
-BYTE 10 AmaterasuID
-BYTE 20 CelerityID
+BYTE 5 AmaterasuID
+BYTE 15 CelerityID
 BYTE 00 00
 ALIGN 4
 

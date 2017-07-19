@@ -121,6 +121,14 @@ use it as an ornament...[A][X]
 [MidLeft][LoadCurrent]
 Oh cool, I found a thing.[A][X]
 
+##EdgeJoins
+[MidLeft][LoadFace][0x13][0x1]
+[MidRight][LoadCurrent]
+I can see you have[N]
+a tragic backstory.[A]
+[MidLeft]
+[Beat]I don't want to talk about it.[A][X]
+
 ##Ch10PreBattleText1
 [MidLeft][LoadFace][0x2][0x1]
 Hold! There are enemies nearby.[AN]
@@ -201,6 +209,44 @@ Forget this! I'm going home.[A][X]
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]
 
+##Ch16NikitaAppears
+[MidLeft][LoadVirginia]
+[MidRight][LoadFace][0x45][0x1]
+I'm Nikita. Don't get me mixed[N]
+up with that impostor there.[AN]
+Also there are enemies[N]
+approaching from the south .[A][X]
+
+##KagaJoins
+[MidRight][LoadFace][0x23][0x1]
+MAEDA! I have found you at last![N]
+Now pay for what you did to my series![A]
+[ClearFace]
+[MidLeft][LoadFace][0x48][0x1]
+What I did?[N]
+I SAVED your pathetic series![AN]
+I gave the people what they[N]
+wanted, nay, NEEDED![A]
+[ClearFace]
+[MidRight][0x23][0x1]
+Maybe you did,[N]
+but at what cost?[A]
+[ClearFace]
+[MidLeft][LoadFace][0x48][0x1]
+Is that including[N]
+DLC and amiibos?[A]
+[ClearFace]
+[MidRight][0x23][0x1]
+RRRRAAAAAAAGGGGHHHHH!!![A][X]
+
+
+##KagaMaeda
+[MidRight][LoadFace][0x23][0x01]
+Ryuu ga Kaga teki wo kurau![A]
+[ClearFace]
+[MidLeft][LoadFace][0x48][0x01]
+Maeda no ken wo kurae![A][X]
+
 ##RecruitJakeTalk
 [MidLeft][LoadFace][0x2][0x1]
 This text is a placeholder![A][X]
@@ -227,7 +273,7 @@ You look like you can fight.[AN]
 That Gwendolyn's gone insane,[N]
 she thinks she's a GOOD unit.[AN]
 Help me correct that delusion,[N]
-and I'll make it worth your while.[A]
+and I'll help you in return.[A]
 [CloseSpeechSlow][MidLeft]
 10,000 Gold. What do you say?[N]
 [Yes][X]
@@ -313,9 +359,3 @@ again know peace.[A][X]
 It's over, Demon King![N]
 I have the high ground.[A][X]
 
-##KagaMaeda
-[MidRight][LoadFace][0x23][0x01]
-Ryuu ga Kaga teki wo kurau![A]
-[ClearFace]
-[MidLeft][LoadFace][0x48][0x01]
-Maeda no ken wo kurae![A][X]

@@ -66,6 +66,7 @@ ENDA
 
 // Events
 RecruitEdge:
+Text(EdgeJoins)
 CUSA Edge
 NoFade
 ENDA

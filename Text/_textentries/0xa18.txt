@@ -1,1 +1,3 @@
-The kid destroyed the village[X]
+[MidLeft][LoadFace][CurrentPortrait]
+[MidRight][LoadFace][0x64][0x1]
+I'll take that card from you.[A][X]

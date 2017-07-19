@@ -182,11 +182,11 @@ MNCH 17
 ENDA
 
 LoadRecruit:
-LOAD1 0x1 NewRecruits //Was thinking of a "pay-to-recruit" scenario as part of a house visit, but eh...effort
-ENUN
+LoadReinforcements(NewRecruits)
 CUMO [20,25]
 STAL 40
 CURE
+Text(Ch16NikitaAppears)
 NoFade
 ENDA
 

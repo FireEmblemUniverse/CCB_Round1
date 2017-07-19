@@ -26,6 +26,7 @@ UNIT
 
 
 TurnBasedEvents:
+TurnEventPlayer(0x0, LoadKaga, 1)
 END_MAIN
 
 CharacterBasedEvents:
@@ -63,8 +64,6 @@ LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 Baddies
 ENUN
-LOAD1 0x1 KagaGroup
-ENUN
 LOAD1 0x1 Moredoods
 ENUN
 GotoPrepScreen
@@ -73,6 +72,13 @@ ENDA
 
 EndingScene:
 MNC2 21
+ENDA
+
+LoadKaga:
+LoadReinforcements(KagaGroup)
+FlashCursor(Kaga,60)
+Text(KagaJoins)
+NoFade
 ENDA
 
 // Events
