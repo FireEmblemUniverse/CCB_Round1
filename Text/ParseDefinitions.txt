@@ -6,6 +6,7 @@
 [YN] = [Yes]
 [NY] = [No]
 [ToggleInvert] = [ToggleColorInvert]
+[Invert] = [ToggleColorInvert]
 [Red] = [ToggleRed]
 [Blink] = [CloseEyes][.][OpenEyes]
 [AA] = [.....][A]

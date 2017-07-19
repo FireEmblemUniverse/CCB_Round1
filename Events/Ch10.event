@@ -125,9 +125,16 @@ NoFade
 ENDA
 
 EndingScene:
-TEXTSTART
-TEXTSHOW (Ch10PostBattleText1)
-TEXTEND
+CHECK_ALIVE Samson
+BEQ 0x0 0xC 0x0
+CAM1 Samson
+FlashCursor(Samson, 60)
+Text(Ch10PostBattleText1)
+CHECK_ALLEGIANCE Samson
+BEQ 0x0 0xC 0x0 //skip if already recruited
+CUSA Samson
+LABEL 0x0
+
 MNCH 11
 ENDA
 

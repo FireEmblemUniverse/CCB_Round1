@@ -61,6 +61,7 @@ MiscBasedEvents:
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 AREA 0x8 StartSpawningGargoyles [6,11] [16,19]
+AREA 0xF SpawnMogalls [0,0] [22,10]
 END_MAIN
 
 Dunno:
@@ -131,6 +132,13 @@ StartSpawningGargoyles:
   SVAL 0x2 0x0
   CALL $9ee1b8 //checks allegiance
   ENUF 0x7
+  EVBIT_T 0x7
+  ENDA
+
+SpawnMogalls:
+  SVAL 0x2 0x0
+  CALL $9ee1b8 //checks allegiance
+  LoadReinforcements(Mogalls)
   EVBIT_T 0x7
   ENDA
 
