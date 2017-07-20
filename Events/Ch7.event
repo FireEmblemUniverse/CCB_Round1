@@ -27,7 +27,7 @@ LocationBasedEvents:
 Village(0x9, RosheaJoins, 19,2)
 Village(0x7, LeftVillage, 23,8)
 Village(0x8, RightVillage, 25,8)
-Seize(22,0)
+// Seize(22,0)
 #ifdef __DEBUG__
   Seize(2,7)
 #endif
@@ -35,6 +35,7 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
 END_MAIN
 
 Dunno:
