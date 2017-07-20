@@ -13,6 +13,16 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
 - The movement arrow allows you to press A on allies and enemies 
 - If there are too many enemies on screen, turn off HP bars in the options to fix lag
 
+## Known Issues:
+
+- Stone can sometimes crash the game when used on phantoms/Mark, resetting usually fixes this?
+- Rarely, hp update in animations is wrong e.g. attacks showing no damage but enemy is hurt afterwards. If this happens against a boss, their death quote will not play and it may not trigger the Defeat Boss condition.
+- Dancers can double if the enemy has Nihil - this will crash the game if animations are on. Hold L to turn them off if required.
+- Resetting the game mid attack can sometimes give a unit the galeforce effect
+- Some bosses have weird weapon ranks/personal skills
+- Chapter objectives in the status screen have not been edited
+- 
+
 ## Skills learned on level up (by class):
 ```
     EphraimLord                      
@@ -207,14 +217,19 @@ Ch30        End of All                Circles
 
 ***-mugs-***
 
-Zmr56 for Bede, Tye and Jake  
-L95 for Void, Celicia, Mark  
+Zmr56 for Bede, Tye, Jake  
+L95 for Void, Celicia, Mark, Tatara  
 Coby for Celica  
 Ross for Samson  
 Alusq for Tim, Tam, Saara, Banana, Mr Bones, Björn, Roshea  
 Wan for Arve  
-Tera for Evil Florina and Doowile  
+Tera for Evil Florina, Doowile  
 Klok for Edge  
+Monkeybard for Doot, Maeda, Kaga  
+Darrman for Zigludo, Tiki  
+blueeyedman24 for Gwendy  
+Kirb for Edgeworth, Grit, Marf (edited from Didja Redo's version)  
+Crazycolorz for Prine   
 
 
 ***-maps-***
@@ -281,3 +296,5 @@ Wulfos
 Glacoe  
 Paterick  
 Teraspark  
+Monkeybard  
+Black Mage  
