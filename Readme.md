@@ -17,6 +17,7 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
 - Hold A to speed up unit movement
 - The movement arrow allows you to press A on allies and enemies 
 - If there are too many enemies on screen, turn off HP bars in the options to fix lag
+- FLASHY MODE: any hit that kills a boss becomes a critical
 - There is a certain secret code...
 
 ## Known Issues:

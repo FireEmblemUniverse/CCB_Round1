@@ -250,9 +250,9 @@ ALIGN 4
   UM_Trade
   UM_Supply
 
-  #ifdef __DEBUG__
+  // #ifdef __DEBUG__
   MenuCommand(UMText_Win, UMDesc_Win, GreenText, Win_Usability, Win_Effect)
-  #endif
+  // #endif
 
   UM_Wait
   UM_Separator

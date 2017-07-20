@@ -1,6 +1,13 @@
 .thumb
 push	{lr}
 
+@check event ID
+mov r0, #0xb2 @unused permanent event id used for konami code
+ldr r3,=0x8083da9
+bl goto_r3
+cmp r0, #0
+beq False
+
 ldr	r0,=#0x3004E50
 ldr	r0, [r0]
 
@@ -29,3 +36,5 @@ mov	r0, #0x03
 End:
 pop	{r1}
 bx	r1
+goto_r3:
+bx r3

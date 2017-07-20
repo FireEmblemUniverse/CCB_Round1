@@ -69,7 +69,6 @@
     #include "Music/Music Installer.event"
 
     //Events
-    #undef __DEBUG__ //getting rid of extra seizes basically
     #include "Events/Master Events Installer.event"
     #include "Events/World Map Events Installer.event"
 

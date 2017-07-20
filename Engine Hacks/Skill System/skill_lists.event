@@ -374,3 +374,11 @@ BYTE 5 SavageBlowID
 BYTE 15 ColossusID
 BYTE 00 00
 ALIGN 4
+
+EdgeworthSkillList:
+BYTE 20 RallyStrID
+BYTE 20 RallySpdID
+BYTE 20 RallyMovID
+BYTE 20 RallyDefID
+BYTE 00 00
+ALIGN 4
