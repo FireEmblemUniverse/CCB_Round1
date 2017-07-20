@@ -1,9 +1,9 @@
-##Things you need:
+## Things you need:
 
 Get a clean rom called "FE8_clean.gba" and put it in the extracted folder.
 Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quick is enough.
 
-##QoL tips:
+## QoL tips:
 
 - Press Select at the map to see danger zone
 - Press Select at the stat screen to see growths
@@ -12,7 +12,7 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
 - The movement arrow allows you to press A on allies and enemies 
 - If there are too many enemies on screen, turn off HP bars in the options to fix lag
 
-##Skills learned on level up (by class):
+## Skills learned on level up (by class):
 ```
     EphraimLord                      
     1                 Bond         
@@ -166,9 +166,9 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
 ```
 
 
-##Credits:
+## Credits:
 
-***~Chapters~***
+***-Chapters-***
 
 ```
 Prologue    IT BEGINS                 Circles
