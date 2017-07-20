@@ -31,7 +31,7 @@ ORG FreeSpaceBLRange //defined in custom definitions
   #include "LToggle.event"
 
   //negative wt/crit
-  #include "NegativeDisplay.event"
+  // #include "NegativeDisplay.event"
 
   //Rescuees are drawn
   // #include "RescueMapSprite.event"
