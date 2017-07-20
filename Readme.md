@@ -19,6 +19,7 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
 - Rarely, hp update in animations is wrong e.g. attacks showing no damage but enemy is hurt afterwards. If this happens while killing a boss, their death quote will not play and it may not trigger the Defeat Boss condition.
 - Dancers can double if the enemy has Nihil - this will crash the game if animations are on. Hold L to turn them off if required.
 - Resetting the game mid attack can sometimes give a unit the galeforce effect
+- Malefic Aura does not work if the unit has never acted or been selected in a chapter?
 - Some bosses have weird weapon ranks/personal skills
 - Chapter objectives in the status screen have not been edited
 - Astra in the arena will keep attacking thin air after the unit is dead
