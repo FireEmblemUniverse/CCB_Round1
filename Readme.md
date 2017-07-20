@@ -1,6 +1,7 @@
 ## Things you need:
 
 Get a clean rom called "FE8_clean.gba" and put it in the extracted folder.
+
 Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quick is enough.
 
 ## QoL tips:
@@ -206,14 +207,14 @@ Ch30        End of All                Circles
 
 ***-mugs-***
 
-Zmr56 for Bede, Tye and Jake
-L95 for Void, Celicia, Mark
-Coby for Celica
-Ross for Samson
-Alusq for Tim, Tam, Saara, Banana, Mr Bones, Björn, Roshea
-Wan for Arve
-Tera for Evil Florina and Doowile
-Klok for Edge
+Zmr56 for Bede, Tye and Jake  
+L95 for Void, Celicia, Mark  
+Coby for Celica  
+Ross for Samson  
+Alusq for Tim, Tam, Saara, Banana, Mr Bones, Björn, Roshea  
+Wan for Arve  
+Tera for Evil Florina and Doowile  
+Klok for Edge  
 
 
 ***-maps-***
@@ -254,29 +255,29 @@ Ch30        End of All                Circles
 
 ***-music-***
 
-Alusq
-Ash
+Alusq  
+Ash  
 
 ***-general tools-***
 
-Nintenlord
-Crazycolorz
-Circles
+Nintenlord  
+Crazycolorz  
+Circles  
 
 ***-hax-***
 
-Leonarth
-Stan
-Teq
-Circles
-Colorz
-so many
+Leonarth  
+Stan  
+Teq  
+Circles  
+Colorz  
+so many  
 
 ***-misc graphics-***
 
-Circles
-Seva
-Wulfos
-Glacoe
-Paterick
-Teraspark
+Circles  
+Seva  
+Wulfos  
+Glacoe  
+Paterick  
+Teraspark  
