@@ -1,5 +1,10 @@
 ## Things you need:
 
+### To just play:
+Apply CCB_Round1.ups to a clean FE8 (U) rom using NUPS or Multipatch.
+
+### To build:
+
 Get a clean rom called "FE8_clean.gba" and put it in the extracted folder.
 
 Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quick is enough.
