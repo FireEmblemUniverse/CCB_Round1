@@ -129,7 +129,7 @@ SpawnGargoyles1:
   SMUL slotsParam(r1, r2)     //r1 = r2*2
   SSUB slotsParam(r1, rC, r1)     //r1 -= rC, r1 = remainder
   BNE 0x0 r1 0
-  ReinforcementEvent(Reinforcements1)    //Remainder was 0 (right)
+  LoadReinforcements(Reinforcements1)    //Remainder was 0 (right)
   LABEL 0x0
   ENUF 0xA
   NoFade
