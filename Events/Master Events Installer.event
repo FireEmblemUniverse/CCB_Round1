@@ -135,9 +135,9 @@ ENDA
 
 ShieldThrowEP:
 ASMC EnemyPhaseASMC|1
-BEQ 0x0 0xc 0x0
+BEQ 0x1 0xc 0x0
   Text(ItsOverAnakin)
-LABEL 0x0
+LABEL 0x1
 NoFade
 ENDA
 

@@ -33,7 +33,7 @@ SelectSfxLoop:
 #incbin "unit select sfx.dmp"
 POIN SelectSfxList
 SelectSfxList:
-POIN TikiSoundEffect; POIN ZigludoSoundEffect; POIN TyeSoundEffect; POIN SamsonSoundEffect; POIN RosheaSoundEffect; POIN PrineSoundEffect; POIN NikitaSoundEffect; POIN KirstenSoundEffect; POIN JeromeSoundEffect; POIN JaySoundEffect; POIN JakeSoundEffect; POIN EevsterSoundEffect; POIN EdgeworthSoundEffect; POIN BobSoundEffect; POIN BjoernSoundEffect; POIN BedeSoundEffect; POIN ArveSoundEffect; POIN VoidSoundEffect; POIN TimSoundEffect; POIN TamSoundEffect; POIN NotArchSoundEffect; POIN MarkSoundEffect; POIN MarfSoundEffect; POIN LeeroySoundEffect; POIN KagaSoundEffect; POIN EvilFlorinaSoundEffect; POIN EdgeSoundEffect; POIN DoowileSoundEffect; POIN DootSoundEffect; POIN AnnaWyvSoundEffect; POIN AnnaRogueSoundEffect; POIN AnnaSoundEffect; POIN CelicaSoundEffect; POIN CeliciaSoundEffect
+POIN TikiSoundEffect ZigludoSoundEffect TyeSoundEffect SamsonSoundEffect RosheaSoundEffect PrineSoundEffect NikitaSoundEffect KirstenSoundEffect JeromeSoundEffect JaySoundEffect JakeSoundEffect EevsterSoundEffect EdgeworthSoundEffect BobSoundEffect BjoernSoundEffect BedeSoundEffect ArveSoundEffect VoidSoundEffect TimSoundEffect TamSoundEffect NotArchSoundEffect MarkSoundEffect MarfSoundEffect LeeroySoundEffect KagaSoundEffect EvilFlorinaSoundEffect EdgeSoundEffect DoowileSoundEffect DootSoundEffect AnnaWyvSoundEffect AnnaRogueSoundEffect AnnaSoundEffect CelicaSoundEffect CeliciaSoundEffect
 WORD 0//End marker
 #include "Blitzvoices.event"
 

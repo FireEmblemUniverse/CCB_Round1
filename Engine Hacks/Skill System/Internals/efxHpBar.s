@@ -53,13 +53,16 @@ bne     loc_0x805244E                @ 08052412 D11C
       @check the current HP
       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ make sure HP Draining is checked.
       @now update the attacker   
-        ldr     r0,[r5,#0x5c]                @ 08052368 6E30     
-        blh      0x805A16C                @ 0805236A F007FEFF 
-        ldr     r3,=#0x203E152                @ 08052366 4C15  
-        lsl     r0,r0,#0x1                @ 0805236E 0040     
-        add     r0,r0,r3                @ 08052370 1900     
-        mov     r1,#0x0                @ 08052372 2100     
-        ldsh    r3,[r0,r1]                @ 08052374 5E45  
+          @ ldr     r0,[r5,#0x5c]                @ 08052368 6E30     
+          @ blh      0x805A16C                @ 0805236A F007FEFF 
+          @ ldr     r3,=#0x203E152                @ 08052366 4C15  
+          @ lsl     r0,r0,#0x1                @ 0805236E 0040     
+          @ add     r0,r0,r3                @ 08052370 1900     
+          @ mov     r1,#0x0                @ 08052372 2100     
+          @ ldsh    r3,[r0,r1]                @ 08052374 5E45  
+        ldr r0, =0x2029016 @current round
+        ldrb r3, [r0]
+        sub r3, #1
         @here r3 is the nth round
         @let's load up the battle buffer and check that
         ldr r0, =0x802aec4
@@ -85,7 +88,7 @@ bne     loc_0x805244E                @ 08052412 D11C
       mov r2, #0x30 @curr hp
       ldsh r1, [r5,r2]
       mov r2, #0x52 @final hp
-      ldrsh r0, [r5,r2]
+      ldrsb r0, [r5,r2]
       cmp r1, r0
       beq AttackerDone
       cmp r0, #0xff
@@ -182,92 +185,92 @@ bne     loc2_0x80524F0                @ 08052452 D14D
     mov     r0,r5                @ 080524E4 1C28     
     blh      0x8002E94                @ 080524E6 F7B0FCD5 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    ldr     r0,[r5,#0x5c]                @ 08052368 6E30     
-    blh      0x805A16C                @ 0805236A F007FEFF 
-    ldr     r3,=#0x203E152                @ 08052366 4C15  
-    lsl     r0,r0,#0x1                @ 0805236E 0040     
-    add     r0,r0,r3                @ 08052370 1900     
-    mov     r1,#0x0                @ 08052372 2100     
-    ldsh    r3,[r0,r1]                @ 08052374 5E45  
-    @here r3 is the nth round
-    @let's load up the battle buffer and check that
-    ldr r0, =0x802aec4
-    ldr r0, [r0] @r0 is battle buffer 203aac0
-    lsl r1, r3, #3 @8 bytes per entry
-    add r1, r0
-            MissLoop2:
-            ldr r0, [r1]
-            mov r2, #2 @0x2 is miss
-            and r2, r0
-            cmp r2, #0
-            beq NotMiss2
-                @if a miss, check the next round.
-                add r1, #8
-                b MissLoop2
-    NotMiss2:
-    mov r1, #0x10
-    lsl r1, #4 @0x100 is drain hp
-    and r1, r0
-    cmp r1, #0
-    beq End
+    @ ldr     r0,[r5,#0x5c]                @ 08052368 6E30     
+    @ blh      0x805A16C                @ 0805236A F007FEFF 
+    @ ldr     r3,=#0x203E152                @ 08052366 4C15  
+    @ lsl     r0,r0,#0x1                @ 0805236E 0040     
+    @ add     r0,r0,r3                @ 08052370 1900     
+    @ mov     r1,#0x0                @ 08052372 2100     
+    @ ldsh    r3,[r0,r1]                @ 08052374 5E45  
+    @ @here r3 is the nth round
+    @ @let's load up the battle buffer and check that
+    @ ldr r0, =0x802aec4
+    @ ldr r0, [r0] @r0 is battle buffer 203aac0
+    @ lsl r1, r3, #3 @8 bytes per entry
+    @ add r1, r0
+    @         MissLoop2:
+    @         ldr r0, [r1]
+    @         mov r2, #2 @0x2 is miss
+    @         and r2, r0
+    @         cmp r2, #0
+    @         beq NotMiss2
+    @             @if a miss, check the next round.
+    @             add r1, #8
+    @             b MissLoop2
+    @ NotMiss2:
+    @ mov r1, #0x10
+    @ lsl r1, #4 @0x100 is drain hp
+    @ and r1, r0
+    @ cmp r1, #0
+    @ beq End
 
-    ldr     r4,=#0x203E152                @ 0805245A 4C0F     
-    ldr     r0,[r5,#0x5c]                @ 0805245C 6E28     
-    blh IsRightToLeft                @ 0805245E F007FE85 
-    lsl     r0,r0,#0x1                @ 08052462 0040     
-    add     r0,r0,r4                @ 08052464 1900     
-    ldrh    r1,[r0]                @ 08052466 8801     
-    add     r1,#0x1                @ 08052468 3101     
-    mov     r4,#0x0                @ 0805246A 2400     
-    strh    r1,[r0]                @ 0805246C 8001     
-    ldr     r0,[r5,#0x5c]                @ 0805246E 6E28     
-    blh IsRightToLeft                @ 08052470 F007FE7C 
-    ldr     r1,=#0x2017780                @ 08052474 4909     
-    lsl     r0,r0,#0x1                @ 08052476 0040     
-    add     r0,r0,r1                @ 08052478 1840     
-    strh    r4,[r0]                @ 0805247A 8004     
-    mov r0, #0x52
-    ldrh     r0,[r5,r0]                @ 0805247C 6D28     
-    cmp     r0,#0x0                @ 0805247E 2800     
-    bne     loc2_0x80524E4                @ 08052480 D130     
-        blh      0x804FD54                @ 08052482 F7FDFC67 
-        cmp     r0,#0x1                @ 08052486 2801     
-        bne     loc2_0x80524A0                @ 08052488 D10A     
-          mov     r0,#0x0                @ 0805248A 2000     
-          b       loc2_0x80524B4                @ 0805248C E012
-          .ltorg 
-        loc2_0x80524A0:       
-        ldr     r4,=#0x203E190                @ 080524A0 4C08     
-        mov     r0,r6                @ 080524A2 1C30     
-        blh IsRightToLeft                @ 080524A4 F007FE62 
-        add     r0,r0,r4                @ 080524A8 1900     
-        ldrb    r0,[r0]                @ 080524AA 7800     
-        blh      0x80835A8                @ 080524AC F031F87C 
-        lsl     r0,r0,#0x18                @ 080524B0 0600     
-        asr     r0,r0,#0x18                @ 080524B2 1600  
-      loc2_0x80524B4:   
-      cmp     r0,#0x1                @ 080524B4 2801     
-      bne     loc2_0x80524C8                @ 080524B6 D107     
-      mov     r0,r6                @ 080524B8 1C30     
-      mov     r1,r7                @ 080524BA 1C39     
-      blh      0x8052DD4                @ 080524BC F000FC8A 
-      b       loc2_0x80524E4                @ 080524C0 E010   
-      .ltorg      
-        loc2_0x80524C8:
-        blh      0x805B07C                @ 080524C8 F008FDD8 
-        mov     r0,r6                @ 080524CC 1C30     
-        mov     r1,r7                @ 080524CE 1C39     
-        blh      0x8052FAC                @ 080524D0 F000FD6C 
-        ldr     r0,[r5,#0x5c]                @ 080524D4 6E28     
-        blh IsRightToLeft                @ 080524D6 F007FE49 
-        ldr     r1,=#0x203E104                @ 080524DA 4904     
-        lsl     r0,r0,#0x1                @ 080524DC 0040     
-        add     r0,r0,r1                @ 080524DE 1840     
-        mov     r1,#0x0                @ 080524E0 2100     
-        strh    r1,[r0]                @ 080524E2 8001 
-    loc2_0x80524E4:    
-    mov     r0,r5                @ 080524E4 1C28     
-    blh      0x8002E94                @ 080524E6 F7B0FCD5 
+    @ ldr     r4,=#0x203E152                @ 0805245A 4C0F     
+    @ ldr     r0,[r5,#0x5c]                @ 0805245C 6E28     
+    @ blh IsRightToLeft                @ 0805245E F007FE85 
+    @ lsl     r0,r0,#0x1                @ 08052462 0040     
+    @ add     r0,r0,r4                @ 08052464 1900     
+    @ ldrh    r1,[r0]                @ 08052466 8801     
+    @ add     r1,#0x1                @ 08052468 3101     
+    @ mov     r4,#0x0                @ 0805246A 2400     
+    @ strh    r1,[r0]                @ 0805246C 8001     
+    @ ldr     r0,[r5,#0x5c]                @ 0805246E 6E28     
+    @ blh IsRightToLeft                @ 08052470 F007FE7C 
+    @ ldr     r1,=#0x2017780                @ 08052474 4909     
+    @ lsl     r0,r0,#0x1                @ 08052476 0040     
+    @ add     r0,r0,r1                @ 08052478 1840     
+    @ strh    r4,[r0]                @ 0805247A 8004     
+    @ mov r0, #0x52
+    @ ldrh     r0,[r5,r0]                @ 0805247C 6D28     
+    @ cmp     r0,#0x0                @ 0805247E 2800     
+    @ bne     loc2_0x80524E4                @ 08052480 D130     
+    @     blh      0x804FD54                @ 08052482 F7FDFC67 
+    @     cmp     r0,#0x1                @ 08052486 2801     
+    @     bne     loc2_0x80524A0                @ 08052488 D10A     
+    @       mov     r0,#0x0                @ 0805248A 2000     
+    @       b       loc2_0x80524B4                @ 0805248C E012
+    @       .ltorg 
+    @     loc2_0x80524A0:       
+    @     ldr     r4,=#0x203E190                @ 080524A0 4C08     
+    @     mov     r0,r6                @ 080524A2 1C30     
+    @     blh IsRightToLeft                @ 080524A4 F007FE62 
+    @     add     r0,r0,r4                @ 080524A8 1900     
+    @     ldrb    r0,[r0]                @ 080524AA 7800     
+    @     blh      0x80835A8                @ 080524AC F031F87C 
+    @     lsl     r0,r0,#0x18                @ 080524B0 0600     
+    @     asr     r0,r0,#0x18                @ 080524B2 1600  
+    @   loc2_0x80524B4:   
+    @   cmp     r0,#0x1                @ 080524B4 2801     
+    @   bne     loc2_0x80524C8                @ 080524B6 D107     
+    @   mov     r0,r6                @ 080524B8 1C30     
+    @   mov     r1,r7                @ 080524BA 1C39     
+    @   blh      0x8052DD4                @ 080524BC F000FC8A 
+    @   b       loc2_0x80524E4                @ 080524C0 E010   
+    @   .ltorg      
+    @     loc2_0x80524C8:
+    @     blh      0x805B07C                @ 080524C8 F008FDD8 
+    @     mov     r0,r6                @ 080524CC 1C30     
+    @     mov     r1,r7                @ 080524CE 1C39     
+    @     blh      0x8052FAC                @ 080524D0 F000FD6C 
+    @     ldr     r0,[r5,#0x5c]                @ 080524D4 6E28     
+    @     blh IsRightToLeft                @ 080524D6 F007FE49 
+    @     ldr     r1,=#0x203E104                @ 080524DA 4904     
+    @     lsl     r0,r0,#0x1                @ 080524DC 0040     
+    @     add     r0,r0,r1                @ 080524DE 1840     
+    @     mov     r1,#0x0                @ 080524E0 2100     
+    @     strh    r1,[r0]                @ 080524E2 8001 
+    @ loc2_0x80524E4:    
+    @ mov     r0,r5                @ 080524E4 1C28     
+    @ blh      0x8002E94                @ 080524E6 F7B0FCD5 
     b       End                @ 080524EA E007     
     .ltorg
 loc_0x80524F0:    

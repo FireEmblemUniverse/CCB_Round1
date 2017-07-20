@@ -42,6 +42,7 @@ TurnBasedEvents:
 TurnEventPlayer(0xa, SpawnGargoyles1, 4, 10)
 TurnEventPlayer(0x7, SpawnGargoyles2, 0, 200)
 TurnEventPlayer(0x9, SpawnPhantoms, 0, 200)
+TurnEventPlayer(0x11, SpawnMogalls, 0, 200)
 TurnEventPlayer(0x0, DKChai, 2)
 END_MAIN
 
@@ -62,7 +63,7 @@ MiscBasedEvents:
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 AREA 0x8 StartSpawningGargoyles [6,11] [16,19]
-AREA 0xF SpawnMogalls [0,0] [22,10]
+AREA 0xF StartSpawningMogalls [0,0] [22,10]
 END_MAIN
 
 Dunno:
@@ -88,6 +89,7 @@ BeginningScene:
 CAM1 [11,38]
 ENUT 0x7 //stop gargoyles spawning from top until area event is triggered
 ENUT 0x9 //same for phantoms
+ENUT 0x11 //and mogalls
 LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 NewUnit
@@ -142,12 +144,15 @@ StartSpawningGargoyles:
   EVBIT_T 0x7
   ENDA
 
-SpawnMogalls:
+StartSpawningMogalls:
   SVAL 0x2 0x0
   CALL $9ee1b8 //checks allegiance
-  LoadReinforcements(Mogalls)
+  ENUF 0x11
   EVBIT_T 0x7
   ENDA
+
+SpawnMogalls:
+LoadReinforcements(Mogalls)
 
 SpawnGargoyles2:
   ENUF 0x7
