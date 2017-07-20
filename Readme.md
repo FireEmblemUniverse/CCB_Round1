@@ -164,9 +164,9 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
     5                 Anathema     
     15                Tomefaire                            
     SuperJourneyman                  
-    5                 Paragon      
+    10                Paragon      
     SuperPupil                       
-    5                 Paragon      
+    10                Paragon      
     SuperRecruit                     
     10                Paragon      
     ManaketeM                        

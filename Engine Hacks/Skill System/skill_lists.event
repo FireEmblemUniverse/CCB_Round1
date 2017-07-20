@@ -341,11 +341,11 @@ BYTE 00 00
 ALIGN 4
 
 SuperJourneymanSkillList:
-BYTE 5 ParagonID
+BYTE 10 ParagonID
 BYTE 00 00
 ALIGN 4
 SuperPupilSkillList:
-BYTE 5 ParagonID
+BYTE 10 ParagonID
 BYTE 00 00
 ALIGN 4
 SuperRecruitSkillList:
