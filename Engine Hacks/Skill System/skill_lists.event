@@ -8,7 +8,7 @@ EirikaLordSkillList:
 // BYTE 255 ShoveID //removed and made into class skill
 BYTE 1 BondID
 BYTE 10 RightfulKingID
-BYTE 20 BondID //for backwards compatibility
+// BYTE 20 BondID //for backwards compatibility
 BYTE 00 00
 ALIGN 4
 
@@ -221,8 +221,8 @@ ALIGN 4
 FighterSkillList:
 BYTE 1 FieryBloodID
 BYTE 10 DesperationID
-BYTE 20 DesperationID //for backward compatibility
-BYTE 20 FieryBloodID //for backward compatibility
+// BYTE 20 DesperationID //for backward compatibility
+// BYTE 20 FieryBloodID //for backward compatibility
 BYTE 00 00
 ALIGN 4
 
@@ -243,8 +243,8 @@ ALIGN 4
 PirateSkillList:
 BYTE 1 CamaraderieID
 BYTE 10 SealSklID
-BYTE 20 CamaraderieID
-BYTE 20 SealSklID
+// BYTE 20 CamaraderieID
+// BYTE 20 SealSklID
 BYTE 00 00
 ALIGN 4
 
@@ -259,8 +259,8 @@ ALIGN 4
 MonkSkillList:
 BYTE 1 SpurSpdID
 BYTE 10 SealResID
-BYTE 20 SpurSpdID
-BYTE 20 SealResID
+// BYTE 20 SpurSpdID
+// BYTE 20 SealResID
 BYTE 00 00
 ALIGN 4
 
@@ -273,8 +273,8 @@ ALIGN 4
 PegKnightSkillList:
 BYTE 1 DartingBlowID
 BYTE 10 RallySpdID
-BYTE 20 DartingBlowID
-BYTE 20 RallySpdID
+// BYTE 20 DartingBlowID
+// BYTE 20 RallySpdID
 BYTE 00 00
 ALIGN 4
 
@@ -295,8 +295,8 @@ ALIGN 4
 TroubadourSkillList:
 BYTE 1 DemoiselleID
 BYTE 10 VoiceOfPeaceID
-BYTE 20 DemoiselleID
-BYTE 20 VoiceOfPeaceID
+// BYTE 20 DemoiselleID
+// BYTE 20 VoiceOfPeaceID
 BYTE 00 00
 ALIGN 4
 
@@ -319,8 +319,8 @@ SoldierSkillList:
 BYTE 255 RepositionID
 BYTE 1 CamaraderieID
 BYTE 10 RallyStrID
-BYTE 20 CamaraderieID
-BYTE 20 RallyStrID
+// BYTE 20 CamaraderieID
+// BYTE 20 RallyStrID
 BYTE 00 00
 ALIGN 4
 

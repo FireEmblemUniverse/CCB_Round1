@@ -1,8 +1,10 @@
 #define C11LvlCnst 10
-//Level Constant for units. Some units are the constant +/- some amount.
+//Level Constant for units. Some units are the constant +/- some amount. No less than 5, no more than 23. (I have a -4 and a +8)
 
 #define AIChangeToAfterMove 0x00000000
 //The AI to change to after the units move. Should be "pursue without heed" types.
+
+#define GroupieAI [0x0D, 0x03, 0x04, 0x00]
 
 #define TestAITs [0x00, 0x03, 0x04, 0x00]
 //#define TestAITs AttackInRange
@@ -11,6 +13,26 @@
 EventPointerTable(0xD1, Chapter11This) //Ch 11 Eirika events
 //EventPointerTable(0xCF, Chapter11This) //Ch 11 Eirika map
 //EventPointerTable(0xD0, Chapter11This) //Ch 11 Eirika map changes, which I'm not using
+
+//It used to be that you'd get:
+//Blitz Spear, Elixir, Chest Key, Physic,
+//Light Brand, Tomahawk, Shortspear, Longbow,
+//Steel Sword, Steel Axe, Steel Lance, Steel Bow,
+//Nosferatu, Divine, Elfire, Mend
+
+//But now the chapter drops are:
+//Blitz Lance, Master Seal, Goddess Icon, Pure Water
+//Steel Sword, Poison Sword, Light Brand, Lancereaver
+//Steel Axe, Poison Axe, Tomahawk, Swordreaver
+//Steel Lance, Toxin Lance, Short Spear, Axereaver
+//Steel Bow, Poison Bow, Longbow, Ballista
+//Fire, Elfire, 
+//Nosferatu, 
+//Divine,
+//Mend, Restore, Physic
+//
+//And there are now Stealables: 
+//Master Seal, Secret Book, Dracoshield, Elixir, Vulnerary x 2, Antitoxin x 3, Red Gem
 
 ALIGN 4
 Chapter11This:
@@ -35,11 +57,12 @@ LOAD2 0x1 C11_CCB_Ally
 ENUN
 //FADU 0x8
 GotoPrepScreen
-//ENDA
+ENDA
 
 C11_CCB_Ally:
 UNIT 01 01 0 1 [4, 27] 0 0 0 0 [1, 1, 1, 1] DefaultAI
 UNIT 02 01 0 1 [3, 28] 0 0 0 0 [1, 1, 1, 1] DefaultAI
+UNIT 02 01 0 1 [4, 28] 0 0 0 0 [1, 1, 1, 1] DefaultAI
 
 UNIT 02 01 0 1 [12, 27] 0 0 0 0 [1, 1, 1, 1] DefaultAI
 UNIT 02 01 0 1 [13, 27] 0 0 0 0 [1, 1, 1, 1] DefaultAI
@@ -50,75 +73,130 @@ UNIT 02 01 0 1 [14, 28] 0 0 0 0 [1, 1, 1, 1] DefaultAI
 UNIT
 
 C11_CCB_Arve:
-//UNIT Beran Shaman 0x00 Level(13, 0, 0) [5, 28] 0x00 0x00 0x00 0x00 [Lightning, Flux, Vulnerary, Vulnerary] DefaultAI
-UNIT Arve Shaman_F 0x00 Level(13, 0, 0) [5, 28] 0x00 0x00 0x00 0x00 [Lightning, Flux, Vulnerary, Vulnerary] DefaultAI
+UNIT Arve Shaman_F 0x00 Level(10, 0, 0) [5, 28] 0x00 0x00 0x00 0x00 [Lightning, Flux, Luna, Elixir] DefaultAI
 UNIT
 
 //Divided up in advance just in case I need more than 15 initial units
 C11_CCB_Init_Foe_A:
-//Ch11 Eirika
-UNIT 0x5D GreatKnight 0x00 Level(3, 2, 1) [9, 8] 0x02 0x00 0x00 0x00 [ShortSpear, HandAxe, LightBrand, Rapier] NeverMoveAI
-UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [8, 4] 0x02 0x00 0x00 0x00 [LightBrand, LightBrand] GuardTileAI
-UNIT 0x80 Fighter 0x00 Level((C11LvlCnst-4), 2, 1) [9, 4] 0x02 0x00 0x00 0x00 [Tomahawk, Tomahawk] GuardTileAI
-UNIT 0x80 Cavalier 0x00 Level(C11LvlCnst, 2, 1) [10, 4] 0x02 0x00 0x00 0x00 [ShortSpear, ShortSpear] GuardTileAI
-UNIT 0x80 Troubadour 0x00 Level((C11LvlCnst+5), 2, 1) [9, 6] 0x02 0x00 0x00 0x00 [Physic, Physic] GuardTileAI
-UNIT 0x80 Shaman 0x00 Level((C11LvlCnst+3), 2, 1) [9, 9] 0x02 0x00 0x00 0x00 [Eclipse, Fenrir, Elixir] GuardTileAI
-UNIT 0x80 Monk 0x00 Level((C11LvlCnst+5), 2, 1) [13, 1] 0x02 0x00 0x00 0x00 [Shine, ChestKey] GuardTileAI
+//These are the chamber units
+UNIT 0x5D GreatKnight 0x00 Level(3, 2, 1) [9, 8] 0x02 0x00 0x00 0x00 [ShortSpear, WindSword, Rapier] NeverMoveAI
+UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [8, 5] 0x02 0x00 0x00 0x00 [LightBrand] NeverMoveAI
+UNIT 0x80 Fighter 0x00 Level((C11LvlCnst-4), 2, 1) [9, 5] 0x02 0x00 0x00 0x00 [Tomahawk] NeverMoveAI
+UNIT 0x80 Cavalier 0x00 Level(C11LvlCnst, 2, 1) [10, 5] 0x02 0x00 0x00 0x00 [ShortSpear] NeverMoveAI
+UNIT 0x80 Troubadour 0x00 Level((C11LvlCnst+5), 2, 1) [11, 7] 0x02 0x00 0x00 0x00 [Physic] NeverMoveAI
+UNIT 0x80 Myrmidon_F 0x00 Level((C11LvlCnst), 2, 1) [7, 7] 0x02 0x00 0x00 0x00 [SilverSword, Restore] TestAITs
+UNIT 0x80 Shaman_F 0x00 Level((C11LvlCnst+4), 2, 1) [9, 9] 0x02 0x00 0x00 0x00 [Eclipse, Fenrir, Elixir, GoddessIcon] NeverMoveAI
+
+//This is just outside of the chamber, in the east corner
+UNIT 0x80 Monk 0x00 Level((C11LvlCnst+5), 2, 1) [13, 1] 0x02 0x00 0x00 0x00 [Shine, Lightning] TestAITs
+UNIT 0x80 Archer_F 0x00 Level((C11LvlCnst+5), 2, 1) [14, 2] 0x00 0x00 0x00 0x00 [SilverBow, MasterProof] TestAITs
+
+//These are in the top left space immediately out of the chamber
+UNIT 0x80 Pirate 0x00 Level(C11LvlCnst, 2, 1) [3, 1] 0x02 0x00 0x00 0x00 [SteelAxe, IronAxe] TestAITs
+UNIT 0x80 Myrmidon 0x00 Level(C11LvlCnst, 2, 1) [4, 2] 0x02 0x00 0x00 0x00 [SteelSword, IronSword] TestAITs
+UNIT 0x80 Knight 0x00 Level(C11LvlCnst, 2, 1) [2, 4] 0x02 0x00 0x00 0x00 [SteelLance, IronLance] TestAITs
+UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [3, 3] 0x02 0x00 0x00 0x00 [SteelBow, IronBow] TestAITs
+
 UNIT
 
 C11_CCB_Init_Foe_B:
-UNIT 0x80 Cavalier 0x00 Level(C11LvlCnst, 2, 1) [6, 12] 0x00 0x00 0x00 0x00 [SteelLance] TestAITs
-UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [13, 16] 0x00 0x00 0x00 0x00 [SteelSword] TestAITs
-UNIT 0x80 Knight 0x00 Level(C11LvlCnst, 2, 1) [5, 22] 0x00 0x00 0x00 0x00 [SilverLance] GuardTileAI
-UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [4, 21] 0x02 0x00 0x00 0x00 [Longbow] GuardTileAI
-UNIT 0x80 Shaman 0x00 Level(C11LvlCnst, 2, 1) [3, 22] 0x00 0x00 0x00 0x00 [Nosferatu] GuardTileAI
+//Mid-left area units
+UNIT 0x80 Cavalier 0x81 Level(C11LvlCnst, 2, 1) [6, 12] 0x00 0x00 0x00 0x00 [SteelLance, Vulnerary] GroupieAI
+UNIT 0x80 Cavalier 0x81 Level(C11LvlCnst, 2, 1) [1, 16] 0x00 0x00 0x00 0x00 [IronSword] GroupieAI
+UNIT 0x80 Cavalier 0x81 Level(C11LvlCnst, 2, 1) [2, 10] 0x02 0x00 0x00 0x00 [IronLance] GroupieAI
+UNIT 0x81 Cavalier_F 0x81 Level((C11LvlCnst+3), 2, 1) [3, 9] 0x00 0x00 0x00 0x00 [Javelin, SecretBook] TestAITs
 
-UNIT 0x80 Pirate 0x00 Level(C11LvlCnst, 2, 1) [3, 1] 0x02 0x00 0x00 0x00 [SteelAxe] TestAITs
-UNIT 0x80 Myrmidon 0x00 Level(C11LvlCnst, 2, 1) [4, 2] 0x02 0x00 0x00 0x00 [SteelSword] TestAITs
-UNIT 0x80 Knight 0x00 Level(C11LvlCnst, 2, 1) [2, 4] 0x02 0x00 0x00 0x00 [SteelLance] TestAITs
-UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [3, 3] 0x02 0x00 0x00 0x00 [SteelBow] TestAITs
+//0x38 is Journeyman (3). 0x7E is Journeyman (2).
+UNIT 0x80 0x7E 0x00 Level((C11LvlCnst+8), 2, 1) [11, 21] 0x00 0x00 0x00 0x00 [PoisonAxe, Dragonshield] NoAI
 
-UNIT 0x80 Shaman 0x00 Level(C11LvlCnst, 2, 1) [12, 14] 0x02 0x00 0x00 0x00 [Nosferatu] TestAITs
-UNIT 0x80 Monk 0x00 Level(C11LvlCnst, 2, 1) [13, 13] 0x02 0x00 0x00 0x00 [Divine] TestAITs
-UNIT 0x80 Mage 0x00 Level(C11LvlCnst, 2, 1) [14, 14] 0x02 0x00 0x00 0x00 [Elfire] TestAITs
+//Bottom-left chokepoint units
+UNIT 0x80 Knight 0x00 Level((C11LvlCnst+5), 2, 1) [5, 22] 0x00 0x00 0x00 0x00 [SilverLance] GuardTileAI
+UNIT 0x80 Archer 0x00 Level((C11LvlCnst+5), 2, 1) [4, 21] 0x02 0x00 0x00 0x00 [Longbow] GuardTileAI
+UNIT 0x80 Shaman 0x00 Level((C11LvlCnst+5), 2, 1) [3, 22] 0x02 0x00 0x00 0x00 [Nosferatu] GuardTileAI
+
+//Mid-right units
+UNIT 0x80 Shaman 0x00 Level(C11LvlCnst, 2, 1) [12, 14] 0x00 0x00 0x00 0x00 [Luna] TestAITs
+UNIT 0x80 Monk 0x00 Level(C11LvlCnst, 2, 1) [13, 13] 0x00 0x00 0x00 0x00 [Divine] TestAITs
+UNIT 0x80 Mage_F 0x00 Level((C11LvlCnst+2), 2, 1) [14, 14] 0x00 0x00 0x00 0x00 [Elfire] TestAITs
 UNIT 0x80 Priest 0x00 Level(C11LvlCnst, 2, 1) [12, 12] 0x02 0x00 0x00 0x00 [Mend] TestAITs
+UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [13, 16] 0x00 0x00 0x00 0x00 [SteelSword] TestAITs
+
 UNIT
 
 Easy_Northeast:
-UNIT 0x80 Soldier 0x00 Level((C11LvlCnst+3), 2, 1) [13, 7] 0x00 0x00 0x00 0x00 [SlimLance] GuardTileAI
+UNIT 0x80 Soldier 0x00 Level((C11LvlCnst+2), 2, 1) [13, 7] 0x00 0x00 0x00 0x00 [PoisonLance, Antidote] GuardTileAI
+UNIT
+
+Med_Northeast:
+UNIT 0x80 Soldier 0x00 Level((C11LvlCnst+4), 2, 1) [13, 7] 0x00 0x00 0x00 0x00 [SlimLance, Antidote] GuardTileAI
 UNIT
 
 SoutheastUnit:
-UNIT 0x80 Mage 0x00 Level(C11LvlCnst, 2, 1) [13, 8] 0x00 0x00 0x00 0x00 [Fire] GuardTileAI
+UNIT 0x80 Mage 0x00 Level(C11LvlCnst, 2, 1) [13, 8] 0x02 0x00 0x00 0x00 [Fire] GuardTileAI
 UNIT
 
 NorthwestUnit:
 UNIT 0x80 Fighter 0x00 Level((C11LvlCnst+1), 2, 1) [5, 6] 0x00 0x00 0x00 0x00 [IronAxe] GuardTileAI
 UNIT
 
+SouthwestUnit:
+UNIT 0x80 Mercenary 0x00 Level((C11LvlCnst+6), 2, 1) [5, 9] 0x00 0x00 0x00 0x00 [PoisonSword] GuardTileAI
+UNIT 
+
 AllReinforcers:
 UNIT 0x80 Myrmidon 0x00 Level(C11LvlCnst, 2, 1) [5, 6] 0x00 0x00 0x00 0x00 [Lancereaver] GuardTileAI
-UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [13, 7] 0x00 0x00 0x00 0x00 [IronBlade] GuardTileAI
 UNIT 0x80 Pirate 0x00 Level(C11LvlCnst, 2, 1) [5, 9] 0x00 0x00 0x00 0x00 [Swordreaver] GuardTileAI
-UNIT 0x80 Cavalier 0x00 Level(C11LvlCnst, 2, 1) [13, 8] 0x00 0x00 0x00 0x00 [Axereaver] GuardTileAI
+UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [13, 7] 0x00 0x00 0x00 0x00 [IronBlade] GuardTileAI
+UNIT 0x80 Cavalier_F 0x00 Level(C11LvlCnst, 2, 1) [13, 8] 0x00 0x00 0x00 0x00 [Axereaver] GuardTileAI
 UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [7, 8] 0x00 0x00 0x00 0x00 [Longbow] NoAI
 UNIT 0x80 Shaman 0x00 Level(C11LvlCnst, 2, 1) [11, 8] 0x00 0x00 0x00 0x00 [Flux] NoAI
 UNIT
 
+AllReinforceNoTravel:
+UNIT 0x80 Myrmidon_F 0x00 Level(C11LvlCnst, 2, 1) [5, 7] 0x02 0x00 0x00 0x00 [Lancereaver] NoAI
+UNIT 0x80 Pirate 0x00 Level(C11LvlCnst, 2, 1) [5, 8] 0x00 0x00 0x00 0x00 [Swordreaver, RedGem] NoAI
+UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [13, 6] 0x00 0x00 0x00 0x00 [IronBlade] NoAI
+UNIT 0x80 Cavalier 0x00 Level(C11LvlCnst, 2, 1) [13, 9] 0x02 0x00 0x00 0x00 [Axereaver] NoAI
+UNIT 0x80 Mage_F 0x00 Level(C11LvlCnst, 2, 1) [7, 8] 0x00 0x00 0x00 0x00 [Fire] NoAI
+UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [11, 8] 0x00 0x00 0x00 0x00 [PoisonBow] NoAI
+UNIT
+
+AllReinforceNoTravelB:
+UNIT 0x80 Myrmidon 0x00 Level(C11LvlCnst, 2, 1) [5, 7] 0x00 0x00 0x00 0x00 [Lancereaver] NoAI
+UNIT 0x80 Pirate 0x00 Level(C11LvlCnst, 2, 1) [5, 8] 0x02 0x00 0x00 0x00 [Swordreaver] NoAI
+UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [13, 6] 0x02 0x00 0x00 0x00 [IronBlade] NoAI
+UNIT 0x80 Cavalier 0x00 Level(C11LvlCnst, 2, 1) [13, 9] 0x00 0x00 0x00 0x00 [Axereaver] NoAI
+UNIT 0x80 Monk 0x00 Level((C11LvlCnst+5), 2, 1) [7, 8] 0x02 0x00 0x00 0x00 [Lightning, PureWater] NoAI
+UNIT 0x80 Archer_F 0x00 Level(C11LvlCnst, 2, 1) [11, 8] 0x00 0x00 0x00 0x00 [IronBow, Vulnerary] NoAI
+UNIT
+
+ALIGN 4
 ArveSpawn:
 ReinforcementEvent(C11_CCB_Arve)
 
 AllReinforce:
 ReinforcementEvent(AllReinforcers)
 
+AllReinforceChamber:
+ReinforcementEvent(AllReinforceNoTravel)
+
+AllReinforceChamberB:
+ReinforcementEvent(AllReinforceNoTravelB)
+
 SEReinforce:
 ReinforcementEvent(SoutheastUnit)
+
+SWReinforce:
+ReinforcementEvent(SouthwestUnit)
 
 NWReinforce:
 ReinforcementEvent(NorthwestUnit)
 
 NEReinforceE:
 ReinforcementEvent(Easy_Northeast)
+
+NEReinforceM:
+ReinforcementEvent(Med_Northeast)
 
 Text_Event:
 TEXTSTART
@@ -130,20 +208,43 @@ TurnBasedEvents:
 //TURN
 //TurnEventPlayer(Event_ID, Jump Label, Turn to Trigger, Turns to persist)
 
+//Soldiers + Fighters turns 2, 3
+TurnEventPlayer(0x0, MoveNENWUnits, 2, 2)
+
+//Soldier + Fighter + Mercenary turn 4
+TurnEventPlayer(0x0, MoveNENWSWUnits, 4, 1)
+
+//Mages + Fighters turns 5, 6, 7, 8
+TurnEventPlayer(0x0, MoveSENWUnits, 5, 4)
+
 //Soldiers in the middle on turns 2, 3, and 4
-TurnEventPlayer(0x0, MoveNEUnit, 2, 3)
-TurnEventPlayer(0x0, NEReinforceE, 1, 3)
+//TurnEventPlayer(0x0, MoveNEUnit, 2, 3)
+TurnEventPlayer(0x0, NEReinforceE, 1, 1)
+TurnEventPlayer(0x0, NEReinforceM, 2, 1)
+TurnEventPlayer(0x0, NEReinforceE, 3, 1)
 
-//Mage behind the right side on Turns 6, 7, and 8
-TurnEventPlayer(0x0, MoveSEUnit, 6, 3)
-TurnEventPlayer(0x0, SEReinforce, 5, 3)
+//Mage behind the right side on Turns 5, 6, 7, and 8
+//TurnEventPlayer(0x0, MoveSEUnit, 5, 4)
+TurnEventPlayer(0x0, SEReinforce, 4, 4)
 
-//Fighter on the top left on turns 5, 6, 7, 8, 9, and 10
-TurnEventPlayer(0x0, MoveNWUnit, 5, 6)
-TurnEventPlayer(0x0, NWReinforce, 4, 6)
+//Fighter on the top left on turns 2, 3, 4, 5, 6, 7, 8
+//TurnEventPlayer(0x0, MoveNWUnit, 2, 6)
+TurnEventPlayer(0x0, NWReinforce, 1, 6)
 
-//Dump a ton!!
-TurnEventPlayer(0x0, MoveAllUnits, 15, 3)
+//Mercenary behind the left side on Turn 4
+//TurnEventPlayer(0x0, MoveSWUnit, 4, 0)
+TurnEventPlayer(0x0, SWReinforce, 3, 1)
+
+//Dump all kinds on turn 13, 17 in the central area
+TurnEventPlayer(0x0, AllReinforceChamberB, 13, 1)
+TurnEventPlayer(0x0, AllReinforceChamber, 17, 1)
+
+//Dump a ton! On turns 9, 11, 15
+TurnEventPlayer(0x0, MoveAllUnits, 9, 1)
+TurnEventPlayer(0x0, MoveAllUnits, 11, 1)
+TurnEventPlayer(0x0, MoveAllUnits, 15, 1)
+TurnEventPlayer(0x0, AllReinforce, 8, 3)
+TurnEventPlayer(0x0, AllReinforce, 10, 3)
 TurnEventPlayer(0x0, AllReinforce, 14, 3)
 
 TurnEventPlayer(0x0, ArveSpawn, 1, 0)
@@ -157,9 +258,6 @@ END_MAIN
 LocationBasedEvents:
 Seize(9, 8)
 //Seize(0x0,Ch1EndingScene,2,5)
-#ifdef __DEBUG__
-Seize(4,27)
-#endif
 END_MAIN
 
 MiscBasedEvents:
@@ -176,6 +274,8 @@ Tutorial:
 WORD $00
 
 TrapData:
+BLST [12,3] 0x35
+BLST [14,4] 0x35
 END_MAIN
 
 TrapData_H:
@@ -287,6 +387,23 @@ _SETVAL 0xB 0x60005 //The unit at 5, 6
 _SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
 CHAI [5, 6] //actually change the AI
 _MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
+ENUN
+NoFade
+ENDA
+
+MoveNENWSWUnits:
+_SETVAL 0xB 0x7000D //The unit at 13, 7
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [13, 7] //actually change the AI
+_MOVE 0x7F 0xFFFE [9, 13] //Move it to 9, 13
+_SETVAL 0xB 0x60005 //The unit at 5, 6
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [5, 6] //actually change the AI
+_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
+_SETVAL 0xB 0x00090005 //The unit at 5, 9
+_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+CHAI [5, 9] //actually change the AI
+_MOVE 0x7F 0xFFFE [4,26] //Move it to 4, 26
 ENUN
 NoFade
 ENDA

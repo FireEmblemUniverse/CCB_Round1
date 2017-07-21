@@ -298,8 +298,18 @@ ReinforceSouthWithWyverns:
 ReinforceSouthWithWyverns2:
   ReinforcementEvent(EnemySouthWyverns2Re)
 
-ReinforceSouthWithWyverns3:
-  ReinforcementEvent(EnemySouthWyverns3Re)
+ReinforceSouthWithWyverns3: //every 2 turns
+  CHECK_TURNS //store current turn to slot c
+  //Now get remainder mod 2
+  SMOV r1 2
+  SDIV slotsParam(r2, rC, r1) //r2 = rC/2
+  SMUL slotsParam(r1, r2)     //r1 = r2*2
+  SSUB slotsParam(r1, rC, r1)     //r1 -= rC, r1 = remainder
+  BNE 0x0 r1 0
+  LoadReinforcements(EnemySouthWyverns3Re)    //Remainder was 0 (right)
+  LABEL 0x0
+  NoFade
+  ENDA
 
 SpawnTheNewGuy:
   ReinforcementEvent(BobUnit)
