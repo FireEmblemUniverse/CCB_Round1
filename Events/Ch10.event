@@ -71,7 +71,7 @@ TURN 0x0 ReinforceTurn5 [5,0] 0x0
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEventBothWays(0x13,SamsonRecruit,Void,Samson)
+CharacterEventBothWays(0x14,SamsonRecruit,Void,Samson)
 END_MAIN
 
 LocationBasedEvents:
