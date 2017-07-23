@@ -83,7 +83,7 @@ END_MAIN
 ALIGN 4
 
 BeginningScene:
-VCWF 3
+VCWF 4
 LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 Enemies
@@ -229,10 +229,10 @@ UNIT
 Enemies2:
 UNIT PegasusMessenger Cavalier Valter_Ch15_ Level(15, Enemy, 1) [19,13] 0x00 0x00 0x0 0x00 [SteelSword] PursueWithoutHeedAI 
 UNIT PegasusMessenger Cavalier Valter_Ch15_ Level(15, Enemy, 1) [19,21] 0x00 0x00 0x0 0x00 [SteelSword] PursueWithoutHeedAI 
-UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(1, Enemy, 1) [22,9] 0x2 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
-UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(1, Enemy, 1) [23,18] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
-UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(1, Enemy, 1) [21,18] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
-UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(1, Enemy, 1) [20,9] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
+UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(1, Enemy, 1) [22,9] 0x2 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI 
+UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(1, Enemy, 1) [23,18] 0x00 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI 
+UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(1, Enemy, 1) [21,18] 0x00 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI 
+UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(1, Enemy, 1) [20,9] 0x00 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI 
 UNIT Valter_Ch15_ Sniper Valter_Ch15_ Level(5, Enemy, 1) [31,17] 0x2 0x00 0x0 0x00 [KillerBow, Longbow, SecretBook] NeverMoveAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(5, Enemy, 1) [32,2] 0x00 0x00 0x0 0x00 [Ballista] AttackInRangeAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(5, Enemy, 1) [35,17] 0x00 0x00 0x0 0x00 [Ballista] AttackInRangeAI 
@@ -265,12 +265,12 @@ Enemies4:
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(15, Enemy, 1) [17,17] 0x00 0x00 0x0 0x00 [Ballista] PursueWithoutHeedAI 
 UNIT PegasusMessenger General Valter_Ch15_ Level(1, Enemy, 1) [25,11] 0x00 0x00 0x0 0x00 [SilverAxe] NeverMoveAI 
 UNIT PegasusMessenger General Valter_Ch15_ Level(1, Enemy, 1) [25,12] 0x00 0x00 0x0 0x00 [SilverLance] NeverMoveAI 
-UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [3,27] 0x00 0x00 0x0 0x00 [SlimLance, SilverLance] PursueWithoutHeedAI 
-UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [20,1] 0x00 0x00 0x0 0x00 [SlimLance, SilverLance] PursueWithoutHeedAI 
-UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [18,28] 0x00 0x00 0x0 0x00 [SlimLance, SilverLance] PursueWithoutHeedAI 
+UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [3,27] 0x00 0x00 0x0 0x00 [SlimLance, SteelLance] PursueWithoutHeedAI 
+UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [20,1] 0x00 0x00 0x0 0x00 [SlimLance, SteelLance] PursueWithoutHeedAI 
+UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [18,28] 0x00 0x00 0x0 0x00 [SlimLance, SteelLance] PursueWithoutHeedAI 
 //UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [10,25] 0x00 0x00 0x0 0x00 [SlimLance, SilverLance] PursueWithoutHeedAI 
-UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [7,2] 0x00 0x00 0x0 0x00 [SlimLance, SilverLance] PursueWithoutHeedAI 
-UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [9,2] 0x00 0x00 0x0 0x00 [SlimLance, SilverLance] PursueWithoutHeedAI 
+UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [7,2] 0x00 0x00 0x0 0x00 [SlimLance, SteelLance] PursueWithoutHeedAI 
+UNIT PegasusMessenger PegasusKnight Valter_Ch15_ Level(15, Enemy, 1) [9,2] 0x00 0x00 0x0 0x00 [SlimLance, SteelLance] PursueWithoutHeedAI 
 UNIT PegasusMessenger WyvernRider Valter_Ch15_ Level(15, Enemy, 1) [32,6] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
 UNIT PegasusMessenger WyvernRider Valter_Ch15_ Level(15, Enemy, 1) [33,7] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
 UNIT PegasusMessenger WyvernRider Valter_Ch15_ Level(15, Enemy, 1) [34,8] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
@@ -338,9 +338,9 @@ UNIT PegasusMessenger Shaman Valter_Ch15_ Level(12, Enemy, 1) [33,12] 0x00 0x00 
 UNIT
 
 T18Reinforcements:
-UNIT PegasusMessenger Paladin Valter_Ch15_ Level(5, Enemy, 1) [32,9] 0x00 0x00 0x0 0x00 [SilverSword] PursueWithoutHeedAI 
-UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(5, Enemy, 1) [31,10] 0x00 0x00 0x0 0x00 [SilverLance] PursueWithoutHeedAI 
-UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(5, Enemy, 1) [33,12] 0x00 0x00 0x0 0x00 [KillerLance, Spear] PursueWithoutHeedAI 
+UNIT PegasusMessenger Paladin Valter_Ch15_ Level(5, Enemy, 1) [32,9] 0x00 0x00 0x0 0x00 [SteelSword, SteelLance] PursueWithoutHeedAI 
+UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(5, Enemy, 1) [31,10] 0x00 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI 
+UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(5, Enemy, 1) [33,12] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
 UNIT
 
 T19Reinforcements:

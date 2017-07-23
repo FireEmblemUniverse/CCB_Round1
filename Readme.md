@@ -245,6 +245,7 @@ Darrman for Zigludo, Tiki
 blueeyedman24 for Gwendy  
 Kirb for Edgeworth, Grit, Marf (edited from Didja Redo's version)  
 Crazycolorz for Prine   
+Astelaine for Not Arch
 
 
 ***-maps-***
