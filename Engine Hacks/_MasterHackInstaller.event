@@ -90,6 +90,11 @@ POP
   //Modular Stat Screen
   #include "ModularStatScreen.event"
 
+  // Range display fix (for unusual weapon ranges, like 3-15 range iron ballista)
+  #include "RangeFix/RangeDisplayFix.event"
+  
+  #include "PhysicTargetFix/PhysicFix.event"
+  
   //Stat Screens palette by allegiance
   // #include "StatScreenAllegiance.event"
 
