@@ -1,0 +1,28 @@
+#ifndef PHYSIC_TARGET_FIX_EVENT
+#define PHYSIC_TARGET_FIX_EVENT
+
+#ifndef _FE8_
+	ERROR PHYSIC TARGET FIX is for FE8
+#endif
+
+#include "Extensions/Hack Installation.txt"
+#include "eastdlib.event"
+
+#ifndef FreeSpace
+	#define FreeSpace 0xB2A610
+	ORG FreeSpace
+#endif
+
+{
+PUSH
+	ORG 0x025ED0
+		callHack_r3(_prPhysicFix)
+		SHORT 0 0 0
+POP
+
+ALIGN 4
+_prPhysicFix:
+	#incbin "asm/Hook.bin"
+}
+
+#endif // PHYSIC_TARGET_FIX_EVENT
