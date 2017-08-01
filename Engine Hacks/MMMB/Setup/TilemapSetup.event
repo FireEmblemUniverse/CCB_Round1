@@ -1,0 +1,28 @@
+
+ALIGN 4
+
+#include "MMBTilemap.event"
+
+ALIGN 4
+
+PUSH
+ORG 0x08C70C
+POIN MMBTilemap
+
+ORG 0xA0189C
+BYTE (MMBWidth-8) (MMBWidth-4) (MMBWidth-2)
+BYTE MMBWidth $0 (MMBWidth-6)
+
+ORG 0x08BEB6
+BYTE MMBWidth
+ORG 0x08BEB8
+BYTE MMBHeight
+
+ORG 0x08BEC4
+BYTE MMBWidth
+ORG 0x08BEC6
+BYTE MMBHeight
+
+ORG 0x08BD9E
+BYTE MMBWidth
+POP

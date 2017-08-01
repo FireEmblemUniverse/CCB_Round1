@@ -1,0 +1,4014 @@
+@@ This is written like it's an .asm file
+@@ Why? I dunno'. Constants are set at the start of 
+@@ routines and are placed wherever they are by
+@@ default. General inputs/notes are placed at the
+@@ front of routines, with more notes on the side
+@@ in a line-by-line format. 
+
+@@ Comments use @@. Subroutines start with either bl or @substart and
+@@ end with @subend for easy NP++ highlighting. The language
+@@ file is in the same folder as this, so use it if you'd like.
+
+.thumb                      
+.org 0x08CCC8
+MMBSetup:                   @substart
+
+@@ This is the main routine for setting up the 
+@@ minimug box. It determines where to put the box
+@@ and the things on it.
+
+.set MiscRAMData, 0x0202BCB0
+
+@@ This section of memory has information on cursor position, 
+@@ phases, chapter number, gold, and a bunch of other things
+
+.set BaseRowPointer, 0x0202E4D8
+
+@@ This is part of a system for getting elements on the map. 
+@@ It begins with two shorts that go 0xXX 0xXX 0xYY 0xYY
+@@ followed by a pointer to the first 'row pointer'. The .set value
+@@ above is this pointer to the first row pointer. I think
+@@ an example would demonstrate better.
+
+.set BoxControlTable, 0x08A01828
+
+@@ Table of bytes, either 0x00, 0x01, or 0xFF
+@@ for determining the position of windows such as the 
+@@ minimug box, goal window, or terrain window
+
+.set MMBStructType, 0x08A018AC
+
+@@ This is the type of 0x6C struct used when
+@@ drawing the box. 
+
+push    {r4-r6,lr}          @@ 0808CCC8 B570        @@ Register saving
+mov     r4, r0              @@ 0808CCCA 1C04        @@ \
+ldr     r2, RAMData         @@ 0808CCCC 4A25        @@ Grabs character in RAM
+mov     r1, #0x16           @@ 0808CCCE 2116        @@ at location
+ldsh    r0, [r2, r1]        @@ 0808CCD0 5E50        @@ 
+ldr     r1, BaseRowPtr      @@ 0808CCD2 4925        @@ 
+ldr     r1, [r1]            @@ 0808CCD4 6809        @@ 
+lsl     r0, r0, #0x02       @@ 0808CCD6 0080        @@ 
+add     r0, r0, r1          @@ 0808CCD8 1840        @@ 
+mov     r3, #0x14           @@ 0808CCDA 2314        @@ 
+ldsh    r1, [r2, r3]        @@ 0808CCDC 5ED1        @@ 
+ldr     r0, [r0]            @@ 0808CCDE 6800        @@ 
+add     r0, r0, r1          @@ 0808CCE0 1840        @@ 
+ldrb    r0, [r0]            @@ 0808CCE2 7800        @@ 
+bl      RAMPtrGetter        @@ 0808CCE4 F78CFBA4    @@ /    
+
+.org 0x019430
+RAMPtrGetter:               
+
+@@ This short routine takes r0 as character's 
+@@ deployment number and returns a pointer to
+@@ their data in RAM
+
+.set RAMSlotTable, 0x0859A5D0
+
+@@ This is a table of pointers, with one for
+@@ every deployment slot in RAM
+
+ldr     r2, SlotTable       @@ 08019430 4A03        @@ 
+mov     r1, #0xFF           @@ 08019432 21FF        @@ Always going to be a byte
+and     r1, r0              @@ 08019434 4001        @@ Probably a compiler thing
+lsl     r1, r1, #0x02       @@ 08019436 0089        @@ Multiply deployment # by 4
+add     r1, r1, r2          @@ 08019438 1889        @@ 
+ldr     r0, [r1]            @@ 0801943A 6808        @@ Grabs pointer from table
+bx      lr                  @@ 0801943C 4770        @@ Return
+
+.align 2
+
+SlotTable:
+.long RAMSlotTable
+
+.org 0x08CCE8               @subend
+mov     r6, r0              @@ 0808CCE8 1C06        @@ \
+cmp     r6, #0x00           @@ 0808CCEA 2E00        @@ Safeguard if there isn't a character
+beq     MMBSetupEnd         @@ 0808CCEC D036        @@ /
+mov     r1, r4              @@ 0808CCEE 1C21        @@ \
+add     r1, #0x55           @@ 0808CCF0 3155        @@ Set 0x6C struct byte to 1
+mov     r0, #0x01           @@ 0808CCF2 2001        @@ 
+strb    r0, [r1]            @@ 0808CCF4 7008        @@ /
+bl      WindowPosCheck      @@ 0808CCF6 F7FEFF69    @@ Get window position byte
+
+.org 0x08BBCC
+WindowPosCheck:
+
+@@ This returns 0-3 based on cursor position
+@@ Uses the same misc. RAM data
+@@ This function is used by all window elements
+@@ here (goal, terrain, minimug), so don't edit it
+
+push    {r4, lr}            @@ 0808BBCC B510        @@ Register saving
+ldr     r2, PosRAMData      @@ 0808BBCE 4A0A        @@ 
+mov     r0, #0x14           @@ 0808BBD0 2014        @@ \
+ldsh    r3, [r2, r0]        @@ 0808BBD2 5E13        @@ X position of cursor in 16x16 tiles
+lsl     r3, r3, #0x04       @@ 0808BBD4 011B        @@ Multiply by 0x10 to get pixels
+mov     r1, #0x0C           @@ 0808BBD6 210C        @@ \
+ldsh    r0, [r2, r1]        @@ 0808BBD8 5E50        @@ Grabs some hword for offsetting window
+sub     r0, #0x08           @@ 0808BBDA 3808        @@ \
+sub     r3, r3, r0          @@ 0808BBDC 1A1B        @@ Final x coord in r3
+mov     r4, #0x16           @@ 0808BBDE 2416        @@ \
+ldsh    r1, [r2, r4]        @@ 0808BBE0 5F11        @@ Same process for y coord in
+lsl     r1, r1, #0x04       @@ 0808BBE2 0109        @@ r1
+mov     r4, #0x0E           @@ 0808BBE4 240E        @@ 
+ldsh    r0, [r2, r4]        @@ 0808BBE6 5F10        @@ 
+sub     r0, #0x08           @@ 0808BBE8 3808        @@ 
+sub     r1, r1, r0          @@ 0808BBEA 1A09        @@ /
+cmp     r3, #0x78           @@ 0808BBEC 2B78        @@ \
+bgt     PosRightSide        @@ 0808BBEE DC05        @@ If cursor is on right side of screen
+cmp     r1, #0x50           @@ 0808BBF0 2950        @@ \
+bgt     PosBotLeft          @@ 0808BBF2 DC07        @@ If cursor is on bottom left of screen
+mov     r0, #0x00           @@ 0808BBF4 2000        @@ Corresponds to cursor in top left
+b       PosEnd              @@ 0808BBF6 E008        @@ 
+
+PosRAMData:
+.long MiscRamData
+
+PosRightSide:
+
+cmp     r1, #0x50           @@ 0808BBFC 2950        @@ 
+bgt     PosBotRight         @@ 0808BBFE DC03        @@ 
+mov     r0, #0x01           @@ 0808BC00 2001        @@ Corresponds to cursor in top right
+b       PosEnd              @@ 0808BC02 E002        @@ 
+
+PosBotLeft:
+
+mov     r0, #0x02           @@ 0808BC04 2002        @@ Corresponds to cursor on bottom left
+b       PosEnd              @@ 0808BC06 E000        @@ 
+
+PosBotRight:
+
+mov     r0, #0x03           @@ 0808BC08 2003        @@ Corresponds to cursor in bottom right
+
+PosEnd:
+
+pop     {r4}                @@ 0808BC0A BC10        @@ 
+pop     {r1}                @@ 0808BC0C BC02        @@ 
+bx      r1                  @@ 0808BC0E 4708        @@ 
+    
+.org 0x08CCFA               @subend
+mov     r1, r4              @@ 0808CCFA 1C21        @@ \
+add     r1, #0x50           @@ 0808CCFC 3150        @@ Stores window position control byte
+strb    r0, [r1]            @@ 0808CCFE 7008        @@ /
+ldr     r0, BoxCtrlTable    @@ 0808CD00 481A        @@ See notes on table
+ldrb    r1, [r1]            @@ 0808CD02 7809        @@ Grabs control byte
+lsl     r1, r1, #0x18       @@ 0808CD04 0609        @@ \
+asr     r1, r1, #0x18       @@ 0808CD06 1609        @@ This is a compiler derp
+lsl     r1, r1, #0x03       @@ 0808CD08 00C9        @@ multiply by 8
+add     r1, r1, r0          @@ 0808CD0A 1809        @@ 
+mov     r0, #0x02           @@ 0808CD0C 2002        @@ 
+ldsb    r0, [r1, r0]        @@ 0808CD0E 5608        @@ These are inputs for the window
+ldrb    r1, [r1, #0x03]     @@ 0808CD10 78C9        @@ type function below
+lsl     r1, r1, #0x18       @@ 0808CD12 0609        @@ Because r0 was loaded as signed, only
+asr     r1, r1, #0x18       @@ 0808CD14 1609        @@ r1 needs this FF-floodfiller
+bl      WindowType          @@ 0808CD16 F7FEFF49    @@ Get window type byte
+
+.org 0x08BBAC
+WindowType:
+
+@@ 'Type' is inaccurate, it's still position
+@@ but for label purposes I'm calling it type
+@@ This routine returns 0-3 depending
+@@ on whether r0 and r1 are negative, positive, 
+@@ or zero, from the box control table.
+@@ Used when determining where to draw terrain,
+@@ goal, and minimug windows.
+
+push    {lr}                @@ 0808BBAC B500        @@ Not necessary
+cmp     r0, #0x00           @@ 0808BBBE 2800        @@ 
+bge     WTRightSide         @@ 0808BBB0 DA05        @@ 
+cmp     r1, #0x00           @@ 0808BBB2 2900        @@ 
+bge     WTBottomLeft        @@ 0808BBB4 DA01        @@ 
+mov     r0, #0x00           @@ 0808BBB6 2000        @@ Top Left
+b       WTEnd               @@ 0808BBB8 E006        @@ 
+
+WTBottomLeft:
+
+mov     r0, #0x01           @@ 0808BBBA 2001        @@ Bottom left
+b       WTEnd               @@ 0808BBBC E004        @@ 
+
+WTRightSide:
+
+cmp     r1, #0x00           @@ 0808BBBE 2900        @@ 
+blt     WTTopRight          @@ 0808BBC0 DB01        @@ 
+mov     r0, #0x03           @@ 0808BBC2 2003        @@ Bottom Right
+b       WTEnd               @@ 0808BBC4 E000        @@ 
+
+WTTopRight:
+
+mov     r0, #0x02           @@ 0808BBC6 2002        @@ Top Right
+
+WTEnd:
+
+pop     {r1}                @@ 0808BBC8 BC02        @@ \
+bx      r1                  @@ 0808BBCA 4708        @@ Could've just bx lr
+    
+.org 0x08CD1A               @subend
+mov     r5, r0              @@ 0808CD1A 1C05        @@ Move the result out of the way
+ldr     r0, MMBStruct       @@ 0808CD1C 4814        @@ \
+bl      StructFinder        @@ 0808CD1E F776F8BD    @@ Find text parameter struct
+
+.org 0x2E9C
+StructFinder:
+
+@@ This routine finds 0x6C structs based on
+@@ a pointer given in r0. If it can't find the struct, 
+@@ it returns 0 in r0. If it can, it returns the
+@@ offset of the struct in r0.
+
+.set StructBase, 0x02024E68
+
+@@ This is the first 0x6C struct position
+@@ add 0x6C for the next one, etc
+
+push    {lr}                @@ 08002E9C B500        @@ Register saving
+mov     r3, r0              @@ 08002E9E 1c03        @@ Move target out of the way
+ldr     r1, StructBaseLoc   @@ 08002EA0 4903        @@ Grab first position
+mov     r2, #0x00           @@ 08002EA2 2200        @@ Loop counter
+
+StructCheck:
+
+ldr     r0, [r1]            @@ 08002EA4 6808        @@ Grab identifying pointer
+cmp     r0, r3              @@ 08002EA6 4298        @@ check if it's our target
+bne     StructLoop          @@ 08002EA8 D104        @@ if not target, increment
+mov     r0, r1              @@ 08002EAA 1C08        @@ if target, move offset to r0
+b       StructEnd           @@ 08002EAC E007        @@ 
+
+.align 2
+
+StructBaseLoc:
+.long StructBase
+
+StructLoop:
+
+add     r2, #0x01           @@ 08002EB4 3201        @@ counter +1
+add     r1, #0x6C           @@ 08002EB6 316C        @@ next struct
+cmp     r2, #0x3F           @@ 08002EB8 2A3F        @@ 40 structs, max
+ble     StructCheck         @@ 08002EBA DDF3        @@ 
+mov     r0, #0x00           @@ 08002EBC 2000        @@ returns 0 if it can't find
+
+StructEnd:
+
+pop     {r1}                @@ 08002EBE BC02        @@ cleanup
+bx      r1                  @@ 08002EC0 4708        @@ 
+    
+.org 0x08CD22               @subend
+cmp     r0, #0x00           @@ 0808CD22 2800        @@ If there isn't one, 
+beq     MMBCompSkipped      @@ 0808CD24 D007        @@ skip comparison
+mov     r1, r0              @@ 0808CD26 1C01        @@ 
+add     r1, #0x57           @@ 0808CD28 3157        @@ Gets existing control byte
+mov     r0, #0x00           @@ 0808CD2A 2000        @@ from text parameter 0x6C
+ldsb    r0, [r1, r0]        @@ 0808CD2C 5608        @@ struct
+cmp     r0, #0x00           @@ 0808CD2E 2800        @@ \
+blt     MMBCompSkipped      @@ 0808CD30 DB01        @@ Negative check?
+cmp     r0, r5              @@ 0808CD32 42A8        @@ \
+beq     MMBSetupEnd         @@ 0808CD34 D012        @@ If there's already a MMB, end
+
+MMBCompSkipped:
+
+mov     r0, r4              @@ 0808CD36 1C20        @@ Stores window type in 
+add     r0, #0x57           @@ 0808CD38 3057        @@ original 0x6C struct
+strb    r5, [r0]            @@ 0808CD3A 7005        @@ 
+ldr     r0, RAMDATA         @@ 0808CD3C 4809        @@ \
+ldrh    r1, [r0, #0x14]     @@ 0808CD3E 8A81        @@ Gets cursor position the same
+mov     r2, r4              @@ 0808CD40 1C22        @@ way as before, but it stores
+add     r2, #0x4E           @@ 0808CD42 324E        @@ the coordinates in the
+strb    r1, [r2]            @@ 0808CD44 7011        @@ 0x6C struct
+ldrh    r0, [r0, #0x16]     @@ 0808CD46 8AC0        @@ 
+mov     r1, r4              @@ 0808CD48 1C21        @@ 
+add     r1, #0x4F           @@ 0808CD4A 314F        @@ 
+strb    r0, [r1]            @@ 0808CD4C 7008        @@ /
+mov     r0, r4              @@ 0808CD4E 1C20        @@ 0x6C struct
+mov     r1, r6              @@ 0808CD50 1C31        @@ Unit's RAM data
+bl      MMBBuilder          @@ 0808CD52 F7FFFC3D    @@ 
+
+.org 0x08C5D0
+MMBBuilder:
+
+@@ This is the routine that handles parts
+@@ on the box, such as the unit's name and minimug
+@@ along with the tilemap for the box itself.
+
+.set ERAMBGBuffer, 0x02003D2C
+
+@@ This is the BG buffer dedicated to window 
+@@ tilemaps, such as the tilemaps for the terrain
+@@ window, goal window, and minimug box
+
+.set ERAMBufferConst, 0x1000060
+
+@@ CPUFastSet has its parameters input via r2
+@@ bit 24 being set allows for repeated writing of 
+@@ the word at the offset in r0 to be written to
+@@ the area instead of copying. In the case of how it's
+@@ used here, the routine first stores 00000000 to the stack 
+@@ and then puts the stack pointer in r0 before calling
+@@ CPUFastSet. 
+
+.set MMBBarRAMBuffer, 0x02003E36
+
+@@ This is the buffer area for the
+@@ HP bar
+
+.set MMBTilemapRAMBuffer, 0x200422C
+
+@@ This is where the box's tilemap
+@@ is written to to accomplish the
+@@ scrolling effect
+
+.set MMBTilemap, 0x08A17484
+
+@@ This is where the rilemap for the 
+@@ minimug box is.
+
+
+push    {r4-r7, lr}         @@ 0808C5D0 B5F0     @@ \
+mov     r7, r10             @@ 0808C5D2 4657     @@ Register saving
+mov     r6, r9              @@ 0808C5D4 464E     @@ 
+mov     r5, r8              @@ 0808C5D6 4645     @@ 
+push    {r5-r7}             @@ 0808C5D8 B4E0     @@ /
+add     sp, #-0x08          @@ 0808C5DA B082     @@ Reserves 2 words
+mov     r7, r0              @@ 0808C5DC 1C07     @@  
+mov     r8, r1              @@ 0808C5DE 4688     @@ 
+mov     r0, #0x00           @@ 0808C5E0 2000     @@ This is for a CPUFastSet
+mov     r10, r0             @@ 0808C5E2 4682     @@ trick explained above
+str     r0, [sp, #0x04]     @@ 0808C5E4 9001     @@ /
+ldr     r1, WindowBuffer    @@ 0808C5E6 4928     @@ \
+mov     r9, r1              @@ 0808C5E8 4689     @@ 
+ldr     r2, BufferConst     @@ 0808C5EA 4A28     @@ Clears buffer by CPUFastSet
+add     r0, sp, #0x04       @@ 0808C5EC A801     @@ repeated cleared long
+bl      CPUFastSet          @@ 0808C5EE F045F841 @@ /
+
+    .org 0x0D1674
+    CPUFastSet:
+    
+    @@ BIOS function that copies data from location
+    @@ given by r0 into location given by r1.
+    @@ r2 is the length of the data. See gbatek for info
+    
+    swi     0x0C                @@ 080D1674 DF0C        @@ CPUFastSet
+    bx      lr                  @@ 080D1676 4770        @@
+
+.org 0x08C5F2               @subend
+mov     r1, r8              @@ 0808C5F2 4641     @@ \
+ldr     r0, [r1]            @@ 0808C5F4 6808     @@ Grabs unit name hword
+ldrh    r0, [r0]            @@ 0808C5F6 8800     @@ /
+bl      TextBufferWriter    @@ 0808C5F8 F77DFE22 @@ Writes name to 0x0202A6AC buffer
+
+.org 0xA240
+TextBufferWriter:
+
+@@ This routine writes text from text ID
+@@ in r0 to a buffer at 0x0202A6AC
+
+.set TextBufferID, 0x0202B6AC
+
+@@ This is where the text ID of the text currently in the buffer goes
+
+.set TextTableOffset, 0x0815D48C
+
+@@ This is the location of FE8's text table.
+@@ It contains pointers to most pieces of text
+@@ in the game.
+
+.set TextBufferOffset, 0x0202A6AC
+
+@@ This is the buffer text is written to.
+
+push    {r4-r6, lr}         @@ 0800A240 B570     @@ Register saving
+mov     r5, r0              @@ 0800A242 1C05     @@ move text ID
+ldr     r6, TxtBufferIDLoc  @@ 0800A244 4E08     @@ 
+ldr     r0, [r6]            @@ 0800A246 6830     @@ \
+cmp     r5, r0              @@ 0800A248 4285     @@ If new ID = old ID
+beq     TextSkip            @@ 0800A24A D013     @@ return buffer location and end
+ldr     r1, TextTable       @@ 0800A24C 4907     @@ \
+lsl     r0, r5, #0x02       @@ 0800A24E 00A8     @@ Gets offset of text
+add     r0, r0, r1          @@ 0800A250 1840     @@ 
+ldr     r0, [r0]            @@ 0800A252 6800     @@ /
+ldr     r4, TxtBufferLoc    @@ 0800A254 4C06     @@ \
+mov     r1, r4              @@ 0800A256 1C21     @@ Writes unit name to buffer
+bl      TrampolineRoutine   @@ 0800A258 F7F8FCA4 @@ /
+
+.org 0x2BA4
+TrampolineRoutine:
+
+@@ Grabs and branches to a preset routine in
+@@ WRAM. Not something to mess with. In this case, it
+@@ branches to a text writing routine.
+
+.set WRAMRoutinePointer, 0x03004150
+
+@@ There's a pointer here that's the 
+@@ location of a WRAM routine.
+
+push    {lr}                @@ 08002BA4 B500     @@ Register saving
+ldr     r2, WRAMRtOffs      @@ 08002BA6 4A03     @@ \
+ldr     r2, [r2]            @@ 08002BA8 6812     @@ Grab routine and branch
+bl      BXLadderR2          @@ 08002BAA F0CEFE8D @@ /
+
+.org 0x0D18C8
+BXLadderR2:
+
+@@ Longcalling function. 
+@@ This one is for r2
+
+bx      r2                  @@ 080D18C8 4710     @@
+                            @substart
+.org 0x03003C04
+.arm
+WRAMTextHuffmanDecoder:
+
+@@ The following is poorly-understood ARM code
+
+@@ While this isn't directly branched to, this
+@@ use of the routine getter will hop to this.
+@@ This routine writes text to a buffer.
+@@ Inputs: r0 pointer to text
+@@ r1 where to write to
+@@ It should be noted that, by default, the 
+@@ input text for this is huffman encoded.
+@@ It should also be noted that you can't
+@@ compile this to WRAM, so this is probably
+@@ the one fake part of these notes.
+
+.set HuffmanPtrTable, 0x0815D488
+
+@@ This is the beginning of a table of
+@@ pointers, probably involved in text 
+@@ shenanigans. This name and use
+@@ are guesses at best.
+
+.set HuffmanTreeStart, 0x0815A72C
+
+@@ This is a long table of values 
+@@ That get lower toward the start
+@@ until negative. It's used for 
+@@ huffman stuff. Name and use are,
+@@ once again, guesses.
+
+@@ It's not imperative to learn this
+@@ so feel free to skip it.
+@@ If you're feeling brave, I've interspersed
+@@ notes in the code as well as 
+@@ alongside it.
+
+HuffTable:
+.long HuffmanPtrTable
+
+HuffTree:
+.long HuffmanTreeStart
+
+push    {r4-r7}             @@ 03003C0C E92D00F0 @@ Register saving
+sub     r3, r3, r3          @@ 03003C10 E0433003 @@ set r3 to 0
+ldr     r5, HuffTree        @@ 03003C14 E51F5014 @@ \
+ldr     r7, HuffTable       @@ 03003C18 E51F701C @@ These are explained above
+ldr     r7, [r7]            @@ 03003C1C E5977000 @@ Grabs default table entry?
+
+HuffNextByte:
+
+mov     r4, r7              @@ 03003C20 E1A04007 @@ Moves end of tree into r4
+
+@@ This system works backwards, in a way. 
+@@ It shifts the compressed byte it's testing 
+@@ to the right every loop, shrinking it.
+@@ The byte is shifted left to get an entry
+@@ in the tree, which is a table of halfwords. 
+@@ Thus, the value in r4 might be the 'end' of the table
+@@ in terms of increasing offsets in the ROM,
+@@ but it is the 'beginning' of the tree.
+
+HuffLoop:
+
+subs    r3, r3, #0x01       @@ 03003C24 E2533001 @@ Decrement loop counter
+bpl     HuffCountPos        @@ 03003C28 5A000002 @@ If not positive
+ldrb    r2, [r0]            @@ 03003C2C E5D02000 @@ get next compressed byte.
+add     r0, r0, #0x01       @@ 03003C30 E2800001 @@ Advance text 1 byte
+mov     r3, #0x07           @@ 03003C34 E3A03007 @@ reset loop counter
+
+HuffCountPos:
+
+tst     r2, #0x01           @@ 03003C38 E3120001 @@ and r2, #0x01
+beq     HuffEven            @@ 03003C3C 0A000001 @@ if lower bit not set
+ldrh    r6, [r4, #0x02]     @@ 03003C40 E1D460B2 @@ grab lower hword from tree
+b       HuffOdd             @@ 03003C44 EA000000 @@ 
+
+HuffEven:
+
+ldrh    r6, [r4]            @@ 03003C48 E1D460B0 @@ grab upper hword from tree
+add     r4, r5, r6, lsl #0x02@@03003C4C E0854106 @@ mult hword by 4, add to tree end
+mov     r2, r2, lsr #0x01   @@ 03003C50 E1A020A2 @@ divide compressed byte by 2
+ldr     r6, [r4]            @@ 03003C54 E5946000 @@ \
+tst     r6, r6              @@ 03003C58 E1160006 @@ Loads position in tree,
+bpl     HuffLoop            @@ 03003C5C 5AFFFFF0 @@ if positive there's no match hword
+tst     r6, #0x0FF00        @@ 03003C60 E3160CFF @@ if it's negative and there's no
+beq     HuffCode            @@ 03003C64 0A000004 @@ upper byte, check for match with lower
+strb    r6, [r1]            @@ 03003C68 E5C16000 @@ \
+mov     r6, r6, lsr #0x08   @@ 03003C6C E1A06426 @@ if not upper, match is lower hword
+strb    r6, [r1, #0x01]     @@ 03003C70 E5C16001 @@ write halfword and advance buffer
+add     r1, r1, #0x02       @@ 03003C74 E2811002 @@ /
+b       HuffNextByte        @@ 03003C78 EAFFFFE8 @@ Continue writing
+
+@@ Lower halfword matches seem to be text codes.
+@@ Upper matches seem to be characters.
+
+HuffCode:
+
+strb    r6, [r1]            @@ 03003C7C E5C16000 @@ lower match
+tst     r6, #0x0FF          @@ 03003C80 E31600FF @@ \
+beq     HuffEnd             @@ 03003C84 0A000001 @@ True if 0 (end of text)
+add     r1, r1, #0x01       @@ 03003C88 E2811001 @@ Otherwise it's probably a code
+b       HuffNextByte        @@ 03003C8C EAFFFFE3 @@ so keep going
+
+HuffEnd:
+
+pop     {r4-r7}             @@ 03003C90 E8BD00F0 @@ 
+bx      lr                  @@ 03003C94 E12FFF1E @@ 
+                            @subend
+.org 0x2BAE                 
+.thumb                      @subend
+pop     {r0}                @@ 08002BAE BC01     @@ cleanup, return
+bx      r0                  @@ 08002BB0 4700     @@ 
+
+.align 2
+
+WRAMRtOffs:
+.long WRAMRoutinePointer
+
+.org 0xA25C                 @subend
+mov     r0, r4              @@ 0800A25C 1C20     @@ Buffer into r0
+bl      TextCodeChecker     @@ 0800A25E F7FFFFB3 @@ Picks out some codes
+
+.org 0xA1C8
+TextCodeChecker:
+
+@@ Checks strings for 0x10 (Load Portrait) and
+@@ 0x80 (Movement stuff). Also removes any huffman 
+@@ 0x1F artifacts. For some reason, it uses a 
+@@ shifted loop counter.
+
+.set UpperHwordVal, 0xFFFF0000
+
+@@ Used for decrementing upper hwords
+
+
+push    {r4, r5, lr}        @@ 0800A1C8 B530     @@ Register saving
+mov     r4, r0              @@ 0800A1CA 1C04     @@ Buffer
+mov     r3, #0x00           @@ 0800A1CC 2300     @@ Loop counter
+mov     r0, #0x00           @@ 0800A1CE 2000     @@ \
+ldsb    r0, [r4, r0]        @@ 0800A1D0 5620     @@ Grab first byte and
+cmp     r0, #0x00           @@ 0800A1D2 2800     @@ see if it's text
+beq     TextStringEnd       @@ 0800A1D4 D01B     @@ /
+
+TextStringLoop:
+
+lsl     r0, r3, #0x10       @@ 0800A1D6 0418     @@ \
+asr     r2, r0, #0x10       @@ 0800A1D8 1402     @@ Loop counter as hword and byte
+add     r0, r4, r2          @@ 0800A1DA 18A0     @@ Move # counter bytes fwd
+ldrb    r1, [r0]            @@ 0800A1DC 7801     @@ Grab next byte
+cmp     r1, #0x10           @@ 0800A1DE 2910     @@ \
+bne     TextNotLoadFace     @@ 0800A1E0 D102     @@ Branch if not load face
+add     r0, r2, #0x02       @@ 0800A1E2 1C90     @@ \
+lsl     r0, r0, #0x10       @@ 0800A1E4 0400     @@ Add 2 to counter
+lsr     r3, r0, #0x10       @@ 0800A1E6 0C03     @@ because load and char
+
+TextNotLoadFace:
+
+cmp     r1, #0x80           @@ 0800A1E8 2980     @@ \
+bne     TextNotMove         @@ 0800A1EA D104     @@ Branch if no movement
+lsl     r0, r3, #0x10       @@ 0800A1EC 0418     @@ \
+mov     r1, #0x80           @@ 0800A1EE 2180     @@ If movement, add
+lsl     r1, r1, #0x09       @@ 0800A1F0 0249     @@ 1 as hword
+add     r0, r0, r1          @@ 0800A1F2 1840     @@ 
+lsr     r3, r0, #0x10       @@ 0800A1F4 0C03     @@ /
+
+TextNotMove:
+
+lsl     r0, r3, #0x10       @@ 0800A1F6 0418     @@ \
+mov     r1, #0x80           @@ 0800A1F8 2180     @@ Add 1 as upper hword
+lsl     r1, r1, #0x09       @@ 0800A1FA 0249     @@ 
+add     r0, r0, r1          @@ 0800A1FC 1840     @@ 
+lsr     r3, r0, #0x10       @@ 0800A1FE 0C03     @@ 
+asr     r0, r0, #0x1        @@ 0800A200 1400     @@ /
+add     r0, r4, r0          @@ 0800A202 1820     @@ \
+ldrb    r0, [r0]            @@ 0800A204 7800     @@ Grab next byte
+lsl     r0, r0,#0x18        @@ 0800A206 0600     @@ \
+asr     r0, r0,#0x18        @@ 0800A208 1600     @@ Check if 00 (end)
+cmp     r0, #0x0            @@ 0800A20A 2800     @@ if not, loop
+bne     TextStringLoop      @@ 0800A20C D1E3     @@ /
+
+TextStringEnd:
+
+lsl     r0, r3, #0x1        @@ 0800A20E 0418     @@ Counter to upper hword
+ldr     r1, UpperHwordLoc   @@ 0800A210 490A     @@ \
+add     r0, r0, r1          @@ 0800A212 1840     @@ Reduce upper hword by 1
+cmp     r0, #0x00           @@ 0800A214 2800     @@ \
+blt     TextCodeEnd         @@ 0800A216 DB0E     @@ If single byte text?
+mov     r5, #0x00           @@ 0800A218 2500     @@ 
+
+TextHuffCheck:
+
+asr     r3, r0, #0x10       @@ 0800A21A 1403     @@ \
+add     r2, r4, r3          @@ 0800A21C 18E2     @@ Goes back and makes sure 
+ldrb    r1, [r2]            @@ 0800A21E 7811     @@ there's no 0x1F
+cmp     r1, #0x1F           @@ 0800A220 291F     @@ 
+bne     TextCodeEnd         @@ 0800A222 D108     @@ /
+sub     r0, r2, #0x01       @@ 0800A224 1E50     @@ \
+ldrb    r1, [r0]            @@ 0800A226 7801     @@ If last byte is 0x1F
+cmp     r1, #0x80           @@ 0800A228 2980     @@ might as well check for 
+beq     TextLastMovement    @@ 0800A22A D000     @@ 0x80 too
+strb    r5, [r2]            @@ 0800A22C 7015     @@ If not, 0x80, but is 0x1F, clear
+
+TextLastMovement:
+
+sub     r0, r3, #0x01       @@ 0800A22E 1E58     @@ If 0x80, continue looping
+lsl     r0, r0, #0x10       @@ 0800A230 0400     @@ for a 0x1F
+cmp     r0, #0x00           @@ 0800A232 2800     @@ 
+bge     TextHuffCheck       @@ 0800A234 DAF1     @@
+
+TextCodeEnd:
+
+pop     {r4, r5}            @@ 0800A236 BC30     @@ clean up
+pop     {r0}                @@ 0800A238 BC01     @@ 
+bx      r0                  @@ 0800A23A 4700     @@ return
+
+UpperHwordLoc:
+.long UpperHwordVal
+
+
+
+.org 0xA262                 @subend
+str     r5, [r6]            @@ 0800A262 6035     @@ Store text ID at buffer ID
+mov     r0, r4              @@ 0800A264 1C20     @@ location
+b       TextEnd             @@ 0800A266 E006     @@ 
+
+TxtBufferIDLoc:
+.long TextBufferID
+
+TextTable:
+.long TextTableOffset
+
+TxtBufferLoc:
+.long TextBufferOffset
+
+TextSkip:
+
+ldr     r0, TxtBufferLoc2   @@ 0800A274 4801     @@
+
+TextEnd:
+
+pop     {r4-r6}             @@ 0800A276 BC70     @@ Clean up
+pop     {r1}                @@ 0800A278 BC02     @@ 
+bx      r1                  @@ 0800A27A 4708     @@ return
+
+TxtBufferLoc2:
+.long TextBufferOffset
+    
+    
+.org 0x08C5FC               @subend
+mov     r6, r0              @@ 0808C5FC 1C06     @@ \
+mov     r0, #0x38           @@ 0808C5FE 2038     @@ Gets distance to center name based on
+mov     r1, r6              @@ 0808C600 1C31     @@ (0x08*tiles available(0x07)) and name's length
+bl      TextCenterer        @@ 0808C602 F777FCC5 @@ /
+
+.or 0x3F90
+TexCenterer:
+
+@@ his routine takes a given amount of space
+@@ nd tries to center a given text string
+@@ n that space.
+
+@@ nputs:
+@@ 0: Space in pixels available
+@@ 1: Text string, usually text buffer
+
+@@ utputs:
+@@ 0: distance in pixels to center by
+
+pus {r4, lr}                @@ 08003F90 B510     @@ Register Saving
+mov r4, r0                  @@ 08003F92 1C04     @@ Space into r4
+mov    r0, r1                   @@ 08003F94 1C08     @@ Text into r0
+bl     TextWidthCalc            @@ 08003F96 F7FFFFA1 @@
+
+.or 0x3EDC
+TexWidthCalc:
+
+@@ his routine finds the width
+@@ f a text string, includes some
+@@ tuff in case a flag isn't set
+
+@@ nputs:
+@@ 0: text string, usually text buffer
+
+.se TextParams, 0x02028E70
+
+@@ ointer to current text
+@@ arameters here.
+
+.se SwiperWord, 0xFFFFFF00
+
+@@ or reducing values above 0xFF
+
+pus    {r4, r5, lr}         @@ 08003EDC B530     @@
+mov    r2, r0                   @@ 08003EDE 1C02     @@
+mov    r4, #0x00                @@ 08003EE0 2400     @@
+ldr    r0, TxtWdthClcParams @@ 08003EE2 4805     @@ \
+ldr    r1, [r0]             @@ 08003EE4 6801     @@ I've never observed this
+ldr    r1, [r1, #0x16]          @@ 08003EE6 7D89     @@ to ever be true.
+mov    r5, r0                   @@ 08003EE8 1C05     @@ Value grabbed is always 1
+cmp    r1, #0x00                @@ 08003EEA 2900     @@ Also saves RAMData for later
+beq    TxtWdthFlagUnset     @@ 08003EEC D01E     @@ /
+mov    r0, r2                   @@ 08003EEE 1C10     @@ Text into r0
+bl     TxtWdthLoopClc           @@ 08003EF0 F000FB3A @@
+
+.or 0x4568
+TxtdthLoopClc:
+
+pus    {lr}                 @@ 08004568 B500     @@
+mov    r1, r0               @@ 0800456A 1C01     @@
+mov    r2, #0x00            @@ 0800456C 2200     @@ Width counter
+ldr    r0, [r1]             @@ 0800456E 7808     @@ Grab character text
+cmp    r0, #0x01            @@ 08004570 2801     @@ \
+bls    WidthEnd             @@ 08004572 D90C     @@ Branch if 0x00 (end)
+ldr    r0, WidthData        @@ 08004574 4807     @@ \
+ldr    r0, [r0]             @@ 08004576 6800     @@ Grab parameter
+ldr    r3, [r0, #0x04]      @@ 08004578 6843     @@ Gets a pointer to font data
+
+TexWidthLoop:
+
+ldr    r0, [r1]             @@ 0800457A 7808     @@ Get character in text
+lsl    r0, r0, #0x02        @@ 0800457C 0080     @@ \
+add    r0, r0, r3           @@ 0800457E 18C0     @@ Goes to char data entry for char
+ldr    r0, [r0]             @@ 08004580 6800     @@ Grabs pointer to char's data
+add    r1, #0x01            @@ 08004582 3101     @@ Advances a char in the text
+ldr    r0, [r0, #0x5]       @@ 08004584 7940     @@ Gets width byte of char
+add    r2, r2, r0           @@ 08004586 1812     @@ Add width to counter
+ldr    r0, [r1]             @@ 08004588 7808     @@ Grabs next character
+cmp    r0, #0x01            @@ 0800458A 2801     @@ \
+bhi    TextWidthLoop        @@ 0800458C D8F5     @@ If not 0x00, loop
+
+WidhEnd:
+
+mov    r0, r2               @@ 0800458E 1C10     @@ move width into r0
+pop    {r1}                 @@ 08004590 BC02     @@
+bx     r1                   @@ 08004592 4708     @@ return
+
+WidhData:
+.log TextParams
+.or 0x3EF4                      @subend
+b      TextWidthCalcEnd         @@ 08003EF4 E01E     @@
+
+.algn 2
+
+TxtdthClcParams:
+.log TextParams
+
+TxtdthNotNLorEnd:
+
+ldr    r3, [r2]             @@ 08003EFC 7813     @@ Grab char byte
+add    r2, #0x01            @@ 08003EFE 3201     @@ Advance a char
+cmp    r3, #0x1F            @@ 08003F00 2B1F     @@ \
+bls    TxtWdthFlagUnset         @@ 08003F02 D913     @@ If text code, branch
+ldr    r0, [r2]             @@ 08003F04 7810     @@
+add    r2, #0x01            @@ 08003F06 3201     @@ Advance a char
+ldr    r1, [r5]             @@ 08003F08 6829     @@ \
+ldr    r1, [r1, #0x04       @@ 08003F0A 6849     @@ Text width grabbing
+lsl    r0, r0, #0x02        @@ 08003F0C 0080     @@ for char
+add    r0, r0, r1           @@ 08003F0E 1840     @@ /
+ldr    r1, SwiperWordLoc    @@ 08003F10 4901     @@ swipes 0x100?
+add    r0, r0, r1           @@ 08003F12 1840     @@ /
+ldr    r1, [r0]             @@ 08003F14 6801     @@
+b      AfterSwipe           @@ 08003F16 E002     @@
+
+SwierWordLoc:
+.log SwiperWord
+
+NotharDataMatch:
+
+ldr    r1,[r1]              @@ 08003F1C 6809     @@ Check if there's a poin there
+
+AftrSwipe:
+
+cmp    r1, #0x0             @@ 08003F1E 2900     @@ \
+beq    TxtWdthFlagUnset         @@ 08003F20 D004     @@ If no char data, go back
+ldr    r0, [r1, #0x04]      @@ 08003F22 7908     @@ Grab char ID
+cmp    r0, r3               @@ 08003F24 4298     @@ if ID isn't the char, branch
+bne    NotCharDataMatch     @@ 08003F26 D1F9     @@ if ID == char
+ldr    r0, [r1, #0x5]       @@ 08003F28 7948     @@ grab data?
+add    r4, r4, r0           @@ 08003F2A 1824     @@ add to r4?
+
+TxtdthFlagUnset:
+
+ldr    r0,[r2]              @@ 08003F2C 7810     @@ Grab char in buffer
+cmp    r0,#0x1              @@ 08003F2E 2801     @@ \
+bhi    TxtWdthNotNLorEnd        @@ 08003F30 D8E4     @@ branch if not newline or end
+mov    r0,r4                @@ 08003F32 1C20     @@
+
+TexWidthCalcEnd:
+
+pop    {r4,r5}              @@ 08003F34 BC30     @@ Clean up
+pop    {r1}                 @@ 08003F36 BC02     @@
+bx     r1                   @@ 08003F38 4708     @@ return
+
+.or 0x3F9A                      @subend
+sub    r4, r4, r0           @@ 08003F9A 1A24     @@ sub text width from available space
+lsr    r0, r4, #0x1F        @@ 08003F9C 0FE0     @@ \
+add    r4, r4, r0           @@ 08003F9E 1824     @@ In case negative result?
+asr    r4, r4, #0x01        @@ 08003FA0 1064     @@ Double centering distance
+mov    r0, r4               @@ 08003FA2 1C20     @@ move distance to r0
+pop    {r4}                 @@ 08003FA4 BC10     @@ clean up
+pop    {r1}                 @@ 08003FA6 BC02     @@
+bx     r1                   @@ 08003FA8 4708     @@ return
+
+.org 0x08C606               @subend
+mov     r5, r0              @@ 0808C606 1C05     @@ \
+mov     r4, r7              @@ 0808C608 1C3C     @@ Uses 0x6C struct info to 
+add     r4, #0x2C           @@ 0808C60A 342C     @@ clear VRAM area for name to
+mov     r0, r4              @@ 0808C60C 1C20     @@ be written to
+bl      TextVRAMClearer     @@ 0808C60E F777FBDB @@ /
+
+.org 0x3DC8
+TextVRAMClearer:
+
+@@ This function gets a space in VRAM and
+@@ prepares it for the new text to be written
+@@ to.
+
+push    {r4, lr}            @@ 08003DC8 B510     @@ Register saving
+add     sp, #-0x04          @@ 08003DCA B081     @@ Grab space for a word
+mov     r4, r0              @@ 08003DCC 1C04     @@ 
+mov     r0, #0x00           @@ 08003DCE 2000     @@ \
+strb    r0, [r4, #0x02]     @@ 08003DD0 70A0     @@ Zeroes some text param
+strb    r0, [r4, #0x03]     @@ 08003DD2 70E0     @@ stuff and a word on the stack
+str     r0, [sp]            @@ 08003DD4 9000     @@ /
+ldr     r0, VRAMClrRAMData  @@ 08003DD6 4809     @@ \
+ldr     r0, [r0]            @@ 08003DD8 6800     @@ Gets a pointer in r1
+ldr     r1, [r0, #0x0C]     @@ 08003DDA 68C1     @@ for clearing space
+mov     r0, r4              @@ 08003DDC 1C20     @@ 
+bl      BXLadderR1          @@ 08003DDE F0CDFD71 @@ /
+
+.org 0x0D18C4
+BXLadderR1:
+
+bx      r1                  @@ 080D18C4 4708     @@ 
+                            @substart
+.org 0x41E8
+VRAMWidthFinder:
+
+@@ Finds the width of a char in VRAM
+@@ used for spacing, clearing, and 
+@@ writing
+
+ldrb    r2, [r0, #0x06]     @@ 080041E8 7982     @@ \
+ldrb    r1, [r0, #0x04]     @@ 080041EA 7901     @@ These have to do with
+mul     r1, r2              @@ 080041EC 4351     @@ current size?
+ldrh    r2, [r0]            @@ 080041EE 8802     @@ 
+add     r1, r1, r2          @@ 080041F0 1889     @@ 
+ldrb    r0, [r0, #0x02]     @@ 080041F2 7880     @@ This is running length in pixels
+lsr     r0, r0, #0x03       @@ 080041F4 08C0     @@ I'd call the result a 'size type'
+add     r1, r1, r0          @@ 080041F6 1809     @@ 
+ldr     r0, VRAMClrRAMData2 @@ 080041F8 4802     @@ 
+ldr     r0, [r0]            @@ 080041FA 6800     @@ get data pointer
+lsl     r1, r1, #0x06       @@ 080041FC 0189     @@ multiply by 64
+ldr     r0, [r0]            @@ 080041FE 6800     @@ Gets VRAM pointer
+add     r0, r0, r1          @@ 08004200 1840     @@ add size to pointer
+bx      lr                  @@ 08004202 4770     @@ 
+
+VRAMClrRAMData2:
+.long TextParams
+
+                            @subend
+.org 0x3DE2                 @subend
+mov     r1, r0              @@ 08003DE2 1C01     @@ Moves VRAM pointer to r1
+ldrb    r2, [r4, #0x04]     @@ 08003DE4 7922     @@ \
+lsl     r2, r2, #0x04       @@ 08003DE6 0112     @@ Current name size?
+mov     r0, #0x80           @@ 08003DE8 2080     @@ \
+lsl     r0, r0, #0x11       @@ 08003DEA 0440     @@ This is to set bit 24
+orr     r2, r0              @@ 08003DEC 4302     @@ This is for the same 
+mov     r0, r13             @@ 08003DEE 4668     @@ CPUFastSet trick
+bl      CPUFastSet          @@ 08003DF0 F0CDFC40 @@ Used earlier,
+
+@@ Already used function before, ctrl+F to find it
+
+.org 0x3DF4                 @subend
+add     sp, #0x04           @@ 08003DF4 B001     @@ Clean up stack pointer
+pop     {r4}                @@ 08003DF6 BC10     @@ 
+pop     {r0}                @@ 08003DF8 BC01     @@ 
+bx      r0                  @@ 08003DFA 4700     @@ return
+
+VRAMClrRAMData:
+.long TextParams
+
+.org 0x08C612               @subend
+mov     r0, r4              @@ 0808C612 1C20     @@ \
+mov     r1, r5              @@ 0808C614 1C29     @@ Stores centering distance and text color
+mov     r2, #0x05           @@ 0808C616 2205     @@ to the 0x6C struct info it used
+bl      TextPalnCtr         @@ 0808C618 F777FC26 @@ /
+
+.org 0x3E68
+TextPalnCtr:
+
+@@ Stores centering distance and text color
+
+strb    r1, [r0, #0x02]
+strb    r2, [r0, #0x03]
+bx      lr
+
+.org 0x08C61C               @subend
+mov     r0, r4              @@ 0808C61C 1C20     @@ \
+mov     r1, r6              @@ 0808C61E 1C31     @@ Writes name to VRAM using info
+bl      NameVRAMWriterSetup @@ 0808C620 F777FCF0 @@ /
+.org 0x4004
+WriteTexttoImage:
+
+@@ Handles setting up writing text as
+@@ an image. Has some unknown features
+@@ that I've never seen being used.
+
+@@ inputs:
+@@ r0: Parameter data
+@@ r1: Text, most likely text buffer
+
+
+push    {r4-r6,lr}          @@ 08004004 B570     @@ 
+mov     r6, r0              @@ 08004006 1C06     @@ size data
+mov     r4, r1              @@ 08004008 1C0C     @@ text buffer
+ldr     r0, WrtVRAMParams   @@ 0800400A 4804     @@ \
+ldr     r0, [r0]            @@ 0800400C 6800     @@ Same unlikely check 
+ldrb    r0, [r0,#0x16]      @@ 0800400E 7D80     @@ for data byte as before?
+cmp     r0, #0x00           @@ 08004010 2800     @@ 
+beq     TxtVRAMEndChk       @@ 08004012 D029     @@ /
+mov     r0, r6              @@ 08004014 1C30     @@ size data
+bl      WriteCharLooper     @@ 08004016 F000FA57 @@ 
+
+.org 0x44C8
+WriteCharLooper:
+
+@@ This routine writes characters
+@@ as an image and loops through
+@@ text until the entire string is written.
+
+push    {r4, r5, lr}        @@ 080044C8 B530     @@ 
+mov     r5, r0              @@ 080044CA 1C05     @@ size data
+mov     r4, r1              @@ 080044CC 1C0C     @@ text
+b       ChrLoopEndChk       @@ 080044CE E010     @@ 
+
+WriteCharLoop:
+
+ldr     r0, NameCharParams  @@ 080044D0 480B     @@ Get param ptr
+ldr     r3, [r0]            @@ 080044D2 6803     @@ Get param location
+ldrb    r0, [r4]            @@ 080044D4 7820     @@ Grab text byte
+ldr     r2, [r3, #0x04]     @@ 080044D6 685A     @@ Gets font pointer
+lsl     r0, r0, #0x02       @@ 080044D8 0080     @@ \
+add     r0, r0, r2          @@ 080044DA 1880     @@ Gets pointer to char
+ldr     r1, [r0]            @@ 080044DC 6801     @@ data
+add     r4, #0x01           @@ 080044DE 3401     @@ advance a char in text
+cmp     r1, #0x00           @@ 080044E0 2900     @@ \
+bne     ChrLoopIsChar       @@ 080044E2 D102     @@ If it's a valid character
+mov     r0, r2              @@ 080044E4 1C10     @@ move font into r0
+add     r0, #0xFC           @@ 080044E6 30FC     @@ 
+ldr     r1, [r0]            @@ 080044E8 6801     @@ 
+
+ChrLoopIsChar:
+
+ldr     r2, [r3, #0x08]     @@ 080044EA 689A     @@ Gets drawing routine
+mov     r0, r5              @@ 080044EC 1C28     @@ Moves size data
+bl      BXLadderR2          @@ 080044EE F0CDF9EB @@ 
+
+@@ Subroutine already used, Ctrl+F if needed
+                            @substart
+.org 0x4218
+DefaultTextDraw:
+
+@@ This is the default drawing routine
+@@ There's a pointer to it at 2028E60
+
+
+push    {r4-r6, lr}         @@ 08004218 B570     @@ 
+mov     r6, r9              @@ 0800421A 464E     @@ 
+mov     r5, r8              @@ 0800421C 4645     @@ 
+push    {r5, r6}            @@ 0800421E B460     @@ 
+mov     r5, r0              @@ 08004220 1C05     @@ size data?
+mov     r9, r1              @@ 08004222 4689     @@ chardata
+ldr     r0, DftTxtDrawParams@@ 08004224 480F     @@ \
+ldr     r0, [r0]            @@ 08004226 6800     @@ Get routine
+ldr     r1, [r0, #0x0C]     @@ 08004228 68C1     @@ to find location
+mov     r0, r5              @@ 0800422A 1C28     @@ to write to
+bl      BXLadderR1          @@ 0800422C F0CDFB4A @@ 
+
+@@ Subroutine already used, Ctrl+F if needed
+
+.org 0x41E8                 @substart
+
+@@ This bx ladder ends up branching to 
+@@ the routine that finds space in VRAM
+@@ for the name
+
+                            @subend
+.org 0x4230                 @subend
+mov     r8, r0              @@ 08004230 4680     @@ Moves location to write to
+ldrb    r0, [r5, #0x02]     @@ 08004232 78A8     @@ Gets current position
+mov     r4, #0x07           @@ 08004234 2407     @@ \
+and     r4, r0              @@ 08004236 4004     @@ Overlap distance in bits
+mov     r6, r9              @@ 08004238 464E     @@ \
+add     r6, #0x08           @@ 0800423A 3608     @@ Goes to start of char image
+ldrb    r0, [r5, #0x03]     @@ 0800423C 78E8     @@ grabs palette byte
+bl      TextPalSelecter     @@ 0800423E F7FFFFE3 @@ returns font ptr in r0
+
+.org 0x4208
+TextPalSelecter:
+
+@@ Loads the appropriate font based on 
+@@ color byte from before
+
+.set FontColorTable, 0x08588240
+
+@@ Pointer table with different fonts of
+@@ different colors
+
+ldr     r1, FontColorLoc    @@ 08004208 4902     @@ 
+lsl     r0, r0, #0x02       @@ 0800420A 0080     @@ pal*4
+add     r0, r0, r1          @@ 0800420C 1840     @@ \
+ldr     r0, [r0]            @@ 0800420E 6800     @@ gets font ptr at pal*4
+bx      lr                  @@ 08004210 4770     @@ return
+
+.align 2
+
+FontColorLoc:
+.long FontColorTable
+
+.org 0x4242                 @subend
+mov     r1, r8              @@ 08004242 4641     @@ location to write to
+mov     r2, r6              @@ 08004244 1C32     @@ character image loc
+mov     r3 ,r4              @@ 08004246 1C23     @@ overlapping position
+bl      WRAMRoutineGetter   @@ 08004248 F7FEFCA2 @@ calling writer
+
+.org 0x2B90
+WRAMRoutineGetter:
+
+@@ This routine grabs and branches
+@@ to a routine written in WRAM.
+@@ This one draws text.
+
+.set WRAMPointer, 0x03003740
+
+@@ There's a pointer to the routine here
+
+push    {r4, lr}            @@ 08002B90 B510     @@ 
+ldr     r4, WRAMPtrLoc      @@ 08002B92 4C03     @@ \
+ldr     r4, [r4]            @@ 08002B94 6824     @@ grab writer routine
+bl      BXLadderR4          @@ 08002B96 F0CEFE9B @@ 
+
+.org 0x0D18D0             
+
+bx      r4                  @@ 080D18D0 4720     @@
+                            @substart
+.org 0x03003A8C
+TextImageWriter:
+
+@@ This is an ARM routine in
+@@ WRAM that draws text. It's hard
+@@ to follow, so you might want to skip it.
+@@ I'll have plenty of notes here. 
+
+@@ inputs: 
+@@ r0: font
+@@ r1: location to write to
+@@ r2: character image
+@@ r3: overlap with last character
+
+@@ This'd be a good place for some notes on text fonts 
+@substart
+
+@@ Shape Data Pointer table at 0x588240
+@@ Each entry is is a font of a different color
+@@ shift palette byte by two and add
+@@ to table, get pointer at result
+@@ Palette bytes:
+@@ 0x00 white w/black outline
+@@ 0x01 gray w/black outline
+@@ 0x02 blue w/black outline
+@@ 0x03 yellow w/black outline
+@@ 0x04 glowing green w/black outline
+@@ 0x05 thin black (default)
+@@ 0x06-0x0C solid background, variable colors
+@@ 0x0D-0x0F unusable
+
+@@ These 'fonts' are not fonts at all
+@@ but rather are more of 'shapes'
+@@ that are used along with a shaping guide
+@@ for each character. Each 'shape'
+@@ is a row of bits that is a row of the
+@@ character's image. These 'shapes' set
+@@ pixels to use colors in the palette.
+@@ different font colors work by changing which
+@@ bits are set in the 'shapes'.
+
+@@ In order to build a character using one of these
+@@ 'shape' tables, you need a character's data.
+
+@@ Character data Pointer Table at 0x58C7E0
+@@ To get a character's data, lsl the text byte by 2
+@@ and add it to the table, and grab the ptr at that location.
+
+@@ Character data has the following format:
+@@ Each character is 0x48 bytes
+@@ Byte 0x05 is the width, in pixels, of the character
+@@ Byte 0x08 and onwards tells which shapes make 
+@@ up a character.
+@@ To get the shape that corresponds to a byte in chardata, 
+@@ the game multiplies the chardata's word by the number of bits
+@@ to offset the character by, such as when characters are written
+@@ slightly overlapping, and then shifts bytes in the new words, 
+@@ one at a time, by 1 and adds them to the shape table. It then gets 
+@@ the word at that location in the shape table. This is the shape for that
+@@ shifted chardata byte. 
+
+@@ Here's an example:
+@substart
+
+@@ This sounds impossible to follow, so let's do an example. We're going to 
+@@ write the lowercase letter 'l' to a clear segment of VRAM. We're going to start 
+@@ just after the bytes 0x6C 0x00 are written to the text buffer, which is 
+@@ the letter 'l' and the byte signalling the end of text.
+
+@@ In the case of the minimug box, we have 7 tiles to work with. 
+@@ 7 tiles*8 pixels per tile gives us 0x38 pixels of space. Let's see how
+@@ much space of that our 'l' will take, and where we'll write in order
+@@ to have the 'l' centered in the space.
+
+@@ With our available space in r0 and our text buffer in r1, we branch to 
+@@ 0x3F90 to find the center. This routine first gets the total width of our text
+@@ string by grabbing a text byte from the buffer, loading the character data table, 
+@@ shifting the text byte by two, adding it to the table, and then going to the
+@@ offset it gets from that. Once there, it gets the fifth byte, which is the width,
+@@ and adds it to a running total before moving to the next character. It does this until
+@@ it reaches the end of the string. Afterward, it subtracts the total from the amount of 
+@@ available space and then divides by 2. It puts this center position in r0.
+
+@@ For our 'l' character, this means character data at 0x58C99C, and the fifth byte of 
+@@ that data is 0x02. So, the 'l' character is 2 pixels wide, which makes sense, as
+@@ there needs to be some space between it and the previous character. 0x38-0x02=0x36
+@@ and 0x36 lsr 1 = 0x1B
+
+@@ For simplicity, let's just assume that the VRAM segment is clear. 
+@@ We then save the centering distance and the palette we'd like to
+@@ use to a segment of RAM used for text parameters.
+
+
+@subend
+@subend
+
+.set CharSizeTable, 0x08000540
+
+CharSizeTableLoc:
+.long CharSizeTable
+
+stmfd   r13!, {r4-r10}          @@ 03003A8C E92D07F0 @@ push {r4-r10}
+mov     r9, #0x0F               @@ 03003A90 E3A0900F @@ loop count
+mov     r10, #0x10000           @@ 03003A94 E3A0A801 @@ \
+sub     r10, r10, #0x01         @@ 03003A98 E24AA001 @@ FFFF
+
+TxtImgWrtrLoop:
+
+ldr     r4, CharSizeTableLoc    @@ 03003A9C E51F401C @@ \
+ldr     r5, [r4, r3, lsl #0x02] @@ 03003AA0 E7945103 @@ Gets char size by overlap
+ldr     r4, [r2]                @@ 03003AA4 E5924000 @@ First word in char image
+umull   r5, r6, r4, r5          @@ 03003AA8 E0865594 @@ r4*r5, lo word in r5, hi word in r6
+mov     r7, r5                  @@ 03003AAC E1A07005 @@ \
+and     r7, r7, #0xFF           @@ 03003AB0 E20770FF @@ Gets lowest result byte
+ldr     r7, [r0, r7, lsl #0x01] @@ 03003AB4 E7907087 @@ Gets shape from font table
+mov     r8, r5, lsr #0x08       @@ 03003AB8 E1A08425 @@ shift down a byte
+and     r8, r8, #0xFF           @@ 03003ABC E20880FF @@ 
+ldr     r8, [r0, r8, lsl #0x01] @@ 03003AC0 E7908088 @@ gets shape from font table
+and     r7, r7, r10             @@ 03003AC4 E007700A @@ only want lowest 2 bytes
+orr     r7, r7, r8, lsl #0x10   @@ 03003AC8 E1877808 @@ combine shapes
+ldr     r4, [r1]                @@ 03003ACC E5914000 @@ gets old word
+orr     r4, r4, r7              @@ 03003AD0 E1844007 @@ combines new and old word
+str     r4, [r1]                @@ 03003AD4 E5814000 @@ stores back to location
+mov     r7, r5, lsr #0x10       @@ 03003AD8 E1A07825 @@ shift down to second hword
+and     r7, r7, #0xFF           @@ 03003ADC E20770FF @@ \
+ldr     r7, [r0, r7, lsl #0x01] @@ 03003AE0 E7907087 @@ Repeats for second hword
+mov     r8, r5, lsr #0x18       @@ 03003AE4 E1A08C25 @@ 
+and     r8, r8, #0xFF           @@ 03003AE8 E20880FF @@ 
+ldr     r8, [r0, r8, lsl #0x01] @@ 03003AEC E7908088 @@ 
+and     r7, r7, r10             @@ 03003AF0 E007700A @@ 
+orr     r7, r7, r8, lsl #0x10   @@ 03003AF4 E1877808 @@ 
+ldr     r4, [r1, #0x40]         @@ 03003AF8 E5914040 @@ 
+orr     r4, r4, r7              @@ 03003AFC E1844007 @@
+str     r4, [r1, #0x40]         @@ 03003B00 E5814040 @@ /
+mov     r7, r6                  @@ 03003B04 E1A07006 @@ \
+and     r7, r7, #0xFF           @@ 03003B08 E20770FF @@ Repeat for third hword
+ldr     r7, [r0, r7, lsl #0x01] @@ 03003B0C E7907087 @@ that was in r6 from
+mov     r8, r6, lsr #0x08       @@ 03003B10 E1A08426 @@ the umull
+and     r8, r8, #0xFF           @@ 03003B14 E20880FF @@ 
+ldr     r8, [r0, r8, lsl #0x01] @@ 03003B18 E7908088 @@ 
+and     r7, r7, r10             @@ 03003B1C E007700A @@ 
+orr     r7, r7, r8, lsl #0x10   @@ 03003B20 E1877808 @@ 
+ldr     r4, [r1, #0x80]         @@ 03003B24 E5914080 @@ 
+orr     r4, r4, r7              @@ 03003B28 E1844007 @@ 
+str     r4, [r1, #0x80]         @@ 03003B2C E5814080 @@ /
+add     r1, r1, #0x04           @@ 03003B30 E2811004 @@ advance a word in loc
+add     r2, r2, #0x04           @@ 03003B34 E2822004 @@ advance a word in char image
+subs    r9, r9, #0x01           @@ 03003B38 E2599001 @@ sub from counter
+bpl     TxtImgWrtrLoop          @@ 03003B3C 5AFFFFD6 @@ loop a total of 16 times
+ldmfd   r13!, {r4-r10}          @@ 03003B40 E8BD07F0 @@ pop {r4-r10}
+bx      lr                      @@ 03003B44 E12FFF1E @@ return
+
+                            @subend
+.org 0x2B9A                 @subend
+pop     {r4}                @@ 08002B9A BC10     @@
+pop     {r0}                @@ 08002B9C BC01     @@
+bx      r0                  @@ 08002B9E 4700     @@
+
+WRAMPtrLoc:
+.long WRAMPointer
+
+.org 0x424C                 @subend
+mov     r1, r9              @@ 0800424C 4649     @@ \
+ldrb    r0, [r1, #0x05]     @@ 0800424E 7948     @@ Gets last char's 
+ldrb    r1, [r5, #0x02]     @@ 08004250 78A9     @@ width and adds it to total
+add     r0, r0, r1          @@ 08004252 1840     @@ 
+strb    r0, [r5, #0x02]     @@ 08004254 70A8     @@ /
+pop     {r3, r4}            @@ 08004256 BC18     @@ \
+mov     r8, r3              @@ 08004258 4698     @@ clean up and return
+mov     r9, r4              @@ 0800425A 46A1     @@ 
+pop     {r4-r6}             @@ 0800425C BC70     @@ 
+pop     {r0}                @@ 0800425E BC01     @@ 
+bx      r0                  @@ 08004260 4700     @@ /
+
+.align 2
+
+DftTxtDrawParams:
+.long TextParams
+                            @subend
+.org 0x44F2                 @subend
+
+ChrLoopEndChk:
+
+ldrb    r0, [r4]            @@ 080044F2 7820     @@ Grabs text byte
+cmp     r0, #0x01           @@ 080044F4 2801     @@ Check if done writing
+bhi     WriteCharLoop       @@ 080044F6 D8EB     @@ If not done, loop
+pop     {r4, r5}            @@ 080044F8 BC30     @@ \
+pop     {r0}                @@ 080044FA BC01     @@ clean and return
+bx      r0                  @@ 080044FC 4700     @@ /
+
+.align 2
+
+NameCharParams:
+.long TextParams
+
+.org 0x401A                 @subend
+b       NameVRAMEnd         @@ 0800401A E028     @@ 
+
+WrtVRAMParams:
+.long TextParams
+
+NameCodeCheck:
+
+ldrb    r3, [r4]            @@ 08004020 7823     @@ 
+add     r4, #0x01           @@ 08004022 3401     @@ 
+cmp     r3, #0x1F           @@ 08004024 2B1F     @@ 
+bls     TxtVRAMEndChk       @@ 08004026 D91F     @@ 
+ldrb    r2, [r4]            @@ 08004028 7822     @@ 
+add     r4, #0x01           @@ 0800402A 3401     @@ 
+ldr     r5, NameWriterData2 @@ 0800402C 4D05     @@
+
+NameLoop:
+
+ldr     r0, [r5]            @@ 0800402E 6828     @@ 
+ldr     r1, [r0, #0x04]     @@ 08004030 6841     @@ 
+lsl     r0, r2, #0x02       @@ 08004032 0090     @@ 
+add     r0, r0, r1          @@ 08004034 1840     @@ 
+ldr     r1, NameSwiper      @@ 08004036 4904     @@ 
+add     r0, r0, r1          @@ 08004038 1840     @@ 
+ldr     r1, [r0]            @@ 0800403A 6801     @@ 
+cmp     r1, #0x0            @@ 0800403C 2900     @@ 
+beq     TxtVRAMEndChk       @@ 0800403E D013     @@ 
+b       NameNotZero         @@ 08004040 E00A     @@ 
+
+.align 2
+
+NameWriterData2:
+.long TextParams
+
+NameSwiper:
+.long SwiperWord
+
+NameUnkComp:
+
+ldr     r1, [r1]            @@ 0800404C 6809     @@ 
+cmp     r1, #0x00           @@ 0800404E 2900     @@ 
+bne     NameNotZero         @@ 08004050 D102     @@ 
+mov     r3, #0x81           @@ 08004052 2381     @@ 
+mov     r2, #0xA7           @@ 08004054 22A7     @@ 
+b       NameLoop            @@ 08004056 E7EA     @@ 
+
+NameNotZero:
+
+ldrb    r0, [r1, #0x04]     @@ 08004058 7908     @@ 
+cmp     r0, r3              @@ 0800405A 4298     @@ 
+bne     NameUnkComp         @@ 0800405C D1F6     @@ 
+ldr     r0, [r5]            @@ 0800405E 6828     @@ 
+ldr     r2, [r0, #0x08]     @@ 08004060 6882     @@ 
+mov     r0, r6              @@ 08004062 1C30     @@ 
+bl      BXLadderR2          @@ 08004064 F0CDFC30 @@ 
+
+@@ Routine used already.
+@@ Don't know what routine it's branching
+@@ to, as it's never used in the MMB
+
+.org 0x4068                 @subend
+
+TxtVRAMEndChk:
+
+ldrb    r0, [r4]            @@ 08004068 7820     @@ 
+cmp     r0, #0x1            @@ 0800406A 2801     @@ 
+bhi     NameCodeCheck       @@ 0800406C D8D8     @@ 
+
+NameVRAMEnd:
+
+pop     {r4-r6}             @@ 0800406E BC70     @@ \
+pop     {r0}                @@ 08004070 BC01     @@ Clean and return
+bx      r0                  @@ 08004072 4700     @@ /
+
+.org 0x08C624               @subend
+mov     r1, r9              @@ 0808C624 4649     @@ \
+add     r1, #0x4A           @@ 0808C626 314A     @@ Write name tilemap to ERAM buffer
+mov     r0, r4              @@ 0808C628 1C20     @@ the 0x4A is where in the buffer to write name
+bl      CreateTextTilemap   @@ 0808C62A F777FC21 @@ /
+
+.org 0x3E70
+CreateTextTilemap:
+
+@@ Creates a tilemap for written text
+
+push    {r4, r5, lr}        @@ 08003E70 B530     @@ 
+mov     r4, r0              @@ 08003E72 1C04     @@ parameter stuff
+mov     r2, r1              @@ 08003E74 1C0A     @@ BG buffer
+ldr     r0, TilemapParams   @@ 08003E76 4810     @@ \
+ldr     r1, [r0]            @@ 08003E78 6801     @@ Gets starting tile
+ldrb    r0, [r4, #0x06]     @@ 08003E7A 79A0     @@ and sets # times
+ldrb    r3, [r4, #0x04]     @@ 08003E7C 7923     @@ to loop in r3
+mul     r0, r3              @@ 08003E7E 4358     @@ 
+ldrh    r5, [r4]            @@ 08003E80 8825     @@ 
+add     r0, r0, r5          @@ 08003E82 1940     @@ 
+lsl     r0, r0, #0x01       @@ 08003E84 0040     @@ 
+ldrh    r1, [r1, #0x10]     @@ 08003E86 8A09     @@ 
+add     r1, r0, r1          @@ 08003E88 1841     @@ 
+cmp     r3, #0x00           @@ 08003E8A 2B00     @@ 
+beq     NoTileLoop          @@ 08003E8C D009     @@ /
+
+TileLoop:
+
+strh    r1, [r2]            @@ 08003E8E 8011     @@ store tile in buffer
+add     r1, #0x1            @@ 08003E90 3101     @@ next tile
+mov     r0, r2              @@ 08003E92 1C10     @@ \
+add     r0, #0x40           @@ 08003E94 3040     @@ move down a row and store tile
+strh    r1, [r0]            @@ 08003E96 8001     @@ /
+add     r1, #0x01           @@ 08003E98 3101     @@ next tile
+add     r2, #0x02           @@ 08003E9A 3202     @@ next tile in buffer
+sub     r3, #0x01           @@ 08003E9C 3B01     @@ decrement loop
+cmp     r3, #0x0            @@ 08003E9E 2B00     @@ check loop counter
+bne     TileLoop            @@ 08003EA0 D1F5     @@ 
+
+NoTileLoop:
+
+mov     r0, #0x05           @@ 08003EA2 2005     @@ \
+ldsb    r0, [r4, r0]        @@ 08003EA4 5620     @@ Unknown, but seems
+cmp     r0, #0x00           @@ 08003EA6 2800     @@ to signify that the 
+beq     TilemapEnd          @@ 08003EA8 D003     @@ text is done
+ldrb    r0, [r4, #0x06]     @@ 08003EAA 79A0     @@ 
+mov     r1, #0x01           @@ 08003EAC 2101     @@ 
+eor     r0, r1              @@ 08003EAE 4048     @@ 
+strb    r0, [r4, #0x06]     @@ 08003EB0 71A0     @@ /
+
+TilemapEnd:
+
+pop     {r4, r5}            @@ 08003EB2 BC30     @@ 
+pop     {r0}                @@ 08003EB4 BC01     @@ 
+bx      r0                  @@ 08003EB6 4700     @@ 
+
+TilemapParams:
+.long TextParams
+
+.org 0x08C62E               @subend
+mov     r0, r8              @@ 0808C62E 4640     @@ Char in RAM pointer
+bl      MinimugGetter       @@ 0808C630 F78CFE60 @@ Gets minimug number
+
+.org 0x0192F4
+MinimugGetter:
+
+@@ Determines a unit's minimug
+
+.set MMBRamVal, 0x0202BCF0
+
+@@ Venno's notes say this does things?
+
+push    {lr}                @@ 080192F4 B500     @@ 
+mov     r2, r0              @@ 080192F6 1C02     @@ Deployment data
+ldr     r1, [r2]            @@ 080192F8 6811     @@ get character data
+ldrb    r0, [r1, #0x08]     @@ 080192FA 7A08     @@ get minimug
+cmp     r0, #0x00           @@ 080192FC 2800     @@ if using default
+beq     DefaultMM           @@ 080192FE D003     @@ minimug for character
+mov     r1, #0xFE           @@ 08019300 21FE     @@ \
+lsl     r1, r1, #0x07       @@ 08019302 01C9     @@ If not default, add 
+add     r0, r0, r1          @@ 08019304 1840     @@ 0x7F00
+b       MMGetterEnd         @@ 08019306 E019     @@ /
+
+DefaultMM:
+
+ldrh    r1, [r1, #0x06]     @@ 08019308 88C9     @@ gets portrait number
+cmp     r1, #0x00           @@ 0801930A 2900     @@ if using default mug
+beq     DefaultPortrait     @@ 0801930C D00F     @@ branch
+ldr     r0, MMBRam          @@ 0801930E 4805     @@ \
+ldrb    r0, [r0, #0x0E]     @@ 08019310 7B80     @@ This gives lyon a 
+lsl     r0, r0, #0x18       @@ 08019312 0600     @@ good minimug on the
+asr     r0, r0, #0x18       @@ 08019314 1600     @@ last chapter
+cmp     r0, #0x22           @@ 08019316 2822     @@ 
+bne     MMNotSpecial        @@ 08019318 D106     @@ 
+cmp     r1, #0x4A           @@ 0801931A 294A     @@ 
+bne     MMNotSpecial        @@ 0801931C D104     @@ 
+mov     r1, #0x46           @@ 0801931E 2146     @@ 
+b       MMGetterEnd         @@ 08019320 E00B     @@ /
+
+.align 2
+
+MMBRam:
+.long MMBRamVal
+
+MMNotSpecial:
+
+ldr     r0, [r2]            @@ 08019328 6810     @@ \
+ldrh    r1, [r0, #0x06]     @@ 0801932A 88C1     @@ Portrait in r1
+b       MMNSEnd             @@ 0801932C E005     @@ 
+
+DefaultPortrait:
+
+ldr     r2, [r2, #0x04]     @@ 0801932E 6852     @@ get class 
+ldrh    r0, [r2, #0x08]     @@ 08019330 8910     @@ default class portrait
+mov     r1, #0x00           @@ 08019332 2100     @@ 
+cmp     r0, #0x00           @@ 08019334 2800     @@ if no default
+beq     MMNSEnd             @@ 08019336 D000     @@ return zero
+mov     r1, r0              @@ 08019338 1C01     @@ otherwise return default
+
+MMNSEnd:
+
+mov     r0, r1              @@ 0801933A 1C08     @@ move portrait into r0
+
+MMGetterEnd:
+
+pop     {r1}                @@ 0801933C BC02     @@ 
+bx      r1                  @@ 0801933E 4708     @@ 
+
+.org 0x08C634               @subend
+mov     r2, r0              @@ 0808C634 1C02     @@ \
+mov     r1, r8              @@ 0808C636 4641     @@ Checks character for
+ldr     r0, [r1,#0x0C]      @@ 0808C638 68C8     @@ the 'increase portrait by 1' 
+mov     r1, #0x80           @@ 0808C63A 2180     @@ thing briefly mentioned here
+lsl     r1, r1, #0x10       @@ 0808C63C 0409     @@ http://feuniverse.us/t/character-data-table-in-ram/717
+and     r0, r1              @@ 0808C63E 4008     @@ 
+cmp     r0, #0x00           @@ 0808C640 2800     @@ 
+beq     MMNotIncreased      @@ 0808C642 D000     @@ 
+add     r2, #0x01           @@ 0808C644 3201     @@ /
+
+MMNotIncreased:
+
+mov     r1, r9              @@ 0808C646 4649     @@ \
+add     r1, #0x42           @@ 0808C648 3142     @@ Minimug drawing routine
+mov     r0, r10             @@ 0808C64A 4650     @@ the 0x42 is where in the buffer to write name
+str     r0, [sp]            @@ 0808C64C 9000     @@ 
+mov     r0, r2              @@ 0808C64E 1C10     @@ 
+mov     r2, #0xF0           @@ 0808C650 22F0     @@ This gets shifted for VRAM position/tile number
+mov     r3, #0x04           @@ 0808C652 2304     @@ This is number of size byte
+bl      CreateMinimug       @@ 0808C654 F779F998 @@ /
+
+.org 0x5988
+CreateMinimug:
+
+@@ This routine draws the minimug to VRAM
+@@ and writes its tilemap
+
+.set MMTenBit, 0x03FF
+
+@@ For ANDing the first ten bits
+@@ of a value
+
+.set MMSizeTable, #0x085911C4
+
+@@ contains size, loop count, and tile info for the minimug 
+
+push    {r4-r6, lr}         @@ 08005988 B570     @@ \
+mov     r6, r8              @@ 0800598A 4646     @@ Register saving
+push    {r6}                @@ 0800598C B440     @@ /
+mov     r8, r1              @@ 0800598E 4688     @@ buffer
+mov     r6, r2              @@ 08005990 1C16     @@ VRAM position
+mov     r5, r3              @@ 08005992 1C1D     @@ Rows to write
+ldr     r4, [sp, #0x14]     @@ 08005994 9C05     @@ \
+lsl     r4, r4, #0x18       @@ 08005996 0624     @@ Unknown
+lsr     r4, r4, #0x18       @@ 08005998 0E24     @@ /
+mov     r1, r6              @@ 0800599A 1C31     @@ 
+mov     r2, r5              @@ 0800599C 1C2A     @@ 
+bl      MinimugWriter       @@ 0800599E F7FFFFC1 @@ 
+
+.org 0x5924
+MinimugWriter:
+
+.set SevenEFF, 0x7EFF
+
+@@ For checking if a character is using
+@@ a minimug not bound to their portrait
+
+.set SeventeenBits, 0x1FFFF
+
+push    {r4-r6, lr}         @@ 08005924 B570     @@
+mov     r4, r0              @@ 08005926 1C04     @@ Mug/portrait
+mov     r5, r1              @@ 08005928 1C0D     @@
+mov     r6, r2              @@ 0800592A 1C16     @@
+ldr     r0, SevenEFFLoc     @@ 0800592C 480A     @@ 
+cmp     r4, r0              @@ 0800592E 4284     @@ If using minimug bound
+ble     BoundPortrait       @@ 08005930 DD16     @@ to portrait or class, branch
+mov     r0, r4              @@ 08005932 1C20     @@
+bl      GenericMMGetter     @@ 08005934 F000FB1A @@
+
+.org 0x5F6C
+GenericMMGetter:
+
+.set GenericPortraitTable, 0x080D77BC
+
+@@ There's a set of pointers here to
+@@ generic minimugs
+
+.set SevenFClearer, 0xFFFF8100
+
+@@ Gets rid of added 0x7F00
+
+push    {r4, r5, lr}        @@ 08005F6C B530     @@ 
+add     sp, #-0x20          @@ 08005F6E B088     @@ \
+mov     r2, r13             @@ 08005F70 466A     @@ Stores a pointer table
+ldr     r1, GenericPortraits@@ 08005F72 4908     @@ of generic portraits to
+ldmia   r1!, {r3-r5}        @@ 08005F74 C938     @@ the stack
+stmia   r2!, {r3-r5}        @@ 08005F76 C238     @@ 
+ldmia   r1!, {r3-r5}        @@ 08005F78 C938     @@ 
+stmia   r2!, {r3-r5}        @@ 08005F7A C238     @@ 
+ldmia   r1!, {r3, r4}       @@ 08005F7C C918     @@ 
+stmia   r2!, {r3, r4}       @@ 08005F7E C218     @@ /
+ldr     r5, SevenFClearLoc  @@ 08005F80 4D05     @@ removes the 0x7F00 from
+add     r0, r0, r5          @@ 08005F82 1940     @@ the portrait value
+lsl     r0, r0, #0x02       @@ 08005F84 0080     @@ multiply by 4
+add     r0, r13             @@ 08005F86 4468     @@ add to sp to get
+ldr     r0, [r0]            @@ 08005F88 6800     @@ the pointer of the generic portrait
+add     sp, #0x20           @@ 08005F8A B008     @@ \
+pop     {r4, r5}            @@ 08005F8C BC30     @@ clean up and return
+pop     {r1}                @@ 08005F8E BC02     @@ 
+bx      r1                  @@ 08005F90 4708     @@ /
+
+.align 2
+
+GenericPortraits:
+.long GenericPortraitTable
+
+SevenFClearLoc:
+.long SevenFClearer
+
+.org 0x5938                 @subend
+lsl     r1, r5, #0x05       @@ 08005938 0169     @@ \
+mov     r3, #0xC0           @@ 0800593A 23C0     @@ Gets 0x06001E00
+lsl     r3, r3, #0x13       @@ 0800593C 04DB     @@ but also makes sure
+add     r1, r1, r3          @@ 0800593E 18C9     @@ 0x1E00 has 17 bits or 
+ldr     r2, SeventeenBitsLoc@@ 08005940 4A06     @@ less?
+and     r1, r2              @@ 08005942 4011     @@
+add     r1, r1, r3          @@ 08005944 18C9     @@ /
+mov     r2, #0x80           @@ 08005946 2280     @@ \
+lsl     r2, r2, #0x02       @@ 08005948 0092     @@ 0x0200
+bl      DrawInfoStr         @@ 0800594A F7FCFB63 @@
+
+.org 0x2014
+DrawInfoStr:
+
+@@ Stores portrait location, VRAM location
+@@ and write size to RAM
+
+.set RAMOffsetter, 0x02024CD4
+
+@@ Contains number of data sets stored
+@@ by this routine
+
+@@ 0x02024CD8 is the running total of 
+@@ data to write
+
+.set RAMDataBase, 0x02024CDC
+
+@@ This is the zeroeth entry
+@@ n*12d+this gives you the nth entry
+
+@@ Data format:
+@@ Image location
+@@ place to write to
+@@ length hword
+@@ wordcount flag byte
+
+
+push    {r4, r5, lr}        @@ 08002014 B530     @@ 
+mov     r4, r2              @@ 08002016 1C14     @@ 
+ldr     r5, RAMOffsetterLoc @@ 08002018 4D0C     @@ \
+ldr     r3, [r5]            @@ 0800201A 682B     @@ get offsetting val
+lsl     r2, r3, #0x01       @@ 0800201C 005A     @@ and multiply by 12d
+add     r2, r2, r3          @@ 0800201E 18D2     @@ 
+lsl     r2, r2, #0x02       @@ 08002020 0092     @@ /
+ldr     r3, RAMDataBase     @@ 08002022 4B0B     @@ \
+add     r2, r2, r3          @@ 08002024 18D2     @@ Get entry to store to
+str     r0, [r2]            @@ 08002026 6010     @@ store location
+str     r1, [r2, #0x04]     @@ 08002028 6051     @@ store write destination
+strh    r4, [r2, #0x08]     @@ 0800202A 8114     @@ store size to write
+mov     r1, #0x00           @@ 0800202C 2100     @@ \
+mov     r0, #0x1F           @@ 0800202E 201F     @@ set r1 to 0 if
+and     r0, r4              @@ 08002030 4020     @@ writing an uneven multiple
+cmp     r0, #0x00           @@ 08002032 2800     @@ of 8 words (see CPUFastSet)
+bne     DrawInfoSmall       @@ 08002034 D100     @@ /
+mov     r1, #0x01           @@ 08002036 2101     @@ Otherwise it's 1
+
+DrawInfoSmall:
+
+strh    r1, [r2, #0x0A]     @@ 08002038 8151     @@ store wordcount flag
+ldr     r0, [r5, #0x04]     @@ 0800203A 6868     @@ Get running total of 
+add     r0, r0, r4          @@ 0800203C 1900     @@ data to write and 
+str     r0, [r5, #0x04]     @@ 0800203E 6068     @@ add new amount
+ldr     r0, [r5]            @@ 08002040 6828     @@ \
+add     r0, #0x01           @@ 08002042 3001     @@ Add to offsetting val
+str     r0, [r5]            @@ 08002044 6028     @@ /
+pop     {r4, r5}            @@ 08002046 BC30     @@ \
+pop     {r0}                @@ 08002048 BC01     @@ clean and return
+bx      r0                  @@ 0800204A 4700     @@ /
+
+RAMOffsetterLoc:
+.long RAMOffsetter
+
+RAMDataBase:
+.long RAMDataBase
+
+.org 0x594E                 @subend
+mov     r0, r4              @@ 0800594E 1C20     @@ portrait
+mov     r1, r6              @@ 08005950 1C31     @@ size
+bl      GenericMMPalGetter  @@ 08005952 F000FB23 @@
+
+.org 0x5F9C
+GenericMMPalGetter:
+
+@@ Gets the palette of a generic minimug
+@@ and writes it
+
+.set GenericPaletteTable, 0x080D77DC
+
+push    {r4-r6, lr}         @@ 08005F9C B570     @@ 
+add     sp, #-0x20          @@ 08005F9E B088     @@ \
+mov     r3, r13             @@ 08005FA0 466B     @@ Loads a pointer table
+ldr     r2, GenericPalettes @@ 08005FA2 4A0A     @@ of generic palettes to
+ldmia   r2!, {r4-r6}        @@ 08005FA4 CA70     @@ the stack
+stmia   r3!, {r4-r6}        @@ 08005FA6 C370     @@ 
+ldmia   r2!, {r4-r6}        @@ 08005FA8 CA70     @@ 
+stmia   r3!, {r4-r6}        @@ 08005FAA C370     @@ 
+ldmia   r2!, {r4,r5}        @@ 08005FAC CA30     @@ 
+stmia   r3!, {r4,r5}        @@ 08005FAE C330     @@ /
+ldr     r6, SevenFClear2loc @@ 08005FB0 4E07     @@ \
+add     r0, r0, r6          @@ 08005FB2 1980     @@ Clear 0x7F00
+lsl     r0, r0, #0x02       @@ 08005FB4 0080     @@ \
+add     r0, r13             @@ 08005FB6 4468     @@ gets generic palette
+ldr     r0, [r0]            @@ 08005FB8 6800     @@ /
+lsl     r1, r1, #0x05       @@ 08005FBA 0149     @@ \
+mov     r2, #0x20           @@ 08005FBC 2220     @@ write size
+bl      PaletteWriter       @@ 08005FBE F7FAFEFB @@ 
+
+.org 0x0DB8
+PaletteWriter:
+
+@@ Writes palettes to palette buffer
+
+.set PaletteBuffer, 0x020228A8
+
+@@ RAM buffer for palettes. 
+
+.set UpdatePalettesFlag, 0x0300000E
+
+@@ When set to 1, update palRAM with
+@@ buffer
+
+push    {r4, lr}            @@ 08000DB8 B510     @@ 
+mov     r4, r0              @@ 08000DBA 1C04     @@ 
+mov     r3, r2              @@ 08000DBC 1C13     @@ 
+mov     r0, #0x1F           @@ 08000DBE 201F     @@ \
+and     r0, r3              @@ 08000DC0 4018     @@ Check if writelength smaller than 
+cmp     r0, #0x00           @@ 08000DC2 2800     @@ cpufastset multiple
+beq     WritePalCPUFS       @@ 08000DC4 D00E     @@ /
+asr     r1, r1, #0x01       @@ 08000DC6 1049     @@ 
+lsl     r1, r1, #0x01       @@ 08000DC8 0049     @@ 
+ldr     r0, PalBufferLoc    @@ 08000DCA 4805     @@ 
+add     r1, r1, r0          @@ 08000DCC 1809     @@ 
+lsr     r2, r3, #0x1F       @@ 08000DCE 0FDA     @@ 
+add     r2, r3, r2          @@ 08000DD0 189A     @@ 
+lsl     r2, r2, #0x0A       @@ 08000DD2 0292     @@ 
+lsr     r2, r2, #0x0B       @@ 08000DD4 0AD2     @@ 
+mov     r0, r4              @@ 08000DD6 1C20     @@ 
+bl      CPUSet              @@ 08000DD8 F0D0FC4E @@
+
+.org 0x0D1678
+CPUSet:
+
+@@ Life CPUFastSet, but slower and for smaller
+@@ pieces of data
+
+swi     0x0B                @@ 080D1678 DF0B     @@
+bx      lr                  @@ 080D167A 4770     @@
+
+.org 0x0DDC                 @subend
+b       UpdatePalettes      @@ 08000DDC E00F     @@ 
+
+.align 2
+
+PalBufferLoc:
+.long PaletteBuffer
+
+WritePalCPUFS:
+
+asr     r0, r1, #0x01       @@ 08000DE4 1048     @@ 
+lsl     r0, r0, #0x01       @@ 08000DE6 0040     @@ 
+ldr     r1, PalBuffer2Loc   @@ 08000DE8 4908     @@ 
+add     r1, r0, r1          @@ 08000DEA 1841     @@ 
+mov     r2, r3              @@ 08000DEC 1C1A     @@ 
+cmp     r2, #0x00           @@ 08000DEE 2A00     @@ 
+bge     PalHasLength        @@ 08000DF0 DA00     @@ \
+add     r2, #0x03           @@ 08000DF2 3203     @@ In case length = 0?
+
+PalHasLength:
+
+lsl     r2, r2, #0x09       @@ 08000DF4 0252     @@ \
+lsr     r2, r2, #0x0B       @@ 08000DF6 0AD2     @@ Shift size down
+mov     r0, r4              @@ 08000DF8 1C20     @@ palette
+bl      CPUFastSet          @@ 08000DFA F0D0FC3B @@ 
+
+@@ CPUFastSet used before
+
+.org 0x0DFE                 @subend
+
+UpdatePalettes:
+
+ldr     r1, UpdPals         @@ 08000DFE 4904     @@ \
+mov     r0, #0x01           @@ 08000E00 2001     @@ 'update palette buffer' flag
+strb    r0, [r1]            @@ 08000E02 7008     @@ /
+pop     {r4}                @@ 08000E04 BC10     @@ \
+pop     {r0}                @@ 08000E06 BC01     @@ clean and return
+bx      r0                  @@ 08000E08 4700     @@ /
+
+.align 2
+
+PalBuffer2Loc:
+.long PaletteBuffer
+
+UpdPals:
+.long UpdatePalettesFlag
+
+.org 0x5FC2                 @subend
+add     sp, #0x20           @@ 08005FC2 B008     @@ \
+pop     {r4-r6}             @@ 08005FC4 BC70     @@ cleaan and return
+pop     {r0}                @@ 08005FC6 BC01     @@ 
+bx      r0                  @@ 08005FC8 4700     @@ /
+
+.align 2
+
+GenericPalettes:
+.long GenericPaletteTable
+
+SevenFClear2loc:
+.long SevenFClearer
+
+
+.org 0x5956                 @subend
+b       MMWriterEnd         @@ 08005956 E013     @@
+
+SevenEFFLoc:
+.short SevenEFF
+
+.align 2
+
+SeventeenBitsLoc:
+.long SeventeenBits
+
+BoundPortrait:
+
+mov     r0, r4              @@ 08005960 1C20     @@ Portrait
+bl      PortraitEntryGetter @@ 08005962 F7FFFDD7 @@
+
+.org 0x5514
+PortraitEntryGetter:
+
+.set PortraitTable, 0x088ACBC4
+
+@@ FE8's portrait table
+
+mov     r1, r0              @@ 08005514 1C01     @@ 
+lsl     r0, r1, #0x03       @@ 08005516 00C8     @@ \
+sub     r0, r0, r1          @@ 08005518 1A40     @@ multiply by 28d
+lsl     r0, r0, #0x02       @@ 0800551A 0080     @@ /
+ldr     r1, PortraitTableLoc@@ 0800551C 4901     @@ 
+add     r0, r0, r1          @@ 0800551E 1840     @@ 
+bx      lr                  @@ 08005520 4770     @@ 
+
+.align 2
+
+PortraitTableLoc:
+.long PortraitTable
+
+.org 0x5966                 @subend
+mov     r4, r0              @@ 08005966 1C04     @@ entry in portrait table
+ldr     r0, [r4, #0x04]     @@ 08005968 6860     @@ gets minimug pointer
+lsl     r1, r5, #0x05       @@ 0800596A 0169     @@ 0x1E00
+mov     r2, #0xC0           @@ 0800596C 22C0     @@\
+lsl     r2, r2, #0x13       @@ 0800596E 04D2     @@ 0x06000000
+add     r1, r1, r2          @@ 08005970 1889     @@ 0x06001E00
+bl      DetermineDrawType   @@ 08005972 F00DFAED @@ picks a drawing function
+
+.org 0x012F50
+DetermineDrawType:
+
+.set VRAMSize, 0x017FFF
+
+@@ VRAM is 0x18000 bytes long
+
+.set HandlingTable, 0x08599FB4
+
+@@ Pointer table containing routines for
+@@ writing different kinds of data, such as 
+@@ compressed images. 
+
+push    {r4, r5, lr}        @@ 08012F50 B530     @@ 
+mov     r3, r0              @@ 08012F52 1C03     @@ 
+mov     r4, r1              @@ 08012F54 1C0C     @@ 
+mov     r0, #0xFA           @@ 08012F56 20FA     @@ \
+lsl     r0, r0, #0x18       @@ 08012F58 0600     @@ Check if trying
+add     r1, r4, r0          @@ 08012F5A 1821     @@ to write outside of
+ldr     r0, VRAMSizeLoc     @@ 08012F5C 480A     @@ VRAM space
+mov     r5, #0x1            @@ 08012F5E 2501     @@ 
+cmp     r1, r0              @@ 08012F60 4281     @@ 
+bhi     OutsideVRAM         @@ 08012F62 D800     @@ /
+mov     r5, #0x0            @@ 08012F64 2500     @@ 
+
+OutsideVRAM:
+
+ldr     r2, HandlingTableLoc@@ 08012F66 4A09     @@ 
+ldrb    r1, [r3]            @@ 08012F68 7819     @@ \
+mov     r0, #0xF0           @@ 08012F6A 20F0     @@ check first byte of image
+and     r0, r1              @@ 08012F6C 4008     @@ to see its type
+lsr     r0, r0, #0x03       @@ 08012F6E 08C0     @@ \
+add     r0, r5, r0          @@ 08012F70 1828     @@ multiply type by 4
+lsl     r0, r0, #0x02       @@ 08012F72 0080     @@ and add to handling table
+add     r0, r0, r2          @@ 08012F74 1880     @@ to get routine ptr
+ldr     r2, [r0]            @@ 08012F76 6802     @@ /
+mov     r0, r3              @@ 08012F78 1C18     @@ 
+mov     r1, r4              @@ 08012F7A 1C21     @@ 
+bl      BXLadderR2          @@ 08012F7C F0BEFCA4 @@ 
+
+@@ Already used. In this case, it's jumping to a
+@@ routine for writing LZ77 compressed
+@@ data
+                            @substart
+.org 0x0D1690
+LZ7716Bit:
+
+@@ Routine uncompresses LZ77 data from r0 to r1 in a
+@@ 16bit format
+
+swi     #0x12               @@ 080D1690 DF12     @@ LZ77UnCompReadNormalWrite16Bit
+bx      lr                  @@ 080D1692 4770     @@
+
+
+                            @subend
+.org 0x012F80               @subend
+pop     {r4, r5}            @@ 08012F80 BC30     @@ \
+pop     {r0}                @@ 08012F82 BC01     @@ clean and end
+bx      r0                  @@ 08012F84 4700     @@ /
+
+.align 2 
+
+VRAMSizeLoc:
+.long VRAMSize
+
+HandlingTableLoc:
+.long HandlingTable
+    
+.org 0x5976                 @subend
+ldr     r0, [r4, #0x08]     @@ 08005976 68A0     @@ Gets MM palette
+lsl     r1, r6, #0x05       @@ 08005978 0171     @@ shift size for palette routine
+mov     r2, #0x20           @@ 0800597A 2220     @@
+bl      PaletteWriter       @@ 0800597C F7FBFA1C @@
+
+@@ Routine already used, see above
+
+.org 0x5980                 @subend
+
+MMWriterEnd:
+
+pop     {r4-r6}             @@ 08005980 BC70     @@ \
+pop     {r0}                @@ 08005982 BC01     @@ clean and return
+bx      r0                  @@ 08005984 4700     @@ /
+
+.org 0x59A2                 @subend
+ldr     r2, MMTenBitLoc     @@ 080059A2 4A08     @@ \
+and     r2, r6              @@ 080059A4 4032     @@ Gets start of 
+ldr     r1, MMSzTable       @@ 080059A6 4908     @@ tiles for
+lsl     r5, r5, #0x0C       @@ 080059A8 032D     @@ minimug tilemap
+add     r2, r2, r5          @@ 080059AA 1952     @@ 
+lsl     r4, r4, #0x18       @@ 080059AC 0624     @@ 
+asr     r4, r4, #0x18       @@ 080059AE 1624     @@ /
+mov     r0, r8              @@ 080059B0 4640     @@ BG buffer
+mov     r3, r4              @@ 080059B2 1C23     @@ 
+bl      TilemapWriter       @@ 080059B4 F7FFFF6E @@ 
+
+.org 0x5894
+TilemapWriter:
+
+@@ Writes a tilemap
+
+@@inputs:
+@@ r0 destination
+@@ r1 tile table
+@@ r2 base tile
+@@ r3 flag for flipping
+
+push    {r4-r7, lr}         @@ 08005894 B5F0     @@ 
+mov     r7, r8              @@ 08005896 4647     @@ 
+push    {r7}                @@ 08005898 B480     @@ 
+mov     r8, r0              @@ 0800589A 4680     @@ buffer
+mov     r12, r2             @@ 0800589C 4694     @@ tile base
+ldrb    r7, [r1]            @@ 0800589E 780F     @@ \
+add     r1, #0x01           @@ 080058A0 3101     @@ get rows and columns for tilemap
+ldrb    r6, [r1]            @@ 080058A2 780E     @@ /
+add     r2, r1, #0x01       @@ 080058A4 1C4A     @@ next byte in table
+lsl     r3, r3, #0x18       @@ 080058A6 061B     @@ \
+cmp     r3, #0x00           @@ 080058A8 2B00     @@ if r3 set, branch
+bne     TilemapFlipped      @@ 080058AA D118     @@ /
+mov     r0, #0x00           @@ 080058AC 2000     @@ tile counter
+cmp     r0, r6              @@ 080058AE 42B0     @@ \
+bge     TilemapWriterEnd    @@ 080058B0 DA32     @@ Check if all rows written
+
+TileRowLoop:
+
+add     r4, r0, #0x01       @@ 080058B2 1C44     @@ add to counter
+cmp     r7, #0x0            @@ 080058B4 2F00     @@ check if all 
+beq     TileRowWritten      @@ 080058B6 D00E     @@ tiles in row written
+lsl     r0, r0, #0x06       @@ 080058B8 0180     @@ \
+mov     r3, r8              @@ 080058BA 4643     @@ Get row to write to
+add     r1, r0, r3          @@ 080058BC 18C1     @@ /
+mov     r3, r7              @@ 080058BE 1C3B     @@ 
+
+TileinRowLoop:
+
+ldrb    r0, [r2]            @@ 080058C0 7810     @@ \
+cmp     r0, #0xFF           @@ 080058C2 28FF     @@ check for skipping tile
+beq     TileTblBreak        @@ 080058C4 D002     @@ /
+ldrb    r0, [r2]            @@ 080058C6 7810     @@ get tile
+add     r0, r12             @@ 080058C8 4460     @@ add to base tile
+strh    r0, [r1]            @@ 080058CA 8008     @@ store in buffer
+
+TileTblBreak:
+
+add     r2, #0x01           @@ 080058CC 3201     @@ next tile
+add     r1, #0x02           @@ 080058CE 3102     @@ next byte in buffer
+sub     r3, #0x01           @@ 080058D0 3B01     @@ decrement tiles in row counter
+cmp     r3, #0x0            @@ 080058D2 2B00     @@ \
+bne     TileinRowLoop       @@ 080058D4 D1F4     @@ check if all tiles in row written
+
+TileRowWritten:
+
+mov     r0, r4              @@ 080058D6 1C20     @@ move counter
+cmp     r0, r6              @@ 080058D8 42B0     @@ \
+blt     TileRowLoop         @@ 080058DA DBEA     @@ check if all rows written
+b       TilemapWriterEnd    @@ 080058DC E01C     @@ 
+
+TilemapFlipped:
+
+mov     r0, #0x00           @@ 080058DE 2000     @@ \
+cmp     r0, r6              @@ 080058E0 42B0     @@ I'm too lazy to
+bge     TilemapWriterEnd    @@ 080058E2 DA19     @@ write notes on this, but
+sub     r3, r7, #0x01       @@ 080058E4 1E7B     @@ it just writes the tilemap backwards
+add     r4, r0, #0x01       @@ 080058E6 1C44     @@ with the tiles flipped
+cmp     r3, #0x00           @@ 080058E8 2B00     @@ 
+blt     #0x8005912          @@ 080058EA DB12     @@ 
+mov     r1, #0x80           @@ 080058EC 2180     @@ 
+lsl     r1, r1 #0x03        @@ 080058EE 00C9     @@ 
+mov     r5, r1              @@ 080058F0 1C0D     @@ 
+lsl     r1, r3, #0x01       @@ 080058F2 0059     @@ 
+lsl     r0 ,r0, #0x06       @@ 080058F4 0180     @@ 
+add     r0, r8              @@ 080058F6 4440     @@ 
+add     r1, r1, r0          @@ 080058F8 1809     @@ 
+ldrb    r0, [r2]            @@ 080058FA 7810     @@ 
+cmp     r0, #0xFF           @@ 080058FC 28FF     @@ 
+beq     #0x8005908          @@ 080058FE D003     @@ 
+ldrb    r0, [r2]            @@ 08005900 7810     @@ 
+add     r0, r12             @@ 08005902 4460     @@ 
+add     r0, r0, r5          @@ 08005904 1940     @@ 
+strh    r0, [r1]            @@ 08005906 8008     @@ 
+add     r2, #0x01           @@ 08005908 3201     @@ 
+sub     r1, #0x02           @@ 0800590A 3902     @@ 
+sub     r3, #0x01           @@ 0800590C 3B01     @@ 
+cmp     r3, #0x00           @@ 0800590E 2B00     @@ 
+bge     #0x80058FA          @@ 08005910 DAF3     @@ 
+mov     r0, r4              @@ 08005912 1C20     @@ 
+cmp     r0, r6              @@ 08005914 42B0     @@ 
+blt     #0x80058E4          @@ 08005916 DBE5     @@ /
+
+TilemapWriterEnd:
+
+pop     {r3}                @@ 08005918 BC08     @@ \
+mov     r8, r3              @@ 0800591A 4698     @@ clean and end
+pop     {r4-r7}             @@ 0800591C BCF0     @@ 
+pop     {r0}                @@ 0800591E BC01     @@ 
+bx      r0                  @@ 08005920 4700     @@ /
+
+.org 0x59B8                 @subend
+pop     {r3}                @@ 080059B8 BC08     @@ \
+mov     r8, r3              @@ 080059BA 4698     @@ clean and end
+pop     {r4-r6}             @@ 080059BC BC70     @@ 
+pop     {r0}                @@ 080059BE BC01     @@ 
+bx      r0                  @@ 080059C0 4700     @@ /
+
+.align 2
+
+MMTenBitLoc:
+.short MMTenBit
+
+.align 2
+
+MMSzTable:
+.long MMSizeTable
+
+.org 0x08C658               @subend
+mov     r0, r9              @@ 0808C658 4648     @@ \
+add     r0, #0xCA           @@ 0808C65A 30CA     @@ store end of minimug in
+str     r0, [r7, #0x40]     @@ 0808C65C 6438     @@ buffer to 0x6C struct
+mov     r0, r7              @@ 0808C65E 1C38     @@ \
+add     r0, #0x44           @@ 0808C660 3044     @@ Frame timer?
+mov     r1, r10             @@ 0808C662 4651     @@ 
+strh    r1, [r0]            @@ 0808C664 8001     @@ /
+ldr     r2, MMCtrlTable2    @@ 0808C666 4A0A     @@ \
+mov     r1, r7              @@ 0808C668 1C39     @@ gets  horizontal position of mmb
+add     r1, #0x50           @@ 0808C66A 3150     @@ from the control table
+mov     r0, #0x00           @@ 0808C66C 2000     @@ talked about toward the start
+ldsb    r0, [r1, r0]        @@ 0808C66E 5608     @@ 
+lsl     r0, r0, #0x03       @@ 0808C670 00C0     @@ 
+add     r0, r0, r2          @@ 0808C672 1880     @@ 
+ldrb    r0, [r0, #0x02]     @@ 0808C674 7880     @@ 
+lsl     r0, r0, #0x18       @@ 0808C676 0600     @@ 
+asr     r0, r0, #0x18       @@ 0808C678 1600     @@ /
+cmp     r0, #0x00           @@ 0808C67A 2800     @@ \
+bge     MMBRightHP          @@ 0808C67C DA0A     @@ Branch if right
+mov     r2, r7              @@ 0808C67E 1C3A     @@ 
+add     r2, #0x46           @@ 0808C680 3246     @@ The 0x05 is HP number x coord 
+mov     r0, #0x05           @@ 0808C682 2005     @@ /
+b       MMBXHPStore         @@ 0808C684 E009     @@ Jump past constants
+
+.align 2
+
+WindowBuffer:
+.long ERAMBGBuffer
+
+BufferConst:
+.long ERAMBufferConst
+
+MMCtrlTable2:
+.long BoxControlTable
+
+MMBRightHP:
+
+mov     r2, r7              @@ 0808C694 1C3A     @@ 
+add     r2, #0x46           @@ 0808C696 3246     @@ 
+mov     r0, #0x17           @@ 0808C698 2017     @@ The 0x17 is HP number x coord 
+
+MMBXHPStore:
+
+strh    r0, [r2]            @@ 0808C69A 8010     @@ Stores HP number x coord
+ldr     r0, MMCtrlTable3    @@ 0808C69C 4806     @@ \
+ldrb    r1, [r1]            @@ 0808C69E 7809     @@ Same as above for box position
+lsl     r1, r1, #0x18       @@ 0808C6A0 0609     @@ but for vertical position
+asr     r1, r1, #0x18       @@ 0808C6A2 1609     @@ 
+lsl     r1, r1, #0x03       @@ 0808C6A4 00C9     @@ 
+add     r1, r1, r0          @@ 0808C6A6 1809     @@ 
+mov     r0, #0x03           @@ 0808C6A8 2003     @@ 
+ldsb    r0, [r1, r0]        @@ 0808C6AA 5608     @@ /
+cmp     r0, #0x00h          @@ 0808C6AC 2800     @@ \
+bge     MMBHPBottom         @@ 0808C6AE DA05     @@ Branch if lower box
+mov     r1, r7              @@ 0808C6B0 1C39     @@ 
+add     r1, #0x48           @@ 0808C6B2 3148     @@ 
+mov     r0, #0x03           @@ 0808C6B4 2003     @@ HP number Y coord (upper box)
+b       MMBYHPStore         @@ 0808C6B6 E004     @@ 
+
+MMCtrlTable3:
+.long BoxControlTable
+
+MMBHPBottom:
+
+mov     r1, r7              @@ 0808C6BC 1C39     @@ 
+add     r1, #0x48           @@ 0808C6BE 3148     @@ 
+mov     r0, #0x11           @@ 0808C6C0 2011     @@ HP number Y coord (lower box)
+
+MMBYHPStore:
+
+strh    r0, [r1]            @@ 0808C6C2 8008     @@ Store HP number y coord
+mov     r0, r7              @@ 0808C6C4 1C38     @@ \
+mov     r1, r8              @@ 0808C6C6 4641     @@ HP number drawing function
+bl      DrawHPNumbers       @@ 0808C6C8 F7FFFEC8 @@ /
+
+.org 0x08C45C
+DrawHPNumbers:
+
+@@ This routine draws the HP
+@@ numbers to the minimug box. 
+@@ It handles displaying statuses, too
+
+@@ Warning: This routine is called every frame 
+@@ by another routine in order to 
+@@ keep displaying the OAM
+
+.set OAMTable, 0x08590F44
+
+@@ This is a table of size/shape
+@@ data and number of sprites to draw
+
+.set HPOAMTile, 0x82E0
+
+@@ the start of the number tiles
+@@ in obj tiles
+
+push    {r4-r7, lr}         @@ 0808C45C B5F0     @@ 
+mov     r7, r8              @@ 0808C45E 4647     @@ 
+push    {r7}                @@ 0808C460 B480     @@ 
+mov     r4, r0              @@ 0808C462 1C04     @@ 0x6C struct
+mov     r5, r1              @@ 0808C464 1C0D     @@ character data
+add     r0, #0x44           @@ 0808C466 3044     @@ \
+ldrh    r2, [r0]            @@ 0808C468 8802     @@ time unit's been selected
+mov     r0, r5              @@ 0808C46A 1C28     @@ \
+add     r0, #0x30           @@ 0808C46C 3030     @@ Gets unit's status
+ldrb    r1, [r0]            @@ 0808C46E 7801     @@ 
+mov     r0, #0x0F           @@ 0808C470 200F     @@ 
+and     r0, r1              @@ 0808C472 4008     @@ /
+cmp     r0, #0x0A           @@ 0808C474 280A     @@ \
+bne     DrawHPNotEgg        @@ 0808C476 D100     @@ branch if not egg
+mov     r2, #0x00           @@ 0808C478 2200     @@ if egg, trash selected time
+
+DrawHPNotEgg:
+
+lsl     r1, r2, #0x10       @@ 0808C47A 0411     @@ \
+asr     r2, r1, #0x10       @@ 0808C47C 140A     @@ shift selected time
+mov     r0, #0x3F           @@ 0808C47E 203F     @@ \
+and     r0, r2              @@ 0808C480 4010     @@ Branch if selected time 
+mov     r6, r1              @@ 0808C482 1C0E     @@ is below 0x40
+cmp     r0, #0x00           @@ 0808C484 2800     @@ 
+bne     DrawNormalHPNum     @@ 0808C486 D147     @@ /
+mov     r0, #0x40           @@ 0808C488 2040     @@ \
+and     r0, r2              @@ 0808C48A 4010     @@ Check if time is 0x40
+cmp     r0, #0x00           @@ 0808C48C 2800     @@ \
+beq     NumberDisplay       @@ 0808C48E D007     @@ if not 0x40, branch
+ldr     r0, [r4, #0x40]     @@ 0808C490 6C20     @@ get buffer
+mov     r1, r5              @@ 0808C492 1C29     @@ character data
+bl      StatusTextWriter    @@ 0808C494 F7FFFF78 @@ 
+
+.org 0x08C388
+StatusTextWriter:
+
+@@ Picks and draws status images 
+@@ deppending on status
+
+.set StatusTile, 0x016F
+
+.set StatusImage, 0x8A16DEC
+
+@@ Offset of status images
+
+.set StatusVRAM, 0x6002DE0
+
+@@ location to write status to
+
+.set NumberTile, 0x1128
+
+@@ start of number tiles
+
+push    {r4-r6, lr}         @@ 0808C388 B570     @@ 
+mov     r5, r0              @@ 0808C38A 1C05     @@ buffer
+ldr     r4, StatusTileLoc   @@ 0808C38C 4C07     @@ 
+cmp     r1, #0x00           @@ 0808C38E 2900     @@ \
+beq     StatusTextEnd       @@ 0808C390 D05A     @@ Check if character data missing
+add     r1, #0x30           @@ 0808C392 3130     @@ \
+ldrb    r0, [r1]            @@ 0808C394 7808     @@ get status byte
+lsl     r0, r0, #0x1C       @@ 0808C396 0700     @@ \
+lsr     r0, r0, #0x1C       @@ 0808C398 0F00     @@ bitstrip
+mov     r6, r1              @@ 0808C39A 1C0E     @@ char data
+cmp     r0, #0xD            @@ 0808C39C 280D     @@ \
+bhi     StatusDraw           @@ 0808C39E D83D     @@ check if egg
+lsl     r0, r0, #0x2        @@ 0808C3A0 0080     @@ \
+ldr     r1, StatusJmpTable  @@ 0808C3A2 4903     @@ jump table
+add     r0, r0, r1          @@ 0808C3A4 1840     @@ 
+ldr     r0, [r0]            @@ 0808C3A6 6800     @@ 
+mov     pc, r0              @@ 0808C3A8 4687     @@ /
+
+.align 2
+
+StatusTileLoc:
+.long StatusTile
+
+StatusJmpTable:
+.long StatusTextJumpTable
+
+StatusTextJumpTable:
+
+.long StatusTextEnd
+
+.long StatusPoison
+
+.long StatusSleep
+
+.long StatusSilence
+
+.long StatusBerserk
+
+.long StatusAttack
+
+.long StatusDefend
+
+.long StatusCritical
+
+.long StatusDodge
+
+.long StatusPetrify
+
+.long StatusEnd
+
+.long StatusEnd
+
+.long StatusPetrify
+
+.long StatusDraw
+
+.long StatusPetrify
+
+StatusPoison:
+
+mov     r2, #0x00           @@ 0808C3EC 2200     @@ 
+b       StatusDraw          @@ 0808C3EE E015     @@ 
+
+StatusSleep:
+
+mov     r2, #0xA0           @@ 0808C3F0 22A0     @@ 
+b       StatusDraw          @@ 0808C3F2 E013     @@ 
+
+StatusSilence:
+
+mov     r2, #0xA0           @@ 0808C3F4 22A0     @@ 
+lsl     r2, r2, #0x01       @@ 0808C3F6 0052     @@ 0x0140
+b       StatusDraw          @@ 0808C3F8 E010     @@ 
+
+StatusBerserk:
+
+mov     r2, #0xF0           @@ 0808C3FA 22F0     @@ 
+lsl     r2, r2, #0x01       @@ 0808C3FC 0052     @@ 0x01E0
+b       StatusDraw          @@ 0808C3FE E00D     @@ 
+
+StatusAttack:
+
+mov     r2, #0xA0           @@ 0808C400 22A0     @@ 
+lsl     r2, r2, #0x02       @@ 0808C402 0092     @@ 0x0280
+b       StatusDraw          @@ 0808C404 E00A     @@ 
+
+StatusDefend:
+
+mov     r2, #0xC8           @@ 0808C406 22C8     @@ 
+lsl     r2, r2, #0x02       @@ 0808C408 0092     @@ 0x0320
+b       StatusDraw          @@ 0808C40A E007     @@ 
+
+StatusCritical:
+
+mov     r2, #0xF0           @@ 0808C40C 22F0     @@ 
+lsl     r2, r2, #0x02       @@ 0808C40E 0092     @@ 0x03C0
+b       StatusDraw          @@ 0808C410 E004     @@ 
+
+StatusDodge:
+
+mov     r2, #0x8C           @@ 0808C412 228C     @@ 
+lsl     r2, r2, #0x03       @@ 0808C414 00D2     @@ 0x0460
+b       StatusDraw          @@ 0808C416 E001     @@ 
+
+StatusPetrify:
+
+mov     r2, #0xA0           @@ 0808C418 22A0     @@ 
+lsl     r2, r2, #0x03       @@ 0808C41A 00D2     @@ 0x0500
+
+StatusDraw:
+
+ldr     r0, StatusImageLoc  @@ 0808C41C 480C     @@ \
+add     r0, r2, r0          @@ 0808C41E 1810     @@ Gets which image to write
+ldr     r1, StatusVRAMLoc   @@ 0808C420 490C     @@ 
+mov     r2, #0x28           @@ 0808C422 2228     @@ size
+bl      CPUFastSet          @@ 0808C424 F045F926 @@ 
+
+@@ Already used
+
+.org 0x08C428               @subend
+strh    r4, [r5]            @@ 0808C428 802C     @@ \
+add     r4, #0x01           @@ 0808C42A 3401     @@ sets tilemap
+strh    r4, [r5, #0x02]     @@ 0808C42C 806C     @@ to buffer
+add     r4, #0x01           @@ 0808C42E 3401     @@ 
+strh    r4, [r5, #0x04]     @@ 0808C430 80AC     @@ 
+add     r4, #0x01           @@ 0808C432 3401     @@ 
+strh    r4, [r5, #0x06]     @@ 0808C434 80EC     @@ 
+add     r4, #0x01           @@ 0808C436 3401     @@ 
+strh    r4, [r5, #0x08]     @@ 0808C438 812C     @@ 
+mov     r0, #0x00           @@ 0808C43A 2000     @@ 
+strh    r0, [r5, #0x0A]     @@ 0808C43C 8168     @@ /
+ldrb    r0, [r6]            @@ 0808C43E 7830     @@ get status
+lsr     r0, r0, #0x04       @@ 0808C440 0900     @@ get turns remaining
+ldr     r1, StatusNumbers   @@ 0808C442 4905     @@ load base tile
+add     r0, r0, r1          @@ 0808C444 1840     @@ add turns to get number
+strh    r0, [r5, #0x0C]     @@ 0808C446 81A8     @@ store to tileman
+
+StatusTextEnd:
+
+pop     {r4-r6}             @@ 0808C448 BC70     @@ \
+pop     {r0}                @@ 0808C44A BC01     @@ clean and end
+bx      r0                  @@ 0808C44C 4700     @@ /
+
+.align 2
+
+StatusImageLoc:
+.long StatusImage
+
+StatusVRAMLoc:
+.long StatusVRAM
+
+StatusNumbers:
+.long NumberTile
+
+.org 0x08C498               @subend
+mov     r0, #0x01           @@ 0808C498 2001     @@ 
+bl      UpdateFlag          @@ 0808C49A F775FD87 @@ 
+
+.org 0x1FAC
+UpdateFlag:
+
+@@ Some kind of flag to update the VRAM tilemaps?
+
+.set UpdateFlagOff, 0x0300000D
+
+
+ldr     r2, UpdateFlagLoc
+ldrb    r1, [r2]
+orr     r0, r1
+strb    r0, [r2]
+bx      lr
+
+UpdateFlagLoc:
+.long UpdateFlagOff
+
+.org 0x08C49E               @subend
+b       DrawNormalHPNum     @@ 0808C49E E03B     @@ 
+
+NumberDisplay:
+
+mov     r0, r5              @@ 0808C4A0 1C28     @@ char data
+bl      HPNumberGetter      @@ 0808C4A2 F78CFE55 @@ get current HP
+
+.org 0x019150
+HPNumberGetter:
+
+push    {r4, r5, lr}        @@ 08019150 B530     @@ 
+mov     r5, r0              @@ 08019152 1C05     @@ char data
+mov     r4, #0x13           @@ 08019154 2413     @@ \
+ldsb    r4, [r5, r4]        @@ 08019156 572C     @@ get current hp
+bl      FindEquippable      @@ 08019158 F7FDFCE6 @@
+
+.org 0x016B28
+FindEquippable:
+
+push    {r4-r6,lr}          @@ 08016B28 B570     @@ 
+mov     r6, r0              @@ 08016B2A 1C06     @@ char data
+mov     r5, #0x00           @@ 08016B2C 2500     @@ counter
+
+FindEquipLoop:
+
+lsl     r1, r5, #0x01       @@ 08016B2E 0069     @@ shift counter by item data size
+mov     r0, r6              @@ 08016B30 1C30     @@ char data
+add     r0, #0x1E           @@ 08016B32 301E     @@ inventory start
+add     r4, r0, r1          @@ 08016B34 1844     @@ \
+ldrh    r1, [r4]            @@ 08016B36 8821     @@ get current item halfword
+mov     r0, r6              @@ 08016B38 1C30     @@ char data
+bl      EquippableCheck     @@ 08016B3A F7FFFD1B @@ check if char can equip
+
+.org 0x016574
+EquippableCheck:
+
+@@ returns 0 or 1 if
+@@ a unit can equip and use an item
+@@ checks for silenced units
+
+.set ItemTable, 0x08809B10
+
+@@ FE8 item table location
+
+.set LockBits, 0x3D3C00
+
+@@ This is all of the class/char locks
+
+push    {r4, r5, lr}        @@ 08016574 B530     @@ 
+mov     r4, r0              @@ 08016576 1C04     @@ char data
+mov     r5, r1              @@ 08016578 1C0D     @@ item hword
+cmp     r5, #0x00           @@ 0801657A 2D00     @@ if there's an item
+bne     EqTestItem          @@ 0801657C D100     @@ branch
+b       NoItemEq            @@ 0801657E E0CA     @@ 
+
+EqTestItem:
+
+mov     r1, #0xFF           @@ 08016580 21FF     @@ \
+and     r1, r5              @@ 08016582 4029     @@ isolate item byte
+lsl     r0, r1, #0x03       @@ 08016584 00C8     @@ and get item data
+add     r0, r0, r1          @@ 08016586 1840     @@ 
+lsl     r0, r0, #0x02       @@ 08016588 0080     @@ 
+ldr     r1, EqItemTable     @@ 0801658A 4951     @@ 
+add     r0, r0, r1          @@ 0801658C 1840     @@ /
+ldr     r2, [r0, #0x08]     @@ 0801658E 6882     @@ \
+mov     r0, #0x01           @@ 08016590 2001     @@ check if weapon
+and     r0, r2              @@ 08016592 4010     @@ 
+mov     r3, r1              @@ 08016594 1C0B     @@ /
+cmp     r0, #0x00           @@ 08016596 2800     @@ \
+bne     EqIsWeapon          @@ 08016598 D100     @@ branch if weapon
+b       NoItemEq            @@ 0801659A E0BC     @@ 
+
+EqIsWeapon:
+
+ldr     r0, LockBitsLoc     @@ 0801659C 484D     @@ \
+and     r0, r2              @@ 0801659E 4010     @@ branch if char/class locked
+cmp     r0, #0x00           @@ 080165A0 2800     @@ 
+bne     EqIsLocked          @@ 080165A2 D100     @@ /
+b       EqNotLocked         @@ 080165A4 E0A4     @@ 
+
+EqIsLocked:
+
+mov     r0, #0x80           @@ 080165A6 2080     @@ \
+lsl     r0, r0, #0x04       @@ 080165A8 0100     @@ 0x0800
+and     r2, r0              @@ 080165AA 4002     @@ \
+cmp     r2, #0x00           @@ 080165AC 2A00     @@ check weapon lock 1
+beq     NoA2LockOne         @@ 080165AE D00A     @@ branch if weapon doesn't have lock 1
+ldr     r0, [r4]            @@ 080165B0 6820     @@ \
+ldr     r1, [r4, #0x04]     @@ 080165B2 6861     @@ get and combine
+ldr     r0, [r0, #0x28]     @@ 080165B4 6A80     @@ character and class abilities
+ldr     r1, [r1, #0x28]     @@ 080165B6 6A89     @@ 
+orr     r0, r1              @@ 080165B8 4308     @@ /
+mov     r1, #0x80           @@ 080165BA 2180     @@ \
+lsl     r1, r1, #0x09       @@ 080165BC 0249     @@ 0x010000
+and     r0, r1              @@ 080165BE 4008     @@ \
+cmp     r0, #0x00           @@ 080165C0 2800     @@ if char has ability
+bne     NoA2LockOne         @@ 080165C2 D100     @@ check for other locks
+b       NoItemEq            @@ 080165C4 E0A7     @@ if they don't, end
+
+NoA2LockOne:
+
+mov     r1, #0xFF           @@ 080165C6 21FF     @@ \
+and     r1, r5              @@ 080165C8 4029     @@ get item 
+lsl     r0, r1, #0x03       @@ 080165CA 00C8     @@ data
+add     r0, r0, r1          @@ 080165CC 1840     @@ 
+lsl     r0, r0, #0x02       @@ 080165CE 0080     @@ 
+add     r0, r0, r3          @@ 080165D0 18C0     @@ 
+ldr     r0, [r0, #0x08]     @@ 080165D2 6880     @@ /
+mov     r1, #0x80           @@ 080165D4 2180     @@ \
+lsl     r1, r1, #0x0B       @@ 080165D6 02C9     @@ check for eirika lock
+and     r0, r1              @@ 080165D8 4008     @@ 
+cmp     r0, #0x00           @@ 080165DA 2800     @@ 
+beq     NoA3EirLock         @@ 080165DC D00A     @@ /
+ldr     r0, [r4]            @@ 080165DE 6820     @@ \
+ldr     r1, [r4, #0x04]     @@ 080165E0 6861     @@ 
+ldr     r0, [r0, #0x28]     @@ 080165E2 6A80     @@ Same deal as above
+ldr     r1, [r1, #0x28]     @@ 080165E4 6A89     @@ it ends if they 
+orr     r0, r1              @@ 080165E6 4308     @@ can't use it and 
+mov     r1, #0x80           @@ 080165E8 2180     @@ continues checking if they can
+lsl     r1, r1, #0x15       @@ 080165EA 0549     @@ 
+and     r0, r1              @@ 080165EC 4008     @@ 
+cmp     r0, #0x00           @@ 080165EE 2800     @@ 
+bne     NoA3EirLock         @@ 080165F0 D100     @@ 
+b       NoItemEq            @@ 080165F2 E090     @@ /
+
+NoA3EirLock:
+
+mov     r1, #0xFF           @@ 080165F4 21FF     @@ \
+and     r1, r5              @@ 080165F6 4029     @@ Same for Ephraim 
+lsl     r0, r1, #0x03       @@ 080165F8 00C8     @@ lock
+add     r0, r0, r1          @@ 080165FA 1840     @@ 
+lsl     r0, r0, #0x02       @@ 080165FC 0080     @@ 
+add     r0, r0, r3          @@ 080165FE 18C0     @@ 
+ldr     r0, [r0, #0x08]     @@ 08016600 6880     @@ 
+mov     r1, #0x80           @@ 08016602 2180     @@ 
+lsl     r1, r1, #0x0C       @@ 08016604 0309     @@ 
+and     r0, r1              @@ 08016606 4008     @@ 
+cmp     r0, #0x00           @@ 08016608 2800     @@ 
+beq     NoA3EphLock         @@ 0801660A D009     @@ /
+ldr     r0, [r4]            @@ 0801660C 6820     @@ \
+ldr     r1, [r4, #0x04]     @@ 0801660E 6861     @@ compare to 
+ldr     r0, [r0, #0x28]     @@ 08016610 6A80     @@ character/class
+ldr     r1, [r1, #0x28]     @@ 08016612 6A89     @@ abilities
+orr     r0, r1              @@ 08016614 4308     @@ 
+mov     r1, #0x80           @@ 08016616 2180     @@ 
+lsl     r1, r1, #0x16       @@ 08016618 0589     @@ 
+and     r0, r1              @@ 0801661A 4008     @@ 
+cmp     r0, #0x00           @@ 0801661C 2800     @@ 
+beq     NoItemEq            @@ 0801661E D07A     @@ /
+
+NoA3EphLock:
+
+mov     r1, #0xFF           @@ 08016620 21FF     @@ \
+and     r1, r5              @@ 08016622 4029     @@ Lyn lock
+lsl     r0, r1, #0x03       @@ 08016624 00C8     @@ 
+add     r0, r0, r1          @@ 08016626 1840     @@ 
+lsl     r0, r0, #0x02       @@ 08016628 0080     @@ 
+add     r0, r0, r3          @@ 0801662A 18C0     @@ 
+ldr     r0, [r0, #0x08]     @@ 0801662C 6880     @@ 
+mov     r1, #0x80           @@ 0801662E 2180     @@ 
+lsl     r1, r1, #0x0D       @@ 08016630 0349     @@ 
+and     r0, r1              @@ 08016632 4008     @@ 
+cmp     r0, #0x00           @@ 08016634 2800     @@ 
+beq     NoA3LynLock         @@ 08016636 D009     @@ 
+ldr     r0, [r4]            @@ 08016638 6820     @@ 
+ldr     r1, [r4, #0x04]     @@ 0801663A 6861     @@ 
+ldr     r0, [r0, #0x28]     @@ 0801663C 6A80     @@ 
+ldr     r1, [r1, #0x28]     @@ 0801663E 6A89     @@ 
+orr     r0, r1              @@ 08016640 4308     @@ 
+mov     r1, #0x80           @@ 08016642 2180     @@ 
+lsl     r1, r1, #0x17       @@ 08016644 05C9     @@ 
+and     r0, r1              @@ 08016646 4008     @@ 
+cmp     r0, #0x0            @@ 08016648 2800     @@ 
+beq     NoItemEq            @@ 0801664A D064     @@ /
+
+NoA3LynLock:
+
+mov     r1, #0xFF           @@ 0801664C 21FF     @@ \
+and     r1, r5              @@ 0801664E 4029     @@ Lock 3
+lsl     r0, r1, #0x03       @@ 08016650 00C8     @@ 
+add     r0, r0, r1          @@ 08016652 1840     @@ 
+lsl     r0, r0, #0x02       @@ 08016654 0080     @@ 
+add     r0, r0, r3          @@ 08016656 18C0     @@ 
+ldr     r0, [r0, #0x08]     @@ 08016658 6880     @@ 
+mov     r1, #0x80           @@ 0801665A 2180     @@ 
+lsl     r1, r1, #0x0E       @@ 0801665C 0389     @@ 
+and     r0, r1              @@ 0801665E 4008     @@ 
+cmp     r0, #0x00           @@ 08016660 2800     @@ 
+beq     NoA3LockThree       @@ 08016662 D006     @@ 
+ldr     r0, [r4]            @@ 08016664 6820     @@ 
+ldr     r1, [r4, #0x04]     @@ 08016666 6861     @@ 
+ldr     r0, [r0, #0x28]     @@ 08016668 6A80     @@ 
+ldr     r1, [r1, #0x28]     @@ 0801666A 6A89     @@ 
+orr     r0, r1              @@ 0801666C 4308     @@ 
+cmp     r0, #0x00           @@ 0801666E 2800     @@ 
+bge     NoItemEq            @@ 08016670 DA51     @@ /
+
+NoA3LockThree:
+
+mov     r1, #0xFF           @@ 08016672 21FF     @@ \
+and     r1, r5              @@ 08016674 4029     @@ Sword user lock
+lsl     r0, r1, #0x03       @@ 08016676 00C8     @@ 
+add     r0, r0, r1          @@ 08016678 1840     @@ 
+lsl     r0, r0, #0x02       @@ 0801667A 0080     @@ 
+add     r0, r0, r3          @@ 0801667C 18C0     @@ 
+ldr     r0, [r0, #0x08]     @@ 0801667E 6880     @@ 
+mov     r1, #0x80           @@ 08016680 2180     @@ 
+lsl     r1, r1, #0x05       @@ 08016682 0149     @@ 
+and     r0, r1              @@ 08016684 4008     @@ 
+cmp     r0, #0x00           @@ 08016686 2800     @@ 
+beq     A2NoSwordUserLock   @@ 08016688 D009     @@ 
+ldr     r0, [r4]            @@ 0801668A 6820     @@ 
+ldr     r1, [r4, #0x04]     @@ 0801668C 6861     @@ 
+ldr     r0, [r0, #0x28]     @@ 0801668E 6A80     @@ 
+ldr     r1, [r1, #0x28]     @@ 08016690 6A89     @@ 
+orr     r0, r1              @@ 08016692 4308     @@ 
+mov     r1, #0x80           @@ 08016694 2180     @@ 
+lsl     r1, r1, #0x0A       @@ 08016696 0289     @@ 
+and     r0, r1              @@ 08016698 4008     @@ 
+cmp     r0, #0x00           @@ 0801669A 2800     @@ 
+beq     NoItemEq            @@ 0801669C D03B     @@ /
+
+A2NoSwordUserLock:
+
+mov     r0, #0xFF           @@ 0801669E 20FF     @@ \
+and     r0, r5              @@ 080166A0 4028     @@ Monster weapons
+lsl     r1, r0, #0x03       @@ 080166A2 00C1     @@ 
+add     r1, r1, r0          @@ 080166A4 1809     @@ 
+lsl     r1, r1, #0x02       @@ 080166A6 0089     @@ 
+add     r1, r1, r3          @@ 080166A8 18C9     @@ 
+ldr     r1, [r1, #0x08]     @@ 080166AA 6889     @@ 
+mov     r0, #0x80           @@ 080166AC 2080     @@ 
+lsl     r0, r0, #0x03       @@ 080166AE 00C0     @@ 
+and     r0, r1              @@ 080166B0 4008     @@ 
+cmp     r0, #0x00           @@ 080166B2 2800     @@ 
+beq     A2NoMonsterLock     @@ 080166B4 D010     @@ 
+ldr     r0, [r4]            @@ 080166B6 6820     @@ 
+ldr     r1, [r4, #0x04]     @@ 080166B8 6861     @@ 
+ldr     r0, [r0, #0x28]     @@ 080166BA 6A80     @@ 
+ldr     r1, [r1, #0x28]     @@ 080166BC 6A89     @@ 
+orr     r0, r1              @@ 080166BE 4308     @@ 
+mov     r1, #0x80           @@ 080166C0 2180     @@ 
+lsl     r1, r1, #0x0B       @@ 080166C2 02C9     @@ 
+and     r0, r1              @@ 080166C4 4008     @@ 
+cmp     r0, #0x00           @@ 080166C6 2800     @@ 
+beq     NoItemEq            @@ 080166C8 D025     @@ 
+mov     r0, #0x01           @@ 080166CA 2001     @@ 
+b       EquippedEnd         @@ 080166CC E03C     @@ /
+
+.align 2
+
+EqItemTable:
+.long ItemTable
+
+LockBitLoc:
+.long LockBits
+
+A2NoMonsterLock:
+
+mov     r0, #0x80           @@ 080166D8 2080     @@ \
+lsl     r0, r0, #0x09       @@ 080166DA 0240     @@ Check for unusable weapon 
+and     r1, r0              @@ 080166DC 4001     @@ ability
+cmp     r1, #0x00           @@ 080166DE 2900     @@ 
+beq     EqNotLocked         @@ 080166E0 D006     @@ if unusable, continue
+mov     r0, r4              @@ 080166E2 1C20     @@ char data
+mov     r1, r5              @@ 080166E4 1C29     @@ item
+bl      UnusableItem        @@ 080166E6 F000FEE1 @@ 
+
+.org 0x0174AC
+UnusableItem:
+
+@@ For when an item has ability 2, unusable set
+
+push    {lr}                @@ 080174AC B500     @@ 
+mov     r3, r0              @@ 080174AE 1C03     @@ \
+cmp     r1, #0x00           @@ 080174B0 2900     @@ check if char data exists
+bne     UnHasChar           @@ 080174B2 D101     @@ 
+mov     r1, #0xFF           @@ 080174B4 21FF     @@ \
+b       UnNoChar            @@ 080174B6 E007     @@ 
+
+UnHasChar:
+
+mov     r0, #0xFF           @@ 080174B8 20FF     @@ \
+and     r0, r1              @@ 080174BA 4008     @@ item data
+lsl     r1, r0, #0x03       @@ 080174BC 00C1     @@ 
+add     r1, r1, r0          @@ 080174BE 1809     @@ 
+lsl     r1, r1, #0x02       @@ 080174C0 0089     @@ 
+ldr     r0, ItemTableUnusabl@@ 080174C2 4808     @@ 
+add     r1, r1, r0          @@ 080174C4 1809     @@ /
+ldrb    r1, [r1, #0x07]     @@ 080174C6 79C9     @@ Get weapon type
+
+UnNoChar:
+
+ldr     r0, UnusableRAMData @@ 080174C8 4807     @@ \
+add     r0, #0x1C           @@ 080174CA 301C     @@ compare char number to
+add     r0, r1, r0          @@ 080174CC 1808     @@ byte at 0202BD0C+weapon type
+ldrb    r1, [r0]            @@ 080174CE 7801     @@ 
+mov     r2, #0x00           @@ 080174D0 2200     @@ 
+ldr     r0, [r3]            @@ 080174D2 6818     @@ 
+ldrb    r0, [r0, #0x04]     @@ 080174D4 7900     @@ /
+cmp     r1, r0              @@ 080174D6 4281     @@ \
+bne     UnusableWeapEnd     @@ 080174D8 D100     @@ If char numb != byte return 0
+mov     r2, #0x01           @@ 080174DA 2201     @@ \
+mov     r0, r2              @@ 080174DC 1C10     @@ if match return 1
+
+UnusableWeapEnd:
+
+pop     {r1}                @@ 080174DE BC02     @@ 
+bx      r1                  @@ 080174E0 4708     @@ 
+
+.align 2
+
+ItemTableUnusabl:
+.long ItemTable
+
+UnusableRAMData:
+.long MMBRamVal
+
+.org 0x0166EA               @subend
+lsl     r0, r0, #0x18       @@ 080166EA 0600     @@ \ 
+cmp     r0, #0x00           @@ 080166EC 2800     @@ end if not usable
+beq     NoItemEq            @@ 080166EE D012     @@ /
+
+EqNotLocked:
+
+mov     r0, r4              @@ 080166F0 1C20     @@ char data
+add     r0, #0x30           @@ 080166F2 3030     @@ \
+ldrb    r1, [r0]            @@ 080166F4 7801     @@ get status
+mov     r0, #0x0F           @@ 080166F6 200F     @@ 
+and     r0, r1              @@ 080166F8 4008     @@ /
+ldr     r3, EqItemTable2    @@ 080166FA 4B08     @@ \
+cmp     r0, #0x03           @@ 080166FC 2803     @@ branch if not silenced
+bne     NotStatused         @@ 080166FE D10F     @@ /
+mov     r1, #0xFF           @@ 08016700 21FF     @@ \
+and     r1, r5              @@ 08016702 4029     @@ If silenced, check if magic
+lsl     r0, r1, #0x03       @@ 08016704 00C8     @@ if magic, return 0
+add     r0, r0, r1          @@ 08016706 1840     @@ 
+lsl     r0, r0, #0x02       @@ 08016708 0080     @@ 
+add     r0, r0, r3          @@ 0801670A 18C0     @@ 
+ldr     r0, [r0, #0x08]     @@ 0801670C 6880     @@ 
+mov     r1, #0x02           @@ 0801670E 2102     @@ 
+and     r0, r1              @@ 08016710 4008     @@ 
+cmp     r0, #0x00           @@ 08016712 2800     @@ 
+beq     NotStatused         @@ 08016714 D004     @@ /
+
+NoItemEq:
+
+mov     r0, #0x00           @@ 08016716 2000     @@ \
+b       EquippedEnd         @@ 08016718 E016     @@ return 0 if not usable
+
+.align 2
+
+EqItemTable2:
+.long ItemTable
+
+NotStatused:
+
+mov     r1, #0xFF           @@ 08016720 21FF     @@ \
+and     r1, r5              @@ 08016722 4029     @@ Get weapon rank 
+lsl     r0, r1, #0x03       @@ 08016724 00C8     @@ required to equip
+add     r0, r0, r1          @@ 08016726 1840     @@ 
+lsl     r0, r0, #0x02       @@ 08016728 0080     @@ 
+add     r0, r0, r3          @@ 0801672A 18C0     @@ 
+ldrb    r2, [r0, #0x1C]     @@ 0801672C 7F02     @@ /
+mov     r1, #0xFF           @@ 0801672E 21FF     @@ \
+cmp     r5, #0x00           @@ 08016730 2D00     @@ Branch if no item
+beq     NotStsdNoItem       @@ 08016732 D000     @@ /
+ldrb    r1, [r0, #0x07]     @@ 08016734 79C1     @@ get weapon type
+
+NotStsdNoItem:
+
+mov     r0, r4              @@ 08016736 1C20     @@ char data
+add     r0, #0x28           @@ 08016738 3028     @@ start of weapon ranks
+add     r0, r0, r1          @@ 0801673A 1840     @@ \
+ldrb    r0, [r0]            @@ 0801673C 7800     @@ get rank 
+mov     r1, #0x00           @@ 0801673E 2100     @@ return 0 if not able to use
+cmp     r0, r2              @@ 08016740 4290     @@ \
+blt     EqCannotUse         @@ 08016742 DB00     @@ compare rank to required rank
+mov     r1, #0x01           @@ 08016744 2101     @@ return 1 if able to use
+
+EqCannotUse:
+
+mov     r0, r1              @@ 08016746 1C08     @@ return 0 or 1 in r0
+
+EquippedEnd:
+
+pop     {r4, r5}            @@ 08016748 BC30     @@ \
+pop     {r1}                @@ 0801674A BC02     @@ clean and return
+bx      r1                  @@ 0801674C 4708     @@ /
+
+.org 0x016B3E               @subend
+lsl     r0, r0, #0x18       @@ 08016B3E 0600     @@ \
+asr     r0, r0, #0x18       @@ 08016B40 1600     @@ negative flood
+cmp     r0, #0x01           @@ 08016B42 2801     @@ \
+bne     FindEquipLoopCheck  @@ 08016B44 D101     @@ if not equippable
+ldrh    r0, [r4]            @@ 08016B46 8820     @@ \
+b       FindEquipEnd        @@ 08016B48 E003     @@ if equippable found, return item
+
+FindEquipLoopCheck:
+
+add     r5, #0x01           @@ 08016B4A 3501     @@ next item
+cmp     r5, #0x04           @@ 08016B4C 2D04     @@ \
+ble     FindEquipLoop       @@ 08016B4E DDEE     @@ if more items to check
+mov     r0, #0x00           @@ 08016B50 2000     @@ if no equippables found, return 0
+
+FindEquipEnd:
+
+pop     {r4-r6}             @@ 08016B52 BC70     @@ \
+pop     {r1}                @@ 08016B54 BC02     @@ clean and end
+bx      r1                  @@ 08016B56 4708     @@ /
+
+.org 0x01915C               @subend
+lsl     r0, r0, #0x10       @@ 0801915C 0400     @@ \
+lsr     r0, r0, #0x10       @@ 0801915E 0C00     @@ Get HP stat bonus
+bl      HPBonusGetter       @@ 08019160 F7FDF946 @@ /
+
+.org 0x0163F0
+StatBonusGetter:
+
+@@ Gets the stat bonus pointer of an item
+@@ returns 0 if none
+
+push    {lr}                @@ 080163F0 B500     @@ 
+mov     r1, r0              @@ 080163F2 1C01     @@ \
+cmp     r1, #0x00           @@ 080163F4 2900     @@ if no item, end
+beq     HPonNoItem          @@ 080163F6 D009     @@ /
+mov     r0, #0xFF           @@ 080163F8 20FF     @@ \
+and     r0, r1              @@ 080163FA 4008     @@ get the pointer
+lsl     r1, r0, #0x03       @@ 080163FC 00C1     @@ 
+add     r1, r1, r0          @@ 080163FE 1809     @@ 
+lsl     r1, r1, #0x02       @@ 08016400 0089     @@ 
+ldr     r0, HPBonusItems    @@ 08016402 4803     @@ 
+add     r1, r1, r0          @@ 08016404 1809     @@ 
+ldr     r0, [r1, #0x0C]     @@ 08016406 68C8     @@ /
+cmp     r0, #0x00           @@ 08016408 2800     @@ \
+bne     HPBonPtr            @@ 0801640A D103     @@ if pointer exists, branch
+
+StatBonNoItem:
+
+mov     r0, #0x00           @@ 0801640C 2000     @@ 
+b       HPBonGetterEnd      @@ 0801640E E004     @@ 
+
+
+HPBonusItems:
+.long ItemTable
+
+HPBonPtr:
+
+ldrb    r0, [r0]            @@ 08016414 7800     @@ gets HP bonus byte
+lsl     r0, r0, #0x18       @@ 08016416 0600     @@ FF fill
+asr     r0, r0, #0x18       @@ 08016418 1600     @@ /
+
+HPBonGetterEnd:
+
+pop     {r1}                @@ 0801641A BC02     @@ \
+bx      r1                  @@ 0801641C 4708     @@ clean and end
+
+.org 0x019164               @subend
+mov     r1, #0x12           @@ 08019164 2112     @@ \
+ldsb    r1, [r5, r1]        @@ 08019166 5669     @@ add hp bonus to max hp
+add     r1, r1, r0          @@ 08019168 1809     @@ /
+cmp     r4, r1              @@ 0801916A 428C     @@ \
+ble     HPNumberGetterEnd   @@ 0801916C DD0A     @@ branch if current hp < max hp
+mov     r0, r5              @@ 0801916E 1C28     @@ char data
+bl      FindEquippable      @@ 08019170 F7FDFCDA @@ if current > max
+
+@@ Already used, checks for 
+@@ equippable weapon
+
+.org 0x019174               @subend
+lsl     r0, r0, #0x10       @@ 08019174 0400     @@ \
+lsr     r0, r0, #0x10       @@ 08019176 0C00     @@ Get HP Stat bonus
+bl      HPBonusGetter       @@ 08019178 F7FDF93A @@ /
+
+@@ Already used, see above
+
+.org 0x01917C               @subend
+mov     r1, #0x12           @@ 0801917C 2112     @@ \
+ldsb    r1, [r5, r1]        @@ 0801917E 5669     @@ Same as before but sets
+add     r1, r1, r0          @@ 08019180 1809     @@ current to max
+strb    r1, [r5, #0x13]     @@ 08019182 74E9     @@ /
+
+HPNumberGetterEnd:
+
+mov     r0, #0x13           @@ 08019184 2013     @@ \
+ldsb    r0, [r5, r0]        @@ 08019186 5628     @@ get current hp
+pop     {r4,r5}             @@ 08019188 BC30     @@ \
+pop     {r1}                @@ 0801918A BC02     @@ clean and return
+bx      r1                  @@ 0801918C 4708     @@ /
+
+.org 0x08C4A6               @subend
+cmp     r0, #0x63           @@ 0808C4A6 2863     @@ \
+ble     Below99HP           @@ 0808C4A8 DD03     @@ If below 99 HP
+mov     r0, #0xFF           @@ 0808C4AA 20FF     @@ 
+bl      NumberBufferSetup   @@ 0808C4AC F777FA36 @@ 
+
+.org 0x391C
+NumberBufferSetup:
+
+@@ Writes numbers to plaintext buffer
+
+    
+.set NumberBuffer, 0x02028E44
+
+@@ A plaintext number buffer
+@@ the number 12d is displayed as
+@@ 20 20 20 20 20 20 31 32
+@@ which is 6 spaces and then 12
+
+
+push    {r4, lr}            @@ 0800391C B510     @@ 
+mov     r4, r0              @@ 0800391E 1C04     @@ HP
+bl      NumBufferClear      @@ 08003920 F7FFFFD2 @@ clear plaintext buffer
+
+.org 0x38C8
+NumBufferClear:
+
+@@ Fills the plaintext number buffer with spaces (0x20)
+
+.set SpaceFill, 0x20202020
+
+@@ spaces
+
+ldr     r1, NumbBufferLoc   @@ 080038C8 4903     @@ \
+ldr     r0, SpaceLoc        @@ 080038CA 4804     @@ stores spaces to plaintext
+stmia   r1!,{r0}            @@ 080038CC C101     @@ number buffer
+str     r0,[r1]             @@ 080038CE 6008     @@ /
+ldr     r1, NumbBufferLoc   @@ 080038D0 4901     @@ \
+mov     r0,#0x0             @@ 080038D2 2000     @@ clear byte after buffer
+strb    r0,[r1,#0x8]        @@ 080038D4 7208     @@ /
+bx      lr                 @@ 080038D6 4770     @@ return
+
+NumbBufferLoc:
+.long NumberBuffer
+
+SpaceLoc:
+.long SpaceFill
+
+.org 0x3924                 @subend
+cmp     r4, #0xFF           @@ 08003924 2CFF     @@ if num was over 99
+beq     BufferOver99        @@ 08003926 D003     @@ \
+mov     r0, #0x01           @@ 08003928 2001     @@ If number was
+neg     r0, r0              @@ 0800392A 4240     @@ FFFFFFFF treat like it
+cmp     r4, r0              @@ 0800392C 4284     @@ was over 99
+bne     BufferNumNorm       @@ 0800392E D107     @@ /
+
+BufferOver99:
+
+ldr     r1, RTSNumBuffer    @@ 08003930 4902     @@ \
+mov     r0, #0x3A           @@ 08003932 203A     @@ Store 0x3A 0x3A
+strb    r0, [r1, #0x07]     @@ 08003934 71C8     @@ to buffer
+strb    r0, [r1, #0x06]     @@ 08003936 7188     @@ (::)
+b       NumBufferSetupEnd   @@ 08003938 E005     @@ /
+
+.align 2
+
+RTSNumBuffer:
+.long NumberBuffer
+
+BufferNumNorm:
+
+mov     r0, r4              @@ 08003940 1C20     @@ number
+bl      NumBufferWriter     @@ 08003942 F7FFFFCD @@ 
+
+.org 0x38E0
+NumBufferWriter:
+
+@@ Writes a number to the number
+@@ buffer
+
+@@ My understanding of this is very limited
+
+push    {r4-r6, lr}         @@ 080038E0 B570     @@ 
+mov     r5, r0              @@ 080038E2 1C05     @@ number
+bl      NumBufferClear      @@ 080038E4 F7FFFFF0 @@ 
+
+@@ already used
+
+.org 0x38E8                 @subend
+mov     r6, #0x07           @@ 080038E8 2607     @@ loop count
+b       NumBufferStart      @@ 080038EA E002     @@ 
+
+NumBufferLoop:
+
+sub     r6, #0x01           @@ 080038EC 3E01     @@ 
+cmp     r6, #0x00           @@ 080038EE 2E00     @@ 
+blt     NumBufferEnd        @@ 080038F0 DB0E     @@ 
+
+NumBufferStart:
+
+ldr     r4, WriteNumBuffLoc @@ 080038F2 4C09     @@ \
+add     r4, r6, r4          @@ 080038F4 1934     @@ byte in buffer to write to
+mov     r0, r5              @@ 080038F6 1C28     @@ number
+mov     r1, #0x0A           @@ 080038F8 210A     @@ \
+bl      PlaceChecker        @@ 080038FA F0CEF84B @@ check ones place of current number
+
+.org 0x0D1994
+PlaceChecker:
+
+@@ Checks a number for a digit place.
+@@ For the MMB, it checks the ones place.
+
+mov     r3, #0x01           @@ 080D1994 2301     @@ place counter
+cmp     r1, #0x00           @@ 080D1996 2900     @@ if Digit to check is 0
+beq     PCDigitZero         @@ 080D1998 D05E     @@ /
+bpl     PCSkipNeg           @@ 080D199A D500     @@ \
+neg     r1, r1              @@ 080D199C 4249     @@ if check digit negative
+
+PCSkipNeg:
+
+push    {r4}                @@ 080D199E B410     @@ save buffer position
+push    {r0}                @@ 080D19A0 B401     @@ save number
+cmp     r0, #0x00           @@ 080D19A2 2800     @@ \
+bpl     PCSkipNeg2          @@ 080D19A4 D500     @@ negate number if negative
+neg     r0, r0              @@ 080D19A6 4240     @@ /
+
+PCSkipNeg2:
+
+cmp     r0, r1              @@ 080D19A8 4288     @@ branch if number is less than check digit
+bcc     ChkDigitEnd         @@ 080D19AA D34F     @@ (clear carry flag)
+mov     r4, #0x01           @@ 080D19AC 2401     @@ \
+lsl     r4, r4, #0x1C       @@ 080D19AE 0724     @@ 10000000
+
+PCCheckPlaceBit28:
+
+cmp     r1, r4              @@ 080D19B0 42A1     @@ branch if max digit reached, set carry flag
+bcs     PlaceFoundBit28     @@ 080D19B2 D204     @@ /
+cmp     r1, r0              @@ 080D19B4 4281     @@ \
+bcs     PlaceFoundBit28     @@ 080D19B6 D202     @@ branch if number >=, carry flag set
+lsl     r1, r1, #0x04       @@ 080D19B8 0109     @@ \
+lsl     r3, r3, #0x04       @@ 080D19BA 011B     @@ next hex digit place
+b       PCCheckPlaceBit28   @@ 080D19BC E7F8     @@ loop 
+
+PlaceFoundBit28:
+
+lsl     r4, r4, #0x03       @@ 080D19BE 00E4     @@ 80000000
+
+PCCheckPlaceBit31:
+
+cmp     r1, r4              @@ 080D19C0 42A1     @@ \
+bcs     PlaceFoundBit31     @@ 080D19C2 D204     @@ same as above
+cmp     r1, r0              @@ 080D19C4 4281     @@ 
+bcs     PlaceFoundBit31     @@ 080D19C6 D202     @@ 
+lsl     r1, r1, #0x01       @@ 080D19C8 0049     @@ 
+lsl     r3, r3, #0x01       @@ 080D19CA 005B     @@ 
+b       PCCheckPlaceBit31   @@ 080D19CC E7F8     @@ /
+
+PlaceFoundBit31:
+
+mov     r2, #0x00           @@ 080D19CE 2200     @@ \
+cmp     r0, r1              @@ 080D19D0 4288     @@ If num is 
+bcc     NotRemaining        @@ 080D19D2 D300     @@ larger then new digit check
+sub     r0, r0, r1          @@ 080D19D4 1A40     @@ get difference
+
+NotRemaining:
+
+lsr     r4, r1, #0x01       @@ 080D19D6 084C     @@ half check digit
+cmp     r0, r4              @@ 080D19D8 42A0     @@ \
+bcc     BelowHalf           @@ 080D19DA D305     @@ branch if num is lower than half
+sub     r0, r0, r4          @@ 080D19DC 1B00     @@ get difference
+mov     r12, r3             @@ 080D19DE 469C     @@ move place to r12
+mov     r4, #0x01           @@ 080D19E0 2401     @@ \
+ror     r3, r4              @@ 080D19E2 41E3     @@ place stuff?
+orr     r2, r3              @@ 080D19E4 431A     @@ 
+mov     r3, r12             @@ 080D19E6 4663     @@ /
+
+BelowHalf:
+
+lsr     r4, r1, #0x02       @@ 080D19E8 088C     @@ 1/4 check digit
+cmp     r0, r4              @@ 080D19EA 42A0     @@ \
+bcc     BelowFourth         @@ 080D19EC D305     @@ same thing, compare to 1/4
+sub     r0, r0, r4          @@ 080D19EE 1B00     @@ 
+mov     r12, r3             @@ 080D19F0 469C     @@ 
+mov     r4, #0x02           @@ 080D19F2 2402     @@ 
+ror     r3, r4              @@ 080D19F4 41E3     @@ 
+orr     r2, r3              @@ 080D19F6 431A     @@ 
+mov     r3, r12             @@ 080D19F8 4663     @@ /
+
+BelowFourth:
+
+lsr     r4, r1, #0x03       @@ 080D19FA 08CC     @@ 1/8
+cmp     r0, r4              @@ 080D19FC 42A0     @@ 
+bcc     BelowEigth          @@ 080D19FE D305     @@ \
+sub     r0, r0, r4          @@ 080D1A00 1B00     @@ again
+mov     r12, r3             @@ 080D1A02 469C     @@ 
+mov     r4, #0x03           @@ 080D1A04 2403     @@ 
+ror     r3, r4              @@ 080D1A06 41E3     @@ 
+orr     r2, r3              @@ 080D1A08 431A     @@ 
+mov     r3, r12             @@ 080D1A0A 4663     @@ /
+
+BelowEigth:
+
+mov     r12, r3             @@ 080D1A0C 469C     @@ move place value
+cmp     r0, #0x00           @@ 080D1A0E 2800     @@ \
+beq     NoRemainingNum      @@ 080D1A10 D003     @@ if num remaining is 0
+lsr     r3, r3, #0x04       @@ 080D1A12 091B     @@ shift down a place
+beq     NoRemainingNum      @@ 080D1A14 D001     @@ 
+lsr     r1, r1, #0x04       @@ 080D1A16 0909     @@ shift check digit down a place
+b       PlaceFoundBit31     @@ 080D1A18 E7D9     @@ keep looping until no remaining
+
+NoRemainingNum:
+
+mov     r4, #0x0E           @@ 080D1A1A 240E     @@ \
+lsl     r4, r4, #0x1C       @@ 080D1A1C 0724     @@ get last 3 bits
+and     r2, r4              @@ 080D1A1E 4022     @@ /
+beq     ChkDigitEnd         @@ 080D1A20 D014     @@ unknown
+mov     r3, r12             @@ 080D1A22 4663     @@ move place digit
+mov     r4, #0x03           @@ 080D1A24 2403     @@ \
+ror     r3, r4              @@ 080D1A26 41E3     @@ rotate by 3
+tst     r2, r3              @@ 080D1A28 421A     @@ and 
+beq     RotatedBits         @@ 080D1A2A D001     @@ 
+lsr     r4, r1, #0x03       @@ 080D1A2C 08CC     @@ 
+add     r0, r0, r4          @@ 080D1A2E 1900     @@ 
+
+RotatedBits:
+
+mov     r3, r12             @@ 080D1A30 4663     @@ \
+mov     r4, #0x02           @@ 080D1A32 2402     @@ I don't understand 
+ror     r3, r4              @@ 080D1A34 41E3     @@ these shenanigans
+tst     r2, r3              @@ 080D1A36 421A     @@ 
+beq     RotatedBits2        @@ 080D1A38 D001     @@ /
+lsr     r4, r1, #0x02       @@ 080D1A3A 088C     @@ 
+add     r0, r0, r4          @@ 080D1A3C 1900     @@ 
+
+RotatedBits2:
+
+mov     r3, r12             @@ 080D1A3E 4663     @@ 
+mov     r4, #0x01           @@ 080D1A40 2401     @@ 
+ror     r3, r4              @@ 080D1A42 41E3     @@ 
+tst     r2, r3              @@ 080D1A44 421A     @@ 
+beq     ChkDigitEnd         @@ 080D1A46 D001     @@ 
+lsr     r4, r1, #0x01       @@ 080D1A48 084C     @@ 
+add     r0, r0, r4          @@ 080D1A4A 1900     @@ 
+
+ChkDigitEnd:
+
+pop     {r4}                @@ 080D1A4C BC10     @@ get original number
+cmp     r4, #0x00           @@ 080D1A4E 2C00     @@ check if 0
+bpl     ChkDigEndPos        @@ 080D1A50 D500     @@ 
+neg     r0, r0              @@ 080D1A52 4240     @@ 
+
+ChkDigEndPos:
+
+pop     {r4}                @@ 080D1A54 BC10     @@ get original number
+mov     pc, lr              @@ 080D1A56 46F7     @@
+
+PCDigitZero:
+
+push    {lr}                @@ 080D1A58 B500     @@ 
+bl      ChkDigHop           @@ 080D1A5A F7FFFF99 @@ 
+
+.org 0x0D1990
+ChkDigHop:
+
+mov     pc, lr              @@ 080D1990 46F7     @@
+
+.org 0x0D1A5E               @subend
+mov     r0, #0x00           @@ 080D1A5E 2000     @@ 
+pop     {pc}                @@ 080D1A60 BD00     @@ 
+
+.org 0x38FE                 @subend
+add     r0, #0x30           @@ 080038FE 3030     @@ add 30 to digit to get ascii of digit
+strb    r0, [r4]            @@ 08003900 7020     @@ store to buffer
+mov     r0, r5              @@ 08003902 1C28     @@ \
+mov     r1, #0x0A           @@ 08003904 210A     @@ Check tens place of
+bl      PlaceChecker2       @@ 08003906 F0CDFFF9 @@ current number
+
+.org 0x0D18FC
+PlaceChecker2:
+
+@@ This one does the same thing as the other
+@@ but it gets the tens digit
+
+cmp     r1, #0x0            @@ 080D18FC 2900     @@ \
+beq     PlaceChecker2Zero   @@ 080D18FE D041     @@ if no check digit
+push    {r4}                @@ 080D1900 B410     @@ buffer position
+mov     r4, r0              @@ 080D1902 1C04     @@ combine digit
+eor     r4, r1              @@ 080D1904 404C     @@ and number?
+mov     r12, r4             @@ 080D1906 46A4     @@ save eor'd value
+mov     r3, #0x01           @@ 080D1908 2301     @@ 
+mov     r2, #0x00           @@ 080D190A 2200     @@ 
+cmp     r1, #0x00           @@ 080D190C 2900     @@ 
+bpl     PC2DigitPos         @@ 080D190E D500     @@ 
+neg     r1, r1              @@ 080D1910 4249     @@ 
+
+PC2DigitPos:
+
+cmp     r0, #0x00           @@ 080D1912 2800     @@ 
+bpl     #0x80D1918          @@ 080D1914 D500     @@ 
+neg     r0, r0              @@ 080D1916 4240     @@ 
+
+PC2NumPos:
+
+cmp     r0, r1              @@ 080D1918 4288     @@ 
+bcc     PC2NumBigger        @@ 080D191A D32C     @@ 
+mov     r4, #0x01           @@ 080D191C 2401     @@ 
+lsl     r4, r4, #0x1C       @@ 080D191E 0724     @@ 10000000
+
+PC2Bit28Loop:
+
+cmp     r1, r4              @@ 080D1920 42A1     @@ 
+bcs     PC2Bit28Pass        @@ 080D1922 D204     @@ 
+cmp     r1, r0              @@ 080D1924 4281     @@ 
+bcs     PC2Bit28Pass        @@ 080D1926 D202     @@ 
+lsl     r1, r1, #0x04       @@ 080D1928 0109     @@ 
+lsl     r3, r3, #0x04       @@ 080D192A 011B     @@ 
+b       PC2Bit28Loop        @@ 080D192C E7F8     @@ 
+
+PC2Bit28Pass:
+
+lsl     r4, r4, #0x03       @@ 080D192E 00E4     @@ 80000000
+
+PC2Bit31Loop:
+
+cmp     r1, r4              @@ 080D1930 42A1     @@ 
+bcs     PC2Bit31Pass        @@ 080D1932 D204     @@ 
+cmp     r1, r0              @@ 080D1934 4281     @@ 
+bcs     PC2Bit31Pass        @@ 080D1936 D202     @@ 
+lsl     r1, r1, #0x01       @@ 080D1938 0049     @@ 
+lsl     r3, r3, #0x01       @@ 080D193A 005B     @@ 
+b       PC2Bit31Loop        @@ 080D193C E7F8     @@ 
+
+PC2Bit31Pass:
+
+cmp     r0, r1              @@ 080D193E 4288     @@ 
+bcc     PC2Remaining        @@ 080D1940 D301     @@ 
+sub     r0, r0, r1          @@ 080D1942 1A40     @@ 
+orr     r2, r3              @@ 080D1944 431A     @@ 
+
+PC2Remaining:
+
+lsr     r4, r1, #0x01       @@ 080D1946 084C     @@ 
+cmp     r0, r4              @@ 080D1948 42A0     @@ 
+bcc     PC2Half             @@ 080D194A D302     @@ 
+sub     r0, r0, r4          @@ 080D194C 1B00     @@ 
+lsr     r4, r3, #0x01       @@ 080D194E 085C     @@ 
+orr     r2, r4              @@ 080D1950 4322     @@ 
+
+PC2Half:
+
+lsr     r4, r1, #0x02       @@ 080D1952 088C     @@ 
+cmp     r0, r4              @@ 080D1954 42A0     @@ 
+bcc     PC2Fourth           @@ 080D1956 D302     @@ 
+sub     r0, r0, r4          @@ 080D1958 1B00     @@ 
+lsr     r4, r3, #0x02       @@ 080D195A 089C     @@ 
+orr     r2, r4              @@ 080D195C 4322     @@ 
+
+PC2Fourth:
+
+lsr     r4, r1, #0x03       @@ 080D195E 08CC     @@ 
+cmp     r0, r4              @@ 080D1960 42A0     @@ 
+bcc     PC2Eigth            @@ 080D1962 D302     @@ 
+sub     r0, r0, r4          @@ 080D1964 1B00     @@ 
+lsr     r4, r3, #0x03       @@ 080D1966 08DC     @@ 
+orr     r2, r4              @@ 080D1968 4322     @@ 
+
+PC2Eigth:
+
+cmp     r0, #0x00           @@ 080D196A 2800     @@ 
+beq     PC2NumBigger        @@ 080D196C D003     @@ 
+lsr     r3, r3, #0x04       @@ 080D196E 091B     @@ 
+beq     PC2NumBigger        @@ 080D1970 D001     @@ 
+lsr     r1, r1, #0x04       @@ 080D1972 0909     @@ 
+b       PC2Bit31Pass        @@ 080D1974 E7E3     @@ 
+
+PC2NumBigger:
+
+mov     r0, r2              @@ 080D1976 1C10     @@ 
+mov     r4, r12             @@ 080D1978 4664     @@ 
+cmp     r4, #0x00           @@ 080D197A 2C00     @@ 
+bpl     PC2End              @@ 080D197C D500     @@ 
+neg     r0, r0              @@ 080D197E 4240     @@ 
+
+PC2End:
+
+pop     {r4}                @@ 080D1980 BC10     @@ 
+mov     pc, lr              @@ 080D1982 46F7     @@ 
+
+PlaceChecker2Zero:
+
+push    {lr}                @@ 080D1984 B500     @@ 
+bl      #0x80D1990          @@ 080D1986 F000F803 @@ 
+
+@@ already used
+
+.org 0x0D198A               @subend
+mov     r0, #0x00           @@ 080D198A 2000     @@ 
+pop     {pc}                @@ 080D198X BD00     @@ 
+
+.org 0x390A                 @subend
+mov     r5, r0              @@ 0800390A 1C05     @@ move old tens place
+cmp     r5, #0x00           @@ 0800390C 2D00     @@ into ones place and
+bne     NumBufferLoop       @@ 0800390E D1ED     @@ checks if it needs to loop
+
+NumBufferEnd:
+
+pop     {r4-r6}             @@ 08003910 BC70     @@ 
+pop     {r0}                @@ 08003912 BC01     @@ 
+bx      r0                  @@ 08003914 4700     @@ 
+
+.align 2
+
+WriteNumBuffLoc:
+.long NumberBuffer
+
+.org 0x3946                 @subend
+
+NumBufferSetupEnd:
+
+pop     {r4}                @@ 08003946 BC10     @@ 
+pop     {r0}                @@ 08003948 BC01     @@ 
+bx      r0                  @@ 0800394A 4700     @@ 
+
+.org                        @subend
+b       NumberBufferSet     @@ 0808C4B0 E004     @@ 
+
+Below99HP:
+
+mov     r0, r5              @@ 0808C4B2 1C28     @@ char
+bl      HPNumberGetter      @@ 0808C4B4 F78CFE4C @@ 
+
+@@ Already used
+
+.org 0x08C4B8               @subend
+bl      NumberBufferSetup   @@ 0808C4B8 F777FA30 @@ 
+
+@@ Already used
+
+.org 0x08C4BC               @subend
+
+NumberBufferSet:
+
+ldr     r1, BufferLocAftrSet@@ 0808C4BC 4909     @@ 
+ldrb    r0, [r1, #0x06]     @@ 0808C4BE 7988     @@ \
+sub     r0, #0x30           @@ 0808C4C0 3830     @@ store first digit
+mov     r2, r4              @@ 0808C4C2 1C22     @@ to 0x6C struct
+add     r2, #0x51           @@ 0808C4C4 3251     @@ 
+strb    r0, [r2]            @@ 0808C4C6 7010     @@ /
+ldrb    r0, [r1, #0x07]     @@ 0808C4C8 79C8     @@ \
+sub     r0, #0x30           @@ 0808C4CA 3830     @@ store second digit
+mov     r1, r4              @@ 0808C4CC 1C21     @@ to 0x6C struct
+add     r1, #0x52           @@ 0808C4CE 3152     @@ 
+strb    r0, [r1]            @@ 0808C4D0 7008     @@ /
+mov     r0, r5              @@ 0808C4D2 1C28     @@ char data
+bl      AnotherHPBonus      @@ 0808C4D4 F78CFE5C @@ get max hp
+
+.org 0x019190
+AnotherHPBonus:
+
+@@ Another getter for bonus hp
+@@ added to max
+
+push    {r4, lr}            @@ 08019190 B510     @@ 
+mov     r4, r0              @@ 08019192 1C04     @@ char
+bl      FindEquippable      @@ 08019194 F7FDFCC8 @@
+
+@@ Already used
+
+.org 0x019198               @subend
+lsl     r0, r0, #0x10       @@ 08019198 0400     @@ 
+lsr     r0, r0, #0x10       @@ 0801919A 0C00     @@ item equipped
+bl      StatBonusGetter     @@ 0801919C F7FDF928 @@ 
+
+@@ Already used
+
+.org 0x0292A0               @subend
+mov     r1, r0              @@ 080191A0 1C01     @@ 
+mov     r0, #0x12           @@ 080191A2 2012     @@ 
+ldsb    r0, [r4, r0]        @@ 080191A4 5620     @@ 
+add     r0, r0, r1          @@ 080191A6 1840     @@ add hp bonus to hp
+pop     {r4}                @@ 080191A8 BC10     @@ 
+pop     {r1}                @@ 080191AA BC02     @@ 
+bx      r1                  @@ 080191AC 4708     @@ 
+
+.org 0x08C4D8               @subend
+cmp     r0, #0x63           @@ 0808C4D8 2863     @@ \
+ble     MaxBelow99HP        @@ 0808C4DA DD05     @@ same as above
+mov     r0, #0xFF           @@ 0808C4DC 20FF     @@ 
+bl      NumberBufferSetup   @@ 0808C4DE F777FA1D @@ 
+
+@@ Already used
+
+.org 0x08C4E2               @subend
+b       NumberBufferSetMax  @@ 0808C4E2 E006     @@ 
+
+BufferLocAftrSet:
+.long NumberBuffer
+
+MaxBelow99HP:
+
+mov     r0, r5              @@ 0808C4E8 1C28     @@ char
+bl      AnotherHPBonus      @@ 0808C4EA F78CFE51 @@ 
+
+@@ Already used
+
+.org 0x08C4EE               @subend
+bl      NumberBufferSetup   @@ 0808C4EE F777FA15 @@ 
+
+@@ Already used
+
+.org 0x08C4F2               @subend
+
+NumberBufferSetMax:
+
+ldr     r1, BuffLAftrSetMax @@ 0808C4F2 4934     @@ \
+ldrb    r0, [r1, #0x06]     @@ 0808C4F4 7988     @@ stores max
+sub     r0, #0x30           @@ 0808C4F6 3830     @@ hp to 0x6C
+mov     r2, r4              @@ 0808C4F8 1C22     @@ struct the same
+add     r2, #0x53           @@ 0808C4FA 3253     @@ way as before.
+strb    r0, [r2]            @@ 0808C4FC 7010     @@ 
+ldrb    r0, [r1, #0x07]     @@ 0808C4FE 79C8     @@ 
+sub     r0, #0x30           @@ 0808C500 3830     @@ 
+mov     r1, r4              @@ 0808C502 1C21     @@ 
+add     r1, #0x54           @@ 0808C504 3154     @@ 
+strb    r0, [r1]            @@ 0808C506 7008     @@ /
+ldr     r1, [r4, #0x40]     @@ 0808C508 6C21     @@ bg buffer
+mov     r0, r4              @@ 0808C50A 1C20     @@ 0x6C struct
+mov     r2, r5              @@ 0808C50C 1C2A     @@ char
+bl      HPLabelDraw         @@ 0808C50E F7FFFF27 @@ 
+
+.org 0x08C360
+HPLabelDraw:
+
+@@ Draws the HP /
+@@ tiles to bg buffer
+
+.set HTile, 0x2120
+
+.set PTile, 0x2121
+
+ldr     r2, HTileLoc        @@ 0808C360 4A07     @@ 
+mov     r0, r2              @@ 0808C362 1C10     @@ 
+strh    r0, [r1]            @@ 0808C364 8008     @@ 
+ldr     r3, PTileLoc        @@ 0808C366 4B07     @@ 
+mov     r0, r3              @@ 0808C368 1C18     @@ 
+strh    r0, [r1, #0x02]     @@ 0808C36A 8048     @@ 
+mov     r2, #0x0            @@ 0808C36C 2200     @@ 
+strh    r2, [r1, #0x04]     @@ 0808C36E 808A     @@ 
+strh    r2, [r1, #0x06]     @@ 0808C370 80CA     @@ 
+add     r3, #0x1D           @@ 0808C372 331D     @@ 
+mov     r0, r3              @@ 0808C374 1C18     @@ 
+strh    r0, [r1, #0x08]     @@ 0808C376 8108     @@ 
+strh    r2, [r1, #0x0A]     @@ 0808C378 814A     @@ 
+strh    r2, [r1, #0x0C]     @@ 0808C37A 818A     @@ 
+bx      lr                  @@ 0808C37C 4770     @@ 
+
+.align 2
+
+HTileLoc:
+.long HTile
+
+PTileLoc:
+.long PTile
+
+.org 0x08C512               @subend
+mov     r0, #0x01           @@ 0808C512 2001     @@ 
+bl      UpdateFlag          @@ 0808C514 F775FD4A @@ 
+
+@@ Already used
+
+.org 0x08C518               @subend
+
+DrawNormalHPNum:
+
+mov     r0, r4              @@ 0808C518 1C20     @@ \
+add     r0, #0x55           @@ 0808C51A 3055     @@ branch
+ldrb    r0, [r0]            @@ 0808C51C 7800     @@ if box not 
+lsl     r0, r0, #0x18       @@ 0808C51E 0600     @@ visible yet
+asr     r0, r0, #0x18       @@ 0808C520 1600     @@ 
+cmp     r0, #0x00           @@ 0808C522 2800     @@ 
+bne     DrawHPNumEnd        @@ 0808C524 D149     @@ /
+asr     r0, r6, #0x10       @@ 0808C526 1430     @@ \
+mov     r1, #0x40           @@ 0808C528 2140     @@ if status text counter
+and     r0, r1              @@ 0808C52A 4008     @@ is less than 0x40
+cmp     r0, #0x00           @@ 0808C52C 2800     @@ draw hp number oam
+beq     WriteHPOAM          @@ 0808C52E D006     @@ /
+mov     r0, r5              @@ 0808C530 1C28     @@ \
+add     r0, #0x30           @@ 0808C532 3030     @@ make sure the
+ldrb    r1, [r0]            @@ 0808C534 7801     @@ unit has a status
+mov     r0, #0x0F           @@ 0808C536 200F     @@ issue
+and     r0, r1              @@ 0808C538 4008     @@ 
+cmp     r0, #0x00           @@ 0808C53A 2800     @@ 
+bne     DrawHPNumEnd        @@ 0808C53C D13D     @@ /
+
+WriteHPOAM:
+
+mov     r0, r4              @@ 0808C53E 1C20     @@ 0x6C struct
+add     r0, #0x46           @@ 0808C540 3046     @@ \
+mov     r1, #0x00           @@ 0808C542 2100     @@ get hp num x coord
+ldsh    r0, [r0, r1]        @@ 0808C544 5E40     @@ /
+lsl     r5, r0, #0x03       @@ 0808C546 00C5     @@ mult by 8 px per tile
+mov     r7, r5              @@ 0808C548 1C2F     @@ \
+add     r7, #0x11           @@ 0808C54A 3711     @@ max health num 11px away
+mov     r0, r4              @@ 0808C54C 1C20     @@ struct
+add     r0, #0x48           @@ 0808C54E 3048     @@ \
+mov     r1, #0x0            @@ 0808C550 2100     @@ get hp num y coord
+ldsh    r0, [r0, r1]        @@ 0808C552 5E40     @@ /
+lsl     r6, r0, #0x03       @@ 0808C554 00C6     @@ mult by 8
+mov     r1, r4              @@ 0808C556 1C21     @@ \
+add     r1, #0x51           @@ 0808C558 3151     @@ don't draw current hp
+ldrb    r0, [r1]            @@ 0808C55A 7808     @@ if first digit is 0xF0
+cmp     r0, #0xF0           @@ 0808C55C 28F0     @@ (less than 10 hp)
+beq     SkipCurrentHP       @@ 0808C55E D007     @@ /
+ldr     r2, OAMTableLoc     @@ 0808C560 4A19     @@ get OAM table
+mov     r3, r0              @@ 0808C562 1C03     @@ \
+ldr     r0, HPOAMTileLoc    @@ 0808C564 4819     @@ get hp tile to draw
+add     r3, r3, r0          @@ 0808C566 181B     @@ for first digit of current hp
+mov     r0, r7              @@ 0808C568 1C38     @@ x coord
+mov     r1, r6              @@ 0808C56A 1C31     @@ y coord
+bl      OAMCaller           @@ 0808C56C F776FB24 @@ 
+
+.org 0x2BB8
+OAMCaller:
+
+@@ Calls OAM Writing routine
+
+.set OAMWriterOffset, 0x03003130
+
+push    {r4, lr}            @@ 08002BB8 B510     @@
+ldr     r4, OAMRoutGetter   @@ 08002BBA 4C03     @@ WRAM offset, pointer to WRAM routine
+ldr     r4, [r4]            @@ 08002BBC 6824     @@ Gets WRAM OAM writer
+bl      BXLadderR4          @@ 08002BBE F0CEFE87 @@ bx r4
+
+@@ Already used
+
+.arm
+.org 0x030039BC
+OAMWriter:  
+
+@@ Routine writes OAM data
+@@ to a buffer
+
+@@ inputs:
+@@ r0: x coord
+@@ r1: y coord
+@@ r2: OAM table
+@@ r3: palette/tile/priority
+
+.set OAMBufferEnd, 0x03003744
+
+OAMBufferEndLoc:
+.long OAMBufferEnd
+
+push    {r4-r7}                 @@ 030039BC E92D00F0 @@ 
+ldr     r7, OAMBufferEnd        @@ 030039C0 E51F7010 @@ Gets last entry in WRAM OAM buffer
+ldr     r5, [r7]                @@ 030039C4 E5975000 @@ 
+ldrh    r4, [r2]                @@ 030039C8 E1D240B0 @@ Start of OAM Table
+tst     r4, r4                  @@ 030039CC E1140004 @@ Gets number of entries to write
+beq     OAMEnd                  @@ 030039D0 0A00001E @@ Check if negative/zero
+bmi     OAMEnd                  @@ 030039D4 4A00001D @@ If negative/zero go to end
+add     r2, r2, #0x02           @@ 030039D8 E2822002 @@ Next entry in OAM Table
+add     r6, r5, r4, lsl #0x03   @@ 030039DC E0856184 @@ Shift # to draw by size of entry,
+str     r6, [r7]                @@ 030039E0 E5876000 @@ Add to last entry in buffer, save for next time
+mov     r7, #0x10000            @@ 030039E4 E3A07801 @@ 
+sub     r7, r7, #0x01           @@ 030039E8 E2477001 @@ Grab an FFFF
+and     r0, r0, r7              @@ 030039EC E0000007 @@ Stripping
+and     r1, r1, r7              @@ 030039F0 E0011007 @@ 
+orr     r0, r0, r1, lsl #0x10   @@ 030039F4 E1800801 @@ r0 is now YYYYXXXX
+
+OAMLoop:  
+
+ldrh    r1, [r2]                @@ 030039F8 E1D210B0 @@ Gets attr0 from OAM Table
+orr     r6, r1, r0, lsr #0x10   @@ 030039FC E1816820 @@ These combine the y coord
+and     r6, r6, #0xFF00         @@ 03003A00 E2066CFF @@ With the table's attr0
+add     r7, r1, r0, lsr #0x10   @@ 03003A04 E0817820 @@  
+and     r7, r7, #0xFF           @@ 03003A08 E20770FF @@ 
+orr     r6, r6, r7              @@ 03003A0C E1866007 @@ 
+strh    r6, [r5]                @@ 03003A10 E1C560B0 @@ Writes new attr0 to WRAM OAM Buffer
+ldrh    r1, [r2, #0x2]          @@ 03003A14 E1D210B2 @@ Gets attr1 from OAM Table
+orr     r6, r1, r0              @@ 03003A18 E1816000 @@ Combines attr1 with coords
+and     r6, r6, #0xFE00         @@ 03003A1C E2066CFE @@ Strips upper portion of new attr1
+add     r7, r1, r0              @@ 03003A20 E0817000 @@ 
+mov     r7, r7, lsl #0x17       @@ 03003A24 E1A07B87 @@ 
+mov     r7, r7, lsr #0x17       @@ 03003A28 E1A07BA7 @@ r7 is now XX
+orr     r6, r6, r7              @@ 03003A2C E1866007 @@ r6 is now new attr1
+strh    r6, [r5, #0x2]          @@ 03003A30 E1C560B2 @@ Write new attr1 to WRAM OAM Buffer
+ldrh    r1, [r2, #0x4]          @@ 03003A34 E1D210B4 @@ Gets attr2 from OAM Table
+add     r6, r1, r3              @@ 03003A38 E0816003 @@ Combines attr2 with r3
+strh    r6, [r5, #0x4]          @@ 03003A3C E1C560B4 @@ Writes new attr2 to WRAM OAM Buffer
+add     r2, r2, #0x06           @@ 03003A40 E2822006 @@ Advance a table entry
+add     r5, r5, #0x08           @@ 03003A44 E2855008 @@ Advance a buffer entry
+subs    r4, r4, #0x01           @@ 03003A48 E2544001 @@ Decrement number to write
+bne     OAMLoop                 @@ 03003A4C 1AFFFFE9 @@ If more to write, loop
+
+OAMEnd:
+
+pop     {r4-r7}                 @@ 03003A50 E8BD00F0 @@
+bx      r14                     @@ 03003A54 E12FFF1E @@
+
+.thumb
+.org 0x2BC2                 @subend
+pop     {r4}                @@ 08002BC2 BC10     @@ \
+pop     {r0}                @@ 08002BC4 BC01     @@ clean and return
+bx      r0                  @@ 08002BC6 4700     @@ /
+
+OAMRoutGetter:
+   .long OAMWriterOffset
+
+.org 0x08C570               @subend
+
+SkipCurrentHP:
+
+mov     r0, r5              @@ 0808C570 1C28     @@ \
+add     r0, #0x18           @@ 0808C572 3018     @@ same for second digit of
+ldr     r7, OAMTableLoc     @@ 0808C574 4F14     @@ current hp
+mov     r1, r4              @@ 0808C576 1C21     @@ 
+add     r1, #0x52           @@ 0808C578 3152     @@ 
+ldrb    r3, [r1]            @@ 0808C57A 780B     @@ 
+ldr     r1, HPOAMTileLoc    @@ 0808C57C 4913     @@ 
+mov     r8, r1              @@ 0808C57E 4688     @@ 
+add     r3, r8              @@ 0808C580 4443     @@ 
+mov     r1, r6              @@ 0808C582 1C31     @@ 
+mov     r2, r7              @@ 0808C584 1C3A     @@ 
+bl      OAMCaller           @@ 0808C586 F776FB17 @@ /
+
+@@ Already used before
+
+.org 0x08C58A               @subend
+mov     r1, r4              @@ 0808C58A 1C21     @@ \
+add     r1, #0x53           @@ 0808C58C 3153     @@ same check as above
+ldrb    r0, [r1]            @@ 0808C58E 7808     @@ 
+cmp     r0, #0xF0           @@ 0808C590 28F0     @@ 
+beq     SkipCurrentHPMax    @@ 0808C592 D008     @@ /
+mov     r0, r5              @@ 0808C594 1C28     @@ \
+add     r0, #0x29           @@ 0808C596 3029     @@ max first digit
+ldrb    r3, [r1]            @@ 0808C598 780B     @@ 
+ldr     r1, HPOAMTileLoc    @@ 0808C59A 490C     @@ 
+add     r3, r3, r1          @@ 0808C59C 185B     @@ 
+mov     r1, r6              @@ 0808C59E 1C31     @@ 
+mov     r2, r7              @@ 0808C5A0 1C3A     @@ 
+bl      OAMCaller           @@ 0808C5A2 F776FB09 @@ /
+
+@@ Already used
+
+.org 0x08C5A6               @subend
+
+SkipCurrentHPMax:
+
+mov     r0, r5              @@ 0808C5A6 1C28     @@ \
+add     r0, #0x30           @@ 0808C5A8 3030     @@ max second digit
+mov     r1, r4              @@ 0808C5AA 1C21     @@ 
+add     r1, #0x54           @@ 0808C5AC 3154     @@ 
+ldrb    r3, [r1]            @@ 0808C5AE 780B     @@ 
+add     r3, r8              @@ 0808C5B0 4443     @@ 
+mov     r1, r6              @@ 0808C5B2 1C31     @@ 
+mov     r2, r7              @@ 0808C5B4 1C3A     @@ 
+bl      OAMCaller           @@ 0808C5B6 F776FAFF @@ /
+
+@@ Already used
+
+.org 0x08C5B6               @subend
+
+DrawHPNumEnd:
+
+pop     {r3}                @@ 0808C5BA BC08     @@ \
+mov     r8, r3              @@ 0808C5BC 4698     @@ clean and return
+pop     {r4-r7}             @@ 0808C5BE BCF0     @@ 
+pop     {r0}                @@ 0808C5C0 BC01     @@ 
+bx      r0                  @@ 0808C5C2 4700     @@ /
+
+BuffLAftrSetMax:
+.long NumberBuffer
+
+OAMTableLoc:
+.long OAMTable
+
+HPOAMTileLoc:
+.short HPOAMTile
+
+.org 0x08C6CC               @subend
+ldr     r0, MMBBarBufferLoc @@ 0808C6CC 480D     @@ \
+mov     r2, #0x8A           @@ 0808C6CE 228A     @@ HP bar drawing function
+lsl     r2, r2, #0x05       @@ 0808C6D0 0152     @@ edit ERAM pointer to move bar
+mov     r1, r8              @@ 0808C6D2 4641     @@ r2 = 0x1140
+bl      DrawHPBar           @@ 0808C6D4 F7FFFADE @@ /
+
+.org 0x08BC94
+DrawHPBar:
+
+push    {r4-r6, lr}         @@ 0808BC94 B570     @@ 
+mov     r6, r8              @@ 0808BC96 4646     @@ 
+push    {r6}                @@ 0808BC98 B440     @@ 
+mov     r5, r0              @@ 0808BC9A 1C05     @@ bar buffer
+mov     r6, r1              @@ 0808BC9C 1C0E     @@ char
+mov     r8, r2              @@ 0808BC9E 4690     @@ tile base
+mov     r0, r6              @@ 0808BCA0 1C30     @@ char
+bl      HPNumberGetter      @@ 0808BCA2 F78DFA55 @@ get current hp
+
+@@ Already used
+
+.org 0x08BCA6               @subend
+mov     r1, #0x32           @@ 0808BCA6 2132     @@ \
+mov     r4, r0              @@ 0808BCA8 1C04     @@ multiply hp by 0x32
+mul     r4, r1              @@ 0808BCAA 434C     @@ /
+lsl     r4, r4, #0x10       @@ 0808BCAC 0424     @@ \
+asr     r4, r4, #0x10       @@ 0808BCAE 1424     @@ flood fill negative
+mov     r0, r6              @@ 0808BCB0 1C30     @@ char
+bl      AnotherHPBonus      @@ 0808BCB2 F78DFA6D @@ get max hp
+
+@@ Already used
+
+.org 0x08BCB6               @subend
+mov     r1, r0              @@ 0808BCB6 1C01     @@ \
+mov     r0, r4              @@ 0808BCB8 1C20     @@ (min*0x32)/max
+bl      Div                 @@ 0808BCBA F045FCDF @@ /
+
+.org 0x0D167C
+Div:
+
+swi     #0x06               @@ 080D167C DF06     @@ Div
+bx      lr                  @@ 080D167E 4770     @@
+
+.org 0x08BCBE               @subend
+mov     r4, r0              @@ 0808BCBE 1C04     @@ \
+lsl     r4, r4, #0x10       @@ 0808BCC0 0424     @@ flood fill ff
+asr     r4, r4, #0x10       @@ 0808BCC2 1424     @@ /
+mov     r0, r5              @@ 0808BCC4 1C28     @@ buffer
+mov     r1, r4              @@ 0808BCC6 1C21     @@ divided val
+mov     r2, r8              @@ 0808BCC8 4642     @@ tile base
+bl      HPBarLeftEnd        @@ 0808BCCA F7FFFFA1 @@ 
+
+.org 0x08BC10
+HPBarLeftEnd:
+
+push    {lr}                @@ 0808BC10 B500     @@ 
+mov     r3, r0              @@ 0808BC12 1C03     @@ buffer
+lsl     r1, r1, #0x10       @@ 0808BC14 0409     @@ \
+lsr     r0, r1, #0x10       @@ 0808BC16 0C08     @@ if above 5, tile is 0x1145
+asr     r1, r1, #0x10       @@ 0808BC18 1409     @@ if below, num+0x1140
+cmp     r1, #0x05           @@ 0808BC1A 2905     @@ 
+ble     LeftEndNotFull      @@ 0808BC1C DD00     @@ /
+mov     r0, #0x05           @@ 0808BC1E 2005     @@ 
+
+LeftEndNotFull:
+
+lsl     r0, r0, #0x10       @@ 0808BC20 0400     @@ \
+asr     r0, r0, #0x10       @@ 0808BC22 1400     @@ add to base tile
+add     r0, r0, r2          @@ 0808BC24 1880     @@ and store to buffer
+strh    r0, [r3]            @@ 0808BC26 8018     @@ /
+pop     {r0}                @@ 0808BC28 BC01     @@ 
+bx      r0                  @@ 0808BC2A 4700     @@ 
+
+.org 0x08BCCE               @subend
+add     r0, r5, #0x02       @@ 0808BCCE 1CA8     @@ next tile in buffer
+sub     r1, r4, #0x05       @@ 0808BCD0 1F61     @@ sub 5 from divided val
+lsl     r1, r1, #0x10       @@ 0808BCD2 0409     @@ 
+asr     r1, r1, #0x10       @@ 0808BCD4 1409     @@ 
+mov     r2, r8              @@ 0808BCD6 4642     @@ base tile
+bl      HPBarMiddle         @@ 0808BCD8 F7FFFFA8 @@ 
+
+.org 0x08BC2C
+HPBarMiddle:
+
+push    {r4, r5, lr}        @@ 0808BC2C B530     @@ 
+mov     r3, r0              @@ 0808BC2E 1C03     @@ buffer
+lsl     r1, r1, #0x10       @@ 0808BC30 0409     @@ 
+asr     r4, r1, #0x13       @@ 0808BC32 14CC     @@ divided by 8
+mov     r0, #0xE0           @@ 0808BC34 20E0     @@ \
+lsl     r0, r0, #0x0B       @@ 0808BC36 02C0     @@ 0x070000
+and     r0, r1              @@ 0808BC38 4008     @@ and for lowest 3 bits
+asr     r0, r0, #0x10       @@ 0808BC3A 1400     @@ shift bits down to byte
+mov     r1, #0x00           @@ 0808BC3C 2100     @@ loop counter
+mov     r5, r2              @@ 0808BC3E 1C15     @@ base tile
+add     r5, #0x0E           @@ 0808BC40 350E     @@ full middle tile
+add     r2, #0x06           @@ 0808BC42 3206     @@ empty middle tile
+add     r0, r2, r0          @@ 0808BC44 1810     @@ add low bits to get fullness
+
+MidBarLoop:
+
+cmp     r1, r4              @@ 0808BC46 42A1     @@ compare loop counter to 1/8 number
+bge     MidBarEigthGtr      @@ 0808BC48 DA01     @@ if more than 1/8, branch
+strh    r5, [r3]            @@ 0808BC4A 801D     @@ store full tile to buffer
+b       MidBarEigthLess     @@ 0808BC4C E004     @@ 
+
+MidBarEigthGtr:
+
+cmp     r1, r4              @@ 0808BC4E 42A1     @@ 
+bne     #0x808BC56          @@ 0808BC50 D101     @@ 
+strh    r0, [r3]            @@ 0808BC52 8018     @@ 
+b       MidBarEigthLess     @@ 0808BC54 E000     @@ 
+strh    r2, [r3]            @@ 0808BC56 801A     @@ 
+
+MidBarEigthLess:
+
+add     r3, #0x02           @@ 0808BC58 3302     @@ next tile in buffer
+add     r1, #0x01           @@ 0808BC5A 3101     @@ add to counter
+cmp     r1, #0x04           @@ 0808BC5C 2904     @@ loop 5 times
+ble     MidBarLoop          @@ 0808BC5E DDF2     @@ /
+pop     {r4, r5}            @@ 0808BC60 BC30     @@ \
+pop     {r0}                @@ 0808BC62 BC01     @@ clean and return
+bx      r0                  @@ 0808BC64 4700     @@ /
+
+.org 0x08BCDC               @subend
+add     r5, #0x0C           @@ 0808BCDC 350C     @@ +6 tiles
+sub     r4, #0x2D           @@ 0808BCDE 3C2D     @@ sub 0x2D from divided val
+lsl     r4, r4, #0x10       @@ 0808BCE0 0424     @@ 
+asr     r4, r4, #0x10       @@ 0808BCE2 1424     @@ 
+mov     r0, r5              @@ 0808BCE4 1C28     @@ buffer
+mov     r1, r4              @@ 0808BCE6 1C21     @@ new val
+mov     r2, r8              @@ 0808BCE8 4642     @@ tile base
+bl      HPBarRightEnd       @@ 0808BCEA F7FFFFBD @@ 
+
+.org 0x08BC68
+HPBarRightEnd:
+
+push    {r4, lr}            @@ 0808BC68 B510     @@ 
+mov     r4, r0              @@ 0808BC6A 1C04     @@ buffer
+lsl     r1, r1, #0x10       @@ 0808BC6C 0409     @@ 
+lsr     r3, r1, #0x10       @@ 0808BC6E 0C0B     @@ 
+asr     r1, r1, #0x10       @@ 0808BC70 1409     @@ 
+cmp     r1, #0x04           @@ 0808BC72 2904     @@ if val is under 4
+ble     HPRightNotFull      @@ 0808BC74 DD00     @@ 
+mov     r3, #0x05           @@ 0808BC76 2305     @@ 
+
+HPRightNotFull:
+
+lsl     r0, r3, #0x10       @@ 0808BC78 0418     @@ 
+cmp     r0, #0x00           @@ 0808BC7A 2800     @@ 
+bge     HPRightNotEmpty     @@ 0808BC7C DA00     @@ 
+mov     r3, #0x00           @@ 0808BC7E 2300     @@
+
+HPRightNotEmpty:
+
+mov     r1, r2              @@ 0808BC80 1C11     @@ 
+add     r1, #0x0F           @@ 0808BC82 310F     @@ \
+lsl     r0, r3, #0x10       @@ 0808BC84 0418     @@ get tile
+asr     r0, r0, #0x10       @@ 0808BC86 1400     @@ 
+add     r0, r0, r1          @@ 0808BC88 1840     @@ /
+strh    r0, [r4]            @@ 0808BC8A 8020     @@ store to buffer
+pop     {r4}                @@ 0808BC8C BC10     @@ \
+pop     {r0}                @@ 0808BC8E BC01     @@ clean and return
+bx      r0                  @@ 0808BC90 4700     @@ /
+
+.org 0x08BCEE               @subend
+pop     {r3}                @@ 0808BCEE BC08     @@ \
+mov     r8, r3              @@ 0808BCF0 4698     @@ clean and return
+pop     {r4-r6}             @@ 0808BCF2 BC70     @@ 
+pop     {r0}                @@ 0808BCF4 BC01     @@ 
+bx      r0                  @@ 0808BCF6 4700     @@ /
+
+.org 0x08C6D8               @subend
+ldr     r0, MMBTilemapBLoc  @@ 0808C6D8 480B     @@ \
+ldr     r1, MMBTilemapLoc   @@ 0808C6DA 490C     @@ Minimug box tilemap writer
+mov     r2, #0xC0           @@ 0808C6DC 22C0     @@ 0x3000
+lsl     r2, r2, #0x06       @@ 0808C6DE 0192     @@ base tile
+bl      TMWriteSetup        @@ 0808C6E0 F04AFEDE @@ /
+
+.org 0x0D74A0
+TMWriteSetup:
+
+bx      pc                  @@ 080D74A0 4778     @@ 
+nop                         @@ 080D74A2 46C0     @@
+
+.arm
+b       TilemapWriter       @@ 080D74A4 EAFCA3E4 @@
+
+.org 0x043C                 @substart
+TilemapWriter:
+
+@@ This is an ARM routine
+@@ that draws a tilemap.
+@@ For some reason, this isn't run from RAM
+
+@@ inputs:
+@@ r0: destination
+@@ r1: tilemap
+@@ r2: base tile
+
+stmfd   r13!, {r4-r7}           @@ 0800043C E92D00F0 @@ push {r4-r7}
+ldrb    r3, [r1]                @@ 08000440 E5D13000 @@ get # tiles per row
+ldrb    r4, [r1, #0x01]         @@ 08000444 E5D14001 @@ get # rows
+add     r1, r1, #0x02           @@ 08000448 E2811002 @@ move past setup data
+mov     r7, r4, lsl #0x06       @@ 0800044C E1A07304 @@ multiply rows by screen row size
+add     r0, r0, r7              @@ 08000450 E0800007 @@ add to destination
+mov     r6, r4                  @@ 08000454 E1A06004 @@ \
+
+TilemapNextRow:
+
+mov     r5, r3                  @@ 08000458 E1A05003 @@ move loop info down
+
+TilemapRowLoop:
+
+ldrh    r7, [r1]                @@ 0800045C E1D170B0 @@ get tile
+add     r7, r7, r2              @@ 08000460 E0877002 @@ add to base tile
+strh    r7, [r0]                @@ 08000464 E1C070B0 @@ store to destination
+add     r0, r0, #0x02           @@ 08000468 E2800002 @@ next tile
+add     r1, r1, #0x02           @@ 0800046C E2811002 @@ /
+subs    r5, r5, #0x01           @@ 08000470 E2555001 @@ decrement tiles left in row
+bpl     TilemapRowLoop          @@ 08000474 5AFFFFF8 @@ loop
+sub     r0, r0, r3, lsl #0x01   @@ 08000478 E0400083 @@ move back a row in destination
+sub     r0, r0, #0x42           @@ 0800047C E2400042 @@ and a screen row
+subs    r6, r6, #0x1            @@ 08000480 E2566001 @@ decrement rows
+bpl     TilemapNextRow          @@ 08000484 5AFFFFF3 @@ loop
+ldmfd   r13!, {r4-r7}           @@ 08000488 E8BD00F0 @@ pop {r4-r7}
+bx      r14                     @@ 0800048C E12FFF1E @@ return
+
+.thumb                      @subend
+.org 0x08C6E4               @subend
+mov     r1, r8              @@ 0808C6E4 4641     @@ \
+mov     r0, #0x0B           @@ 0808C6E6 200B     @@ Gets box palette based on allegiance
+ldsb    r0, [r1, r0]        @@ 0808C6E8 5608     @@ 
+mov     r1, #0xC0           @@ 0808C6EA 21C0     @@ 
+and     r0, r1              @@ 0808C6EC 4008     @@ 
+mov     r1, #0x03           @@ 0808C6EE 2103     @@ 
+bl      MMBPalSelect        @@ 0808C6F0 F7FFFDEC @@ /
+
+.org 0x08C2CC
+MMBPalSelect:
+
+@@ Routine selects a palette and 
+@@ writes it based on the unit's allegiance
+@@ after ANDing the unit's number
+@@ with 0xF0 you'll get
+@@ 0x00, 0x40, 0x80
+@@ which are ally, npc, and enemy, respectively
+
+.set MMBAllyPal, 0x08A1738C
+
+.set MMBEnemyPal, 0x08A173AC
+
+.set MMBNPCPal, 0x08A173CC
+
+
+push    {r4, r5, lr}        @@ 0808C2CC B530     @@ 
+mov     r5, r1              @@ 0808C2CE 1C0D     @@ 
+mov     r4, #0x00           @@ 0808C2D0 2400     @@ 
+cmp     r0, #0x40           @@ 0808C2D2 2840     @@ 
+beq     MMBPalNPC           @@ 0808C2D4 D010     @@ 
+cmp     r0, #0x40           @@ 0808C2D6 2840     @@ 
+bgt     MMBPalEnChk         @@ 0808C2D8 DC02     @@ 
+cmp     r0, #0x00           @@ 0808C2DA 2800     @@ 
+beq     MMBPalAlly          @@ 0808C2DC D003     @@ 
+b       MMBPalNone          @@ 0808C2DE E00F     @@ 
+
+MMBPalEnChk:
+
+cmp     r0, #0x80           @@ 0808C2E0 2880     @@ 
+beq     MMBPalEnemy         @@ 0808C2E2 D005     @@ 
+b       MMBPalNone          @@ 0808C2E4 E00C     @@ 
+
+MMBPalAlly:
+
+ldr     r4, MMBAOffs        @@ 0808C2E6 4C01     @@ 
+b       MMBPalWrite         @@ 0808C2E8 E00C     @@ 
+
+.align 2
+
+MMBAOffs:
+.long MMBAllyPal
+
+MMBPalEnemy:
+
+ldr     r4, MMBEOffs        @@ 0808C2F0 4C00     @@ 
+b       MMBPalWrite         @@ 0808C2F2 E007     @@ 
+
+MMBEOffs:
+.long MMBEnemyPal
+
+MMBPalNPC:
+
+ldr     r4, MMBNOffs        @@ 0808C2F8 4C00     @@ 
+b       MMBPalWrite         @@ 0808C2FA E003     @@ 
+
+MMBNOffs:
+.long MMBNPCPal
+
+MMBPalNone:
+
+bl      MMBPalBX            @@ 0808C300 F78DFC42 @@ this is literaly bx lr
+
+.org 0x019B88
+MMBPalBX:
+
+bx      lr                  @@ 08019B88 4770     @@
+
+.org 0x08C304               @subend
+
+MMBPalWrite:
+
+lsl     r1, r5, #0x05       @@ 0808C304 0169     @@ 
+mov     r0, r4              @@ 0808C306 1C20     @@ palette
+mov     r2, #0x20           @@ 0808C308 2220     @@ 
+bl      PaletteWriter       @@ 0808C30A F774FD55 @@ 
+
+@@ Already used
+
+.org 0x08C30E               @subend
+pop     {r4, r5}            @@ 0808C30E BC30     @@ \
+pop     {r0}                @@ 0808C310 BC01     @@ clean and end
+bx      r0                  @@ 0808C312 4700     @@ /
+
+.org 0x08C6F4               @subend
+add     sp, #0x08           @@ 0808C6F4 B002     @@ \
+pop     {r3-r5}             @@ 0808C6F6 BC38     @@ Wrap up
+mov     r8, r3              @@ 0808C6F8 4698     @@ 
+mov     r9, r4              @@ 0808C6FA 46A1     @@ 
+mov     r10, r5             @@ 0808C6FC 46AA     @@ 
+pop     {r4-r7}             @@ 0808C6FE BCF0     @@ 
+pop     {r0}                @@ 0808C700 BC01     @@ 
+bx      r0                  @@ 0808C702 4700     @@ /
+
+MMBBarBufferLoc:
+.long MMBBarRAMBuffer
+
+MMBTilemapBLoc:
+.long MMBTilemapRAMBuffer
+
+MMBTilemapLoc:
+.long MMBTilemap
+
+.org 0x08CD56               @subend
+mov     r0, r4              @@ 0808CD56 1C20        @@ \
+bl      MMBPointerClear     @@ 0808CD58 F776F89C    @@ Clears pointer to this routine in 0x6C struct
+
+.org 0x2E94
+MMBPointerClear:
+
+mov     r1, #0x00           @@ 08002E94 2100        @@
+str     r1, [r0, #0x0C]     @@ 08002E96 60C1        @@
+bx      lr                  @@ 08002E98 4770        @@
+
+.org 0x08CD5C               @subend
+
+MMBSetupEnd:
+
+pop     {r4-r6}             @@ 0808CD5C BC70        @@ \
+pop     {r0}                @@ 0808CD5E BC01        @@ Cleanup
+bx      r0                  @@ 0808CD60 4700        @@ /
+
+.align 2
+
+RAMData:
+.long MiscRAMData
+
+BaseRowPtr:
+.long BaseRowPointer
+
+BoxCtrlTable:
+.long BoxControlTable
+
+MMBStruct:
+.long MMBStructType
+
+@subend

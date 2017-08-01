@@ -1,0 +1,70 @@
+
+#ifndef FreeSpace
+	#define FreeSpace 0xB2A610
+	ORG FreeSpace
+#endif
+
+#ifndef ItemImage
+	#define ItemImage 0x85926F4
+#endif
+
+#ifndef ItemPalette
+	#define ItemPalette 0x85996F4
+#endif
+
+#ifndef ItemTable
+	#define ItemTable 0x8809B10
+#endif
+
+
+//Module options
+
+//You can comment out modules that you
+//aren't using in order to save space.
+
+//Number Modules
+
+#define NumberBase
+
+#define NumberDrawing
+
+#define LargeNumberDrawing
+
+//Character Modules
+
+#define CharacterStats
+
+#define MinimugDrawing
+
+#define HPStatusDrawing
+
+#define HPNoStatusDrawing
+
+#define ExtendedLabels
+
+#define CharacterNames
+
+#define InventoryPreview
+
+//These are the core of the mod, and shouldn't be 
+//edited without knowing what you're doing.
+
+#include "Setup\StaticSetup.txt"
+
+#include "Setup\DynamicSetup.txt"
+
+#include "Modules\ModuleSetup.txt"
+
+//This is the file for the tilemap of the MMB
+
+#include "Setup\TilemapSetup.event"
+
+
+//Edit the contents of these to build yourself a box.
+
+#include StaticCalculations.event
+
+#include DynamicCalculations.event
+
+ALIGN 4
+

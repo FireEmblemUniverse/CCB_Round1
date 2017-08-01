@@ -1,0 +1,26 @@
+
+ALIGN 4
+
+DynamicCalculations:
+//important setup stuff
+//do not remove
+BYTE $00 $B5 $C0 $46
+
+//add your calculations here
+
+HPWithStatus(5,3)
+ShowInventory(0x28,0x1C)
+// Prepstats
+// AttackGetter(0x27,0x09)
+// DefenseGetter(0x27,0x11)
+// ResistanceGetter(0x27,0x19)
+// HitGetter(0x1D,0x09)
+// AvoidGetter(0x1D,0x11)
+// CritGetter(0x64,0x09)
+// ASGetter(0x81,0x09)
+
+//more important stuff
+BYTE $01 $BC $00 $47
+
+ALIGN 4
+
