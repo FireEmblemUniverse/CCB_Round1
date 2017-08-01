@@ -187,7 +187,7 @@ EnemyStairs2Thieves1Re:
 UNIT
 
 EnemyStairs2Thieves2Re:
-  UNIT 0x80 Thief Ch6_charBoss Level((Ch6_baseLevel), Enemy, True) Ch6_posStairs2Re 10b 0x00 1 REDA_FromBottomStairs1 [IronSword, Runesword] [AttackInRange, Pursue] Normal DefaultAI4
+  UNIT 0x80 Thief Ch6_charBoss Level((Ch6_baseLevel), Enemy, True) Ch6_posStairs2Re 10b 0x00 1 REDA_FromBottomStairs1 [IronSword, Lockpick, Runesword] [AttackInRange, Pursue] Normal DefaultAI4
   UNIT 0x80 Mage  Ch6_charBoss Level((Ch6_baseLevel + 1), Enemy, True) Ch6_posStairs2Re 0b 0x00 1 REDA_FromBottomStairs3 [Elfire, Vulnerary] [AttackInRange, Pursue] Normal DefaultAI4
 UNIT
 
