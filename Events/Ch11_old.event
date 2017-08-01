@@ -20,8 +20,8 @@ EventPointerTable(0xD1, Chapter11This) //Ch 11 Eirika events
 //Steel Sword, Steel Axe, Steel Lance, Steel Bow,
 //Nosferatu, Divine, Elfire, Mend
 
-//But now the chapter drops are:
-//Blitz Lance, Master Seal, Goddess Icon, Pure Water
+//Then Wan changed it to:
+//Blitz Lance, Goddess Icon, Pure Water
 //Steel Sword, Poison Sword, Light Brand, Lancereaver
 //Steel Axe, Poison Axe, Tomahawk, Swordreaver
 //Steel Lance, Toxin Lance, Short Spear, Axereaver
@@ -32,6 +32,22 @@ EventPointerTable(0xD1, Chapter11This) //Ch 11 Eirika events
 //Mend, Restore, Physic
 //
 //And there are now Stealables: 
+//Master Seal, Secret Book, Dracoshield, Elixir, Vulnerary x 2, Antitoxin x 3, Red Gem
+
+
+//Then Circles changed it to:
+//Blitz Lance, Goddess Icon, Pure Water
+//Iron Sword, Light Brand, Lancereaver
+//Iron Lance x 2, Short Spear, Axereaver
+//Iron Axe, Tomahawk, Swordreaver
+//Iron Bow, Longbow
+//Nosferatu, Lightning, Fire x 4
+//Mend, Restore, Physic
+
+//So instead of getting [Poison Set], [Steel Set], Divine, Elfire, Ballista
+//You get [Iron Set], Lightning, Fire, Fire, Fire, Fire
+
+//Stealables: (the same)
 //Master Seal, Secret Book, Dracoshield, Elixir, Vulnerary x 2, Antitoxin x 3, Red Gem
 
 ALIGN 4
@@ -92,10 +108,10 @@ UNIT 0x80 Monk 0x00 Level((C11LvlCnst+5), 2, 1) [13, 1] 0x02 0x00 0x00 0x00 [Shi
 UNIT 0x80 Archer_F 0x00 Level((C11LvlCnst+5), 2, 1) [14, 2] 0x00 0x00 0x00 0x00 [SilverBow, MasterProof] TestAITs
 
 //These are in the top left space immediately out of the chamber
-UNIT 0x80 Pirate 0x00 Level(C11LvlCnst, 2, 1) [3, 1] 0x02 0x00 0x00 0x00 [SteelAxe, IronAxe] TestAITs
-UNIT 0x80 Myrmidon 0x00 Level(C11LvlCnst, 2, 1) [4, 2] 0x02 0x00 0x00 0x00 [SteelSword, IronSword] TestAITs
-UNIT 0x80 Knight 0x00 Level(C11LvlCnst, 2, 1) [2, 4] 0x02 0x00 0x00 0x00 [SteelLance, IronLance] TestAITs
-UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [3, 3] 0x02 0x00 0x00 0x00 [SteelBow, IronBow] TestAITs
+UNIT 0x80 Pirate 0x00 Level(C11LvlCnst, 2, 1) [3, 1] 0x02 0x00 0x00 0x00 [SteelAxe, IronSword] TestAITs
+UNIT 0x80 Myrmidon 0x00 Level(C11LvlCnst, 2, 1) [4, 2] 0x02 0x00 0x00 0x00 [SteelSword, IronAxe] TestAITs
+UNIT 0x80 Knight 0x00 Level(C11LvlCnst, 2, 1) [2, 4] 0x02 0x00 0x00 0x00 [SteelLance, IronBow] TestAITs
+UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [3, 3] 0x02 0x00 0x00 0x00 [SteelBow, IronLance] TestAITs
 
 UNIT
 
@@ -148,7 +164,7 @@ UNIT 0x80 Myrmidon 0x00 Level(C11LvlCnst, 2, 1) [5, 6] 0x00 0x00 0x00 0x00 [Lanc
 UNIT 0x80 Pirate 0x00 Level(C11LvlCnst, 2, 1) [5, 9] 0x00 0x00 0x00 0x00 [Swordreaver] GuardTileAI
 UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [13, 7] 0x00 0x00 0x00 0x00 [IronBlade] GuardTileAI
 UNIT 0x80 Cavalier_F 0x00 Level(C11LvlCnst, 2, 1) [13, 8] 0x00 0x00 0x00 0x00 [Axereaver] GuardTileAI
-UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [7, 8] 0x00 0x00 0x00 0x00 [Longbow] NoAI
+UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [7, 8] 0x00 0x00 0x00 0x00 [IronBow] NoAI
 UNIT 0x80 Shaman 0x00 Level(C11LvlCnst, 2, 1) [11, 8] 0x00 0x00 0x00 0x00 [Flux] NoAI
 UNIT
 
@@ -168,6 +184,11 @@ UNIT 0x80 Mercenary 0x00 Level(C11LvlCnst, 2, 1) [13, 6] 0x02 0x00 0x00 0x00 [Ir
 UNIT 0x80 Cavalier 0x00 Level(C11LvlCnst, 2, 1) [13, 9] 0x00 0x00 0x00 0x00 [Axereaver] NoAI
 UNIT 0x80 Monk 0x00 Level((C11LvlCnst+5), 2, 1) [7, 8] 0x02 0x00 0x00 0x00 [Lightning, PureWater] NoAI
 UNIT 0x80 Archer_F 0x00 Level(C11LvlCnst, 2, 1) [11, 8] 0x00 0x00 0x00 0x00 [IronBow, Vulnerary] NoAI
+UNIT
+
+Stairs:
+UNIT 0x80 Archer 0x00 Level(C11LvlCnst, 2, 1) [7, 8] 0x00 0x00 0x00 0x00 [IronBow] NoAI
+UNIT 0x80 Shaman 0x00 Level(C11LvlCnst, 2, 1) [11, 8] 0x00 0x00 0x00 0x00 [Flux] NoAI
 UNIT
 
 ALIGN 4
@@ -198,6 +219,9 @@ ReinforcementEvent(Easy_Northeast)
 NEReinforceM:
 ReinforcementEvent(Med_Northeast)
 
+StairsReinforce:
+ReinforcementEvent(Stairs)
+
 Text_Event:
 TEXTSTART
 TEXTSHOW Arve_Event
@@ -207,15 +231,16 @@ ENDA
 TurnBasedEvents:
 //TURN
 //TurnEventPlayer(Event_ID, Jump Label, Turn to Trigger, Turns to persist)
+TurnEventPlayer(0x0, MoveAllUnits, 1, 0xFF)
 
 //Soldiers + Fighters turns 2, 3
-TurnEventPlayer(0x0, MoveNENWUnits, 2, 2)
+//TurnEventPlayer(0x0, MoveNENWUnits, 2, 2)
 
 //Soldier + Fighter + Mercenary turn 4
-TurnEventPlayer(0x0, MoveNENWSWUnits, 4, 1)
+//TurnEventPlayer(0x0, MoveNENWSWUnits, 4, 1)
 
 //Mages + Fighters turns 5, 6, 7, 8
-TurnEventPlayer(0x0, MoveSENWUnits, 5, 4)
+//TurnEventPlayer(0x0, MoveSENWUnits, 5, 4)
 
 //Soldiers in the middle on turns 2, 3, and 4
 //TurnEventPlayer(0x0, MoveNEUnit, 2, 3)
@@ -231,21 +256,25 @@ TurnEventPlayer(0x0, SEReinforce, 4, 4)
 //TurnEventPlayer(0x0, MoveNWUnit, 2, 6)
 TurnEventPlayer(0x0, NWReinforce, 1, 6)
 
-//Mercenary behind the left side on Turn 4
+//Mercenary behind the left side on Turn 4, 6
 //TurnEventPlayer(0x0, MoveSWUnit, 4, 0)
 TurnEventPlayer(0x0, SWReinforce, 3, 1)
+TurnEventPlayer(0x0, SWReinforce, 5, 1)
 
 //Dump all kinds on turn 13, 17 in the central area
 TurnEventPlayer(0x0, AllReinforceChamberB, 13, 1)
 TurnEventPlayer(0x0, AllReinforceChamber, 17, 1)
 
 //Dump a ton! On turns 9, 11, 15
-TurnEventPlayer(0x0, MoveAllUnits, 9, 1)
-TurnEventPlayer(0x0, MoveAllUnits, 11, 1)
-TurnEventPlayer(0x0, MoveAllUnits, 15, 1)
-TurnEventPlayer(0x0, AllReinforce, 8, 3)
-TurnEventPlayer(0x0, AllReinforce, 10, 3)
-TurnEventPlayer(0x0, AllReinforce, 14, 3)
+//TurnEventPlayer(0x0, MoveAllUnits, 9, 1)
+//TurnEventPlayer(0x0, MoveAllUnits, 11, 1)
+//TurnEventPlayer(0x0, MoveAllUnits, 15, 1)
+TurnEventPlayer(0x0, AllReinforce, 8, 1)
+TurnEventPlayer(0x0, AllReinforce, 10, 1)
+TurnEventPlayer(0x0, AllReinforce, 14, 1)
+
+//owo
+TurnEventPlayer(0x0, StairsReinforce, 20, 1)
 
 TurnEventPlayer(0x0, ArveSpawn, 1, 0)
 TurnEventPlayer(0x0, Text_Event, 1, 0)
@@ -290,144 +319,44 @@ ALIGN 4
 //#define WarpIn(unit, xcoord, ycoord) "SVAL 2 unit; _WARP 0xFFFF 0xFFFD [xcoord, ycoord]; CALL 0x9EE4F8"
 //polish point; make units warp instead of walk...
 
-MoveNWUnit:
-_SETVAL 0xB 0x00060005 //The unit at 5, 6
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [5, 6] //actually change the AI
-_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
-ENUN
-NoFade
-ENDA
-
-MoveSWUnit:
-_SETVAL 0xB 0x00090005 //The unit at 5, 9
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [5, 9] //actually change the AI
-_MOVE 0x7F 0xFFFE [4,26] //Move it to 4, 26
-ENUN
-NoFade
-ENDA
-
-MoveNEUnit:
-_SETVAL 0xB 0x7000D //The unit at 13, 7
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [13, 7] //actually change the AI
-_MOVE 0x7F 0xFFFE [9, 13] //Move it to 9, 13
-ENUN
-NoFade
-ENDA
-
-MoveSEUnit:
-_SETVAL 0xB 0x8000D //The unit at 13, 8
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [13, 8] //actually change the AI
-_MOVE 0x7F 0xFFFE [12,21] //Move it to 12, 21
-ENUN
-NoFade
-ENDA
-
-MoveSENEUnits:
-_SETVAL 0xB 0x8000D //The unit at 13, 8
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [13, 8] //actually change the AI
-_MOVE 0x7F 0xFFFE [12,21] //Move it to 12, 21
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [12, 21] //actually change the AI
-_SETVAL 0xB 0x7000D //The unit at 13, 7
-_MOVE 0x7F 0xFFFE [9, 13] //Move it to 9, 13
-ENUN
-NoFade
-ENDA
-
-MoveSWNWUnits:
-_SETVAL 0xB 0x90005 //The unit at 5, 9
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [5, 9] //actually change the AI
-_MOVE 0x7F 0xFFFE [4,26] //Move it to 4, 26
-_SETVAL 0xB 0x60005 //The unit at 5, 6
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [5, 6] //actually change the AI
-_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
-ENUN
-NoFade
-ENDA
-
-MoveSESWUnits:
-_SETVAL 0xB 0x90005 //The unit at 5, 9
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [5, 9] //actually change the AI
-_MOVE 0x7F 0xFFFE [4,26] //Move it to 4, 26
-_SETVAL 0xB 0x8000D //The unit at 13, 8
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [13, 8] //actually change the AI
-_MOVE 0x7F 0xFFFE [12,21] //Move it to 12, 21
-ENUN
-NoFade
-ENDA
-
-MoveSENWUnits:
-_SETVAL 0xB 0x00060005 //The unit at 5, 6
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [5, 6] //actually change the AI
-_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
-_SETVAL 0xB 0x8000D //The unit at 13, 8
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [13, 8] //actually change the AI
-_MOVE 0x7F 0xFFFE [12,21] //Move it to 12, 21
-ENUN
-NoFade
-ENDA
-
-MoveNENWUnits:
-_SETVAL 0xB 0x7000D //The unit at 13, 7
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [13, 7] //actually change the AI
-_MOVE 0x7F 0xFFFE [9, 13] //Move it to 9, 13
-_SETVAL 0xB 0x60005 //The unit at 5, 6
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [5, 6] //actually change the AI
-_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
-ENUN
-NoFade
-ENDA
-
-MoveNENWSWUnits:
-_SETVAL 0xB 0x7000D //The unit at 13, 7
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [13, 7] //actually change the AI
-_MOVE 0x7F 0xFFFE [9, 13] //Move it to 9, 13
-_SETVAL 0xB 0x60005 //The unit at 5, 6
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [5, 6] //actually change the AI
-_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
-_SETVAL 0xB 0x00090005 //The unit at 5, 9
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [5, 9] //actually change the AI
-_MOVE 0x7F 0xFFFE [4,26] //Move it to 4, 26
-ENUN
-NoFade
-ENDA
-
 MoveAllUnits:
-_SETVAL 0xB 0x60005 //The unit at 5, 6
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [5, 6] //actually change the AI
-_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
+_SETVAL 0xB 0x020001 //Tile 1, 2
+CHECK_EXISTS 0xFFFE //Is there a unit?
+IFEQ  0x1 0xC 0x0 //There is not...
+	_SETVAL 0xB 0x60005 //The unit at 5, 6
+	_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+	CHAI [5, 6] //actually change the AI
+	_MOVE 0x7F 0xFFFE [1,2] //Move it to 1, 2
+	//So move the reinforcement from the Travel Tile to its partner.
+LABEL 0x1
 
-_SETVAL 0xB 0x90005 //The unit at 5, 9
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [5, 9] //actually change the AI
-_MOVE 0x7F 0xFFFE [4,26] //Move it to 4, 26
+_SETVAL 0xB 0x1A0004 //Tile 4, 26
+CHECK_EXISTS 0xFFFE //Is there a unit?
+IFEQ  0x3 0xC 0x0 //There is not...
+	_SETVAL 0xB 0x90005 //The unit at 5, 9
+	_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+	CHAI [5, 9] //actually change the AI
+	_MOVE 0x7F 0xFFFE [4,26] //Move it to 4, 26
+LABEL 0x3
 
-_SETVAL 0xB 0x7000D //The unit at 13, 7
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [13, 7] //actually change the AI
-_MOVE 0x7F 0xFFFE [9, 13] //Move it to 9, 13
+_SETVAL 0xB 0x0D0009 //Tile 9, 13
+CHECK_EXISTS 0xFFFE //Is there a unit?
+IFEQ  0x5 0xC 0x0 //There is not...
+	_SETVAL 0xB 0x7000D //The unit at 13, 7
+	_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+	CHAI [13, 7] //actually change the AI
+	_MOVE 0x7F 0xFFFE [9, 13] //Move it to 9, 13
+LABEL 0x5
 
-_SETVAL 0xB 0x8000D //The unit at 13, 8
-_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
-CHAI [13, 8] //actually change the AI
-_MOVE 0x7F 0xFFFE [12,21] //Move it to 12, 21
+_SETVAL 0xB 0x15000C //Tile 12, 21
+CHECK_EXISTS 0xFFFE //Is there a unit?
+IFEQ  0x7 0xC 0x0 //If there is not...
+	_SETVAL 0xB 0x8000D //The unit at 13, 8
+	_SETVAL 0x1 AIChangeToAfterMove //Set AI to pursue without heed
+	CHAI [13, 8] //actually change the AI
+	_MOVE 0x7F 0xFFFE [12,21] //Move it to 12, 21
+LABEL 0x7
+
 ENUN
 NoFade
 ENDA
