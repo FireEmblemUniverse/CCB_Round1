@@ -60,6 +60,9 @@ POP
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 //start of Free space
 
+  //Modular Minimug box
+  // #include "MMMB/Modular MMB Installer.event"
+
   //Portrait Height fix
   #include "Portrait Shift Table.event"
 

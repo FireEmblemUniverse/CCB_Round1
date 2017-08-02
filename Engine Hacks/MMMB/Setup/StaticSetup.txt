@@ -1,0 +1,18 @@
+//This is the default routine to set up the minimug box
+//included in this mod. 
+
+PUSH
+ORG 0x08C5D0	//original setup routine start
+
+BYTE $F0 $B5 $57 $46 $4E $46 $45 $46 $E0 $B4 $82 $B0 $07 $1C $88 $46
+BYTE $00 $20 $82 $46 $01 $90 $10 $49 $89 $46 $01 $22 $12 $06 $60 $32
+BYTE $01 $A8 $45 $F0 $3F $F8 $0D $48 $0D $49 $C0 $22 $92 $01 $4A $F0
+BYTE $4F $FF $41 $46 $0B $20 $08 $56 $C0 $21 $08 $40 $03 $21 $FF $F7
+BYTE $5D $FE $08 $48 $00 $F0 $07 $F8 $02 $B0 $38 $BC $98 $46 $A1 $46
+BYTE $AA $46 $F0 $BC $01 $BC $00 $47
+
+WORD $02003D2C	//buffer for windows
+WORD $0200422C	//tilemap buffer
+POIN MMBTilemap
+POIN StaticCalculations+1
+POP

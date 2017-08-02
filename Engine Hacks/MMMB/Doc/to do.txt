@@ -1,0 +1,42 @@
+To do:
+Find updater when units are next to eachother
+finish doc on scroller
+
+make setup
+	tilemap writer	done
+	palette checker	done
+	resource registers	kinda
+		char data	r8
+	data setup
+	draw bg elements
+ 
+redo scroller/make scroller editor	done/rigged
+
+make oam loop	setup
+	numbers
+	sprites?
+
+make callable routines
+	number drawer
+		x position in r0
+		y position in r1
+		number in r2
+	bar drawer
+		x position in r0
+		y position in r1
+		current number in r2
+		max number in r3
+	bg graphic drawer
+		x position in r0
+		y position in r1
+		tilemap pointer in r2
+		
+make EA macros
+	MMB tilemap macros
+		setup data for tilemap writer
+	routine macros
+		options to set registers
+
+
+0x08BD18: 
+Change to be 0x13-Box Height

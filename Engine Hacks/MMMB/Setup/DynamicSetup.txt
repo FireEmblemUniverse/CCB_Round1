@@ -1,0 +1,11 @@
+//This is the default routine to set up the minimug box
+//included in this mod. 
+
+PUSH
+ORG 0x08C45C
+
+BYTE $F0 $B5 $47 $46 $80 $B4 $88 $46 $07 $1C $04 $48 $00 $F0 $05 $F8
+BYTE $08 $BC $98 $46 $F0 $BC $01 $BC $00 $47 $00 $47
+
+POIN DynamicCalculations+1
+POP

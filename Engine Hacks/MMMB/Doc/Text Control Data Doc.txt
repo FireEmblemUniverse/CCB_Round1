@@ -1,0 +1,79 @@
+02028E70 Pointer to current text parameters
+	Observed to be:
+	02028E58 - Default
+	02002774 - When in the item menu
+	0203E794 - When viewing character list, help functions, armories
+	030000F0 - When dialogue is displayed
+	02000920 - Main Menu
+	02004BC4 - Status screen
+	02013648 - Supply
+	02017648 - In battles
+	0203DB64 - Link Arena
+	02000C60 - Link Arena point assignment
+	0201F148 - Sound Room
+	0203E7E8 - Tutorial Text
+	0201AFC0 - World Map menu
+	
+	One of the 0x6C structs when:
+	Rescuing
+	Supply
+	Trading
+	Talking
+	
+	An offset on the stack when:
+	Link Arena team builder
+	Brown text box thing
+	
+	Text Parameters:
+	
+	0x00-0x03
+	VRAM starting pointer for text
+	
+	0x04-0x07
+	Pointer to text character data
+	
+	0x08-0x0B
+	Routine to draw text
+	
+	or character width routine pointer
+	if it's the default parameter pointer
+	
+	
+	0x14-0x15
+	Palette bank to use (no idea why it's a short)
+	
+	
+Text control data for MMB:
+
+0x6C struct identifier: 0x08A019C0
+
+	Struct Format:
+	
+	
+
+	0x00-0x03
+	Struct Identifier
+	
+	0x2C
+	Offset value for writing to.
+	Determines how far from start of location to start allocating
+	space
+	
+	0x2D
+	Current text length in pixels?
+	
+	0x2E
+	Current width position in pixels
+	
+	0x2F
+	Text palette
+	
+	0x30
+	Text width?
+
+
+
+
+
+
+

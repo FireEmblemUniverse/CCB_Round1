@@ -1,0 +1,204 @@
+//standard module definition and installation file
+
+
+ALIGN 4
+
+#ifdef AllNumberModules
+
+	#define NumberBase
+	#define NumberDrawing
+	#define LargeNumberDrawing
+
+#endif
+
+
+
+#ifdef NumberBase
+
+	CallNum:
+	#incbin "Number_Modules\CallableNumber.dmp"
+
+	ALIGN 4
+
+#endif
+
+
+
+#ifdef NumberDrawing
+
+	DrawNumberRoutine:
+	#incbin "Number_Modules\NumberDrawer.dmp"
+	POIN CallNum+1
+	
+	ALIGN 4
+
+	//these numbers are in pixels
+
+	#define DrawNumber(x,y,num) "BYTE x $20 y $21 num $22 $C0 $46; BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN DrawNumberRoutine+1"
+
+	#define DrawNumber(x,y) "BYTE x $20 y $21; BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN DrawNumberRoutine+1"
+
+	#define DrawNumber "BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN DrawNumberRoutine+1"
+
+#endif
+
+
+
+#ifdef LargeNumberDrawing
+
+	LargeNumberRt:
+	#incbin "Number_Modules\LargeNumberDrawer.dmp"
+	POIN CallNum+1
+
+	ALIGN 4
+
+	//these numbers are in pixels
+
+	#define DrawLargeNumber(x,y,num) "BYTE x $20 y $21 $00 $4A $01 $E0; WORD num; BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN LargeNumberRt+1"
+
+	#define DrawLargeNumber(x,y) "BYTE x $20 y $21; BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN LargeNumberRt+1"
+
+	#define DrawLargeNumber "BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN LargeNumberRt+1"
+
+#endif
+
+
+
+#ifdef MinimugDrawing
+
+	CreateMinimug:
+	#incbin "Character_Modules\MinimugCreator.dmp"
+
+	ALIGN 4
+
+	//these numbers are in tiles
+
+	#define DrawMinimug(x,y) "BYTE x $20 y $21; BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN CreateMinimug+1"
+
+#endif
+
+
+
+#ifdef HPStatusDrawing
+
+	HPStatus:
+	#incbin "Character_Modules\HPStatus.dmp"
+	POIN CallNum+1
+
+	ALIGN 4
+
+	#define HPWithStatus(x,y) "BYTE x $20 y $21; BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN HPStatus+1"
+
+#endif
+
+
+
+#ifdef HPNoStatusDrawing
+
+	HPNoStatus:
+	#incbin "Character_Modules\HPNoStatus.dmp"
+	POIN CallNum+1
+
+	//these numbers are in tiles
+
+	#define HPWithoutStatus(x,y) "BYTE x $20 y $21; BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN HPNoStatus+1"
+
+#endif
+
+#ifdef ExtendedLabels
+
+	LabelGFX:
+	#incext Png2Dmp --lz77 "Character_Modules\HPLabel.png"
+
+	PUSH
+	ORG 0x8D0AC
+	POIN LabelGFX
+	POP
+
+	ALIGN 4
+
+	ELRt:
+	#incbin "Character_Modules\ExtendedLabels.dmp"
+	
+	ALIGN 4
+
+	#define ELabels(x,y) "BYTE x $20 y $21; BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN ELRt+1"
+
+#endif
+
+
+
+#ifdef CharacterNames
+
+	CharNames:
+	#incbin "Character_Modules\CenteredNameRt.dmp"
+
+	ALIGN 4
+
+	#define CenteredName(x,y,color,size) "BYTE x $20 y $21 color $22 size $23; BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN CharNames+1"
+
+#endif
+
+
+
+#ifdef InventoryPreview
+MESSAGE CURRENTOFFSET has inventory drawer
+	IDraw:
+	#incbin "Character_Modules\DrawInventory.dmp"
+	POIN ItemImage
+	POIN ItemPalette
+	POIN ItemTable
+	POIN DImage
+	POIN OAMTable
+	POIN DTable
+
+	ALIGN 4
+
+	DImage:
+	#incext Png2Dmp "Character_Modules\D.png"
+
+	ALIGN 4
+
+	OAMTable:
+	SHORT 0x0001
+	SHORT 0x0100 //0x0000
+	SHORT 0x4000
+	SHORT 0x4000 //0x4400
+	SHORT 0x0000
+
+	ALIGN 4
+
+	DTable:
+	SHORT 0x0001
+	SHORT 0x0000
+	SHORT 0x2000
+	SHORT 0x4000
+	SHORT 0x0000
+
+	ALIGN 4
+
+	#define ShowInventory(x, y) "BYTE x $20 y $21; BYTE $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN IDraw+1"
+
+#endif
+
+
+
+#ifdef CharacterStats
+
+	#define Prepstats "BYTE $40 $46 $02 $4C $00 $F0 $01 $F8 $02 $E0 $20 $47; POIN 0x08016B58+1; BYTE $01 $1C $09 $06 $09 $16 $40 $46 $02 $4C $00 $F0 $01 $F8 $03 $E0 $20 $47 $C0 $46; POIN 0x0802A400+1"
+
+	#define AttackGetter(x,y) "BYTE x $20 y $21 $03 $4A $12 $78 $C0 $46 $03 $4C $00 $F0 $01 $F8 $04 $E0 $20 $47; WORD $0203A546; POIN DrawNumberRoutine+1"
+
+	#define DefenseGetter(x,y) "BYTE x $20 y $21 $03 $4A $12 $78 $C0 $46 $03 $4C $00 $F0 $01 $F8 $04 $E0 $20 $47; WORD $0203A548; POIN DrawNumberRoutine+1"
+
+	#define ResistanceGetter(x,y) "BYTE x $20 y $21 $03 $4A $12 $78 $C0 $46 $03 $4C $00 $F0 $01 $F8 $04 $E0 $20 $47; WORD $0203A504; POIN DrawNumberRoutine+1"
+
+	#define HitGetter(x,y) "BYTE x $20 y $21 $03 $4A $12 $78 $C0 $46 $03 $4C $00 $F0 $01 $F8 $04 $E0 $20 $47; WORD $0203A54C; POIN LargeNumberRt+1"
+
+	#define AvoidGetter(x,y) "BYTE x $20 y $21 $03 $4A $12 $78 $C0 $46 $03 $4C $00 $F0 $01 $F8 $04 $E0 $20 $47; WORD $0203A54E; POIN LargeNumberRt+1"
+
+	#define CritGetter(x,y) "BYTE x $20 y $21 $03 $4A $12 $78 $C0 $46 $03 $4C $00 $F0 $01 $F8 $04 $E0 $20 $47; WORD $0203A552; POIN DrawNumberRoutine+1"
+
+	#define ASGetter(x,y) "BYTE x $20 y $21 $03 $4A $12 $78 $C0 $46 $03 $4C $00 $F0 $01 $F8 $04 $E0 $20 $47; WORD $0203A54A; POIN DrawNumberRoutine+1"
+
+#endif
