@@ -45,3 +45,4 @@ Super Blitz[X]
 #include "chaptertext.txt"
 #include "ch1.txt"
 #include "ch15_text.txt"
+#include "blitz chapter goals.txt"
