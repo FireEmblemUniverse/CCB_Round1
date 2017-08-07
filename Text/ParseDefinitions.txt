@@ -58,7 +58,6 @@
 [CurrentPortrait] = [0xFF][0xFF]
 
 [LoadVoid] = [LoadFace][0x2][0x1]
-[LoadVirginia] = [LoadVoid] //compatibility
 [LoadLeeroy] = [LoadFace][0x14][0x1]
 [LoadTim] = [LoadFace][0x07][0x1]
 [LoadTam] = [LoadFace][0x05][0x1]

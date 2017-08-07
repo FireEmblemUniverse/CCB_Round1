@@ -140,7 +140,8 @@ Haha Funny fire meme[N]
 wank Xdddd dab[X]
 
 ##KagaDesc
-Our lord and savior[X]
+Creator of Fire Emblem, and[N]
+our lord and savior.[X]
 
 ##MarfDesc
 Not amused[X]
@@ -205,31 +206,32 @@ a fa[0xe7]ade for doppelg[0xe4]ngers.[X]
 Edge's Ally[X]
 
 ##Desc_EdgeAlly
-Edge's Ally[X]
+Edge's old friend, with him[N]
+through thick and thin.[X]
 
 ##Name_Lennon
 Lennon[X]
 
 ##Desc_Lennon
-Lennon[X]
+One of the four Beatles.[X]
 
 ##Name_Paul
 Paul[X]
 
 ##Desc_Paul
-Paul[X]
+One of the four Beatles.[X]
 
 ##Name_Ringo
 Ringo[X]
 
 ##Desc_Ringo
-Ringo[X]
+One of the four Beatles.[X]
 
 ##Name_Harrison
 Harrison[X]
 
 ##Desc_Harrison
-Harrison[X]
+One of the four Beatles.[X]
 
 ##Name_Prine
 Prine[X]
@@ -246,6 +248,10 @@ but at what cost?[X]
 
 ##Name_Saara
 Saara[X]
+
+##Desc_Saara
+A general of the Donatenaries.[N]
+She can control the weather.[X]
 
 ##Name_MrBones
 Mr. Bones[X]
@@ -273,3 +279,24 @@ Gwendolyn[X]
 
 ##Desc_Gwendy
 The basics are everything.[X]
+
+## Name_Jenkins
+Jenkins[X]
+
+## Desc_Jenkins
+Bazba Jenkins, the enemy[N]
+of Leeroy. Wants revenge.[X]
+
+## Name_Tatara
+Tatara[X]
+
+## Desc_Tatara
+Shaman of the Doma Faithful.[N]
+He has Doot under his control.[X]
+
+## Name_Feditor
+Feditor[X]
+
+## Desc_Feditor
+Faithful servant of the dark god[N]
+Hextator, causing havok across the land.[X]

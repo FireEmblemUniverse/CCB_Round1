@@ -1,2 +1,2 @@
-Acrobat: All traversable[N]
-terrain costs 1 movement.[X]
+Bazba Jenkins, the enemy[N]
+of Leeroy. Wants revenge.[X]

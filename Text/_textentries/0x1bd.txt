@@ -1,2 +1,2 @@
-Take a swim in Darrman's[N]
-Lake and seize the gate[X]
+Swim in Darrman's[N]
+Lake, seize the gate[X]

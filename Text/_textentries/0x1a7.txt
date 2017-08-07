@@ -1,2 +1,2 @@
-Fight through the storm[N]
-and seize the gate[X]
+Fight through the[N]
+storm and seize[X]

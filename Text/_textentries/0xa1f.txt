@@ -1,2 +1,2 @@
 [Right][LoadCurrent]
-PLACEHOLDER[A][X]
+Hey, look! A thing![A][X]

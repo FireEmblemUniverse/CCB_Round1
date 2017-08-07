@@ -1,2 +1,2 @@
-Mercy: Enemies are left[N]
-with at least 1 HP.[X]
+Adept: Gain a consecutive attack.[N]
+(Speed % activation)[X]

@@ -1,2 +1,2 @@
-Charm: Allies within 2[N]
-tiles deal +2 damage.[X]
+Galeforce: Move again after[N]
+attacking and defeating an enemy.[X]

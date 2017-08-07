@@ -1,3 +1,2 @@
-Nice Personality: This unit has[N]
-a deep and engaging character,[N]
-bursting at the seams with development.[X]
+Seal Skill: Debuff opponent's Skl[N]
+by 6 after combat. (Recover 1/turn)[X]

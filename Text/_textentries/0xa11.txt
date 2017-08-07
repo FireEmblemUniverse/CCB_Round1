@@ -1,3 +1,3 @@
-[MidRight][LoadVirginia]
-It's over, Demon King![N]
-I have the high ground.[A][X]
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5F][0x01]
+You'll want this for later![A][X]

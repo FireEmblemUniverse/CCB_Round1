@@ -1,2 +1,2 @@
-Pursuit: When under attack,[N]
-attack speed +2. [X]
+Gamble: A reckless attack with[N]
+halved hit but doubled crit.[X]

@@ -1,2 +1,2 @@
-Expertise: Reduce bonus damage[N]
-from critical hits by 50%.[X]
+Savage Blow: After attacking, enemies[N]
+within 2 tiles take 20% damage.[X]

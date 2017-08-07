@@ -1,2 +1,2 @@
-Rally Skill: +4 Skill[N]
-to allies within 2 tiles.[X]
+Nihil: Cancels the opponent's[N]
+skills in combat.[X]

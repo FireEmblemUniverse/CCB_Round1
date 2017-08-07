@@ -1,2 +1,2 @@
-Light Weight: When holding three[N]
-or less items, attack speed +3.[X]
+Dragon's Blood: Unit is able[N]
+to activate Dragon Veins.[X]

@@ -1,4 +1,4 @@
-## Things you need:
+﻿## Things you need:
 
 ### To just play:
 Apply CCB_Round1.ups to a clean FE8 (U) rom using NUPS or Multipatch.
@@ -33,7 +33,6 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
 - Rarely, the game will freeze when you try to canto, reset and resume should fix it.
 - Some bosses have weird weapon ranks/personal skills
 - Units without a weapon equipped will display Str instead of Mag, even if they are a staff user/magic unit
-- Chapter objectives in the status screen have not been edited
 - Astra in the arena will keep attacking thin air after the unit is dead
 - Turn count in the credits skips several chapters
 - Lots of text is missing

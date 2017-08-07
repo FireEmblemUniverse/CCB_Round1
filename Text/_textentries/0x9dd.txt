@@ -1,2 +1,2 @@
-Rightful God: +30% to[N]
-Skill activation rate.[X]
+Moonbow: Enemy Def/Res is[N]
+reduced by 25%. Charge: 2[X]

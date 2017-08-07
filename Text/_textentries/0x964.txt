@@ -1,2 +1,2 @@
-Provoke: Enemies are more[N]
-likely to target this unit.[X]
+Savior: Can rescue[N]
+without penalties.[X]

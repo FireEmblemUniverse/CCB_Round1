@@ -1,2 +1,2 @@
-Defeat the commander of[N]
-Maeda's forces[X]
+(Rewrite when plot[N]
+is added in)[X]

@@ -1,2 +1,2 @@
-Malefic Aura: Enemies within 2[N]
-tiles receive +2 magic damage.[X]
+Dance: Refresh an ally unit[N]
+to let them act again.[X]

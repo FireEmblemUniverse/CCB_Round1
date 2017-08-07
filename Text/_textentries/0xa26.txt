@@ -1,1 +1,2 @@
-Lost the Member Card[X]
+[Right][LoadCurrent]
+PLACEHOLDER[A][X]

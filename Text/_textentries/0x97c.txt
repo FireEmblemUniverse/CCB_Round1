@@ -1,2 +1,2 @@
-Armored Blow: +10 Def[N]
-when initiating battle.[X]
+Aegis: Nullify a magic attack.[N]
+(Skill % activation)[X]

@@ -1,2 +1,2 @@
-Elbow Room: +3 damage dealt[N]
-when on open terrain.[X]
+Focus: +10 Critical if there are[N]
+no allies within 3 tiles.[X]

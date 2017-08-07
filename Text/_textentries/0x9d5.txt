@@ -1,2 +1,2 @@
-Armsthrift: Luck % chance to not[N]
-consume weapon durability.[X]
+Patience: When under[N]
+attack, avoid +10. [X]

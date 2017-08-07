@@ -1,2 +1,2 @@
 #was 'sick'
-Freeze[X]
+Sleep[X]

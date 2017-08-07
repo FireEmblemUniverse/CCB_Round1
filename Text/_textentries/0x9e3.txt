@@ -1,3 +1,2 @@
-Despoil: Obtain a Red Gem after[N]
-attacking and defeating an enemy.[N]
-(Luck % activation)[X]
+Rightful King: +10% to[N]
+Skill activation rate.[X]

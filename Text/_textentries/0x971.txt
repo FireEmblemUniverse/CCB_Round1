@@ -1,2 +1,2 @@
-Lancebreaker: +50 Hit/Avo when[N]
-enemy has a lance equipped.[X]
+Bane: Leave the opponent at 1 HP.[N]
+(Skill/2 % activation)[X]

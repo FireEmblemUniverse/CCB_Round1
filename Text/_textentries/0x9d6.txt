@@ -1,2 +1,2 @@
-Moonbow: Enemy Def/Res is[N]
-reduced by 25%. Charge: 2[X]
+Pursuit: When under attack,[N]
+attack speed +2. [X]

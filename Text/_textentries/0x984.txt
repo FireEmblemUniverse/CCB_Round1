@@ -1,2 +1,2 @@
-Lancefaire: +4 damage[N]
-when equipping a lance.[X]
+Vantage: If HP < 50%,[N]
+strike first when attacked.[X]

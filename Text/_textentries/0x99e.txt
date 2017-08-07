@@ -1,2 +1,2 @@
-Paragon: Experience gain[N]
-is doubled.[X]
+Spur Strength: Adjacent allies[N]
+deal +4 physical damage.[X]

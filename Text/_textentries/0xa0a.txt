@@ -1,3 +1,5 @@
-[MidRight][LoadCurrent]
-[MidLeft][LoadFace][0x5F][0x01]
-You'll want this for later![A][X]
+[MidRight][LoadDoot]
+Thanks for saving me![A][NL]
+I owe you a lot, so I guess[NL]
+I'll help you with whatever[A][NL]
+it is you're trying to do.[A][X]

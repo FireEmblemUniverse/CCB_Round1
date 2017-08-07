@@ -1,2 +1,2 @@
-Spur Strength: Adjacent allies[N]
-deal +4 physical damage.[X]
+Demoiselle: Male allies within[N]
+2 tiles receive -2 damage.[X]

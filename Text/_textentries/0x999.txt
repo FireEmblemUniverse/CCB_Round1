@@ -1,2 +1,2 @@
-Spur Speed: Adjacent allies[N]
-gain +4 Attack Speed.[X]
+Malefic Aura: Enemies within 2[N]
+tiles receive +2 magic damage.[X]

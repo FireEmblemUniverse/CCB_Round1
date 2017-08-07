@@ -1,2 +1,2 @@
-[MidLeft][LoadFace][0x2][0x1]
-Oh, who left these lying around?[A][X]
+You can't cross the village[N]
+without bringing the kid.[A][X]
