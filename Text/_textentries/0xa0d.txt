@@ -1,3 +1,2 @@
-[MidRight][LoadCurrent]
-[MidLeft][LoadFace][0x5F][0x01]
-You'll want this for later![A][X]
+Stop gargoyles[N]
+from spawning.[X]

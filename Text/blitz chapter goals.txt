@@ -55,7 +55,7 @@ just wants to play cards[X]
 
 ## Ch13Goal
 Rout the enemy. It's like[N]
-Arcadia all over again...
+Arcadia all over again...[X]
 
 ## Ch14Goal
 Overthrow the new King of[N]

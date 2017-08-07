@@ -1,7 +1,7 @@
 #include "Tools/Tool Helpers.txt"
 
 Void_Mug:
-#incext PortraitFormatter "Virginia_v2.png"
+#incext PortraitFormatter "Void.png"
 setMugEntry(0x2, Void_Mug, 2, 5, 3, 3)
 
 Tim_Mug:

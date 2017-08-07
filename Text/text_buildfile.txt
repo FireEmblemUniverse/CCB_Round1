@@ -8,9 +8,6 @@ Set health bar display[X]
 #was 'sick'
 Freeze[X]
 
-#0x3c9
-Freeze[X]
-
 #include "ChapterNames.txt"
 
 #0x3A LearnedSkillText
@@ -43,6 +40,8 @@ Super Blitz[X]
 #include "skilldesc_text.txt"
 
 #include "chaptertext.txt"
+#include "MCPlotStuff.txt"
 #include "ch1.txt"
 #include "ch15_text.txt"
 #include "blitz chapter goals.txt"
+
