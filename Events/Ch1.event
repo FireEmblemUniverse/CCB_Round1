@@ -146,7 +146,7 @@ ENDA
 RecruitTalk1:
 ENUT 8
 ENUF 9
-Text(CH1Anna1)
+Text(Ch1WithoutMember)
 SMOV 0x3 ChestKey
 GIVEITEMTO 0xFFFF
 NoFade
@@ -156,7 +156,7 @@ RecruitTalk2:
 ENUF 9
 ASMC CheckForCard|1
 IFNE  0x0 0xB 0x0
-	Text(CH1Anna2)
+	Text(RecruitingMyrmAnna)
 	ENUT 9
 	NOTIFY CH1Anna3 0x5C 0x00
 	CUSA Anna
@@ -194,6 +194,7 @@ CheckForKid: //asm
 #incbin "CheckForKid.dmp"
 
 EndingScene:
+Text(Ch1Ending)
 ENUT 0x89 //location shenanigans
 MNCH 0x2
 NoFade

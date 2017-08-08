@@ -1,2 +1,2 @@
-Foreign Princess: Foreign army units[N]
-take -2/+2 damage dealt/taken.[X]
+Life and Death: +10 to[N]
+damage dealt and taken.[X]

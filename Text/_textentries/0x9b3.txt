@@ -1,2 +1,2 @@
-Trample: +5 damage to[N]
-unmounted units.[X]
+Live to Serve: When healing[N]
+an ally, also heals self.[X]

@@ -86,6 +86,7 @@ ENUN
 ENDA
 
 EndingScene:
+Text(PrologueEnding)
 MNC2 0x1 //go to ch1
 NoFade
 ENDA

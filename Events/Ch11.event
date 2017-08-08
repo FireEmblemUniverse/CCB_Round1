@@ -50,6 +50,7 @@ EventPointerTable(0xD1, Chapter11This) //Ch 11 Eirika events
 //Stealables: (the same)
 //Master Seal, Secret Book, Dracoshield, Elixir, Vulnerary x 2, Antitoxin x 3, Red Gem
 
+//Darr's note: Sheesh, four fires? I'd hack out some drops, but I get the idea I'd get a REEEEEEE to the face. So I won't.
 ALIGN 4
 Chapter11This:
 POIN TurnBasedEvents
@@ -311,6 +312,7 @@ TrapData_H:
 END_MAIN
 
 EndingScene:
+Text(Ch11Ending)
 MNC2 12 //go to ch12
 NoFade
 ENDA

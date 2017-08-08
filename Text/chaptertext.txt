@@ -5,14 +5,6 @@ and took over my country![AN]
 To get to him I need[N]
 to go through you![A][X]
 
-##Ch2Village1
-[MidLeft][LoadCurrent]
-This text is a placeholder![A][X]
-
-##Ch2Village2
-[MidLeft][LoadCurrent]
-This text is a placeholder![A][X]
-
 ##Ch3Start
 [MidRight][LoadFace][0x14][0x1]
 [MidLeft][LoadFace][0x2][0x1]
@@ -84,7 +76,7 @@ Whatever, maybe it'll work someday.[AN]
 Ugh, oh no...[A][X]
 
 ##Ch8Start2
-[MidLeft][LoadVirginia]
+[MidLeft][LoadVoid]
 [MidRight][LoadPrine]
 Hey! You guys don't look like[N]
 the soldiers trying to kill me.[AN]
@@ -210,7 +202,7 @@ Forget this! I'm going home.[A][X]
 This text is a placeholder![A][X]
 
 ##Ch16NikitaAppears
-[MidLeft][LoadVirginia]
+[MidLeft][LoadVoid]
 [MidRight][LoadFace][0x45][0x1]
 I'm Nikita. Don't get me mixed[N]
 up with that impostor there.[AN]
@@ -331,7 +323,7 @@ Freeze and debuff[N]
 all enemies.[X]
 
 ##FinalChapterIntro
-[MidLeft][LoadVirginia]
+[MidLeft][LoadVoid]
 [MidRight][LoadFace][0x15][0x1]
 I am Mark.[AN]
 The Demon King killed my family[N]
@@ -346,7 +338,7 @@ Now let's kill this dastard[N]
 and be done with it![A][X]
 
 ##DemonKingDedText
-[MidLeft][LoadVirginia]
+[MidLeft][LoadVoid]
 The Demon King has fallen![AN]
 His reign of terror has[N]
 come to an end at last.[AN]
@@ -356,7 +348,7 @@ This land shall once[N]
 again know peace.[A][X]
 
 ##ItsOverAnakin
-[MidRight][LoadVirginia]
+[MidRight][LoadVoid]
 It's over, Demon King![N]
 I have the high ground.[A][X]
 

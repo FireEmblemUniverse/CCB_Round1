@@ -1,0 +1,2 @@
+[Right][Load][0x01][0x01]
+PLACEHOLDER TEXT[A][X]

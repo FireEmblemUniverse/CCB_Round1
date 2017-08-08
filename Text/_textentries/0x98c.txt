@@ -1,2 +1,2 @@
-Lifetaker: Restore up to 50% HP after[N]
-attacking and defeating an enemy.[X]
+Axefaire: +4 damage[N]
+when equipping an axe.[X]

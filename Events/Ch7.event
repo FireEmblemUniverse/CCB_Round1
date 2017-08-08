@@ -138,10 +138,12 @@ LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 BadDudes
 ENUN
+Text(Ch7Opening)
 GotoPrepScreen
 ENDA
 
 EndingScene:
+Text(Ch7Ending)
 MNCH 8
 ENDA
 

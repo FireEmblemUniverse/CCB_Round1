@@ -11,31 +11,31 @@ Do Bede a favour and[N]
 seize the gate[X]
 
 ## Ch3Goal
-Defeat paladin Jenkins,[N]
+Slay paladin Jenkins,[N]
 Leeroy's old enemy[X]
 
 ## Ch4Goal
-The Donateenary border[N]
+The Donateenary[N]
 fort looms. Seize it[X]
 
 ## Ch5Goal
-Fight through the storm[N]
-and seize the gate[X]
+Fight through the[N]
+storm and seize[X]
 
 ##
 No chapter here.[X]
 
 ## Ch6Goal
-Beware of the boss and[N]
+Beware of Zonta and[N]
 seize the throne[X]
 
 ## Ch7Goal
-Kill the boss harassing[N]
-the Port of Bad[X]
+Kill Murray, stopping[N]
+his donation demands[X]
 
 ## Ch8Goal
-Rout the enemy and stop[N]
-them harassing Prine[X]
+Rout the enemy so[N]
+they leave Prine be[X]
 
 ## Ch9Goal
 Avenge Edge's men by[N]
@@ -46,20 +46,20 @@ Rout all the soldiers[N]
 opposing our army[X]
 
 ## Ch11Goal
-Fight through the Travel[N]
-System and seize throne[X]
+Fight through the[N]
+Travel System, seize[X]
 
 ## Ch12Goal
-Defeat Gheb, even if he[N]
-just wants to play cards[X]
+Defeat Gheb, even if[N]
+he means no harm[X]
 
 ## Ch13Goal
-Rout the enemy. It's like[N]
-Arcadia all over again...
+Rout the enemy. It's[N]
+almost like Arcadia...[X]
 
 ## Ch14Goal
-Overthrow the new King of[N]
-the Basement, by force[X]
+Overthrow the new[N]
+King of the Basement[X]
 
 ## Ch15Goal
 Seize the base of Blue[N]
@@ -74,16 +74,16 @@ Avoid corruption and[N]
 seize the throne[X]
 
 ## Ch18Goal
-Defeat the commander of[N]
-Maeda's forces[X]
+(Rewrite when plot[N]
+is added in)[X]
 
 ## Ch19Goal
-Seize the gate to Maeda's[N]
-lair, with Sigurd's might[X]
+By Zigludo's power,[N]
+seize Maeda's door[X]
 
 ## Ch20Goal
-Kill Maeda, the man who ran[N]
-Fire Emblem into the ground[X]
+Kill Maeda, the one[N]
+who ruined Fire Emblem[X]
 
 ## Ch21Goal
 Slay Tatara of the Doma[N]
@@ -94,8 +94,8 @@ Defeat Celica, Princess of[N]
 Sofia and commander of boats[X]
 
 ## Ch23Goal
-Seize the throne of the[N]
-*spooky scary skeleton*[X]
+Seize the spooky scary[N]
+skeleton's throne[X]
 
 ## Ch24Goal
 Snap Wendy out of her[N]
@@ -103,23 +103,23 @@ good unit delusions[X]
 
 ## Ch25Goal
 Seize the throne and[N]
-stop Bananna's ambitons[X]
+stop Banana's plans[X]
 
 ## Ch26Goal
-Take a swim in Darrman's[N]
-Lake and seize the gate[X]
+Swim in Darrman's[N]
+Lake, seize the gate[X]
 
 ## Ch27Goal
-This convinent lake has[N]
+A convinent lake,[N]
 a convinent gate[X]
 
 ## Ch28Goal
-Navigate the mess and[N]
+Navigate the mess,[N]
 go seize the gate[X]
 
 #0x1B8 Ch29Goal
 Defeat the Beatles in[N]
-combat, then slay Lyon[X]
+combat, then kill Lyon[X]
 
 ## Ch30Goal
 Kill the Demon King, the[N]

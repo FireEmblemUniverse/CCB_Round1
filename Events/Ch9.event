@@ -56,11 +56,13 @@ LOAD1 0x1 Enemies2
 ENUN
 LOAD1 0x1 Enemies3
 ENUN
+Text(Ch9Opening)
 GotoPrepScreen
 NoFade
 ENDA
 
 EndingScene:
+Text(Ch9Ending)
 MNCH 12
 ENDA
 

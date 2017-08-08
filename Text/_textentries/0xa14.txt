@@ -1,1 +1,2 @@
-Anna[X]
+Stop gargoyles[N]
+from spawning.[X]

@@ -1,2 +1,3 @@
-Freeze and debuff[N]
-all enemies.[X]
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5F][0x01]
+You'll want this for later![A][X]

@@ -1,2 +1,2 @@
-Cunning: Can steal items, pick[N]
-locks, and see in darkness.[X]
+Canto+: Can move again after[N]
+attacking and other actions.[X]

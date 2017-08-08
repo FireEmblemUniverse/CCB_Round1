@@ -1,2 +1,2 @@
-Strong Riposte: When under[N]
-attack, damage +3. [X]
+Seal Defense: Debuff opponent's Def[N]
+by 6 after combat. (Recover 1/turn)[X]

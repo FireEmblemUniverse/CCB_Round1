@@ -1,2 +1,2 @@
-Luna: Negates enemy defenses.[N]
-(Skill % activation)[X]
+Provoke: Enemies are more[N]
+likely to target this unit.[X]

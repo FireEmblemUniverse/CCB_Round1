@@ -1,2 +1,2 @@
-Aegis: Nullify a magic attack.[N]
+Astra: 5 attacks at half damage.[N]
 (Skill % activation)[X]
