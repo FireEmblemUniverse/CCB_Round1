@@ -14,8 +14,8 @@ with, let us kill the Demon King.[AN]
 No, Void. There's still[N]
 29 chapters of mooks to go.[AN]
 [Right]
-WHAT?! I want to kill
-the Demon King now.
+WHAT?! I want to kill[N]
+the Demon King now.[A]
 [Left]
 Unfortunately, that is presently[N]
 not possible. When the Demon King[AN]
@@ -229,3 +229,122 @@ God Babby, the Super Blitz...[AN]
 [Left]
 Void, it is your duty to prevent the Demon[N]
 King from reviving the Evil God Hex.[AN][X]
+
+## Ch6Opening
+[Right][LoadVoid]
+[Left][LoadBede]
+[Right]
+What is this place?[A]
+[Left]
+This is the Fort of Bad, a simple stronghold,[N]
+but a place more frightening than Hell[AN]
+itself for the people living[N]
+in the nearby Port of Bad.[AN]
+[Right]
+Why?[A]
+[Left]
+The Donateenaries occupy this fortress.[N]
+I've heard tell they force the people[AN]
+here to make massive donations to Hex.[N]
+The town's nearly starved from this abuse.[A]
+[Right]
+That's... horrid. We must[N]
+retake this fortress at once![A]
+[Left]
+Very well, I will give the order.[A][X]
+
+## Ch6Ending
+[Right][Load][0x01][0x01]
+Having seized the Fort of Bad,[N]
+Void decides to allow her troops[AN]
+to rest in the Port of Bad.[N]
+What dangers await her in the future?[A][X]
+
+## Ch7Opening
+[Right][LoadVoid]
+The port is under attack, we must save it.[A][X]
+
+## Ch7Ending
+[Right][LoadVoid]
+We did it, but we must get moving.[A][X]
+
+## Ch8Ending
+[Right][Load][0x01][0x01]
+PLACEHOLDER TEXT[A][X]
+
+## Ch9Opening
+[Right][Load][0x01][0x01]
+PLACEHOLDER TEXT[A][X]
+
+## Ch9Ending
+[Right][Load][0x01][0x01]
+PLACEHOLDER TEXT[A][X]
+
+## Ch11Ending
+[Left][LoadLeeroy]
+[Right][LoadVoid]
+It doesn't matter what tricks[N]
+they try against me. If you're[AN]
+in my way, you're going to pay![A]
+[Left]
+Still, us having our own Warp[N]
+abilities would make this much easier.[A]
+[Right]
+True.[A][X]
+
+## Ch12Opening
+[OpenLeft][LoadSoldier]
+[OpenRight][LoadGheb]
+So the wittle princess wants[N]
+to challenge me, does she? Maybe[AN]
+I can provide her some[N]
+"entertainment" for a while.[AN]
+[Left]
+Boss, watch your wording.[N]
+This is why the bad jokes exist.[AN]
+[Right]
+What? How does that not come across as me[N]
+wanting to play a game of cards with her?[AN]
+[Left]
+Apparently, it doesn't come across[N]
+that way at all, seeing as they[AN]
+have prepared weapons against us.[AN]
+[Right]
+Damnit.[AN][X]
+
+## GhebDeath
+[FarLeft][LoadGheb]
+I just... wanted...[N]
+to play... Yugioh...[A][X]
+
+## Ch12Ending
+[OpenRight][LoadVoid]
+Sorry Gheb, but you were in my way.[A][X]
+
+## Ch13Opening
+[OpenRight][LoadVoid]
+Oh great, a desert chapter. I hate deserts.[N]
+Let's get out of here quickly.[A][X]
+
+## Ch13Ending
+[OpenRight][LoadVoid]
+Thank God that's over.[A][X]
+
+## Ch14Opening
+[Left][LoadLeeroy]
+[OpenRight][LoadVoid]
+This text is a placeholder![A]
+[Left]
+Why are you saying that, my liege?[A]
+[Right]
+I don't know, but I did.[A]
+[Left]
+Regardless, we are approaching the[N]
+Basement, a rather strange place.[AN]
+I can't say I know much about it...[N]
+Stuff about fookers and rage.[A][X]
+
+## Ch14Ending
+[OpenRight][LoadVoid]
+That text may have been a placeholder,[N]
+but this victory sure wasn't.[AN][X]

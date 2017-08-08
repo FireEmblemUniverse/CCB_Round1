@@ -1,2 +1,2 @@
-An innocent child...[N]
-With some hormonal problems.[X]
+[Right][LoadVoid]
+The port is under attack, we must save it.[A][X]

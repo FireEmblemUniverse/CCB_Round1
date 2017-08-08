@@ -228,11 +228,13 @@ LOAD1 0x1 Baddest
 ENUN
 LOAD1 0x1 TooBad
 ENUN
+Text(Ch12Opening)
 GotoPrepScreen
 NoFade
 ENDA
 
 EndingScene:
+Text(Ch12Ending)
 MNCH 13
 ENDA
 

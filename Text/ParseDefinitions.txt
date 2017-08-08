@@ -57,6 +57,7 @@
 
 [CurrentPortrait] = [0xFF][0xFF]
 
+[Load] = [LoadFace]
 [LoadVoid] = [LoadFace][0x2][0x1]
 [LoadLeeroy] = [LoadFace][0x14][0x1]
 [LoadTim] = [LoadFace][0x07][0x1]
@@ -97,4 +98,6 @@
 [LoadRogueAnna] = [LoadFace][0x56][0x1]
 [LoadMyrmAnna] = [LoadFace][0x64][0x1]
 [LoadBreguet] = [LoadFace][0x31][0x1]
+[LoadGheb] = [LoadFace][0x3D][0x1]
+[LoadSoldier] = [LoadFace][0x6B][0x01]
 [LoadCurrent] = [LoadFace][CurrentPortrait]

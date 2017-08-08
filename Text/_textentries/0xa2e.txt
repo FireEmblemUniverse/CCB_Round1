@@ -1,2 +1,2 @@
-You can't cross the village[N]
-without bringing the kid.[A][X]
+[Right][Load][0x01][0x01]
+PLACEHOLDER TEXT[A][X]
