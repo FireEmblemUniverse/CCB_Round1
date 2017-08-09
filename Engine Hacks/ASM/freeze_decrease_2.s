@@ -4,7 +4,7 @@
 cmp r6, #0x1 @if it's the first player unit
 bne NotFirst
   push {r0-r3}
-  bl ReduceEnemyFreeze
+  bl ReduceEnemyFreeze @@changed to reduce everyone's freeze
   pop {r0-r3}
 NotFirst:
 ldr r4, =0x8018881 @return position, r4 is immediately clobbered so it's fine
@@ -17,7 +17,7 @@ bx r4
 
 ReduceEnemyFreeze:
 push {r4-r6, lr} @loop through all enemies and reduce their freeze status only
-mov r4, #0x81 @first enemy
+    mov r4, #0x1 @first unit
 ldr r5, =0x859a5d0 @pointers to ram
 EnemyLoop:
 lsl r0, r4, #2
