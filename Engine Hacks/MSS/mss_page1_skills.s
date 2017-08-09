@@ -92,26 +92,26 @@ b		NextColumn
 ShowGrowths:
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#0x4]		@str growth getter
-draw_growth_at 17, 3
+draw_growth_at 18, 3
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#0x8]		@skl growth getter
-draw_growth_at 17, 5
+draw_growth_at 18, 5
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#0xC]		@spd growth getter
-draw_growth_at 17, 7
+draw_growth_at 18, 7
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#0x10]		@luk growth getter
-draw_growth_at 17, 9
+draw_growth_at 18, 9
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#0x14]		@def growth getter
-draw_growth_at 17, 11
+draw_growth_at 18, 11
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#0x18]		@res growth getter
-draw_growth_at 17, 13
+draw_growth_at 18, 13
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0]			@hp growth getter (not displaying because there's no room atm)
-draw_growth_at 17, 15
-draw_textID_at 13, 15, textID=0x4E9, growth_func=1 @hp name
+draw_growth_at 18, 15
+draw_textID_at 13, 15, textID=0x4E9, growth_func=1, width=2 @hp name
 b		NextColumn
 .ltorg
 
