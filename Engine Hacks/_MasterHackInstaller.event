@@ -63,6 +63,9 @@ POP
   //Modular Minimug box
   // #include "MMMB/Modular MMB Installer.event"
 
+  //Weapon Rank display (doesn't work with anims on)
+  // #include "FE8-Weapon Rank on Levelup/FE8-Weapon Rank on Levelup EA.event"
+
   //Portrait Height fix
   #include "Portrait Shift Table.event"
 
