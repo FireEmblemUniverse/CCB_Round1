@@ -14,7 +14,7 @@ setMugEntry(0x5, Tam_Mug, 2,5,2,3)
 
 Bede_Mug:
 #incext PortraitFormatter "Bede.png"
-setMugEntry(0x9, Bede_Mug, 3,5,2,3)
+setMugEntry(0x9, Bede_Mug, 3,5,3,3)
 
 NotArch_Mug:
 #incext PortraitFormatter "NotArch.png"
