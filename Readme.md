@@ -288,8 +288,8 @@ Ch30        End of All                Circles
 
 ***-writing-***
 
-MCProductions
-Darrman
+MCProductions (text)
+Darrman (formatting)
 
 ***-music-***
 
