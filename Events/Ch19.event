@@ -69,17 +69,23 @@ LOAD1 0x1 Baddiesdown1
 ENUN
 LOAD1 0x1 Baddiesup1
 ENUN
+LOAD1 0x1 NPCKaga
+Text(Ch19Opening)
+PROM Kaga Dancer 0x00 //The script demands it
 GotoPrepScreen
-NoFade
 ENDA
  
 EndingScene:
+Text(Ch19Ending)
 MNCH 0x14
 ENDA
  
 // Events
 LoadZigludo:
 ReinforcementEvent(ZIGLUDO)
+Text(RecruitingSigurd)
+ENDA
+
 // Manual Movement
  
 // Scripted Fights
@@ -128,5 +134,8 @@ UNIT 0xa7 0x07 0x69 Level(3, Enemy, 1) [18,7] 0x00 0x00 0x0 0x00 [0x16] AttackIn
 UNIT 0xa7 0x07 0x69 Level(3, Enemy, 1) [19,5] 0x00 0x00 0x0 0x00 [0x16] AttackInRangeAI
 UNIT
  
- 
+NPCKaga:
+UNIT Kaga EphraimLord 0x00 Level(1, NPC, 0) [5,5] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT
+
 // Shop Data

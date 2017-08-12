@@ -171,6 +171,7 @@ LOAD1 0x1 EnemyUnits3
 ENUN
 LOAD2 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
+Text(Ch16Opening)
 //Some recruitment text here...joins hoping to get paid, also because the monsters spook him
 //And warning main lord of reinforcements coming from the south at some point
 GotoPrepScreen
@@ -178,6 +179,7 @@ ENDA
 
 EndingScene:
 STAL 80
+Text(Ch16Ending)
 MNCH 17
 ENDA
 

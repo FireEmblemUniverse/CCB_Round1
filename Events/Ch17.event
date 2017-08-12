@@ -115,6 +115,7 @@ LOAD1 0x0 Reinforcements1
 ENUN
 LOAD1 0x0 Reinforcements2
 ENUN
+Text(Ch17Opening)
 GotoPrepScreen
 NoFade
 ENDA
@@ -146,6 +147,7 @@ NoFade
 ENDA
 
 EndingScene:
+Text(Ch17Ending)
 MNCH 12
 NoFade
 ENDA
