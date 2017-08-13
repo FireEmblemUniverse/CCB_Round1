@@ -1,2 +1,2 @@
-Countermagic: Reflect magic damage[N]
-when attacked at 1-2 range.[X]
+Darting Blow: +5 Attack Speed[N]
+when initiating battle.[X]

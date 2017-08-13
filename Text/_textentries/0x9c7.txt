@@ -1,2 +1,2 @@
-Elbow Room: +3 damage dealt[N]
-when on open terrain.[X]
+Tantivy: +10 Hit/Avoid if there are[N]
+no allies within 3 tiles.[X]

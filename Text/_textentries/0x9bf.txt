@@ -1,2 +1,2 @@
-Tantivy: +10 Hit/Avoid if there are[N]
-no allies within 3 tiles.[X]
+Lunge: Swap places with the[N]
+opponent after combat.[X]

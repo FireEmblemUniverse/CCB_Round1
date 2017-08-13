@@ -1,2 +1,2 @@
-Shove: Allows unit to push[N]
-other units one tile away.[X]
+Pursuit: When under attack,[N]
+attack speed +2. [X]

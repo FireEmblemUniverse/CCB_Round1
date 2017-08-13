@@ -1,2 +1,2 @@
-Chivalry: When foe is at full HP,[N]
-attack and def/res +2.[X]
+Quick Draw: +4 Damage[N]
+when initiating battle.[X]

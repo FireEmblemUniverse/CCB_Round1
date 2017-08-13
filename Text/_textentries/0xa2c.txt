@@ -1,2 +1,4 @@
-[Right][Load][0x01][0x01]
-PLACEHOLDER TEXT[A][X]
+[Right][LoadVoid]
+That was the power of the Donateenaries?[N]
+Ha, what a joke. Alas, they were in my[AN]
+way, so they had to pay.[AN][X]

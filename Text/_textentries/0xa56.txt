@@ -1,0 +1,5 @@
+[MidLeft][LoadFace][0x2][0x1]
+Ugh, I can't see a thing.[N]
+Even the weather is in my way![AN]
+And there's a whole horde of[N]
+soldiers storming our way![AN][X]

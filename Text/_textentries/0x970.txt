@@ -1,2 +1,2 @@
-Lethality: Instantly kill opponent.[N]
-(Skill/2 % activation)[X]
+Canto+: Can move again after[N]
+attacking and other actions.[X]

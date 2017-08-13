@@ -1,2 +1,2 @@
-Tomefaire: +4 damage[N]
-when equipping a tome.[X]
+Wrath: If HP < 50%,[N]
++20 critical rate.[X]

@@ -1,2 +1,2 @@
-Killing Machine: Total critical[N]
-rate is doubled.[X]
+Dragon's Blood: Unit is able[N]
+to activate Dragon Veins.[X]

@@ -1,2 +1,2 @@
-Frenzy: For every 4 damage[N]
-taken, +1 to damage dealt.[X]
+Adept: Gain a consecutive attack.[N]
+(Speed % activation)[X]

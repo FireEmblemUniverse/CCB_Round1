@@ -1,2 +1,2 @@
-Opportunist: +4 damage[N]
-if the foe cannot counter.[X]
+Bow Range +1: Maximum range[N]
+of equipped bows is increased.[X]

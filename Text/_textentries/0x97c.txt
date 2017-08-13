@@ -1,2 +1,3 @@
-Aegis: Nullify a magic attack.[N]
-(Skill % activation)[X]
+Aether: First strike absorbs HP,[N]
+second strike negates defenses.[N]
+(Skill/2 % activation)[X]

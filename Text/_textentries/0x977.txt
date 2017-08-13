@@ -1,2 +1,2 @@
-Swordbreaker: +50 Hit/Avo when[N]
-enemy has a sword equipped.[X]
+Cunning: Can steal items, pick[N]
+locks, and see in darkness.[X]

@@ -1,2 +1,2 @@
-Staff Savant: Maximum range[N]
-of staves is increased by 1.[X]
+Rally Skill: +4 Skill[N]
+to allies within 2 tiles.[X]

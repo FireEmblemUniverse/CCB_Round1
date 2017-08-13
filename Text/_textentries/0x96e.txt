@@ -1,2 +1,2 @@
-Canto: Can move again[N]
-after certain actions.[X]
+Acrobat: All traversable[N]
+terrain costs 1 movement.[X]

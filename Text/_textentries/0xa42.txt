@@ -1,2 +1,5 @@
-A girl with a familiar face.[N]
-Her love of money is quite strong.[X]
+[OpenLeft][LoadLeeroy]
+[OpenRight][LoadVoid]
+Victory is had. Let's go![A]
+[Left]
+That was anti-climatic.[A][X]

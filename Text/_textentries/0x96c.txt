@@ -1,2 +1,2 @@
-Mercy: Enemies are left[N]
-with at least 1 HP.[X]
+Savior: Can rescue[N]
+without penalties.[X]

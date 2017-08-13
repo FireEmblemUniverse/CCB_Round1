@@ -1,2 +1,2 @@
-Darting Blow: +5 Attack Speed[N]
-when initiating battle.[X]
+Lancebreaker: +50 Hit/Avo when[N]
+enemy has a lance equipped.[X]
