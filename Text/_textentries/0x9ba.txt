@@ -1,2 +1,2 @@
-Trample: +5 damage to[N]
-unmounted units.[X]
+Staff Savant: Maximum range[N]
+of staves is increased by 1.[X]

@@ -1,2 +1,2 @@
-Nihil: Cancels the opponent's[N]
-skills in combat.[X]
+Charm: Allies within 2[N]
+tiles deal +2 damage.[X]

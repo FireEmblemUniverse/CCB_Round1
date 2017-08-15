@@ -85,11 +85,11 @@ seize Maeda's door[X]
 Kill Maeda, the one[N]
 who ruined Fire Emblem[X]
 
-## Ch21Goal
+##
 Slay Tatara of the Doma[N]
 Faithful, not Doot![X]
 
-## Ch22Goal
+##
 Defeat Celica, Princess of[N]
 Sofia and commander of boats[X]
 

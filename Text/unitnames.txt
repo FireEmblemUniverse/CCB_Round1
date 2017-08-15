@@ -300,3 +300,31 @@ Feditor[X]
 ## Desc_Feditor
 Faithful servant of the dark god[N]
 Hextator, causing havok across the land.[X]
+
+## LyriaName
+Lyria[X]
+
+## LyriaDesc
+Training priestess of the Church of Blood.[N]
+Or, she was a priestess. Now she dances.[X]
+
+## MeriahName
+Meriah[X]
+
+## MeriahDesc
+Granddaughter of the Great Sage, Maios.[N]
+Now, she's wasting away as a dancer.[X]
+
+## PlumName
+Plum[X]
+
+## PlumDesc
+Daughter of Lionheart and Lan, Barts's[N]
+foster sister, and sold into slavery.[X]
+
+## YuniName
+Yuni[X]
+
+## YuniDesc
+Holmes's friend. An energetic[N]
+female thief... in days gone by.[X]

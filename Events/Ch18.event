@@ -65,11 +65,13 @@ LOAD1 0x1 Baddies
 ENUN
 LOAD1 0x1 Baddies2
 ENUN
+Text(Ch18Opening)
 GotoPrepScreen
 NoFade
 ENDA
  
 EndingScene:
+Text(Ch18Ending)
 MNCH 0x13
 ENDA
  
@@ -77,6 +79,8 @@ ENDA
  
 Recruitdood:
 ReinforcementEvent(Dood)
+Text(RecruitingEdgeworth)
+ENDA
  
 // Manual Movement
  

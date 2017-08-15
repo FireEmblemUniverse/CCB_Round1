@@ -1,2 +1,2 @@
-Vantage: If HP < 50%,[N]
-strike first when attacked.[X]
+Aegis: Nullify a magic attack.[N]
+(Skill % activation)[X]

@@ -1,2 +1,2 @@
-Dragon's Blood: Unit is able[N]
-to activate Dragon Veins.[X]
+Natural Cover: -3 damage taken[N]
+when on terrain with effects.[X]

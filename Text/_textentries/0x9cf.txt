@@ -1,2 +1,2 @@
-Gamble: A reckless attack with[N]
-halved hit but doubled crit.[X]
+Elbow Room: +3 damage dealt[N]
+when on open terrain.[X]

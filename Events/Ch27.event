@@ -79,11 +79,13 @@ LOAD1 0x1 NormalEnemies2
 ENUN
 LOAD1 0x1 NormalEnemies3
 ENUN
+Text(Ch27Opening)
 GotoPrepScreen
 NoFade
 ENDA
 
 EndingScene:
+Text(Ch27Ending)
 CAM1 Void
 FlashCursor(Void, 60)
 SETVAL 0x3 Audomra

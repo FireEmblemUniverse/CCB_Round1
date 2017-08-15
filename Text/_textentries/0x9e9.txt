@@ -1,2 +1,3 @@
-Slow Burn: +1 Hit and Avoid for[N]
-each passing turn, up to 15.[X]
+Up with Arch: Adjacent ally units gain[N]
+might equal to half this unit's might.[N]
+(Only if name starts with "Arch")[X]

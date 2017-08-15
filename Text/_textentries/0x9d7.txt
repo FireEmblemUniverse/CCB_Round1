@@ -1,2 +1,2 @@
-Light Weight: When holding three[N]
-or less items, attack speed +3.[X]
+Gamble: A reckless attack with[N]
+halved hit but doubled crit.[X]

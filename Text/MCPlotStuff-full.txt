@@ -1,5 +1,5 @@
 
-#VOID’S BLITZARRE ADVENTURE SCRIPT
+#VOID'S BLITZARRE ADVENTURE SCRIPT
 #Most writing here by MC
 #Control codes, formattng by Darr
 #This is the full script, and is not yet formatted for insertion.
@@ -11,7 +11,7 @@
 Alright. Now that those mooks are dealt[N]
 with, let us kill the Demon King.[AN]
 [Left]
-No, Void. There’s still[N]
+No, Void. There's still[N]
 29 chapters of mooks to go.[AN]
 [Right]
 WHAT?! I want to kill
@@ -21,17 +21,17 @@ Unfortunately, that is presently[N]
 not possible. When the Demon King[AN]
 killed your father, he took the only[N]
 weapon able to kill him, the Super[AN]
-Blitz. I hazard a guess it’ll take[N]
+Blitz. I hazard a guess it'll take[N]
 roughly a full fan hack to re-obtain[AN]
 it so we can actually kill the Demon King.[AN]
 [Right]
 Leeroy, sometimes I hate you.[A]
-[Left] It’s part of the job, Void.[A][X]
+[Left] It's part of the job, Void.[A][X]
 
 ## Ch1WithoutMember
 [Right][LoadCurrent]
 [Left][LoadMyrmAnna]
-I’d love to help you, but one[N]
+I'd love to help you, but one[N]
 of my sisters left something[AN]
 very important in the nest of[N]
 a terrifying Draco Zombie...[AN]
@@ -46,7 +46,7 @@ and I can help you out.[AN][X]
 [Left][LoadMyrmAnna]
 MY CARD! Thank you for retrieving[N]
 it for me. Now I'll just take that[AN]
-card from you... I’m Anna. Some[N]
+card from you... I'm Anna. Some[N]
 like to call me the Secret Seller,[AN]
 and you should know we traders[N]
 make some VERY deep cuts.[A][X]
@@ -85,7 +85,7 @@ Hey, look! A thing![A][X]
 [Right][LoadCurrent]
 [Left][LoadArch]
 [FastText]
-Back in my day, we weren’t making[N]
+Back in my day, we weren't making[N]
 hacks super lightning fast. No. We[AN]
 made hacks with time, effort, and[N]
 many, many delays. So what if our[AN]
@@ -93,7 +93,7 @@ hacks never finished? So what if[N]
 Elibean Nights is still in hiatus?[AN]
 When that famous date of 2020 finally[N]
 arrives, and Elibean Nights finally[AN]
-releases, it’ll be something of[N]
+releases, it'll be something of[N]
 value, not something made on the[AN]
 cheap. What, are we Maeda now,[N]
 getting things out fast as possible[AN]
@@ -101,7 +101,7 @@ to make a quick buck? No! I refuse[N]
 to accept it. Hacks and Fire Emblem [AN]
 used to have dignity and honor, but no,[N]
 now that we are fucking mainstream,[AN]
-we’ve got goddamn quotas to meet.[N]
+we've got goddamn quotas to meet.[N]
 Why does everyone go sorry with age?[AN]
 I remember the good old days before[N]
 the Maeda attacked. Sure, our group[AN]
@@ -110,7 +110,7 @@ dreams, and soul, and by God we-[AN]
 [Right]
 SHUT UP![A]
 [Left]
-AHHH! Someone’s here![A]
+AHHH! Someone's here![A]
 [Clear]
 [Right]
 Hey, he dropped something.[A][X]
@@ -124,7 +124,7 @@ Thank you, Void. As thanks,[N]
 I will serve as your advisor and[AN]
 as a healer from now on.[A]
 [Right]
-Cool; let’s go.[A][X]
+Cool; let's go.[A][X]
 
 ## Ch4Opening
 [Left][LoadLeeroy]
@@ -145,9 +145,9 @@ and they WANT that monster to[N]
 return to this world. What possible--[AN]
 [Left]
 They are generic anime villains ma'am,[N]
-they don’t have a reason to do so.[AN]
+they don't have a reason to do so.[AN]
 [Right]
-...We’re not in a good story, are we?[AN]
+...We're not in a good story, are we?[AN]
 [Left]
 Quantity over Quality.[AN][X]
 
@@ -156,10 +156,10 @@ Ch4NotArchVillage:
 [Left][LoadArch]
 I heard this hack needed a good[N]
 mage. Well, my Divine Lightning[AN]
-pierces the skies, and I’m happy[N]
+pierces the skies, and I'm happy[N]
 to help. Why are you staring at[AN]
-me? You’re expecting me to rant? I[N]
-don’t know what you're talking about![A][X]
+me? You're expecting me to rant? I[N]
+don't know what you're talking about![A][X]
 
 ## Ch4Ending
 [Right][LoadVoid]
@@ -170,13 +170,13 @@ way, so they had to pay.[AN][X]
 ## Ch5Opening
 [Right][LoadVoid]
 [Left][LoadLeeroy]
-My lady! WE’VE GOT TROUBLE![A]
+My lady! WE'VE GOT TROUBLE![A]
 [Right]
 What, Leeroy?[A]
 [Left]
 The Donateenaries want revenge[N]
-and attacked, and what’s worse,[AN]
-we’ve been separated from the[N]
+and attacked, and what's worse,[AN]
+we've been separated from the[N]
 rest of our forces.[AN]
 [Right]
 Our only chance is to regroup[N]
@@ -217,7 +217,7 @@ told me about them before...[AN]
 [Left]
 Yes, the League of FEU. It is[N]
 said you descend from one of[AN]
-the League’s Gods, and as such[N]
+the League's Gods, and as such[N]
 you can wield the fabled[AN]
 Super Blitz Lance.[AN]
 [MR]
@@ -232,8 +232,8 @@ King from reviving the Evil God Hex.[AN][X]
 Void: What is this place?
 Bede: This is the Fort of Bad, a simple stronghold, but a place more frightening than Hell itself for the people living in the nearby Port of Bad.
 Void: Why
-Bede: The Donateenaries occupy this fortress. I’ve heard tell they force the people here to make massive donations to Hex. The town’s nearly starved from this abuse.
-Void: That’s... Horrid. We must retake this fortress at once
+Bede: The Donateenaries occupy this fortress. I've heard tell they force the people here to make massive donations to Hex. The town's nearly starved from this abuse.
+Void: That's... Horrid. We must retake this fortress at once
 Bede: Very well, I will give the order
 
 (Throne Seized)
@@ -255,7 +255,7 @@ Chapter 11:
 
 Point Seized
 
-Void: It doesn’t matter what tricks they try against me, if you’re in my way, you’re going to pay.
+Void: It doesn't matter what tricks they try against me, if you're in my way, you're going to pay.
 Leeroy: Still, us having our Warp abilities would make this much easier.
 Void: True
 
@@ -265,10 +265,10 @@ Chapter 12 Opening:
 Gheb: So the wittle princess wants to challenge me, does she? Maybe I can provide her some “entertainment” for a while.
 Generic Donateenary enemy: Boss, watch your wording, this is why the bad jokes exist.
 Gheb: What? How does that not come across as me wanting to play a game of cards with her?
-GDE: Apparently, it doesn’t at all seeing as they have prepared weapons against us.
+GDE: Apparently, it doesn't at all seeing as they have prepared weapons against us.
 Gheb: Damnit.
 
-Gheb’s Death Quote: I just… wanted.. To play… Yugioh
+Gheb's Death Quote: I just… wanted.. To play… Yugioh
 Point seized:
 
 Void: Sorry Gheb, you were in my way.
@@ -280,34 +280,34 @@ Void: Sorry Gheb, you were in my way.
 Chapter 13:
 
 Opening: 
-Void: Oh great, a desert chapter. I hate deserts. Let’s get out of here quickly.
+Void: Oh great, a desert chapter. I hate deserts. Let's get out of here quickly.
 
 Ending:
-Void: Thank God that’s over.
+Void: Thank God that's over.
 
 (End of Chapter)
 
 Chapter 14 Opening:
 Void: This text is a placeholder!
 Leeroy: Why are you saying that my liege?
-Void: I don’t know, but I did.
+Void: I don't know, but I did.
 
 Chapter Won:
-Void: That text may have been a placeholder, but this victory sure wasn’t
+Void: That text may have been a placeholder, but this victory sure wasn't
 
 (End of Chapter)
 
 Chapter 16:
 Opening:
 Void: So this is Dead Valley.
-Leeroy: I don’t like here, can we leave?
+Leeroy: I don't like here, can we leave?
 Void: Come on Leeroy, no reason to be afraid of a few dead things and things that are about to be dead things.
-Leeroy: I just don’t want us to BE those about to be dead things!
+Leeroy: I just don't want us to BE those about to be dead things!
 Void: hehehe
 
 
 Chapter won:
-Void: You can stop hiding now Leeroy. We’re leaving the valley.
+Void: You can stop hiding now Leeroy. We're leaving the valley.
 Leeroy: Thank the Gods!
 Void: Oh no, the genericaning is spreading. We must find Kaga before the Demon King kills us all.
 Leeroy: Who?... WAIT MY LIEGE!!!
@@ -320,7 +320,7 @@ Random ass narration literally out of no where ala Gaiden: So Void and co. advan
 
 
 Point Seized:
-Void: Victory is had. Let’s go!
+Void: Victory is had. Let's go!
 Leeroy: That was anti-climatic
 
 (End of Chapter)
@@ -329,7 +329,7 @@ Chapter 18 Opening:
 
 Void: Wow, look at these islands.
 Leeroy: Why are those enemies nearly in the nude?
-Void: Who cares they’re in my way.
+Void: Who cares they're in my way.
 Leeroy: Aptly put my lady.
 
 Recruiting Edgeworth:
@@ -338,22 +338,44 @@ Recruiter: B-but
 Edgeworth: OBJECTION! I have already joined
 
 Chapter won:
-Void: Those soldiers in dancer’s attire certainly weren't Donateenaries….
-Leeroy: Indeed, I wonder who they are with?
-Void: Good question, they seemed even angrier than the Donateenaries.
-Someone offscreen: HELP!
-Void: A call for help. Protagonist contract states I must answer that call for help, ONWARD!
-
+[FarLeft][LoadBede]
+[Left][LoadLeeroy]
+[OpenMidRight][LoadVoid]
+Those soldiers in dancer's attire[N]
+certainly weren't Donateenaries...[N]
+[Left]
+Indeed, I wonder who they are with?[N]
+[MR]
+Good question, they seemed even[N]
+angrier than the Donateenaries.[N]
+[FL]
+I've been asking around lately, and[N]
+I believe they are part of Maeda's[AN]
+army. As I'm sure you know, Maeda[N]
+attacked Kaga's homeland, Akaneia,[AN]
+and forced him to flee the realm.[N]
+Now he has built his castle and[AN]
+is trying to destroy Fire Emblem[N]
+and everything it stands for,[AN]
+and destroy his holy bloodline[N]
+while he's at it. He is not a[AN]
+servant of Hex, but a man of his own[N]
+will. We must save Akaneia from him![AN]
+[OpenFarFarLeft][LoadKaga]
+HELP![A]
+[MR]
+A call for help. Protagonist contract[N]
+states I must answer that call for help.[AN] ONWARD![A][X]
 (End of Chapter)
 
 Chapter 19: 
 Kaga: Wait, please stop!
 Dancer Plum: No
 Dancer Meriah:  We were made to suffer because of you and your “Tearring Saga”
-Dancer Juni: Really, what kind of sick bastard makes the player sell a character into slavery to unlock a certain unit type. A crazy lunatic with a bondage fetish that’s who?
-Dancer Lyria: It’s time that I sang… I mean, gave you a taste of your own medicine
+Dancer Juni: Really, what kind of sick bastard makes the player sell a character into slavery to unlock a certain unit type. A crazy lunatic with a bondage fetish that's who?
+Dancer Lyria: It's time that I sang… I mean, gave you a taste of your own medicine
 
-Kaga “promotes” into a dancer due to dancer girls magic, have Unpromoted Kaga use unpromoted Ephraim’s unarmed sprite
+Kaga “promotes” into a dancer due to dancer girls magic, have Unpromoted Kaga use unpromoted Ephraim's unarmed sprite
 
 Kaga: AAAAAAAAAAAAAAAAAIIIIIIIIIIIIIIIIIIIIIIIIIIEEEEEEEEEEEEEEEEEEEE!!!!!!
 (Kaga flees)
@@ -367,8 +389,8 @@ Chapter Won:
 Void: That man in dancer clothing, was that… Kaga?
 Leeroy: So it would seem. It appears he has been cursed by those dancers we killed.
 Void: A lot of them were just generic enemies who happened to be wearing dancer clothing… But that one woman we killed to get here, she had a face, so she must be important.
-Leeroy: Mmm… We must be careful, we still need Kaga’s help remember.
-Void: Indeed, let’s go!
+Leeroy: Mmm… We must be careful, we still need Kaga's help remember.
+Void: Indeed, let's go!
 
 (End of Chapter)
 
@@ -385,10 +407,10 @@ Chapter won:
 Void: Kaga, we finally found you!
 Kaga: Who are you, and why were you also looking for me?
 Void: Well, I needed your help for… something
-Kaga: You don’t remember?
+Kaga: You don't remember?
 Void: Apparently not. Good to know this whole quest was filler!
 Kaga: I doubt that, something tells me some other semi related game just got a major plot point resolved
-Void: But I don’t appear in that game, I appear in this game.
+Void: But I don't appear in that game, I appear in this game.
 Kaga: Who cares, Vestaria taught me QUANITY OVER QUALITY.
 Void: Could you accompany me and teach me your ways?
 Kaga: Sure, why not
@@ -409,12 +431,12 @@ Chapter 24:
 
 Opening: 
 Void: People are in our way.
-Kaga: We’re going to change that?
+Kaga: We're going to change that?
 Void: Indeed
 
 Chapter Won:
 Void: We won, how many more chapters do we have to go?
-Kaga: If you’re tired of this, imagine the player
+Kaga: If you're tired of this, imagine the player
 Void: Hey they made it this far, we just need to kill the Donateenaries and the Demon King right? Why does that need 31 chapters
 Kaga: QUANITY!!!
 
@@ -426,7 +448,7 @@ And so Void continues her journey, unaware that the Donateenaries have set a tra
 Chapter Won:
 Void: That was terrifying.
 Leeroy: Come on Void, our journey is not yet finished.
-Void: Very true, let’s go Leeroy. Show no fear to the bananas Void, they’re more afaird of you than you are them.
+Void: Very true, let's go Leeroy. Show no fear to the bananas Void, they're more afaird of you than you are them.
 
 (End of Chapter)
 
@@ -439,7 +461,7 @@ Void: We did it, holy crap we did it
 
 Chapter 27
 
-Void had made it past Darrman’s Lakes. All that remained was one convenient lake. It appears another battle awaits Void on this day.
+Void had made it past Darrman's Lakes. All that remained was one convenient lake. It appears another battle awaits Void on this day.
 
 Chapter Won:
 Void: #Kirbwhy
@@ -449,9 +471,9 @@ Void: #Kirbwhy
 Chapter 28:
 Tiki: Father!
 Kaga: Tiki, what are you doing here.
-Tiki: I got bored of sleeping all the time and watching my husbandos die, so when I heard you were active again, I decided to seek you out, but I got lost, and then someone named Maeda sexulized me, then some asshat named MC waifued me, then I got pulled into some JPop atrocity on a failing console, then I met two other mes in a Gacha game, and now I’m a children’s toy.
-Kaga: (She doesn’t need to know I’m actually MC) That’s awful my girl, but don’t worry, daddy is here
-Tiki: You’ll allow me to travel with you?
+Tiki: I got bored of sleeping all the time and watching my husbandos die, so when I heard you were active again, I decided to seek you out, but I got lost, and then someone named Maeda sexulized me, then some asshat named MC waifued me, then I got pulled into some JPop atrocity on a failing console, then I met two other mes in a Gacha game, and now I'm a children's toy.
+Kaga: (She doesn't need to know I'm actually MC) That's awful my girl, but don't worry, daddy is here
+Tiki: You'll allow me to travel with you?
 Kaga: Sure, what could possibly go wrong?!
 
 Chapter won:
@@ -463,7 +485,7 @@ Void: Great great great great granuncle Fondell, I will avenge all of you.
 (End of Chapter)
 
 Chapter Won:
-Void: That’s the end of the Donateenaries… All that’s left is the Demon King
+Void: That's the end of the Donateenaries… All that's left is the Demon King
 
 (End of Chapter)
 
@@ -471,12 +493,12 @@ Void: That’s the end of the Donateenaries… All that’s left is the Demon King
 [If No Characters or all characters but Void died, show CG of FEU Family Tree with text box saying “Genealogy of Haxors”]
 
 [If Endgame cleared in 15 turns]
-Void: What’s this
-MC: AHHHHH, You’re not supposed to be here yet!
+Void: What's this
+MC: AHHHHH, You're not supposed to be here yet!
 Void: Who are you?
-MC: I’m the writer, I wrote this amazing story.
-Void: So then you’re the reason my family is dead?
-MC: ….Shit, here have a plot contrivance, they’re alive again
+MC: I'm the writer, I wrote this amazing story.
+Void: So then you're the reason my family is dead?
+MC: ….Shit, here have a plot contrivance, they're alive again
 Void: THANKS, bye : ^)
 What a Blitzarre Adventure.
 

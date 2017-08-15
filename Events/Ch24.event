@@ -99,10 +99,12 @@ LOAD1 0x1 Enemies
 ENUN
 LOAD1 0x1 Enemies2
 ENUN
+Text(Ch24Opening)
 GotoPrepScreen
 ENDA
 
 EndingScene:
+Text(Ch24Ending)
 CAM1 Void
 FlashCursor(Void,60)
 SVAL 3 Ivaldi

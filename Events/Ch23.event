@@ -119,12 +119,13 @@ STAL 30
 FADU 5
 STAL 30
 GotoPrepScreen
+Text(Ch23Opening)
 NoFade
 ENDA
 
 EndingScene:
 //Text to be added later
-
+Text(Ch23Ending)
 CAM1 Void
 FlashCursor(Void, 60)
 SETVAL 0x3 Vidofnir

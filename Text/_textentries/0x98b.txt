@@ -1,2 +1,2 @@
-Lancefaire: +4 damage[N]
-when equipping a lance.[X]
+Armored Blow: +10 Def[N]
+when initiating battle.[X]

@@ -1,2 +1,2 @@
-Astra: 5 attacks at half damage.[N]
-(Skill % activation)[X]
+Frenzy: For every 4 damage[N]
+taken, +1 to damage dealt.[X]

@@ -18,6 +18,7 @@
 [Beat] = [ToggleMouthMove]...[.5][ToggleMouthMove]
 [Event] = [LoadOverworldFaces]
 [Clear] = [ClearFace]
+[Smile] = [ToggleSmile]
 
 [FarFarLeft] = [OpenFarFarLeft]
 [FarLeft] = [OpenFarLeft]
@@ -100,4 +101,9 @@
 [LoadBreguet] = [LoadFace][0x31][0x1]
 [LoadGheb] = [LoadFace][0x3D][0x1]
 [LoadSoldier] = [LoadFace][0x6B][0x01]
+[LoadLyria] = [LoadFace][0x06][0x01]
+[LoadMeriah] = [LoadFace][0x08][0x01]
+[LoadPlum] = [LoadFace][0x0A][0x01]
+[LoadYuni] = [LoadFace][0x1E][0x01]
+[LoadMC] = [LoadFace][0x03][0x01]
 [LoadCurrent] = [LoadFace][CurrentPortrait]

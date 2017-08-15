@@ -1,2 +1,2 @@
-Smite: Allows unit to push[N]
-other units two tiles away.[X]
+Light Weight: When holding three[N]
+or less items, attack speed +3.[X]

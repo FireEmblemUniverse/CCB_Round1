@@ -1,2 +1,2 @@
-Savage Blow: After attacking, enemies[N]
-within 2 tiles take 20% damage.[X]
+Life and Death: +10 to[N]
+damage dealt and taken.[X]

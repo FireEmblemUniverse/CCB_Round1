@@ -1,2 +1,2 @@
-Expertise: Reduce bonus damage[N]
-from critical hits by 50%.[X]
+Foreign Princess: Foreign army units[N]
+take -2/+2 damage dealt/taken.[X]

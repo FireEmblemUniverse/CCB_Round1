@@ -1,2 +1,2 @@
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+Pivot: Allows unit to move to the[N]
+opposite side of an adjacent ally.[X]

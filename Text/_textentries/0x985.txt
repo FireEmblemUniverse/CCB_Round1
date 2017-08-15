@@ -1,2 +1,2 @@
-Desperation: If HP < 50%,[N]
-double attacks occur immediately.[X]
+Pavise: Nullify a physical attack.[N]
+(Skill % activation)[X]

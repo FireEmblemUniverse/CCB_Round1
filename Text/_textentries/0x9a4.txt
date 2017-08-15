@@ -1,2 +1,2 @@
-Nullify: Unit is protected[N]
-from all effective attacks.[X]
+Voice of Peace: Enemies within[N]
+2 tiles deal -2 damage.[X]

@@ -1,2 +1,2 @@
-[OpenRight][LoadVoid]
-Thank God that's over.[A][X]
+[Right][Load][0x01][0x01]
+PLACEHOLDER TEXT[A][X]

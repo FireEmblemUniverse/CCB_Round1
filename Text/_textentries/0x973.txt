@@ -1,2 +1,2 @@
-Sol: Restore damage dealt as HP.[N]
-(Skill % activation)[X]
+Provoke: Enemies are more[N]
+likely to target this unit.[X]

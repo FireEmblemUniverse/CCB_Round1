@@ -1,2 +1,2 @@
-Even Rhythm: +10 Hit and Avoid[N]
-on even numbered turns.[X]
+Smite: Allows unit to push[N]
+other units two tiles away.[X]

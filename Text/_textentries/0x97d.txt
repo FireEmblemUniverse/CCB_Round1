@@ -1,2 +1,2 @@
-Pavise: Nullify a physical attack.[N]
+Astra: 5 attacks at half damage.[N]
 (Skill % activation)[X]

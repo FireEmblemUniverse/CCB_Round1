@@ -14,7 +14,7 @@ setMugEntry(0x5, Tam_Mug, 2,5,2,3)
 
 Bede_Mug:
 #incext PortraitFormatter "Bede.png"
-setMugEntry(0x9, Bede_Mug, 3,5,2,3)
+setMugEntry(0x9, Bede_Mug, 3,5,3,3)
 
 NotArch_Mug:
 #incext PortraitFormatter "NotArch.png"
@@ -143,3 +143,23 @@ setMugEntry(0x56, AnnaRogue_Mug, 2,5,3,3)
 Anna_Mug:
 #incext PortraitFormatter "fe8_anna.png"
 setMugEntry(0x64, Anna_Mug, 2,6,3,4)
+
+LyriaMug:
+#incext PortraitFormatter "Lyria.png"
+setMugEntry(0x06, LyriaMug, 2,6,3,4)
+
+MeriahMug:
+#incext PortraitFormatter "Meriah.png"
+setMugEntry(0x08, MeriahMug, 2,6,3,4)
+
+PlumMug:
+#incext PortraitFormatter "Plum.png"
+setMugEntry(0x0A, PlumMug, 2,6,3,4)
+
+YuniMug:
+#incext PortraitFormatter "Yuni.png"
+setMugEntry(0x1E, YuniMug, 2,6,3,4)
+
+MCMug:
+#incext PortraitFormatter "MC.png"
+setMugEntry(0x03, MCMug, 2,6,3,4)

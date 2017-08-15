@@ -1,2 +1,2 @@
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+[MidLeft][LoadCurrent]
+Oh cool, I found a thing.[A][X]

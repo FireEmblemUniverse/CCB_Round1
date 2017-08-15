@@ -1,3 +1,2 @@
-[OpenRight][LoadVoid]
-That text may have been a placeholder,[N]
-but this victory sure wasn't.[AN][X]
+[Right][Load][0x01][0x01]
+PLACEHOLDER TEXT[A][X]

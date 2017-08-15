@@ -1,2 +1,2 @@
-Discipline: Weapon experience[N]
-gains are doubled.[X]
+Canto: Can move again[N]
+after certain actions.[X]

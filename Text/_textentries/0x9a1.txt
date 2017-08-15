@@ -1,2 +1,2 @@
-Spur Defense: Adjacent allies[N]
-take -4 physical damage.[X]
+Malefic Aura: Enemies within 2[N]
+tiles receive +2 magic damage.[X]

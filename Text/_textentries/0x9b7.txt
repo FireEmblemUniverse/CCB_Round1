@@ -1,2 +1,2 @@
-Lunge: Swap places with the[N]
-opponent after combat.[X]
+Rally Movement: +1 Move[N]
+to allies within 2 tiles.[X]
