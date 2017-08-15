@@ -43,5 +43,14 @@ Super Blitz[X]
 #include "MCPlotStuff.txt"
 #include "ch1.txt"
 #include "ch15_text.txt"
+
+## Ch21Goal
+Slay Tatara of the Doma[N]
+Faithful, not Doot![X]
+
+## Ch22Goal
+Defeat Celica, Princess of[N]
+Sofia and commander of boats[X]
+
 #include "blitz chapter goals.txt"
 

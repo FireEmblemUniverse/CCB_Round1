@@ -83,16 +83,16 @@ LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 Bad
 ENUN
+Text(Ch25Opening)
 GotoPrepScreen
 ENDB
 
 EndingScene:
 //Text to be added later
-
+Text(Ch25Ending)
 CHECK_ALIVE Bjoern
 IFNOTEQUAL 0x01 0xC 0x0
 //Text to be added later
-
 TurnAlly(Bjoern)
 ENIF 0x01
 

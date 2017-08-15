@@ -57,6 +57,7 @@ LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 Baddies
 ENUN
+Text(Ch22Opening)
 GotoPrepScreen
 NoFade
 ENDA
@@ -64,6 +65,7 @@ ENDA
 EndingScene:
 LOAD1 0x1 Celc
 ENUN
+Text(Ch22Ending)
 MNCH 23
 ENDA
  

@@ -194,11 +194,13 @@ LOAD1 0x1 Badder
 ENUN
 LOAD1 0x1 Baddest
 ENUN
+Text(Ch26Opening)
 GotoPrepScreen
 NoFade
 ENDA
 
 EndingScene:
+Text(Ch26Ending)
 MNCH 27
 ENDA
 

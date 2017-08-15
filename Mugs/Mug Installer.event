@@ -159,3 +159,7 @@ setMugEntry(0x0A, PlumMug, 2,6,3,4)
 YuniMug:
 #incext PortraitFormatter "Yuni.png"
 setMugEntry(0x1E, YuniMug, 2,6,3,4)
+
+MCMug:
+#incext PortraitFormatter "MC.png"
+setMugEntry(0x03, MCMug, 2,6,3,4)

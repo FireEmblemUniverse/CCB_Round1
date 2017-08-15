@@ -550,3 +550,154 @@ Could you accompany me and[N]
 teach me your ways?[A]
 [Left]
 Sure, why not?[A][X]
+
+## Ch21Opening
+[OpenLeft][LoadTatara]
+Hoho... You fools hope to[N]
+beat me, Lord Tatara?[AN]
+Dyute! Kill those idiots[N]
+with your Aura![A][X]
+
+## Ch22Opening
+So Void had finally recruited Kaga in an[N]
+arc that some would define as being as[AN]
+fillerific as the Valm Arc in Awakening,[N]
+she now returns to trying to obtain revenge[AN]
+against the Demon King. Taking a boat, she[N]
+approaches the homeland of the Donateenaries.[A][X]
+
+## Ch22Ending
+[OpenRight][LoadVoid]
+SOON, we will finish this journey.[A][X]
+
+## Ch23Opening
+[OpenRight][LoadVoid]
+PLACEHOLDER[A][X]
+
+## Ch23Ending
+[OpenRight][LoadVoid]
+PLACEHOLDER[A][X]
+
+## Ch24Opening
+[OpenLeft][LoadKaga]
+[OpenRight][LoadVoid]
+People are in our way.[A]
+[Left]
+We’re going to change that?[A]
+[Right]
+Indeed.[A][X]
+
+## Ch24Ending
+[OpenLeft][LoadKaga]
+[OpenRight][LoadVoid]
+We won. So how many more chapters[N]
+do we have to go until we're done?[AN]
+[Left]
+If you're tired of this, imagine[N]
+the player. They're sick of it.[AN]
+[Right]
+Hey, they made it this far. We just[N]
+need to kill the Donateenaries and[AN]
+the Demon King, right? Why does that[N]
+need 31 chapters of gameplay?[AN]
+[Left]
+QUANITY!!![A][X]
+
+## Ch25Opening
+And so Void continues her journey,[N]
+unaware that the Donateenaries have[AN]
+set a trap for her involving her most[N]
+hated thing: bananas.[AN][X]
+
+## Ch25Ending
+[OpenLeft][LoadLeeroy]
+[OpenRight][LoadVoid]
+That was terrifying.[A]
+[Left]
+Come on, Void. Our journey[N]
+is not yet finished.[A]
+[Right]
+Very true. Let's go, Leeroy.[A]
+[Left][Clear][Right]
+Show no fear to the bananas,[N]
+Void. They're more afraid of[AN]
+you than you are them.[A][X]
+
+## Ch26Opening
+This is truly a tough battle.[N]
+Void goes deeper into Donateenary[AN]
+territory. Can she win?[A][X]
+
+## Ch26Ending
+[Right][LoadVoid]
+We did it. Holy crap, we did it.[A][X]
+
+## Ch27Opening
+Void had made it past Darrman's Lakes. All[N]
+that remained was one convenient lake. It[AN]
+appears another battle awaits Void on this[N]
+day.[A][X]
+
+## Ch27Ending
+[Right][LoadVoid]
+Kirb, why?[A][X]
+
+## Ch28Opening
+[OpenRight][LoadKaga]
+[OpenLeft][LoadChiki]
+Father![A]
+[Right]
+Tiki, what are you doing here?[A]
+[Left]
+I got bored of sleeping all the time[N]
+and watching my husbandos die, so when[AN]
+I heard you were active again, I decided[N]
+to seek you out, but I got lost, and then[AN]
+someone named Maeda sexualized me, then[N]
+some asshat named MC waifued me, then I got[AN]
+pulled into some JPop atrocity on a failing[N]
+console, then I met two other mes in a[AN]
+gacha game, and now I'm a children's toy.[A]
+[Right]
+(She doesn't need to know I'm actually MC...)[A]
+That's awful my girl, but don't worry about[N]
+that anymore, because Daddy is here.[A]
+[Left]
+You'll allow me to travel with you?[A]
+[Right]
+Sure, what could possibly go wrong?![A][X]
+
+## Ch28Ending
+[Right][LoadVoid]
+This is it, the Super Blitz lance...[N]
+I can feel the power flowing through[AN]
+me. Soon father, mother, sister,[N]
+brother, 1st cousin, auntie, uncle[AN]
+Jimbob, 2nd cousin......[AN]
+
+Great great great great granuncle[N]
+Fondell, I will avenge all of you.[A][X]
+
+## Ch29Ending
+[Right][LoadVoid]
+That's the end of the Donateenaries...[N]
+All that's left now is the Demon King.[A][X]
+
+## TrueEnding
+[Left][LoadMC]
+[Right][LoadVoid]
+What's this place?[A]
+[Left]
+AHHHHH! You're not supposed to be here yet![A]
+[Right]
+Who are you?[A]
+[Left]
+I'm the writer, I wrote this amazing story.[A]
+[Right]
+So then you're the reason my family is dead?[A]
+[Left]
+...Shit. Here, have a plot contrivance.[N]
+Now they're alive again.[A]
+[Right][Smile]
+THANKS, bye![N]
+What a Blitzarre Adventure.[A][X]

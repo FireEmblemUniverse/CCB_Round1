@@ -114,6 +114,7 @@ ENDA
 DemonKingDefeated:
 MUSC 0x33
 Text(0x34, DemonKingDedText)
+Text(TrueEnding) //here as placeholder. 15 turn clear will be required.
 FADI 4
 ENDA
 
