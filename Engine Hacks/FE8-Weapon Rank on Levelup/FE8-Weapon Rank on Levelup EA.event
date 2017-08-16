@@ -2,8 +2,20 @@
 //By Tequila
 
 #ifdef _FE8_
+
+	// #include "Extensions/Hack Installation.txt"
+	// #include EAstdlib.event
+	// #include "Tools/Tool Helpers.txt"
+	// #include "AntiHuffman_Patch.txt"
+	
+	// #ifndef Free_Space
+	// 	#define Free_Space 0xB2B000
+	// 	ORG Free_Space
+	// #endif
+	
 	PUSH
 	
+	//Animations off
 	ORG $7A7C0
 	jumpToHack(Write_Weap_Exp_To_Ram)
 	
@@ -12,6 +24,17 @@
 	
 	ORG $11090+(4*0x5)
 	POIN Display_Text2
+	
+	//Animations on
+	ORG $76010
+	callHack_r3(Write_Exp_Anims_On)
+	
+	ORG $75D00
+	callHack_r3(Display_Text_Anims_On1)
+	
+	ORG $75E0E
+	SHORT 0x46C0
+	callHack_r3(Display_Text_Anims_On2)
 	
 	POP
 	
@@ -42,6 +65,20 @@
 	TxtData0x2:
 	#incext ParseFile "0x2.txt"
 	setText(0x2,TxtData0x2)
+	
+	ALIGN 4
+	Write_Exp_Anims_On:
+	#incbin "Write_Exp_Anims_On.dmp"
+	
+	ALIGN 4
+	Display_Text_Anims_On1:
+	#incbin "Display_Text_Anims_On1.dmp"
+	POIN Custom_Message_Func
+	
+	ALIGN 4
+	Display_Text_Anims_On2:
+	#incbin "Display_Text_Anims_On2.dmp"
+	POIN Custom_Message_Func
 	
 #else
 	ERROR "You're not assembling FE8 events!"
