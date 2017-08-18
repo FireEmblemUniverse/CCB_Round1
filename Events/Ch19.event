@@ -33,7 +33,7 @@ TurnEventPlayer(0x0, LoadZigludo, 1)
 END_MAIN
  
 CharacterBasedEvents:
-CharacterEventBothWays(0xD,SigurdConvo,Void,Zigludo)
+// CharacterEventBothWays(0xD,SigurdConvo,Void,Zigludo) //he starts as an ally
 END_MAIN
  
 LocationBasedEvents:
@@ -87,12 +87,13 @@ ENDA
  
 // Events
 LoadZigludo:
+Text(RecruitingSigurd)
 ReinforcementEvent(ZIGLUDO)
 ENDA
 
-SigurdConvo:
-Text(RecruitingSigurd)
-ENDA
+// SigurdConvo:
+// Text(RecruitingSigurd)
+// ENDA
 
 // Manual Movement
  
