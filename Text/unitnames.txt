@@ -299,28 +299,28 @@ Feditor[X]
 
 ## Desc_Feditor
 Faithful servant of the dark god[N]
-Hextator, causing havok across the land.[X]
+Hex, causing havoc across the land.[X]
 
 ## LyriaName
 Lyria[X]
 
 ## LyriaDesc
-Training priestess of the Church of Blood.[N]
-Or, she was a priestess. Now she dances.[X]
+Former priestess of the Church[N]
+of Blood. Now, she dances.[X]
 
 ## MeriahName
 Meriah[X]
 
 ## MeriahDesc
-Granddaughter of the Great Sage, Maios.[N]
-Now, she's wasting away as a dancer.[X]
+Granddaughter of the Great Sage,[N]
+Maios. Wasting away as a dancer.[X]
 
 ## PlumName
 Plum[X]
 
 ## PlumDesc
-Daughter of Lionheart and Lan, Barts's[N]
-foster sister, and sold into slavery.[X]
+Daughter of Lionheart and Lan,[N]
+Barts's foster sister, now a slave.[X]
 
 ## YuniName
 Yuni[X]
