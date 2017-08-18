@@ -72,7 +72,11 @@ LOAD1 0x1 Baddiesup1
 ENUN
 LOAD1 0x1 NPCKaga
 Text(Ch19Opening)
+FADI 16
+REMOVEPORTRAITS
 PROM Kaga Dancer 0x00 //The script demands it
+REMOVEPORTRAITS
+FADU 16
 GotoPrepScreen
 ENDA
  
