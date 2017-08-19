@@ -1,2 +1,2 @@
-Strong Riposte: When under[N]
-attack, damage +3. [X]
+Wind Disciple: +10 Hit and[N]
+Avoid when HP is not at max.[X]

@@ -79,7 +79,11 @@ LOAD1 0x1 NormalEnemies2
 ENUN
 LOAD1 0x1 NormalEnemies3
 ENUN
-Text(Ch27Opening)
+FADU 10
+SETVAL 0xB 0xFFFFFFFF
+TUTORIALTEXTBOXSTART
+TEXTSHOW Ch27Opening
+TEXTEND
 GotoPrepScreen
 NoFade
 ENDA
@@ -101,7 +105,9 @@ ENUN
 ENDA
 
 RecruitMarf:
-ReinforcementEvent(MarfGroup)
+LOAD1 0x1 MarfGroup
+Text(RecruitingMarth)
+ENDA
 
 
 // Manual Movement
@@ -178,7 +184,7 @@ UNIT 0x66 0x2B 0x00 Level(8, Enemy, 1) [11,0] 0x00 0x00 0x0 0x00 [0x43, 0x4B] At
 UNIT
 
 MarfGroup:
-UNIT Marf 0x15 0x00 Level(20, Ally, 1) [16,7] 0x00 0x00 0x0 0x00 [0x07, 0x0F, 0x6D] NoAI
+UNIT Marf 0x15 0x00 Level(20, Ally, 1) [18,4] 0x00 0x00 0x0 0x00 [0x07, 0x0F, 0x6D] NoAI
 UNIT
 
 

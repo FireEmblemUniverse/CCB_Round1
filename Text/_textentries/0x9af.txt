@@ -1,2 +1,2 @@
-Colossus: Triples Strength.[N]
+Impale: Deal 4x damage.[N]
 (Skill % activation)[X]

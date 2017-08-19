@@ -1,2 +1,2 @@
-Miracle: Survive a lethal[N]
-attack if HP > 50%.[X]
+Countermagic: Reflect magic damage[N]
+when attacked at 1-2 range.[X]

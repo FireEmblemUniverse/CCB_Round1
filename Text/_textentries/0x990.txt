@@ -1,2 +1,2 @@
-Countermagic: Reflect magic damage[N]
+Counter: Reflect physical damage[N]
 when attacked at 1-2 range.[X]

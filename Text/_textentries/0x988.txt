@@ -1,2 +1,2 @@
-Darting Blow: +5 Attack Speed[N]
+Death Blow: +20 Crit[N]
 when initiating battle.[X]

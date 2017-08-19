@@ -1,2 +1,2 @@
-Seal Speed: Debuff opponent's Spd[N]
+Seal Skill: Debuff opponent's Skl[N]
 by 6 after combat. (Recover 1/turn)[X]

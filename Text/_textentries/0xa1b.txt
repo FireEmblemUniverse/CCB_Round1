@@ -1,5 +1,3 @@
-The goddess of vengeance[N]
-lent your army her [Red]blessing[Red].[AN]
-Should your units fall in battle,[N]
-she will ensure their sacrifices[N]
-were not in vain.[A][X]
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5F][0x01]
+You'll want this for later![A][X]

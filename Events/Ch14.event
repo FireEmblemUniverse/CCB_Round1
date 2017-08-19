@@ -168,7 +168,8 @@ MNCH 15
 ENDA
 
 LoadReinforcements:
-LoadReinforcements(Newbie)
+LOAD1 0x1 Newbie
+Text(EevsterSpawns)
 ENDA
 
 TalkEvent:

@@ -1,3 +1,2 @@
 [OpenRight][LoadVoid]
-Oh great, a desert chapter. I hate deserts.[N]
-Let's get out of here quickly.[A][X]
+Sorry Gheb, but you were in my way.[A][X]

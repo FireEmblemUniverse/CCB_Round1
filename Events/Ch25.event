@@ -83,16 +83,19 @@ LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 Bad
 ENUN
-Text(Ch25Opening)
+FADU 10
+SETVAL 0xB 0xFFFFFFFF
+TUTORIALTEXTBOXSTART
+TEXTSHOW Ch25Opening
+TEXTEND
 GotoPrepScreen
 ENDB
 
 EndingScene:
-//Text to be added later
 Text(Ch25Ending)
 CHECK_ALIVE Bjoern
 IFNOTEQUAL 0x01 0xC 0x0
-//Text to be added later
+Text(Ch25EndingBjornAlive)
 TurnAlly(Bjoern)
 ENIF 0x01
 
@@ -133,7 +136,7 @@ LOAD1 0x1 ReinPe
 ENUN
 STAL 10
 FlashCursor(Bjoern,50)
-//Text to be added later
+Text(BjornSpawns)
 //Bjoern mutters to himself that he's killed the rest of the sages and needs to kill Banana before more come
 NoFade
 ENDA
@@ -188,7 +191,7 @@ ENDA
 
 DruidWalksIntoaBar:
 MUSC 0x2b
-//Text to be added later
+Text(RecruitingBjorn)
 //Void talks to Bjoern; Bjoern says that he will join you after Banana is defeated and the shrine is secured
 //in the meantime, he gives you an elixir
 SVAL 0x3 0x6d //give elixir

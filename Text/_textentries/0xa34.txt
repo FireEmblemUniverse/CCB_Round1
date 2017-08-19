@@ -1,2 +1,2 @@
-[Right][Load][0x01][0x01]
-PLACEHOLDER TEXT[A][X]
+[Right][LoadVoid]
+We did it, but we must get moving.[A][X]

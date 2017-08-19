@@ -1,2 +1,2 @@
-Mercy: Enemies are left[N]
-with at least 1 HP.[X]
+Provoke: Enemies are more[N]
+likely to target this unit.[X]

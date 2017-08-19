@@ -1,3 +1,8 @@
-[MidLeft][LoadFace][0x61][0x1]
-The hell you doing here?[N]
-Leave me be, and scram![AN][X]
+[Left][LoadMarth]
+[Right][LoadCurrent]
+I can't really think of much to[N]
+say right now, so this text is[AN]
+a PLACEHOLDER. Don't call me[N]
+Marthipan, though. Please?[AN]
+##
+This is a dummy file.[X]

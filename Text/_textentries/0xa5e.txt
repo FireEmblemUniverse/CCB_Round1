@@ -1,2 +1,6 @@
-An innocent child...[N]
-With some hormonal problems.[X]
+[Left][LoadSoldier]
+[Right][LoadCurrent]
+Over at the port's gate is a Donateenary[N]
+general named Murray. He's an absolute[AN]
+monster and he just extorts every penny[N]
+out of us. Use this sword to slay him![A][X]

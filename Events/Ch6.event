@@ -314,7 +314,7 @@ SpawnTheNewGuy:
 
 RecruitNewGuy:
   CUSA Bob
-  //No recruitment convo yet. Have him grumble on about how brutal the Donateenaries are with their taxes, and he's taking things back. Also Bob the Builder joke. - Darr
+  Text(RecruitingBob) //No recruitment convo yet. Have him grumble on about how brutal the Donateenaries are with their taxes, and he's taking things back. Also Bob the Builder joke. - Darr
   NoFade
 ENDA
 

@@ -1,2 +1,2 @@
-Canto+: Can move again after[N]
-attacking and other actions.[X]
+Pass: Can move through[N]
+enemy units.[X]

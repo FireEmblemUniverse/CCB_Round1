@@ -1,2 +1,2 @@
-Spur Speed: Adjacent allies[N]
-gain +4 Attack Speed.[X]
+Spur Magic: Adjacent allies[N]
+deal +4 magical damage.[X]

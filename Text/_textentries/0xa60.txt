@@ -1,3 +1,5 @@
-[MidLeft][LoadFace][CurrentPortrait]
-[MidRight][LoadFace][0x64][0x1]
-I'll take that card from you.[A][X]
+[Left][Load][0x24][0x01]
+Bob the thief, can he steal it?[N]
+Bob the thief, yes he can![AN]
+(This text is a placeholder, by[N]
+the way. Just so you know.)[A][X]

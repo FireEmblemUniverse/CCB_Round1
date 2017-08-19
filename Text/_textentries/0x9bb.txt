@@ -1,2 +1,2 @@
-Live to Serve: When healing[N]
-an ally, also heals self.[X]
+Staff Savant: Maximum range[N]
+of staves is increased by 1.[X]

@@ -78,7 +78,7 @@ ENDA
 // Events
  
 Recruitdood:
-ReinforcementEvent(Dood)
+LOAD1 0x01 Dood
 Text(RecruitingEdgeworth)
 ENDA
  

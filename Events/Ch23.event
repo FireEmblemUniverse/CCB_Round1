@@ -118,8 +118,8 @@ CAM1 0x01
 STAL 30
 FADU 5
 STAL 30
-GotoPrepScreen
 Text(Ch23Opening)
+GotoPrepScreen
 NoFade
 ENDA
 
@@ -237,7 +237,7 @@ STAL 30
 LOAD1 0x1 Doop
 FAWU 10
 MUNO
-//Text to be added later
+Text(Ch23DoowileAppears)
 //Doowile calls for zombie rebellion against the skeletons
 NoFade
 ENDA
@@ -252,7 +252,7 @@ ENDA
 DidYouEverHeartheOneAbouttheZonbie:
 MUSC 0x30
 STAL 10
-//Text to be added later
+Text(RecruitingDoowileVoid)
 //Void recruits Doowile
 TurnAlly(0x1d)
 ENUN
@@ -262,7 +262,7 @@ ENDA
 WillHeReallyLetYouFinish:
 MUSC 0x30
 STAL 10
-//Text to be added later
+Text(RecruitingDoowileKaga)
 //Kaga recruits Doowile
 TurnAlly(0x1d)
 ENUN
@@ -293,7 +293,7 @@ NoFade
 ENDA
 
 ExplicitlyNotHaunted:
-//Text to be added later
+Text(Ch23Hammerne)
 //friendly skeleman explains that Hammerne staffs are a staple in the skeleton colony because
 //they need to repair their bones whenever they break a bone, then gives you one
 

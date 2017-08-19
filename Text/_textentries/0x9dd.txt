@@ -1,2 +1,2 @@
-Patience: When under[N]
-attack, avoid +10. [X]
+Strong Riposte: When under[N]
+attack, damage +3. [X]
