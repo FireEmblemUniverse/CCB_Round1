@@ -85,7 +85,6 @@ TUTORIALTEXTBOXSTART
 TEXTSHOW Ch27Opening
 TEXTEND
 GotoPrepScreen
-NoFade
 ENDA
 
 EndingScene:

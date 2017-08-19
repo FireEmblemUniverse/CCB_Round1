@@ -1779,14 +1779,6 @@ TxtData0xa7d:
 #incext ParseFile "_textentries\0xa7d.txt"
 setText(0xa7d,TxtData0xa7d)
 
-TxtData0xa7e:
-#incext ParseFile "_textentries\0xa7e.txt"
-setText(0xa7e,TxtData0xa7e)
-
-TxtData0xa7f:
-#incext ParseFile "_textentries\0xa7f.txt"
-setText(0xa7f,TxtData0xa7f)
-
 TxtData0x237:
 #incext ParseFile "_textentries\0x237.txt"
 setText(0x237,TxtData0x237)

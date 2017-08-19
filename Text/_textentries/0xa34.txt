@@ -1,2 +1,5 @@
 [Right][LoadVoid]
-We did it, but we must get moving.[A][X]
+[Left][LoadLeeroy]
+With a tragic backstory, comes[N]
+redemption for the past. Such[AN]
+is the path of an edgy man.[A][X]

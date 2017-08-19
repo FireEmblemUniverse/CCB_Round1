@@ -1,8 +1,2 @@
-[Left][LoadMarth]
-[Right][LoadCurrent]
-I can't really think of much to[N]
-say right now, so this text is[AN]
-a PLACEHOLDER. Don't call me[N]
-Marthipan, though. Please?[AN]
-##
-This is a dummy file.[X]
+An innocent child...[N]
+With some hormonal problems.[X]

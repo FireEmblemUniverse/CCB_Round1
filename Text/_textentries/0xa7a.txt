@@ -1,2 +1,2 @@
 [MidLeft][LoadFace][0x2][0x1]
-Oh, who left these lying around?[A][X]
+Ambush coming![A][X]

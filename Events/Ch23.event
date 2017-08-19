@@ -124,7 +124,6 @@ NoFade
 ENDA
 
 EndingScene:
-//Text to be added later
 Text(Ch23Ending)
 CAM1 Void
 FlashCursor(Void, 60)

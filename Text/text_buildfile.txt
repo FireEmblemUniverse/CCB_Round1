@@ -1,7 +1,7 @@
-# 0x0094
+#0x0094
 HP Bars[.][X]
 
-# 0x00B2
+#0x00B2
 Set health bar display[X]
 
 #0x518
@@ -54,4 +54,3 @@ Defeat Celica, Princess of[N]
 Sofia and commander of boats[X]
 
 #include "blitz chapter goals.txt"
-

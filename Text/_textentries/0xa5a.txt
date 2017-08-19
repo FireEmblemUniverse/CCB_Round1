@@ -1,9 +1,4 @@
-[Right][LoadVoid]
-This is it, the Super Blitz lance...[N]
-I can feel the power flowing through[AN]
-me. Soon father, mother, sister,[N]
-brother, 1st cousin, auntie, uncle[AN]
-Jimbob, 2nd cousin......[AN]
-
-Great great great great granuncle[N]
-Fondell, I will avenge all of you.[A][X]
+[Left][Load][0x5F][0x01]
+[Right][LoadCurrent]
+I am sick and tired of donating to Hex.[N]
+Instead, I'll donate this money to you.[A][X]
