@@ -59,11 +59,18 @@ LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 Baddies
 ENUN
+<<<<<<< HEAD
 FADU 10
+=======
+>>>>>>> refs/remotes/origin/master
 SETVAL 0xB 0xFFFFFFFF
 TUTORIALTEXTBOXSTART
 TEXTSHOW Ch22Opening
 TEXTEND
+<<<<<<< HEAD
+=======
+REMA
+>>>>>>> refs/remotes/origin/master
 GotoPrepScreen
 ENDA
  
