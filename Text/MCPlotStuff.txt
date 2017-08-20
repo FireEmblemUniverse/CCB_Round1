@@ -587,11 +587,12 @@ with your Aura![A][X]
 
 ## Ch22Opening
 So Void had finally recruited Kaga in an[N]
-arc that some would define as being as[AN]
-fillerific as the Valm Arc in Awakening,[N]
-she now returns to trying to obtain revenge[AN]
-against the Demon King. Taking a boat, she[N]
-approaches the homeland of the Donateenaries.[A][X]
+arc that some would define as being as[N]
+fillerific as the Valm Arc in Awakening,[AN]
+she now returns to trying to obtain[N]
+revenge against the Demon King.[AN]
+Taking a boat, she approaches the[N]
+homeland of the Donateenaries.[A][X]
 
 ## Ch22Ending
 [OpenRight][LoadVoid]

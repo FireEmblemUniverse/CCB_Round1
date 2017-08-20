@@ -94,10 +94,12 @@ LoadSummons: //every 3rd turn
  
 AfterPrepScreen:
 Text(Ch22AfterPrep)
+NoFade
 ENDA
 
 CastingSummon:
 Text(Ch22Summoning)
+NoFade
 ENDA
 
 // Manual Movement
