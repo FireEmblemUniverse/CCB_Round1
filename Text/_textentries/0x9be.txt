@@ -1,2 +1,2 @@
-Locktouch: Can open locks[N]
-without keys or picks.[X]
+Life and Death: +10 to[N]
+damage dealt and taken.[X]

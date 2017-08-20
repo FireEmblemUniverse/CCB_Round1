@@ -95,7 +95,6 @@ ENDB
 EndingScene:
 MUSC 0x31
 Text(Ch5Ending)
-//Text to be added later
 //yay we've won, etc; short ending scene where the new recruit pops in and says hi if she was recruited.
 
 MNCH 0x06
@@ -226,7 +225,6 @@ SoWhatsUpWithFrelianFoodAnyway:
 MUSC 0x2a
 STAL 10
 Text(RecruitingKirsten)
-//Text to be added later
 //main lord tries and fails to convince Kirsten how dumb it is to attack a castle on your own
 //when you're a pegagirl. Kirsten should talk like a British chav (uwotm8)
 

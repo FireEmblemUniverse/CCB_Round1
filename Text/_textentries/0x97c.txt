@@ -1,3 +1,2 @@
-Aether: First strike absorbs HP,[N]
-second strike negates defenses.[N]
-(Skill/2 % activation)[X]
+Sol: Restore damage dealt as HP.[N]
+(Skill % activation)[X]

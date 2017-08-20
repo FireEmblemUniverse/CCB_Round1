@@ -1,2 +1,2 @@
-Pass: Can move through[N]
-enemy units.[X]
+Acrobat: All traversable[N]
+terrain costs 1 movement.[X]

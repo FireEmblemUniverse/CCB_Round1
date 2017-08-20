@@ -94,8 +94,8 @@ Defeat Celica, Princess of[N]
 Sofia and commander of boats[X]
 
 ## Ch23Goal
-Seize the spooky scary[N]
-skeleton's throne[X]
+Seize spooky scary[N]
+skeleton's seat[X]
 
 ## Ch24Goal
 Snap Wendy out of her[N]

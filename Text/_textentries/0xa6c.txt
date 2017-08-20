@@ -1,5 +1,2 @@
-[MidLeft][LoadFace][0x60][0x1]
-Are you with Anna's army?[N]
-Please, take this, and drive[AN]
-away those invaders from that[N]
-Wars World place! Aptly named![AN][X]
+A girl with a familiar face.[N]
+Her love of money is quite strong.[X]

@@ -1,7 +1,7 @@
-# 0x0094
+#0x0094
 HP Bars[.][X]
 
-# 0x00B2
+#0x00B2
 Set health bar display[X]
 
 #0x518
@@ -41,6 +41,7 @@ Super Blitz[X]
 
 #include "chaptertext.txt"
 #include "MCPlotStuff.txt"
+#include "villages and recruitments.txt"
 #include "ch1.txt"
 #include "ch15_text.txt"
 
@@ -53,4 +54,3 @@ Defeat Celica, Princess of[N]
 Sofia and commander of boats[X]
 
 #include "blitz chapter goals.txt"
-

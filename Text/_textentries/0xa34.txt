@@ -1,2 +1,5 @@
-[Right][Load][0x01][0x01]
-PLACEHOLDER TEXT[A][X]
+[Right][LoadVoid]
+[Left][LoadLeeroy]
+With a tragic backstory, comes[N]
+redemption for the past. Such[AN]
+is the path of an edgy man.[A][X]

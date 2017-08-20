@@ -79,7 +79,7 @@ ENDA
 
 // Events
 RecruitCelicia:
-//No recruitment convo yet. Gaiden jokes about desert maps is what I'll probably do. Don't ya love mages being slow?
+Text(RecruitingCelicia) //No recruitment convo yet. Gaiden jokes about desert maps is what I'll probably do. Don't ya love mages being slow?
 CUSA Celicia
 NoFade
 ENDA

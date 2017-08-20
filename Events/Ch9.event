@@ -56,6 +56,7 @@ LOAD1 0x1 Enemies2
 ENUN
 LOAD1 0x1 Enemies3
 ENUN
+CAM1 Edge
 Text(Ch9Opening)
 GotoPrepScreen
 NoFade

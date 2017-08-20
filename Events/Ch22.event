@@ -24,6 +24,8 @@ UNIT
  
  
 TurnBasedEvents:
+TurnEventPlayer(0x00, AfterPrepScreen, 1)
+TurnEventEnemy(0x00, CastingSummon, 1)
 TURN 0x0 LoadSummons [1,255] 0x0
 END_MAIN
  
@@ -57,13 +59,19 @@ LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 Baddies
 ENUN
+<<<<<<< HEAD
+FADU 10
+=======
+>>>>>>> refs/remotes/origin/master
 SETVAL 0xB 0xFFFFFFFF
 TUTORIALTEXTBOXSTART
 TEXTSHOW Ch22Opening
 TEXTEND
+<<<<<<< HEAD
+=======
 REMA
+>>>>>>> refs/remotes/origin/master
 GotoPrepScreen
-NoFade
 ENDA
  
 EndingScene:
@@ -90,6 +98,14 @@ LoadSummons: //every 3rd turn
   NoFade
   ENDA
  
+AfterPrepScreen:
+Text(Ch22AfterPrep)
+ENDA
+
+CastingSummon:
+Text(Ch22Summoning)
+ENDA
+
 // Manual Movement
  
 // Scripted Fights

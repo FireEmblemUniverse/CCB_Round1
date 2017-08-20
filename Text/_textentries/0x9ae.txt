@@ -1,2 +1,2 @@
-Impale: Deal 4x damage.[N]
-(Skill % activation)[X]
+Paragon: Experience gain[N]
+is doubled.[X]

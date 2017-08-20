@@ -134,6 +134,7 @@ NoFade
 ENDA
 
 EndingScene:
+Text(Ch8Ending)
 MNCH 0x9
 NoFade
 ENDA

@@ -1,2 +1,2 @@
-Tomefaire: +4 damage[N]
-when equipping a tome.[X]
+Bowfaire: +4 damage[N]
+when equipping a bow.[X]

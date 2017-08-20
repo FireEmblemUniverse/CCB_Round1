@@ -5,7 +5,6 @@ and took over my country![AN]
 To get to him I need[N]
 to go through you![A][X]
 
-
 ##Ch3Start
 [MidRight][LoadFace][0x4][0x1]
 [MidLeft][LoadFace][0x2][0x1]
@@ -54,18 +53,6 @@ halberds, poleaxes, and more[AN]
 cause lots of trouble for you.[N]
 No matter. Onwards we go![A][X]
 
-##Ch4Intro
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##C7LeftVillageText
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##C7RightVillageText
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
 ##Ch10PreBattleText1
 [MidLeft][LoadFace][0x2][0x1]
 Hold! There are enemies nearby.[AN]
@@ -97,14 +84,6 @@ a hand in bringing about his end.[AN]
 Well, I don't see why not.[N]
 Welcome abroad, Samson![A][X]
 
-##Ch10House1Text
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch10House2Text
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
 ##SamsonRecText
 [MidLeft][LoadFace][0x2][0x1]
 [MidRight][LoadFace][0x16][0x1]
@@ -125,49 +104,10 @@ from the throne room's gold tiles to the[A][N]
 main battleground, so make sure to check[N]
 out the threats that are up there too![A][X]
 
-##Ch12RecruitTalk
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch14TalkEvent
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##AnnaTwoGet
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch15Start
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch15StartContinued
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch15End
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
 
 ##Ch15AmbushWarning
 [MidLeft][LoadFace][0x2][0x1]
 Ambush coming![A][X]
-
-##Ch15VillageStuff
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch15TopHouseText
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##Ch15BottomHouseText
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##RecruitJakeTalk
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
 
 ##Ch21Start
 [MidLeft][LoadFace][0x2][0x1]

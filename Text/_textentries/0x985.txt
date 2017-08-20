@@ -1,2 +1,2 @@
-Pavise: Nullify a physical attack.[N]
+Aegis: Nullify a magic attack.[N]
 (Skill % activation)[X]

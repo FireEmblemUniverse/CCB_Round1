@@ -1,2 +1,2 @@
-Natural Cover: -3 damage taken[N]
-when on terrain with effects.[X]
+Elbow Room: +3 damage dealt[N]
+when on open terrain.[X]

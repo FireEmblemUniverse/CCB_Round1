@@ -115,6 +115,7 @@ LOAD1 0x0 Reinforcements1
 ENUN
 LOAD1 0x0 Reinforcements2
 ENUN
+FADU 10
 SETVAL 0xB 0xFFFFFFFF
 TUTORIALTEXTBOXSTART
 TEXTSHOW Ch17Opening
@@ -127,6 +128,7 @@ ENDA
 CallNewUnit:
 LOAD1 0x0 NewUnit
 ENUN
+Text(RecruitingRogueAnna)
 ENDA
 
 

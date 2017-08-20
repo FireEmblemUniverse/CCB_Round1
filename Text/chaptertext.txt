@@ -1,4 +1,4 @@
-##Ch0IntroTalk
+## Ch0IntroTalk
 [MidLeft][LoadFace][0x2][0x1]
 The Demon King killed my family[N]
 and took over my country![AN]
@@ -53,18 +53,6 @@ halberds, poleaxes, and more[AN]
 cause lots of trouble for you.[N]
 No matter. Onwards we go![A][X]
 
-##Ch4Intro
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##C7LeftVillageText
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
-##C7RightVillageText
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
-
 ##Ch8Start1
 [MidLeft][LoadPrine]
 Okay, let's try one more time...[AN]
@@ -103,7 +91,7 @@ leave me alone, will you?[A][X]
 [MidLeft][LoadFace][0x5B][0x01]
 Aw man, did you mess up my garden[N]
 on your way in here?[AN]
-I spend so much time making[N]
+I spent so much time making[N]
 it look nice too...[AN]
 Well, I guess I won't need[N]
 this anymore. I was going to[AN]
@@ -153,36 +141,52 @@ Well, I don't see why not.[N]
 Welcome aboard, Samson![A][X]
 
 ##Ch10House1Text
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+[Right][LoadCurrent]
+[MidLeft][LoadFace][0x5E][0x1]
+That Samson fellow means well,[N]
+but he got confused and is with[AN]
+the Donateenaries. You might be[N]
+able to get him to stand down.[A][X]
 
 ##Ch10House2Text
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+[Right][LoadCurrent]
+Seems like nobody's home.[A][X]
 
 ##SamsonRecText
 [MidLeft][LoadFace][0x2][0x1]
 [MidRight][LoadFace][0x16][0x1]
 [OpenMidLeft]
-Hey! Are you fighitng those[N]
+Hey! Are you fighting those[N]
 people too?[AN]
 [OpenMidRight]
 Who asks?[A] Wait, that's not[N]
 important right now.[A] You're clearly[N]
 not one of those people.[AN]
-I will fiight alongside you for[N]
-this battle.[AN]
-[A][X]
+I will fight alongside you for[N]
+this battle.[A][X]
 
 ##Arve_Event
-[MidRight][LoadFace][0x18][0x01]The Travel system will pull any enemies[N]
+[MidRight][LoadFace][0x18][0x01]
+The Travel System will pull any enemies[N]
 from the throne room's gold tiles to the[A][N]
 main battleground, so make sure to check[N]
 out the threats that are up there too![A][X]
 
 ##Ch12RecruitTalk
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+[Left][LoadTye]
+[Right][LoadCurrent]
+Hey, you there! Do you know[N]
+know Tim and Tam? I hate them.[AN]
+I am their archenemy! And some[N]
+day, I will prove myself the[AN]
+strongest armour knight there[N]
+is in the world! What fools they[AN]
+are to become fighters. And I[N]
+thought Tam was going to be a[AN]
+shaman and Timathan something[N]
+interesting, but no. Boring[AN]
+fighters. Allow me to travel[N]
+with you, so I can one-up them.[AN][X]
 
 ##Ch13VillageText
 [MidRight][LoadCurrent]
@@ -198,8 +202,15 @@ stupid old boots![AN]
 Forget this! I'm going home.[A][X]
 
 ##Ch14TalkEvent
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+[Right][LoadCurrent]
+[Left][LoadEevster]
+I am Eevster, the King of the Basement![AN]
+Or, I was. I got dethroned by that[N]
+Carlyle fool. Some loyal Basement men[AN]
+are fighting with me, but the rest of[N]
+those soldiers are traitors to the realm.[AN]
+Help me reclaim control of the Basement,[N]
+and I might help you out down the line.[A][X]
 
 ##Ch16NikitaAppears
 [MidLeft][LoadVoid]
@@ -207,7 +218,7 @@ This text is a placeholder![A][X]
 I'm Nikita. Don't get me mixed[N]
 up with that impostor there.[AN]
 Also there are enemies[N]
-approaching from the south .[A][X]
+approaching from the south.[A][X]
 
 ##KagaJoins
 [MidRight][LoadFace][0x23][0x1]
@@ -240,8 +251,13 @@ Ryuu ga Kaga teki wo kurau![A]
 Maeda no ken wo kurae![A][X]
 
 ##RecruitJakeTalk
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+[MidLeft][LoadJake]
+I'm Jake, Anna's husband and[N]
+reclassing pioneer. What?[AN]
+You have three Annas in your[N]
+army? Then you will be able[AN]
+to perform the legendary...[N]
+[Red]Triangle Attack!![Red][A][X]
 
 ##Ch21Start
 [MidLeft][LoadFace][0x2][0x1]
@@ -284,28 +300,73 @@ That's my final offer.[A][Invert][X]
 
 ##Ch24TopVill
 [MidRight][LoadCurrent]
-[MidLeft][LoadFace][0x5F][0x01]
-You'll want this for later![A][X]
+[MidLeft][LoadFace][0x5C][0x01]
+Everyone here has gone delusional.[N]
+Gwendolyn the Great Knight? Pah![AN]
+I remember her being Wendy the[N]
+Useless Armour Knight! Someone[AN]
+call Sophia in too, she'll want to[N]
+see this mess unfold as well.[AN][X]
 
 ##Ch24LeftVill
 [MidRight][LoadCurrent]
-[MidLeft][LoadFace][0x5F][0x01]
-You'll want this for later![A][X]
+[MidLeft][LoadFace][0x5D][0x01]
+Apparently Gwendy has gathered[N]
+an army of trainees. Do something[AN]
+about it! Appearences can be very[N]
+decieving; there's supers there![AN][X]
 
 ##Ch26Village1
 [MidRight][LoadCurrent]
-[MidLeft][LoadFace][0x5F][0x01]
-You'll want this for later![A][X]
+[MidLeft][LoadFace][0x5E][0x01]
+This place is named after one[N]
+of Kaga's decendants, Darrman.[AN]
+Legend has it he had five children[N]
+for his five Fire Emblem games.[AN]
+Darrman for Dark Dragon and the[N]
+Sword of Light, the first game.[AN]
+His alter ego, MCProductions, for[N]
+Mystery of the Emblem, the third.[AN]
+Bookofholsety, who caused waves[N]
+in Genealogy of the Holy War.[AN]
+Zane Avernanthy, a skeleton of[N]
+the legendary Thracia 776.[AN]
+However, the child of the oft[N]
+forgotten Gaiden has taken after[AN]
+the game and has been lost to[N]
+time. Who could she even be?[A][X]
 
 ##Ch26Village2
 [MidRight][LoadCurrent]
 [MidLeft][LoadFace][0x5F][0x01]
-You'll want this for later![A][X]
+Using notes from a Jugdralian hero,[N]
+Darrman then opened the first game's[AN]
+internals for the world to see. He[N]
+even discovered forgotten discussions[AN]
+about random things, and constructed[N]
+a brand new chapter. He worked with[AN]
+the other descendants of Kaga in his[N]
+endevaours, and he even stepped out[N]
+to translate modifications in other[AN]
+games. Recently, he left in order to[N]
+progress through "Fire Emblem Purgatory",[N]
+along with a girl called Lin. Now I[AN]
+don't know about you, but there's[N]
+something about her that reminds me[AN]
+of... Oh, I'm sorry for rambling for[N]
+so long. Take this as an apology.[AN][X]
 
 ##Ch26Village3
 [MidRight][LoadCurrent]
-[MidLeft][LoadFace][0x5F][0x01]
-You'll want this for later![A][X]
+[MidLeft][LoadFace][0x61][0x01]
+The Donateenaries have trashed[N]
+the neighbourhood and are doing[AN]
+things that would make the boss[N]
+really, really annoyed. Stuff like[AN]
+renaming the castle the Central[N]
+Evil Domain. Come on, can't they[AN]
+at least pretend to act like good[N]
+people, instead of scum?[A][X]
 
 ##Ch29IntroHelp
 The goddess of vengeance[N]
@@ -351,4 +412,3 @@ again know peace.[A][X]
 [MidRight][LoadVoid]
 It's over, Demon King![N]
 I have the high ground.[A][X]
-

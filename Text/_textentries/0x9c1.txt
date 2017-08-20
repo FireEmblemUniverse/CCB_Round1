@@ -1,2 +1,2 @@
-Opportunist: +4 damage[N]
-if the foe cannot counter.[X]
+Intimidate: -10 Avoid to[N]
+all enemies within 2 tiles.[X]

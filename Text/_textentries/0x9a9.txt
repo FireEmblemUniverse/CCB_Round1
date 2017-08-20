@@ -1,2 +1,2 @@
-Spur Defense: Adjacent allies[N]
-take -4 physical damage.[X]
+Spur Speed: Adjacent allies[N]
+gain +4 Attack Speed.[X]

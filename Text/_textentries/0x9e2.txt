@@ -1,2 +1,2 @@
-Chivalry: When foe is at full HP,[N]
-attack and def/res +2.[X]
+Critical Force: Base critical is[N]
+Skl * 1.5.[X]
