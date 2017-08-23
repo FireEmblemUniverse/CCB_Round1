@@ -74,6 +74,10 @@ NoCrit:
 mov r0, #4
 ldrsh r0, [r7, r0]
 add r0, r1 @add ignis damage
+cmp r0, #0x7f @damage cap of 127
+ble NotCap
+mov r0, #0x7f
+NotCap:
 strh r0, [r7, #4] @final damage + ignis damage
 
 End:

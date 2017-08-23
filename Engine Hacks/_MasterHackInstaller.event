@@ -60,6 +60,16 @@ POP
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 //start of Free space
 
+  //Monster Weapon display fix
+  PUSH
+  ORG $16e20
+  #incbin "ASM/Monsterweapon.dmp"
+  ORG $892f2
+  BYTE 6
+  ORG $1e7fc
+  BYTE 0xC
+  POP
+
   //Modular Minimug box
   // #include "MMMB/Modular MMB Installer.event"
 

@@ -33,7 +33,7 @@ TurnEventPlayer(0x0, LoadZigludo, 1)
 END_MAIN
  
 CharacterBasedEvents:
-CharacterEventBothWays(0xD,SigurdConvo,Void,Zigludo)
+// CharacterEventBothWays(0xD,SigurdConvo,Void,Zigludo) //he starts as an ally
 END_MAIN
  
 LocationBasedEvents:
@@ -87,12 +87,13 @@ ENDA
  
 // Events
 LoadZigludo:
+Text(RecruitingSigurd)
 ReinforcementEvent(ZIGLUDO)
 ENDA
 
-SigurdConvo:
-Text(RecruitingSigurd)
-ENDA
+// SigurdConvo:
+// Text(RecruitingSigurd)
+// ENDA
 
 // Manual Movement
  
@@ -117,7 +118,7 @@ UNIT Zigludo Paladin 0x00 Level(10, Ally, 1) [17,13] 0x00 0x00 0x0 0x00 [SilverS
 UNIT
  
 Baddiesdown1:
-UNIT 0x61 Dancer 0x61 Level(8, Enemy, 1) [15,21] 0x02 0x00 0x0 0x00 [Thunder, Bolting, Elfire, OrionsBolt] NeverMoveAI //Meriah
+UNIT Meriah Dancer 0x61 Level(8, Enemy, 1) [15,21] 0x02 0x00 0x0 0x00 [Thunder, Bolting, Elfire, OrionsBolt] NeverMoveAI //Meriah
 UNIT 0xa7 0x05 0x61 Level(18, Enemy, 1) [12,23] 0x00 0x00 0x0 0x00 [0x1C] AttackInRangeAI
 UNIT 0xa7 0x05 0x61 Level(18, Enemy, 1) [14,23] 0x00 0x00 0x0 0x00 [0x1C] AttackInRangeAI
 UNIT 0xa7 0x05 0x61 Level(18, Enemy, 1) [12,20] 0x00 0x00 0x0 0x00 [0x1C] AttackInRangeAI

@@ -56,6 +56,11 @@
 
 #define Mark 36
 
+#define Lyria 0x60
+#define Meriah 0x61
+#define Plum 0x62
+#define Yuni 0x63
+
 #define Ch8Boss 0x4D
 #define Ch8Generic 0x99
 #define Ch21Boss 0xC5
