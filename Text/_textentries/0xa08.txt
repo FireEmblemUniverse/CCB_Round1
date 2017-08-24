@@ -1,5 +1,5 @@
-[Left][LoadTye]
 [Right][LoadCurrent]
+[Left][LoadTye]
 Hey, you there! Do you know[N]
 know Tim and Tam? I hate them.[AN]
 I am their archenemy! And some[N]

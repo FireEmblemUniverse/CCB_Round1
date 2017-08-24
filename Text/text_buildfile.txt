@@ -44,6 +44,7 @@ Super Blitz[X]
 #include "villages and recruitments.txt"
 #include "ch1.txt"
 #include "ch15_text.txt"
+#include "DeathQuotes.txt"
 
 ## Ch21Goal
 Slay Tatara of the Doma[N]
