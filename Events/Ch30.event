@@ -279,8 +279,8 @@ ASMC 0x30185 //clears map tilesets?
 EVBIT_F 0x2
 STAL 120
 ASMC 0xB8175 //turn counts display
-// STAL 1
-// CALL 0xA0036C //Character Endings
+STAL 1
+CALL 0xA0036C //Character Endings
 STAL 90
 MNTS 0x0 //return to title screen
 ENDA

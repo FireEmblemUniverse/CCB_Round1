@@ -41,6 +41,7 @@ for one turn[X]
 #include "ch1.txt"
 #include "ch15_text.txt"
 #include "DeathQuotes.txt"
+#include "Ending.txt"
 
 ## Ch21Goal
 Slay Tatara of the Doma[N]
