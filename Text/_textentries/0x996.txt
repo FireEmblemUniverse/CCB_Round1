@@ -1,2 +1,2 @@
-Bowfaire: +4 damage[N]
-when equipping a bow.[X]
+Axebreaker: +50 Hit/Avo when[N]
+enemy has an axe equipped.[X]

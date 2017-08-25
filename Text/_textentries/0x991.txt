@@ -1,2 +1,3 @@
-Countermagic: Reflect magic damage[N]
-when attacked at 1-2 range.[X]
+Aether: First strike absorbs HP,[N]
+second strike negates defenses.[N]
+(Skill/2 % activation)[X]

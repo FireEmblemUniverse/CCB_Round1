@@ -1,2 +1,2 @@
-Pursuit: When under attack,[N]
-attack speed +2. [X]
+Anathema: -10 Avoid/Dodge to all[N]
+enemies within 3 tiles.[X]

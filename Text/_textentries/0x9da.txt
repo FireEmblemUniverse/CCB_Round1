@@ -1,3 +1,2 @@
-Nice Personality: This unit has[N]
-a deep and engaging character,[N]
-bursting at the seams with development.[X]
+Savage Blow: After attacking, enemies[N]
+within 2 tiles take 20% damage.[X]

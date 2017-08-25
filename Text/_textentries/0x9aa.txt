@@ -1,2 +1,2 @@
-Spur Defense: Adjacent allies[N]
-take -4 physical damage.[X]
+Bowfaire: +4 damage[N]
+when equipping a bow.[X]

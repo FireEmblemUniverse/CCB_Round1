@@ -1,3 +1,2 @@
-Aether: First strike absorbs HP,[N]
-second strike negates defenses.[N]
-(Skill/2 % activation)[X]
+Freshened up and ready for a rematch,[N]
+he once again blocks Void's path.[X]

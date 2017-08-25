@@ -1,1 +1,3 @@
-Note: There are no Secret Shops here.[X]
+This is truly a tough battle.[N]
+Void goes deeper into Donateenary[AN]
+territory. Can she win?[A][X]

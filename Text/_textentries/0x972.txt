@@ -1,2 +1,2 @@
-Wary Fighter: Unit cannot[N]
-double or be doubled.[X]
+A powerful mage fighter lurking[N]
+among the Donateenary ranks.[X]

@@ -1,2 +1,2 @@
-Spur Resistance: Adjacent allies[N]
-take -4 magical damage.[X]
+Tomefaire: +4 damage[N]
+when equipping a tome.[X]

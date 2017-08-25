@@ -18,6 +18,7 @@ Learned  [X]
 
 #include "unitmenu_text.txt"
 
+
 #0x903 ControlONMessage
 #first text ID in the free block
 Control CPU Units: ON[X]
@@ -29,16 +30,11 @@ Control CPU Units: OFF[X]
 Freeze all enemies[N]
 for one turn[X]
 
-##Name_BlitzLance
-Blitz Lance[X]
-
-##Name_SuperBlitzLance
-Super Blitz[X]
-
 #include "unitnames.txt"
 
 #include "skilldesc_text.txt"
 
+#include "items.txt"
 #include "chaptertext.txt"
 #include "MCPlotStuff.txt"
 #include "villages and recruitments.txt"
@@ -51,7 +47,7 @@ Slay Tatara of the Doma[N]
 Faithful, not Doot![X]
 
 ## Ch22Goal
-Defeat Celica, Princess of[N]
-Sofia and commander of boats[X]
+Defeat Celica, lady[N]
+of the boats[X]
 
 #include "blitz chapter goals.txt"

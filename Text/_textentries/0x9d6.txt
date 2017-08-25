@@ -1,2 +1,2 @@
-Seal Defense: Debuff opponent's Def[N]
-by 6 after combat. (Recover 1/turn)[X]
+Opportunist: +4 damage[N]
+if the foe cannot counter.[X]

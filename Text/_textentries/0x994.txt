@@ -1,2 +1,2 @@
-Lancefaire: +4 damage[N]
-when equipping a lance.[X]
+Swordbreaker: +50 Hit/Avo when[N]
+enemy has a sword equipped.[X]

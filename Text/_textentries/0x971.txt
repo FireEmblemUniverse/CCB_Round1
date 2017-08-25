@@ -1,2 +1,2 @@
-Canto+: Can move again after[N]
-attacking and other actions.[X]
+Yet another Donateenary commander,[N]
+who is attacking yet another town.[X]

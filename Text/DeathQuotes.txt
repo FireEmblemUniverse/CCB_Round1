@@ -6,7 +6,7 @@ Leeroy...[A][CloseEyes][X]
 ## LeeroyDeath
 [OpenMidRight][LoadLeeroy]
 Ah... with this wound... Forgive[N]
-me, your highness.[N]
+me, your highness.[AN]
 I must retreat.[A][X]
 
 ## TimDeath
@@ -16,7 +16,7 @@ Tam, live on brother...[A][CloseEyes][X]
 
 ## TimDeathifTamDead
 [OpenMidRight][LoadTim]
-Why me.... Tam, I'm coming...[A][CloseEyes][X]
+Why me... Tam, I'm coming...[A][CloseEyes][X]
 
 ## TamDeath
 [OpenMidRight][LoadTam]
@@ -34,8 +34,9 @@ material possessions mean nothing...[A][CloseEyes][X]
 
 ## BedeDeath
 [OpenMidRight][LoadBede]
-Ah... I cannot easily heal this wound.[N]
-Forgive me Void, I must retreat.[A][X]
+Ah... I cannot easily heal this[N]
+wound. Forgive me, Void.[AN]
+I must retreat.[A][X]
 
 ## JayDeath
 [OpenMidRight][LoadJay]
@@ -162,5 +163,5 @@ alone anymore...[A][CloseEyes][X]
 
 ## MarkDeath
 [OpenMidRight][LoadMark]
-...This is just punishment for...
-seeking revengeance...[A][CloseEyes][X]
+...This is just punishment[N]
+for... seeking revengeance...[A][CloseEyes][X]

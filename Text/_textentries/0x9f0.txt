@@ -1,2 +1,2 @@
-Even Rhythm: +10 Hit and Avoid[N]
-on even numbered turns.[X]
+Wind Disciple: +10 Hit and[N]
+Avoid when HP is not at max.[X]

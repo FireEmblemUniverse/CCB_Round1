@@ -1,2 +1,2 @@
-Impale: Deal 4x damage.[N]
-(Skill % activation)[X]
+Dance: Refresh an ally unit[N]
+to let them act again.[X]

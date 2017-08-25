@@ -1,2 +1,2 @@
-Death Blow: +20 Crit[N]
-when initiating battle.[X]
+Provoke: Enemies are more[N]
+likely to target this unit.[X]

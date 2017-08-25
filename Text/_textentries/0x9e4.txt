@@ -1,2 +1,2 @@
-Pragmatic: When foe is not at full HP,[N]
-attack +3 and def/res+1.[X]
+Elbow Room: +3 damage dealt[N]
+when on open terrain.[X]

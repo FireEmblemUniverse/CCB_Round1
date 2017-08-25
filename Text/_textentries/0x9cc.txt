@@ -1,2 +1,2 @@
-Lily's Poise: Adjacent allies gain[N]
-+1/-3 damage dealt/received.[X]
+Rally Movement: +1 Move[N]
+to allies within 2 tiles.[X]

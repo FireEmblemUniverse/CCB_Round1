@@ -1,2 +1,3 @@
-Natural Cover: -3 damage taken[N]
-when on terrain with effects.[X]
+Ignis: Add Def/2 and Res/2[N]
+to damage dealt.[N]
+(Skill % activation)[X]

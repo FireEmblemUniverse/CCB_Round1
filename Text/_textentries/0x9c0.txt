@@ -1,2 +1,2 @@
-Lunge: Swap places with the[N]
-opponent after combat.[X]
+Nihil: Cancels the opponent's[N]
+skills in combat.[X]

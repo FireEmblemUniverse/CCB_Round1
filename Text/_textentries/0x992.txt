@@ -1,2 +1,2 @@
-Miracle: Survive a lethal[N]
-attack if HP > 50%.[X]
+Astra: 5 attacks at half damage.[N]
+(Skill % activation)[X]

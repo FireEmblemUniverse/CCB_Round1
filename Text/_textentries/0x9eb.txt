@@ -1,2 +1,2 @@
-Rightful Arch: Sets Skill[N]
-activation rate to 100%.[X]
+Seal Resistance: Debuff opponent's Res[N]
+by 6 after combat. (Recover 1/turn)[X]

@@ -1,2 +1,2 @@
-Fiery Blood: +4 damage[N]
-when HP is not at max.[X]
+Staff Savant: Maximum range[N]
+of staves is increased by 1.[X]

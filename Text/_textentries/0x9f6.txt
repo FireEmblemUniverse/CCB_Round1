@@ -1,2 +1,2 @@
-Swap: Allows unit to swap positions[N]
-with an adjacent ally.[X]
+Critical Force: Base critical is[N]
+Skl * 1.5.[X]
