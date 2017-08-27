@@ -1,0 +1,167 @@
+## VoidDeath
+[OpenMidRight][LoadVoid]
+But this... this can't be.[N]
+Leeroy...[A][CloseEyes][X]
+
+## LeeroyDeath
+[OpenMidRight][LoadLeeroy]
+Ah... with this wound... Forgive[N]
+me, your highness.[AN]
+I must retreat.[A][X]
+
+## TimDeath
+[OpenMidRight][LoadTim]
+Why me...[N]
+Tam, live on brother...[A][CloseEyes][X]
+
+## TimDeathifTamDead
+[OpenMidRight][LoadTim]
+Why me... Tam, I'm coming...[A][CloseEyes][X]
+
+## TamDeath
+[OpenMidRight][LoadTam]
+No...[N]
+Forgive me, Anna...[A][CloseEyes][X]
+
+## JeromeDeath
+[OpenMidRight][LoadJerome]
+And so I die like the rest...[A][CloseEyes][X]
+
+## Anna1Death
+[OpenMidRight][LoadMyrmAnna]
+It's true what they say... In the end,[N]
+material possessions mean nothing...[A][CloseEyes][X]
+
+## BedeDeath
+[OpenMidRight][LoadBede]
+Ah... I cannot easily heal this[N]
+wound. Forgive me, Void.[AN]
+I must retreat.[A][X]
+
+## JayDeath
+[OpenMidRight][LoadJay]
+It's Celice okay.[A][CloseEyes][X]
+
+## NotArchDeath
+[OpenMidRight][LoadArch]
+How the heck did you let lowkey the[N]
+best mage in the game die? I have never[N]
+fucking seen such incompentent fucking[N]
+playing in my entire life. I'd tell you[N]
+to git gud scrub, but that would at least[N] imply you were half assing this. This is[N]
+no assed, absolutely zero asses were put[N]
+into your playing skill. Just watch, here[N]
+I am slowly bleeding to death because you[N]
+were bad at math. How fucking terrible are[N]
+you at Fire Emblem anyway? Jeez...[CloseEyes][X]
+
+## KirstenDeath
+[OpenMidRight][LoadKirsten]
+Bob... I feel...[N]
+cold...[A][CloseEyes][X]
+
+## BobDeath
+[OpenMidRight][LoadBob]
+Kirsten, stay strong...[A][CloseEyes][X]
+
+## RosheDeath
+[OpenMidRight][LoadRoshe]
+Lord Hardin...[A][CloseEyes][X]
+
+## PrineDeath
+[OpenMidRight][LoadPrine]
+I have lived my life as a knight,[N]
+and now I will die as one.[A][CloseEyes][X]
+
+## EdgeDeath
+[OpenMidRight][LoadEdge]
+Hmph, pathetic.[A][CloseEyes][X]
+
+## SamsonDeath
+[OpenMidRight][LoadSamson]
+Lady Void...[A][CloseEyes][X]
+
+## ArveDeath
+[OpenMidRight][LoadArve]
+No... not like this.[N]
+Samson, save me...[A][CloseEyes][X]
+
+## TyeDeath
+[OpenMidRight][LoadTye]
+Consider this knight proud[N]
+to die for his princess.[A][CloseEyes][X]
+
+## CeliciaDeath
+[OpenMidRight][LoadCelicia]
+No...[N]
+Arum, save me...[A][CloseEyes][X]
+
+## EevsterDeath
+[OpenMidRight][LoadEevster]
+Hello darkness, my old friend...[A][CloseEyes][X]
+
+## Anna2Death
+[OpenMidRight][LoadWyvAnna]
+Tam...[A][CloseEyes][X]
+
+## NikitaDeath
+[OpenMidRight][LoadNikita]
+Hmph, of all ways to die...[A][CloseEyes][X]
+
+## Anna3Death
+[OpenMidRight][LoadRogueAnna]
+Penny on a dead woman's eyes...[N]
+Please...[A][CloseEyes][X]
+
+## EdgeworthDeath
+[OpenMidRight][LoadEdgeworth]
+Care to bail me out again, Wright...?[A][CloseEyes][X]
+
+## SigurdDeath
+[OpenMidRight][LoadSigurd]
+Alvis, YOU DASTARD!![A][CloseEyes][X]
+
+## KagaDeath
+[OpenMidRight][LoadKaga]
+Fuck this shit, I'm out.[A][X]
+
+## DyuteDeath
+[OpenMidRight][LoadDyute]
+Nooo- I don't want to die yet...[A][CloseEyes][X]
+
+## CelicaDeath
+[OpenMidRight][LoadCelica]
+In the end, I couldn't save[N]
+anyone. Sorry, Alm...[A][CloseEyes][X]
+
+## DoowileDeath
+[OpenMidRight][LoadDoowile]
+...em eivgroF ...esaelP[N]
+...rethaF ...rethoM[A][CloseEyes][X]
+
+## FlorinaDeath
+[OpenMidRight][LoadFlorina]
+You'll regret this...[A][CloseEyes][X]
+
+## BjornDeath
+[OpenMidRight][LoadBjorn]
+Were it so easy...[A][CloseEyes][X]
+
+## JakeDeath
+[OpenMidRight][LoadJake]
+Anna 367, or was it 637,[N]
+I still... love you.[A][CloseEyes][X]
+
+## MarthDeath
+[OpenMidRight][LoadMarth]
+Forgive me, my friends...[A][CloseEyes][X]
+
+## ChikiDeath
+[OpenMidRight][LoadChiki]
+I won't be...[N]
+alone anymore...[A][CloseEyes][X]
+
+## MarkDeath
+[OpenMidRight][LoadMark]
+...This is just punishment[N]
+for... seeking revengeance...[A][CloseEyes][X]

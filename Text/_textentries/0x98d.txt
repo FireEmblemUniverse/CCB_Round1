@@ -1,2 +1,2 @@
-Vantage: If HP < 50%,[N]
-strike first when attacked.[X]
+Lethality: Instantly kill opponent.[N]
+(Skill/2 % activation)[X]

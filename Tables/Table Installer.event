@@ -28,6 +28,10 @@
 
 #include "FE8 Nightmare modules\Class & Character editors\FE8 Walking Sounds Editor.event"
 
+#include "FE8 Nightmare modules\Ending editor\Ending Title Editor.event"
+
+#include "FE8 Nightmare modules\Ending editor\EndingsEditor.event"
+
 #include "FE8 Nightmare modules\Item editors\FE8 Item Editor.event"
 
 #include "FE8 Nightmare modules\Item editors\FE8 Item Effect Pointer Editor.event"

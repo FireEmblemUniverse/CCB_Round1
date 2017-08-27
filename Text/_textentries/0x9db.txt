@@ -1,2 +1,2 @@
-Quick Draw: +4 Damage[N]
-when initiating battle.[X]
+Relief: Recover 20% HP each turn if[N]
+there are no allies within 2 tiles.[X]

@@ -1,2 +1,2 @@
-Galeforce: Move again after[N]
-attacking and defeating an enemy.[X]
+Darting Blow: +5 Attack Speed[N]
+when initiating battle.[X]

@@ -1,2 +1,2 @@
-Relief: Recover 20% HP each turn if[N]
-there are no allies within 2 tiles.[X]
+Rally Skill: +4 Skill[N]
+to allies within 2 tiles.[X]

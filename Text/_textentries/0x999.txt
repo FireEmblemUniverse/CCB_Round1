@@ -1,2 +1,2 @@
-Slayer: Deal effective damage[N]
-to monster units.[X]
+Aegis: Nullify a magic attack.[N]
+(Skill % activation)[X]

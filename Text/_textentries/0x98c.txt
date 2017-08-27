@@ -1,2 +1,2 @@
-Armored Blow: +10 Def[N]
-when initiating battle.[X]
+Cunning: Can steal items, pick[N]
+locks, and see in darkness.[X]

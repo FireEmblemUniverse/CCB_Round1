@@ -1,2 +1,4 @@
-Defeat Celica, Princess of[N]
-Sofia and commander of boats[X]
+[OpenMidRight][LoadLeeroy]
+Ah... with this wound... Forgive[N]
+me, your highness.[N]
+I must retreat.[A][X]

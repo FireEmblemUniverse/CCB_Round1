@@ -1,2 +1,2 @@
-[Right][LoadCurrent]
-Seems like nobody's home.[A][X]
+Quick Burn: +15 Hit and Avoid.[N]
+This bonus decreases each turn.[X]

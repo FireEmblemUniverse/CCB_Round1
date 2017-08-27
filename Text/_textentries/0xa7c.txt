@@ -1,3 +1,4 @@
-[MidLeft][LoadFace][0x61][0x1]
-The hell you doing here?[N]
-Leave me be, and scram![AN][X]
+[Left][Load][0x5F][0x01]
+[Right][LoadCurrent]
+I am sick and tired of donating to Hex.[N]
+Instead, I'll donate this money to you.[A][X]

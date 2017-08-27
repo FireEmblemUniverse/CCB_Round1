@@ -1,2 +1,2 @@
-Patience: When under[N]
-attack, avoid +10. [X]
+Bond: All allies within 3 tiles[N]
+recover 10% HP each turn.[X]

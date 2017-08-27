@@ -1,2 +1,2 @@
-Bond: All allies within 3 tiles[N]
-recover 10% HP each turn.[X]
+Rally Defense: +4 Def to[N]
+allies within 2 tiles.[X]

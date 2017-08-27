@@ -1,2 +1,2 @@
-Aegis: Nullify a magic attack.[N]
-(Skill % activation)[X]
+Canto+: Can move again after[N]
+attacking and other actions.[X]

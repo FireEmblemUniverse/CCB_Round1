@@ -1,2 +1,2 @@
-Foreign Princess: Foreign army units[N]
-take -2/+2 damage dealt/taken.[X]
+Rally Strength: +4 Str[N]
+to allies within 2 tiles.[X]

@@ -1,2 +1,2 @@
-Axefaire: +4 damage[N]
-when equipping an axe.[X]
+Lancebreaker: +50 Hit/Avo when[N]
+enemy has a lance equipped.[X]

@@ -1,2 +1,3 @@
-Lucky Seven: +20 Hit and Avoid[N]
-until the 7th turn.[X]
+Nice Personality: This unit has[N]
+a deep and engaging character,[N]
+bursting at the seams with development.[X]

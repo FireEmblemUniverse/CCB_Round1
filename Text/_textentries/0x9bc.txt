@@ -1,2 +1,2 @@
-Live to Serve: When healing[N]
-an ally, also heals self.[X]
+Spur Magic: Adjacent allies[N]
+deal +4 magical damage.[X]

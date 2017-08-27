@@ -1,1 +1,2 @@
-Celerity: Movement +2.[X]
+Bow Range +1: Maximum range[N]
+of equipped bows is increased.[X]

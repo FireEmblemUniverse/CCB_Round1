@@ -1,2 +1,2 @@
-Swordfaire: +4 damage[N]
-when equipping a sword.[X]
+Discipline: Weapon experience[N]
+gains are doubled.[X]

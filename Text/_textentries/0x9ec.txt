@@ -1,2 +1,2 @@
-Rightful King: +10% to[N]
-Skill activation rate.[X]
+Gamble: A reckless attack with[N]
+halved hit but doubled crit.[X]

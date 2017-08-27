@@ -1,2 +1,2 @@
-Counter: Reflect physical damage[N]
-when attacked at 1-2 range.[X]
+Sol: Restore damage dealt as HP.[N]
+(Skill % activation)[X]

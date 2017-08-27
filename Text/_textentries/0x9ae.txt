@@ -1,2 +1,2 @@
-Paragon: Experience gain[N]
-is doubled.[X]
+Summon: Can conjure a phantom[N]
+soldier to fight alongside you.[X]

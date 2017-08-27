@@ -1,2 +1,2 @@
-Armsthrift: Luck % chance to not[N]
-consume weapon durability.[X]
+Natural Cover: -3 damage taken[N]
+when on terrain with effects.[X]

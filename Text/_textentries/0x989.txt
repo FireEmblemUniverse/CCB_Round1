@@ -1,2 +1,2 @@
-Darting Blow: +5 Attack Speed[N]
-when initiating battle.[X]
+Mercy: Enemies are left[N]
+with at least 1 HP.[X]

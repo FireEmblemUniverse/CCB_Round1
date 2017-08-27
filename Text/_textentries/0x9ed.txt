@@ -1,2 +1,2 @@
-Rightful God: +30% to[N]
-Skill activation rate.[X]
+Dragon's Blood: Unit is able[N]
+to activate Dragon Veins.[X]

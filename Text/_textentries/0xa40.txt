@@ -1,5 +1,3 @@
-[OpenLeft][LoadLeeroy]
-[OpenRight][LoadVoid]
-Victory is had. Let's go![A]
-[Left]
-That was anti-climatic.[A][X]
+[MidRight][LoadVoid]
+It's over, Demon King![N]
+I have the high ground.[A][X]

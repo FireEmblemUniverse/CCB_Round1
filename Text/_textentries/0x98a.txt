@@ -1,2 +1,2 @@
-Warding Blow: +20 Res[N]
-when initiating battle.[X]
+Frenzy: For every 4 damage[N]
+taken, +1 to damage dealt.[X]

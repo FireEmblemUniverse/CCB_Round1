@@ -1,2 +1,2 @@
-Focus: +10 Critical if there are[N]
-no allies within 3 tiles.[X]
+Rally Luck: +4 Luck to[N]
+allies within 2 tiles.[X]

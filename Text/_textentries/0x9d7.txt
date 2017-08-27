@@ -1,2 +1,2 @@
-Seal Resistance: Debuff opponent's Res[N]
-by 6 after combat. (Recover 1/turn)[X]
+Trample: +5 damage to[N]
+unmounted units.[X]

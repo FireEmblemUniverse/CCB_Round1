@@ -1,2 +1,2 @@
-Reposition: Allows unit to pull an[N]
-adjacent ally to its opposite side.[X]
+Killing Machine: Total critical[N]
+rate is doubled.[X]

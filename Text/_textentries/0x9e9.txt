@@ -1,3 +1,2 @@
-Down with Arch: If the hit lands,[N]
-instantly kill the enemy unit.[N]
-(Only if name starts with "Arch")[X]
+Seal Luck: Debuff opponent's Luck[N]
+by 6 after combat. (Recover 1/turn)[X]

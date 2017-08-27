@@ -331,3 +331,89 @@ female thief... in days gone by.[X]
 
 ## Name_Anna
 Anna[X]
+
+## GenericName
+Soldier[X]
+
+## GenericDesc
+A soldier of the Donateenaries.[X]
+
+## ONeillDesc
+The commander of the mysterious[N]
+force that killed Void's family.[X]
+
+## BoneDesc
+Ruler of the Bone Hole. A shaman[N]
+able to use an axe in a pinch.[X]
+
+## ZontaDesc
+An incredibly powerful summoner,[N]
+commanding the Bad region's men.[X]
+
+## MurrayDesc
+A captain of the Donateenaries.[N]
+Obsessed with collecting donations.[X]
+
+## TiradoDesc
+Yet another Donateenary commander,[N]
+who is attacking yet another town.[X]
+
+## SelenaDesc
+A powerful mage fighter lurking[N]
+among the Donateenary ranks.[X]
+
+## PabloDesc
+A mountain man, commanding a[N]
+small expeditionary force.[X]
+
+## Pablo2Desc
+A mountain man, now assigned to the[N]
+desert after being beaten by Void.[X]
+
+## GhebDesc
+Once a vile man and the "hero" of[N]
+GhebFE, now a simple card player.[X]
+
+## BeranDesc
+A mage of the Donateenaries. A[N]
+sadistic man in a sadistic fort.[X]
+
+## AiasDesc
+A Donateenary commander assigned to[N]
+the desert. He is sick of all the sand.[X]
+
+## CarlyleDesc
+The new King of the Basement, over-[N]
+-throwing Eevster in a coup.[X]
+
+## OrsonDesc
+A suspiciously similar substitute[N]
+for Nikita, who is also very tired.[X]
+
+## LyonDesc
+A dracozombie guarding the lava cave.[N]
+As a human, he wielded dark magic.[X]
+
+## VigardeDesc
+The emperor of Grado, henchman of[N]
+Maeda, and forgot to put clothes on.[X]
+
+## CaellachDesc
+A Donateenary who controls Darrman's[N]
+Lakes. Obeys Maeda's names, like Ced.[X]
+
+## Orson2Desc
+Freshened up and ready for a rematch,[N]
+he once again blocks Void's path.[X]
+
+## MorvaDesc
+Commanding the Donateenaries' last[N]
+stand against Void, a loyal knight.[X]
+
+## Lyon2Desc
+The King of the Donateenaries. He[N]
+will only fight Void in single combat.[X]
+
+## Ch11BossDesc
+A monster controlling the Travel[N]
+System. Surprisingly intelligent.[X]
