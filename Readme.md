@@ -16,7 +16,6 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
 - Hold L to toggle animations on/off
 - Hold A to speed up unit movement
 - The movement arrow allows you to press A on allies and enemies 
-- If there are too many enemies on screen, turn off HP bars in the options to fix lag
 - FLASHY MODE: any hit that kills a boss becomes a critical
 - There is a certain secret code...
 
@@ -33,6 +32,7 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
 - Units without a weapon equipped will display Str instead of Mag, even if they are a staff user/magic unit
 - Astra in the arena will keep attacking thin air after the unit is dead
 - Turn count in the credits skips several chapters
+- B/W/L numbers in the endings are totally wrong
 - Most houses don't work (but some do)
 
 ## Skills learned on level up (by class):
