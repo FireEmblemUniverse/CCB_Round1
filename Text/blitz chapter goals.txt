@@ -74,8 +74,8 @@ Avoid corruption and[N]
 seize the throne[X]
 
 ## Ch18Goal
-(Rewrite when plot[N]
-is added in)[X]
+Defeat the mystery[N]
+faction's boss.[X]
 
 ## Ch19Goal
 By Zigludo's power,[N]
