@@ -1,2 +1,2 @@
-Reposition: Allows unit to pull an[N]
-adjacent ally to its opposite side.[X]
+Natural Cover: -3 damage taken[N]
+when on terrain with effects.[X]

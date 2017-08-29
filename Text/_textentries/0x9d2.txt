@@ -1,2 +1,2 @@
-Critical Force: Base critical is[N]
-Skl * 1.5.[X]
+Life and Death: +10 to[N]
+damage dealt and taken.[X]

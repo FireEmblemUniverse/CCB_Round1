@@ -1,3 +1,2 @@
-Aether: First strike absorbs HP,[N]
-second strike negates defenses.[N]
-(Skill/2 % activation)[X]
+The commander of the mysterious[N]
+force that killed Void's family.[X]

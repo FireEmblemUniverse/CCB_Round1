@@ -178,7 +178,7 @@ UNIT 0x80 General Caellach Level(12, Enemy, 1) [5,7] 0x00 0x00 0x0 0x00 [BraveAx
 UNIT 0x80 General Caellach Level(12, Enemy, 1) [13,9] 0x00 0x00 0x0 0x00 [BraveAxe, SilverLance, Runesword] NeverMoveAI 
 UNIT 0x80 General Caellach Level(12, Enemy, 1) [22,3] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] NeverMoveAI
 UNIT 0x80 General Caellach Level(12, Enemy, 1) [21,4] 0x00 0x00 0x0 0x00 [Tomahawk, Lancereaver, Longsword] NeverMoveAI 
-UNIT Caellach Hero 0x00 Level(16, Enemy, 0) [20,2] 0x02 0x00 0x0 0x00 [Garm, Swordslayer, SilverBlade, DelphiShield] NeverMoveAI 
+UNIT Caellach Hero 0x00 Level(16, Enemy, 0) [20,2] 0x02 0x00 0x0 0x00 [Garm, Tomahawk, SilverBlade, DelphiShield] NeverMoveAI 
 UNIT
 
 ALIGN 4
@@ -194,11 +194,17 @@ LOAD1 0x1 Badder
 ENUN
 LOAD1 0x1 Baddest
 ENUN
+FADU 10
+SETVAL 0xB 0xFFFFFFFF
+TUTORIALTEXTBOXSTART
+TEXTSHOW Ch26Opening
+TEXTEND
 GotoPrepScreen
 NoFade
 ENDA
 
 EndingScene:
+Text(Ch26Ending)
 MNCH 27
 ENDA
 

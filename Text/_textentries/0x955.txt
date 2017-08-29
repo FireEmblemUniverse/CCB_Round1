@@ -1,1 +1,2 @@
-Mr. Bones[X]
+Governor of the skeleton colony.[N]
+Detests all fleshy beings.[X]

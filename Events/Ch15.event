@@ -111,8 +111,10 @@ ENDA
 EventAfterExitingPrepScreen:
 LOAD1 0x1 Greens
 ENUN
+Write_Short($1E23, $202DF5A) //put brave axe in inventory
 Text(Ch15StartContinued)
 Text(Ch15GetTorches)
+//You can thank Circles for these.
 CALL $591f40
 SVAL 3 Torch
 GIVEITEMTO Void
@@ -128,42 +130,52 @@ ENDA
 
 TurnTwoReinforcements:
 LOAD1 0x1 T2Reinforcements
+NoFade
 ENDA
 
 TurnThreeReinforcements:
 LOAD1 0x1 T3Reinforcements
+NoFade
 ENDA
 
 TurnFourReinforcements:
 LOAD1 0x1 T4Reinforcements
+NoFade
 ENDA
 
 TurnFiveReinforcements:
 LOAD1 0x1 T5Reinforcements
+NoFade
 ENDA
 
 TurnTenReinforcements:
 LOAD1 0x1 T10Reinforcements
+NoFade
 ENDA
 
 TurnElevenReinforcements:
 LOAD1 0x1 T11Reinforcements
+NoFade
 ENDA
 
 TurnTwelveReinforcements:
 LOAD1 0x1 T12Reinforcements
+NoFade
 ENDA
 
 TurnThirteenReinforcements:
 LOAD1 0x1 T13Reinforcements
+NoFade
 ENDA
 
 TurnEighteenReinforcements:
 LOAD1 0x1 T18Reinforcements
+NoFade
 ENDA
 
 TurnNineteenReinforcements:
 LOAD1 0x1 T19Reinforcements
+NoFade
 ENDA
 
 TurnTwentyReinforcements:
@@ -193,14 +205,14 @@ ENDA
 Ch15TopHouse:
 Text(Ch15TopHouseText)
 REMA
-SVAL 0x3 ElysianWhip //set value to 0x21, which should be the silver axe
+SVAL 0x3 BodyRing //Used to be short spear, but DYUTE'S GETTING CON NOW
 GIVEITEMTO 0xFFFF //give it to the current unit... i think
 ENDA
 
 Ch15BottomHouse:
 Text(Ch15BottomHouseText)
 REMA
-SVAL 0x3 ShortSpear //i copied this from other events i wrote
+SVAL 0x3 ElysianWhip //i copied this from other events i wrote
 GIVEITEMTO 0xFFFF //give it to the current unit... i think
 ENDA
 
@@ -233,7 +245,7 @@ UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(1, Enemy, 1) [22,9] 0x2 0x0
 UNIT PegasusMessenger FalcoKnight Valter_Ch15_ Level(1, Enemy, 1) [23,18] 0x00 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI 
 UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(1, Enemy, 1) [21,18] 0x00 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI 
 UNIT PegasusMessenger WyvernLord Valter_Ch15_ Level(1, Enemy, 1) [20,9] 0x00 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI 
-UNIT Valter_Ch15_ Sniper Valter_Ch15_ Level(5, Enemy, 1) [31,17] 0x2 0x00 0x0 0x00 [KillerBow, Longbow, SecretBook] NeverMoveAI 
+UNIT Valter_Ch15_ Sniper Valter_Ch15_ Level(5, Enemy, 1) [31,17] 0x2 0x00 0x0 0x00 [KillerBow, Longbow, SecretBook] NeverMoveAI //Grit
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(5, Enemy, 1) [32,2] 0x00 0x00 0x0 0x00 [Ballista] AttackInRangeAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(5, Enemy, 1) [35,17] 0x00 0x00 0x0 0x00 [Ballista] AttackInRangeAI 
 UNIT PegasusMessenger Fleet Valter_Ch15_ Level(5, Enemy, 1) [27,28] 0x00 0x00 0x0 0x00 [Ballista] AttackInRangeAI 
@@ -285,7 +297,7 @@ UNIT RiverFolk Soldier AnnaWyv Level(15, NPC, 1) [4,9] 0x00 0x00 0x0 0x00 [Steel
 UNIT RiverFolk Soldier AnnaWyv Level(15, NPC, 1) [7,19] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
 UNIT RiverFolk Troubadour AnnaWyv Level(15, NPC, 1) [7,9] 0x00 0x00 0x0 0x00 [Mend, Physic] HealUnits 
 UNIT RiverFolk Troubadour AnnaWyv Level(15, NPC, 1) [2,12] 0x00 0x00 0x0 0x00 [Mend, Physic] HealUnits 
-UNIT RiverFolk General AnnaWyv Level(2, NPC, 1) [12,17] 0x00 0x00 0x0 0x00 [SilverLance, Spear] NeverMoveAI 
+UNIT RiverFolk General AnnaWyv Level(2, NPC, 1) [12,17] 0x00 0x00 0x0 0x00 [Hammer, Halberd, KillerAxe, Tomahawk] NeverMoveAI 
 UNIT RiverFolk Fleet AnnaWyv Level(10, NPC, 1) [1,18] 0x00 0x00 0x0 0x00 [KillerBallista] AttackInRangeAI 
 UNIT
 

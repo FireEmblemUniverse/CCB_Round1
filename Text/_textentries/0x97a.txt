@@ -1,2 +1,2 @@
-Warding Blow: +20 Res[N]
-when initiating battle.[X]
+A dracozombie guarding the lava cave.[N]
+As a human, he wielded dark magic.[X]

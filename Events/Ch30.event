@@ -274,12 +274,22 @@ POIN EpilogueEvents
 POP
 
 EpilogueEvents:
+SETVAL 0xB 0xC0011
+LOMA 0x1 //Load some map
+MUSC 0x42
+FADU 16
+Text(TrueEnding) //here as placeholder. 15 turn clear will be required.
+FADI 3
+_0x1328 0x7FFF //fade out music?
+REMOVEPORTRAITS
 ASMC 0x30185 //clears map tilesets?
 EVBIT_F 0x2
 STAL 120
+REMOVEPORTRAITS
 ASMC 0xB8175 //turn counts display
-// STAL 1
-// CALL 0xA0036C //Character Endings
+REMOVEPORTRAITS
+STAL 1
+CALL 0xA0036C //Character Endings
 STAL 90
 MNTS 0x0 //return to title screen
 ENDA

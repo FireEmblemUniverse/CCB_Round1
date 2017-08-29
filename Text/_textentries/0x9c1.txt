@@ -1,2 +1,2 @@
-Natural Cover: -3 damage taken[N]
-when on terrain with effects.[X]
+Nullify: Unit is protected[N]
+from all effective attacks.[X]

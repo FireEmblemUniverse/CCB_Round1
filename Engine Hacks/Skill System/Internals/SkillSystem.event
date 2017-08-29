@@ -22,8 +22,11 @@ ORG $a478c
 BYTE $70 $47
 ORG $a4a34
 BYTE $70 $47
-ORG $a4cfc
-BYTE $70 $47
+// ORG $a4cfc //breaks at credits
+// BYTE $70 $47
+
+// ORG $b6da8
+// SHORT $e053 //don't show bwl numbers at credits
 
 ORG $a464c //only save 1 byte when dying (as opposed to 3)
 BYTE 1

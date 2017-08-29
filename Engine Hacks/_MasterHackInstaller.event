@@ -60,8 +60,21 @@ POP
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 //start of Free space
 
+  //Monster Weapon display fix
+  PUSH
+  ORG $16e20
+  #incbin "ASM/Monsterweapon.dmp"
+  ORG $892f2
+  BYTE 6
+  ORG $1e7fc
+  BYTE 0xC
+  POP
+
   //Modular Minimug box
   // #include "MMMB/Modular MMB Installer.event"
+
+  //Weapon Rank display (anims on not compatible with skill learning)
+  // #include "FE8-Weapon Rank on Levelup/FE8-Weapon Rank on Levelup EA.event"
 
   //Portrait Height fix
   #include "Portrait Shift Table.event"

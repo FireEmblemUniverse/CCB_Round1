@@ -1,2 +1,2 @@
-Colossus: Triples Strength.[N]
-(Skill % activation)[X]
+Armored Blow: +10 Def[N]
+when initiating battle.[X]

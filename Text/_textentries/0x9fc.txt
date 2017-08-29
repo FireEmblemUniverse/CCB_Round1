@@ -1,4 +1,2 @@
-[MidRight][LoadFace][0x18][0x01]The Travel system will pull any enemies[N]
-from the throne room's gold tiles to the[A][N]
-main battleground, so make sure to check[N]
-out the threats that are up there too![A][X]
+Smite: Allows unit to push[N]
+other units two tiles away.[X]

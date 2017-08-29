@@ -1,2 +1,2 @@
-Galeforce: Move again after[N]
-attacking and defeating an enemy.[X]
+Lethality: Instantly kill opponent.[N]
+(Skill/2 % activation)[X]

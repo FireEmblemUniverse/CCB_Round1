@@ -1,3 +1,2 @@
-Down with Arch: If the hit lands,[N]
-instantly kill the enemy unit.[N]
-(Only if name starts with "Arch")[X]
+Foreign Princess: Foreign army units[N]
+take -2/+2 damage dealt/taken.[X]

@@ -1,2 +1,2 @@
-Pursuit: When under attack,[N]
-attack speed +2. [X]
+Staff Savant: Maximum range[N]
+of staves is increased by 1.[X]

@@ -1,2 +1,2 @@
-Swordfaire: +4 damage[N]
-when equipping a sword.[X]
+Acrobat: All traversable[N]
+terrain costs 1 movement.[X]

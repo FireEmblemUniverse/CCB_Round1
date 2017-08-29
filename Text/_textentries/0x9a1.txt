@@ -1,2 +1,2 @@
-Rally Strength: +4 Str[N]
-to allies within 2 tiles.[X]
+Vantage: If HP < 50%,[N]
+strike first when attacked.[X]

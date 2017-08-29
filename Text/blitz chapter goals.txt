@@ -1,0 +1,126 @@
+#0x1a2 PrologueGoal
+Slay all in your way[N]
+and seize the gate[X]
+
+## Ch1Goal
+Get the kid to the[N]
+village, then seize[X]
+
+## Ch2Goal
+Do Bede a favour and[N]
+seize the gate[X]
+
+## Ch3Goal
+Slay paladin Jenkins,[N]
+Leeroy's old enemy[X]
+
+## Ch4Goal
+The Donateenary[N]
+fort looms. Seize it[X]
+
+## Ch5Goal
+Fight through the[N]
+storm and seize[X]
+
+##
+No chapter here.[X]
+
+## Ch6Goal
+Beware of Zonta and[N]
+seize the throne[X]
+
+## Ch7Goal
+Kill Murray, stopping[N]
+his donation demands[X]
+
+## Ch8Goal
+Rout the enemy so[N]
+they leave Prine be[X]
+
+## Ch9Goal
+Avenge Edge's men by[N]
+seizing the gate[X]
+
+## Ch10Goal
+Rout all the soldiers[N]
+opposing our army[X]
+
+## Ch11Goal
+Fight through the[N]
+Travel System, seize[X]
+
+## Ch12Goal
+Defeat Gheb, even if[N]
+he means no harm[X]
+
+## Ch13Goal
+Rout the enemy. It's[N]
+almost like Arcadia...[X]
+
+## Ch14Goal
+Overthrow the new[N]
+King of the Basement[X]
+
+## Ch15Goal
+Seize the base of Blue[N]
+Moon's operations[X]
+
+## Ch16Goal
+Defeat Orson, Nikita's[N]
+evil duplicate[X]
+
+## Ch17Goal
+Avoid corruption and[N]
+seize the throne[X]
+
+## Ch18Goal
+Defeat the mystery[N]
+faction's boss.[X]
+
+## Ch19Goal
+By Zigludo's power,[N]
+seize Maeda's door[X]
+
+## Ch20Goal
+Kill Maeda, the one[N]
+who ruined Fire Emblem[X]
+
+##
+Slay Tatara of the Doma[N]
+Faithful, not Doot![X]
+
+##
+Defeat Celica, Princess of[N]
+Sofia and commander of boats[X]
+
+## Ch23Goal
+Seize spooky scary[N]
+skeleton's seat[X]
+
+## Ch24Goal
+Snap Wendy out of her[N]
+good unit delusions[X]
+
+## Ch25Goal
+Seize the throne and[N]
+stop Banana's plans[X]
+
+## Ch26Goal
+Swim in Darrman's[N]
+Lake, seize the gate[X]
+
+## Ch27Goal
+A convinent lake,[N]
+a convinent gate[X]
+
+## Ch28Goal
+Navigate the mess,[N]
+go seize the gate[X]
+
+#0x1B8 Ch29Goal
+Defeat the Beatles in[N]
+combat, then kill Lyon[X]
+
+## Ch30Goal
+Kill the Demon King, the[N]
+source of this mess[X]

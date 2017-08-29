@@ -1,2 +1,2 @@
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+Wind Disciple: +10 Hit and[N]
+Avoid when HP is not at max.[X]

@@ -1,2 +1,2 @@
-Slayer: Deal effective damage[N]
-to monster units.[X]
+Mercy: Enemies are left[N]
+with at least 1 HP.[X]

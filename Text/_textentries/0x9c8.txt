@@ -1,2 +1,2 @@
-Gamble: A reckless attack with[N]
-halved hit but doubled crit.[X]
+Rally Speed: +4 Spd to[N]
+allies within 2 tiles.[X]

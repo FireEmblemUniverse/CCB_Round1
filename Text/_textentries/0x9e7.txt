@@ -1,5 +1,2 @@
-[MidLeft][LoadFace][0x2][0x1]
-The Demon King killed my family[N]
-and took over my country![AN]
-To get to him I need[N]
-to go through you![A][X]
+Seal Skill: Debuff opponent's Skl[N]
+by 6 after combat. (Recover 1/turn)[X]

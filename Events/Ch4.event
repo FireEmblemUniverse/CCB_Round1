@@ -63,19 +63,21 @@ ENUN
 LOAD2 0x1 Units
 ENUN
 FADU 10
-Text(Ch4Intro)
+Text(Ch4Opening)
 SVAL 3 3000
 GIVEITEMTOMAIN 0 //give 3k gold
 NoFade
 ENDA
 
 EndingScene:
+Text(Ch4Ending)
 MNCH 5
 NoFade
 ENDA
 
 // Events
 RecruitNotArch:
+Text(Ch4NotArchRecruitment)
 LOAD1 0x1 NotArchGroup
 ENUN
 NoFade

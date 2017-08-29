@@ -1,0 +1,2 @@
+[Right][LoadCurrent]
+Hey, look! A thing![A][X]

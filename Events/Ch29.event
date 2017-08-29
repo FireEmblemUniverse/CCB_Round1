@@ -80,6 +80,7 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
+Text(Ch29Ending)
 MNC2 0x23
 NoFade
 ENDA
@@ -100,11 +101,7 @@ NoFade
 ENDA
 
 GibItem:
-CAM1(Void)
-FlashCursor(Void,60)
-SETVAL 0x3 0x85
-_GIVEITEMTO 0x1
-
+//To keep with plot, the Super Blitz has been moved.
 CenterTutorialTextBox
 TUTORIALTEXTBOXSTART
 TEXTSHOW Ch29IntroHelp

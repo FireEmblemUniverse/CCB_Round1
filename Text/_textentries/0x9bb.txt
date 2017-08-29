@@ -1,2 +1,2 @@
-Anathema: -10 Avoid/Dodge to all[N]
-enemies within 3 tiles.[X]
+Spur Strength: Adjacent allies[N]
+deal +4 physical damage.[X]

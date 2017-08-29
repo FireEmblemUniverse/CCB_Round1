@@ -1,2 +1,2 @@
-Counter: Reflect physical damage[N]
-when attacked at 1-2 range.[X]
+A monster controlling the Travel[N]
+System. Surprisingly intelligent.[X]

@@ -1,2 +1,2 @@
-Countermagic: Reflect magic damage[N]
-when attacked at 1-2 range.[X]
+Savior: Can rescue[N]
+without penalties.[X]

@@ -1,2 +1,2 @@
-Malefic Aura: Enemies within 2[N]
-tiles receive +2 magic damage.[X]
+Astra: 5 attacks at half damage.[N]
+(Skill % activation)[X]

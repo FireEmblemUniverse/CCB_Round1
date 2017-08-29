@@ -1,0 +1,4 @@
+[MidLeft][Invert]
+I knew you'd see it my way.[AN]
+As agreed, 10,000 Gold.[N]
+Don't spend it all at once![A][Invert][X]

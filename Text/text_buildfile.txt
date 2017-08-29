@@ -1,15 +1,12 @@
-# 0x0094
+#0x0094
 HP Bars[.][X]
 
-# 0x00B2
+#0x00B2
 Set health bar display[X]
 
 #0x518
 #was 'sick'
-Freeze[X]
-
-#0x3c9
-Freeze[X]
+Sleep[X]
 
 #include "ChapterNames.txt"
 
@@ -20,6 +17,7 @@ Learned  [X]
 #include "statscreen_text.txt"
 
 #include "unitmenu_text.txt"
+
 
 #0x903 ControlONMessage
 #first text ID in the free block
@@ -32,16 +30,25 @@ Control CPU Units: OFF[X]
 Freeze all enemies[N]
 for one turn[X]
 
-##Name_BlitzLance
-Blitz Lance[X]
-
-##Name_SuperBlitzLance
-Super Blitz[X]
-
 #include "unitnames.txt"
 
 #include "skilldesc_text.txt"
 
+#include "items.txt"
 #include "chaptertext.txt"
+#include "MCPlotStuff.txt"
+#include "villages and recruitments.txt"
 #include "ch1.txt"
 #include "ch15_text.txt"
+#include "DeathQuotes.txt"
+#include "Ending.txt"
+
+## Ch21Goal
+Slay Tatara of the Doma[N]
+Faithful, not Doot![X]
+
+## Ch22Goal
+Defeat Celica, lady[N]
+of the boats[X]
+
+#include "blitz chapter goals.txt"

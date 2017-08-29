@@ -1,2 +1,2 @@
-Moonbow: Enemy Def/Res is[N]
-reduced by 25%. Charge: 2[X]
+Opportunist: +4 damage[N]
+if the foe cannot counter.[X]

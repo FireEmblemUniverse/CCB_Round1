@@ -1,2 +1,2 @@
-Lancefaire: +4 damage[N]
-when equipping a lance.[X]
+Pass: Can move through[N]
+enemy units.[X]

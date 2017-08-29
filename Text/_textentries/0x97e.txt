@@ -1,2 +1,2 @@
-Desperation: If HP < 50%,[N]
-double attacks occur immediately.[X]
+Commanding the Donateenaries' last[N]
+stand against Void, a loyal knight.[X]

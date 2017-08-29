@@ -1,2 +1,2 @@
-Life and Death: +10 to[N]
-damage dealt and taken.[X]
+Summon: Can conjure a phantom[N]
+soldier to fight alongside you.[X]

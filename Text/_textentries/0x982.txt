@@ -1,2 +1,2 @@
-Miracle: Survive a lethal[N]
-attack if HP > 50%.[X]
+Adept: Gain a consecutive attack.[N]
+(Speed % activation)[X]

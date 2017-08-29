@@ -1,0 +1,7 @@
+[OpenRight][LoadVoid]
+[OpenLeft][LoadEdgeworth]
+I will join your party.[A]
+[Right]
+B-but-[A]
+[Left]
+OBJECTION! I have already joined.[A][X]

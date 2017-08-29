@@ -250,13 +250,11 @@ prCapBossMag: // Call with ASMC (prCapBossMag|1)
 
 BeginningScene:
   VCWF 0 //turn off fog lol
-
   LOAD1 0x1 StartingEnemies
   ENUN
-  
   ASMC (prCapBossMag|1)
-  
   LOAD2 0x1 EffectiveUnits // 0x0 instead of 0x1 seems to be for allies on maps with prep screens
+  Text(Ch6Opening)
   ENUN
   
   GotoPrepScreen
@@ -316,10 +314,12 @@ SpawnTheNewGuy:
 
 RecruitNewGuy:
   CUSA Bob
+  Text(RecruitingBob) //No recruitment convo yet. Have him grumble on about how brutal the Donateenaries are with their taxes, and he's taking things back. Also Bob the Builder joke. - Darr
   NoFade
 ENDA
 
 EndingScene:
+  Text(Ch6Ending)
   MNCH 0x7
   NoFade
 ENDA

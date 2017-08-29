@@ -1,2 +1,2 @@
-[MidLeft][LoadFace][0x2][0x1]
-This text is a placeholder![A][X]
+Quick Draw: +4 Damage[N]
+when initiating battle.[X]

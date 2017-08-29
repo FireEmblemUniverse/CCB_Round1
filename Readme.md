@@ -1,4 +1,4 @@
-## Things you need:
+﻿## Things you need:
 
 ### To just play:
 Apply CCB_Round1.ups to a clean FE8 (U) rom using NUPS or Multipatch.
@@ -16,7 +16,6 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
 - Hold L to toggle animations on/off
 - Hold A to speed up unit movement
 - The movement arrow allows you to press A on allies and enemies 
-- If there are too many enemies on screen, turn off HP bars in the options to fix lag
 - FLASHY MODE: any hit that kills a boss becomes a critical
 - There is a certain secret code...
 
@@ -26,17 +25,14 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
 - Rarely, hp update in animations is wrong e.g. attacks showing no damage but enemy is hurt afterwards. If this happens while killing a boss, their death quote will not play and it may not trigger the Defeat Boss condition.
 - Dancers can double if the enemy has Nihil - this will crash the game if animations are on. Hold L to turn them off if required.
 - Resetting the game mid attack can sometimes give a unit the galeforce effect
-- Weapon ranges past 10 will not be displayed
-- Growths over 100 can sometimes cut off
 - Devil effect is incompatible with counter/sol/etc, so it has been removed. Devil Axes will never backfire.
 - Armsthrift can sometimes heal you? needs investigation
 - Rarely, the game will freeze when you try to canto, reset and resume should fix it.
 - Some bosses have weird weapon ranks/personal skills
 - Units without a weapon equipped will display Str instead of Mag, even if they are a staff user/magic unit
-- Chapter objectives in the status screen have not been edited
 - Astra in the arena will keep attacking thin air after the unit is dead
 - Turn count in the credits skips several chapters
-- Lots of text is missing
+- B/W/L numbers in the endings are totally wrong
 - Most houses don't work (but some do)
 
 ## Skills learned on level up (by class):
@@ -284,6 +280,13 @@ Ch28        Mess.jpg                  Krib
 Ch29        Let It Be                 Grey
 Ch30        End of All                Circles
 ```
+
+
+
+***-writing-***
+
+MCProductions (text)
+Darrman (formatting)
 
 ***-music-***
 

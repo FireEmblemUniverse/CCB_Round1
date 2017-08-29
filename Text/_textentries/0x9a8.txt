@@ -1,2 +1,2 @@
-Rally Movement: +1 Move[N]
-to allies within 2 tiles.[X]
+Lancefaire: +4 damage[N]
+when equipping a lance.[X]

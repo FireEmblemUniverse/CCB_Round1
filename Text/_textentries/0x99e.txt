@@ -1,2 +1,2 @@
-Paragon: Experience gain[N]
-is doubled.[X]
+Warding Blow: +20 Res[N]
+when initiating battle.[X]

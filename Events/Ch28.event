@@ -78,19 +78,27 @@ NoFade
 ENDA
 
 EndingScene:
+Text(Ch28Ending)
+CAM1(Void)
+FlashCursor(Void,60)
+SETVAL 0x3 0x85
+_GIVEITEMTO 0x1
 MNC2 0x22
 ENDA
 
 // Events
 LoadNewGuy:
-ReinforcementEvent(Newguy)
+LOAD1 0x1 Newguy
+Text(Ch28Opening)
+ENDA
+
 // Manual Movement
 
 // Scripted Fights
 
 // Units
 Newguy:
-UNIT 0x22 Manakete_2_F 0x00 Level(20, Ally, 1) [6,15] 0x00 0x00 0x0 0x00 [HolyDragonStone] NoAI
+UNIT 0x22 Manakete_2_F 0x00 Level(20, Ally, 1) [6,15] 0x00 0x00 0x0 0x00 [HolyDragonStone] NoAI //Chiki
 UNIT
 
 Enemies1:

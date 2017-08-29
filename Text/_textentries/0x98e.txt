@@ -1,2 +1,2 @@
-Renewal: Restore 30% of max HP[N]
-at the start of each turn.[X]
+Bane: Leave the opponent at 1 HP.[N]
+(Skill/2 % activation)[X]

@@ -1,2 +1,2 @@
-Seal Resistance: Debuff opponent's Res[N]
-by 6 after combat. (Recover 1/turn)[X]
+Rally Skill: +4 Skill[N]
+to allies within 2 tiles.[X]

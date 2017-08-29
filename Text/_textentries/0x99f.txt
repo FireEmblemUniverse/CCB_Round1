@@ -1,2 +1,2 @@
-Impale: Deal 4x damage.[N]
-(Skill % activation)[X]
+Certain Blow: +40 Hit[N]
+when initiating battle.[X]

@@ -68,15 +68,18 @@ LOAD1 0x1 Enemies
 ENUN
 LOAD1 0x1 Enemies2
 ENUN
+Text(Ch13Opening)
 GotoPrepScreen
 ENDA
 
 EndingScene:
+Text(Ch13Ending)
 MNCH 14
 ENDA
 
 // Events
 RecruitCelicia:
+Text(RecruitingCelicia) //No recruitment convo yet. Gaiden jokes about desert maps is what I'll probably do. Don't ya love mages being slow?
 CUSA Celicia
 NoFade
 ENDA

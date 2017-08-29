@@ -1,2 +1,2 @@
-Lifetaker: Restore up to 50% HP after[N]
-attacking and defeating an enemy.[X]
+Cunning: Can steal items, pick[N]
+locks, and see in darkness.[X]

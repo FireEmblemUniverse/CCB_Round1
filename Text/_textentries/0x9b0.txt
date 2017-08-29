@@ -1,2 +1,2 @@
-Lunge: Swap places with the[N]
-opponent after combat.[X]
+Lifetaker: Restore up to 50% HP after[N]
+attacking and defeating an enemy.[X]

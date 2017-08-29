@@ -1,2 +1,2 @@
-Rally Luck: +4 Luck to[N]
-allies within 2 tiles.[X]
+Countermagic: Reflect magic damage[N]
+when attacked at 1-2 range.[X]

@@ -1,2 +1,2 @@
-Shove: Allows unit to push[N]
-other units one tile away.[X]
+Trample: +5 damage to[N]
+unmounted units.[X]

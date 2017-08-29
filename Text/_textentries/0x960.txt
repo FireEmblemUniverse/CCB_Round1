@@ -1,2 +1,1 @@
-Pass: Can move through[N]
-enemy units.[X]
+Feditor[X]

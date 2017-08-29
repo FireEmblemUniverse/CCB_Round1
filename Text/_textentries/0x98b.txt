@@ -1,2 +1,2 @@
-Dance: Refresh an ally unit[N]
-to let them act again.[X]
+Canto: Can move again[N]
+after certain actions.[X]

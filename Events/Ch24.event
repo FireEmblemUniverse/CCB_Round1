@@ -9,7 +9,7 @@ POIN LocationBasedEvents
 POIN MiscBasedEvents
 POIN Dunno Dunno Dunno
 POIN Tutorial
-POIN TrapData TrapData
+POIN TrapData TrapDataHard
 POIN Units Units
 POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
@@ -83,7 +83,11 @@ BLST [10,6] IronBallista
 BLST [14,12] Ballista 
 // <a href="javascript:removeCondition(6,&quot;traps&quot;);">Delete</a>BLST [14,16] 0x35
 // <a href="javascript:removeCondition(7,&quot;traps&quot;);">Delete</a>END_MAIN
+ENDTRAP
+ALIGN 4
 
+TrapDataHard:
+ENDTRAP
 ALIGN 4
 
 BeginningScene:
@@ -95,10 +99,12 @@ LOAD1 0x1 Enemies
 ENUN
 LOAD1 0x1 Enemies2
 ENUN
+Text(Ch24Opening)
 GotoPrepScreen
 ENDA
 
 EndingScene:
+Text(Ch24Ending)
 CAM1 Void
 FlashCursor(Void,60)
 SVAL 3 Ivaldi

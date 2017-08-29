@@ -108,21 +108,18 @@ UNIT 0x80 Pirate 0x0 Level(10,Enemy,1) [14,11] DropItem 0x0 0x0 0x0 [IronAxe] De
 UNIT
 
 LeftVillage:
-VillageEventMoney(C7LeftVillageText,HouseBG,5000)
+VillageEventMoney(Ch7MoneyVillage,HouseBG,5000)
 
 RightVillage:
-VillageEventItem(C7RightVillageText, HouseBG, SilverSword)
+VillageEventItem(Ch7SwordVillage, HouseBG, SilverSword)
 
 RosheaJoins:
-/*
-If he gets recruit text, add this back in
 TEXTSTART
 SetBackground(HouseBG)
-TEXTSHOW RosheaJoiningText
+TEXTSHOW RecruitingRoshea
 TEXTEND
 ClearBackground
 REMA
-*/
 LOAD1 0x1 RosheaDoesHisBest
 NoFade
 //TILECHANGE whatever the tile change for this village is
@@ -138,10 +135,12 @@ LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 BadDudes
 ENUN
+Text(Ch7Opening)
 GotoPrepScreen
 ENDA
 
 EndingScene:
+Text(Ch7Ending)
 MNCH 8
 ENDA
 

@@ -1,5 +1,2 @@
-[MidRight][LoadFace][0x23][0x01]
-Ryuu ga Kaga teki wo kurau![A]
-[ClearFace]
-[MidLeft][LoadFace][0x48][0x01]
-Maeda no ken wo kurae![A][X]
+Lucky Seven: +20 Hit and Avoid[N]
+until the 7th turn.[X]

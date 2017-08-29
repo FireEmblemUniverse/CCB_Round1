@@ -1,0 +1,8 @@
+[Right][LoadCurrent]
+[Left][LoadArch]
+I heard this hack needed a good[N]
+mage. Well, my Divine Lightning[AN]
+pierces the skies, and I'm happy[N]
+to help. Why are you staring at[AN]
+me? You're expecting me to rant? I[N]
+don't know what you're talking about![A][X]

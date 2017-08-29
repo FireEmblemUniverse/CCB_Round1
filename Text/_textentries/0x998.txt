@@ -1,2 +1,2 @@
-Spur Magic: Adjacent allies[N]
-deal +4 magical damage.[X]
+Tomebreaker: +50 Hit/Avo when[N]
+enemy has a tome equipped.[X]

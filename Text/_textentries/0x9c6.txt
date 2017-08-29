@@ -1,2 +1,2 @@
-Seal Defense: Debuff opponent's Def[N]
-by 6 after combat. (Recover 1/turn)[X]
+Rally Magic: +4 Mag to[N]
+allies within 2 tiles.[X]

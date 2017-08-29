@@ -1,0 +1,360 @@
+## VoidTitle
+Void - Queen of the Realm[X]
+
+## VoidEnding
+Void ascended the throne as queen after the[N]
+war. It is said that Leeroy was forever by[N]
+her side as she matured into a fine ruler.[N]
+Their son would grow into a great hero.[N][X]
+
+## VoidEndingifLeeroyDead
+Leeroy died shortly after the war from his wounds[N]
+sustained in battle, leaving his lady with a child.[N]
+Despite being heartbroken, Void continued to prove[N]
+herself a great heir to her family's name.[N]
+This child would prove himself a great hero one day.[X]
+
+## LeeroyTitle
+Leeroy the Reckless[X]
+
+## LeeroyEnding
+He married his liege shortly after the war and[N]
+ascended as the 24th king of the kingdom.[N]
+It is said he tried many a time to give his[N]
+nation an actual name, but his cries were[N]
+ignored by the court.[X]
+
+## TimTitle
+Tim of the Growths[X]
+
+## TimEnding
+He returned to his village after the war.[N]
+It is said he opened a candy store with his[N]
+brother. It is said that there was never a[N]
+finer candy on the continent.[X]
+
+## TimEndingifTamDead
+He returned to his village after the war with[N]
+heavy grief in his heart. However, under the[N]
+suggestion of his brother's widow, the two[N]
+opened a candy store. It is said he named his[N] finest candy after his departed brother.[X]
+
+## TimEndingifAnna2Dead
+He returned to his village with his brother[N]
+after the war. With his brother losing himself[N]
+in his sorrow, Tim rediscovered his first love,[N]
+tending bar.[X]
+
+## TimEndingifTamandAnna2Dead
+He returned to his village with heavy grief[N]
+in his heart. It is said he disappeared[N]
+completely shortly after. It is also said rumors[N]
+of a terrifying necromancer began to surface[N]
+shortly after his disappearance.[X]
+
+## TamTitle
+Tam of the Bases[X]
+
+## TamEnding
+He returned to his village after the war[N]
+where he promptly married one of the many[N]
+Annas and opened a candy store. It is said[N]
+this candy was the finest in the land.[X]
+
+## TamEndingifAnna2Dead
+He returned to his village with heavy grief[N]
+in his heart. They say he turned to drink to[N]
+drown his sorrows. However, his sorrows were[N]
+so great the drink couldn't drown them away.[X]
+
+## JeromeTitle
+Average Soldier Jerome[X]
+
+## JeromeEnding
+The tales of his exploits spread far and wide[N]
+as a legend of the battlefield, but in truth[N]
+he was just a regular soldier with a job to do.[X]
+
+## Anna1Title
+Anna, the Secret Unit[X]
+
+## Anna1Ending
+She left for parts unknown with her husband[N]
+Jake after the war. It is not known where they[N]
+traveled, but all know it had to be quite the[N]
+adventure.[X]
+
+## Anna1EndingifJakeDead
+She disappeared after the conflict. None know[N]
+if it was out of grief, but it is said a redhead[N] can be seen visiting Jake's grave at the same[N]
+time every year.[X]
+
+## BedeTitle
+Bede: Handsome Curate[X]
+
+## BedeEnding
+He served as Void's advisor long after the war.[N]
+It is said his pragmatic attitude on life was a[N]
+great boon to Void, and helped her lead the[N]
+kingdom to prosperity.[X]
+
+## JayTitle
+Jay, Renegade Translator[X]
+
+## JayEnding
+He vanished after the war. Some say even now[N]
+he gets involved in the art of translating...[X]
+
+## NotArchTitle
+Not Arch Shall Not Pierce[X]
+
+## NotArchEnding
+It is said that after the war, he finally[N]
+finished his hack, Ylissian Knights, which[N]
+despite being a fully finished rom hack, quickly[N]
+became as infamous as a certain corrupt[N]
+group for its quality...[X]
+
+## KirstenTitle
+Kirsten - You What, Mate?[X]
+
+## KirstenEnding
+It is said she married someone no one expected[N]
+after the war. Despite the oddness of her[N]
+relationship, she lived truly happily, and no[N]
+one could take that from her.[X]
+
+## KirstenEndingifBobDead
+She vanished like the wind after the war.[N]
+Though none knew where she went, a mysterious[N] knight known as Kursed appeared shortly after.[N]
+This knight was said to know no emotion but rage.[X]
+
+## BobTitle
+Bob the Builder[X]
+
+## BobEnding
+It was said he got his act together after the[N]
+war, and settled down with someone no one[N]
+expected. It is said these two had many babies,[N]
+and not a day went by without chaos.[X]
+
+## BobEndingifKirstenDead
+He continued thieving after the war. It is said[N]
+his crimes eventually got him killed, but it is[N]
+also said as he died, he was smiling.[X]
+
+## RosheTitle
+Aurelian Hope - Roshea[X]
+
+## RosheEnding
+He returned to Archanea after the war. His[N]
+exploits are said to line Archanea's[N]
+history books.[X]
+
+## PrineTitle
+Prine the Knight[X]
+
+## PrineEnding
+Her knight crest eventually worked, and she[N]
+was accepted into the knighthood of the[N]
+unnamed kingdom after the war. She eventually[N]
+proved herself to be the finest knight[N]
+in the realm.[X]
+
+## EdgeTitle
+Edge - Moody Mercenary[X]
+
+## EdgeEnding
+He vanished without a trace after the war.[X]
+
+## SamsonTitle
+Samson the Confused[X]
+
+## SamsonEnding
+Although he had a crush on Void, she did not[N]
+reciprocate. Taking this in stride, he eventually[N]
+found another woman who tickled his fancy...[N]
+Even if she got mad at him every time he[N]
+called her magic dark.[X]
+
+## SamsonEndingifArveDead
+Although he had a crush on Void, she did not[N]
+reciprocate. Taking this in stride, he tried to[N]
+find someone else to love, but he was unsuccessful.[N]
+He never seemed to have a truly sour mood, however.[X]
+
+## ArveTitle
+Arve - Elder Wizard[X]
+
+## ArveEnding
+It is said she married after the war, but her[N]
+crusade to make people understand da- I mean[N]
+Elder magic was never truly successful.[X]
+
+## ArveEndingifSamsonDead
+While she never married, it can never be said[N]
+she lacked focus. The world never truly understood[N]
+elder magic, but this was not due to her lack of[N]
+trying.[X]
+
+## TyeTitle
+Sturdy General Tye[X]
+
+## TyeEnding
+He began leading the Unnamed Kingdom's knights[N]
+after the war. He became known as a general[N]
+to truly be feared.[X]
+
+## CeliciaTitle
+Mysterious Mage Celicia[X]
+
+## CeliciaEnding
+She continued her study of magic, and[N]
+eventually this led to her creating[N]
+a new spell.[X]
+
+## EevsterTitle
+Eevster - Basement King[X]
+
+## EevsterEnding
+He left on a pilgrimage after the conflict,[N]
+working as a barista in pubs to fund his[N]
+journey.[X]
+
+## Anna2Title
+Anna - Secret Proprietor[X]
+
+## Anna2Ending
+She went with her husband to his hometown. Her[N]
+insatiable need for money eventually led her[N]
+to force the brothers into opening a candy[N]
+store. The candy was extremely expensive,[N]
+but none denied its worth.[X]
+
+## Anna2EndingifTamDead
+She returned with Tim to Tam's hometown to grieve[N]
+with him. It is said her need for money eventually[N]
+overcame her grief, and a candy store was opened,[N]
+named after her dearly beloved.[X]
+
+## Anna2EndingifTimDead
+She went with her husband to his hometown.[N]
+Her insatiable need for money eventually led[N]
+her to force Tam into opening a candy store.[N]
+The candy was extremely expensive, but none[N]
+denied its worth.[X]
+
+## NikitaTitle
+Nikita: Axe-Focused[X]
+
+## NikitaEnding
+He continued to serve in the Unnamed Kingdom's[N]
+Knights after the war.[X]
+
+## Anna3Title
+Anna: Shameless Rogue[X]
+
+## Anna3Ending
+She vanished after the war. Many believe she[N]
+was seeking Kaga; others believe she[N]
+smelled money.[X]
+
+## EdgeworthTitle
+Edgeworth: OBJECTION[X]
+
+## EdgeworthEnding
+After the war, he went back to his one true[N]
+love: prosecution.[X]
+
+## SigurdTitle
+ZIGLUDO-CHAN-SAMA-SENPAI[X]
+
+## SigurdEnding
+Zigludo died in a fire.[X]
+
+## KagaTitle
+Romancing Kaga[X]
+
+## KagaEnding
+After the war, he returned to the holy land of[N]
+Vestaria. It is said he is expanding its borders[N]
+using the twin blades [0x93]Localization[0x94] and[N]
+[0x93]Gaiden[0x94], but none know how true this rumor is.[X]
+
+## DyuteTitle
+Doot - Free Spirit[X]
+
+## DyuteEnding
+She returned to Valentia after the war. Her[N]
+exploits line Valentia's history books, but[N]
+they for some unknown reason refer to her as[N][0x93]Delthea[0x94].[X]
+
+## CelicaTitle
+Celica - Princess of Sofia[X]
+
+## CelicaEnding
+Once all was said and done, she returned to[N]
+her homeland. She was spotted sailing across[N]
+the seven seas regularly, occasionally with[N]
+a green-haired man by her side.[X]
+
+## DoowileTitle
+Aicyl fo Thgink: Doowile[X]
+
+## DoowileEnding
+It is said he invited many guests to a banquet[N]
+meal after the war. It is also said these guests[N]
+were not informed they WERE the meal.[X]
+
+## FlorinaTitle
+Not so Lovely: Evil Florina[X]
+
+## FlorinaEnding
+She vanished after the war. Rumors abound,[N]
+stating she's near something known[N]
+as [0x93]Staff AI[0x94].[X]
+
+## BjornTitle
+Banana Slayer Bjorn[X]
+
+## BjornEnding
+For Bjorn, the war only increased his bloodlust.[N]
+He became a mercenary after the war. It is[N]
+said there was no job he wouldn't take.[X]
+
+## JakeTitle
+Jake: Anna's Husband[X]
+
+## JakeEnding
+He left with his love on many an adventure.[N]
+Although they were never reported to have had[N]
+any children, many more Annas of the same[N]
+family roam the world, even today.[X]
+
+## JakeEndingifAnna1Dead
+He eventually found another Anna to love,[N]
+however none could quell the sadness in his[N]
+heart for the first Anna he loved.[X]
+
+## MarthTitle
+Marf: Aritian Man[X]
+
+## MarthEnding
+He returned to his homeland after the war.[N]
+Sadly, the LP was never finished.[X]
+
+## ChikiTitle
+Divine Princess Tiki[X]
+
+## ChikiEnding
+She returned to her homeland after the war.[N]
+Eventually she accepted the waifufags, knowing[N]
+they couldn't last longer than a few decades at[N]
+most. If only she could forget the idol phase...[X]
+
+## MarkTitle
+space limits say no, mark[X]
+
+## MarkEnding
+He vanished after the war, just like the wind.[N]
+Many question if he ever existed at all.[X]

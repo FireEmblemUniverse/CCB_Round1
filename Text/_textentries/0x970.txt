@@ -1,2 +1,2 @@
-Swordbreaker: +50 Hit/Avo when[N]
-enemy has a sword equipped.[X]
+A captain of the Donateenaries.[N]
+Obsessed with collecting donations.[X]

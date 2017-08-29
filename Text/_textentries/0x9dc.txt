@@ -1,2 +1,2 @@
-Rightful King: +10% to[N]
-Skill activation rate.[X]
+Tantivy: +10 Hit/Avoid if there are[N]
+no allies within 3 tiles.[X]

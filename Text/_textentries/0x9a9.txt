@@ -1,2 +1,2 @@
-Rally Spectrum: +2 all stats[N]
-to allies within 2 tiles.[X]
+Axefaire: +4 damage[N]
+when equipping an axe.[X]

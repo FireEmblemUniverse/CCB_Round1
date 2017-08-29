@@ -86,7 +86,7 @@ CAM1 0x01
 FADU 5
 STAL 50
 CAM1 [7,4] //camera pans over to show second party
-//come up with some explanation about why they're splitting up in parties if you wish
+Text(Ch5Opening) //come up with some explanation about why they're splitting up in parties if you wish
 STAL 60
 CAM1 0x01
 GotoPrepScreen
@@ -94,8 +94,7 @@ ENDB
 
 EndingScene:
 MUSC 0x31
-
-//Text to be added later
+Text(Ch5Ending)
 //yay we've won, etc; short ending scene where the new recruit pops in and says hi if she was recruited.
 
 MNCH 0x06
@@ -225,7 +224,7 @@ ENDA
 SoWhatsUpWithFrelianFoodAnyway:
 MUSC 0x2a
 STAL 10
-//Text to be added later
+Text(RecruitingKirsten)
 //main lord tries and fails to convince Kirsten how dumb it is to attack a castle on your own
 //when you're a pegagirl. Kirsten should talk like a British chav (uwotm8)
 

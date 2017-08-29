@@ -1,2 +1,2 @@
-Nihil: Cancels the opponent's[N]
-skills in combat.[X]
+Death Blow: +20 Crit[N]
+when initiating battle.[X]

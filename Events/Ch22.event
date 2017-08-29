@@ -24,6 +24,8 @@ UNIT
  
  
 TurnBasedEvents:
+TurnEventPlayer(0x00, AfterPrepScreen, 1)
+TurnEventEnemy(0x00, CastingSummon, 1)
 TURN 0x0 LoadSummons [1,255] 0x0
 END_MAIN
  
@@ -57,13 +59,19 @@ LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 Baddies
 ENUN
+FADU 10
+SETVAL 0xB 0xFFFFFFFF
+TUTORIALTEXTBOXSTART
+TEXTSHOW Ch22Opening
+TEXTEND
+REMA
 GotoPrepScreen
-NoFade
 ENDA
  
 EndingScene:
 LOAD1 0x1 Celc
 ENUN
+Text(Ch22Ending)
 MNCH 23
 ENDA
  
@@ -84,6 +92,16 @@ LoadSummons: //every 3rd turn
   NoFade
   ENDA
  
+AfterPrepScreen:
+Text(Ch22AfterPrep)
+NoFade
+ENDA
+
+CastingSummon:
+Text(Ch22Summoning)
+NoFade
+ENDA
+
 // Manual Movement
  
 // Scripted Fights
@@ -114,5 +132,5 @@ UNIT 0xAC 0x0 Celica Level(15, Enemy, 1) [5,2] 101b 0 0 0 [0] PursueWithoutHeedA
 UNIT
  
 Celc:
-UNIT Celica 0x2C 0x1C Level(10, Ally, 1) [0,0] 0x00 0x00 0x0 0x00 [0x41, 0x4E] NoAI
+UNIT Celica 0x2C 0x1C Level(10, Ally, 1) [8,0] 0x00 0x00 0x0 0x00 [0x41, 0x4E] NoAI
 UNIT

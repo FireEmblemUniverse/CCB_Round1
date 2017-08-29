@@ -94,9 +94,3 @@ Kaga into being a dancer.[N]
 He says it was revenge for[AN]
 the slave dancer girls...[N]
 Please! Save Kaga![A][X]
-
-#0x237 Ch15BossName
-Andy[X]
-
-#0x296 Ch3BossName
-Jenkins[X]

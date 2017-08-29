@@ -1,2 +1,1 @@
-Live to Serve: When healing[N]
-an ally, also heals self.[X]
+Crit Boost: +15 critical rate.[X]

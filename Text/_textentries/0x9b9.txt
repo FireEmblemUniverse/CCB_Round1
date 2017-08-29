@@ -1,2 +1,2 @@
-Focus: +10 Critical if there are[N]
-no allies within 3 tiles.[X]
+Voice of Peace: Enemies within[N]
+2 tiles deal -2 damage.[X]

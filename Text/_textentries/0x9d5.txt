@@ -1,2 +1,2 @@
-Armsthrift: Luck % chance to not[N]
-consume weapon durability.[X]
+Intimidate: -10 Avoid to[N]
+all enemies within 2 tiles.[X]

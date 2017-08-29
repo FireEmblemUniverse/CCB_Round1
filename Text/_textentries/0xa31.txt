@@ -1,0 +1,5 @@
+[MidLeft][LoadFace][0x2][0x1]
+Hmm, that girl...[A][NL]
+She doesn't look like she's[NL]
+in my way. Maybe I shouldn't[AN]
+kill her.[A][X]

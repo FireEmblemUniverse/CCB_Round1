@@ -1,2 +1,2 @@
-Tomebreaker: +50 Hit/Avo when[N]
-enemy has a tome equipped.[X]
+A mountain man, now assigned to the[N]
+desert after being beaten by Void.[X]

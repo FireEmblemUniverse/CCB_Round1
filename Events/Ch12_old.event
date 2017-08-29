@@ -1,0 +1,241 @@
+//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x37,ThisChapter)
+// EventPointerTable(0xd1, ThisChapter)
+
+EscapePointPointerTable(12, Ch12EscapePoint)
+Ch12EscapePoint:
+EscapePoint(28, 0, MoveRight)
+EscapePointEnd
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+ALIGN 4
+
+TurnBasedEvents:
+TURN 0x0 BrigandReinforcement [6,0] 0x0
+TURN 0x0 Brigand2Reinforcement [7,0] 0x0
+TURN 0x0 CavalierReinforcement [13,0] 0x0
+TURN 0x0 HeroReinforcement [17,0] 0x0
+END_MAIN
+
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+CharacterBasedEvents:
+CharacterEventBothWays(0x7, RecruitTalk, Void, Tye)
+END_MAIN
+
+RecruitTalk:
+MUSS 0x30
+Text(Ch12RecruitTalk)
+REMA
+CUSA Tye//Tye joins the party!
+MURE 0x05 //Shifts back to map music
+NoFade
+ENDA
+
+LocationBasedEvents:
+Chest(BlueGem,8,10)
+Chest(HeroCrest,19,0)
+Chest(GuidingRing,0,1)
+Chest(Speedwings,18,0)
+Chest(Boots,10,13)
+Chest(Berserk,17,24)
+#ifdef __DEBUG__
+  Seize(4,22)
+#endif
+END_MAIN
+
+BrigandReinforcement:
+ReinforcementEvent(BrigandReinforcementUnit)
+ENDA
+
+Brigand2Reinforcement:
+ReinforcementEvent(Brigand2ReinforcementUnit)
+ENDA
+
+CavalierReinforcement:
+ReinforcementEvent(CavalierReinforcementUnit)
+ENDA
+
+HeroReinforcement:
+ReinforcementEvent(HeroReinforcementUnit)
+ENDA
+
+BrigandReinforcementUnit:
+UNIT 0x80 Thief 0x00 Level(3, Enemy, 1) [0,7] 0x02 0x00 0x0 0x00 [SlimSword, Lockpick] LootingThiefAI
+UNIT
+
+Brigand2ReinforcementUnit:
+UNIT 0x80 Thief 0x00 Level(3, Enemy, 1) [13,24] 0x00 0x00 0x0 0x00 [SlimSword, Lockpick] LootingThiefAI
+UNIT
+
+CavalierReinforcementUnit:
+UNIT 0x80 Cavalier 0x00 Level(17, Enemy, 1) [10,9] 0x00 0x00 0x0 0x00 [SilverBlade, Spear, Horseslayer, HeavySpear] PursueWithoutHeedAI
+UNIT
+
+HeroReinforcementUnit:
+UNIT 0x80 Hero 0x00 Level(1, Enemy, 1) [27,7] 0x00 0x00 0x0 0x00 [SilverAxe, SilverBlade, Runesword] PursueWithoutHeedAI
+UNIT
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+AFEV 0xa Boss1Killed 0x8
+AFEV 0xb Boss2Killed 0x9
+END_MAIN
+
+Boss1Killed:
+CHECK_EVENTID 0x9
+BEQ 0x0 0xc 0x0
+  //if boss 2 is also dead
+  CALL EndingScene
+LABEL 0x0
+NoFade
+ENDA
+
+Boss2Killed:
+CHECK_EVENTID 0x8
+BEQ 0x0 0xc 0x0
+  //if boss 1 is also dead
+  CALL EndingScene
+LABEL 0x0
+NoFade
+ENDA
+
+Dunno:
+WORD $00
+
+Tutorial:
+WORD $00
+
+TrapData:
+END_MAIN
+
+Good:
+Units:
+UNIT Eirika EirikaLord 0x00 Level(1, Ally, 0) [4,22] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin Eirika Level(1, Ally, 0) [3,23] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Gilliam Mercenary Eirika Level(1, Ally, 0) [2,23] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Franz Myrmidon Eirika Level(1, Ally, 0) [5,23] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Moulder Archer Eirika Level(1, Ally, 0) [6,23] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Vanessa PegasusKnight Eirika Level(1, Ally, 0) [5,21] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Ross Priest Eirika Level(1, Ally, 0) [6,21] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Neimi Fighter Eirika Level(1, Ally, 0) [3,21] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Colm Mage Eirika Level(1, Ally, 0) [2,21] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Garcia Cavalier Eirika Level(1, Ally, 0) [3,22] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Innes Thief Eirika Level(1, Ally, 0) [5,22] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Lute Troubadour Eirika Level(1, Ally, 0) [4,21] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+// UNIT Natasha Soldier Eirika Level(1, Ally, 0) [4,23] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+// UNIT Cormag Fighter Eirika Level(1, Ally, 0) [2,20] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+// UNIT Ephraim Shaman Eirika Level(1, Ally, 0) [6,24] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT
+
+NotCain:
+UNIT Tye Knight 0x00 Level(10, NPC, 0) [4,19] 0x00 0x00 0x0 0x00 [KillerLance, Horseslayer, Axereaver, Javelin] AttackInRangeAI 
+UNIT
+
+Bad: 
+UNIT 0x80 Knight Gheb Level(12, Enemy, 1) [14,20] 0x00 0x00 0x0 0x00 [SilverLance, Javelin] NeverMoveAI 
+UNIT 0x80 Knight Gheb Level(12, Enemy, 1) [8,7] 0x00 0x00 0x0 0x00 [SilverLance, Javelin] NeverMoveAI 
+UNIT 0x80 Knight Gheb Level(12, Enemy, 1) [26,19] 0x00 0x00 0x0 0x00 [SilverLance, Javelin] NeverMoveAI 
+UNIT 0x80 Knight Gheb Level(12, Enemy, 1) [27,19] 0x00 0x00 0x0 0x00 [SilverLance, Javelin] NeverMoveAI 
+UNIT 0x80 Knight Gheb Level(14, Enemy, 1) [12,1] 0x00 0x00 0x0 0x00 [SilverLance, Horseslayer] NeverMoveAI 
+UNIT 0x80 Knight Gheb Level(14, Enemy, 1) [2,1] 0x00 0x00 0x0 0x00 [SilverLance, Horseslayer] NeverMoveAI 
+UNIT 0x80 Knight Gheb Level(14, Enemy, 1) [24,4] 0x00 0x00 0x0 0x00 [SilverLance, Horseslayer] NeverMoveAI 
+UNIT 0x80 Knight Gheb Level(14, Enemy, 1) [21,11] 0x00 0x00 0x0 0x00 [SilverLance, Horseslayer] NeverMoveAI 
+UNIT 0x80 Mercenary Gheb Level(14, Enemy, 1) [20,11] 0x00 0x00 0x0 0x00 [SilverSword, Lancereaver] NeverMoveAI 
+UNIT 0x80 Mercenary Gheb Level(14, Enemy, 1) [24,0] 0x00 0x00 0x0 0x00 [SilverSword, Lancereaver] NeverMoveAI 
+UNIT 0x80 Mercenary Gheb Level(14, Enemy, 1) [17,21] 0x00 0x00 0x0 0x00 [SilverSword, Lancereaver] NeverMoveAI 
+UNIT 0x80 Mercenary Gheb Level(14, Enemy, 1) [5,5] 0x00 0x00 0x0 0x00 [SilverSword, Lancereaver] NeverMoveAI 
+// UNIT 0x80 Mercenary Gheb Level(12, Enemy, 1) [10,6] 0x00 0x00 0x0 0x00 [SilverSword] AttackInRangeAI 
+// UNIT 0x80 Mercenary Gheb Level(12, Enemy, 1) [23,8] 0x00 0x00 0x0 0x00 [SilverSword] AttackInRangeAI 
+UNIT 0x80 Mercenary Gheb Level(12, Enemy, 1) [19,8] 0x00 0x00 0x0 0x00 [SilverSword] AttackInRangeAI 
+UNIT 0x80 Mercenary Gheb Level(14, Enemy, 1) [28,10] 0x00 0x00 0x0 0x00 [SilverSword, Runesword] AttackInRangeAI  
+UNIT
+
+Badder:
+// UNIT 0x80 Mercenary Gheb Level(14, Enemy, 1) [0,8] 0x00 0x00 0x0 0x00 [SilverSword, Runesword] AttackInRangeAI 
+// UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [25,12] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+// UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [26,14] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [27,14] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [8,2] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [28,5] 0x02 0x00 0x0 0x00 [SilverAxe, ChestKey] AttackInRangeAI 
+UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [18,14] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [1,6] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+// UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [20,21] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [8,15] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+// UNIT 0x80 Fighter Gheb Level(15, Enemy, 1) [0,14] 0x00 0x00 0x0 0x00 [SilverAxe] AttackInRangeAI 
+UNIT 0x80 Fighter Gheb Level(13, Enemy, 1) [6,5] 0x00 0x00 0x0 0x00 [SilverAxe, HandAxe] NeverMoveAI 
+UNIT 0x80 Fighter Gheb Level(13, Enemy, 1) [22,11] 0x00 0x00 0x0 0x00 [SilverAxe, HandAxe] NeverMoveAI 
+UNIT 0x80 Cavalier Gheb Level(12, Enemy, 1) [4,5] 0x00 0x00 0x0 0x00 [SteelBlade, Spear] NeverMoveAI 
+UNIT 0x80 Cavalier Gheb Level(12, Enemy, 1) [11,0] 0x00 0x00 0x0 0x00 [SteelBlade, Spear] AttackInRangeAI 
+UNIT 0x80 Cavalier Gheb Level(12, Enemy, 1) [18,6] 0x00 0x00 0x0 0x00 [SteelBlade, Spear] AttackInRangeAI  
+UNIT
+
+Baddest:
+UNIT 0x80 Cavalier Gheb Level(12, Enemy, 1) [5,7] 0x00 0x00 0x0 0x00 [SteelBlade, Spear] AttackInRangeAI 
+UNIT 0x80 Cavalier Gheb Level(12, Enemy, 1) [14,24] 0x00 0x00 0x0 0x00 [SteelBlade, Spear] AttackInRangeAI 
+// UNIT 0x80 Cavalier Gheb Level(12, Enemy, 1) [26,24] 0x00 0x00 0x0 0x00 [SteelBlade, Spear] AttackInRangeAI 
+// UNIT 0x80 Cavalier Gheb Level(12, Enemy, 1) [11,15] 0x00 0x00 0x0 0x00 [SteelBlade, Spear] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [19,20] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [0,15] 0x02 0x00 0x0 0x00 [SilverBow, ChestKey] AttackInRangeAI 
+// UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [8,16] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [1,0] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [22,16] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+// UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [23,2] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Archer Gheb Level(15, Enemy, 1) [23,10] 0x00 0x00 0x0 0x00 [SilverBow] AttackInRangeAI 
+UNIT 0x80 Warrior Gheb Level(1, Enemy, 1) [15,0] 0x00 0x00 0x0 0x00 [IronBow, SteelAxe] AttackInRangeAI 
+UNIT 0x80 Warrior Gheb Level(1, Enemy, 1) [15,16] 0x00 0x00 0x0 0x00 [IronBow, SteelAxe] AttackInRangeAI 
+UNIT 0x80 Warrior Gheb Level(1, Enemy, 1) [14,11] 0x00 0x00 0x0 0x00 [IronBow, SteelAxe] NeverMoveAI 
+UNIT 0x80 Warrior Gheb Level(1, Enemy, 1) [14,3] 0x00 0x00 0x0 0x00 [IronBow, SteelAxe] NeverMoveAI 
+UNIT 0x80 Mage Gheb Level(15, Enemy, 1) [3,10] 0x02 0x00 0x0 0x00 [Elfire, ChestKey] AttackInRangeAI 
+// UNIT 0x80 Mage Gheb Level(15, Enemy, 1) [23,24] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI
+UNIT
+
+TooBad:
+// UNIT 0x80 Mage Gheb Level(15, Enemy, 1) [23,14] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 Cavalier Gheb Level(15, Enemy, 1) [19,2] 0x00 0x00 0x0 0x00 [Lancereaver, Spear] NeverMoveAI 
+// UNIT 0x80 Druid Gheb Level(1, Enemy, 1) [12,10] 0x00 0x00 0x0 0x00 [Flux, Silence] AttackInRangeAI 
+UNIT 0x80 Druid Gheb Level(1, Enemy, 1) [16,10] 0x00 0x00 0x0 0x00 [Flux, Physic] AttackInRangeAI 
+UNIT Gheb Hero 0x00 Level(3, Enemy, 0) [14,9] 0x00 0x00 0x0 0x00 [SteelAxe, Runesword, Swordslayer] AttackInRangeAI 
+UNIT Macdaire Sage 0x00 Level(3, Enemy, 0) [14,7] 0x00 0x00 0x0 0x00 [Fimbulvetr, Shine] AttackInRangeAI 
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+LOAD2 0x1 Good
+ENUN
+LOAD1 0x1 NotCain
+ENUN
+LOAD1 0x1 Bad
+ENUN
+LOAD1 0x1 Badder
+ENUN
+LOAD1 0x1 Baddest
+ENUN
+LOAD1 0x1 TooBad
+ENUN
+Text(Ch12Opening)
+GotoPrepScreen
+NoFade
+ENDA
+
+EndingScene:
+Text(Ch12Ending)
+MNCH 13
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET
