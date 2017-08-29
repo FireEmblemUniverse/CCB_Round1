@@ -111,6 +111,7 @@ ENDA
 EventAfterExitingPrepScreen:
 LOAD1 0x1 Greens
 ENUN
+Write_Short($1E23, $202DF5A) //put brave axe in inventory
 Text(Ch15StartContinued)
 Text(Ch15GetTorches)
 //You can thank Circles for these.
@@ -296,7 +297,7 @@ UNIT RiverFolk Soldier AnnaWyv Level(15, NPC, 1) [4,9] 0x00 0x00 0x0 0x00 [Steel
 UNIT RiverFolk Soldier AnnaWyv Level(15, NPC, 1) [7,19] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] PursueWithoutHeedAI 
 UNIT RiverFolk Troubadour AnnaWyv Level(15, NPC, 1) [7,9] 0x00 0x00 0x0 0x00 [Mend, Physic] HealUnits 
 UNIT RiverFolk Troubadour AnnaWyv Level(15, NPC, 1) [2,12] 0x00 0x00 0x0 0x00 [Mend, Physic] HealUnits 
-UNIT RiverFolk General AnnaWyv Level(2, NPC, 1) [12,17] 0x00 0x00 0x0 0x00 [SilverLance, Spear] NeverMoveAI 
+UNIT RiverFolk General AnnaWyv Level(2, NPC, 1) [12,17] 0x00 0x00 0x0 0x00 [Hammer, Halberd, KillerAxe, Tomahawk] NeverMoveAI 
 UNIT RiverFolk Fleet AnnaWyv Level(10, NPC, 1) [1,18] 0x00 0x00 0x0 0x00 [KillerBallista] AttackInRangeAI 
 UNIT
 

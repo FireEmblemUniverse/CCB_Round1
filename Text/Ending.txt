@@ -156,7 +156,7 @@ Prine the Knight[X]
 
 ## PrineEnding
 Her knight crest eventually worked, and she[N]
-was accepted into the knighthood of the
+was accepted into the knighthood of the[N]
 unnamed kingdom after the war. She eventually[N]
 proved herself to be the finest knight[N]
 in the realm.[X]
@@ -222,7 +222,7 @@ working as a barista in pubs to fund his[N]
 journey.[X]
 
 ## Anna2Title
-Anna - Secret Propetier[X]
+Anna - Secret Proprietor[X]
 
 ## Anna2Ending
 She went with her husband to his hometown. Her[N]
