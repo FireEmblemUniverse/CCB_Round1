@@ -267,3 +267,7 @@
 // Orson_Hero
 	setPalette(0x3F,Orson_Hero)
 	setCBSP(0x3F,Orson_Boss,0x4,Hero)
+
+// Meriah_Dancer
+	setPalette(0xBC,Meriah_Dancer)
+	setCBSP(0xBC,Meriah,0x1,Dancer)
