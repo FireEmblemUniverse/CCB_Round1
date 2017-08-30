@@ -271,3 +271,19 @@
 // Meriah_Dancer
 	setPalette(0xBC,Meriah_Dancer)
 	setCBSP(0xBC,Meriah,0x1,Dancer)
+
+// Plum_Dancer
+	setPalette(0xBD,Plum_Dancer)
+	setCBSP(0xBD,Plum,0x1,Dancer)
+
+// Yuni_Dancer
+	setPalette(0xBE,Yuni_Dancer)
+	setCBSP(0xBE,Yuni,0x1,Dancer)
+
+// Lyria_Dancer
+	setPalette(0xBF,Lyria_Dancer)
+	setCBSP(0xBF,Lyria,0x1,Dancer)
+
+// Maeda_SM
+	setPalette(0xC0,Maeda_SM)
+	setCBSP(0xC0,0x6E,0x3,Swordmaster)
