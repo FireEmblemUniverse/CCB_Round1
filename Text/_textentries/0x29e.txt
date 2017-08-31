@@ -1,3 +1,0 @@
-[OpenMidRight][LoadBede]
-Ah... I cannot easily heal this wound.[N]
-Forgive me Void, I must retreat.[A][X]
