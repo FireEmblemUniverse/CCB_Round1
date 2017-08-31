@@ -1,2 +1,3 @@
-[OpenMidRight][LoadEdgeworth]
-Care to bail me out again, Wright...?[A][CloseEyes][X]
+[OpenMidRight][LoadRogueAnna]
+Penny on a dead woman's eyes...[N]
+Please...[A][CloseEyes][X]

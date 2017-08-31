@@ -135,6 +135,8 @@ GetUnit:
 TEXTSTART
 TEXTSHOW Ch24RecruitEvilFlorina
 TEXTEND
+TEXTSHOW Ch24RecruitEvilFlorina2
+TEXTEND
 SVAL r7 True
 BEQ 0 rC r7
   TEXTSHOW Ch24FlorinaNo

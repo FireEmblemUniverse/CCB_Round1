@@ -1,2 +1,3 @@
-[OpenMidRight][LoadJerome]
-And so I die like the rest...[A][CloseEyes][X]
+[OpenMidRight][LoadTam]
+No...[N]
+Forgive me, Anna...[A][CloseEyes][X]

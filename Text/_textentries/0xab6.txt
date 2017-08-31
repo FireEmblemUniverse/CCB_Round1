@@ -1,3 +1,2 @@
-[OpenMidRight][LoadRogueAnna]
-Penny on a dead woman's eyes...[N]
-Please...[A][CloseEyes][X]
+[OpenMidRight][LoadNikita]
+Hmph, of all ways to die...[A][CloseEyes][X]

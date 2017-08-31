@@ -1,2 +1,4 @@
-[OpenMidRight][LoadJay]
-It's Celice okay.[A][CloseEyes][X]
+[OpenMidRight][LoadBede]
+Ah... I cannot easily heal this[N]
+wound. Forgive me, Void.[AN]
+I must retreat.[A][X]
