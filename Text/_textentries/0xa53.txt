@@ -1,2 +1,5 @@
-[Right][LoadVoid]
-We did it, but we must get moving.[A][X]
+[Right][Load][0x01][0x01]
+Having seized the Fort of Bad,[N]
+Void decides to allow her troops[AN]
+to rest in the Port of Bad.[N]
+What dangers await her in the future?[A][X]

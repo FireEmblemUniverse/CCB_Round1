@@ -142,6 +142,7 @@ KillThrone:
 CAM1 [0,2]
 STAL 0x16
 SETVAL 0xB 0x20009
+Text(Ch17LyonDecays)
 WARP_OUT
 ENUN
 STAL 0x8

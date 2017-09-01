@@ -1,3 +1,5 @@
-She vanished after the war. Rumors abound,[N]
-stating she's near something known[N]
-as [0x93]Staff AI[0x94].[X]
+[OpenMidLeft][Load][0x49]
+The Donateenaries' days are[N]
+nearing their end...[AN]
+Your Majesty, I'm so sorry...[N]
+You must stop these monsters...[AN][X]

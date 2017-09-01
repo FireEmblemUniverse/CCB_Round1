@@ -40,3 +40,12 @@ Mine[X]
 ## MineDesc
 Sets a trap that does damage[N]
 to anyone who steps on it.[X]
+
+## LunarBraceDesc
+Use this and Void will find[N]
+a horse to start riding on.[X]
+
+## LunarBraceUseDesc
+Promote Void when[N]
+you feel the time is[N]
+right. Lv10 unneeded.[X]
