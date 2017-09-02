@@ -1,3 +1,5 @@
-[MidLeft][Invert]
-10,000 Gold. What do you say?[N]
-[Yes][Invert][X]
+[MidRight][LoadDoot]
+Thanks for saving me![A][NL]
+I owe you a lot, so I guess[NL]
+I'll help you with whatever[A][NL]
+it is you're trying to do.[A][X]

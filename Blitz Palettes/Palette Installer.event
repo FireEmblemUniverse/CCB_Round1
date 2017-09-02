@@ -199,3 +199,18 @@ Gwendy_GreatKnight:
 Orson_Hero:
 	#incbin "./_palettes/Orson_Hero.lzpal"
 
+Meriah_Dancer:
+	#incbin "./_palettes/Meriah_Dancer.lzpal"
+
+Plum_Dancer:
+	#incbin "./_palettes/Plum_Dancer.lzpal"
+
+Yuni_Dancer:
+	#incbin "./_palettes/Yuni_Dancer.lzpal"
+
+Lyria_Dancer:
+	#incbin "./_palettes/Lyria_Dancer.lzpal"
+
+Maeda_SM:
+	#incbin "./_palettes/Maeda_SM.lzpal"
+

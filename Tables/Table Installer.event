@@ -54,6 +54,8 @@
 
 #include "FE8 Nightmare modules\Promotion\Promotion Branch Editor.event"
 
+#include "FE8 Nightmare modules\Quote editors\Boss music editor.event"
+
 #include "FE8 Nightmare modules\Quote editors\Boss Quote Editor.event"
 
 #include "FE8 Nightmare modules\Quote editors\Death Quote Editor.event"

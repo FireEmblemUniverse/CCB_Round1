@@ -308,5 +308,9 @@ REMOVEPORTRAITS
 STAL 1
 CALL 0xA0036C //Character Endings
 STAL 90
+MUSC 0x42 //Fly with the Breeze
+ASMC 0xC4879 //Roll Credits - CGs are borked when I try to use it normally?
+STAL 90
+
 MNTS 0x0 //return to title screen
 ENDA

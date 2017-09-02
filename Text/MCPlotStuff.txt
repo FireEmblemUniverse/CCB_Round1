@@ -476,7 +476,8 @@ will. We must save Akaneia from him![AN]
 HELP![A]
 [MR]
 A call for help. Protagonist contract[N]
-states I must answer that call for help.[AN] ONWARD![A][X]
+states I must answer that call for help.[AN]
+ONWARD![A][X]
 
 ## Ch19Opening
 [FL][LoadPlum]

@@ -1,3 +1,3 @@
-She vanished after the war. Many believe she[N]
-was seeking Kaga; others believe she[N]
-smelled money.[X]
+[ML][LoadCelica]
+Aaaarrr... It seems like I've...[N]
+Wait... Mila, is that you...?[A][X]

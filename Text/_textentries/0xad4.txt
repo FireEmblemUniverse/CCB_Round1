@@ -1,4 +1,2 @@
-She left for parts unknown with her husband[N]
-Jake after the war. It is not known where they[N]
-traveled, but all know it had to be quite the[N]
-adventure.[X]
+[OpenMidLeft][Load][0x38]
+Urgh... You...[A][X]
