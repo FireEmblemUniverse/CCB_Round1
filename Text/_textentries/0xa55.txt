@@ -1,2 +1,0 @@
-[Right][LoadVoid]
-We did it, but we must get moving.[A][X]

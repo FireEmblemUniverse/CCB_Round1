@@ -1,4 +1,0 @@
-[OpenMidLeft][Load][0x4A]
-Guh? Roar? GAAAAAAAAAHHHHHH...[A]
-[ToggleMouthMove]
-(The dracozombie rotted away!)[A][X]

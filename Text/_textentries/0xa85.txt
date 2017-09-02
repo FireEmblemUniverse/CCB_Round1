@@ -1,6 +1,0 @@
-[Left][LoadCelica]
-I am the Princess of the Pirates,[N]
-Mistress of the Boats, Celica![AN]
-If you try to challenge me, then[N]
-you will drown in the monster[AN]
-swarms! Now MOVE![AN][X]

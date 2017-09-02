@@ -1,4 +1,0 @@
-[Left][Load][0x5F][0x01]
-[Right][LoadCurrent]
-I am sick and tired of donating to Hex.[N]
-Instead, I'll donate this money to you.[A][X]

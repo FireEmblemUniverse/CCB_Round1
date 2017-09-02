@@ -1,2 +1,0 @@
-[Right][LoadVoid]
-Kirb, why?[A][X]

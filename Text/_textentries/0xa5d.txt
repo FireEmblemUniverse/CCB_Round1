@@ -1,3 +1,0 @@
-[OpenRight][LoadVoid]
-Oh great, a desert chapter. I hate deserts.[N]
-Let's get out of here quickly.[A][X]
