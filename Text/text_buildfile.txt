@@ -7,9 +7,16 @@ Set health bar display[X]
 # 0x0448
 A stone imbued with mysterious might.[X]
 
+# 0x0478
+Freezes enemies in place[.][NL]
+for several turns.[X]
+
 #0x518
 #was 'sick'
 Freeze[X]
+
+# 0x03C9
+Freeze[.][X]
 
 #include "ChapterNames.txt"
 

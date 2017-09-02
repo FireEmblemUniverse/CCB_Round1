@@ -1,0 +1,2 @@
+Freezes enemies in place[.][NL]
+for several turns.[X]
