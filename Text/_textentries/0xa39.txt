@@ -1,0 +1,8 @@
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5C][0x01]
+Everyone here has gone delusional.[N]
+Gwendolyn the Great Knight? Pah![AN]
+I remember her being Wendy the[N]
+Useless Armour Knight! Someone[AN]
+call Sophia in too, she'll want to[N]
+see this mess unfold as well.[AN][X]

@@ -1,0 +1,3 @@
+[OpenMidLeft][Load][0x33]
+Leeroy... looks like you've[N]
+won. Gah...[A][X]

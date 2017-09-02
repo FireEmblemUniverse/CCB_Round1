@@ -1,0 +1,3 @@
+[OpenMidLeft][LoadGheb]
+Hey there! Come on, let's[N]
+have some fun![A][X]

@@ -1,0 +1,7 @@
+[Right][LoadCurrent]
+[Left][LoadRoshe]
+My name is Roshea, a member of the[N]
+Wolfguard of Aurelis. Well, except[AN]
+the fact that they're all dead, so[N]
+I've decided to go travelling instead.[AN]
+I hope you don't mind if I join you.[AN][X]

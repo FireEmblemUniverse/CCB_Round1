@@ -1,0 +1,8 @@
+[MidRight][LoadFace][0x14][0x1]
+[MidLeft][LoadFace][0x2][0x1]
+That village looks nice.[N]
+Those horses don't.[AN]
+[MidRight]
+And one of those horses[N]
+is looking fancy.[AN]
+LEEROY...[A][X]

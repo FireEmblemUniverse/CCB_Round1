@@ -1,0 +1,6 @@
+[MidLeft][LoadFace][0x13][0x1]
+[MidRight][LoadCurrent]
+I can see you have[N]
+a tragic backstory.[A]
+[MidLeft]
+[Beat]I don't want to talk about it.[A][X]

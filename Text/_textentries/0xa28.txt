@@ -1,0 +1,6 @@
+[Right][LoadCurrent]
+[MidLeft][LoadFace][0x5E][0x1]
+That Samson fellow means well,[N]
+but he got confused and is with[AN]
+the Donateenaries. You might be[N]
+able to get him to stand down.[A][X]

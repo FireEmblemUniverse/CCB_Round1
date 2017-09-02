@@ -1,0 +1,5 @@
+[OpenLeft][LoadLeeroy]
+[OpenRight][LoadVoid]
+Victory is had. Let's go![A]
+[Left]
+That was anti-climatic.[A][X]

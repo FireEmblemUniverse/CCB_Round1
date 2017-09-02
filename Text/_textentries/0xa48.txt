@@ -1,0 +1,8 @@
+[Left][LoadBreguet]
+[Right][LoadVoid]
+Well, uh, that is something, kid.[A]
+[Left]
+You needed a road.[N]
+I gave you one.[A]
+[Right]
+Fair enough.[A][X]

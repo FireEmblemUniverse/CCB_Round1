@@ -1,0 +1,7 @@
+[OpenLeft][LoadSigurd]
+What, someone is in need of help?[N]
+Allow my slightly, highly flammable[AN]
+self to assist. What? I have bad[N]
+experiences with fire spells, okay?[AN]
+Being the main course at Alvis's[N]
+Barhara BBQ isn't very fun.[AN][X]

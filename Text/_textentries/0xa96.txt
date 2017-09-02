@@ -1,0 +1,2 @@
+You can't cross the village[N]
+without bringing the kid.[A][X]

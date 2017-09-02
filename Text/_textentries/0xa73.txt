@@ -1,0 +1,7 @@
+[OpenLeft][LoadKaga]
+[OpenRight][LoadVoid]
+People are in our way.[A]
+[Left]
+We're going to change that?[A]
+[Right]
+Indeed.[A][X]

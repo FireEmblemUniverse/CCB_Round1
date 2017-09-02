@@ -1,0 +1,5 @@
+[OpenMidLeft][Load][0x3C]
+I am the King of the Basement![N]
+We shall rise up and start[AN]
+a large Rage War against those[N]
+who dare stand against us! DIE![AN][X]

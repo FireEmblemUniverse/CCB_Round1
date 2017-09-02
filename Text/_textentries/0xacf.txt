@@ -1,0 +1,5 @@
+[OpenMidLeft][Load][0x35]
+You rebels DARE face such[N]
+a magnificent summoner?[AN]
+Very well. Allow me to give[N]
+you fools a taste of my power.[AN][X]

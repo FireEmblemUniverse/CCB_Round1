@@ -1,0 +1,3 @@
+[OpenMidLeft][Load][0x37]
+Donate to Hex! Always[N]
+donate to Hex! Forever![A][X]

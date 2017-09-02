@@ -1,0 +1,6 @@
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5D][0x01]
+Apparently Gwendy has gathered[N]
+an army of trainees. Do something[AN]
+about it! Appearences can be very[N]
+decieving; there's supers there![AN][X]

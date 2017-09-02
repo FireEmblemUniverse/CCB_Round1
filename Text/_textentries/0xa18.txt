@@ -1,0 +1,2 @@
+Sets a trap that does damage[N]
+to anyone who steps on it.[X]

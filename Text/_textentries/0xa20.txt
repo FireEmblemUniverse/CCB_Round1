@@ -1,0 +1,8 @@
+[MidLeft][LoadPrine]
+Okay, let's try one more time...[AN]
+[CloseEyes][Beat] [Beat][AN]
+[OpenEyes]Blast! Why can't I use this[N]
+Knight's Crest? I'm clearly qualified![AN]
+Whatever, maybe it'll work someday.[AN]
+[Beat] Is that soldiers I hear?[N]
+Ugh, oh no...[A][X]

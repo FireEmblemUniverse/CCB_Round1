@@ -1,0 +1,3 @@
+[ML][LoadYuni]
+If I die...[N]
+Will anyone mourn me...?[A][X]

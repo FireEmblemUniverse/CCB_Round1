@@ -1,0 +1,5 @@
+[ML][LoadBanana]
+N-no... This cannot be happening![N]
+My plans... Avenge me, Donkey Kong![AN]
+You always liked buying bananas...[N]
+...so carry on my legacy...[AN][X]

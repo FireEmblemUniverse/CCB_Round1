@@ -1,0 +1,3 @@
+[OpenMidLeft][Load][0x38]
+You seem to be having fun.[N]
+Take this: my Short Spear![AN][X]

@@ -1,0 +1,6 @@
+[MidLeft][LoadFace][0x2][0x1]
+Hold! There are enemies nearby.[AN]
+They want to impede our progress.[AN]
+We will show them what our[N]
+army is made of.[AN]
+Form up and prepare to advance![A][X]

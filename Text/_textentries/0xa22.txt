@@ -1,0 +1,7 @@
+[MidRight][LoadCurrent]
+[MidLeft][LoadFace][0x5F][0x01]
+Whoa, whoa, don't point[N]
+that weapon at me![AN]
+Okay, okay, I'll give you[N]
+something nice, so just[AN]
+leave me alone, will you?[A][X]

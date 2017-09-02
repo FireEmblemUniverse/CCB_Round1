@@ -1,0 +1,4 @@
+[Left][LoadCelica]
+Arise, creatures of the depths...[N]
+Come now, and devour my enemies![AN]
+MESSIAH![A][X]
