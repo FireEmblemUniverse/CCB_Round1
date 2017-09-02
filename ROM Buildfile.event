@@ -24,6 +24,13 @@
     BYTE 00 10 10 00 10 20 00 00 00 00
     ALIGN 4
 
+    PUSH //because #inctext is broken
+    MESSAGE Pointer changed at 0x8472c
+    ORG 0x8472c
+    POIN NewDeathQuoteTable
+
+    POP
+
     PUSH
         ORG $99e64
         POIN NewPrepScreenShopList
@@ -79,6 +86,7 @@
     #include "Blitz Palettes/Palette Setup.event"   
     
     MESSAGE Used free space ends at currentOffset
+
 #else
     ERROR You are not assembling FE8 events!
 #endif
