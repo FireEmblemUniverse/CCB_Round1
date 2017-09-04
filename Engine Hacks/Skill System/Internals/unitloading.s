@@ -7,6 +7,7 @@
 .thumb
 .equ ChargeupTable, SkillAdder+4
 .equ SkillAdder, LevelUpSkillTable+4
+.equ Skill_Getter, ChargeupTable+4
 .set BWLTable, 0x203e884
 .macro blh to, reg=r3
   ldr \reg, =\to
@@ -86,7 +87,9 @@ NoSkills:
 AddCharge:
 push {r4}
 mov r0, r5 @char data
-blh Skill_Getter
+ldr r2, Skill_Getter
+mov lr, r2
+.short 0xf800
 mov r4, r0 @skill buffer
 Main_loop:@loop through skills checking if they're chargeable
 ldrb r1, [r4]
