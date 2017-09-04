@@ -59,29 +59,58 @@ strb r1, [r0, #3]
     ldrb r1, [r6, #1] @skill number
 	
 	
-	push {r2}
-	ldr r0,ChargeupTable
-	Loop:
-	ldrb r2,[r0]
-	add r0,#2
-	cmp r2,#0
-	beq Next
-	cmp r2,r1
-	bne Loop
-	sub r0,#0x1
-	ldrb r0,[r0]
-	add r0,#0x10
-	mov r2,#0x47
-	strb r0,[r5,r2]
+	@ push {r2}
+	@ ldr r0,ChargeupTable
+	@ Loop:
+	@ ldrb r2,[r0]
+	@ add r0,#2
+	@ cmp r2,#0
+	@ beq Next
+	@ cmp r2,r1
+	@ bne Loop
+	@ sub r0,#0x1
+	@ ldrb r0,[r0]
+	@ add r0,#0x10
+	@ mov r2,#0x47
+	@ strb r0,[r5,r2]
 	
-	Next:
-	pop {r2}
+	@ Next:
+	@ pop {r2}
     mov r0, r5
     .short 0xf800 @try to add the skill
     add r6, #2
     b CheckLoop @keep checking
 
 NoSkills:
+@do the personal and class skills now
+AddCharge:
+push {r4}
+mov r0, r5 @char data
+blh Skill_Getter
+mov r4, r0 @skill buffer
+Main_loop:@loop through skills checking if they're chargeable
+ldrb r1, [r4]
+cmp r1, #0
+beq End_main
+  ldr r0,ChargeupTable
+  Loop:
+  ldrb r2,[r0]
+  add r0,#2
+  cmp r2,#0
+  beq Next
+  cmp r2,r1
+  bne Loop
+  sub r0,#0x1
+  ldrb r0,[r0]
+  add r0,#0x10
+  mov r2,#0x47
+  strb r0,[r5,r2]
+  Next:
+  add r4, #1
+  b Main_loop
+End_main:
+pop {r4}
+
 @original
 mov r0, r5
 blh 0x80281c8
@@ -92,3 +121,5 @@ bx r6
 LevelUpSkillTable:
 @POIN LevelUpSkillTable
 @POIN SkillAdder
+@POIN ChargeupTable
+@POIN Skill_Getter
