@@ -1,4 +1,3 @@
-[OpenMidRight][LoadLeeroy]
-Ah... with this wound... Forgive[N]
-me, your highness.[AN]
-I must retreat.[A][X]
+[OpenMidRight][LoadVoid]
+But this... this can't be.[N]
+Leeroy...[A][CloseEyes][X]

@@ -1,3 +1,2 @@
-[ML][LoadMeriah]
-Come now, and face me![N]
-GEOMANCY![A][X]
+[OpenMidLeft][Load][0x40]
+Forgive me, Sir Maeda...[A][X]

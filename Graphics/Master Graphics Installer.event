@@ -43,7 +43,9 @@ SnowObjectType:
 #incbin "SnowObject_LZ.bin"
 
 SnowPalette:
-#incbin "SnowPalette_FE8.bin"
+// #incbin "SnowPalette_FE8.bin"
+#incbin "b21palette.bin"
+// #incext Png2Dmp "b21palette.png" --palette-only
 
 SnowTileConfig:
 #incbin "SnowTileConfig_LZ.bin"

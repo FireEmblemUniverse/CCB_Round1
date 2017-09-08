@@ -1,5 +1,3 @@
-[OpenMidLeft][Load][0x30]
-Who the hell are you?! Aren't[N]
-you supposed to be dead?![AN]
-You shall have the honour of[N]
-dying to the name of O'Neill![A][X]
+[OpenMidRight][LoadMark]
+...This is just punishment[N]
+for... seeking revengeance...[A][CloseEyes][X]

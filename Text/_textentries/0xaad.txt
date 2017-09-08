@@ -1,2 +1,3 @@
-[OpenMidRight][LoadBob]
-Kirsten, stay strong...[A][CloseEyes][X]
+[OpenMidRight][LoadKirsten]
+Bob... I feel...[N]
+cold...[A][CloseEyes][X]

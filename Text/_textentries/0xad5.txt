@@ -1,4 +1,3 @@
 [OpenMidLeft][Load][0x3F]
-Remember: a single death is[N]
-a tragedy. A million deaths[AN]
-is a statistic. Never forget...[AN][X]
+What a tragedy this war[N]
+is... But no matter.[A][X]

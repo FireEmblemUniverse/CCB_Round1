@@ -1,5 +1,3 @@
-[OpenMidLeft][Load][0x3A]
-You again?! I've had it with[N]
-that damn Void and her liber-[AN]
-ation army or whatnot! Get[N]
-over here and die, you scum![AN][X]
+[OpenMidLeft][LoadGheb]
+Hey there! Come on, let's[N]
+have some fun![A][X]

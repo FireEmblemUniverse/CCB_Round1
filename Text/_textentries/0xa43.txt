@@ -1,4 +1,3 @@
-VOID'S BLITZARRE ADVENTURE SCRIPT[N]
-Most writing here by MC[N]
-Control codes, formattng by Darr[N]
-How does one even comment[X]
+[MidRight][LoadVoid]
+It's over, Demon King![N]
+I have the high ground.[A][X]

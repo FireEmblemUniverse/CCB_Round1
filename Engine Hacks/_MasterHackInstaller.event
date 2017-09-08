@@ -237,9 +237,6 @@ ALIGN 4
   UM_Summon_DK
   UM_Pick
 
-  //Rally
-  MenuCommand(UM_Rally, UM_RallyDesc, NormalText, RallyUsability, RallyEffect)
-
   // UM_Talk
   MenuCommand(0x680, 0x6c9, GreenText, 0x23c81, 0x23cc5)
   // UM_Support
@@ -270,6 +267,9 @@ ALIGN 4
   UM_Item
   UM_Trade
   UM_Supply
+
+  //Rally
+  MenuCommand(UM_Rally, UM_RallyDesc, NormalText, RallyUsability, RallyEffect)
 
   // #ifdef __DEBUG__
   MenuCommand(UMText_Win, UMDesc_Win, GreenText, Win_Usability, Win_Effect)

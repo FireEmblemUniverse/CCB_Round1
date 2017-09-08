@@ -1,3 +1,2 @@
-[OpenMidLeft][Load][0x3F]
-What a tragedy this war[N]
-is... But no matter.[A][X]
+[OpenMidLeft][Load][0x38]
+Urgh... You...[A][X]

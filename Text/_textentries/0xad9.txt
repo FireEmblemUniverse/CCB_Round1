@@ -1,2 +1,5 @@
 [OpenMidLeft][Load][0x3E]
-You... Don't go to heaven![A][X]
+So you've survived all of[N]
+my diabolical traps. Hm.[AN]
+It's all up to me, then.[N]
+I am Beran, and fear me![AN][X]

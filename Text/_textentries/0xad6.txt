@@ -1,2 +1,4 @@
-[OpenMidLeft][Load][0x3A]
-What?! Enemies? Here? Grrr...[A][X]
+[OpenMidLeft][Load][0x3F]
+Remember: a single death is[N]
+a tragedy. A million deaths[AN]
+is a statistic. Never forget...[AN][X]

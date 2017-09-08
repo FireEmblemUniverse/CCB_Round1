@@ -1,2 +1,3 @@
 [OpenMidLeft][Load][0x40]
-Forgive me, Sir Maeda...[A][X]
+Maeda's orders state that I've[N]
+got to take you down.[A][X]

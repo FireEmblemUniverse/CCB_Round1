@@ -1,5 +1,2 @@
-[OpenMidLeft][Load][0x32]
-Hehehe, I'm Bone, master of[N]
-the Bone Hole. And now...[AN]
-You're just another victim[N]
-for me! Taste Nosferatu![A][X]
+[OpenMidLeft][Load][0x30]
+Master Zonta, forgive me...[A][X]

@@ -1,3 +1,2 @@
-[OpenMidLeft][LoadGheb]
-Hey there! Come on, let's[N]
-have some fun![A][X]
+[OpenMidLeft][Load][0x3E]
+You... Don't go to heaven![A][X]

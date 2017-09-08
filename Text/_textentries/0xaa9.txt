@@ -1,4 +1,4 @@
-[OpenMidRight][LoadBede]
-Ah... I cannot easily heal this[N]
-wound. Forgive me, Void.[AN]
-I must retreat.[A][X]
+[OpenMidRight][LoadMyrmAnna]
+It's true what they say...[N]
+In the end, material possessions[A]
+mean nothing...[A][CloseEyes][X]

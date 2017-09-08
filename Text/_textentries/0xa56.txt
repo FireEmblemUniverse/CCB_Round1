@@ -1,3 +1,2 @@
 [Right][LoadVoid]
-Well, those soldiers are no longer[N]
-in the way. Onwards we go![A][X]
+We did it, but we must get moving.[A][X]
