@@ -1,7 +1,7 @@
 EventPointerTable(0xd5, PointerList)
 EventPointerTable(0xcc, NewPalette)
 NewPalette:
-#incbin "blitzch25palette.dmp"
+#incbin "b25palette.bin"
 ALIGN 4
 
 PointerList:
