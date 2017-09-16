@@ -512,7 +512,7 @@ Rattle rattle...[A][X]
 
 ## WendyCombat
 [ML][LoadWendy]
-I am Gwendolyn the Great Knight![N]
+I am Gwendolyn the Great![N]
 I've worked my way to the top![A][X]
 
 ## WendyVsFlorina
