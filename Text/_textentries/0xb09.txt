@@ -1,4 +1,4 @@
-[OpenMidLeft][Load][0x49]
+[OpenMidLeft][Load][0x49][0x1]
 The Donateenaries' days are[N]
 nearing their end...[AN]
 Your Majesty, I'm so sorry...[N]

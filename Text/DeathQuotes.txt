@@ -555,7 +555,7 @@ You always liked buying bananas...[N]
 ...so carry on my legacy...[AN][X]
 
 ## CaellachCombat
-[OpenMidLeft][Load][0x43]
+[OpenMidLeft][Load][0x43][0x1]
 Ya know what the best names[N]
 happen to be? New ones. Fresh[AN]
 ones. Different ones. Iuchar![N]
@@ -564,24 +564,24 @@ localisers are the best thing[N]
 ever! Their names are amazing![AN][X]
 
 ## CaellachDeath
-[OpenMidLeft][Load][0x43]
+[OpenMidLeft][Load][0x43][0x1]
 Even if I'm gone... The poll[N]
 shall stand true... He'll[AN]
 never be referred to as Sety[N]
 again... Hahaha...![AN][X]
 
 ## Orson2Combat
-[OpenMidLeft][Load][0x45]
+[OpenMidLeft][Load][0x45][0x1]
 I have returned! You've beaten[N]
 me before, but I want revenge![AN][X]
 
 ## Orson2Death
-[OpenMidLeft][Load][0x45]
+[OpenMidLeft][Load][0x45][0x1]
 Darling... Darling...[N]
 Dar... ling... Dar...[AN][X]
 
 ## MorvaCombat
-[OpenMidLeft][Load][0x49]
+[OpenMidLeft][Load][0x49][0x1]
 You've conquered our lands.[N]
 You're ransacking our capital.[AN]
 And now, you are knocking right[N]
@@ -592,14 +592,14 @@ defend this gate to my very[N]
 last breath! Begone, dastards![AN][X]
 
 ## MorvaDeath
-[OpenMidLeft][Load][0x49]
+[OpenMidLeft][Load][0x49][0x1]
 The Donateenaries' days are[N]
 nearing their end...[AN]
 Your Majesty, I'm so sorry...[N]
 You must stop these monsters...[AN][X]
 
 ## Lyon2Combat
-[OpenMidLeft][Load][0x4A]
+[OpenMidLeft][Load][0x4A][0x1]
 You... You aren't meant to[N]
 be here. You were warped[AN]
 into this field! You truly[N]
@@ -608,7 +608,7 @@ I wanted to conquer you, you[N]
 Nintenlord-loving scum![AN][X]
 
 ## LyonVsVoid
-[OpenMidLeft][Load][0x4A]
+[OpenMidLeft][Load][0x4A][0x1]
 So you finally made it. Void,[N]
 princess of a realm who's name[AN]
 was stolen. Descended from your[N]
@@ -633,7 +633,7 @@ I shall end your ambitions, and[N]
 stop the Demon King's revival![AN][X]
 
 ## Lyon2Death
-[OpenMidLeft][Load][0x4A]
+[OpenMidLeft][Load][0x4A][0x1]
 No... No. I feel my strength[N]
 sapping away from me... But...[AN]
 all is not lost. With the last[N]
@@ -642,13 +642,13 @@ RETURN TO US! PRAISE HEXTATOR![N]
 ...Long live the Donateenaries![AN][X]
 
 ## FeditorCombat
-[ML][Load][0x01]
+[ML][Load][0x01][0x1]
 I... HAVE RESURRECTED...[N]
 STUPID HUMANS...[AN]
 I WILL KILL YOU ALL...[AN][X]
 
 ## FeditorDeath
-[ML][Load][0x01]
+[ML][Load][0x01][0x1]
 GWA...! WHY... WHY HAVE I...[N]
 BEEN DEFEATED... SO EASILY...[AN]
 IS THIS... THE POWER... OF[N]

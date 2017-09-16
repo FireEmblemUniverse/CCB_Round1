@@ -1,4 +1,4 @@
-[OpenMidLeft][Load][0x4A]
+[OpenMidLeft][Load][0x4A][0x1]
 So you finally made it. Void,[N]
 princess of a realm who's name[AN]
 was stolen. Descended from your[N]

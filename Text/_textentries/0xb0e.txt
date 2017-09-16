@@ -1,4 +1,4 @@
-[ML][Load][0x01]
+[ML][Load][0x01][0x1]
 GWA...! WHY... WHY HAVE I...[N]
 BEEN DEFEATED... SO EASILY...[AN]
 IS THIS... THE POWER... OF[N]
