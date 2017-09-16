@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="18" tilewidth="16" tileheight="16" nextobjectid="1">
- <tileset firstgid="1" name="01000203" tilewidth="16" tileheight="16" tilecount="1024">
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="15" height="18" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="01000203" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="Tilesets/FE8/01000203.png" trans="ffffff" width="512" height="512"/>
  </tileset>
  <layer name="Main" width="15" height="18">
@@ -12,7 +12,7 @@
    <property name="MapChangesID" value="0x6f"/>
    <property name="MapID" value="0x70"/>
    <property name="ObjectType1" value="0x01"/>
-   <property name="PaletteID" value="0x02"/>
+   <property name="PaletteID" value="0x8b"/>
    <property name="TileConfig" value="0x03"/>
   </properties>
   <data>
