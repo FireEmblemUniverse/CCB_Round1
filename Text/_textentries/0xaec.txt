@@ -1,2 +1,2 @@
-[OpenMidLeft][Load][0x40]
+[OpenMidLeft][Load][0x40][0x01]
 Forgive me, Sir Maeda...[A][X]

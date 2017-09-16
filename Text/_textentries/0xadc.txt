@@ -1,4 +1,4 @@
-[OpenMidLeft][Load][0x3A]
+[OpenMidLeft][Load][0x3A][0x01]
 You again?! I've had it with[N]
 that damn Void and her liber-[AN]
 ation army or whatnot! Get[N]

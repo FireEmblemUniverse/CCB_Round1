@@ -1,3 +1,3 @@
-[OpenMidLeft][Load][0x42]
+[OpenMidLeft][Load][0x42][0x01]
 Where's the fool who wants to[N]
 help me with target practice?[A][X]

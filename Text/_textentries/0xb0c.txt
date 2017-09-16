@@ -1,4 +1,4 @@
-[OpenMidLeft][Load][0x4A]
+[OpenMidLeft][Load][0x4A][0x01]
 No... No. I feel my strength[N]
 sapping away from me... But...[AN]
 all is not lost. With the last[N]

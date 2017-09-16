@@ -1,2 +1,2 @@
-[OpenMidLeft][Load][0x32]
+[OpenMidLeft][Load][0x32][0x01]
 Guh... Damn you...[A][X]
