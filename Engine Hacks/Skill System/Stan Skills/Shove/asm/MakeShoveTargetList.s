@@ -52,19 +52,19 @@ AddUnitToTargetListIfShovable:
 	ldr r3, =ppActiveUnit
 	ldr r3, [r3]
 	
-	.ifndef SHOVE_EVERYONE
-		ldr r1, [r4, #0]
-		ldr r2, [r4, #4]
+	@ .ifndef SHOVE_EVERYONE
+		@ ldr r1, [r4, #0]
+		@ ldr r2, [r4, #4]
 		
-		ldr r1, [r1, #0x28]
-		ldr r2, [r2, #0x28]
+		@ ldr r1, [r1, #0x28]
+		@ ldr r2, [r2, #0x28]
 		
-		orr r1, r2
-		mov r2, #0x01 @ Mounted Aid Flag
+		@ orr r1, r2
+		@ mov r2, #0x01 @ Mounted Aid Flag
 		
-		tst r1, r2
-		bne NoShov4U
-	.endif
+		@ tst r1, r2
+		@ bne NoShov4U
+	@ .endif
 	
 	ldrb r1, [r4, #0x10] @ target  x
 	ldrb r0, [r3, #0x10] @ subject x
