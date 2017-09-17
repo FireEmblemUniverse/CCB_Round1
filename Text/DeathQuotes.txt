@@ -168,36 +168,36 @@ alone anymore...[A][CloseEyes][X]
 for... seeking revengeance...[A][CloseEyes][X]
 
 ## ONeillCombat
-[OpenMidLeft][Load][0x30]
+[OpenMidLeft][Load][0x30][0x01]
 Who the hell are you?! Aren't[N]
 you supposed to be dead?![AN]
 You shall have the honour of[N]
 dying to the name of O'Neill![A][X]
 
 ## ONeillDeath
-[OpenMidLeft][Load][0x30]
+[OpenMidLeft][Load][0x30][0x01]
 Master Zonta, forgive me...[A][X]
 
 ## BoneCombat
-[OpenMidLeft][Load][0x32]
+[OpenMidLeft][Load][0x32][0x01]
 Hehehe, I'm Bone, master of[N]
 the Bone Hole. And now...[AN]
 You're just another victim[N]
 for me! Taste Nosferatu![A][X]
 
 ## BoneDeath
-[OpenMidLeft][Load][0x32]
+[OpenMidLeft][Load][0x32][0x01]
 Guh... Damn you...[A][X]
 
 ## JenkinsCombat
-[OpenMidLeft][Load][0x33]
+[OpenMidLeft][Load][0x33][0x01]
 I want my gold, and I'm[N]
 gonna get my gold. If you[AN]
 wanna live, you'd do well[N]
 to fear me and my horseslayer![A][X]
 
 ## JenkinsVsLeeroy
-[OpenMidLeft][Load][0x33]
+[OpenMidLeft][Load][0x33][0x01]
 Ah... Leeroy. It's been a[N]
 long, long time. Just you[AN]
 and me now, ya damn knight.[N]
@@ -207,86 +207,87 @@ Always one for the kingdom...[AN]
 Silence, you traitor! Ever[N]
 since you betrayed the realm-[AN]
 [Clear]
-[OpenMidLeft][Load][0x33]
+[OpenMidLeft][Load][0x33][0x01]
 Pah! Always showing me up.[N]
 Who's the princess's right[AN]
 hand man? You, you fool.[N]
 It's time to end this!![AN][X]
 
 ## JenkinsDeath
-[OpenMidLeft][Load][0x33]
+[OpenMidLeft][Load][0x33][0x01]
 Leeroy... looks like you've[N]
 won. Gah...[A][X]
 
 ## SaaraCombat
-[OpenMidLeft][Load][0x34]
+[OpenMidLeft][Load][0x34][0x01]
 So you've made it through[N]
 the storm. Very well![AN]
 Come and face me![AN][X]
 
 ## SaaraDeath
-[OpenMidLeft][Load][0x30]
+[OpenMidLeft][Load][0x34][0x01]
 Watch out, Zonta. These[N]
 rebels are strong...[A][X]
 
 ## ZontaCombat
-[OpenMidLeft][Load][0x35]
+[OpenMidLeft][Load][0x35][0x01]
 You rebels DARE face such[N]
 a magnificent summoner?[AN]
-Very well. Allow me to give[N]
-you fools a taste of my power.[AN][X]
+Very well. Allow me to[N]
+give you fools a taste of[AN]
+my amazing power.[AN][X]
 
 ## ZontaDeath
-Blood...? Is this... my[N]
+Blood...? Is this... my[N][0x01]
 blood? Impossible...[AN][X]
 
 ## MurrayCombat
-[OpenMidLeft][Load][0x37]
+[OpenMidLeft][Load][0x37][0x01]
 Donate to Hex! Always[N]
 donate to Hex! Forever![A][X]
 
 ## MurrayDeath
-[OpenMidLeft][Load][0x37]
+[OpenMidLeft][Load][0x37][0x01]
 The offensive material...[N]
 was thus removed.[A][X]
 
 ## TiradoCombat
-[OpenMidLeft][Load][0x38]
-You seem to be having fun.[N]
+[OpenMidLeft][Load][0x38][0x01]
+You seem to have a lot of fun.[N]
 Take this: my Short Spear![AN][X]
 
 ## TiradoDeath
-[OpenMidLeft][Load][0x38]
+[OpenMidLeft][Load][0x38][0x01]
 Urgh... You...[A][X]
 
 ## SelenaCombat
-[OpenMidLeft][Load][0x3F]
+[OpenMidLeft][Load][0x3F][0x01]
 What a tragedy this war[N]
 is... But no matter.[A][X]
 
 ## SelenaDeath
-[OpenMidLeft][Load][0x3F]
+[OpenMidLeft][Load][0x3F][0x01]
 Remember: a single death is[N]
 a tragedy. A million deaths[AN]
 is a statistic. Never forget...[AN][X]
 
 ## PabloCombat
-[OpenMidLeft][Load][0x3A]
+[OpenMidLeft][Load][0x3A][0x01]
 What?! Enemies? Here? Grrr...[A][X]
 
 ## PabloDeath
-[OpenMidLeft][Load][0x3A]
+[OpenMidLeft][Load][0x3A][0x01]
 I'll remember this![A][X]
 
 ## BeranCombat
-[OpenMidLeft][Load][0x3E]
+[OpenMidLeft][Load][0x3E][0x01]
 So you've survived all of[N]
 my diabolical traps. Hm.[AN]
 It's all up to me, then.[N]
 I am Beran, and fear me![AN][X]
 
 ## BeranDeath
-[OpenMidLeft][Load][0x3E]
+[OpenMidLeft][Load][0x3E][0x01]
 You... Don't go to heaven![A][X]
 
 ## GhebCombat
@@ -295,92 +296,94 @@ Hey there! Come on, let's[N]
 have some fun![A][X]
 
 ## Pablo2Combat
-[OpenMidLeft][Load][0x3A]
+[OpenMidLeft][Load][0x3A][0x01]
 You again?! I've had it with[N]
 that damn Void and her liber-[AN]
 ation army or whatnot! Get[N]
 over here and die, you scum![AN][X]
 
 ## Pablo2Death
-[OpenMidLeft][Load][0x3A]
+[OpenMidLeft][Load][0x3A][0x01]
 I see... that I am to meet[N]
 my death here in the sands...[A][X]
 
 ## AiasCombat
-[OpenMidLeft][Load][0x3B]
+[OpenMidLeft][Load][0x3B][0x01]
 Don't even think of spinning[N]
 your swords, you rebels![AN][X]
 
 ## AiasDeath
-[OpenMidLeft][Load][0x3B]
+[OpenMidLeft][Load][0x3B][0x01]
 Me, felled by this motley[N]
 crew? Absolute nonsense...[A][X]
 
 ## CarlyleCombat
-[OpenMidLeft][Load][0x3C]
+[OpenMidLeft][Load][0x3C][0x01]
 I am the King of the Basement![N]
 We shall rise up and start[AN]
-a large Rage War against those[N]
-who dare stand against us! DIE![AN][X]
+a large Rage War against[N]
+those who dare stand[AN]
+against us! DIE![AN][X]
 
 ## CarlyleVsEevster
-[OpenMidLeft][Load][0x3C]
+[OpenMidLeft][Load][0x3C][0x01]
 Oh, you've finally taken up[N]
 arms. No matter. You shall[AN]
 not bar my path, Eevster![A][X]
 
 ## CarlyleDeath
-[OpenMidLeft][Load][0x3C]
+[OpenMidLeft][Load][0x3C][0x01]
 Long live the Basement![A][X]
 
 ## GritCombat
-[OpenMidLeft][Load][0x42]
+[OpenMidLeft][Load][0x42][0x01]
 Where's the fool who wants to[N]
 help me with target practice?[A][X]
 
 ## GritDeath
-[OpenMidLeft][Load][0x42]
+[OpenMidLeft][Load][0x42][0x01]
 Well, shoot. Guess I'll mosey[N]
 on off into the sunset now...[A][X]
 
 ## OrsonCombat
-[OpenMidLeft][Load][0x45]
+[OpenMidLeft][Load][0x45][0x01]
 Here in Dead Valley, things[N]
 don't stay alive long. Heh...[A][X]
 
 ## OrsonVsNikita
-[OpenMidLeft][Load][0x45]
+[OpenMidLeft][Load][0x44][0x01]
 It's you... the source of[N]
 my appearance. My body.[AN]
+[Clear]
 [MR][LoadNikita]
 Hmph. My evil duplicate[N]
 shows his face at last.[AN][X]
 
 ## OrsonDeath
-[OpenMidLeft][Load][0x45]
+[OpenMidLeft][Load][0x44][0x01]
 Darling... Darling...[A][X]
 
 ## LyonCombat
-[OpenMidLeft][Load][0x4A]
+[OpenMidLeft][Load][0x4A][0x01]
 ROOOOOOOOARRRRRRR!![A][X]
 
 ## LyonDeath
-[OpenMidLeft][Load][0x4A]
+[OpenMidLeft][Load][0x4A][0x01]
 RoOoOoAaAaAaRrRrRrrr......[A][X]
 
 ## Ch17LyonDecays
-[OpenMidLeft][Load][0x4A]
-Guh? Roar? GAAAAAAAAAHHHHHH...[A]
+[OpenMidLeft][Load][0x4A][0x01]
+Guh? Roar? GAAAAAAAAAHHHHHH...[AN]
 [ToggleMouthMove]
 (The dracozombie rotted away!)[A][X]
 
 ## VigardeCombat
-[OpenMidLeft][Load][0x40]
+[OpenMidLeft][Load][0x40][0x01]
 Maeda's orders state that I've[N]
 got to take you down.[A][X]
 
 ## VigardeDeath
-[OpenMidLeft][Load][0x40]
+[OpenMidLeft][Load][0x40][0x01]
 Forgive me, Sir Maeda...[A][X]
 
 ## MeriahCombat
@@ -453,8 +456,8 @@ Will anyone mourn me...?[A][X]
 ## TataraCombat
 [ML][LoadTatara]
 You imbeciles think yourselves a[N]
-match for the mighty Tatara? Such[AN]
-a dire misjudgment cannot go[N]
+match for the mighty Tatara?[AN]
+A dire misjudgment cannot go[N]
 uncorrected.[A][X]
 
 ## TataraDeath
@@ -472,8 +475,9 @@ Urgh... You've crossed the[N]
 boats and made it here. Don't[AN]
 tell me you can cast Dear or[N]
 Illusion... Now I may lack the[AN]
-power of Ragnarok, but the second[N]
-level of flames shall do. ELFIRE!![AN][X]
+power of Ragnarok, but the[N]
+second level of flames shall do.[AN]
+ELFIRE!![AN][X]
 
 ## BossCelicaDeath
 [ML][LoadCelica]
@@ -520,19 +524,20 @@ I've worked my way to the top![A][X]
 I always told you I'd become a[N]
 good unit, Evil Florina. Look[AN]
 who's a powerful great knight,[N]
-and then look at the weak shaman.[AN]
-I was once weak and scorned. But[N]
-now I am strong. You can become[AN]
-strong too, if you follow me.[N]
-It's a long road, but it's possible.[AN]
+and then look at the weak[AN]
+shaman. I was once weak and[N]
+scorned. But now I am strong.[AN]
+You can become strong too,[N]
+if you follow me. It's a[AN]
+long road, but it's possible.[AN]
 [Clear]
 [MR][LoadFlorina]
 You've well and truly lost it,[N]
 haven't you? Completely lost it.[AN]
 I've paid some mercenaries well[N]
 to finish this battle, so that[AN]
-means your days are numbered. So[N]
-long, Gwendolyn. It was fun.[AN][X]
+means your days are numbered.[N]
+So long, Gwendolyn. It was fun.[AN][X]
 
 ## WendyDeath
 [ML][LoadWendy]
@@ -544,18 +549,20 @@ I can't die...[A][X]
 ...and with this potassium,[N]
 I will open the Outrealm Gate[AN]
 and lay this world to ruin!![N]
-Don't even think about stopping[AN]
-me, you stupid fool! Eat bananas![AN][X]
+Don't even think about[AN]
+stopping me, you stupid fool![N]
+Eat bananas! Lots of them![AN][X]
 
 ## BananaDeath
 [ML][LoadBanana]
-N-no... This cannot be happening![N]
-My plans... Avenge me, Donkey Kong![AN]
-You always liked buying bananas...[N]
-...so carry on my legacy...[AN][X]
+N-no... This cannot be![N]
+My plans... Avenge me,[AN]
+Donkey Kong! You always liked[N]
+buying bananas... so carry on[AN]
+my legacy...[AN][X]
 
 ## CaellachCombat
-[OpenMidLeft][Load][0x43][0x1]
+[OpenMidLeft][Load][0x43][0x01]
 Ya know what the best names[N]
 happen to be? New ones. Fresh[AN]
 ones. Different ones. Iuchar![N]
@@ -564,24 +571,24 @@ localisers are the best thing[N]
 ever! Their names are amazing![AN][X]
 
 ## CaellachDeath
-[OpenMidLeft][Load][0x43][0x1]
+[OpenMidLeft][Load][0x43][0x01]
 Even if I'm gone... The poll[N]
 shall stand true... He'll[AN]
 never be referred to as Sety[N]
 again... Hahaha...![AN][X]
 
 ## Orson2Combat
-[OpenMidLeft][Load][0x45][0x1]
+[OpenMidLeft][Load][0x45][0x01]
 I have returned! You've beaten[N]
 me before, but I want revenge![AN][X]
 
 ## Orson2Death
-[OpenMidLeft][Load][0x45][0x1]
+[OpenMidLeft][Load][0x45][0x01]
 Darling... Darling...[N]
 Dar... ling... Dar...[AN][X]
 
 ## MorvaCombat
-[OpenMidLeft][Load][0x49][0x1]
+[OpenMidLeft][Load][0x49][0x01]
 You've conquered our lands.[N]
 You're ransacking our capital.[AN]
 And now, you are knocking right[N]
@@ -592,14 +599,14 @@ defend this gate to my very[N]
 last breath! Begone, dastards![AN][X]
 
 ## MorvaDeath
-[OpenMidLeft][Load][0x49][0x1]
+[OpenMidLeft][Load][0x49][0x01]
 The Donateenaries' days are[N]
 nearing their end...[AN]
 Your Majesty, I'm so sorry...[N]
 You must stop these monsters...[AN][X]
 
 ## Lyon2Combat
-[OpenMidLeft][Load][0x4A][0x1]
+[OpenMidLeft][Load][0x4A][0x01]
 You... You aren't meant to[N]
 be here. You were warped[AN]
 into this field! You truly[N]
@@ -608,14 +615,14 @@ I wanted to conquer you, you[N]
 Nintenlord-loving scum![AN][X]
 
 ## LyonVsVoid
-[OpenMidLeft][Load][0x4A][0x1]
+[OpenMidLeft][Load][0x4A][0x01]
 So you finally made it. Void,[N]
-princess of a realm who's name[AN]
-was stolen. Descended from your[N]
-holy Babby, and wielder of the[AN]
-Super Blitz. You've come here[N]
-seeking revenge, to stop me[AN]
-from reviving the Demon King[N]
+princess of a realm whose[AN]
+name was stolen. Descendant of[N]
+your holy Babby, and wielder of[AN]
+the Super Blitz. You've come[N]
+here seeking revenge, to stop[AN]
+me from reviving Demon King[N]
 Feditor, servant to our holy[AN]
 Hextator. You are in my way,[N]
 and the continent shall return[AN]
@@ -626,35 +633,39 @@ power of Naglfar, farewell![AN]
 You have killed my family.[N]
 You have took over my country.[AN]
 You've created so much misery.[N]
-And finally, YOU'RE IN MY WAY!![AN]
-DIE, MONSTER! YOU DON'T BELONG[N]
+And finally, King Lyon...[AN]
+YOU ARE IN MY WAY!! DIE,[N]
+MONSTER! YOU DON'T BELONG[N]
 IN THIS WORLD!! For everyone,[AN]
 I shall end your ambitions, and[N]
 stop the Demon King's revival![AN][X]
 
 ## Lyon2Death
-[OpenMidLeft][Load][0x4A][0x1]
+[OpenMidLeft][Load][0x4A][0x01]
 No... No. I feel my strength[N]
 sapping away from me... But...[AN]
 all is not lost. With the last[N]
 of my strength... FEDITOR,[AN]
-RETURN TO US! PRAISE HEXTATOR![N]
+RETURN TO US! PRAISE THE[N]
+GREAT LORD HEXTATOR![AN]
 ...Long live the Donateenaries![AN][X]
 
 ## FeditorCombat
-[ML][Load][0x01][0x1]
+[ML][Load][0x01][0x01]
 I... HAVE RESURRECTED...[N]
 STUPID HUMANS...[AN]
 I WILL KILL YOU ALL...[AN][X]
 
 ## FeditorDeath
-[ML][Load][0x01][0x1]
+[ML][Load][0x01][0x01]
 GWA...! WHY... WHY HAVE I...[N]
 BEEN DEFEATED... SO EASILY...[AN]
 IS THIS... THE POWER... OF[N]
-THE BUILDFILE? BUT... HUMANS.[AN]
-DON'T FORGET... AS LONG AS[N]
-GREED LIVES ON IN YOUR HEARTS...[AN]
-YOU WILL LOSE THE BUILDFILE AND[N]
-I WILL RISE FROM THE EARTH ONCE[AN]
-AGAIN... REMEMBER... THIS...[AN][X]
+THE BUILDFILE? BUT...[AN]
+HUMANS. DON'T FORGET...[N]
+AS LONG AS GREED LIVES ON[AN]
+IN YOUR HEARTS... YOU WILL[N]
+LOSE THE BUILDFILE AND I[AN]
+WILL RISE FROM THE EARTH[N]
+ONCE AGAIN... REMEMBER...[AN]
+TH...IS...[AN][X]

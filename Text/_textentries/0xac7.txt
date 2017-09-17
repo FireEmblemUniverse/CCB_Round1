@@ -1,2 +1,2 @@
-[OpenMidLeft][Load][0x30]
+[OpenMidLeft][Load][0x30][0x01]
 Master Zonta, forgive me...[A][X]

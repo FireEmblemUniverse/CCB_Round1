@@ -174,4 +174,4 @@ setMugEntry(0x14, LeeroyMug, 2, 5, 3, 3)
 
 NikitaMug:
 #incext PortraitFormatter "Nikita.png"
-setMugEntry(0x2F, NikitaMug, 2, 5, 3, 4)
+setMugEntry(0x2F, NikitaMug, 2, 5, 3, 3)

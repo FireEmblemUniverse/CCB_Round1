@@ -1,4 +1,4 @@
-[OpenMidLeft][Load][0x30]
+[OpenMidLeft][Load][0x30][0x01]
 Who the hell are you?! Aren't[N]
 you supposed to be dead?![AN]
 You shall have the honour of[N]

@@ -1,4 +1,4 @@
-[OpenMidLeft][Load][0x4A][0x1]
+[OpenMidLeft][Load][0x4A][0x01]
 You... You aren't meant to[N]
 be here. You were warped[AN]
 into this field! You truly[N]

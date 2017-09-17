@@ -214,7 +214,7 @@ and I might help you out down the line.[A][X]
 
 ##Ch16NikitaAppears
 [MidLeft][LoadVoid]
-[MidRight][LoadFace][0x45][0x1]
+[MidRight][LoadNikita]
 I'm Nikita. Don't get me mixed[N]
 up with that impostor there.[AN]
 Also there are enemies[N]

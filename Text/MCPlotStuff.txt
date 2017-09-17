@@ -601,7 +601,7 @@ SOON, we will finish this journey.
 [Left][LoadCelica]
 Ah...[A]
 [Right]
-I though I had killed you. Return[N]
+I thought I had killed you. Return[N]
 to whence you've came!![AN]
 [Left]
 Wait, I'm not evil any more![AN]

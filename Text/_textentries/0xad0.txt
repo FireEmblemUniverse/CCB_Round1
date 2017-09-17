@@ -1,2 +1,2 @@
-Blood...? Is this... my[N]
+Blood...? Is this... my[N][0x01]
 blood? Impossible...[AN][X]
