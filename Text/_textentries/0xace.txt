@@ -1,3 +1,3 @@
-[OpenMidLeft][Load][0x34][0x01]
+[OpenMidLeft][Load][0x30][0x01]
 Watch out, Zonta. These[N]
 rebels are strong...[A][X]

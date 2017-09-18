@@ -1,2 +1,2 @@
-[OpenMidLeft][Load][0x44][0x01]
+[OpenMidLeft][Load][0x45][0x01]
 Darling... Darling...[A][X]

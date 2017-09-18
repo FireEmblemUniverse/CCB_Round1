@@ -1,6 +1,5 @@
 [OpenMidLeft][Load][0x35][0x01]
 You rebels DARE face such[N]
 a magnificent summoner?[AN]
-Very well. Allow me to[N]
-give you fools a taste of[AN]
-my amazing power.[AN][X]
+Very well. Allow me to give[N]
+you fools a taste of my power.[AN][X]
