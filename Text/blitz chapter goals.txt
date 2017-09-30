@@ -50,8 +50,8 @@ Fight through the[N]
 Travel System, seize[X]
 
 ## Ch12Goal
-Defeat Gheb, even if[N]
-he means no harm[X]
+Defeat bosses, even if[N]
+Gheb means no harm[X]
 
 ## Ch13Goal
 Rout the enemy. It's[N]
