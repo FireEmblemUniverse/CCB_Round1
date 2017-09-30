@@ -1,4 +1,4 @@
-[OpenMidLeft][Load][0x49][0x1]
+[OpenMidLeft][Load][0x49][0x01]
 You've conquered our lands.[N]
 You're ransacking our capital.[AN]
 And now, you are knocking right[N]

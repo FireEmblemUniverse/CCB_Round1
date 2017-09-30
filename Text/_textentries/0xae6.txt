@@ -1,6 +1,7 @@
-[OpenMidLeft][Load][0x45][0x01]
+[OpenMidLeft][Load][0x44][0x01]
 It's you... the source of[N]
 my appearance. My body.[AN]
+[Clear]
 [MR][LoadNikita]
 Hmph. My evil duplicate[N]
 shows his face at last.[AN][X]
