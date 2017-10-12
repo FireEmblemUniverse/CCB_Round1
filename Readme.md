@@ -318,3 +318,4 @@ Paterick
 Teraspark  
 Monkeybard  
 Black Mage  
+Alusq

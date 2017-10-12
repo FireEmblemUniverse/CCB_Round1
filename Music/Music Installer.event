@@ -17,8 +17,17 @@ SongTable(0x1a,twelvedeftest,0)
 SongTable(0x1b,twobossnew, 0)
 #include "twobossnew.event"
 
+SongTable(0x1c, dwellfe8, 0)
+#include "dwellfe8.event"
+
 SongTable(0x57,grit__s_theme, 1)
 #include "grit__s_theme.event"
+
+SongTable(0xa, knightsoflazeria, 1)
+#include "knightsoflazeria.event"
+
+SongTable(0xc, endlessb, 1)
+#include "endlessb.event"
 
 SongTable(0x58, Enemy_Phase_2_Celica, 1)
 #include "Enemy_Phase_2_Celica.event"
