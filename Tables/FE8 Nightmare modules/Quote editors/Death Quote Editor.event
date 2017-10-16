@@ -1,6 +1,6 @@
 #define csvmacro028(arg000,arg001,arg002,arg003,arg004,arg005,arg006) "BYTE arg000 arg001 arg002 arg003 arg004 ;SHORT arg005 ;WORD arg006 "
 
-#inctext PFinder "C:\Users\bovie_000\Documents\GitHub\CCB_Round1\FE8_clean.gba" 0x9ecd4c NewDeathQuoteTable
+#inctext PFinder "C:\Users\Owner\Documents\Emu_stuff\GB(A)\FE8\Patches\Blitz\FE8_clean.gba" 0x9ecd4c NewDeathQuoteTable
 
 ALIGN 4
 NewDeathQuoteTable:
