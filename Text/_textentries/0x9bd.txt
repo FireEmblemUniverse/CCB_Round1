@@ -1,2 +1,2 @@
-Spur Speed: Adjacent allies[N]
-gain +4 Attack Speed.[X]
+Counter: Reflect physical damage[N]
+when attacked at 1-2 range.[X]

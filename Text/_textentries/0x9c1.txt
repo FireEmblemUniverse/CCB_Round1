@@ -1,2 +1,2 @@
-Nullify: Unit is protected[N]
-from all effective attacks.[X]
+Lancefaire: +4 damage[N]
+when equipping a lance.[X]

@@ -1,2 +1,2 @@
-Galeforce: Move again after[N]
-attacking and defeating an enemy.[X]
+Tomebreaker: +50 Hit/Avo when[N]
+enemy has a tome equipped.[X]

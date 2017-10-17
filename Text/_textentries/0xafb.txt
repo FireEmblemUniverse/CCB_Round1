@@ -1,3 +1,2 @@
-[ML][LoadCelica]
-Aaaarrr... It seems like I've...[N]
-Wait... Mila, is that you...?[A][X]
+[OpenMidLeft][Load][0x3C][0x01]
+Long live the Basement![A][X]

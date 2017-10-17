@@ -1,2 +1,3 @@
-[OpenMidRight][LoadFlorina]
-You'll regret this...[A][CloseEyes][X]
+[OpenMidRight][LoadTam]
+No...[N]
+Forgive me, Anna...[A][CloseEyes][X]

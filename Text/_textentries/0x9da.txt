@@ -1,2 +1,2 @@
-Savage Blow: After attacking, enemies[N]
-within 2 tiles take 20% damage.[X]
+Nullify: Unit is protected[N]
+from all effective attacks.[X]

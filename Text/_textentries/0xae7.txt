@@ -1,2 +1,3 @@
-[OpenMidLeft][Load][0x44][0x01]
-Darling... Darling...[A][X]
+[OpenMidLeft][Load][0x34][0x01]
+Watch out, Zonta. These[N]
+rebels are strong...[A][X]

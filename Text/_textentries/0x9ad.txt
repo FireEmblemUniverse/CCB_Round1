@@ -1,2 +1,2 @@
-Slayer: Deal effective damage[N]
-to monster units.[X]
+Swordbreaker: +50 Hit/Avo when[N]
+enemy has a sword equipped.[X]

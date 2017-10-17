@@ -1,2 +1,2 @@
-Spur Magic: Adjacent allies[N]
-deal +4 magical damage.[X]
+Wrath: If HP < 50%,[N]
++20 critical rate.[X]

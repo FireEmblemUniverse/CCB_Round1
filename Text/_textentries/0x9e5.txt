@@ -1,2 +1,2 @@
-Natural Cover: -3 damage taken[N]
-when on terrain with effects.[X]
+Rally Movement: +1 Move[N]
+to allies within 2 tiles.[X]

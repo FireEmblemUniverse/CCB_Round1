@@ -1,2 +1,2 @@
-[OpenMidLeft][Load][0x38][0x01]
-Urgh... You...[A][X]
+[OpenMidRight][LoadSigurd]
+Alvis, YOU DASTARD!![A][CloseEyes][X]

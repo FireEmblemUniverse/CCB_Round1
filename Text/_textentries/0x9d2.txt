@@ -1,2 +1,2 @@
-Life and Death: +10 to[N]
-damage dealt and taken.[X]
+Voice of Peace: Enemies within[N]
+2 tiles deal -2 damage.[X]

@@ -1,2 +1,2 @@
-Renewal: Restore 30% of max HP[N]
-at the start of each turn.[X]
+Aegis: Nullify a magic attack.[N]
+(Skill % activation)[X]

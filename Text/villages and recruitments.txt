@@ -1,12 +1,12 @@
 ## Ch7MoneyVillage
-[Left][Load][0x5F][0x01]
 [Right][LoadCurrent]
+[Left][Load][0x5F][0x01]
 I am sick and tired of donating to Hex.[N]
 Instead, I'll donate this money to you.[A][X]
 
 ## Ch7SwordVillage
-[Left][LoadSoldier]
 [Right][LoadCurrent]
+[Left][LoadSoldier]
 Over at the port's gate is a Donateenary[N]
 general named Murray. He's an absolute[AN]
 monster and he just extorts every penny[N]
@@ -206,4 +206,3 @@ also have swords going in, and[AN]
 gold coming out. Otherwise, you'll[N]
 become freshly squeezed bench juice.[AN]
 Mmm. Fruity.[AN][X]
-

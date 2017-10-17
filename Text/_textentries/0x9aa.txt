@@ -1,2 +1,3 @@
-Bowfaire: +4 damage[N]
-when equipping a bow.[X]
+Aether: First strike absorbs HP,[N]
+second strike negates defenses.[N]
+(Skill/2 % activation)[X]

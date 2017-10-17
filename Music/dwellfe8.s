@@ -3,7 +3,7 @@
 	.equ	dwellfe8_grp, voicegroup000
 	.equ	dwellfe8_pri, 0
 	.equ	dwellfe8_rev, 0
-	.equ	dwellfe8_mvl, 76
+	.equ	dwellfe8_mvl, 80
 	.equ	dwellfe8_key, 0
 	.equ	dwellfe8_tbs, 1
 	.equ	dwellfe8_exg, 0
@@ -21,8 +21,8 @@ dwellfe8_1_B1:
 @ 000   ----------------------------------------
 	.byte	TEMPO , 120*dwellfe8_tbs/2
 	.byte		VOICE , 104
-	.byte		VOL   , 88*dwellfe8_mvl/mxv
-	.byte		PAN   , c_v+0
+	.byte		PAN   , c_v-8
+	.byte		VOL   , 92*dwellfe8_mvl/mxv
 	.byte		MOD   , 2
 	.byte		BEND  , c_v-28
 	.byte		N12   , An2 , v100
@@ -614,48 +614,48 @@ dwellfe8_2:
 dwellfe8_2_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 30
-	.byte		VOL   , 104*dwellfe8_mvl/mxv
+	.byte		VOL   , 102*dwellfe8_mvl/mxv
 	.byte		PAN   , c_v-24
 	.byte		MOD   , 2
-	.byte		N72   , An1 , v127
+	.byte		N72   , An2 , v127
 	.byte	W72
 @ 001   ----------------------------------------
 	.byte		N72   
 	.byte	W72
 @ 002   ----------------------------------------
-	.byte		        Fn1 
+	.byte		        Fn2 
 	.byte	W72
 @ 003   ----------------------------------------
 	.byte		N72   
 	.byte	W72
 @ 004   ----------------------------------------
 dwellfe8_2_004:
-	.byte		N36   , Gn1 , v127
+	.byte		N36   , Gn2 , v127
 	.byte	W36
-	.byte		        En1 
+	.byte		        En2 
 	.byte	W36
 	.byte	PEND
 @ 005   ----------------------------------------
-	.byte		N24   , Fn1 
+	.byte		N24   , Fn2 
 	.byte	W24
-	.byte		        En1 
+	.byte		        En2 
 	.byte	W24
-	.byte		        Cs1 
+	.byte		        Cs2 
 	.byte	W24
 @ 006   ----------------------------------------
-	.byte		N72   , Dn1 
+	.byte		N72   , Dn2 
 	.byte	W72
 @ 007   ----------------------------------------
 	.byte		N72   
 	.byte	W72
 @ 008   ----------------------------------------
-	.byte		        Fn1 
+	.byte		        Fn2 
 	.byte	W72
 @ 009   ----------------------------------------
 	.byte		N72   
 	.byte	W72
 @ 010   ----------------------------------------
-	.byte		        An1 
+	.byte		        An2 
 	.byte	W72
 @ 011   ----------------------------------------
 	.byte		N72   
@@ -670,19 +670,19 @@ dwellfe8_2_004:
 	.byte	PATT
 	 .word	dwellfe8_2_004
 @ 015   ----------------------------------------
-	.byte		N36   , Fn1 , v127
+	.byte		N36   , Fn2 , v127
 	.byte	W36
-	.byte		        Dn1 
+	.byte		        Dn2 
 	.byte	W36
 @ 016   ----------------------------------------
-	.byte		        En1 
+	.byte		        En2 
 	.byte	W36
-	.byte		        Cs1 
+	.byte		        Cs2 
 	.byte	W36
 @ 017   ----------------------------------------
-	.byte		        Gs0 
+	.byte		        Gs1 
 	.byte	W36
-	.byte		        An0 
+	.byte		        An1 
 	.byte	W36
 	.byte	GOTO
 	 .word	dwellfe8_2_B1
@@ -697,7 +697,7 @@ dwellfe8_3:
 dwellfe8_3_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 109
-	.byte		PAN   , c_v+16
+	.byte		PAN   , c_v-32
 	.byte		VOL   , 76*dwellfe8_mvl/mxv
 	.byte		TIE   , Dn3 , v100
 	.byte		TIE   , An3 
@@ -799,93 +799,9 @@ dwellfe8_4:
 	.byte	KEYSH , dwellfe8_key+0
 dwellfe8_4_B1:
 @ 000   ----------------------------------------
-	.byte		VOICE , 85
-	.byte		PAN   , c_v+8
-	.byte		VOL   , 72*dwellfe8_mvl/mxv
-	.byte		TIE   , Fn3 , v100
-	.byte	W72
-@ 001   ----------------------------------------
-	.byte	W72
-	.byte		EOT   
-@ 002   ----------------------------------------
-	.byte		TIE   
-	.byte	W72
-@ 003   ----------------------------------------
-	.byte	W72
-	.byte		EOT   
-@ 004   ----------------------------------------
-	.byte		N36   , Gn3 
-	.byte	W36
-	.byte		        En3 
-	.byte	W36
-@ 005   ----------------------------------------
-	.byte		        Fn3 
-	.byte	W36
-	.byte		        Dn3 
-	.byte	W36
-@ 006   ----------------------------------------
-dwellfe8_4_006:
-	.byte		N36   , Dn3 , v100
-	.byte	W36
-	.byte		        As2 
-	.byte	W36
-	.byte	PEND
-@ 007   ----------------------------------------
-dwellfe8_4_007:
-	.byte		N36   , An2 , v100
-	.byte	W36
-	.byte		        Cs3 
-	.byte	W36
-	.byte	PEND
-@ 008   ----------------------------------------
-	.byte		N72   , Dn3 
-	.byte	W72
-@ 009   ----------------------------------------
-	.byte		        Fn3 
-	.byte	W72
-@ 010   ----------------------------------------
-	.byte	PATT
-	 .word	dwellfe8_4_006
-@ 011   ----------------------------------------
-	.byte	PATT
-	 .word	dwellfe8_4_007
-@ 012   ----------------------------------------
-	.byte		N72   , Dn3 , v100
-	.byte	W72
-@ 013   ----------------------------------------
-	.byte		        Fn3 
-	.byte	W72
-@ 014   ----------------------------------------
-	.byte		        Gn3 
-	.byte	W72
-@ 015   ----------------------------------------
-	.byte		        En3 
-	.byte	W72
-@ 016   ----------------------------------------
-	.byte		N36   , Dn3 
-	.byte	W36
-	.byte		N36   
-	.byte	W36
-@ 017   ----------------------------------------
-	.byte		N36   
-	.byte	W36
-	.byte		        En3 
-	.byte	W36
-	.byte	GOTO
-	 .word	dwellfe8_4_B1
-dwellfe8_4_B2:
-@ 018   ----------------------------------------
-	.byte	FINE
-
-@**************** Track 5 (Midi-Chn.5) ****************@
-
-dwellfe8_5:
-	.byte	KEYSH , dwellfe8_key+0
-dwellfe8_5_B1:
-@ 000   ----------------------------------------
 	.byte		VOICE , 36
-	.byte		VOL   , 90*dwellfe8_mvl/mxv
-	.byte		PAN   , c_v+32
+	.byte		PAN   , c_v+18
+	.byte		VOL   , 104*dwellfe8_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N12   , Dn2 , v100
 	.byte	W12
@@ -1024,7 +940,7 @@ dwellfe8_5_B1:
 	.byte		N06   
 	.byte	W06
 @ 006   ----------------------------------------
-dwellfe8_5_006:
+dwellfe8_4_006:
 	.byte		N12   , Dn2 , v127
 	.byte	W12
 	.byte		N06   
@@ -1047,7 +963,7 @@ dwellfe8_5_006:
 	.byte	W06
 	.byte	PEND
 @ 007   ----------------------------------------
-dwellfe8_5_007:
+dwellfe8_4_007:
 	.byte		N12   , Dn2 , v127
 	.byte	W12
 	.byte		N06   
@@ -1068,7 +984,7 @@ dwellfe8_5_007:
 	.byte	W18
 	.byte	PEND
 @ 008   ----------------------------------------
-dwellfe8_5_008:
+dwellfe8_4_008:
 	.byte		N12   , As1 , v127
 	.byte	W12
 	.byte		N06   
@@ -1091,7 +1007,7 @@ dwellfe8_5_008:
 	.byte	W06
 	.byte	PEND
 @ 009   ----------------------------------------
-dwellfe8_5_009:
+dwellfe8_4_009:
 	.byte		N12   , As1 , v127
 	.byte	W12
 	.byte		N06   
@@ -1117,16 +1033,16 @@ dwellfe8_5_009:
 	.byte	PEND
 @ 010   ----------------------------------------
 	.byte	PATT
-	 .word	dwellfe8_5_006
+	 .word	dwellfe8_4_006
 @ 011   ----------------------------------------
 	.byte	PATT
-	 .word	dwellfe8_5_007
+	 .word	dwellfe8_4_007
 @ 012   ----------------------------------------
 	.byte	PATT
-	 .word	dwellfe8_5_008
+	 .word	dwellfe8_4_008
 @ 013   ----------------------------------------
 	.byte	PATT
-	 .word	dwellfe8_5_009
+	 .word	dwellfe8_4_009
 @ 014   ----------------------------------------
 	.byte		N12   , An1 , v127
 	.byte	W12
@@ -1200,6 +1116,90 @@ dwellfe8_5_009:
 	.byte		BEND  , c_v+0
 	.byte	W06
 	.byte	GOTO
+	 .word	dwellfe8_4_B1
+dwellfe8_4_B2:
+@ 018   ----------------------------------------
+	.byte	FINE
+
+@**************** Track 5 (Midi-Chn.5) ****************@
+
+dwellfe8_5:
+	.byte	KEYSH , dwellfe8_key+0
+dwellfe8_5_B1:
+@ 000   ----------------------------------------
+	.byte		VOICE , 85
+	.byte		PAN   , c_v+40
+	.byte		VOL   , 72*dwellfe8_mvl/mxv
+	.byte		TIE   , Fn3 , v100
+	.byte	W72
+@ 001   ----------------------------------------
+	.byte	W72
+	.byte		EOT   
+@ 002   ----------------------------------------
+	.byte		TIE   
+	.byte	W72
+@ 003   ----------------------------------------
+	.byte	W72
+	.byte		EOT   
+@ 004   ----------------------------------------
+	.byte		N36   , Gn3 
+	.byte	W36
+	.byte		        En3 
+	.byte	W36
+@ 005   ----------------------------------------
+	.byte		        Fn3 
+	.byte	W36
+	.byte		        Dn3 
+	.byte	W36
+@ 006   ----------------------------------------
+dwellfe8_5_006:
+	.byte		N36   , Dn3 , v100
+	.byte	W36
+	.byte		        As2 
+	.byte	W36
+	.byte	PEND
+@ 007   ----------------------------------------
+dwellfe8_5_007:
+	.byte		N36   , An2 , v100
+	.byte	W36
+	.byte		        Cs3 
+	.byte	W36
+	.byte	PEND
+@ 008   ----------------------------------------
+	.byte		N72   , Dn3 
+	.byte	W72
+@ 009   ----------------------------------------
+	.byte		        Fn3 
+	.byte	W72
+@ 010   ----------------------------------------
+	.byte	PATT
+	 .word	dwellfe8_5_006
+@ 011   ----------------------------------------
+	.byte	PATT
+	 .word	dwellfe8_5_007
+@ 012   ----------------------------------------
+	.byte		N72   , Dn3 , v100
+	.byte	W72
+@ 013   ----------------------------------------
+	.byte		        Fn3 
+	.byte	W72
+@ 014   ----------------------------------------
+	.byte		        Gn3 
+	.byte	W72
+@ 015   ----------------------------------------
+	.byte		        En3 
+	.byte	W72
+@ 016   ----------------------------------------
+	.byte		N36   , Dn3 
+	.byte	W36
+	.byte		N36   
+	.byte	W36
+@ 017   ----------------------------------------
+	.byte		N36   
+	.byte	W36
+	.byte		        En3 
+	.byte	W36
+	.byte	GOTO
 	 .word	dwellfe8_5_B1
 dwellfe8_5_B2:
 @ 018   ----------------------------------------
@@ -1212,212 +1212,212 @@ dwellfe8_6:
 dwellfe8_6_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 124
-	.byte		VOL   , 86*dwellfe8_mvl/mxv
+	.byte		VOL   , 90*dwellfe8_mvl/mxv
 	.byte		N06   , Cn1 , v127
-	.byte		N48   , Cs2 , v076
+	.byte		N48   , Cs2 , v100
 	.byte	W06
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Fs1 , v056
+	.byte		N03   , Fs1 
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		N06   
+	.byte		N03   
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 @ 001   ----------------------------------------
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		N06   
+	.byte		N03   
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
 	.byte		N06   , Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
 	.byte		N06   , Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
+	.byte	W06
+	.byte		N03   , Fs1 
+	.byte	W06
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 @ 002   ----------------------------------------
-	.byte		        Cn1 , v127
-	.byte		N48   , Cs2 , v072
+	.byte		N06   , Cn1 , v127
+	.byte		N48   , Cs2 , v092
 	.byte	W06
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Fs1 , v056
+	.byte		N03   , Fs1 
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		N06   
+	.byte		N03   
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 @ 003   ----------------------------------------
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		N06   
+	.byte		N03   
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
 	.byte		N06   , Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N06   , Cn1 , v127
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 @ 004   ----------------------------------------
 	.byte		N05   , Cn1 , v127
 	.byte		N05   , Dn1 , v096
-	.byte		N18   , Cs2 , v076
+	.byte		N18   , Cs2 , v100
 	.byte	W12
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte		N05   , Cn1 , v127
 	.byte		N05   , Dn1 , v096
-	.byte		N18   , Cs2 , v072
+	.byte		N18   , Cs2 , v092
 	.byte	W12
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte		N05   , Cn1 , v127
 	.byte		N05   , Dn1 , v096
-	.byte		N18   , Cs2 , v076
+	.byte		N18   , Cs2 , v100
 	.byte	W12
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte		N05   , Cn1 , v127
 	.byte		N05   , Dn1 , v096
-	.byte		N18   , Cs2 , v072
+	.byte		N18   , Cs2 , v092
 	.byte	W12
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 @ 005   ----------------------------------------
-	.byte		        Cn1 , v127
+	.byte		N06   , Cn1 , v127
 	.byte		N06   , Dn1 , v096
-	.byte		N36   , Cs2 , v076
+	.byte		N36   , Cs2 , v100
 	.byte	W06
 	.byte		N06   , Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , As1 , v052
+	.byte		N06   , Cn1 , v127
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Dn1 , v096
-	.byte		N18   , Cs2 , v072
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte		N06   , Cn1 , v127
 	.byte		N06   , Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Dn1 , v096
-	.byte		N18   , Cs2 , v076
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte		N06   , Cn1 , v127
 	.byte		N06   , Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte		N72   , Fn2 , v084
+	.byte		N18   , Cs2 , v092
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N06   , Dn1 , v096
+	.byte		N18   , Cs2 , v100
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
+	.byte		N72   , Fn2 , v076
 	.byte	W06
 	.byte		N06   , Cn1 , v127
 	.byte		N06   , Dn1 , v096
@@ -1426,148 +1426,148 @@ dwellfe8_6_B1:
 dwellfe8_6_006:
 	.byte		N06   , Cn1 , v127
 	.byte	W06
-	.byte		        Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Fs1 , v056
+	.byte		N03   , Fs1 
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		N06   
+	.byte		N03   
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte	PEND
 @ 007   ----------------------------------------
 dwellfe8_6_007:
 	.byte		N06   , Cn1 , v127
-	.byte		N48   , Cs2 , v072
+	.byte		N48   , Cs2 , v092
 	.byte	W06
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
 	.byte		N06   , Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
 	.byte		N06   , Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
+	.byte	W06
+	.byte		N03   , Fs1 
+	.byte	W06
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte	PEND
 @ 008   ----------------------------------------
 dwellfe8_6_008:
 	.byte		N06   , Cn1 , v127
-	.byte		N48   , Cs2 , v076
+	.byte		N48   , Cs2 , v100
 	.byte	W06
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Fs1 , v056
+	.byte		N03   , Fs1 
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		N06   
+	.byte		N03   
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte	PEND
 @ 009   ----------------------------------------
 dwellfe8_6_009:
 	.byte		N06   , Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		N06   
+	.byte		N03   
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Dn1 , v096
-	.byte		N06   , As1 , v052
-	.byte	W06
-	.byte		        Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Dn1 , v096
-	.byte		N06   , As1 , v052
-	.byte	W06
-	.byte		        Fs1 , v056
-	.byte		N72   , Fn2 , v084
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte		N06   , Dn1 , v096
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
+	.byte	W06
+	.byte		N03   , Fs1 
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
+	.byte	W06
+	.byte		N03   , Fs1 
+	.byte		N72   , Fn2 , v076
+	.byte	W06
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte	PEND
 @ 010   ----------------------------------------
@@ -1588,35 +1588,35 @@ dwellfe8_6_009:
 	.byte	W36
 	.byte		        Cn1 , v127
 	.byte		N06   , Dn1 , v096
-	.byte		N06   , An1 , v056
-	.byte		N36   , Cs2 , v072
+	.byte		N06   , An1 , v048
+	.byte		N36   , Cs2 , v092
 	.byte	W12
-	.byte		N06   , An1 , v056
+	.byte		N06   , An1 , v048
 	.byte		N06   , Bn1 
 	.byte	W12
 	.byte		        An1 
 	.byte		N06   , Bn1 
-	.byte		N72   , Fn2 , v084
+	.byte		N72   , Fn2 , v076
 	.byte	W06
-	.byte		N06   , Bn1 , v056
+	.byte		N06   , Bn1 , v048
 	.byte	W06
 @ 015   ----------------------------------------
 	.byte		        Cn1 , v127
 	.byte		N06   , Dn1 , v096
 	.byte	W12
-	.byte		        Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W12
-	.byte		        As1 , v052
+	.byte		N12   , As1 
 	.byte	W12
-	.byte		        Cn1 , v127
+	.byte		N06   , Cn1 , v127
 	.byte		N06   , Dn1 , v096
-	.byte		N06   , An1 , v056
-	.byte		N36   , Cs2 , v072
+	.byte		N06   , An1 , v048
+	.byte		N36   , Cs2 , v092
 	.byte	W06
-	.byte		N06   , An1 , v056
+	.byte		N06   , An1 , v048
 	.byte	W06
 	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte		N06   , An1 
 	.byte		N06   , Bn1 
 	.byte	W06
@@ -1624,81 +1624,81 @@ dwellfe8_6_009:
 	.byte		N06   , Bn1 
 	.byte	W06
 	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
-	.byte		N06   , Bn1 , v056
-	.byte		N72   , Fn2 , v084
+	.byte		N12   , As1 , v048
+	.byte		N06   , Bn1 
+	.byte		N72   , Fn2 , v076
 	.byte	W06
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte		N06   , Bn1 
 	.byte	W06
 @ 016   ----------------------------------------
 	.byte		        Cn1 , v127
 	.byte	W06
-	.byte		        Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte		N05   , Cn1 , v127
-	.byte		N36   , Cs2 , v072
+	.byte		N36   , Cs2 , v092
 	.byte	W06
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		N06   
+	.byte		N03   
 	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , As1 , v052
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte		N72   , Fn2 , v084
+	.byte		N06   , Dn1 , v096
+	.byte		N12   , As1 , v048
 	.byte	W06
 	.byte		N06   , Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
+	.byte		N72   , Fn2 , v076
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 @ 017   ----------------------------------------
-	.byte		        Dn1 , v096
+	.byte		N06   , Dn1 , v096
 	.byte	W06
 	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , As1 , v052
-	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , As1 , v052
-	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
-	.byte	W06
-	.byte		        Dn1 , v096
-	.byte		N36   , Cs2 , v072
+	.byte		N03   , Fs1 , v048
 	.byte	W06
 	.byte		N06   , Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N12   , As1 , v048
+	.byte	W06
+	.byte		N06   , Dn1 , v096
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N12   , As1 , v048
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
+	.byte	W06
+	.byte		N06   , Dn1 , v096
+	.byte		N36   , Cs2 , v092
+	.byte	W06
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte		N06   , Bn1 
 	.byte	W06
 	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte	W06
-	.byte		        Cn1 , v127
-	.byte		N06   , Fs1 , v056
+	.byte		N06   , Cn1 , v127
+	.byte		N03   , Fs1 , v048
 	.byte		N06   , Bn1 
 	.byte	W06
 	.byte		        Dn1 , v096
-	.byte		N06   , Fs1 , v056
+	.byte		N03   , Fs1 , v048
 	.byte		N06   , Bn1 
 	.byte	W12
 	.byte	GOTO

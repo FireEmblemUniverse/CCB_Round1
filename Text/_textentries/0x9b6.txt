@@ -1,2 +1,2 @@
-Malefic Aura: Enemies within 2[N]
-tiles receive +2 magic damage.[X]
+Darting Blow: +5 Attack Speed[N]
+when initiating battle.[X]

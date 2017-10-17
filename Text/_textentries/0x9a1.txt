@@ -1,2 +1,2 @@
-Vantage: If HP < 50%,[N]
-strike first when attacked.[X]
+Provoke: Enemies are more[N]
+likely to target this unit.[X]

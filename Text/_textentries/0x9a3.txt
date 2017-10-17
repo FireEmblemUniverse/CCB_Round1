@@ -1,2 +1,2 @@
-Wrath: If HP < 50%,[N]
-+20 critical rate.[X]
+Frenzy: For every 4 damage[N]
+taken, +1 to damage dealt.[X]

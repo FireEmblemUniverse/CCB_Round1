@@ -1,2 +1,2 @@
-Summon: Can conjure a phantom[N]
-soldier to fight alongside you.[X]
+Lancebreaker: +50 Hit/Avo when[N]
+enemy has a lance equipped.[X]

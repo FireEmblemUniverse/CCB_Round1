@@ -1,2 +1,2 @@
-Swap: Allows unit to swap positions[N]
-with an adjacent ally.[X]
+Strong Riposte: When under[N]
+attack, damage +3. [X]

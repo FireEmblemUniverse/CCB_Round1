@@ -1,2 +1,2 @@
-Counter: Reflect physical damage[N]
-when attacked at 1-2 range.[X]
+Canto: Can move again[N]
+after certain actions.[X]
