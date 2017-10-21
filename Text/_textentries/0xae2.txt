@@ -1,2 +1,2 @@
-[OpenMidLeft][Load][0x3C][0x01]
-Long live the Basement![A][X]
+[OpenMidLeft][Load][0x32][0x01]
+Guh... Damn you...[A][X]

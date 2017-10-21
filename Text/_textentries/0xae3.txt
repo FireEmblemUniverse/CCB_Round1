@@ -1,3 +1,5 @@
-[OpenMidLeft][Load][0x42][0x01]
-Where's the fool who wants to[N]
-help me with target practice?[A][X]
+[OpenMidLeft][Load][0x33][0x01]
+I want my gold, and I'm[N]
+gonna get my gold. If you[AN]
+wanna live, you'd do well[N]
+to fear me and my horseslayer![A][X]

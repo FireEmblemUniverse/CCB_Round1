@@ -1,2 +1,2 @@
-Charm: Allies within 2[N]
-tiles deal +2 damage.[X]
+Certain Blow: +40 Hit[N]
+when initiating battle.[X]

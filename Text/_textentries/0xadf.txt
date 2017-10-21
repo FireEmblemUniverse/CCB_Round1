@@ -1,3 +1,5 @@
-[OpenMidLeft][Load][0x3B][0x01]
-Me, felled by this motley[N]
-crew? Absolute nonsense...[A][X]
+[OpenMidLeft][Load][0x30][0x01]
+Who the hell are you?! Aren't[N]
+you supposed to be dead?![AN]
+You shall have the honour of[N]
+dying to the name of O'Neill![A][X]

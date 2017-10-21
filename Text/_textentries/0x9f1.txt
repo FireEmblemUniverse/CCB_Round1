@@ -1,2 +1,2 @@
-Strong Riposte: When under[N]
-attack, damage +3. [X]
+Camaraderie: Recover 10% HP each turn[N]
+if there are allies within 2 tiles.[X]

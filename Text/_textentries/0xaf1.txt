@@ -1,3 +1,2 @@
-[ML][LoadPlum]
-I've been sold into slavery[N]
-because of all you monsters![A][X]
+[OpenMidLeft][Load][0x3A][0x01]
+I'll remember this![A][X]

@@ -1,2 +1,3 @@
-[ML][LoadMrBones]
-Rattle rattle...[A][X]
+[OpenMidLeft][Load][0x45][0x01]
+Here in Dead Valley, things[N]
+don't stay alive long. Heh...[A][X]

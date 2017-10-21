@@ -1,3 +1,4 @@
-You need to get to the other side of[N]
-the village, but you can't cross if[N]
-you aren't rescuing the kid.[A][X]
+[Right][LoadCurrent]
+[Left][Load][0x5F][0x01]
+I am sick and tired of donating to Hex.[N]
+Instead, I'll donate this money to you.[A][X]

@@ -1,2 +1,2 @@
-Desperation: If HP < 50%,[N]
-double attacks occur immediately.[X]
+Mercy: Enemies are left[N]
+with at least 1 HP.[X]

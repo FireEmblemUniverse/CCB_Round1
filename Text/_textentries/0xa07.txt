@@ -1,3 +1,3 @@
-Despoil: Obtain a Red Gem after[N]
-attacking and defeating an enemy.[N]
-(Luck % activation)[X]
+Nice Personality: This unit has[N]
+a deep and engaging character,[N]
+bursting at the seams with development.[X]

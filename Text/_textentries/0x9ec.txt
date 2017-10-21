@@ -1,2 +1,2 @@
-Gamble: A reckless attack with[N]
-halved hit but doubled crit.[X]
+Locktouch: Can open locks[N]
+without keys or picks.[X]

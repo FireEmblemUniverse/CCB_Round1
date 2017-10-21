@@ -1,2 +1,2 @@
-Moonbow: Enemy Def/Res is[N]
-reduced by 25%. Charge: 2[X]
+Expertise: Reduce bonus damage[N]
+from critical hits by 50%.[X]

@@ -1,4 +1,3 @@
-[OpenMidLeft][Load][0x4A][0x01]
-Guh? Roar? GAAAAAAAAAHHHHHH...[AN]
-[ToggleMouthMove]
-(The dracozombie rotted away!)[A][X]
+[OpenMidLeft][Load][0x37][0x01]
+Donate to Hex! Always[N]
+donate to Hex! Forever![A][X]

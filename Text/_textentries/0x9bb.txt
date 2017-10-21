@@ -1,2 +1,2 @@
-Spur Strength: Adjacent allies[N]
-deal +4 physical damage.[X]
+Desperation: If HP < 50%,[N]
+double attacks occur immediately.[X]

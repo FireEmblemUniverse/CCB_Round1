@@ -1,3 +1,2 @@
-Sure Shot: A precision attack that[N]
-always hits and does 1.5x damage.[N]
-(Skill % activation)[X]
+Fighters engaged in battle against[N]
+Blue Moon, commanded by Anna.[X]

@@ -1,3 +1,2 @@
-[OpenMidLeft][Load][0x38][0x01]
-You seem to have a lot of fun.[N]
-Take this: my Short Spear![AN][X]
+[OpenMidRight][LoadEdgeworth]
+Care to bail me out again, Wright...?[A][CloseEyes][X]

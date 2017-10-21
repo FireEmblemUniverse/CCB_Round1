@@ -1,2 +1,6 @@
-[OpenMidLeft][Load][0x4A][0x01]
-ROOOOOOOOARRRRRRR!![A][X]
+[OpenMidLeft][Load][0x35][0x01]
+You rebels DARE face such[N]
+a magnificent summoner?[AN]
+Very well. Allow me to[N]
+give you fools a taste of[AN]
+my amazing power.[AN][X]

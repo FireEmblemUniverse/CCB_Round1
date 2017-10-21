@@ -41,5 +41,11 @@ SongTable(0x5D, Celica_Phase, 1) //change to celica player phase 1
 SongTable(0x5F, Alm_Phase, 1) //change to alm player phase 1
 #include "Alm_Phase.event"
 
+SongTable(0x62, isaachtest, 1) //Light Inheritors
+#include "isaachfe8.event"
+
+SongTable(0x63, whomtest,0)
+#include "whomfe8.event"
+
 SongTable(0xc6,skeletest,1)
 #include "spoopy.event"

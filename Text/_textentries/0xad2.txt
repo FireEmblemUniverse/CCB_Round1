@@ -1,3 +1,3 @@
-[OpenMidLeft][Load][0x37][0x01]
-The offensive material...[N]
-was thus removed.[A][X]
+[OpenMidRight][LoadRogueAnna]
+Penny on a dead woman's eyes...[N]
+Please...[A][CloseEyes][X]

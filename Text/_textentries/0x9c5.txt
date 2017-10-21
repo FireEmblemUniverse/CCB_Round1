@@ -1,2 +1,1 @@
-Rally Strength: +4 Str[N]
-to allies within 2 tiles.[X]
+Crit Boost: +15 critical rate.[X]

@@ -1,2 +1,2 @@
-Sets a trap that does damage[N]
-to anyone who steps on it.[X]
+Rightful Arch: Sets Skill[N]
+activation rate to 100%.[X]

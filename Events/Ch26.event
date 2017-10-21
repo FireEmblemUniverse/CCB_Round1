@@ -33,7 +33,7 @@ RecruitTalk:
 MUSS 0x30
 Text(RecruitJakeTalk)
 REMA
-CUSA Jake //Tye joins the party!
+CUSA Jake //Tye joins the party! ...Wait, that's not right.
 MURE 0x05 //Shifts back to map music
 ENDA
 

@@ -1,3 +1,2 @@
-[OpenMidLeft][Load][0x3F][0x01]
-What a tragedy this war[N]
-is... But no matter.[A][X]
+[OpenMidRight][LoadKaga]
+Fuck this shit, I'm out.[A][X]

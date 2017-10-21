@@ -333,10 +333,11 @@ female thief... in days gone by.[X]
 Anna[X]
 
 ## GenericName
-Soldier[X]
+Donatenry[X]
 
 ## GenericDesc
-A soldier of the Donateenaries.[X]
+A soldier of the Donateenaries, who[N]
+seek the revival of the Demon King.[X]
 
 ## ONeillDesc
 The commander of the mysterious[N]
@@ -417,3 +418,91 @@ will only fight Void in single combat.[X]
 ## Ch11BossDesc
 A monster controlling the Travel[N]
 System. Surprisingly intelligent.[X]
+
+## BasementName
+Basement[X]
+
+## AllyBasementDesc
+Soldiers still loyal to Eevster[N]
+after the Basement coup.[X]
+
+## EnemyBasementDesc
+Soldiers who believe in Carlyle,[N]
+and are fighting against the regime.[X]
+
+## BlueMoonName
+Blue Moon[X]
+
+## BlueMoonDesc
+A soldier of the Blue Moon Army,[N]
+under command of marksman Grit.[X]
+
+## Ch15AllyName
+Anna's[X]
+
+## Ch15AllyDesc
+Fighters engaged in battle against[N]
+Blue Moon, commanded by Anna.[X]
+
+## MaedaGenericName
+Maeda's[X]
+
+## MaedaGenericDesc
+A man in the service of Maeda. They[N]
+want to preserve Fire Emblem...[X]
+
+## Ch19AllyName
+Rebels[X]
+
+## Ch19AllyDesc
+Rebels against Maeda's rule.[N]
+They wish to return to Kaga.[X]
+
+## DomaFaithfulName
+D. Faithful[X]
+
+## DomaFaithfulDesc
+Cultists part of the Doma Faithful,[N]
+based in eastern Rigel. Cruel.[X]
+
+## CelicaSummonName
+Summon[X]
+
+## CelicaSummonDesc
+A monster called from the darkness.[N]
+They bring ruin to wherever they go.[X]
+
+## SkeletonName
+Skeleton[X]
+
+## SkeletonDesc
+A member of the skeleton colony.[N]
+Waging war with the zombies.[X]
+
+## ZombieName
+Zombie[X]
+
+## ZombieDesc
+A member of the zombie colony.[N]
+Waging war with the skeletons.[X]
+
+## WendyGenericName
+Gwendy's[X]
+
+## WendyGenericDesc
+Eager young fighters who heard the[N]
+call to arms by Gwendolyn.[X]
+
+## Ch25DragonName
+Dragon[X]
+
+## Ch25DragonDesc
+A dragon sealed away at the Shrine[N]
+of Meals. However, it's awakening...[X]
+
+## FinalMonsterName
+Monster[X]
+
+## FinalMonsterDesc
+Guardians of Demon King Feditor.[N]
+To this day, they worship him.[X]

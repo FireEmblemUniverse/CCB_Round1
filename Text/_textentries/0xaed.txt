@@ -1,3 +1,2 @@
-[ML][LoadMeriah]
-Come now, and face me![N]
-GEOMANCY![A][X]
+[OpenMidLeft][Load][0x38][0x01]
+Urgh... You...[A][X]

@@ -1,3 +1,5 @@
-[Right][LoadVoid]
-Well, those soldiers are no longer[N]
-in the way. Onwards we go![A][X]
+The goddess of vengeance[N]
+lent your army her [Red]blessing[Red].[AN]
+Should your units fall in battle,[N]
+she will ensure their sacrifices[N]
+were not in vain.[A][X]

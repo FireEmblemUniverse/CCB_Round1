@@ -1,2 +1,3 @@
-Seal Defense: Debuff opponent's Def[N]
-by 6 after combat. (Recover 1/turn)[X]
+Ignis: Add Def/2 and Res/2[N]
+to damage dealt.[N]
+(Skill % activation)[X]

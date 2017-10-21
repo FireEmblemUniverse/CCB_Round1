@@ -1,2 +1,2 @@
-Acrobat: All traversable[N]
-terrain costs 1 movement.[X]
+Soldiers who believe in Carlyle,[N]
+and are fighting against the regime.[X]

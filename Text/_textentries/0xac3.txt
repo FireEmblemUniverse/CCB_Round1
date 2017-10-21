@@ -1,2 +1,4 @@
-[OpenMidRight][LoadMarth]
-Forgive me, my friends...[A][CloseEyes][X]
+[OpenMidRight][LoadBede]
+Ah... I cannot easily heal this[N]
+wound. Forgive me, Void.[AN]
+I must retreat.[A][X]

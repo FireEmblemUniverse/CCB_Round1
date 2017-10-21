@@ -1,2 +1,2 @@
-Luna: Negates enemy defenses.[N]
-(Skill % activation)[X]
+A monster called from the darkness.[N]
+They bring ruin to wherever they go.[X]

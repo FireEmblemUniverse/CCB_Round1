@@ -1,4 +1,3 @@
-[ML][Load][0x01][0x01]
-I... HAVE RESURRECTED...[N]
-STUPID HUMANS...[AN]
-I WILL KILL YOU ALL...[AN][X]
+[ML][LoadLyria]
+My singing... Was it[N]
+all... worthless...?[A][X]

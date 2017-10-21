@@ -1,2 +1,2 @@
-Bow Range +1: Maximum range[N]
-of equipped bows is increased.[X]
+Gentilhomme: Female allies within[N]
+2 tiles receive -2 damage.[X]

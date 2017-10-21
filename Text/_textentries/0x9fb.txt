@@ -1,2 +1,1 @@
-Shove: Allows unit to push[N]
-other units one tile away.[X]
+Celerity: Movement +2.[X]

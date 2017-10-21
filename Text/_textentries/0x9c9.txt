@@ -1,2 +1,2 @@
-Rally Luck: +4 Luck to[N]
-allies within 2 tiles.[X]
+Lifetaker: Restore up to 50% HP after[N]
+attacking and defeating an enemy.[X]

@@ -1,2 +1,2 @@
-[OpenMidLeft][Load][0x3E][0x01]
-You... Don't go to heaven![A][X]
+[OpenMidRight][LoadBjorn]
+Were it so easy...[A][CloseEyes][X]
