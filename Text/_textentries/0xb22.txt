@@ -1,0 +1,5 @@
+[OpenMidLeft][Load][0x49][0x01]
+The Donateenaries' days are[N]
+nearing their end...[AN]
+Your Majesty, I'm so sorry...[N]
+You must stop these monsters...[AN][X]

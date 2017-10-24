@@ -214,7 +214,7 @@ and I might help you out down the line.[A][X]
 
 ##Ch16NikitaAppears
 [MidLeft][LoadVoid]
-[MidRight][LoadFace][0x45][0x1]
+[MidRight][LoadNikita]
 I'm Nikita. Don't get me mixed[N]
 up with that impostor there.[AN]
 Also there are enemies[N]
@@ -283,7 +283,10 @@ That Gwendolyn's gone insane,[N]
 she thinks she's a GOOD unit.[AN]
 Help me correct that delusion,[N]
 and I'll help you in return.[A]
-[CloseSpeechSlow][MidLeft]
+[CloseSpeechSlow][MidLeft][Invert][X]
+
+##Ch24RecruitEvilFlorina2
+[MidLeft][Invert]
 10,000 Gold. What do you say?[N]
 [Yes][Invert][X]
 

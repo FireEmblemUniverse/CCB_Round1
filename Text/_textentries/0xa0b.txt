@@ -1,1 +1,2 @@
-Blitz Lance[X]
+Patience: When under[N]
+attack, avoid +10. [X]

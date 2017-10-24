@@ -1,2 +1,2 @@
-Canto+: Can move again after[N]
-attacking and other actions.[X]
+A soldier of the Blue Moon Army,[N]
+under command of marksman Grit.[X]

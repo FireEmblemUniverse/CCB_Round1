@@ -1,2 +1,2 @@
-Death Blow: +20 Crit[N]
-when initiating battle.[X]
+Acrobat: All traversable[N]
+terrain costs 1 movement.[X]

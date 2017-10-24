@@ -32,159 +32,202 @@ Run MAKE HACK_full when you make text or table changes, otherwise MAKE HACK_quic
 - Units without a weapon equipped will display Str instead of Mag, even if they are a staff user/magic unit
 - Astra in the arena will keep attacking thin air after the unit is dead
 - Turn count in the credits skips several chapters
-- B/W/L numbers in the endings are totally wrong
 - Most houses don't work (but some do)
 
 ## Skills learned on level up (by class):
 ```
-    EphraimLord                      
+    Ephraim Lord                      
     1                 Bond         
-    10                Aether       
-    EirikaLord                       
+    10                Aether   
+    
+    Lord                       
     1                 Bond         
-    10                RightfulKing 
-    EphraimGreatLord                 
-    5                 RallySpectrum
+    10                Rightful King 
+	
+    Ephraim Great Lord                 
+    5                 Rally Spectrum
     15                Axebreaker   
-    EirikaGreatLord                  
+	
+    Great Lord                  
     5                 Nihil        
     15                Lancebreaker 
+	
     Cavalier                         
     1                 Discipline   
-    10                ElbowRoom    
+    10                Elbow Room 
+	
     Paladin                          
-    5                 RallySkl     
-    15                Aegis        
+    5                 Rally Skill     
+    15                Aegis   
+	
     Knight                           
     1                 Provoke      
-    10                NaturalCover 
+    10                Natural Cover 
+	
     General                          
-    5                 WaryFighter  
-    15                Pavise       
+    5                 Wary Fighter  
+    15                Pavise 
+	
     Thief                            
     1                 Despoil      
-    10                Acrobat      
+    10                Acrobat     
+	
     Mercenary                        
-    1                 RallyStr     
-    10                SpurSpd      
+    1                 Rally Strength     
+    10                Spur Speed   
+	
     Hero                             
     5                 Sol          
     15                Axebreaker   
+	
     Myrmidon                         
-    1                 DuelistsBlow 
-    10                Vantage      
+    1                 Duelist's Blow 
+    10                Vantage    
+	
     Swordmaster                      
     5                 Astra        
     15                Swordfaire   
+	
     Assassin                         
     5                 Lifetaker    
-    15                Pass         
+    15                Pass      
+	
     Archer                           
-    1                 CertainBlow  
-    10                SureShot     
+    1                 Certain Blow  
+    10                Sure Shot   
+	
     Sniper                           
     5                 Bowfaire     
-    15                Galeforce    
+    15                Galeforce  
+	
     Ranger                           
-    5                 CantoPlus    
-    15                Bowbreaker   
-    WyvernRider                      
+    5                 Canto Plus    
+    15                Bowbreaker 
+	
+    Wyvern Rider                      
     1                 Relief       
-    10                Tantivy      
-    WyvernLord                       
-    5                 SavageBlow   
+    10                Tantivy
+	
+    Wyvern Lord                       
+    5                 Savage Blow   
     15                Swordbreaker 
-    WyvernKnight                     
-    5                 RallyMov     
+	
+    Wyvern Knight                     
+    5                 Rally Movenent     
     15                Lancefaire   
+	
     Mage                             
     1                 Focus        
-    10                Adept        
+    10                Adept     
+	
     Sage                             
     5                 Tomefaire    
-    15                Ignis        
-    MageKnight                       
-    5                 RallyRes     
-    15                QuickBurn    
+    15                Ignis    
+    
+    Mage Knight                       
+    5                 Rally Resistance    
+    15                Quick Burn   
+	
     Bishop                           
-    5                 SpurRes      
-    15                CounterMagic 
+    5                 Spur Resistance      
+    15                Counter Magic
+	
     Shaman                           
-    1                 MaleficAura  
-    10                SpurDef      
+    1                 Malefic Aura  
+    10                Spur Defence  
+    
     Druid                            
     5                 Frenzy       
-    15                Tomebreaker  
+    15                Tomebreaker 
+	
     Summoner                         
     5                 Anathema     
     15                Renewal      
+	
     Rogue                            
     5                 Lunge        
     15                Celerity     
-    GreatKnight                      
+	
+    Great Knight                      
     5                 Luna         
-    15                ArmoredBlow  
-    ManaketeF                        
+    15                Armored Blow  
+	
+    Manakete                        
     01                Miracle      
-    05                OddRhythm    
-    10                SpurDef      
+    05                Odd Rhythm    
+    10                Spur Defence  
+    
     Fighter                          
-    1                 FieryBlood   
-    10                Desperation  
+    1                 Fiery Blood   
+    10                Desperation 
+	
     Warrior                          
-    5                 DeathBlow    
-    15                Counter      
+    5                 Death Blow    
+    15                Counter
+	
     Brigand                          
     1                 Despoil      
     10                Intimidate   
+	
     Pirate                           
     1                 Camaraderie  
-    10                SealSkl      
+    10                Seal Skill      
+	
     Berserker                        
     5                 Wrath        
-    15                Axefaire     
+    15                Axefaire   
+	
     Monk                             
-    1                 SpurSpd      
-    10                SealRes      
+    1                 Spur Speed      
+    10                Seal Resistance  
+    
     Priest                           
     1                 Miracle      
-    10                LiveToServe  
-    PegKnight                        
-    1                 DartingBlow  
-    10                RallySpd     
-    Falcoknight                      
+    10                Live To Serve  
+	
+    Pegasus Knight                        
+    1                 Darting Blow  
+    10                Rally Speed    
+	
+    Falcon Knight                      
     5                 Savior       
-    15                WardingBlow  
+    15                Warding Blow  
+	
     Cleric                           
     1                 Miracle      
-    10                LiveToServe  
+    10                Live To Serve  
+	
     Troubadour                       
     1                 Demoiselle   
-    10                VoiceOfPeace 
+    10                Voice Of Peace 
+	
     Valkyrie                         
-    5                 SpurRes      
-    15                Charm        
+    5                 Spur Resistance      
+    15                Charm     
+	
     Dancer                           
     5                 Amaterasu    
     15                Celerity     
+	
     Soldier                          
     1                 Camaraderie  
-    10                RallyStr     
+    10                Rally Strength     
+	
     Necromancer                      
     5                 Anathema     
-    15                Tomefaire                            
-    SuperJourneyman                  
+    15                Tomefaire    
+	
+    Super Journeyman                  
+    10                Paragon  
+    
+    Super Pupil                       
+    10                Paragon  
+    
+    Super Recruit                     
     10                Paragon      
-    SuperPupil                       
-    10                Paragon      
-    SuperRecruit                     
-    10                Paragon      
-    ManaketeM                        
-    01                Miracle      
-    05                OddRhythm    
-    10                SpurDef             
+           
     Doowile                          
-    5                 SavageBlow   
+    5                 Savage Blow   
     15                Colossus     
 ```
 
@@ -212,17 +255,17 @@ Ch14        Attack on Basement        OwainDark/Ardendark/Memesmith
 Ch15        The Shark Straits         Darr
 Ch16        Dead Valley               Venno
 Ch17        "Slowly" Corrupting       Leonarth
-Ch18        Island Clash              Krib
-Ch19        Lit chapter               Krib
-Ch20        Great rivalry             Krib
+Ch18        Island Clash              Kirb
+Ch19        Lit chapter               Kirb
+Ch20        Great rivalry             Kirb
 Ch21        Doot Doot                 Colorz
-Ch22        N i c e B o a t s         Krib
+Ch22        N i c e B o a t s         Kirb
 Ch23        Flesh and Bone            Alusq
 Ch24        River Rush                Teraspark
 Ch25        Shrine of Meals           Alusq
 Ch26        Darrman's Lakes           Zmr
-Ch27        Convenient Lake           Krib
-Ch28        Mess.jpg                  Krib
+Ch27        Convenient Lake           Kirb
+Ch28        Mess.jpg                  Kirb
 Ch29        Let It Be                 Grey
 Ch30        End of All                Circles
 ```
@@ -266,9 +309,9 @@ Ch14        Attack on Basement        OwainDark/Ardendark/Memesmith
 Ch15        The Shark Straits         Bishop Seva
 Ch16        Dead Valley               Venno
 Ch17        "Slowly" Corrupting       Leonarth
-Ch18        Island Clash              Krib
-Ch19        Lit chapter               Krib
-Ch20        Great rivalry             Krib
+Ch18        Island Clash              Kirb
+Ch19        Lit chapter               Kirb
+Ch20        Great rivalry             Kirb
 Ch21        Doot Doot                 Bishop Seva
 Ch22        N i c e B o a t s         Aurawolf
 Ch23        Flesh and Bone            Alusq
@@ -276,7 +319,7 @@ Ch24        River Rush                Teraspark
 Ch25        Shrine of Meals           Alusq
 Ch26        Darrman's Lakes           Zmr
 Ch27        Convenient Lake           Primefusion
-Ch28        Mess.jpg                  Krib
+Ch28        Mess.jpg                  Kirb
 Ch29        Let It Be                 Grey
 Ch30        End of All                Circles
 ```
@@ -318,3 +361,4 @@ Paterick
 Teraspark  
 Monkeybard  
 Black Mage  
+Alusq

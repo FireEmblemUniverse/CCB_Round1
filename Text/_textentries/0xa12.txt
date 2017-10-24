@@ -1,1 +1,2 @@
-An error in reality's fabric.[X]
+Armsthrift: Luck % chance to not[N]
+consume weapon durability.[X]

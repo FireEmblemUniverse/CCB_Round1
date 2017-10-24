@@ -1,3 +1,2 @@
-[OpenRight][LoadVoid]
-Spooky scary skeletons. At least[N]
-we're drawing in to port now.[A][X]
+[Right][LoadVoid]
+We did it, but we must get moving.[A][X]

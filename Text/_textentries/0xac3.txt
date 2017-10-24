@@ -1,1 +1,4 @@
-Void - Queen of the Realm[X]
+[OpenMidRight][LoadBede]
+Ah... I cannot easily heal this[N]
+wound. Forgive me, Void.[AN]
+I must retreat.[A][X]

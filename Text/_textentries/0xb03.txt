@@ -1,1 +1,4 @@
-Celica - Princess of Sofia[X]
+[OpenMidLeft][Load][0x4A][0x01]
+Guh? Roar? GAAAAAAAAAHHHHHH...[AN]
+[ToggleMouthMove]
+(The dracozombie rotted away!)[A][X]

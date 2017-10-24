@@ -1,4 +1,2 @@
-She left for parts unknown with her husband[N]
-Jake after the war. It is not known where they[N]
-traveled, but all know it had to be quite the[N]
-adventure.[X]
+[OpenMidRight][LoadEdgeworth]
+Care to bail me out again, Wright...?[A][CloseEyes][X]

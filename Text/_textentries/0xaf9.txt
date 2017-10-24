@@ -1,1 +1,6 @@
-Anna: Shameless Rogue[X]
+[OpenMidLeft][Load][0x3C][0x01]
+I am the King of the Basement![N]
+We shall rise up and start[AN]
+a large Rage War against[N]
+those who dare stand[AN]
+against us! DIE![AN][X]

@@ -1,2 +1,2 @@
-Seal Speed: Debuff opponent's Spd[N]
-by 6 after combat. (Recover 1/turn)[X]
+Staff Savant: Maximum range[N]
+of staves is increased by 1.[X]

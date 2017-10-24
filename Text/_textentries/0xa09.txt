@@ -1,2 +1,2 @@
-Reposition: Allows unit to pull an[N]
-adjacent ally to its opposite side.[X]
+Wind Disciple: +10 Hit and[N]
+Avoid when HP is not at max.[X]

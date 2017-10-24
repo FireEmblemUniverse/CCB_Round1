@@ -1,1 +1,4 @@
-Mysterious Mage Celicia[X]
+[OpenMidLeft][Load][0x3F][0x01]
+Remember: a single death is[N]
+a tragedy. A million deaths[AN]
+is a statistic. Never forget...[AN][X]

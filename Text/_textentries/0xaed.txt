@@ -1,1 +1,2 @@
-Sturdy General Tye[X]
+[OpenMidLeft][Load][0x38][0x01]
+Urgh... You...[A][X]

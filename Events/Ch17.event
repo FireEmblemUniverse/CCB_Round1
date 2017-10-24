@@ -106,7 +106,6 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-ENUT 1 //no more boss quotes
 LOAD2 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
 LOAD1 0x0 EnemyUnits
@@ -142,6 +141,7 @@ KillThrone:
 CAM1 [0,2]
 STAL 0x16
 SETVAL 0xB 0x20009
+Text(Ch17LyonDecays)
 WARP_OUT
 ENUN
 STAL 0x8

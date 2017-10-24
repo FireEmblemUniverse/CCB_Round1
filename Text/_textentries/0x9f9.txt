@@ -1,2 +1,2 @@
-Armsthrift: Luck % chance to not[N]
-consume weapon durability.[X]
+Lily's Poise: Adjacent allies gain[N]
++1/-3 damage dealt/received.[X]

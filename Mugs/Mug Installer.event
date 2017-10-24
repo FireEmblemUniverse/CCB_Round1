@@ -163,3 +163,15 @@ setMugEntry(0x1E, YuniMug, 2,6,3,4)
 MCMug:
 #incext PortraitFormatter "MC.png"
 setMugEntry(0x03, MCMug, 2,6,3,4)
+
+BobMug:
+#incext PortraitFormatter "Bob.png"
+setMugEntry(0x24, BobMug, 2, 5, 2, 3)
+
+LeeroyMug:
+#incext PortraitFormatter "Leeroy.png"
+setMugEntry(0x14, LeeroyMug, 2, 5, 3, 3)
+
+NikitaMug:
+#incext PortraitFormatter "Nikita.png"
+setMugEntry(0x2F, NikitaMug, 2, 5, 3, 3)

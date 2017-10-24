@@ -1,2 +1,2 @@
-Dragon's Blood: Unit is able[N]
-to activate Dragon Veins.[X]
+Lunge: Swap places with the[N]
+opponent after combat.[X]

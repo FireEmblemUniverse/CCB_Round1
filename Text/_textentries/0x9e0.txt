@@ -1,2 +1,2 @@
-Lily's Poise: Adjacent allies gain[N]
-+1/-3 damage dealt/received.[X]
+Rally Skill: +4 Skill[N]
+to allies within 2 tiles.[X]

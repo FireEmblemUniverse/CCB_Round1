@@ -1,2 +1,2 @@
-Countermagic: Reflect magic damage[N]
-when attacked at 1-2 range.[X]
+Cunning: Can steal items, pick[N]
+locks, and see in darkness.[X]

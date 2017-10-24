@@ -1,3 +1,2 @@
-He returned to Archanea after the war. His[N]
-exploits are said to line Archanea's[N]
-history books.[X]
+[OpenMidLeft][Load][0x32][0x01]
+Guh... Damn you...[A][X]

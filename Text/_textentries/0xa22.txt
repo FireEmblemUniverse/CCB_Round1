@@ -1,2 +1,2 @@
-[MidLeft][LoadCurrent]
-Oh cool, I found a thing.[A][X]
+Reposition: Allows unit to pull an[N]
+adjacent ally to its opposite side.[X]

@@ -1,0 +1,3 @@
+[OpenMidLeft][Load][0x45][0x01]
+I have returned! You've beaten[N]
+me before, but I want revenge![AN][X]

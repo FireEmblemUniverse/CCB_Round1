@@ -1,1 +1,3 @@
-Anna, the Secret Unit[X]
+[OpenMidRight][LoadRogueAnna]
+Penny on a dead woman's eyes...[N]
+Please...[A][CloseEyes][X]

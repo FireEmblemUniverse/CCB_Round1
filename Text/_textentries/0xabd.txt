@@ -1,2 +1,4 @@
-[OpenMidRight][LoadFlorina]
-You'll regret this...[A][CloseEyes][X]
+[OpenMidRight][LoadLeeroy]
+Ah... with this wound... Forgive[N]
+me, your highness.[AN]
+I must retreat.[A][X]

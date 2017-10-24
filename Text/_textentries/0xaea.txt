@@ -1,1 +1,3 @@
-Arve - Elder Wizard[X]
+[OpenMidLeft][Load][0x37][0x01]
+Donate to Hex! Always[N]
+donate to Hex! Forever![A][X]

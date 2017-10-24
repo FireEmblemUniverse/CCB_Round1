@@ -1,3 +1,2 @@
-[OpenMidRight][LoadRogueAnna]
-Penny on a dead woman's eyes...[N]
-Please...[A][CloseEyes][X]
+[MidLeft][LoadFace][0x2][0x1]
+Oh, who left these lying around?[A][X]

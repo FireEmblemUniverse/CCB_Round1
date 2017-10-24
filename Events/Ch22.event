@@ -25,7 +25,7 @@ UNIT
  
 TurnBasedEvents:
 TurnEventPlayer(0x00, AfterPrepScreen, 1)
-TurnEventEnemy(0x00, CastingSummon, 1)
+TurnEventEnemy(0x00, CastingSummon, 3)
 TURN 0x0 LoadSummons [1,255] 0x0
 END_MAIN
  
@@ -124,11 +124,11 @@ UNIT 0x9a 0x42 Celica Level(20, Enemy, 1) [6,2] 0x00 0x00 0x0 0x00 [0x27] Attack
 UNIT
 
 SummonedMonsters:
-UNIT 0xAC 0x0 Celica Level(15, Enemy, 1) [3,1] 101b 0 0 0 [0] PursueWithoutHeedAI
-UNIT 0xAC 0x0 Celica Level(15, Enemy, 1) [3,2] 101b 0 0 0 [0] PursueWithoutHeedAI
-UNIT 0xAC 0x0 Celica Level(15, Enemy, 1) [4,1] 101b 0 0 0 [0] PursueWithoutHeedAI
-UNIT 0xAC 0x0 Celica Level(15, Enemy, 1) [5,1] 101b 0 0 0 [0] PursueWithoutHeedAI
-UNIT 0xAC 0x0 Celica Level(15, Enemy, 1) [5,2] 101b 0 0 0 [0] PursueWithoutHeedAI
+UNIT 0xA8 0x0 Celica Level(15, Enemy, 1) [3,1] 101b 0 0 0 [0] PursueWithoutHeedAI
+UNIT 0xA8 0x0 Celica Level(15, Enemy, 1) [3,2] 101b 0 0 0 [0] PursueWithoutHeedAI
+UNIT 0xA8 0x0 Celica Level(15, Enemy, 1) [4,1] 101b 0 0 0 [0] PursueWithoutHeedAI
+UNIT 0xA8 0x0 Celica Level(15, Enemy, 1) [5,1] 101b 0 0 0 [0] PursueWithoutHeedAI
+UNIT 0xA8 0x0 Celica Level(15, Enemy, 1) [5,2] 101b 0 0 0 [0] PursueWithoutHeedAI
 UNIT
  
 Celc:

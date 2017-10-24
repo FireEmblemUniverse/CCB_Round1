@@ -39,16 +39,18 @@ ORG 0x5926F4+(0x80*0x42)
 #incext Png2Dmp "auraicon.png"
 POP
 
-SnowObjectType:
-#incbin "SnowObject_LZ.bin"
+ch24palette:
+#incbin "bch24palette.bin"
 
 SnowPalette:
-#incbin "SnowPalette_FE8.bin"
+// #incbin "SnowPalette_FE8.bin"
+#incbin "b21palette.bin"
+// #incext Png2Dmp "b21palette.png" --palette-only
 
 SnowTileConfig:
 #incbin "SnowTileConfig_LZ.bin"
 
-EventPointerTable(0x8b, SnowObjectType)
+EventPointerTable(0x8b, ch24palette)
 EventPointerTable(0x8c, SnowPalette)
 EventPointerTable(0x8d, SnowTileConfig)
 

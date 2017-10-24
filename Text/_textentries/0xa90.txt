@@ -1,5 +1,3 @@
-[MidLeft][LoadFace][CurrentPortrait]
-[MidRight][LoadFace][0x64][0x1]
-I'm a Secret Unit.[A][N]
-If you want to recruit me you[N]
-need to bring me a Member Card.[A][X]
+This is truly a tough battle.[N]
+Void goes deeper into Donateenary[AN]
+territory. Can she win?[A][X]

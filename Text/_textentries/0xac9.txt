@@ -1,4 +1,3 @@
-He returned to his village after the war.[N]
-It is said he opened a candy store with his[N]
-brother. It is said that there was never a[N]
-finer candy on the continent.[X]
+[OpenMidRight][LoadPrine]
+I have lived my life as a knight,[N]
+and now I will die as one.[A][CloseEyes][X]

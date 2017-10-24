@@ -103,7 +103,6 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-ENUT 1 //no more boss quotes
 ENUT 9
 LOAD2 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN

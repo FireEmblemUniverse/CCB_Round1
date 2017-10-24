@@ -1,1 +1,2 @@
-Anna - Secret Proprietor[X]
+[OpenMidLeft][Load][0x3E][0x01]
+You... Don't go to heaven![A][X]

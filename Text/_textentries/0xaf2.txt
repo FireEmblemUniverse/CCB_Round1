@@ -1,3 +1,5 @@
-He left on a pilgrimage after the conflict,[N]
-working as a barista in pubs to fund his[N]
-journey.[X]
+[OpenMidLeft][Load][0x3E][0x01]
+So you've survived all of[N]
+my diabolical traps. Hm.[AN]
+It's all up to me, then.[N]
+I am Beran, and fear me![AN][X]
