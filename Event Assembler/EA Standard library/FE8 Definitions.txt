@@ -227,8 +227,6 @@
 #define FallenPeer 0x7B
 #define Cyclops_2 0x7C
 #define ElderBael_2 0x7D
-#define Journeyman(2) 0x7E
-#define Pupil(2) 0x7F
 #define Journeyman_2 0x7E
 #define Pupil_2 0x7F
 
@@ -408,13 +406,13 @@
 #define LunarBracelet 0x98
 #define SunBracelet 0x99
 #define SolarBracelet 0x99
-#define 1G 0x9A
-#define 5G 0x9B
-#define 10G 0x9C
-#define 50G 0x9D
-#define 100G 0x9E
-#define 3000G 0x9F
-#define 5000G 0xA0
+#define Item1G 0x9A
+#define Item5G 0x9B
+#define Item10G 0x9C
+#define Item50G 0x9D
+#define Item100G 0x9E
+#define Item3000G 0x9F
+#define Item5000G 0xA0
 #define WindSword 0xA1
 #define Vulnerary_2 0xA2
 #define Greennote 0xA3
@@ -469,3 +467,10 @@
 #define rD 0xD
 #define r13 0xD
 #define QP 0xD	//QueuePointer
+
+#define ActiveUnit (-1)        // 0xFFFF
+#define UnitAtCoordsSlotB (-2) // 0xFFFE
+#define UnitInSlot2 (-3)       // 0xFFFD
+
+#define CurrentUnit ActiveUnit
+#define UnitAtCoords UnitAtCoordsSlotB
