@@ -7,8 +7,20 @@ PUSH
   gotoHackWithR3(Reloading)
   ORG 0x188A8 //This is for decreasing the debuffs each turn/ending rally
   jumpToHack(PerTurn)
-  ORG 0x854ca //to actually zero out units on loading
-  BL(NewReloading)
+
+  PUSH //prevent debuffs and loading issue
+  ORG 0xBA30
+  WORD 0x203ED40
+
+  ORG 0xBA54
+  WORD 0x203ED40
+
+  ORG 0xFA34
+  WORD 0x203ED40
+
+  ORG 0xD5B80
+  WORD 0x203ED40
+  POP
 
   // ORG 0x19190 //commented out because modular stat getters
   // gotoHack(MaxHPGetter)
@@ -117,10 +129,6 @@ Reloading:
 WORD DebuffTable
 PerTurn:
 #incbin "ASM/Debuffs/ProcessDebuffs.dmp"
-WORD DebuffTable
-
-NewReloading:
-#incbin "ASM/Debuffs/New Reload v2.dmp"
 WORD DebuffTable
 
 ALIGN 4
